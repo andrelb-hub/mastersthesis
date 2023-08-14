@@ -1,7 +1,10 @@
 # masterthesis
+
+Title: Analysis of the Monetary Policy Impact on Regional Gross Product: A Regional DSGE Model
+
 Master's Thesis presented to PPGDE-UFPR in 2023 in order to receive the Master in Science title.
 
-The thesis objective is to analysis the impact of monetary policy on the regional gross domestic product using a NK DSGE model featuring:
+The objective is to analysis the impact of monetary policy on the regional gross domestic product using a NK DSGE model featuring:
 - four agents:
   - a representative household;
   - a intermediate-good firm;
