@@ -1,0 +1,406 @@
+\documentclass[10pt]{beamer}
+
+\usetheme[progressbar=frametitle]{metropolis}
+\usepackage{appendixnumberbeamer}
+
+% cor da barra de progresso:
+\setbeamercolor{progress bar}{fg=orange,bg=white}
+
+% largura da barra de progresso:
+\makeatletter
+\setlength{\metropolis@titleseparator@linewidth}{2pt}
+\setlength{\metropolis@progressonsectionpage@linewidth}{2pt}
+\setlength{\metropolis@progressinheadfoot@linewidth}{2pt}
+\makeatother
+
+\usepackage{booktabs}
+\usepackage[scale=2]{ccicons}
+
+\usepackage{pgfplots}
+\usepgfplotslibrary{dateplot}
+
+\usepackage{xspace}
+\newcommand{\themename}{\textbf{\textsc{metropolis}}\xspace}
+
+% itens transparentes:
+\setbeamercovered{transparent}
+
+% space between items:
+\newlength{\wideitemsep}
+\setlength{\wideitemsep}{\itemsep}\addtolength{\wideitemsep}{10pt}
+
+% reconfigure itemize lists:
+\let\olditem\item
+\renewcommand{\item}{%
+	\olditem\vspace{5pt}}
+
+% tabela:
+\usepackage{graphicx}
+
+% line break in table cell:
+\usepackage{makecell}
+
+% references:
+\usepackage[
+style=abnt,
+sorting=nyt,
+backref=true,
+backend=biber,
+citecounter=true,
+backrefstyle=three,
+url=true,
+maxbibnames=99,
+mincitenames=1,
+maxcitenames=2,
+hyperref=true,
+giveninits=true,
+uniquename=false,
+uniquelist=false
+]{biblatex}
+
+\addbibresource{ref.bib}
+
+% define o idioma português:
+\usepackage[brazil]{babel}
+
+\usepackage{csquotes}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\title{Política Monetária e Economia Regional}
+\subtitle{Um Modelo Estrutural para Análise dos Impactos 
+	da Taxa de Juros sobre uma Região Brasileira}
+\author{André Luiz Brito}
+\institute{PPGDE-UFPR}
+\date{13/06/2023}
+\titlegraphic{\hfill\includegraphics[height=1cm]{images/marca_UFPR.png}}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+	
+\begin{frame}
+		
+\maketitle
+		
+\end{frame}
+	
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%	
+	
+\begin{frame}{Conteúdo}
+		
+\setbeamertemplate{section in toc}[sections numbered]
+\tableofcontents[hideallsubsections]
+		
+\end{frame}
+	
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	
+\section{Introdução}
+	
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	
+\begin{frame}{Introdução}
+		
+\begin{itemize}
+	\item A modelagem macroeconômica é uma importante ferramenta para estudar as ligações entre a economia monetária e os resultados dos agregados de um país, \textcite{gali_monetary_2015}.
+	\item As regiões brasileiras possuem matrizes e setores econômicos heterogêneos que respondem de diferentes formas às decisões da autoridade monetária, \textcite{bertanha_efeitos_2008}.
+\end{itemize}
+
+\end{frame}
+	
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{frame}{Introdução}
+	
+	\begin{itemize}
+		\item \textit{Na realidade, a maior parte das tolices já escritas e que se continuam a escrever sobre economia poderia ter sido poupada se todo economista fosse obrigado a expor suas ideias construindo um modelo matemático} --- \textcite[p.68]{simonsen_microeconomia_1979}.
+	\end{itemize}
+	
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{frame}{Introdução}
+	
+	\begin{itemize}
+		\item Proposta: desenvolver um modelo estrutural com desdobramentos regionais, utilizando a metodologia DSGE (\textit{Dynamic and Stochastic General Equilibrium}).
+		\item Objetivo: verificar se existe correlação entre a taxa de juros nominal da economia (uma variável macroeconômica) e o nível de produção de uma região brasileira (uma variável regional). Existindo esta correlação, pretendemos quantificá-la.
+	\end{itemize}
+	
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{frame}{O que é um modelo DSGE?}
+	
+	\begin{itemize}
+		\item Os modelos DSGE são ferramentas utilizadas em macroeconomia para avaliar a relação existente entre as variáveis selecionadas pelo pesquisador.
+		\item Tem como principais características um horizonte de tempo infinito e choques aleatórios sobre algumas variáveis de interesse.
+	\end{itemize}
+	
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{frame}{Real Business Cycles Theory}
+	
+	\begin{itemize}
+		\item Os modelos DSGE começaram a ser usados para estruturar a Teoria dos Ciclos Reais de Negócios (\textit{Real Business Cycle Theory, RBC}), com os trabalhos seminais de \textcite{kydland_time_1982} e \textcite{prescott_theory_1986}, \textcite{gali_monetary_2015}.
+		\item As principais características dos modelos RBC são: eficiência dos ciclos de negócios; importância dos choques de tecnologia como fontes de flutuações; papel limitado dos fatores monetários.
+	\end{itemize}
+	
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{frame}{New Keynesian Theory}
+	
+	\begin{itemize}
+		\item Em paralelo aos modelos RBC, surgiram os modelos Novos Keynesianos (\textit{New Keynesian Theory, NK}), que procuram dar microfundamentos aos conceitos Keynesianos, \textcite[p.26]{gali_macroeconomic_2007}.
+		\item As características de destaque dos modelos NK são: competição monopolística; rigidez nominal de preços; não-neutralidade da moeda no curto prazo.
+	\end{itemize}
+	
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	
+\begin{frame}[fragile]{Título Provisório}
+
+	\begin{itemize}
+		\item Política Monetária e Economia Regional: Um Modelo Estrutural para Análise dos Impactos da Taxa de Juros sobre uma Região Brasileira.
+	\end{itemize}
+		
+\end{frame}
+	
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	
+\section{Referencial Teórico}
+	
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{frame}[fragile]{Modelagem Macroeconômica}
+	
+	\begin{itemize}
+		\item \textit{se você possui uma ideia econômica coesa, você pode colocar em termos de um modelo DSGE} --- \textcite{solis-garcia_ucb_2022}
+	\end{itemize}
+	
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{frame}[fragile]{Modelagem Macroeconômica}
+Exemplos de temas:	
+	\begin{itemize}
+		\item \textcite{pereira_desmatamento_2013}: desmatamento.
+		
+		\item \textcite{albuquerquemello_mercado_2018}: mercado imobiliário;
+
+		\item \textcite{ribeiro_alongamento_2023}: mercado de trabalho;
+
+	\end{itemize}
+	
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{frame}[fragile]{Referencial Teórico}
+	
+	\begin{itemize}
+		\item \textcite{costa_junior_understanding_2016}: inicia com RBC e depois adiciona os elementos de NK;
+		\item \textcite{gali_monetary_2015}, idem;
+		\item \textcite{bergholt_basic_2012}, modelo NK e a programação no \texttt{Dynare};
+		\item \textcite{smets_estimated_2003}: modelo para avaliar choques na zona do Euro.
+		\item \textcite{smets_shocks_2007}: modelo para avaliar choques nos EUA.
+	\end{itemize}
+	
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{frame}[fragile]{Modelagem Macroeconômica Regionalizada}
+
+\begin{itemize}
+	\item \textcite{rickman_modern_2010}: ligação entre a modelagem macroeconômica e a modelagem regional (modelo insumo-produto de
+	Leontief, o modelo Walrasiano de equilíbrio geral aplicado e o sistema de equações macroeconométricas).
+
+	\item \textcite{mora_fdi_2019}: efeitos do investimento estrangeiro direto (IED), levando em consideração onde ele é aplicado: modelo estrutural com duas regiões: Bogotá e o resto da Colômbia.
+
+	\item \textcite{costa_junior_dsge_2022}: efeitos da política fiscal, considerando os entes federativos: modelo para o Estados de Goiás e o resto do país.
+\end{itemize}
+		
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{frame}[fragile]{Modelagem Macroeconômica Regionalizada}
+	
+	\begin{itemize}
+		\item \textcite{osterno_uma_2022}: regionalização do SAMBA: SAMBA+REG (\textit{Stochastic Analytical Model with Bayesian Approach} do Banco Central do Brasil).
+	\end{itemize}
+	
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Modelo}
+	
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	
+\begin{frame}{Agentes}
+
+O modelo terá quatro agentes:
+\begin{itemize}
+	\item uma família representativa;
+	
+	\item firmas produtoras de bens intermediários.
+	
+	\item uma firma representativa produtora do bem final consumido pelas famílias.
+
+	\item uma autoridade monetária.
+\end{itemize}		
+
+\end{frame}
+
+\begin{frame}{Características}
+
+Além disso, também teremos características específicas:
+
+\begin{itemize}
+	\item regra de \textcite{calvo_staggered_1983}: gerar fricções nominais nos preços dos bens, alterando as relações de equilíbrio do sistema, gerando a não-neutralidade da moeda no curto prazo, \textcite[p.191]{costa_junior_understanding_2016}.
+	
+	\item os choques estocásticos estarão presentes na produtividade das firmas e nas preferências da família representativa.
+	
+	\item regionalização do modelo: um índice para a região estudada e o restante do Brasil, de tal forma que teremos as famílias, a firma de bens finais e as firmas de bens intermediários de cada região.
+	
+	\item as famílias não terão mobilidade, mas os bens intermediários e finais terão, e esse será o elo para conectar as duas regiões.
+\end{itemize}
+
+\end{frame}
+	
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%	
+	
+%\begin{itemize}
+%	\item Em relação aos objetivos \cite{gil2002elaborar}:
+%	\begin{itemize}
+%		\item Pesquisa Explicativa: investigar a transmissão dos choques de política monetária para uma economia regional.
+%	\end{itemize}
+%	\item Em relação aos procedimentos \cite{gil2002elaborar}:
+%	\begin{itemize}
+%		\item Pesquisa Bibliográfica: explorar e conhecer a teoria e os modelos existentes;
+%		\item Pesquisa Experimental: utilizar dados reais para verificar a capacidade preditiva do modelo.
+%	\end{itemize}
+%\end{itemize}
+		
+
+	
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	
+\section{Resultados Esperados}
+	
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	
+\begin{frame}[fragile]{Resultados Esperados}
+		
+		\begin{itemize}
+			\item Esperamos que o modelo demonstre que uma região brasileira responde um choque de política monetária, gerando uma variação no produto regional.
+			\item Por exemplo, um choque de $1\%$ na taxa de juros gera uma diminuição de $x\%$ do produto de um Estado brasileiro.
+		\end{itemize}
+		
+	\end{frame}
+	
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	
+	\section{Cronograma}
+	
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	
+\begin{frame}[fragile]{Cronograma}
+		
+% Please add the following required packages to your document preamble:
+% \usepackage{graphicx}
+\renewcommand{\arraystretch}{1.5}
+\begin{table}[]
+\tiny
+%\centering
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{l|ccccccccc}
+\hline
+Atividade              &mar&abr&mai&jun&jul&ago&set&out&nov\\ \hline
+Pesquisa Bibliográfica & x & x & x &   &   &   &   &   &   \\ \hline
+Projeto de Pesquisa    &   &   & x &   &   &   &   &   &   \\ \hline
+Modelagem              &   &   & x & x &   &   &   &   &   \\ \hline
+Programação no
+\texttt{Dynare}        &   &   &   & x &   &   &   &   &   \\ \hline
+Seminário do Projeto   &   &   &   & x &   &   &   &   &   \\ \hline
+Coleta dos dados       &   &   &   &   & x &   &   &   &   \\ \hline
+Tratamento dos dados   &   &   &   &   & x &   &   &   &   \\ \hline
+Cálculo dos Parâmetros &   &   &   &   &   & x &   &   &   \\ \hline
+Banca de Qualificação  &   &   &   &   &   & x &   &   &   \\ \hline
+Análise dos Resultados &   &   &   &   &   &   & x &   &   \\ \hline
+Revisão e Edição       &   &   &   &   &   &   &   & x &   \\ \hline
+Defesa da Dissertação  &   &   &   &   &   &   &   &   & x \\ \hline
+Reuniões de Orientação & x & x & x & x & x & x & x & x & x \\ \hline
+\end{tabular}%
+}
+\end{table}
+\renewcommand{\arraystretch}{1}
+\end{frame}
+	
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	
+\begin{frame}[allowframebreaks]{Referências Iniciais}
+
+	\printbibliography[title={Referências Iniciais}]
+
+\end{frame}
+	
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	
+{\setbeamercolor{palette primary}{fg=black, bg=white}
+	\begin{frame}[standout]
+	Dúvidas e Sugestões
+	\end{frame}
+}
+	
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	
+	{\setbeamercolor{palette primary}{fg=black, bg=white}
+		\begin{frame}[standout]
+			Obrigado! \\
+			andreluizmtg@gmail.com\\
+			41.98460.2209
+		\end{frame}
+	}
+	
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	
+\end{document}
