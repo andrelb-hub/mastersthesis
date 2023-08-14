@@ -7,11 +7,11 @@ The objective is to analys the impact of monetary policy on the regional gross d
   - a representative household;
   - a intermediate-good firm;
   - a final-good firm;
-  - a monetary authority;
+  - a monetary authority.
 - and also:
   - price stickiness;
   - intertemporal price optimization with nonimal tax rate;
   - production function with investment;
-  - monetary policy.
+  - monetary policy;
   - productivity shock;
   - monetary shock.
