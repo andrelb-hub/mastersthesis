@@ -1,6 +1,4 @@
-# masterthesis
-
-Title: Analysis of the Monetary Policy Impact on Regional Gross Product: A Regional DSGE Model
+# Analysis of the Monetary Policy Impact on Regional Gross Product: A Regional DSGE Model
 
 Master's Thesis presented to PPGDE-UFPR in 2023 in order to receive the Master in Science title.
 
