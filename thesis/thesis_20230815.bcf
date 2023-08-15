@@ -2450,17 +2450,17 @@
     <bcf:citekey order="5" intorder="1">solis-garcia_ucb_2022</bcf:citekey>
     <bcf:citekey order="6" intorder="1">solis-garcia_ucb_2022</bcf:citekey>
     <bcf:citekey order="7" intorder="1">calvo_staggered_1983</bcf:citekey>
-    <bcf:citekey order="8" intorder="1">taylor_discretion_1993</bcf:citekey>
-    <bcf:citekey order="9" intorder="1">costa_junior_understanding_2016</bcf:citekey>
-    <bcf:citekey order="10" intorder="1">solis-garcia_ucb_2022</bcf:citekey>
-    <bcf:citekey order="11" intorder="1">uhlig_toolkit_1999</bcf:citekey>
-    <bcf:citekey order="12" intorder="1">solis-garcia_ucb_2022</bcf:citekey>
-    <bcf:citekey order="13" intorder="1">inada_two-sector_1963</bcf:citekey>
-    <bcf:citekey order="14" intorder="1">solis-garcia_ucb_2022</bcf:citekey>
+    <bcf:citekey order="8" intorder="1">calvo_staggered_1983</bcf:citekey>
+    <bcf:citekey order="9" intorder="1">taylor_discretion_1993</bcf:citekey>
+    <bcf:citekey order="10" intorder="1">costa_junior_understanding_2016</bcf:citekey>
+    <bcf:citekey order="11" intorder="1">solis-garcia_ucb_2022</bcf:citekey>
+    <bcf:citekey order="12" intorder="1">uhlig_toolkit_1999</bcf:citekey>
+    <bcf:citekey order="13" intorder="1">solis-garcia_ucb_2022</bcf:citekey>
+    <bcf:citekey order="14" intorder="1">inada_two-sector_1963</bcf:citekey>
     <bcf:citekey order="15" intorder="1">solis-garcia_ucb_2022</bcf:citekey>
-    <bcf:citekey order="16" intorder="1">simon_mathematics_1994</bcf:citekey>
+    <bcf:citekey order="16" intorder="1">solis-garcia_ucb_2022</bcf:citekey>
     <bcf:citekey order="17" intorder="1">simon_mathematics_1994</bcf:citekey>
-    <bcf:citekey order="18" intorder="1">solis-garcia_ucb_2022</bcf:citekey>
+    <bcf:citekey order="18" intorder="1">simon_mathematics_1994</bcf:citekey>
     <bcf:citekey order="19" intorder="1">solis-garcia_ucb_2022</bcf:citekey>
     <bcf:citekey order="20" intorder="1">solis-garcia_ucb_2022</bcf:citekey>
     <bcf:citekey order="21" intorder="1">solis-garcia_ucb_2022</bcf:citekey>
@@ -2470,15 +2470,16 @@
     <bcf:citekey order="25" intorder="1">solis-garcia_ucb_2022</bcf:citekey>
     <bcf:citekey order="26" intorder="1">solis-garcia_ucb_2022</bcf:citekey>
     <bcf:citekey order="27" intorder="1">solis-garcia_ucb_2022</bcf:citekey>
-    <bcf:citekey order="28" intorder="1">gali2015monetary</bcf:citekey>
-    <bcf:citekey order="29" intorder="1">solis-garcia_ucb_2022</bcf:citekey>
+    <bcf:citekey order="28" intorder="1">solis-garcia_ucb_2022</bcf:citekey>
+    <bcf:citekey order="29" intorder="1">gali2015monetary</bcf:citekey>
     <bcf:citekey order="30" intorder="1">solis-garcia_ucb_2022</bcf:citekey>
     <bcf:citekey order="31" intorder="1">solis-garcia_ucb_2022</bcf:citekey>
     <bcf:citekey order="32" intorder="1">solis-garcia_ucb_2022</bcf:citekey>
+    <bcf:citekey order="33" intorder="1">solis-garcia_ucb_2022</bcf:citekey>
     <bcf:citekeycount count="1">osterno_uma_2022</bcf:citekeycount>
     <bcf:citekeycount count="2">costa_junior_understanding_2016</bcf:citekeycount>
     <bcf:citekeycount count="19">solis-garcia_ucb_2022</bcf:citekeycount>
-    <bcf:citekeycount count="1">calvo_staggered_1983</bcf:citekeycount>
+    <bcf:citekeycount count="2">calvo_staggered_1983</bcf:citekeycount>
     <bcf:citekeycount count="1">taylor_discretion_1993</bcf:citekeycount>
     <bcf:citekeycount count="1">uhlig_toolkit_1999</bcf:citekeycount>
     <bcf:citekeycount count="1">inada_two-sector_1963</bcf:citekeycount>

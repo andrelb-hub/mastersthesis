@@ -158,7 +158,7 @@ Yt = thetaC*Ct + thetaI*It ;
 Rt = gammaR*Rt(-1) + (1 - gammaR)*(gammaPI*PIt + gammaY*Yt) + ZMt ;
 % 11 %
 [name='Productivity Shock']
-     ZAt = rhoA*ZAt(-1) - epsilonA ;
+     ZAt = rhoA*ZAt(-1) + epsilonA ;
 % 12 %
 [name='Monetary Shock']
      ZMt = rhoM*ZMt(-1) + epsilonM ;
@@ -189,6 +189,8 @@ check(qz_zero_threshold=1e-20);
 % -------------------------------------------------- % 
 shocks; 
 % Productivity Shock
+     var    epsilonA;
+     stderr sigmaA;
 % Monetary Shock
      var    epsilonM;
      stderr sigmaM;
