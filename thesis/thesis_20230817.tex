@@ -602,12 +602,12 @@ The model is populated by four agents:
 
 \subsection{Household}
 
-\subsubsection*{Household's Utility Maximization Problem}
+\subsubsection*{Utility Maximization Problem}
 
 Following the models presented by \textcite{costa_junior_understanding_2016} and \textcite{solis-garcia_ucb_2022}, the representative household problem is to maximize an intertemporal utility function $U$ with respect to consumption $C_t$ and labor $L_t$, subject to a budget constraint, a capital accumulation rule and the non-negativity of real variables:
 \begin{align}
 \label{eq:household-utility-function}
-	\max_{C_t,L_t,K_{t+1}}: \quad & U(C_t,L_t) = \E \sum_{t=0}^{\infty} \beta^t \left(\frac{C_t^{1-\sigma}}{1-\sigma} + \phi\frac{L_t^{1+\varphi}}{1+\varphi} \right) \\
+	\max_{C_t,L_t,K_{t+1}}: \quad & U(C_t,L_t) = \E \sum_{t=0}^{\infty} \beta^t \left(\frac{C_t^{1-\sigma}}{1-\sigma} - \phi \frac{L_t^{1+\varphi}}{1+\varphi} \right) \\
 \label{eq:household-budget-constraint}
 	\st: \quad & P_t (C_t + I_t) = W_t L_t + R_t K_t + \Pi_t \\
 \label{eq:law-of-motion-for-capital}
@@ -633,7 +633,7 @@ The maximization problem with restriction can be transformed in one without rest
 \begin{multline}
 \label{eq:household-lagrangian}
 	\mathcal{L} = \mathbb{E}_t \sum_{t=0}^{\infty} \beta^t 
-	\left\{ \left( \frac{C_t^{1-\sigma}}{1-\sigma} + \phi\frac{L_t^{1+\varphi}}{1+\varphi} \right) - \right.
+	\left\{ \left( \frac{C_t^{1-\sigma}}{1-\sigma} - \phi \frac{L_t^{1+\varphi}}{1+\varphi} \right) - \right.
 \\
 	\left. -\mu_t \Bigr[ P_t (C_t + K_{t+1} - (1-\delta) K_{t}) - (W_t L_t + R_t K_t + \Pi_t) \Bigl] \right\}
 \end{multline}
@@ -689,7 +689,7 @@ Consider two types of firms:
 
 \subsection{Final-Good Firm}
 
-\subsubsection*{Final-Good Firm Maximization Problem}
+\subsubsection*{Profit Maximization Problem}
 
 The role of the final-good firm is to aggregate all the varieties produced by the intermediate-good firms, so that the representative consumer can buy only one good $Y_t$, the bundle good. The final-good firm problem is to maximize its profit, considering that its output is the bundle $Y_t$ formed by the continuum of intermediate goods $Y_{jt}$, where $j \in [0,1]$ and $\psi$ is the elasticity of substitution between intermediate goods:
 \begin{align}
@@ -704,6 +704,8 @@ Substitute \ref{eq:final-good-firm-bundle-rule} in \ref{eq:final-good-firm-max-p
 \label{eq:final-good-firm-max-problem-2}
 	\max_{Y_{jt}}: & \quad \Pi_t = P_t \left( \int_{0}^{1} Y_{jt}^{\frac{\psi-1}{\psi}} \dif j \right)^{\frac{\psi}{\psi-1}} - \int_{0}^{1} P_{jt} Y_{jt} \dif j
 \end{align}
+
+\subsubsection*{First Order Condition and Solutions}
 
 The first order condition is:
 \begin{align}
@@ -729,6 +731,8 @@ Equation \ref{eq:final-good-firm-markup} is the final-good firm's markup.
 
 \subsection{Intermediate-Good Firms}
 
+\subsubsection*{Cost Minimization Problem}
+
 The intermediate-good firms, denoted by $j \in [0,1]$, produce varieties of a representative good with a certain level of substitutability. Each of these firms has to choose capital $K_{jt}$ and labor $N_{jt}$ to minimize production costs, subject to a technology rule.
 \begin{align}
 \label{eq:int-good-firm-total-cost}
@@ -741,6 +745,8 @@ where $Y_{jt}$ is the output obtained by the production technology level $Z_{At}
 
 \footnotetext{the production technology level $Z_{At}$ will be submitted to a productivity shock, detailed in section \ref{sec:productivity shock}.}
 
+\subsubsection*{Lagrangian}
+
 Applying the Lagrangian:
 \begin{align}
 \label{eq:int-good-firm-lagrangian}
@@ -749,12 +755,16 @@ Applying the Lagrangian:
 
 where the Lagrangian multiplier $\Lambda_{t}$ is the marginal cost\footnote{see Lemma \ref{lemma:marginal-cost}}.
 
+\subsubsection*{First Order Conditions}
+
 The first-order conditions are:
 \begin{alignat}{2}
 	K_{jt}: \quad & R_t - \Lambda_{t} Z_{At} \alpha K_{jt}^{\alpha-1} L_{jt}^{1-\alpha} = 0 &&\implies K_{jt} = \alpha Y_{jt} \frac{\Lambda_{t}}{R_t} \label{eq:int-good-firm-FOC-Kt} \\
 	L_{jt}: \quad & W_t - \Lambda_{t} Z_{At} K_{jt}^\alpha (1-\alpha) L_{jt}^{-\alpha} = 0 \quad &&\implies L_{jt} = (1-\alpha) Y_{jt} \frac{\Lambda_{t}}{W_t} \label{eq:int-good-firm-FOC-Lt} \\
 	\Lambda_t: \quad & Y_{jt} = Z_{At} K_{jt}^\alpha L_{jt}^{1-\alpha} \tag{\ref{eq:int-good-firm-production-function}}
 \end{alignat}
+
+\subsubsection*{Solutions}
 
 Divide equation \ref{eq:int-good-firm-FOC-Kt} by \ref{eq:int-good-firm-FOC-Lt}:
 \begin{align}
@@ -781,6 +791,8 @@ Substitute \ref{eq:int-good-firm-Kt-demand} in \ref{eq:int-good-firm-TMRS}:
 \end{alignat}
 
 Equation \ref{eq:int-good-firm-Lt-demand} is the intermediate-good firm demand for labor.
+
+\subsubsection*{Total and Marginal Costs}
 
 Calculate the total cost using \ref{eq:int-good-firm-Kt-demand} and \ref{eq:int-good-firm-Lt-demand}:
 \begin{alignat}{2}
@@ -816,7 +828,7 @@ notice that:
 % CALVO RULE
 % --------------------------------------------------
 
-\subsubsection*{Calvo Rule}
+\subsubsection*{Optimal Price Problem}
 
 Consider an economy with price stickiness, following the Calvo Rule \cite{calvo_staggered_1983}: each firm has a probability $(0 < \theta < 1)$ of keeping its price in the next period ($P_{j,t+1} = P_{jt}$), and a probability $(1 - \theta)$ of setting a new optimal price $P_{jt}^\ast$ that maximizes its profits. Each firm selects its optimal price to maximize the present value of the profit flow, taking into account the nominal interest rate $R_t$, despite the uncertainty regarding its ability to adjust prices in future periods.
 
@@ -848,6 +860,8 @@ Substitute \ref{eq:final-good-firm-FOC} in \ref{eq:int-good-firm-optimal-price-p
 \end{align}
 
 %%%%%
+
+\subsubsection*{First Order Condition}
 
 The first order condition with respect to $P_{jt}$ is:
 \begin{align}
@@ -939,7 +953,7 @@ and $R, \pi, Y$ are the variables in steady state, $\gamma_R$ is the smoothing p
 
 \subsection{Stochastic Shocks}\label{sec:stochastic-shocks}
 
-\subsubsection{Productivity Shock} \label{sec:productivity shock}
+\subsubsection*{Productivity Shock} \label{sec:productivity shock}
 
 The production technology level $Z_{At}$ will be submitted to a productivity shock defined by a first-order autoregressive process $AR(1)$:
 \begin{align}
@@ -948,7 +962,7 @@ The production technology level $Z_{At}$ will be submitted to a productivity sho
 
 where $\rho_A \in [0,1]$ and $\varepsilon_{At} \sim \mathscr{N}(0,\sigma_A)$.
 
-\subsubsection{Monetary Shock} \label{sec:monetary shock}
+\subsubsection*{Monetary Shock} \label{sec:monetary shock}
 
 The monetary policy will also be submitted to a shock, through the variable $Z_{Mt}$, defined by a first-order autoregressive process $AR(1)$:
 \begin{align}
@@ -1717,6 +1731,26 @@ Log-linearize \ref{eq:market-clearing-condition}:
 	\hat{Y}_t &= \frac{C}{Y}\hat{C}_t + \frac{I}{Y}\hat{I}_t  \label{eq:ll-market-clearing-condition}
 \end{alignat}
 
+Define the consumption and investment weights $\left[ \begin{smallmatrix} \theta_C & \theta_I \end{smallmatrix} \right] $ in the production total:
+\begin{align}
+	\label{eq:ss-C-I-weight-in-Y}
+	\begin{bmatrix}
+		\theta_C & \theta_I
+	\end{bmatrix} \coloneq 
+	\begin{bmatrix}
+		\displaystyle \frac{C}{Y} & \displaystyle \frac{I}{Y}
+	\end{bmatrix}
+\end{align}
+
+Substitute \ref{eq:ss-C-I-weight-in-Y} in \ref{eq:ll-market-clearing-condition}:
+\begin{align}
+	\hat{Y}_t &= \frac{C}{Y}\hat{C}_t + \frac{I}{Y}\hat{I}_t \implies \nonumber \\
+	\hat{Y}_t &= \theta_C \hat{C}_t + \theta_I \hat{I}_t 
+	\label{eq:ll-market-clearing-condition-theta}
+\end{align}
+
+
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \subsubsection{Monetary Policy}
@@ -1839,8 +1873,8 @@ The log-linear model is a square system of 12 variables and 12 equations, summar
 		
 		\item Market Clearing Condition:
 		\begin{align}
-			\hat{Y}_t &= \frac{C}{Y}\hat{C}_t + \frac{I}{Y}\hat{I}_t
-			\tag{\ref{eq:ll-market-clearing-condition}}
+			\hat{Y}_t &= \theta_C \hat{C}_t + \theta_I \hat{I}_t 
+			\tag{\ref{eq:ll-market-clearing-condition-theta}}
 		\end{align}
 		
 		\item Monetary Policy:
@@ -1875,9 +1909,13 @@ The log-linear model is a square system of 12 variables and 12 equations, summar
 % REGIONS
 % --------------------------------------------------
 
-Regions will be identified by the index $i \in \{1,2,\ldots,n\}$. For example, the variable $C\subt{}$ represents the total consumption, while $C\subt[it]$ represents the consumption of region $i$. Without loss of generality, the model will have two regions: the main region and the rest of the country, therefore $i \in \{1,2\}$.
+Regions will be identified by the index $\eta \in \{A,B,\ldots,n\}$. For example, the variable $C_t$ represents the total consumption, while $C\subt[\eta t]$ represents the consumption of region $\eta$. Without loss of generality, the model will have two regions: the main region $A$ and the remaining of the country $B$, so that $\eta \in \{A,B\}$.
 
 Determining whether the variable (or parameter) should be region-specific (or not) requires justification:
+
+\todo[inline]{falta revisar esta parte e agrupar por agente da economia}
+
+\todo[inline]{colocar estatística descritiva para justificar as variáveis}
 
 \begin{itemize}
 	\item \(C\subt[it]\) and \(I\subt[it]\): Consumption from region to region should vary based on the abundance of natural resources and the available technology in that region: each region will specialize in producing goods that are resource-intensive, considering the resources that are abundant in that specific region. This will increase the supply, decreasing their relative price and making them more demanded. Investment is decided based on the household maximization problem, in which consumption level must be decided regionally.
@@ -1896,6 +1934,12 @@ Determining whether the variable (or parameter) should be region-specific (or no
 	
 	\item \(A\subt[it]\) and \(\alpha\subt[i]\): The assumption is that each region has unique characteristics: exogenous (geographic and cultural) and endogenous (technological level, capital and labor supply). Because capital and labor supply levels are different, the intensity of each in the production function should be also different.
 \end{itemize}
+
+\newpage
+
+\subsubsection{Household}
+
+The utility maximization problem is the same for the representative household in each region, so is the solution:
 
 \newpage
 
@@ -1947,7 +1991,9 @@ Determining whether the variable (or parameter) should be region-specific (or no
 			\gamma_\pi \\
 			\gamma_Y   \\
 			\rho_A     \\
-			\rho_M
+			\rho_M     \\
+			\theta_C   \\
+			\theta_I
 		\end{bmatrix} = 
 		\begin{bmatrix}
 			\phi       \\
@@ -1962,7 +2008,9 @@ Determining whether the variable (or parameter) should be region-specific (or no
 			\gamma_\pi \\
 			\gamma_Y   \\
 			\rho_A     \\
-			\rho_M 
+			\rho_M     \\
+			\theta_C   \\
+			\theta_I   
 		\end{bmatrix}
 	\end{align}
 	
@@ -2050,10 +2098,10 @@ Determining whether the variable (or parameter) should be region-specific (or no
 		$\rho_A$           & autoregressive parameter of productivity & \\
 		\hline
 		$\rho_M$           & autoregressive parameter of monetary policy & \\
-		%\hline
-		%&& \\
-		%\hline
-		%&& \\
+		\hline
+		$\theta_C$         & consumption weight in production  & \\
+		\hline
+		$\theta_I$         & investment weight in production  & \\
 		\hline[2pt]
 	\end{tblr}
 	
@@ -2932,6 +2980,7 @@ log-linearize the left hand equation:
 %	\cancelto{〈value〉}{〈expression〉} draws a diagonal arrow through the 〈expression〉, pointing to the 〈value〉.
 	
 	\item space before align: \com{vspace\{-1cm\}} % \vspace*{-1cm}
+	
 	\item correct paragraph overfull: \com{sloppy}
 		
 	\item indices: $i,j,k,\ell$
