@@ -72,7 +72,7 @@ Following the models presented by \textcite{costa_junior_understanding_2016} and
 	\st: \quad & P_{C1t} C_{1\eta t} + P_{C2t} C_{2\eta t} + P_{C\eta t} I_{\eta t} = W_t L_{\eta t} + R_t K_{\eta t} + \Pi_{\nu t} \label{eq:reg-budget-constraint} \\
 	\quad & K_{\eta, t+1} = (1-\delta)K_{\eta t} + I_{\eta t} \label{eq:reg-law-of-motion-for-capital} \\
 	% \quad & C_{\eta t} = \prod_{o=1}^{n} C_{o\eta t}^{\theta_o} \quad ; \quad \sum_{o=1}^{n} \theta_o = 1 \label{eq:reg-consumption-aggregation} \\
-	\quad & C_{\eta t} = C_{1\eta t}^{\omega_1} C_{2\eta t}^{1-\omega_1} \label{eq:reg-consumption-aggregation} \\
+	\quad & C_{\eta t} = C_{1\eta t}^{\omega_{\eta}} C_{2\eta t}^{1-\omega_{\eta}} \label{eq:reg-consumption-aggregation} \\
 	\quad & C_{\nu\eta t}, L_{\eta t}, K_{\eta, t+1} > 0 \text{ ; $K_0$ given.} \nonumber
 \end{align}
 
@@ -499,7 +499,8 @@ where $\rho_M \in [0,1]$ and $\varepsilon_{Mt} \sim \mathscr{N}(0,\sigma_M)$.
 
 A Competitive Equilibrium consists of sequences of prices $\{P_{C\nu t}^\ast, R_t^\ast, W_t^\ast\}$, allocations for households $\mathbfscr{A}_H \coloneq \{C_{\eta t}^\ast, L_{\eta t}^\ast, K_{\eta, t+1}^\ast\}$ and for firms $\mathbfscr{A}_F \coloneq \{K_{\eta jt}^\ast, L_{\eta jt}^\ast, Y_{\nu jt}^\ast, Y_{\nu t}^\ast\}$. In such an equilibrium, given the set of exogenous variables $\{K_0, Z_{A\nu t}, Z_{Mt}\}$, the elements in $\mathbfscr{A}_H$ solve the household problem, while the elements in $\mathbfscr{A}_F$ solve the firms' problems, and the markets for goods and labor clear:
 \begin{align}
-	Y_t &= \sum_{\eta=1}^{n} (C_{\eta t} + I_{\eta t}) \label{eq:reg-market-clearing-condition} \\
+	% Y_t &= \sum_{\eta=1}^{n} (C_{\eta t} + I_{\eta t})
+	Y_t &= \sum_{\nu=1}^{n} Y_{\nu t} \label{eq:reg-market-clearing-condition} \\
 	L_{\eta t} &= \int_{0}^{1} L_{\eta jt} \dif j \label{eq:reg-market-clearing-condition-2}
 \end{align}
 
@@ -543,7 +544,7 @@ The model is composed of the preview solutions, forming a square system of 27 va
 			
 			\item Budget Constraint: 
 			\begin{align}
-				P_{C\nu t} (C_{\eta t} + I_{\eta t}) = W_t L_{\eta t} + R_t K_{\eta t} + \Pi_{\nu t}
+				P_{C1t} C_{1\eta t} + P_{C2t} C_{2\eta t} + P_{C\eta t} I_{\eta t} = W_t L_{\eta t} + R_t K_{\eta t} + \Pi_{\nu t}
 				\tag{\ref{eq:reg-budget-constraint}}
 			\end{align}
 			
@@ -559,7 +560,7 @@ The model is composed of the preview solutions, forming a square system of 27 va
 				\tag{\ref{eq:reg-final-goods-firm-bundle-rule}}
 			\end{align}
 			
-			\item General Price Level:
+			\item Regional Price Level:
 			\begin{align}
 				P_{C\nu t} = \left[ \theta P_{t-1}^{1-\psi} + (1-\theta) P_{C\nu t}^{\ast 1-\psi} \right]^\frac{1}{1-\psi}
 				\tag{\ref{eq:reg-general-price-level}}
@@ -599,7 +600,8 @@ The model is composed of the preview solutions, forming a square system of 27 va
 			
 			\item Market Clearing Condition:
 			\begin{align}
-				Y_t = \sum_{\eta=1}^{n} (C_{\eta t} + I_{\eta t}) \tag{\ref{eq:reg-market-clearing-condition}}
+				% Y_t = \sum_{\eta=1}^{n} (C_{\eta t} + I_{\eta t})
+				Y_t &= \sum_{\nu=1}^{n} Y_{\nu t} \tag{\ref{eq:reg-market-clearing-condition}}
 			\end{align}
 			
 			\item Monetary Policy:
@@ -611,10 +613,21 @@ The model is composed of the preview solutions, forming a square system of 27 va
 				\tag{\ref{eq:reg-monetary-policy}}
 			\end{align}
 			
-			\item Gross Inflation Rate:
+			\item National Gross Inflation Rate:
 			\begin{align}
-				\pi_t = \frac{P_{C\nu t}}{P_{t-1}}
+				\pi_t = \frac{P_t}{P_{t-1}}
 				\tag{\ref{eq:reg-gross-inflation-rate}}
+			\end{align}
+
+			\item National Price Level:
+			\begin{align}
+				P_t = \vartheta_1 P_{C1 t} + (1 -\vartheta_1) P_{C2 t}
+				\tag{\ref{eq:national-price-level}}
+			\end{align}
+
+			\item Regional Gross Inflation Rate:
+			\begin{align}
+				\pi_{\nu t} = \frac{P_{C\nu t}}{P_{C\nu, t-1}} \tag{\ref{eq:regional-inflation}}
 			\end{align}
 			
 			\item Productivity Shock:
@@ -643,12 +656,14 @@ The model is composed of the preview solutions, forming a square system of 27 va
 
 \subsection{Steady State}
 
-The steady state is defined by the constancy of the variables through time. For any given endogenous variable $X_t$, it is in steady state if $\mathbb{E}_t X_{t+1} = X_t = X_{t-1} = X_{ss}$ \cite[p.41]{costa_junior_understanding_2016}. For conciseness, the $ss$ index representing the steady state will be omitted, so that $X \coloneq X_{ss}$. The steady state of each equation of the model is:
+The steady state of a variable is defined by its constancy through time. For any given variable $X_t$, it is in steady state if $\mathbb{E}_t X_{t+1} = X_t = X_{t-1} = X_{ss}$ \cite[p.41]{costa_junior_understanding_2016}. For conciseness, the $ss$ index representing the steady state will be omitted, so that $X \coloneq X_{ss}$. The model steady state is:
+
+% The steady state is defined by the constancy of the variables through time. For any given endogenous variable $X_t$, it is in steady state if $\mathbb{E}_t X_{t+1} = X_t = X_{t-1} = X_{ss}$ \cite[p.41]{costa_junior_understanding_2016}. For conciseness, the $ss$ index representing the steady state will be omitted, so that $X \coloneq X_{ss}$. The steady state of each equation in the model is:
 
 \begin{enumerate}
 	\item Labor Supply:
 	\begin{align}
-		\frac{\phi L_{\eta t}^{\varphi}}{C_{\eta t}^{-\sigma}} = \frac{W_t}{P_{C\nu t}} \implies \frac{\phi L_{\eta}^{\varphi}}{C_{\eta}^{-\sigma}} = \frac{W}{P} \label{eq:reg-ss-household-labor-supply}
+		\frac{\phi L_{\eta t}^{\varphi}}{C_{\eta t}^{-\sigma}} = \frac{W_t}{P_{\eta t}} \implies \frac{\phi L_{\eta}^{\varphi}}{C_{\eta}^{-\sigma}} = \frac{W}{P_\eta} \label{eq:reg-ss-household-labor-supply}
 	\end{align}
 	
 	\item Household Euler Equation: 
@@ -659,8 +674,8 @@ The steady state is defined by the constancy of the variables through time. For 
 	
 	\item Budget Constraint: 
 	\begin{align}
-		P_{C\nu t} (C_{\eta t} + I_{\eta t}) &= W_t L_{\eta t} + R_t K_{\eta t} + \Pi_{\nu t} \implies \nonumber \\
-		P (C_{\eta} + I_{\eta}) &= W L_{\eta} + R K_{\eta} + \Pi_{\eta} \label{eq:reg-ss-household-budget-constraint}
+		P_{C1t} C_{1\eta t} + P_{C2t} C_{2\eta t} + P_{C\eta t} I_{\eta t} &= W_t L_{\eta t} + R_t K_{\eta t} + \Pi_{\nu t} \implies \nonumber \\
+		P_{C1} C_{1\eta} + P_{C2} C_{2\eta} + P_{C\eta} I_{\eta} &= W L_{\eta} + R K_{\eta} + \Pi_{\nu} \label{eq:reg-ss-household-budget-constraint}
 	\end{align}
 	
 	\item Law of Motion for Capital:
@@ -675,26 +690,22 @@ The steady state is defined by the constancy of the variables through time. For 
 		Y_{\nu} = \left( \int_{0}^{1} Y_{\nu j}^{\frac{\psi-1}{\psi}} \dif j \right)^{\frac{\psi}{\psi-1}} \label{eq:reg-ss-final-goods-firm-bundle-rule}
 	\end{align}
 	
-	\item General Price Level:
+	\item Regional Price Level:
 	\begin{alignat}{2}
 		\label{eq:reg-ss-general-price-level}
-		P_{C\nu t} &= \left[ \theta P_{t-1}^{1-\psi} + (1-\theta) P_{C\nu t}^{\ast 1-\psi} \right]^\frac{1}{1-\psi} &&\implies \nonumber \\
-		P^{1-\psi} &= \theta P^{1-\psi} + (1-\theta) P^{\ast 1-\psi} &&\implies \nonumber \\ 
-		(1-\theta) P^{1-\psi} &= (1-\theta) P^{\ast 1-\psi} &&\implies P = P^\ast
+		P_{C\nu t} &= \left[ \theta P_{C\nu t-1}^{1-\psi} + (1-\theta) P_{C\nu t}^{\ast 1-\psi} \right]^\frac{1}{1-\psi} &&\implies \nonumber \\
+		P_{C\nu}^{1-\psi} &= \theta P_{C\nu}^{1-\psi} + (1-\theta) P_{C\nu}^{\ast 1-\psi} &&\implies \nonumber \\ 
+		(1-\theta) P_{C\nu}^{1-\psi} &= (1-\theta) P_{C\nu}^{\ast 1-\psi} &&\implies P_{C\nu} = P_{C\nu}^\ast
 	\end{alignat}
 	
 	\item Capital Demand:
 	\begin{align}
-		\label{eq:reg-ss-int-good-firm-FOC-Kt}
-		K_{\eta jt} = {\alpha_\nu} Y_{\nu jt} \frac{\Lambda_{\nu t}}{R_t} \implies 
-		K_{j} = {\alpha_\nu} Y{j} \frac{\Lambda}{R}
+		K_{\eta jt} = {\alpha_\nu} Y_{\nu jt} \frac{\Lambda_{\nu t}}{R_t} \implies K_{\eta j} = {\alpha_\nu} Y_{\nu j} \frac{\Lambda_{\nu}}{R} \label{eq:reg-ss-int-good-firm-FOC-Kt}
 	\end{align}
 	
 	\item Labor Demand:
 	\begin{align}
-		\label{eq:reg-ss-int-good-firm-FOC-Lt}
-		L_{\eta jt} = (1-{\alpha_\nu}) Y_{\nu jt} \frac{\Lambda_{\nu t}}{W_t} \implies 
-		L_{j} = (1-{\alpha_\nu}) Y{j} \frac{\Lambda}{W}
+		L_{\eta jt} = (1-{\alpha_\nu}) Y_{\nu jt} \frac{\Lambda_{\nu t}}{W_t} \implies L_{\eta j} = (1 -{\alpha_\nu}) Y_{\nu j} \frac{\Lambda_{\nu}}{W} \label{eq:reg-ss-int-good-firm-FOC-Lt}
 	\end{align}
 	
 	% \item Marginal Rate of Substitution of Factors (\ref{eq:reg-int-good-firm-TMRS}):
@@ -703,7 +714,7 @@ The steady state is defined by the constancy of the variables through time. For 
 	\item Marginal Cost:
 	\begin{align}
 		\Lambda_{\nu t} &= \frac{1}{Z_{A\nu t}} \left( \frac{R_t}{{\alpha_\nu}} \right)^{{\alpha_\nu}} \left( \frac{W_t}{1-{\alpha_\nu}} \right)^{1-{\alpha_\nu}} \implies \nonumber \\
-		\Lambda_{\eta} &= \frac{1}{Z_{A\nu}} \left( \frac{R}{{\alpha_\nu}} \right)^{{\alpha_\nu}} \left( \frac{W}{1-{\alpha_\nu}} \right)^{1-{\alpha_\nu}} \label{eq:reg-ss-int-good-firm-MC-2}
+		\Lambda_{\nu} &= \frac{1}{Z_{A\nu}} \left( \frac{R}{{\alpha_\nu}} \right)^{{\alpha_\nu}} \left( \frac{W}{1-{\alpha_\nu}} \right)^{1-{\alpha_\nu}} \label{eq:reg-ss-int-good-firm-MC-2}
 	\end{align}
 	
 	\item Production Technology:
@@ -714,13 +725,14 @@ The steady state is defined by the constancy of the variables through time. For 
 	\item Optimal Price:
 	\begin{alignat}{2}
 		P_{C\nu t}^\ast &= \frac{\psi}{\psi-1} \cdot \frac{\E \sum_{s=0}^{\infty} \left\{\theta^s Y_{\nu j,t+s} \Lambda_{\nu t+s} / \prod_{k=0}^{s-1}(1+R_{t+k}) \right\}} {\E \sum_{s=0}^{\infty} \left\{ \theta^s Y_{\nu j,t+s} / \prod_{k=0}^{s-1}(1+R_{t+k}) \right\}} &\implies \tag{\ref{eq:reg-int-good-firm-optimal-price-FOC-3}} \\
-		P^\ast &= \frac{\psi}{\psi-1} \cdot \frac{ Y_{\nu j} \Lambda_{\eta} / [1-\theta(1-R)]} {Y_{\nu j} / [1-\theta(1-R)]} &\implies \nonumber \\
-		P^\ast &= \frac{\psi}{\psi-1} \Lambda_{\eta} \label{eq:reg-ss-int-good-firm-optimal-price-FOC-3}
+		P_{C\nu}^\ast &= \frac{\psi}{\psi-1} \cdot \frac{ Y_{\nu j} \Lambda_{\nu} / [1-\theta(1-R)]} {Y_{\nu j} / [1-\theta(1-R)]} &\implies \nonumber \\
+		P_{C\nu}^\ast &= \frac{\psi}{\psi-1} \Lambda_{\nu} \label{eq:reg-ss-int-good-firm-optimal-price-FOC-3}
 	\end{alignat}
 	
 	\item Market Clearing Condition:
 	\begin{align}
-		Y_t = \sum_{\eta=1}^{n} (C_{\eta t} + I_{\eta t}) \implies Y = \sum_{\eta=1}^{n} (C_{\eta} + I_{\eta}) \label{eq:reg-ss-market-clearing-condition}
+		% Y_t = \sum_{\eta=1}^{n} (C_{\eta t} + I_{\eta t}) \implies Y = \sum_{\eta=1}^{n} (C_{\eta} + I_{\eta})
+		Y_t = \sum_{\nu=1}^{n} Y_{\nu t} \implies Y = \sum_{\nu=1}^{n} Y_{\nu} \label{eq:reg-ss-market-clearing-condition}
 	\end{align}
 	
 	\item Monetary Policy:
@@ -733,11 +745,24 @@ The steady state is defined by the constancy of the variables through time. For 
 		\implies Z_{M} = 1
 	\end{align}
 	
-	\item Gross Inflation Rate:
+%%%%%%%%%%%%%%%%%%%%%%%%
+
+	\item National Gross Inflation Rate:
 	\begin{align}
-		\label{eq:reg-ss-gross-inflation-rate}
-		\pi_t = \frac{P_{C\nu t}}{P_{t-1}} \implies \pi = 1
+		\pi_t = \frac{P_t}{P_{t-1}} \implies \pi = 1 \label{eq:reg-ss-gross-inflation-rate}
 	\end{align}
+	
+	\item National Price Level:
+	\begin{align}
+		P_t = \vartheta_1 P_{C1 t} + (1 -\vartheta_1) P_{C2 t} \implies P = \vartheta_1 P_{C1} + (1 -\vartheta_1) P_{C2} \label{eq:ss-national-price-level}
+	\end{align}
+	
+	\item Regional Gross Inflation Rate:
+	\begin{align}
+		\pi_{\nu t} = \frac{P_{C\nu t}}{P_{C\nu, t-1}} \implies \pi_{\nu} = 1 \label{eq:ss-regional-inflation}
+	\end{align}
+
+%%%%%%%%%%%%%%%%%%%%%%%%
 	
 	\item Productivity Shock:
 	\begin{alignat}{2}
@@ -763,16 +788,18 @@ The steady state is defined by the constancy of the variables through time. For 
 
 % All endogenous prices $\{P, R, W, MC\}$ and quantities $\{C, I, Y, K, L\}$
 
-For the steady state solution, all endogenous variables will be determined with respect to the parameters. It's assumed that the productivity and the price level are normalized to one: $\left[ \begin{smallmatrix} P & Z_{A\nu} \end{smallmatrix} \right] = \vec{\bm{1}}$ \footnotemark{}. \footnotetext{where $\vec{\bm{1}}$ is the unit vector.}
+For the steady state solution, all endogenous variables will be determined with respect to the parameters. It's assumed that the productivity and the price level are normalized to one: $\left[ \begin{smallmatrix} P & Z_{A\nu} \end{smallmatrix} \right] = \vec{\bm{1}}$.\footnote{where $\vec{\bm{1}}$ is the unit vector.}
 
-From \ref{eq:reg-ss-general-price-level}, the optimal price $P^\ast$ is:
+From \ref{eq:reg-ss-general-price-level}, the regional optimal price $P^\ast$ is:
 \begin{align}
-	P^\ast = P
+	P_{C\nu} = P_{C\nu}^\ast
 \end{align}
 
-From \ref{eq:reg-ss-gross-inflation-rate}, the gross inflation rate is:
+From \ref{eq:reg-ss-gross-inflation-rate} and \ref{eq:ss-regional-inflation}, the national and regional gross inflation rates are:
 \begin{align}
-	\pi = 1
+	\begin{bmatrix}
+		\pi & \pi_{\nu}
+	\end{bmatrix} = \vec{\bm{1}}
 \end{align}
 
 From \ref{eq:reg-ss-monetary-policy}, the monetary shock is:
@@ -794,48 +821,40 @@ From \ref{eq:reg-ss-household-euler-equation}, the return on capital $R$ is:
 	R = P\left[ \frac{1}{\beta} - (1-\delta) \right]
 \end{align}
 
-From \ref{eq:reg-ss-int-good-firm-optimal-price-FOC-3} and \ref{eq:reg-ss-general-price-level}, the marginal cost $\Lambda_{\eta}$ is:
+From \ref{eq:reg-ss-int-good-firm-optimal-price-FOC-3} and \ref{eq:reg-ss-general-price-level}, the marginal cost $\Lambda_{\nu}$ is:
 \begin{align}
-	P^\ast &= \frac{\psi}{\psi-1} \Lambda_{\eta} \implies \Lambda_{\eta} = P \frac{\psi-1}{\psi} \label{eq:reg-ss-marginal-cost}
+	P_{C\nu}^\ast &= \frac{\psi}{\psi-1} \Lambda_{\nu} \implies \Lambda_{\nu} = P_{C\nu} \frac{\psi-1}{\psi} \label{eq:reg-ss-marginal-cost}
 \end{align}
 
 From equation \ref{eq:reg-ss-int-good-firm-MC-2}, the nominal wage $W$ is:
 \begin{alignat}{2}
-	\Lambda_{\eta} &= \frac{1}{Z_{A\nu}} \left( \frac{R}{{\alpha_\nu}} \right)^{{\alpha_\nu}} \left( \frac{W}{1-{\alpha_\nu}} \right)^{1-{\alpha_\nu}} &\implies \nonumber \\ 
-	W &= (1-{\alpha_\nu}) \left[ \Lambda_{\eta} Z_{A\nu} \left( \frac{{\alpha_\nu}}{R} \right)^{{\alpha_\nu}} \right]^\frac{1}{1-{\alpha_\nu}} &\, \label{eq:reg-ss-nominal-wage}
+	\Lambda_{\nu} &= \frac{1}{Z_{A\nu}} \left( \frac{R}{{\alpha_\nu}} \right)^{{\alpha_\nu}} \left( \frac{W}{1-{\alpha_\nu}} \right)^{1-{\alpha_\nu}} &\implies \nonumber \\ 
+	W &= (1-{\alpha_\nu}) \left[ \Lambda_{\nu} Z_{A\nu} \left( \frac{{\alpha_\nu}}{R} \right)^{{\alpha_\nu}} \right]^\frac{1}{1-{\alpha_\nu}} &\, \label{eq:reg-ss-nominal-wage}
 \end{alignat}
 
-@@@ CONTINUAR DAQUI @@@
-
-In steady state, prices are the same ($P=P^\ast$), resulting in a gross inflation level of one ($\pi=1$), and all firms producing the same output level ($Y_j=Y$) due to the price parity \cite[Lecture 13, p.12]{solis-garcia_ucb_2022}. For this reason, they all demand the same amount of factors ($K,L$), and equations \ref{eq:reg-ss-int-good-firm-FOC-Kt}, \ref{eq:reg-ss-int-good-firm-FOC-Lt}, and \ref{eq:reg-ss-int-good-firm-production-function} become:
+In steady state, prices are the same ($P_{C\nu} = P_{C\nu}^\ast$), resulting in a gross inflation level of one ($\pi_{\nu} = 1$), and all firms producing the same output level ($Y_{\nu j} = Y_{\nu}$) due to the price parity \cite[Lecture 13, p.12]{solis-garcia_ucb_2022}. For this reason, they all demand the same amount of factors ($K_{\eta}, L_{\eta}$), and equations \ref{eq:reg-ss-int-good-firm-FOC-Kt}, \ref{eq:reg-ss-int-good-firm-FOC-Lt}, and \ref{eq:reg-ss-int-good-firm-production-function} become:
 \begin{align}
-	\label{eq:reg-ss-int-good-firm-production-function-2}
-	Y &= Z_{A\nu} K^{\alpha_\nu} L^{1-{\alpha_\nu}}   \\
-	\label{eq:reg-ss-int-good-firm-FOC-Kt-2}
-	K &= {\alpha_\nu} Y \frac{\Lambda}{R}    \\
-	\label{eq:reg-ss-int-good-firm-FOC-Lt-2}
-	L &= (1-{\alpha_\nu}) Y \frac{\Lambda}{W}
+	K_{\eta} &= {\alpha_\nu} Y_{\nu} \frac{\Lambda_{\nu}}{R} \label{eq:reg-ss-int-good-firm-FOC-Kt-2} \\
+	L_{\eta} &= (1-{\alpha_\nu}) Y_{\nu} \frac{\Lambda_{\nu}}{W} \label{eq:reg-ss-int-good-firm-FOC-Lt-2} \\
+	Y_{\nu} &= Z_{A\nu} K_{\eta}^{\alpha_\nu} L_{\eta}^{1 -{\alpha_\nu}} \label{eq:reg-ss-int-good-firm-production-function-2}
 \end{align}
+
+\todo[inline]{here, there is no Y = C + I to substitute...}
 
 Substitute \ref{eq:reg-ss-int-good-firm-FOC-Kt-2} in \ref{eq:reg-ss-law-of-motion-for-capital}:
 \begin{align}
-	\label{eq:reg-ss-investment}
-	I = \delta K \implies I = \delta {\alpha_\nu} Y \frac{\Lambda}{R}
+I_{\eta} = \delta K_{\eta} \implies I_{\eta} = \delta {\alpha_\nu} Y_{\eta} \frac{\Lambda_{\nu}}{R} \label{eq:reg-ss-investment}
 \end{align}
 
 Substitute \ref{eq:reg-ss-int-good-firm-FOC-Lt-2} in \ref{eq:reg-ss-household-labor-supply}:
 \begin{align}
-	\label{eq:reg-ss-consumption}
-	\frac{\phi L^{\varphi}}{C^{-\sigma}} = \frac{W}{P}
-	\implies
-	C = \left[ L^{-\varphi} \frac{W}{\phi P} \right]^{\frac{1}{\sigma}}
-	\implies
-	C = \left[ \left( (1-{\alpha_\nu}) Y \frac{\Lambda}{W} \right)^{-\varphi} \frac{W}{\phi P} \right]^{\frac{1}{\sigma}}
+	\frac{\phi L_{\eta}^{\varphi}}{C_{\eta}^{-\sigma}} = \frac{W}{P_{\eta}} \implies C_{\eta} &= \left[ L_{\eta}^{-\varphi} \frac{W}{\phi P_{\eta}} \right]^{\frac{1}{\sigma}} \implies \nonumber\\
+	C_{\eta} &= \left[ \left( (1-{\alpha_\nu}) Y_{\nu} \frac{\Lambda_{\nu}}{W} \right)^{-\varphi} \frac{W}{\phi P_{\eta}} \right]^{\frac{1}{\sigma}} \label{eq:reg-ss-consumption}
 \end{align}
 
 Substitute \ref{eq:reg-ss-investment} and \ref{eq:reg-ss-consumption} in \ref{eq:reg-ss-market-clearing-condition}:
 \begin{alignat}{2}
-	Y &= C + I &\implies \nonumber \\
+	Y_{\nu} &= \sum_{\eta=1}^{n} (C_{\eta} + I_{\eta}) &\implies \nonumber \\
 	Y &= \left[ \left( (1-{\alpha_\nu}) Y \frac{\Lambda}{W} \right)^{-\varphi} \frac{W}{\phi P} \right]^{\frac{1}{\sigma}} + \left[ \delta {\alpha_\nu} Y \frac{\Lambda}{R} \right] &\implies \nonumber \\
 	Y &=\left[
 	\left( \frac{W}{\phi P}                \right)
