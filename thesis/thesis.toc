@@ -33,60 +33,60 @@
 \contentsline {subsubsection}{\numberline {3.8.15}Log-linear Model Structure}{36}{subsubsection.3.8.15}%
 \contentsline {section}{\numberline {4}Regions}{38}{section.4}%
 \contentsline {subsection}{\numberline {4.1}Household}{40}{subsection.4.1}%
-\contentsline {subsection}{\numberline {4.2}Final-Good Firm}{43}{subsection.4.2}%
-\contentsline {subsection}{\numberline {4.3}Intermediate-Good Firms}{44}{subsection.4.3}%
-\contentsline {subsubsection}{\numberline {4.3.1}Final-Good Firm, part II}{49}{subsubsection.4.3.1}%
-\contentsline {subsection}{\numberline {4.4}Monetary Authority}{49}{subsection.4.4}%
-\contentsline {subsection}{\numberline {4.5}Stochastic Shocks}{50}{subsection.4.5}%
-\contentsline {subsection}{\numberline {4.6}Equilibrium Conditions}{50}{subsection.4.6}%
-\contentsline {subsubsection}{\numberline {4.6.1}Model Structure}{52}{subsubsection.4.6.1}%
-\contentsline {subsection}{\numberline {4.7}Steady State}{54}{subsection.4.7}%
-\contentsline {subsubsection}{\numberline {4.7.1}Variables in Steady State}{56}{subsubsection.4.7.1}%
-\contentsline {subsubsection}{\numberline {4.7.2}Steady State Solution}{59}{subsubsection.4.7.2}%
-\contentsline {subsection}{\numberline {4.8}Log-linearization}{59}{subsection.4.8}%
-\contentsline {subsubsection}{\numberline {4.8.1}Gross Inflation Rate}{60}{subsubsection.4.8.1}%
-\contentsline {subsubsection}{\numberline {4.8.2}New Keynesian Phillips Curve}{60}{subsubsection.4.8.2}%
-\contentsline {subsubsection}{\numberline {4.8.3}Labor Supply}{64}{subsubsection.4.8.3}%
-\contentsline {subsubsection}{\numberline {4.8.4}Household Euler Equation}{65}{subsubsection.4.8.4}%
-\contentsline {subsubsection}{\numberline {4.8.5}Law of Motion for Capital}{65}{subsubsection.4.8.5}%
-\contentsline {subsubsection}{\numberline {4.8.6}Bundle Technology}{65}{subsubsection.4.8.6}%
-\contentsline {subsubsection}{\numberline {4.8.7}Marginal Cost}{66}{subsubsection.4.8.7}%
-\contentsline {subsubsection}{\numberline {4.8.8}Production Function}{66}{subsubsection.4.8.8}%
-\contentsline {subsubsection}{\numberline {4.8.9}Capital Demand}{68}{subsubsection.4.8.9}%
-\contentsline {subsubsection}{\numberline {4.8.10}Labor Demand}{68}{subsubsection.4.8.10}%
-\contentsline {subsubsection}{\numberline {4.8.11}Market Clearing Condition}{69}{subsubsection.4.8.11}%
-\contentsline {subsubsection}{\numberline {4.8.12}Monetary Policy}{69}{subsubsection.4.8.12}%
-\contentsline {subsubsection}{\numberline {4.8.13}Productivity Shock}{70}{subsubsection.4.8.13}%
-\contentsline {subsubsection}{\numberline {4.8.14}Monetary Shock}{70}{subsubsection.4.8.14}%
-\contentsline {subsubsection}{\numberline {4.8.15}Log-linear Model Structure}{70}{subsubsection.4.8.15}%
-\contentsline {section}{\numberline {5}Data}{72}{section.5}%
-\contentsline {section}{\numberline {6}Results}{72}{section.6}%
-\contentsline {subsection}{\numberline {6.1}Calibration}{73}{subsection.6.1}%
-\contentsline {subsubsection}{\numberline {6.1.1}Parameter Calibration}{73}{subsubsection.6.1.1}%
-\contentsline {subsubsection}{\numberline {6.1.2}Variables at the Steady State}{73}{subsubsection.6.1.2}%
-\contentsline {subsubsection}{\numberline {6.1.3}Parameter Calibration}{74}{subsubsection.6.1.3}%
-\contentsline {subsubsection}{\numberline {6.1.4}Variables at the Steady State}{75}{subsubsection.6.1.4}%
-\contentsline {subsubsection}{\numberline {6.1.5}Impulse Response Graphics}{76}{subsubsection.6.1.5}%
-\contentsline {subsection}{\numberline {6.2}Parametrization}{76}{subsection.6.2}%
-\contentsline {section}{\numberline {7}Final Remarks}{76}{section.7}%
-\contentsline {section}{References}{78}{section*.297}%
-\contentsline {section}{\numberline {A}Appendix}{79}{appendix.A}%
-\contentsline {subsection}{\numberline {A.1}Table of the Literature Review}{79}{subsection.A.1}%
-\contentsline {subsection}{\numberline {A.2}Definitions, Theorems and Lemmas}{79}{subsection.A.2}%
-\contentsline {subsubsection}{\numberline {A.2.1}Model}{79}{subsubsection.A.2.1}%
-\contentsline {subsubsection}{\numberline {A.2.2}Household}{79}{subsubsection.A.2.2}%
-\contentsline {subsubsection}{\numberline {A.2.3}Firms}{81}{subsubsection.A.2.3}%
-\contentsline {subsubsection}{\numberline {A.2.4}Monetary Authority}{81}{subsubsection.A.2.4}%
-\contentsline {subsubsection}{\numberline {A.2.5}Shocks}{81}{subsubsection.A.2.5}%
-\contentsline {subsubsection}{\numberline {A.2.6}Equilibrium Conditions}{81}{subsubsection.A.2.6}%
-\contentsline {subsubsection}{\numberline {A.2.7}Steady State}{81}{subsubsection.A.2.7}%
-\contentsline {subsubsection}{\numberline {A.2.8}Log-linearization}{82}{subsubsection.A.2.8}%
-\contentsline {subsubsection}{\numberline {A.2.9}Canonical NK Model}{84}{subsubsection.A.2.9}%
-\contentsline {subsection}{\numberline {A.3}Dynare Program}{85}{subsection.A.3}%
-\contentsline {subsection}{\numberline {A.4}\LaTeX }{93}{subsection.A.4}%
-\contentsline {subsubsection}{\numberline {A.4.1}Commands}{93}{subsubsection.A.4.1}%
-\contentsline {subsubsection}{\numberline {A.4.2}Font Styles in Math Mode}{95}{subsubsection.A.4.2}%
-\contentsline {subsubsection}{\numberline {A.4.3}Greek Letters}{97}{subsubsection.A.4.3}%
-\contentsline {subsection}{\numberline {A.5}ToDo List}{98}{subsection.A.5}%
-\contentsline {subsection}{\numberline {A.6}Epigraphs}{98}{subsection.A.6}%
-\contentsline {subsection}{\numberline {A.7}Drafts}{98}{subsection.A.7}%
+\contentsline {subsection}{\numberline {4.2}Final-Good Firm}{44}{subsection.4.2}%
+\contentsline {subsection}{\numberline {4.3}Intermediate-Good Firms}{45}{subsection.4.3}%
+\contentsline {subsubsection}{\numberline {4.3.1}Final-Good Firm, part II}{50}{subsubsection.4.3.1}%
+\contentsline {subsection}{\numberline {4.4}Monetary Authority}{50}{subsection.4.4}%
+\contentsline {subsection}{\numberline {4.5}Stochastic Shocks}{51}{subsection.4.5}%
+\contentsline {subsection}{\numberline {4.6}Equilibrium Conditions}{51}{subsection.4.6}%
+\contentsline {subsubsection}{\numberline {4.6.1}Model Structure}{53}{subsubsection.4.6.1}%
+\contentsline {subsection}{\numberline {4.7}Steady State}{55}{subsection.4.7}%
+\contentsline {subsubsection}{\numberline {4.7.1}Variables in Steady State}{57}{subsubsection.4.7.1}%
+\contentsline {subsubsection}{\numberline {4.7.2}Steady State Solution}{60}{subsubsection.4.7.2}%
+\contentsline {subsection}{\numberline {4.8}Log-linearization}{60}{subsection.4.8}%
+\contentsline {subsubsection}{\numberline {4.8.1}Gross Inflation Rate}{61}{subsubsection.4.8.1}%
+\contentsline {subsubsection}{\numberline {4.8.2}New Keynesian Phillips Curve}{61}{subsubsection.4.8.2}%
+\contentsline {subsubsection}{\numberline {4.8.3}Labor Supply}{65}{subsubsection.4.8.3}%
+\contentsline {subsubsection}{\numberline {4.8.4}Household Euler Equation}{66}{subsubsection.4.8.4}%
+\contentsline {subsubsection}{\numberline {4.8.5}Law of Motion for Capital}{66}{subsubsection.4.8.5}%
+\contentsline {subsubsection}{\numberline {4.8.6}Bundle Technology}{66}{subsubsection.4.8.6}%
+\contentsline {subsubsection}{\numberline {4.8.7}Marginal Cost}{67}{subsubsection.4.8.7}%
+\contentsline {subsubsection}{\numberline {4.8.8}Production Function}{67}{subsubsection.4.8.8}%
+\contentsline {subsubsection}{\numberline {4.8.9}Capital Demand}{69}{subsubsection.4.8.9}%
+\contentsline {subsubsection}{\numberline {4.8.10}Labor Demand}{69}{subsubsection.4.8.10}%
+\contentsline {subsubsection}{\numberline {4.8.11}Market Clearing Condition}{70}{subsubsection.4.8.11}%
+\contentsline {subsubsection}{\numberline {4.8.12}Monetary Policy}{70}{subsubsection.4.8.12}%
+\contentsline {subsubsection}{\numberline {4.8.13}Productivity Shock}{71}{subsubsection.4.8.13}%
+\contentsline {subsubsection}{\numberline {4.8.14}Monetary Shock}{71}{subsubsection.4.8.14}%
+\contentsline {subsubsection}{\numberline {4.8.15}Log-linear Model Structure}{71}{subsubsection.4.8.15}%
+\contentsline {section}{\numberline {5}Data}{73}{section.5}%
+\contentsline {section}{\numberline {6}Results}{73}{section.6}%
+\contentsline {subsection}{\numberline {6.1}Calibration}{74}{subsection.6.1}%
+\contentsline {subsubsection}{\numberline {6.1.1}Parameter Calibration}{74}{subsubsection.6.1.1}%
+\contentsline {subsubsection}{\numberline {6.1.2}Variables at the Steady State}{74}{subsubsection.6.1.2}%
+\contentsline {subsubsection}{\numberline {6.1.3}Parameter Calibration}{75}{subsubsection.6.1.3}%
+\contentsline {subsubsection}{\numberline {6.1.4}Variables at the Steady State}{76}{subsubsection.6.1.4}%
+\contentsline {subsubsection}{\numberline {6.1.5}Impulse Response Graphics}{77}{subsubsection.6.1.5}%
+\contentsline {subsection}{\numberline {6.2}Parametrization}{77}{subsection.6.2}%
+\contentsline {section}{\numberline {7}Final Remarks}{77}{section.7}%
+\contentsline {section}{References}{79}{section*.301}%
+\contentsline {section}{\numberline {A}Appendix}{80}{appendix.A}%
+\contentsline {subsection}{\numberline {A.1}Table of the Literature Review}{80}{subsection.A.1}%
+\contentsline {subsection}{\numberline {A.2}Definitions, Theorems and Lemmas}{80}{subsection.A.2}%
+\contentsline {subsubsection}{\numberline {A.2.1}Model}{80}{subsubsection.A.2.1}%
+\contentsline {subsubsection}{\numberline {A.2.2}Household}{80}{subsubsection.A.2.2}%
+\contentsline {subsubsection}{\numberline {A.2.3}Firms}{82}{subsubsection.A.2.3}%
+\contentsline {subsubsection}{\numberline {A.2.4}Monetary Authority}{82}{subsubsection.A.2.4}%
+\contentsline {subsubsection}{\numberline {A.2.5}Shocks}{82}{subsubsection.A.2.5}%
+\contentsline {subsubsection}{\numberline {A.2.6}Equilibrium Conditions}{82}{subsubsection.A.2.6}%
+\contentsline {subsubsection}{\numberline {A.2.7}Steady State}{82}{subsubsection.A.2.7}%
+\contentsline {subsubsection}{\numberline {A.2.8}Log-linearization}{83}{subsubsection.A.2.8}%
+\contentsline {subsubsection}{\numberline {A.2.9}Canonical NK Model}{85}{subsubsection.A.2.9}%
+\contentsline {subsection}{\numberline {A.3}Dynare Program}{86}{subsection.A.3}%
+\contentsline {subsection}{\numberline {A.4}\LaTeX }{94}{subsection.A.4}%
+\contentsline {subsubsection}{\numberline {A.4.1}Commands}{94}{subsubsection.A.4.1}%
+\contentsline {subsubsection}{\numberline {A.4.2}Font Styles in Math Mode}{96}{subsubsection.A.4.2}%
+\contentsline {subsubsection}{\numberline {A.4.3}Greek Letters}{98}{subsubsection.A.4.3}%
+\contentsline {subsection}{\numberline {A.5}ToDo List}{99}{subsection.A.5}%
+\contentsline {subsection}{\numberline {A.6}Epigraphs}{99}{subsection.A.6}%
+\contentsline {subsection}{\numberline {A.7}Drafts}{99}{subsection.A.7}%
