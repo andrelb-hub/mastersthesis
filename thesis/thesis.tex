@@ -103,14 +103,13 @@
 % PARAGRAPHS:
 % --------------------------------------------------
 
-% \setlength{\parindent}{1cm}
+\setlength{\parindent}{1cm}
 
 % --------------------------------------------------
 % FIRST PARAGRAPH ALSO 'INDENTED':
 % --------------------------------------------------
 
-% \usepackage{indentfirst}
-
+\usepackage{indentfirst}
 
 % --------------------------------------------------
 % SPACES BETWEEN PARAGRAPHS:
@@ -283,6 +282,9 @@
 % the name of the command:
 \newcommand{\com}[1]{\texttt{\textbackslash #1}}
 
+% the greek letter omicron:
+\newcommand{\omicron}{o}
+
 % the name of the software:
 % \newcommand{\dynare}{\texttt{Dynare}}
 \newcommand{\dynare}{\colorbox{lightgray}{$\mathsf{Dynare}$}}
@@ -295,6 +297,12 @@
 
 \usepackage{cancel}
 % https://ctan.org/pkg/cancel?lang=en
+
+% --------------------------------------------------
+% NICE FRACTIONS INLINE
+% --------------------------------------------------
+
+\usepackage{xfrac}
 
 % --------------------------------------------------
 % INDEX
@@ -651,7 +659,7 @@ Following the models presented by \textcite{costa_junior_understanding_2016} and
 	\quad & C_t,L_t,K_{t+1} \geq 0 \text{ ; $K_0$ given.} \nonumber
 \end{align}
 
-where $\E$ is the expectation operator, $\beta$ is the intertemporal discount factor, $\sigma$ is the relative risk aversion coefficient, $\phi$ is the relative labor weight in utility, $\varphi$ is the marginal disutility of labor supply. In the budget constraint, $P_t$ is the price level, $I_t$ is the investment, $W_t$ is the wage level, $K_t$ is the capital stock, $R_t$ is the return on capital, and $\Pi_t$ is the firm profit. In the capital accumulation rule, $\delta$ is the capital depreciation rate.
+where $\E$ is the expectation operator, $\beta$ is the intertemporal discount factor, $\sigma$ is the relative risk aversion coefficient, $\phi$ is the labor relative weight in utility, $\varphi$ is the marginal disutility of labor supply. In the budget constraint, $P_t$ is the price level, $I_t$ is the investment, $W_t$ is the wage level, $K_t$ is the capital stock, $R_t$ is the return on capital, and $\Pi_t$ is the firm profit. In the capital accumulation rule, $\delta$ is the capital depreciation rate.
 
 Isolate $I_t$ in \ref{eq:law-of-motion-for-capital} and substitute in \ref{eq:household-budget-constraint}:
 \begin{align}
@@ -866,13 +874,7 @@ notice that:
 
 \subsubsection*{Optimal Price Problem}
 
-Consider an economy with price stickiness, following the Calvo Rule \cite{calvo_staggered_1983}: each firm has a probability $(0 < \theta < 1)$ of keeping its price in the next period ($P_{j,t+1} = P_{jt}$), and a probability $(1 - \theta)$ of setting a new optimal price $P_{jt}^\ast$ that maximizes its profits. Each firm selects its optimal price to maximize the present value of the profit flow, taking into account the nominal interest rate $R_t$, despite the uncertainty regarding its ability to adjust prices in future periods.
-
-
 Consider an economy with price stickiness, following the Calvo Rule \cite{calvo_staggered_1983}: each firm has a probability $(0 < \theta < 1)$ of keeping its price in the next period ($P_{j,t+1} = P_{j,t}$), and a probability of $(1 - \theta)$ of setting a new optimal price $P_{j,t}^\ast$ that maximizes its profits. Therefore, each firm must take this uncertainty into account when deciding the optimal price: the intertemporal profit flow, given the nominal interest rate $R_t$ of each period, is calculated considering the probability $\theta$ of keeping the previous price.
-
-
-
 \begin{align}
 \label{eq:int-good-firm-optimal-price-problem}
 	\max_{P_{jt}}: & \quad \E \sum_{s=0}^{\infty} \left\{ \frac{ \theta^s \left[ P_{jt} Y_{j,t+s} - TC_{j,t+s} \right] }{\prod_{k=0}^{s-1}(1+R_{t+k})} \right\} \\
@@ -996,7 +998,7 @@ The production technology level $Z_{At}$ will be submitted to a productivity sho
 	\ln{Z_{At}} = (1-\rho_A)\ln{Z_A} + \rho_A\ln{Z_{A,t-1}} + \varepsilon_{At} \label{eq:productivity-shock}
 \end{align}
 
-where $\rho_A \in [0,1]$ and $\varepsilon_{At} \sim \mathscr{N}(0,\sigma_A)$.
+where $\rho_A \in [0,1]$ is the autoregressive parameter and $\varepsilon_{At} \sim \mathscr{N}(0,\sigma_A)$.
 
 \subsubsection*{Monetary Shock} \label{sec:monetary shock}
 
@@ -1500,26 +1502,26 @@ Join both sides of the equation again:
 	+ \frac{\psi}{\psi-1} Y_{j} \Lambda \E \sum_{s=0}^{\infty} \left\{ \left( \frac{\theta}{1 + R} \right)^s \left( \hat{Y}_{j,t+s} + \hat{\Lambda}_{t+s} - \frac{1}{1 + R} \sum_{k=0}^{s-1} \widetilde{R}_{t+k} \right) \right\} \label{eq:ll-optimal-price-2}
 \end{multline}
 
-Define a nominal discount rate $\rho$ in steady state:
+Define a nominal discount rate $\varrho$ in steady state:
 \begin{align}
-	1 = \rho (1 + R) \implies \rho = \frac{1}{1 + R} \label{eq:ss-nominal-discount-rate}
+	1 = \varrho (1 + R) \implies \varrho = \frac{1}{1 + R} \label{eq:ss-nominal-discount-rate}
 \end{align}
 
 Substitute \ref{eq:ss-nominal-discount-rate} in \ref{eq:ll-optimal-price-2}:
 \begin{multline}
-	\frac{ P^\ast Y_{j} ( 1 + \hat{P}_t^\ast ) }{1- \theta \rho} + P^\ast Y_{j} \E \sum_{s=0}^{\infty} \left\{ \left( \theta \rho \right)^s \left( \hat{Y}_{j,t+s} - \rho \sum_{k=0}^{s-1} \widetilde{R}_{t+k} \right) \right\} = \frac{\psi}{\psi-1} \cdot \frac{Y_{j} \Lambda}{1- \theta \rho } \, + 
+	\frac{ P^\ast Y_{j} ( 1 + \hat{P}_t^\ast ) }{1- \theta \varrho} + P^\ast Y_{j} \E \sum_{s=0}^{\infty} \left\{ \left( \theta \varrho \right)^s \left( \hat{Y}_{j,t+s} - \varrho \sum_{k=0}^{s-1} \widetilde{R}_{t+k} \right) \right\} = \frac{\psi}{\psi-1} \cdot \frac{Y_{j} \Lambda}{1- \theta \varrho } \, + 
 \\ 
-	+ \frac{\psi}{\psi-1} Y_{j} \Lambda \E \sum_{s=0}^{\infty} \left\{ \left( \theta \rho \right)^s \left( \hat{Y}_{j,t+s} + \hat{\Lambda}_{t+s} - \rho \sum_{k=0}^{s-1} \widetilde{R}_{t+k} \right) \right\} \label{eq:ll-optimal-price-3}
+	+ \frac{\psi}{\psi-1} Y_{j} \Lambda \E \sum_{s=0}^{\infty} \left\{ \left( \theta \varrho \right)^s \left( \hat{Y}_{j,t+s} + \hat{\Lambda}_{t+s} - \varrho \sum_{k=0}^{s-1} \widetilde{R}_{t+k} \right) \right\} \label{eq:ll-optimal-price-3}
 \end{multline}
 
 Substitute \ref{eq:ss-marginal-cost} in \ref{eq:ll-optimal-price-3} and simplify all common terms:
 \begin{align}
 	\begin{split}
-		& \cancel{\frac{P^\ast Y_{j}}{1-\theta\rho}} + \frac{ \cancel{P^\ast Y_{j}} \hat{P}_t^\ast }{1- \theta \rho} + \cancel{P^\ast Y_{j}} \E \sum_{s=0}^{\infty} \left\{ \left( \theta \rho \right)^s \left( \cancel{\hat{Y}_{j,t+s} - \rho \sum_{k=0}^{s-1} \widetilde{R}_{t+k}} \right) \right\} = 
+		& \cancel{\frac{P^\ast Y_{j}}{1-\theta\varrho}} + \frac{ \cancel{P^\ast Y_{j}} \hat{P}_t^\ast }{1- \theta \varrho} + \cancel{P^\ast Y_{j}} \E \sum_{s=0}^{\infty} \left\{ \left( \theta \varrho \right)^s \left( \cancel{\hat{Y}_{j,t+s} - \varrho \sum_{k=0}^{s-1} \widetilde{R}_{t+k}} \right) \right\} = 
 	\\
-		& = \cancel{\frac{P^\ast Y_{j}}{1-\theta\rho}} \, + \cancel{P^\ast Y_{j}} \E \sum_{s=0}^{\infty} \left\{ \left( \theta \rho \right)^s \left( \cancel{\hat{Y}_{j,t+s} - \rho \sum_{k=0}^{s-1} \widetilde{R}_{t+k}} + \hat{\Lambda}_{t+s} \right) \right\} \implies	
+		& = \cancel{\frac{P^\ast Y_{j}}{1-\theta\varrho}} \, + \cancel{P^\ast Y_{j}} \E \sum_{s=0}^{\infty} \left\{ \left( \theta \varrho \right)^s \left( \cancel{\hat{Y}_{j,t+s} - \varrho \sum_{k=0}^{s-1} \widetilde{R}_{t+k}} + \hat{\Lambda}_{t+s} \right) \right\} \implies	
 	\end{split} \nonumber \\
-	& \frac{ \hat{P}_t^\ast }{1- \theta \rho} = \E \sum_{s=0}^{\infty} \left\{ \left( \theta \rho \right)^s \left( \hat{\Lambda}_{t+s} \right) \right\} \label{eq:ll-optimal-price-4}
+	& \frac{ \hat{P}_t^\ast }{1- \theta \varrho} = \E \sum_{s=0}^{\infty} \left\{ \left( \theta \varrho \right)^s \left( \hat{\Lambda}_{t+s} \right) \right\} \label{eq:ll-optimal-price-4}
 \end{align}
 
 Define the real marginal cost $\lambda_t$:
@@ -1530,7 +1532,7 @@ Define the real marginal cost $\lambda_t$:
 
 Substitute \ref{eq:hat-real-marginal-cost} in \ref{eq:ll-optimal-price-4}:
 \begin{align}
-	\hat{P}_t^\ast = (1- \theta \rho) \E \sum_{s=0}^{\infty} \left( \theta \rho \right)^s \left( \hat{P}_{t+s} + \hat{\lambda}_{t+s} \right) \label{eq:ll-optimal-price-5}
+	\hat{P}_t^\ast = (1- \theta \varrho) \E \sum_{s=0}^{\infty} \left( \theta \varrho \right)^s \left( \hat{P}_{t+s} + \hat{\lambda}_{t+s} \right) \label{eq:ll-optimal-price-5}
 \end{align}
 
 Log-linearize equation \ref{eq:general-price-level}:
@@ -1544,45 +1546,45 @@ Log-linearize equation \ref{eq:general-price-level}:
 Substitute \ref{eq:ll-optimal-price-5} in \ref{eq:ll-general-price-level}:
 \begin{align}
 	\hat{P}_t &= \theta \hat{P}_{t-1} + (1-\theta) \hat{P}_t^\ast \tag{\ref{eq:ll-general-price-level}}\\
-	\hat{P}_t &= \theta \hat{P}_{t-1} + (1-\theta) (1- \theta \rho) \E \sum_{s=0}^{\infty} \left( \theta \rho \right)^s \left( \hat{P}_{t+s} + \hat{\lambda}_{t+s} \right) \label{eq:ll-general-price-level-2}
+	\hat{P}_t &= \theta \hat{P}_{t-1} + (1-\theta) (1- \theta \varrho) \E \sum_{s=0}^{\infty} \left( \theta \varrho \right)^s \left( \hat{P}_{t+s} + \hat{\lambda}_{t+s} \right) \label{eq:ll-general-price-level-2}
 \end{align}
 
-Finally, to eliminate the summation, apply the lead operator $(1- \theta \rho \mathbb{L}^{-1})$\footnote{see definition \ref{def:lag-operator}.} in \ref{eq:ll-general-price-level-2}:
+Finally, to eliminate the summation, apply the lead operator $(1- \theta \varrho \mathbb{L}^{-1})$\footnote{see definition \ref{def:lag-operator}.} in \ref{eq:ll-general-price-level-2}:
 \begin{align}
 	\begin{split}
-		(1- \theta \rho \mathbb{L}^{-1}) \hat{P}_t &= (1- \theta \rho \mathbb{L}^{-1}) \left[ \theta \hat{P}_{t-1} \, + \right. \\
-		&\left. + (1-\theta) (1- \theta \rho) \E \sum_{s=0}^{\infty} \left( \theta \rho \right)^s \left( \hat{P}_{t+s} + \hat{\lambda}_{t+s} \right) \right] \implies \nonumber
+		(1- \theta \varrho \mathbb{L}^{-1}) \hat{P}_t &= (1- \theta \varrho \mathbb{L}^{-1}) \left[ \theta \hat{P}_{t-1} \, + \right. \\
+		&\left. + (1-\theta) (1- \theta \varrho) \E \sum_{s=0}^{\infty} \left( \theta \varrho \right)^s \left( \hat{P}_{t+s} + \hat{\lambda}_{t+s} \right) \right] \implies \nonumber
 	\end{split} \\
 	\begin{split}
-		\hat{P}_t - \theta \rho \E \hat{P}_{t+1} &= \theta \hat{P}_{t-1} - \theta \rho \theta \hat{P}_t \, + \\
-		& (1-\theta) (1- \theta \rho) \E \sum_{s=0}^{\infty} \left( \theta \rho \right)^s \left( \hat{P}_{t+s} + \hat{\lambda}_{t+s} \right) - \\
-		& - \theta \rho (1-\theta) (1- \theta \rho) \E \sum_{s=0}^{\infty} \left( \theta \rho \right)^s \left( \hat{P}_{t+s+1} + \hat{\lambda}_{t+s+1} \right)
+		\hat{P}_t - \theta \varrho \E \hat{P}_{t+1} &= \theta \hat{P}_{t-1} - \theta \varrho \theta \hat{P}_t \, + \\
+		& (1-\theta) (1- \theta \varrho) \E \sum_{s=0}^{\infty} \left( \theta \varrho \right)^s \left( \hat{P}_{t+s} + \hat{\lambda}_{t+s} \right) - \\
+		& - \theta \varrho (1-\theta) (1- \theta \varrho) \E \sum_{s=0}^{\infty} \left( \theta \varrho \right)^s \left( \hat{P}_{t+s+1} + \hat{\lambda}_{t+s+1} \right)
 	\end{split} \label{eq:ll-general-price-level-3}
 \end{align}
 
-In the first summation, factor out the first term and in the second summation, include the term $\theta \rho$ within the operator. Then, cancel the summations and rearrange the terms:
+In the first summation, factor out the first term and in the second summation, include the term $\theta \varrho$ within the operator. Then, cancel the summations and rearrange the terms:
 \begin{align}
 	\begin{split}
-		\hat{P}_t - \theta \rho \E \hat{P}_{t+1} &= \theta \hat{P}_{t-1} - \theta \rho \theta \hat{P}_t \, + \\
-		& (1-\theta) (1- \theta \rho) \E \sum_{s=0}^{\infty} \left( \theta \rho \right)^s \left( \hat{P}_{t+s} + \hat{\lambda}_{t+s} \right) -
+		\hat{P}_t - \theta \varrho \E \hat{P}_{t+1} &= \theta \hat{P}_{t-1} - \theta \varrho \theta \hat{P}_t \, + \\
+		& (1-\theta) (1- \theta \varrho) \E \sum_{s=0}^{\infty} \left( \theta \varrho \right)^s \left( \hat{P}_{t+s} + \hat{\lambda}_{t+s} \right) -
 	\\
-		& - \theta \rho (1-\theta) (1- \theta \rho) \E \sum_{s=0}^{\infty} \left( \theta \rho \right)^s \left( \hat{P}_{t+s+1} + \hat{\lambda}_{t+s+1} \right) \implies \nonumber 
+		& - \theta \varrho (1-\theta) (1- \theta \varrho) \E \sum_{s=0}^{\infty} \left( \theta \varrho \right)^s \left( \hat{P}_{t+s+1} + \hat{\lambda}_{t+s+1} \right) \implies \nonumber 
 	\end{split} \\
 	\begin{split}
-		\hat{P}_t - \theta \rho \E \hat{P}_{t+1} &= \theta \hat{P}_{t-1} - \theta \rho \theta \hat{P}_t + (1-\theta) (1- \theta \rho) (\hat{P}_t + \hat{\lambda}_t) \, + 
+		\hat{P}_t - \theta \varrho \E \hat{P}_{t+1} &= \theta \hat{P}_{t-1} - \theta \varrho \theta \hat{P}_t + (1-\theta) (1- \theta \varrho) (\hat{P}_t + \hat{\lambda}_t) \, + 
 	\\
-		& + \cancel{(1-\theta) (1- \theta \rho) \E \sum_{s=0}^{\infty} \left( \theta \rho \right)^{s+1} \left( \hat{P}_{t+s+1} + \hat{\lambda}_{t+s+1} \right)} -
+		& + \cancel{(1-\theta) (1- \theta \varrho) \E \sum_{s=0}^{\infty} \left( \theta \varrho \right)^{s+1} \left( \hat{P}_{t+s+1} + \hat{\lambda}_{t+s+1} \right)} -
 	\\
-		& - \cancel{(1-\theta) (1- \theta \rho) \E \sum_{s=0}^{\infty} \left( \theta \rho \right)^{s+1} \left( \hat{P}_{t+s+1} + \hat{\lambda}_{t+s+1} \right)} \implies \nonumber 
+		& - \cancel{(1-\theta) (1- \theta \varrho) \E \sum_{s=0}^{\infty} \left( \theta \varrho \right)^{s+1} \left( \hat{P}_{t+s+1} + \hat{\lambda}_{t+s+1} \right)} \implies \nonumber 
 	\end{split} \\
-		\hat{P}_t - \theta \rho \E \hat{P}_{t+1} &= \theta \hat{P}_{t-1} - \theta^2 \rho \hat{P}_t + (1- \theta -\theta \rho + \theta^2 \rho) \hat{P}_t + (1-\theta) (1- \theta \rho) \hat{\lambda}_t \implies \nonumber \\
-		(\hat{P}_t - \hat{P}_{t-1}) &= \rho (\E \hat{P}_{t+1} - \hat{P}_t) + \frac{(1-\theta) (1- \theta \rho)}{\theta} \hat{\lambda}_t
+		\hat{P}_t - \theta \varrho \E \hat{P}_{t+1} &= \theta \hat{P}_{t-1} - \theta^2 \varrho \hat{P}_t + (1- \theta -\theta \varrho + \theta^2 \varrho) \hat{P}_t + (1-\theta) (1- \theta \varrho) \hat{\lambda}_t \implies \nonumber \\
+		(\hat{P}_t - \hat{P}_{t-1}) &= \varrho (\E \hat{P}_{t+1} - \hat{P}_t) + \frac{(1-\theta) (1- \theta \varrho)}{\theta} \hat{\lambda}_t
 	\label{eq:ll-general-price-level-4}
 \end{align}
 
 Substitute \ref{eq:level-dev-gross-inflation-rate} in \ref{eq:ll-general-price-level-4}:
 \begin{align}
-	\widetilde{\pi}_t = \rho \E \widetilde{\pi}_{t+1} + \frac{(1-\theta) (1- \theta \rho)}{\theta} \hat{\lambda}_t \label{eq:nk-phillips-curve-mc}
+	\widetilde{\pi}_t = \varrho \E \widetilde{\pi}_{t+1} + \frac{(1-\theta) (1- \theta \varrho)}{\theta} \hat{\lambda}_t \label{eq:nk-phillips-curve-mc}
 \end{align}
 
 Equation \ref{eq:nk-phillips-curve-mc} is the New Keynesian Phillips Curve in terms of the real marginal cost. It illustrates that the deviation of inflation depends on both the expectation of future inflation deviation and the present marginal cost deviation.
@@ -1852,7 +1854,7 @@ The log-linear model is a square system of 12 variables and 12 equations, summar
 		
 		\item New Keynesian Phillips Curve:
 		\begin{align}
-			\widetilde{\pi}_t = \rho \E \widetilde{\pi}_{t+1} + \frac{(1-\theta) (1- \theta \rho)}{\theta} \hat{\lambda}_t
+			\widetilde{\pi}_t = \varrho \E \widetilde{\pi}_{t+1} + \frac{(1-\theta) (1- \theta \varrho)}{\theta} \hat{\lambda}_t
 			\tag{\ref{eq:nk-phillips-curve-mc}}
 		\end{align}
 	
