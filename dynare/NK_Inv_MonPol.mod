@@ -261,7 +261,7 @@ shocks;
 
 end;
 
-stoch_simul(irf=80, order=1, qz_zero_threshold=1e-20) ZAt ZMt Yt Pt PIt LAMt Ct Lt Rt Kt It Wt  ;
+stoch_simul(irf=100, order=1, qz_zero_threshold=1e-20) ZAt ZMt Yt Pt PIt LAMt Ct Lt Rt Kt It Wt ;
 
 % -------------------------------------------------- % 
 % LATEX OUTPUT                                       %

@@ -159,7 +159,21 @@
 
 \addbibresource{../zip/ref.bib}
 
-% \graphicspath{ {../images/} }
+% --------------------------------------------------
+% IMAGES
+% --------------------------------------------------
+
+\usepackage{graphicx}
+
+\graphicspath{ {../images/} }
+
+% --------------------------------------------------
+% MULTIFIGURES AND SUBFIGURES
+% --------------------------------------------------
+
+\usepackage{caption}
+\usepackage{subcaption}
+
 
 % --------------------------------------------------
 % QUOTATION
@@ -357,7 +371,6 @@ citecolor  = teal
 
 \usepackage{acronym} 
 % usage: \ac{TLA}
-
 
 % --------------------------------------------------
 % TODO NOTES
@@ -606,7 +619,7 @@ citecolor  = teal
 
 \section{Introduction}\label{sec:introduction}
 
-\subfile{100_intro}
+\subfile{section/100_intro}
 
 %\newpage
 
@@ -616,7 +629,7 @@ citecolor  = teal
 
 \section{Literature Review}\label{sec:literature-review}
 
-\subfile{200_litRev}
+\subfile{section/200_litRev}
 
 \newpage
 
@@ -624,7 +637,9 @@ citecolor  = teal
 % MODEL
 % --------------------------------------------------
 
-\subfile{300_model}
+\section{Model}\label{sec:model}
+
+\subfile{section/300_model}
 
 \newpage
 
@@ -634,7 +649,7 @@ citecolor  = teal
 
 \section{Regions}
 
-\subfile{400_regModel}
+\subfile{section/400_regModel}
 
 \newpage
 
@@ -764,45 +779,39 @@ citecolor  = teal
 
 \begin{center}
 	
-	\begin{tblr}{c|l|c}
-		\hline[2pt]
-		\textbf{Parameter} & \textbf{Definition} & \textbf{Calibration} \\
-		\hline[2pt]
-		$\sigma$           & relative risk aversion coefficient & \\
-		\hline
-		$\phi$             & relative labor weight in utility & \\
-		\hline
-		$\varphi$          & marginal disutility of labor supply & \\
-		\hline
-		$\beta$            & intertemporal discount factor & \\
-		\hline
-		$\delta$           & capital depreciation rate & \\
-		\hline
-		$\alpha$           & production elasticity with respect to capital & \\
-		\hline
-		$\psi$             & elasticity of substitution between intermediate goods & \\
-		\hline
-		$\theta$           & price stickness parameter & \\
-		\hline
-		$\gamma_R$         & interest-rate smoothing parameter & \\
-		\hline
-		$\gamma_\pi$       & interest-rate sensitivity in relation to inflation & \\
-		\hline
-		$\gamma_Y$         & interest-rate sensitivity in relation to product & \\
-		\hline
-		$\rho_A$           & autoregressive parameter of productivity & \\
-		\hline
-		$\rho_M$           & autoregressive parameter of monetary policy & \\
-		\hline
-		$\theta_C$         & consumption weight in production  & \\
-		\hline
-		$\theta_I$         & investment weight in production  & \\
-		\hline[2pt]
-	\end{tblr}
+\begin{longtblr}[
+label = {table:parameter-calibration},
+caption = {Parameter Calibration},
+remark{Source} = {\cite{costa_junior_understanding_2016}},
+]{rowhead = 1,
+colspec = {
+   Q[c]
+  |Q[l]
+  |Q[si={table-format=3.2,table-number-alignment=center},c,white]
+  }
+}
+	\hline[2pt]
+	\textbf{Parameter} & \textbf{Definition} & \textbf{Calibration} \\ \hline[2pt]
+	$\alpha$           & production elasticity with respect to capital & $0.35$ \\ \hline
+	$\beta$            & intertemporal discount factor & $0.985$ \\ \hline
+	$\gamma_R$         & interest-rate smoothing parameter & $0.79$ \\ \hline
+	$\gamma_\pi$       & interest-rate sensitivity in relation to inflation & $2.43$ \\ \hline
+	$\gamma_Y$         & interest-rate sensitivity in relation to product & $0.16$ \\ \hline
+	$\delta$           & capital depreciation rate & $0.025$ \\ \hline
+	$\theta$           & price stickness parameter & $0.8$ \\ \hline
+	$\theta_C$         & consumption weight in production  & $0.8$ \\ \hline
+	$\theta_I$         & investment weight in production  & $0.2$ \\ \hline
+	$\rho_A$           & autoregressive parameter of productivity & $0.95$ \\ \hline
+	$\rho_M$           & autoregressive parameter of monetary policy & $0.9$ \\ \hline
+	$\sigma$           & relative risk aversion coefficient & $2$ \\ \hline
+	$\phi$             & relative labor weight in utility & $1$ \\ \hline
+	$\varphi$          & marginal disutility of labor supply & $1.5$ \\ \hline
+	$\psi$             & elasticity of substitution between intermediate goods & $8$ \\ \hline[2pt]
+\end{longtblr}
 	
 \end{center}
 
-%\newpage
+\newpage
 
 % --------------------------------------------------
 % VARIABLES AT THE STEADY STATE
@@ -814,37 +823,46 @@ citecolor  = teal
 
 \begin{center}
 	
-	\begin{tblr}{c|c}
+\begin{longtblr}[
+	label = {table:ss-values},
+	caption = {Steady State Values},
+	remark{Source} = {\cite{costa_junior_understanding_2016}},
+	]{rowhead = 1,
+	colspec = {
+		Q[c]
+		|Q[si={table-format=3.2,table-number-alignment=center},c,white]
+			}
+		}
 		\hline[2pt]
 		\textbf{Variable} & \textbf{Steady State Value} \\
 		\hline[2pt]
-		$P$               &                             \\
+		$P$               & $1$ \\
 		\hline
-		$Z_A$             &                             \\
+		$Z_A$             & $1$ \\
 		\hline
-		$P^\ast$          &                             \\
+		$P^\ast$          & $1$ \\
 		\hline
-		$\pi$             &                             \\
+		$\pi$             & $1$ \\
 		\hline
-		$Z_M$             &                             \\
+		$Z_M$             & $1$ \\
 		\hline
-		$R$               &                             \\
+		$R$               & $0.0402$ \\
 		\hline
-		$\Lambda$         &                             \\
+		$\Lambda$         & $0.8750$ \\
 		\hline
-		$W$               &                             \\
+		$W$               & $1.6967$ \\
 		\hline
-		$Y$               &                             \\
+		$Y$               & $2.6366$ \\
 		\hline
-		$C$               &                             \\
+		$C$               & $2.1348$ \\
 		\hline
-		$I$               &                             \\
+		$I$               & $0.5018$ \\
 		\hline
-		$K$               &                             \\
+		$K$               & $20.0716$ \\
 		\hline
-		$L$               &                             \\
+		$L$               & $0.8838$ \\
 		\hline[2pt]
-	\end{tblr}
+	\end{longtblr}
 	
 \end{center}
 
@@ -854,9 +872,106 @@ citecolor  = teal
 % IMPULSE RESPONSE GRAPHICS
 % --------------------------------------------------
 
-\subsubsection{Impulse Response Graphics}
+\subsection{Impulse Response Graphics}
 
 \lipsum[1]
+
+\begin{figure}[h]
+	\centering
+\begin{subfigure}[b]{0.3\textwidth}
+	\centering
+	\includegraphics[width=\textwidth]{shock_ZAt/shock_ZAt_ZAt}
+	\caption{Productivity Shock}
+	\label{fig:zat-productivity-shock}
+\end{subfigure}
+\hfill
+\begin{subfigure}[b]{0.3\textwidth}
+	\centering
+	\includegraphics[width=\textwidth]{shock_ZAt/shock_ZAt_Kt}
+	\caption{Capital}
+	\label{fig:zat-capital}
+\end{subfigure}
+\hfill
+\begin{subfigure}[b]{0.3\textwidth}
+	\centering
+	\includegraphics[width=\textwidth]{shock_ZAt/shock_ZAt_It}
+	\caption{Investment}
+	\label{fig:zat-investment}
+\end{subfigure}
+\hfill
+
+\vspace*{0.5cm}
+
+\begin{subfigure}[b]{0.3\textwidth}
+	\centering
+	\includegraphics[width=\textwidth]{shock_ZAt/shock_ZAt_Ct}
+	\caption{Consumption}
+	\label{fig:zat-consumption}
+\end{subfigure}
+\hfill
+\begin{subfigure}[b]{0.3\textwidth}
+	\centering
+	\includegraphics[width=\textwidth]{shock_ZAt/shock_ZAt_LAMBDAt}
+	\caption{Marginal Cost}
+	\label{fig:zat-marginal-cost}
+\end{subfigure}
+\hfill
+\begin{subfigure}[b]{0.3\textwidth}
+	\centering
+	\includegraphics[width=\textwidth]{shock_ZAt/shock_ZAt_Lt}
+	\caption{Labor}
+	\label{fig:zat-labor}
+\end{subfigure}
+\hfill
+
+\vspace*{0.5cm}
+
+\begin{subfigure}[b]{0.3\textwidth}
+	\centering
+	\includegraphics[width=\textwidth]{shock_ZAt/shock_ZAt_PIt}
+	\caption{Inflation}
+	\label{fig:zat-inflation}
+\end{subfigure}
+\hfill
+\begin{subfigure}[b]{0.3\textwidth}
+	\centering
+	\includegraphics[width=\textwidth]{shock_ZAt/shock_ZAt_Pt}
+	\caption{Price Level}
+	\label{fig:zat-price}
+\end{subfigure}
+\hfill
+\begin{subfigure}[b]{0.3\textwidth}
+	\centering
+	\includegraphics[width=\textwidth]{shock_ZAt/shock_ZAt_Rt}
+	\caption{Interest Rate}
+	\label{fig:zat-interest-rate}
+\end{subfigure}
+\hfill
+
+\vspace*{0.5cm}
+
+\begin{subfigure}[b]{0.3\textwidth}
+	\centering
+	\includegraphics[width=\textwidth]{shock_ZAt/shock_ZAt_Wt}
+	\caption{Wage}
+	\label{fig:zat-wage}
+\end{subfigure}
+\hfill
+\begin{subfigure}[b]{0.3\textwidth}
+	\centering
+	\includegraphics[width=\textwidth]{shock_ZAt/shock_ZAt_Yt}
+	\caption{Production}
+	\label{fig:zat-production}
+\end{subfigure}
+\hfill
+\begin{subfigure}[b]{0.3\textwidth}
+	\centering
+	\includegraphics[width=\textwidth]{shock_ZAt/blank}
+\end{subfigure}
+\hfill
+	\caption{Productivity Shock Impulse Response Functions}
+	\label{fig:zat-irf}
+\end{figure}
 
 \subsection{Parametrization}
 
@@ -893,8 +1008,6 @@ This section is where you summarize and discuss the main findings, implications,
 
 \appendix
 
-\section{Appendix}
-
-\subfile{900_appendix}
+\subfile{section/900_appendix}
 
 \end{document}
