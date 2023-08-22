@@ -67,28 +67,30 @@
 \contentsline {subsubsection}{\numberline {6.1.2}Variables at the Steady State}{74}{subsubsection.6.1.2}%
 \contentsline {subsubsection}{\numberline {6.1.3}Parameter Calibration}{75}{subsubsection.6.1.3}%
 \contentsline {subsubsection}{\numberline {6.1.4}Variables at the Steady State}{76}{subsubsection.6.1.4}%
-\contentsline {subsection}{\numberline {6.2}Impulse Response Graphics}{77}{subsection.6.2}%
-\contentsline {subsection}{\numberline {6.3}Parametrization}{77}{subsection.6.3}%
-\contentsline {section}{\numberline {7}Final Remarks}{77}{section.7}%
-\contentsline {section}{References}{79}{section*.307}%
-\contentsline {section}{\numberline {A}Appendix}{80}{appendix.A}%
-\contentsline {subsection}{\numberline {A.1}Table of Parameters}{80}{subsection.A.1}%
-\contentsline {subsection}{\numberline {A.2}Table of the Literature Review}{81}{subsection.A.2}%
-\contentsline {subsection}{\numberline {A.3}Definitions, Theorems and Lemmas}{81}{subsection.A.3}%
-\contentsline {subsubsection}{\numberline {A.3.1}Model}{82}{subsubsection.A.3.1}%
-\contentsline {subsubsection}{\numberline {A.3.2}Household}{82}{subsubsection.A.3.2}%
-\contentsline {subsubsection}{\numberline {A.3.3}Firms}{83}{subsubsection.A.3.3}%
-\contentsline {subsubsection}{\numberline {A.3.4}Monetary Authority}{83}{subsubsection.A.3.4}%
-\contentsline {subsubsection}{\numberline {A.3.5}Shocks}{83}{subsubsection.A.3.5}%
-\contentsline {subsubsection}{\numberline {A.3.6}Equilibrium Conditions}{83}{subsubsection.A.3.6}%
-\contentsline {subsubsection}{\numberline {A.3.7}Steady State}{83}{subsubsection.A.3.7}%
-\contentsline {subsubsection}{\numberline {A.3.8}Log-linearization}{84}{subsubsection.A.3.8}%
-\contentsline {subsubsection}{\numberline {A.3.9}Canonical NK Model}{86}{subsubsection.A.3.9}%
-\contentsline {subsection}{\numberline {A.4}Dynare Program}{87}{subsection.A.4}%
-\contentsline {subsection}{\numberline {A.5}\LaTeX }{95}{subsection.A.5}%
-\contentsline {subsubsection}{\numberline {A.5.1}Commands}{95}{subsubsection.A.5.1}%
-\contentsline {subsubsection}{\numberline {A.5.2}Font Styles in Math Mode}{97}{subsubsection.A.5.2}%
-\contentsline {subsubsection}{\numberline {A.5.3}Greek Letters}{99}{subsubsection.A.5.3}%
-\contentsline {subsection}{\numberline {A.6}ToDo List}{100}{subsection.A.6}%
-\contentsline {subsection}{\numberline {A.7}Epigraphs}{100}{subsection.A.7}%
-\contentsline {subsection}{\numberline {A.8}Drafts}{100}{subsection.A.8}%
+\contentsline {subsection}{\numberline {6.2}Impulse Response Functions}{77}{subsection.6.2}%
+\contentsline {subsubsection}{\numberline {6.2.1}Productivity Shock}{77}{subsubsection.6.2.1}%
+\contentsline {subsubsection}{\numberline {6.2.2}Monetary Shock}{78}{subsubsection.6.2.2}%
+\contentsline {subsection}{\numberline {6.3}Parametrization}{79}{subsection.6.3}%
+\contentsline {section}{\numberline {7}Final Remarks}{79}{section.7}%
+\contentsline {section}{References}{80}{section*.308}%
+\contentsline {section}{\numberline {A}Appendix}{81}{appendix.A}%
+\contentsline {subsection}{\numberline {A.1}Table of Parameters}{81}{subsection.A.1}%
+\contentsline {subsection}{\numberline {A.2}Table of the Literature Review}{82}{subsection.A.2}%
+\contentsline {subsection}{\numberline {A.3}Definitions, Theorems and Lemmas}{82}{subsection.A.3}%
+\contentsline {subsubsection}{\numberline {A.3.1}Model}{83}{subsubsection.A.3.1}%
+\contentsline {subsubsection}{\numberline {A.3.2}Household}{83}{subsubsection.A.3.2}%
+\contentsline {subsubsection}{\numberline {A.3.3}Firms}{84}{subsubsection.A.3.3}%
+\contentsline {subsubsection}{\numberline {A.3.4}Monetary Authority}{84}{subsubsection.A.3.4}%
+\contentsline {subsubsection}{\numberline {A.3.5}Shocks}{84}{subsubsection.A.3.5}%
+\contentsline {subsubsection}{\numberline {A.3.6}Equilibrium Conditions}{84}{subsubsection.A.3.6}%
+\contentsline {subsubsection}{\numberline {A.3.7}Steady State}{84}{subsubsection.A.3.7}%
+\contentsline {subsubsection}{\numberline {A.3.8}Log-linearization}{85}{subsubsection.A.3.8}%
+\contentsline {subsubsection}{\numberline {A.3.9}Canonical NK Model}{87}{subsubsection.A.3.9}%
+\contentsline {subsection}{\numberline {A.4}Dynare Program}{88}{subsection.A.4}%
+\contentsline {subsection}{\numberline {A.5}\LaTeX }{96}{subsection.A.5}%
+\contentsline {subsubsection}{\numberline {A.5.1}Commands}{96}{subsubsection.A.5.1}%
+\contentsline {subsubsection}{\numberline {A.5.2}Font Styles in Math Mode}{98}{subsubsection.A.5.2}%
+\contentsline {subsubsection}{\numberline {A.5.3}Greek Letters}{100}{subsubsection.A.5.3}%
+\contentsline {subsection}{\numberline {A.6}ToDo List}{101}{subsection.A.6}%
+\contentsline {subsection}{\numberline {A.7}Epigraphs}{101}{subsection.A.7}%
+\contentsline {subsection}{\numberline {A.8}Drafts}{101}{subsection.A.8}%

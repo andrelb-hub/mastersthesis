@@ -800,7 +800,7 @@ colspec = {
 	$\delta$           & capital depreciation rate & $0.025$ \\ \hline
 	$\theta$           & price stickness parameter & $0.8$ \\ \hline
 	$\theta_C$         & consumption weight in production  & $0.8$ \\ \hline
-	$\theta_I$         & investment weight in production  & $0.2$ \\ \hline
+	$\theta_I$         & investment weight in production  & $1 -\theta_C$ \\ \hline
 	$\rho_A$           & autoregressive parameter of productivity & $0.95$ \\ \hline
 	$\rho_M$           & autoregressive parameter of monetary policy & $0.9$ \\ \hline
 	$\sigma$           & relative risk aversion coefficient & $2$ \\ \hline
@@ -872,11 +872,11 @@ colspec = {
 % IMPULSE RESPONSE GRAPHICS
 % --------------------------------------------------
 
-\subsection{Impulse Response Graphics}
+\subsection{Impulse Response Functions}
 
-\lipsum[1]
+\subsubsection{Productivity Shock}
 
-\begin{figure}[h]
+\begin{figure}[h!]
 	\centering
 \begin{subfigure}[b]{0.3\textwidth}
 	\centering
@@ -972,6 +972,109 @@ colspec = {
 	\caption{Productivity Shock Impulse Response Functions}
 	\label{fig:zat-irf}
 \end{figure}
+
+\newpage
+
+\subsubsection{Monetary Shock}
+
+\begin{figure}[h!]
+	\centering
+	\begin{subfigure}[b]{0.3\textwidth}
+		\centering
+		\includegraphics[width=\textwidth]{shock_ZMt/shock_ZMt_ZMt}
+		\caption{Monetary Shock}
+		\label{fig:ZMt-monetary-shock}
+	\end{subfigure}
+	\hfill
+	\begin{subfigure}[b]{0.3\textwidth}
+		\centering
+		\includegraphics[width=\textwidth]{shock_ZMt/shock_ZMt_Kt}
+		\caption{Capital}
+		\label{fig:ZMt-capital}
+	\end{subfigure}
+	\hfill
+	\begin{subfigure}[b]{0.3\textwidth}
+		\centering
+		\includegraphics[width=\textwidth]{shock_ZMt/shock_ZMt_It}
+		\caption{Investment}
+		\label{fig:ZMt-investment}
+	\end{subfigure}
+	\hfill
+	
+	\vspace*{0.5cm}
+	
+	\begin{subfigure}[b]{0.3\textwidth}
+		\centering
+		\includegraphics[width=\textwidth]{shock_ZMt/shock_ZMt_Ct}
+		\caption{Consumption}
+		\label{fig:ZMt-consumption}
+	\end{subfigure}
+	\hfill
+	\begin{subfigure}[b]{0.3\textwidth}
+		\centering
+		\includegraphics[width=\textwidth]{shock_ZMt/shock_ZMt_LAMBDAt}
+		\caption{Marginal Cost}
+		\label{fig:ZMt-marginal-cost}
+	\end{subfigure}
+	\hfill
+	\begin{subfigure}[b]{0.3\textwidth}
+		\centering
+		\includegraphics[width=\textwidth]{shock_ZMt/shock_ZMt_Lt}
+		\caption{Labor}
+		\label{fig:ZMt-labor}
+	\end{subfigure}
+	\hfill
+	
+	\vspace*{0.5cm}
+	
+	\begin{subfigure}[b]{0.3\textwidth}
+		\centering
+		\includegraphics[width=\textwidth]{shock_ZMt/shock_ZMt_PIt}
+		\caption{Inflation}
+		\label{fig:ZMt-inflation}
+	\end{subfigure}
+	\hfill
+	\begin{subfigure}[b]{0.3\textwidth}
+		\centering
+		\includegraphics[width=\textwidth]{shock_ZMt/shock_ZMt_Pt}
+		\caption{Price Level}
+		\label{fig:ZMt-price}
+	\end{subfigure}
+	\hfill
+	\begin{subfigure}[b]{0.3\textwidth}
+		\centering
+		\includegraphics[width=\textwidth]{shock_ZMt/shock_ZMt_Rt}
+		\caption{Interest Rate}
+		\label{fig:ZMt-interest-rate}
+	\end{subfigure}
+	\hfill
+	
+	\vspace*{0.5cm}
+	
+	\begin{subfigure}[b]{0.3\textwidth}
+		\centering
+		\includegraphics[width=\textwidth]{shock_ZMt/shock_ZMt_Wt}
+		\caption{Wage}
+		\label{fig:ZMt-wage}
+	\end{subfigure}
+	\hfill
+	\begin{subfigure}[b]{0.3\textwidth}
+		\centering
+		\includegraphics[width=\textwidth]{shock_ZMt/shock_ZMt_Yt}
+		\caption{Production}
+		\label{fig:ZMt-production}
+	\end{subfigure}
+	\hfill
+	\begin{subfigure}[b]{0.3\textwidth}
+		\centering
+		\includegraphics[width=\textwidth]{shock_ZMt/blank}
+	\end{subfigure}
+	\hfill
+	\caption{Monetary Shock Impulse Response Functions}
+	\label{fig:ZMt-irf}
+\end{figure}
+
+\newpage
 
 \subsection{Parametrization}
 

@@ -104,22 +104,22 @@ parameters
 % parameters values                                  %
 % -------------------------------------------------- % 
 
- SIGMA   = 2       ; % Relative Risk Aversion
- PHI     = 1       ; % Labor Disutility Weight
- VARPHI  = 1.5     ; % Marginal Disutility of Labor Supply
- BETA    = 0.985   ; % Intertemporal Discount Factor
- DELTA   = 0.025   ; % Depreciation Rate
- ALPHA   = 0.35    ; % Output Elasticity of Capital
- PSI     = 8       ; % Elasticity of Substitution between Intermediate Goods
- THETA   = 0.8     ; % Price Stickness Parameter
- gammaR  = 0.79    ; % Interest-Rate Smoothing Parameter
- gammaPI = 2.43    ; % Interest-Rate Sensitivity to Inflation
- gammaY  = 0.16    ; % Interest-Rate Sensitivity to Product
+ SIGMA   = 2        ; % Relative Risk Aversion
+ PHI     = 1        ; % Labor Disutility Weight
+ VARPHI  = 1.5      ; % Marginal Disutility of Labor Supply
+ BETA    = 0.985    ; % Intertemporal Discount Factor
+ DELTA   = 0.025    ; % Depreciation Rate
+ ALPHA   = 0.35     ; % Output Elasticity of Capital
+ PSI     = 8        ; % Elasticity of Substitution between Intermediate Goods
+ THETA   = 0.8      ; % Price Stickness Parameter
+ gammaR  = 0.79     ; % Interest-Rate Smoothing Parameter
+ gammaPI = 2.43     ; % Interest-Rate Sensitivity to Inflation
+ gammaY  = 0.16     ; % Interest-Rate Sensitivity to Product
  % maybe it's a local var, right? RHO     = 1/(1+Rs); % Steady State Discount Rate
- rhoA    = 0.95    ; % Autoregressive Parameter of Productivity Shock
- rhoM    = 0.9     ; % Autoregressive Parameter of Monetary Policy Shock
- thetaC  = 0.8     ; % Consumption weight in Output
- thetaI  = 0.2     ; % Investment weight in Output
+ rhoA    = 0.95     ; % Autoregressive Parameter of Productivity Shock
+ rhoM    = 0.9      ; % Autoregressive Parameter of Monetary Policy Shock
+ thetaC  = 0.8      ; % Consumption weight in Output
+ thetaI  = 1-thetaC ; % Investment weight in Output
  
 % -------------------------------------------------- % 
 % standard errors values                             %

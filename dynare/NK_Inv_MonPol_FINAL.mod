@@ -97,7 +97,7 @@ parameters
  rhoA    = 0.95    ; % Autoregressive Parameter of Productivity Shock
  rhoM    = 0.9     ; % Autoregressive Parameter of Monetary Policy Shock
  thetaC  = 0.8     ; % Consumption weight in Output
- thetaI  = 0.2     ; % Investment weight in Output
+ thetaI  = 1-thetaC; % Investment weight in Output
  
 % -------------------------------------------------- % 
 % standard errors values                             %

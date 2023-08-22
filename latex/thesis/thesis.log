@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.5) (preloaded format=pdflatex 2023.7.14)  22 AUG 2023 15:41
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.5) (preloaded format=pdflatex 2023.7.14)  22 AUG 2023 16:19
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -11139,34 +11139,110 @@ File: ../images/shock_ZAt/blank.png Graphic file (type png)
 Package pdftex.def Info: ../images/shock_ZAt/blank.png  used on input line 969.
 
 (pdftex.def)             Requested size: 136.57462pt x 78.76317pt.
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-[77] [78 <../images/shock_ZAt/shock_ZAt_ZAt.png (PNG copy)> <../images/shock_ZA
-t/shock_ZAt_Kt.png (PNG copy)> <../images/shock_ZAt/shock_ZAt_It.png (PNG copy)
-> <../images/shock_ZAt/shock_ZAt_Ct.png (PNG copy)> <../images/shock_ZAt/shock_
-ZAt_LAMBDAt.png (PNG copy)> <../images/shock_ZAt/shock_ZAt_Lt.png (PNG copy)> <
-../images/shock_ZAt/shock_ZAt_PIt.png (PNG copy)> <../images/shock_ZAt/shock_ZA
-t_Pt.png (PNG copy)> <../images/shock_ZAt/shock_ZAt_Rt.png (PNG copy)> <../imag
-es/shock_ZAt/shock_ZAt_Wt.png (PNG copy)> <../images/shock_ZAt/shock_ZAt_Yt.png
- (PNG copy)> <../images/shock_ZAt/blank.png>]
+ [77 <../images/shock_ZAt/shock_ZAt_ZAt.png (PNG copy)> <../images/shock_ZAt/sh
+ock_ZAt_Kt.png (PNG copy)> <../images/shock_ZAt/shock_ZAt_It.png (PNG copy)> <.
+./images/shock_ZAt/shock_ZAt_Ct.png (PNG copy)> <../images/shock_ZAt/shock_ZAt_
+LAMBDAt.png (PNG copy)> <../images/shock_ZAt/shock_ZAt_Lt.png (PNG copy)> <../i
+mages/shock_ZAt/shock_ZAt_PIt.png (PNG copy)> <../images/shock_ZAt/shock_ZAt_Pt
+.png (PNG copy)> <../images/shock_ZAt/shock_ZAt_Rt.png (PNG copy)> <../images/s
+hock_ZAt/shock_ZAt_Wt.png (PNG copy)> <../images/shock_ZAt/shock_ZAt_Yt.png (PN
+G copy)> <../images/shock_ZAt/blank.png>]
+<../images/shock_ZMt/shock_ZMt_ZMt.png, id=1669, 347.8596pt x 184.0476pt>
+File: ../images/shock_ZMt/shock_ZMt_ZMt.png Graphic file (type png)
+<use ../images/shock_ZMt/shock_ZMt_ZMt.png>
+Package pdftex.def Info: ../images/shock_ZMt/shock_ZMt_ZMt.png  used on input l
+ine 984.
+(pdftex.def)             Requested size: 136.57462pt x 72.2613pt.
+<../images/shock_ZMt/shock_ZMt_Kt.png, id=1670, 328.1058pt x 185.0112pt>
+File: ../images/shock_ZMt/shock_ZMt_Kt.png Graphic file (type png)
+<use ../images/shock_ZMt/shock_ZMt_Kt.png>
+Package pdftex.def Info: ../images/shock_ZMt/shock_ZMt_Kt.png  used on input li
+ne 991.
+(pdftex.def)             Requested size: 136.57462pt x 77.01253pt.
+<../images/shock_ZMt/shock_ZMt_It.png, id=1671, 351.2322pt x 184.0476pt>
+File: ../images/shock_ZMt/shock_ZMt_It.png Graphic file (type png)
+<use ../images/shock_ZMt/shock_ZMt_It.png>
+Package pdftex.def Info: ../images/shock_ZMt/shock_ZMt_It.png  used on input li
+ne 998.
+(pdftex.def)             Requested size: 136.57462pt x 71.56764pt.
+<../images/shock_ZMt/shock_ZMt_Ct.png, id=1672, 340.1508pt x 185.0112pt>
+File: ../images/shock_ZMt/shock_ZMt_Ct.png Graphic file (type png)
+<use ../images/shock_ZMt/shock_ZMt_Ct.png>
+Package pdftex.def Info: ../images/shock_ZMt/shock_ZMt_Ct.png  used on input li
+ne 1008.
+(pdftex.def)             Requested size: 136.57462pt x 74.28546pt.
+<../images/shock_ZMt/shock_ZMt_LAMBDAt.png, id=1673, 332.9238pt x 185.0112pt>
+File: ../images/shock_ZMt/shock_ZMt_LAMBDAt.png Graphic file (type png)
+<use ../images/shock_ZMt/shock_ZMt_LAMBDAt.png>
+Package pdftex.def Info: ../images/shock_ZMt/shock_ZMt_LAMBDAt.png  used on inp
+ut line 1015.
+(pdftex.def)             Requested size: 136.57462pt x 75.89459pt.
+<../images/shock_ZMt/shock_ZMt_Lt.png, id=1674, 331.4784pt x 185.0112pt>
+File: ../images/shock_ZMt/shock_ZMt_Lt.png Graphic file (type png)
+<use ../images/shock_ZMt/shock_ZMt_Lt.png>
+Package pdftex.def Info: ../images/shock_ZMt/shock_ZMt_Lt.png  used on input li
+ne 1022.
+(pdftex.def)             Requested size: 136.57462pt x 76.22772pt.
+<../images/shock_ZMt/shock_ZMt_PIt.png, id=1675, 331.4784pt x 185.0112pt>
+File: ../images/shock_ZMt/shock_ZMt_PIt.png Graphic file (type png)
+<use ../images/shock_ZMt/shock_ZMt_PIt.png>
+Package pdftex.def Info: ../images/shock_ZMt/shock_ZMt_PIt.png  used on input l
+ine 1032.
+(pdftex.def)             Requested size: 136.57462pt x 76.22772pt.
+<../images/shock_ZMt/shock_ZMt_Pt.png, id=1676, 348.3414pt x 184.0476pt>
+File: ../images/shock_ZMt/shock_ZMt_Pt.png Graphic file (type png)
+<use ../images/shock_ZMt/shock_ZMt_Pt.png>
+Package pdftex.def Info: ../images/shock_ZMt/shock_ZMt_Pt.png  used on input li
+ne 1039.
+(pdftex.def)             Requested size: 136.57462pt x 72.1602pt.
+<../images/shock_ZMt/shock_ZMt_Rt.png, id=1677, 342.5598pt x 184.0476pt>
+File: ../images/shock_ZMt/shock_ZMt_Rt.png Graphic file (type png)
+<use ../images/shock_ZMt/shock_ZMt_Rt.png>
+Package pdftex.def Info: ../images/shock_ZMt/shock_ZMt_Rt.png  used on input li
+ne 1046.
+(pdftex.def)             Requested size: 136.57462pt x 73.37901pt.
+<../images/shock_ZMt/shock_ZMt_Wt.png, id=1678, 348.3414pt x 184.0476pt>
+File: ../images/shock_ZMt/shock_ZMt_Wt.png Graphic file (type png)
+<use ../images/shock_ZMt/shock_ZMt_Wt.png>
+Package pdftex.def Info: ../images/shock_ZMt/shock_ZMt_Wt.png  used on input li
+ne 1056.
+(pdftex.def)             Requested size: 136.57462pt x 72.1602pt.
+<../images/shock_ZMt/shock_ZMt_Yt.png, id=1679, 331.4784pt x 185.0112pt>
+File: ../images/shock_ZMt/shock_ZMt_Yt.png Graphic file (type png)
+<use ../images/shock_ZMt/shock_ZMt_Yt.png>
+Package pdftex.def Info: ../images/shock_ZMt/shock_ZMt_Yt.png  used on input li
+ne 1063.
+(pdftex.def)             Requested size: 136.57462pt x 76.22772pt.
+<../images/shock_ZMt/blank.png, id=1680, 122.70844pt x 70.76437pt>
+File: ../images/shock_ZMt/blank.png Graphic file (type png)
+<use ../images/shock_ZMt/blank.png>
+Package pdftex.def Info: ../images/shock_ZMt/blank.png  used on input line 1070
+.
+(pdftex.def)             Requested size: 136.57462pt x 78.76317pt.
+ [78 <../images/shock_ZMt/shock_ZMt_ZMt.png (PNG copy)> <../images/shock_ZMt/sh
+ock_ZMt_Kt.png (PNG copy)> <../images/shock_ZMt/shock_ZMt_It.png (PNG copy)> <.
+./images/shock_ZMt/shock_ZMt_Ct.png (PNG copy)> <../images/shock_ZMt/shock_ZMt_
+LAMBDAt.png (PNG copy)> <../images/shock_ZMt/shock_ZMt_Lt.png (PNG copy)> <../i
+mages/shock_ZMt/shock_ZMt_PIt.png (PNG copy)> <../images/shock_ZMt/shock_ZMt_Pt
+.png (PNG copy)> <../images/shock_ZMt/shock_ZMt_Rt.png (PNG copy)> <../images/s
+hock_ZMt/shock_ZMt_Wt.png (PNG copy)> <../images/shock_ZMt/shock_ZMt_Yt.png (PN
+G copy)> <../images/shock_ZMt/blank.png>] [79]
 LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 1
-000.
+103.
 
 (C:\Users\andre\AppData\Local\Programs\MiKTeX\tex/latex/base\t1cmtt.fd
 File: t1cmtt.fd 2023/04/13 v2.5m Standard LaTeX font definitions
 )
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 1000.
+ine 1103.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 1000.
+ine 1103.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 1000.
+ine 1103.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 1000.
+ine 1103.
 
-[79] (section/900_appendix.tex
+[80] (section/900_appendix.tex
 > Step: init table outer spec.
 > Step: parse table options.
 > Step: split table.
@@ -11399,40 +11475,40 @@ LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 68.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 68.
- [80]
-LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 68.
-LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 68.
-LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 68.
-LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 68.
-LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 68.
-LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 68.
-LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 68.
-LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 68.
-LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 68.
-LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 68.
-LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 68.
-LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 68.
-LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 68.
-LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 68.
-LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 68.
-LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 68.
  [81]
+LaTeX Font Info:    No math alphabet change to frozen version normal on input l
+ine 68.
+LaTeX Font Info:    No math alphabet change to frozen version normal on input l
+ine 68.
+LaTeX Font Info:    No math alphabet change to frozen version normal on input l
+ine 68.
+LaTeX Font Info:    No math alphabet change to frozen version normal on input l
+ine 68.
+LaTeX Font Info:    No math alphabet change to frozen version normal on input l
+ine 68.
+LaTeX Font Info:    No math alphabet change to frozen version normal on input l
+ine 68.
+LaTeX Font Info:    No math alphabet change to frozen version normal on input l
+ine 68.
+LaTeX Font Info:    No math alphabet change to frozen version normal on input l
+ine 68.
+LaTeX Font Info:    No math alphabet change to frozen version normal on input l
+ine 68.
+LaTeX Font Info:    No math alphabet change to frozen version normal on input l
+ine 68.
+LaTeX Font Info:    No math alphabet change to frozen version normal on input l
+ine 68.
+LaTeX Font Info:    No math alphabet change to frozen version normal on input l
+ine 68.
+LaTeX Font Info:    No math alphabet change to frozen version normal on input l
+ine 68.
+LaTeX Font Info:    No math alphabet change to frozen version normal on input l
+ine 68.
+LaTeX Font Info:    No math alphabet change to frozen version normal on input l
+ine 68.
+LaTeX Font Info:    No math alphabet change to frozen version normal on input l
+ine 68.
+ [82]
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 100.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
@@ -11531,7 +11607,7 @@ LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 136.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 136.
- [82]
+ [83]
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 136.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
@@ -11568,7 +11644,7 @@ LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 209.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 209.
- [83]
+ [84]
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 218.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
@@ -11683,7 +11759,7 @@ LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 301.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 301.
- [84]
+ [85]
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 325.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
@@ -11852,7 +11928,7 @@ LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 388.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 388.
- [85]
+ [86]
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 388.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
@@ -11943,8 +12019,8 @@ LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 453.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 454.
- [86] [87] [88]
-[89] [90] [91] [92] [93] [94]
+ [87] [88] [89]
+[90] [91] [92] [93] [94] [95]
 LaTeX Font Info:    Font shape `U/BOONDOX-calo/m/n' will be
 (Font)              scaled to size 14.4pt on input line 840.
 LaTeX Font Info:    Font shape `U/BOONDOX-calo/m/n' will be
@@ -12801,10 +12877,10 @@ LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 896.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 896.
- [95]
+ [96]
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 896.
- [96]
+ [97]
 LaTeX Font Info:    Undo math alphabet allocation in version normal on input li
 ne 917.
 LaTeX Font Info:    Undo math alphabet allocation in version normal on input li
@@ -12968,10 +13044,10 @@ Missing character: There is no 9 in font fplmbb!
 Missing character: There is no 0 in font fplmbb!
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 990.
-[97]
+[98]
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 990.
- [98]
+ [99]
 > Step: init table outer spec.
 > Step: parse table options.
 > Step: split table.
@@ -13772,7 +13848,7 @@ LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 1036.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 1036.
- [99] (thesis.tdo
+ [100] (thesis.tdo
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 1.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
@@ -13793,7 +13869,7 @@ LaTeX Font Info:    Trying to load font information for T1+cmss on input line 1
 (C:\Users\andre\AppData\Local\Programs\MiKTeX\tex/latex/base\t1cmss.fd
 File: t1cmss.fd 2023/04/13 v2.5m Standard LaTeX font definitions
 ))
-[100] (thesis.aux)
+[101] (thesis.aux)
  ***********
 LaTeX2e <2023-06-01> patch level 1
 L3 programming layer <2020/03/25>
@@ -13803,7 +13879,7 @@ L3 programming layer <2020/03/25>
 LaTeX Warning: There were undefined references.
 
 Package rerunfilecheck Info: File `thesis.out' has not changed.
-(rerunfilecheck)             Checksum: 66DAF8AAD3ED6151C85D1B5C3EC67E73;4676.
+(rerunfilecheck)             Checksum: 420B8ECD881E9729C772DCB21B4B612D;4681.
 
 Package biblatex Warning: Please (re)run Biber on the file:
 (biblatex)                thesis
@@ -13814,10 +13890,10 @@ Package logreq Info: Writing requests to 'thesis.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 40699 strings out of 475551
- 796491 string characters out of 5762554
+ 40870 strings out of 475551
+ 802530 string characters out of 5762554
  1979238 words of memory out of 5000000
- 60400 multiletter control sequences out of 15000+600000
+ 60567 multiletter control sequences out of 15000+600000
  660617 words of font info for 285 fonts, out of 8000000 for 9000
  1144 hyphenation exceptions out of 8191
  99i,26n,122p,806b,4380s stack positions out of 10000i,1000n,20000p,200000b,200000s
@@ -13850,9 +13926,9 @@ ype1/urw/palatino/uplr8a.pfb><C:/Users/andre/AppData/Local/Programs/MiKTeX/font
 s/type1/urw/palatino/uplri8a.pfb><C:/Users/andre/AppData/Local/Programs/MiKTeX/
 fonts/type1/public/boondox/zxxbw8a.pfb><C:/Users/andre/AppData/Local/Programs/M
 iKTeX/fonts/type1/public/boondox/zxxrw8a.pfb>
-Output written on thesis.pdf (100 pages, 962843 bytes).
+Output written on thesis.pdf (101 pages, 1117194 bytes).
 PDF statistics:
- 2274 PDF objects out of 2487 (max. 8388607)
- 761 named destinations out of 1000 (max. 500000)
- 361 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 2294 PDF objects out of 2487 (max. 8388607)
+ 765 named destinations out of 1000 (max. 500000)
+ 421 words of extra memory for PDF output out of 10000 (max. 10000000)
 
