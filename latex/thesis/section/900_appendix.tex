@@ -18,7 +18,7 @@ thesis.tex
 % TABLE OF PARAMETERS
 % --------------------------------------------------
 
-\subsection{Table of Parameters}
+\subsection{Greek Letters}
 
 \vspace*{0.5cm}
 
@@ -75,7 +75,7 @@ thesis.tex
 
 \subsection{Table of the Literature Review}
 
-\lipsum[1]
+A table of the literature review will be presented here, in order to compare the elements of each DSGE model discussed in the text.
 
 % --------------------------------------------------
 % DEFINITIONS
@@ -85,41 +85,45 @@ thesis.tex
 
 The objective of this appendix is to present the definitions, theorems, lemmas and proofs used throughout the text.
 
-\subsubsection{Model}
+\subsubsection*{Household}
 
-\subsubsection{Household}
-
-% --------------------------------------------------
-% Household Maximization Problem
-% --------------------------------------------------
-
-\begin{definition}[Household Maximization Problem]
-	{\singlespacing
-		The utility function is:
-		\begin{itemize}
-			\item strictly increasing in consumption $C$;
-			\item strictly increasing in leisure $l$;
-			\item strictly concave;
-			\item twice continuously differentiable;
-			\item the composite consumption good $C$ is also the numeraire good, so that its price equals one: $p_C=1$;
-			\item to avoid corner solutions, the Inada conditions\footnotemark{} hold. \footnotetext{see definition \ref{def:Inada Condition}.}
-	\end{itemize}}
+\begin{comment}
 	
-	Consider a representative household that maximizes an utility function $u$ that depends on consumption $C_t$ and labor $L_t$:
-	\begin{align}
-		u \equiv u \left( C_t, L_t \right)
-	\end{align}
+	% --------------------------------------------------
+	% Household Maximization Problem
+	% --------------------------------------------------
 	
-	The utility function is considered to be convex (when a variable increases, the respective marginal utility diminishes)\footnotemark{}: \footnotetext{Consider the following notation: given two variables $X$ and $Y$, the first and second partial derivatives are: $Y_X := \displaystyle\frac{\partial Y}{\partial X}$ and $Y_{XX} := \displaystyle\frac{\partial^2 Y}{\partial X^2}$.}
-	\begin{align*}
-		u_{C} > 0 \text{,}\quad u_{CC} < 0 \text{,}\quad
-		u_{L} > 0 \text{,}\quad u_{LL} < 0
-	\end{align*}
+	\begin{definition}[Household Maximization Problem]
+		{\singlespacing
+			The utility function is:
+			\begin{itemize}
+				\item strictly increasing in consumption $C$;
+				\item strictly increasing in leisure $l$;
+				\item strictly concave;
+				\item twice continuously differentiable;
+				\item the composite consumption good $C$ is also the numeraire good, so that its price equals one: $p_C=1$;
+				\item to avoid corner solutions, the Inada conditions\footnotemark{} hold. \footnotetext{see definition \ref{def:Inada Condition}.}
+		\end{itemize}}
+		
+		Consider a representative household that maximizes an utility function $u$ that depends on consumption $C_t$ and labor $L_t$:
+		\begin{align}
+			u \equiv u \left( C_t, L_t \right)
+		\end{align}
+		
+		The utility function is considered to be convex (when a variable increases, the respective marginal utility diminishes)\footnotemark{}: \footnotetext{Consider the following notation: given two variables $X$ and $Y$, the first and second partial derivatives are: $Y_X := \displaystyle\frac{\partial Y}{\partial X}$ and $Y_{XX} := \displaystyle\frac{\partial^2 Y}{\partial X^2}$.}
+		\begin{align*}
+			u_{C} > 0 \text{,}\quad u_{CC} < 0 \text{,}\quad
+			u_{L} > 0 \text{,}\quad u_{LL} < 0
+		\end{align*}
+		
+	\end{definition}
 	
-\end{definition}
+\end{comment}
 
 \begin{definition}[Discount Factor $\beta$]
-	other things the same, a unit of consumption enjoyed tomorrow is less valuable (yields less utility) than a unit of consumption enjoyed today \cite[Lecture 2, p.1]{solis-garcia_ucb_2022}.
+	
+	Other things the same, a unit of consumption enjoyed tomorrow is less valuable (yields less utility) than a unit of consumption enjoyed today \cite[Lecture 2, p.1]{solis-garcia_ucb_2022}.
+	
 \end{definition}
 
 % --------------------------------------------------
@@ -149,7 +153,7 @@ The objective of this appendix is to present the definitions, theorems, lemmas a
 % FIRMS
 % --------------------------------------------------
 
-\subsubsection{Firms}
+\subsubsection*{Firms}
 
 % --------------------------------------------------
 % MARGINAL COST
@@ -162,7 +166,7 @@ The objective of this appendix is to present the definitions, theorems, lemmas a
 	\end{align}
 	
 	\begin{proof}
-		Please see \textcite[p.449]{simon_mathematics_1994}.
+		\textcite[p.449]{simon_mathematics_1994}.
 	\end{proof}
 	
 \end{lemma}
@@ -179,11 +183,11 @@ The objective of this appendix is to present the definitions, theorems, lemmas a
 	\cite[Lecture 1, p.5]{solis-garcia_ucb_2022}
 \end{definition}
 
-\subsubsection{Monetary Authority}
+\subsubsection*{Monetary Authority}
 
-\subsubsection{Shocks}
+\subsubsection*{Shocks}
 
-\subsubsection{Equilibrium Conditions}
+\subsubsection*{Equilibrium Conditions}
 
 \begin{definition}[Competitive Equilibrium]
 	\cite[Lecture 1, p.6]{solis-garcia_ucb_2022}
@@ -193,7 +197,7 @@ The objective of this appendix is to present the definitions, theorems, lemmas a
 % STEADY STATE
 % --------------------------------------------------
 
-\subsubsection{Steady State}
+\subsubsection*{Steady State}
 
 % --------------------------------------------------
 % INFLATION LEMMA
@@ -223,7 +227,7 @@ The objective of this appendix is to present the definitions, theorems, lemmas a
 % LOG-LINEARIZATION
 % --------------------------------------------------
 
-\subsubsection{Log-linearization}
+\subsubsection*{Log-linearization}
 
 % --------------------------------------------------
 % PERCENTAGE DEVIATION
@@ -318,7 +322,7 @@ The objective of this appendix is to present the definitions, theorems, lemmas a
 
 \begin{lemma}[LEVEL DEVIATION OF THE PRESENT VALUE DISCOUNT FACTOR]\label{product-operator}
 	
-	The level deviation of the present value discount factor is equivalent to:
+	The level deviation of the present value discount factor is equivalent to \cite[Lecture 13, p.6]{solis-garcia_ucb_2022}:
 	\begin{align}
 		\label{eq:product-operator}
 		\prod_{k=0}^{s-1}(1+R_{t+k}) = (1 + R)^s \left( 1 + \frac{1}{1 + R} \sum_{k=0}^{s-1} \widetilde{R}_{t+k} \right)
@@ -388,11 +392,13 @@ The objective of this appendix is to present the definitions, theorems, lemmas a
 	\end{align*}
 \end{definition}
 
-\subsubsection{Canonical NK Model}
+\subsubsection*{Canonical NK Model}
 
 % --------------------------------------------------
 % DEFINITION
 % --------------------------------------------------
+
+\begin{comment}
 
 \begin{definition}[Canonical NK Model]
 	
@@ -435,6 +441,8 @@ The objective of this appendix is to present the definitions, theorems, lemmas a
 	\end{align*}
 	
 \end{definition}
+
+\end{comment}
 
 \begin{definition}[Medium Scale DSGE Model]
 	A Medium Scale DSGE Model has habit formation, capital accumulation, indexation, etc. \cite[p.208]{gali_monetary_2015}. 
@@ -526,6 +534,12 @@ The objective of this appendix is to present the definitions, theorems, lemmas a
 \newpage
 
 \subsection{Dynare Program}
+
+This section presents the \texttt{mod} file used in \dynare to solve the model in section \ref{sec:model}.
+
+\vspace*{-1cm}
+
+{\singlespacing
 
 \begin{verbatim} 
 	
@@ -831,7 +845,11 @@ The objective of this appendix is to present the definitions, theorems, lemmas a
 	
 \end{verbatim}
 
-\newpage
+} % end \singlespacing
+
+% \newpage
+
+\begin{comment}
 
 % --------------------------------------------------
 % LATEX
@@ -839,7 +857,7 @@ The objective of this appendix is to present the definitions, theorems, lemmas a
 
 \subsection{\LaTeX}
 
-\subsubsection{Commands}
+\subsubsection*{Commands}
 
 \begin{itemize}
 	
@@ -899,7 +917,7 @@ The objective of this appendix is to present the definitions, theorems, lemmas a
 
 \newpage
 
-\subsubsection{Font Styles in Math Mode}
+\subsubsection*{Font Styles in Math Mode}
 
 \begin{itemize}
 	
@@ -993,7 +1011,7 @@ The objective of this appendix is to present the definitions, theorems, lemmas a
 
 \newpage
 
-\subsubsection{Greek Letters}
+\subsubsection*{Greek Letters}
 
 \vspace*{0.5cm}
 
@@ -1173,5 +1191,7 @@ The objective of this appendix is to present the definitions, theorems, lemmas a
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	
+\end{comment}	
 	
 \end{document}

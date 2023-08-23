@@ -13,13 +13,13 @@
 % REGIONS
 % --------------------------------------------------
 
-Regions will be identified by the index $\eta \in \{A,B,\ldots,n\}$. For example, the variable $C_t$ represents the total consumption, while $C_{\eta t}$ represents the consumption of region $\eta$. Without loss of generality, the model will have two regions: the main region $A$ and the remaining of the country $B$, so that $\eta \in \{A,B\}$.
+%\todo[inline]{falta revisar esta parte e agrupar por agentes da economia.}
+%
+%\todo[inline]{colocar estatística descritiva para justificar as variáveis.}
+
+This section was written before the regional model was developed. As a result, certain information needs to be updated and illustrated using descriptive statistics. These corrections will be made in due time.
 
 Determining whether the variable (or parameter) should be region-specific (or not) requires justification:
-
-\todo[inline]{falta revisar esta parte e agrupar por agente da economia}
-
-\todo[inline]{colocar estatística descritiva para justificar as variáveis}
 
 \begin{itemize}
 	\item \(C_{it}\) and \(I_{it}\): Consumption from region to region should vary based on the abundance of natural resources and the available technology in that region: each region will specialize in producing goods that are resource-intensive, considering the resources that are abundant in that specific region. This will increase the supply, decreasing their relative price and making them more demanded. Investment is decided based on the household maximization problem, in which consumption level must be decided regionally.
@@ -47,15 +47,19 @@ Determining whether the variable (or parameter) should be region-specific (or no
 
 \section*{Regional Model}\label{sec:regional-model}
 
-\todo[inline]{model illustration as in \textcite{osterno_uma_2022}.}
+% \todo[inline]{model illustration as in \textcite{osterno_uma_2022}.}
 
-The model is populated by four agents: 
-\begin{enumerate*}[label=(\arabic*)]
-	\item a representative household,
-	\item a continuum of firms producing intermediate goods,
-	\item a firm producing a final good, and
-	\item the monetary authority.
-\end{enumerate*}
+In this section, the model presented in the previous section will be expanded to encompass two regions: the main region to be studied and the rest of the country.
+
+Regions will have two indexes: $\eta \in \{1,2,\ldots,n\}$ will represent the household variables and $\nu \in \{1,2,\ldots,n\}$ will determine the firm variables. For example, the variable $C_{t}$ represents the total consumption, while $C_{\eta t}$ represents the consumption of region $\eta$, while the variable $Y_t$ represents the national production and $Y_{\nu t}$ represents the production of region $\nu$. Finally, $C_{\nu\eta t}$ represents the consumption of the final-good produced in region $\nu$ by the household in region $\eta$. Without loss of generality, the model will have two regions: the main region $1$ and the remaining of the country $2$, so that $\eta,\nu \in \{1,2\}$.
+
+%The model is populated by four agents: 
+%\begin{enumerate*}[label=(\arabic*)]
+%	\item a representative household,
+%	\item a continuum of firms producing intermediate goods,
+%	\item a firm producing a final good, and
+%	\item the monetary authority.
+%\end{enumerate*}
 
 % --------------------------------------------------
 % HOUSEHOLD
@@ -839,6 +843,10 @@ In steady state, prices are the same ($P_{C\nu} = P_{C\nu}^\ast$), resulting in 
 	Y_{\nu} &= Z_{A\nu} K_{\eta}^{\alpha_\nu} L_{\eta}^{1 -{\alpha_\nu}} \label{eq:reg-ss-int-good-firm-production-function-2}
 \end{align}
 
+At the time of delivering this document, the development of the model was at this stage.
+
+\begin{comment}
+
 \todo[inline]{here, there is no Y = C + I to substitute...}
 
 Substitute \ref{eq:reg-ss-int-good-firm-FOC-Kt-2} in \ref{eq:reg-ss-law-of-motion-for-capital}:
@@ -1424,5 +1432,7 @@ The log-linear model is a square system of 12 variables and 12 equations, summar
 	\end{itemize}
 	
 } % \singlespacing
+
+\end{comment}
 
 \end{document}

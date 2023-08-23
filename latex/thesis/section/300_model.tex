@@ -8,8 +8,6 @@
 
 \begin{document}
 
-\todo[inline]{model illustration as in \textcite{osterno_uma_2022}.}
-
 The model is populated by four agents: 
 \begin{enumerate*}[label=(\arabic*)]
 	\item a representative household,
@@ -17,6 +15,41 @@ The model is populated by four agents:
 	\item a firm producing a final good, and
 	\item the monetary authority.
 \end{enumerate*}
+
+	The representative household maximizes utility based on consumption and labor, subject to a budget constraint composed of wages, capital rental rates, and firm profits.
+	
+	The final-goods firm produces the final-good consumed by households: it aggregates all intermediate-goods produced by intermediate firms, operates under perfect competition and seeks to maximize profit subject to the bundle technology.
+	
+	Intermediate firms each produce a single intermediate good, all exhibiting imperfect substitution, thus operating in monopolistic competition. Intermediate-goods firms has two problems to solve: minimize costs subject to production level and choose an optimal price to maximize the intertemporal profit flow.
+	
+	Periodically, a portion of intermediate-goods firms have the opportunity to adjust prices, while others miss this chance, following to a \textcite{calvo_staggered_1983} rule. This mechanism generates nominal price rigidities, altering equilibrium relationships in the system. These rigidities lead to non-neutrality of money in the short term, as explained by \textcite[p.191]{costa_junior_understanding_2016}.
+	
+	The monetary authority determines the nominal interest rate in response to fluctuations in previous period's inflation and production, aiming to control price levels and growth, following a \textcite{taylor_discretion_1993} rule.
+	
+	Stochastic shocks will be present in the intermediate-goods firms' productivity and in the monetary policy.
+	
+	For regionalization of the model, an index will be used to differentiate the studied region from the rest of Brazil, resulting in separate households, intermediate- and final-goods firms for each region.
+	
+	Households will lack mobility between regions. The link connecting the two regions will be the final-goods.
+
+	Then, equilibrium conditions of the system will be determined. Assuming the system tends toward long-term equilibrium, a steady state will be reached where variables cease to change. Thus, for a given $t \longrightarrow \infty$, we will have $\boldsymbol{X}t = \boldsymbol{X}{t+1} = \boldsymbol{X}_{ss} \implies \boldsymbol{\dot{X}} = 0$.\footnote{recall that: $\boldsymbol{\dot{X}} = \frac{\partial \boldsymbol{X}}{\partial t}$} Here, $\boldsymbol{X}$ denotes the vector of system variables and $ss$ indicates the steady state.
+	
+	After that, the log-linearization method proposed by \textcite{uhlig_toolkit_1999} will be employed to convert the system of equations into a linear system, so that this linear system can be solved by the program \dynare{}, which computes the solution and produces impulse-response graphs based on the stochastic shocks.
+
+	% Sixth, we will gather macroeconomic and regional data for the period from 1995 (the start of the plan) to 2020, using data from the first twenty years to estimate model parameters. Subsequently, we will assess the model's fit to data from the last six years.
+
+% --------------------------------------------------
+% MODEL DIAGRAM
+% --------------------------------------------------
+
+\subsection*{Model Diagram}
+
+\begin{figure}[h!]
+	\centering
+	\includegraphics[width=\textwidth]{flowchart}
+	\caption{Model Diagram}
+	\label{fig:model-diagram}
+\end{figure}
 
 % --------------------------------------------------
 % HOUSEHOLD
@@ -26,7 +59,7 @@ The model is populated by four agents:
 
 \subsubsection*{Utility Maximization Problem}
 
-an \ac{uti} or \Ac{uti} or \acf{uti}
+% an \ac{uti} or \Ac{uti} or \acf{uti}
 
 Following the models presented by \textcite{costa_junior_understanding_2016} and \textcite{solis-garcia_ucb_2022}, the representative household problem is to maximize an intertemporal utility function $U$ with respect to consumption $C_t$ and labor $L_t$, subject to a budget constraint, a capital accumulation rule and the non-negativity of real variables:
 \begin{align}
