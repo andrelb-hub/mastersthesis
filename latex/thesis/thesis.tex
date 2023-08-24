@@ -63,7 +63,7 @@ uniquelist   = false
 	andreluizmtg@gmail.com}}}
 
 \date{
-	\vfill Curitiba, March 01st, 2023}
+	\vfill Curitiba, from March 1st to August 23rd, 2023}
 
 % --------------------------------------------------
 % DOCUMENT
@@ -82,6 +82,13 @@ uniquelist   = false
 % --------------------------------------------------
 
 %\subsection*{Cover Page}
+
+%\center
+%\begin{tikzpicture}[remember picture,overlay] 
+%	\node[anchor=south west, yshift= 25mm, xshift=-1.5mm] at (current page.south west) 
+%	{\includegraphics[width = \paperwidth]{../images/marca_dagua_ufpr}};
+%\end{tikzpicture}
+%\center
 
 \maketitle
 
@@ -205,6 +212,8 @@ uniquelist   = false
 
 \newpage
 
+\begin{comment}
+
 % --------------------------------------------------
 % LIST OF VARIABLES: ACRONYMS
 % --------------------------------------------------
@@ -219,6 +228,8 @@ This list will present all variables used in the model.
 \thispagestyle{empty}
 
 \newpage
+
+\end{comment}
 
 % --------------------------------------------------
 % LIST OF ABBREVIATIONS: GLOSSARY
@@ -291,9 +302,9 @@ This list will present all variables used in the model.
 
 \section{Introduction}\label{sec:introduction}
 
-\subfile{section/100_intro}
+\subfile{subfiles/100_intro}
 
-%\newpage
+\newpage
 
 % --------------------------------------------------
 % LITERATURE REVIEW
@@ -301,7 +312,7 @@ This list will present all variables used in the model.
 
 \section{Literature Review}\label{sec:literature-review}
 
-\subfile{section/200_litRev}
+\subfile{subfiles/200_litRev}
 
 \newpage
 
@@ -309,9 +320,9 @@ This list will present all variables used in the model.
 % MODEL
 % --------------------------------------------------
 
-\section{Model}\label{sec:model}
+\section{Models}\label{sec:model}
 
-\subfile{section/300_model}
+\subfile{subfiles/300_model}
 
 \newpage
 
@@ -319,19 +330,25 @@ This list will present all variables used in the model.
 % REGIONS
 % --------------------------------------------------
 
-\section{Regions}
-
-\subfile{section/400_regModel}
+\subfile{subfiles/310_regModel}
 
 \newpage
+
+% --------------------------------------------------
+% CALIBRATION AND IRF
+% --------------------------------------------------
+
+\subfile{subfiles/320_calibration}
+
+%\newpage
 
 % --------------------------------------------------
 % DATA
 % --------------------------------------------------
 
-\section{Data}
+\subfile{subfiles/390_data}
 
-\subfile{section/500_data}
+\newpage
 
 % --------------------------------------------------
 % RESULTS
@@ -339,7 +356,13 @@ This list will present all variables used in the model.
 
 \section{Results}
 
-\subfile{section/600_results}
+\subfile{subfiles/510_IRF}
+
+\newpage
+
+\subfile{subfiles/500_results}
+
+\newpage
 
 % --------------------------------------------------
 % FINAL REMARKS
@@ -347,7 +370,7 @@ This list will present all variables used in the model.
 
 \section{Final Remarks}
 
-\subfile{section/700_finalRemarks}
+\subfile{subfiles/600_finalRemarks}
 
 \newpage
 
@@ -372,6 +395,6 @@ This list will present all variables used in the model.
 
 \appendix
 
-\subfile{section/900_appendix}
+\subfile{subfiles/900_appendix}
 
 \end{document}

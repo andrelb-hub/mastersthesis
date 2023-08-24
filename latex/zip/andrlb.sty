@@ -126,7 +126,21 @@ english,
 
 \usepackage{graphicx}
 
-\graphicspath{ {../images/} }
+\graphicspath{{../images/}}
+
+% --------------------------------------------------
+% WATERMARK (MARCA D'ÁGUA)
+% --------------------------------------------------
+
+\usepackage[firstpage = true]{background}
+
+\backgroundsetup{
+	scale     = 1,
+	opacity   = 1,
+	angle     = 0,
+	contents  = {
+		\includegraphics[width=\paperwidth]{../images/marca_dagua_ufpr}}
+}
 
 % --------------------------------------------------
 % MULTIFIGURES AND SUBFIGURES
@@ -134,7 +148,6 @@ english,
 
 \usepackage{caption}
 \usepackage{subcaption}
-
 
 % --------------------------------------------------
 % QUOTATION

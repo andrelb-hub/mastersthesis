@@ -4,19 +4,15 @@
     "type": "split",
     "children": [
       {
-        "id": "5b873d6c07f75b37",
+        "id": "65706387f59a2fc9",
         "type": "tabs",
         "children": [
           {
-            "id": "f053f6d6a61aacba",
+            "id": "977355f136df8317",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "CORBO et al 2020.md",
-                "mode": "source",
-                "source": false
-              }
+              "type": "empty",
+              "state": {}
             }
           }
         ]
@@ -69,8 +65,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 200
   },
   "right": {
     "id": "fb01c65dc3a8a205",
@@ -86,7 +81,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "CORBO et al 2020.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +97,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "CORBO et al 2020.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,9 +118,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "CORBO et al 2020.md"
-              }
+              "state": {}
             }
           }
         ]
@@ -147,8 +138,9 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "f053f6d6a61aacba",
+  "active": "536598f563bb5a03",
   "lastOpenFiles": [
+    "rascunho.md",
     "CORBO et al 2020.md"
   ]
 }
