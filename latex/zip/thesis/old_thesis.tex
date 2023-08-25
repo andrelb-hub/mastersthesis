@@ -1,0 +1,400 @@
+% --------------------------------------------------
+% DOCUMENT CLASS
+% --------------------------------------------------
+
+\documentclass[
+	12pt, 
+	]{article}
+
+% --------------------------------------------------
+% PACKAGE FILE mypackage.sty
+% --------------------------------------------------
+
+\usepackage{import}
+\usepackage{../zip/andrlb}
+
+% --------------------------------------------------
+% REFERENCES: BIBER
+% --------------------------------------------------
+
+\usepackage[
+style        = abnt, %alphabetic, %
+sorting      = nyt, 
+backref      = true, 
+backend      = biber, 
+citecounter  = true, 
+backrefstyle = three, 
+url          = true, 
+maxbibnames  = 99, 
+mincitenames = 1, 
+maxcitenames = 2, 
+hyperref     = true, 
+giveninits   = true, 
+uniquename   = false, 
+uniquelist   = false
+]{biblatex}
+
+\addbibresource{../zip/ref.bib}
+
+% --------------------------------------------------
+% MULTI-FILES PROJECT
+% --------------------------------------------------
+
+% best loaded last in the preamble
+\usepackage{subfiles}
+
+% --------------------------------------------------
+% TITLE
+% --------------------------------------------------
+
+% Análise do Impacto da Política Monetária sobre
+% o Produto Interno Bruto Regional: 
+% Um Modelo DSGE Regional
+
+\title{
+	Analysis of the Monetary Policy Impact \\ 
+	on Regional Gross Domestic Product: \\ 
+	A Regional DSGE Model \vspace{2cm}}
+
+\author{
+	\LARGE André Luiz Brito 
+	\footnote{ \href{ 
+	mailto:andreluizmtg@gmail.com}{
+	andreluizmtg@gmail.com}}}
+
+\date{
+	\vfill Curitiba, from March 1st to August 23rd, 2023}
+
+% --------------------------------------------------
+% DOCUMENT
+% --------------------------------------------------
+
+\begin{document}
+
+% --------------------------------------------------
+% PRE-TEXT ELEMENTS
+% --------------------------------------------------
+
+%\section*{Pre-text Elements}
+
+% --------------------------------------------------
+% COVER PAGE
+% --------------------------------------------------
+
+%\subsection*{Cover Page}
+
+%\center
+%\begin{tikzpicture}[remember picture,overlay] 
+%	\node[anchor=south west, yshift= 25mm, xshift=-1.5mm] at (current page.south west) 
+%	{\includegraphics[width = \paperwidth]{../images/marca_dagua_ufpr}};
+%\end{tikzpicture}
+%\center
+
+\maketitle
+
+% no page number:
+\thispagestyle{empty}
+
+\newpage
+
+% --------------------------------------------------
+% INSIDE COVER PAGE
+% --------------------------------------------------
+
+%\subsection*{Inside Cover Page}
+%
+%% no page number:
+%\thispagestyle{empty}
+%
+%%\newpage
+
+% --------------------------------------------------
+% CATALOGATION
+% --------------------------------------------------
+
+%\subsection*{Cataloging-in-Publication (CIP) data}
+%
+%% no page number:
+%\thispagestyle{empty}
+%
+%%\newpage
+
+% --------------------------------------------------
+% APPROVAL CERTIFICATE
+% --------------------------------------------------
+
+%\subsection*{Approval Certificate}
+%
+%% no page number:
+%\thispagestyle{empty}
+%
+%%\newpage
+
+% --------------------------------------------------
+% DEDICATION
+% --------------------------------------------------
+
+%\subsection*{Dedication}
+%
+%% no page number:
+%\thispagestyle{empty}
+%
+%%\newpage
+
+% --------------------------------------------------
+% ACKNOWLEDGEMENTS
+% --------------------------------------------------
+
+%\subsection*{Acknowledgments}
+%
+%% no page number:
+%\thispagestyle{empty}
+%
+%%\newpage
+
+% --------------------------------------------------
+% EPIGRAPH
+% --------------------------------------------------
+
+%\subsection*{Epigraph}
+%
+%%\null
+%
+%%\vfill
+%
+%\begin{flushright}
+%	
+%\textit{Neo: I know kung fu. \\
+%		Morpheus: Show me.}
+%\end{flushright}
+%
+%%\vspace{4cm}
+%
+%% no page number:
+%\thispagestyle{empty}
+%
+%\newpage
+
+% --------------------------------------------------
+% ABSTRACT
+% --------------------------------------------------
+
+{\onehalfspacing
+	\begin{abstract}
+		\vspace*{0.5cm}
+		
+		The present research project aims to develop a Dynamic and Stochastic General Equilibrium (DSGE) model to investigate the effects of the nominal interest rate on the Gross Domestic Product (GDP) of a Brazilian region.
+		
+\end{abstract}
+}
+
+% no page number:
+\thispagestyle{empty}
+
+\newpage
+
+% --------------------------------------------------
+% RESUMO
+% --------------------------------------------------
+
+{\selectlanguage{brazilian}
+	\onehalfspacing
+	\begin{abstract}
+		\vspace*{0.5cm}
+		
+		O presente projeto de pesquisa propõe criar um modelo DSGE (\textit{Dynamic and Stochastic General Equilibrium} ou Equilíbrio Geral Dinâmico e Estocástico) para investigar os impactos da taxa de juros nominal sobre o produto interno bruto de uma região brasileira.
+		
+\end{abstract}
+}
+
+% no page number:
+\thispagestyle{empty}
+
+\newpage
+
+\begin{comment}
+
+% --------------------------------------------------
+% LIST OF VARIABLES: ACRONYMS
+% --------------------------------------------------
+
+\section*{List of Variables}
+
+This list will present all variables used in the model.
+
+\input{../zip/acronyms}
+
+% no page number:
+\thispagestyle{empty}
+
+\newpage
+
+\end{comment}
+
+% --------------------------------------------------
+% LIST OF ABBREVIATIONS: GLOSSARY
+% --------------------------------------------------
+
+% \subsection*{List of Abbreviations}
+
+% no page number:
+\thispagestyle{empty}
+
+%\newpage
+
+% --------------------------------------------------
+% LIST OF FIGURES
+% --------------------------------------------------
+
+% \subsection*{List of Figures} % Lista de Quadros
+
+\listoffigures
+
+% no page number:
+\thispagestyle{empty}
+
+\newpage
+
+% --------------------------------------------------
+% LIST OF TABLES
+% --------------------------------------------------
+
+% \subsection*{List of Tables} % Lista de Tabelas
+
+\listoftables
+
+% no page number:
+\thispagestyle{empty}
+
+\newpage
+
+%% --------------------------------------------------
+%% LIST OF CHARTS
+%% --------------------------------------------------
+%
+%\subsection*{List of Charts} % Lista de Gráficos
+%
+%% no page number:
+%\thispagestyle{empty}
+%
+%\newpage
+
+% --------------------------------------------------
+% TABLE OF CONTENTS
+% --------------------------------------------------
+
+% \section*{Table of Contents}
+
+{
+	\setlength{\parskip}{1pt}
+	\singlespacing
+	\tableofcontents
+}
+
+% no page number:
+\thispagestyle{empty}
+
+\newpage
+
+% --------------------------------------------------
+% INTRODUCTION
+% --------------------------------------------------
+
+\section{Introduction}\label{sec:introduction}
+
+\subfile{subfiles/100_intro}
+
+\newpage
+
+% --------------------------------------------------
+% LITERATURE REVIEW
+% --------------------------------------------------
+
+\section{Literature Review}\label{sec:literature-review}
+
+\subfile{subfiles/200_litRev}
+
+\newpage
+
+% --------------------------------------------------
+% MODEL
+% --------------------------------------------------
+
+\section{Models}\label{sec:model}
+
+\subfile{subfiles/300_model}
+
+\newpage
+
+% --------------------------------------------------
+% REGIONS
+% --------------------------------------------------
+
+\subfile{subfiles/310_regModel}
+
+\newpage
+
+% --------------------------------------------------
+% CALIBRATION AND IRF
+% --------------------------------------------------
+
+\subfile{subfiles/320_calibration}
+
+%\newpage
+
+% --------------------------------------------------
+% DATA
+% --------------------------------------------------
+
+\subfile{subfiles/390_data}
+
+\newpage
+
+% --------------------------------------------------
+% RESULTS
+% --------------------------------------------------
+
+\section{Results}
+
+\subfile{subfiles/510_IRF}
+
+\newpage
+
+\subfile{subfiles/500_results}
+
+\newpage
+
+% --------------------------------------------------
+% FINAL REMARKS
+% --------------------------------------------------
+
+\section{Final Remarks}
+
+\subfile{subfiles/600_finalRemarks}
+
+\newpage
+
+% --------------------------------------------------
+% BIBLIOGRAPHY
+% --------------------------------------------------
+
+% \section*{Bibliography}
+
+{	
+	\onehalfspacing
+	\printbibliography[heading=bibintoc]
+}
+
+\newpage
+
+% --------------------------------------------------
+% APPENDIX
+% --------------------------------------------------
+
+% \section*{Appendix}
+
+\appendix
+
+\subfile{subfiles/900_appendix}
+
+\end{document}

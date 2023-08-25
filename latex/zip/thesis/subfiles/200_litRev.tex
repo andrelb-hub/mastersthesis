@@ -1,0 +1,57 @@
+% --------------------------------------------------
+% DOCUMENT CLASS
+% --------------------------------------------------
+
+\documentclass[
+	thesis.tex
+	]{subfiles}
+
+\begin{document}
+
+	\section{Literature Review}
+	
+	\subsection*{Macroeconomics and Regional Economics}
+	
+	The assessment by \textcite{rickman_modern_2010} on the importance of the link between Macroeconomics and Regional Economics was made at a time when the use of structural models to investigate regional issues was not yet common. Since then, several studies have addressed this connection.
+	
+	Initially, we present two works that served as inspiration for the present topic. The first, developed by \textcite{costa_junior_dsge_2022}, investigates the impacts of fiscal policy on the state of Goiás, considering the other states of the nation. In this work, the authors develop a regionalized and open structure, individualizing a Brazilian state from the rest, considering both a national and a state fiscal authority; state expenses and revenues are disaggregated, and thus, the authors seek to identify whether there are differences between the impacts of a tax exemption in the state under study compared to the others. With the model calibrated to data from 2003 to 2019, the authors demonstrate that there is indeed a difference in state performance due to the distinction of the tax exemption occurring in the state or in the rest of the country.
+	
+	The second work also presents a DSGE model, but with the objective of evaluating whether there are differences in the effects of Foreign Direct Investment (FDI), considering its location. The model developed by \textcite{mora_fdi_2019} encompasses an open economy with the main region (Bogotá, 25\% of the national GDP) and the rest of the country (Colombia), two types of households\footnote{ Ricardian and non-Ricardian agents.}, habit formation, capital adjustment costs, as well as typical elements of a New Keynesian (NK) model\footnote{ nominal price rigidity, monopolistic competition, non-neutrality of monetary policy in the short term.}. With the model calibrated to data from 2002 to 2015, the authors demonstrate that there is indeed a difference in the effects of FDI depending on the region where it is applied, such that when applied in the rest of the country, there are growth effects that spread throughout the country through spillovers, including to the main region.
+	
+	Both works aim to, despite dealing with distinct causes (fiscal policy and FDI), verify whether differences exist when the cause occurs in one of the two different modeled regions. Additionally, they share the same modeling approach, that of a Dynamic and Stochastic General Equilibrium (DSGE). And this was the advancement that \textcite{rickman_modern_2010} wanted to see happen: the use of structural models to address regional questions.
+	
+	\subsection*{Macroeconomic Modeling}
+	
+	The scientific literature on DSGE modeling is extensive, as it allows for the formulation of various questions and their answers through a general equilibrium model. This includes the aforementioned topics and, also, labor market, as explored by \textcite{ribeiro_alongamento_2023}; the real estate market, as studied by \textcite{albuquerquemello_mercado_2018}; and even deforestation, as investigated by \textcite{pereira_desmatamento_2013}. As remarked by \textcite{solis-garcia_ucb_2022}: \textit{if you have a cohesive economic idea, you can put it in terms of a DSGE model}. %\footnote{ \textit{"If you have a cohesive economic idea, you can put it in terms of a DSGE model."}}
+	
+	The works of \textcite{costa_junior_understanding_2016}, \textcite{solis-garcia_ucb_2022}, \textcite{bergholt_basic_2012}, and \textcite{gali_monetary_2015} are the pillars of macroeconomic modeling theory, as they guide the reader in developing a DSGE model step-by-step. \textcite{costa_junior_understanding_2016} starts from a Real Business Cycles (RBC) model and chapter by chapter adds elements of New Keynesian (NK) theory to the model. \textcite{solis-garcia_ucb_2022} focuses on the mathematical details necessary to develop a DSGE model, beginning with a RBC model and turning it into a canonical NK model. \textcite{bergholt_basic_2012} discusses the key elements of a New Keynesian model and also demonstrates the necessary programming to run the model using the \dynare{} software. \textcite{gali_monetary_2015} shows the evolution from an RBC model to an NK model, adding complexity with each chapter.
+	
+	% \footnote{ more details about the \dynare{} software in section \ref{sec:dynare}. }
+	
+	\subsection*{Macroeconomic Modeling with Regions}
+	
+	% In this work, the focus is on the utilization of structural modeling with regions to investigate the existence of a relationship between a macroeconomic variable and a regional one.
+	
+	Among the works employing DSGE modeling with regions, there are the study by \textcite{tamegawa_two-region_2012}, which assesses the effects of fiscal policy on two regions using a model featuring two types of households, firms, banks, a national government, and a regional government. Using literature parameters to calibrate the model, the results indicate that indeed there are differences in the effects of fiscal policy depending on which region implements it. It is important to note that the difference between a macroeconomic model and a regional one lies in the fact that in the former, aggregate variables are considered only at the national level, whereas in the latter, both national and regional variables are considered, and depending on the size of the region, the latter might not be able to affect the former, as explained by \textcite{tamegawa_constructing_2013}.
+	
+	In a similar vein of demonstrating regional relationships, \textcite{pytlarczyk_estimated_2005} investigates aspects of the European Monetary Union (EMU), focusing on the German economy, using a structural model with two regions; \textcite{gali_optimal_2005} also evaluates the functioning of the EMU, but with a model where regions form a unitary continuum, such that one region cannot affect the entire economy. \textcite{alpanda_international_2014} utilize a two-region model to assess the effects of US financial shocks on the euro area economy.
+	
+	A framework to assess the economic evolution of a region in Japan is constructed by \textcite{okano_development_2015}, with the aim of identifying the causes of stagnation in the Kansai region.
+	
+	More recently, the article by \textcite{croitorov_financial_2020} seeks to identify spillovers between regions, building a model with three regions: the Euro area, the US, and the rest of the world. Similarly investigating spillovers, \textcite{corbo_maja_2020} present a regional model encompassing Sweden and the rest of the world.\footnote{ Spillovers: effects that are transmitted from one region to another due to an exogenous factor, such as being neighboring regions.}"
+	
+	\subsection*{Monetary Policy}
+	
+	DSGE models are widely employed within the macroeconomic literature to examine the effects of monetary policy on macroeconomic aggregates, as pointed by \textcite{gali_monetary_2015}. In this context, it is important to add to the review the papers that develop models describing the monetary policy.
+	
+	\textcite{smets_estimated_2003} and \textcite{smets_shocks_2007} present models that evaluate various types of shocks in the Eurozone and the United States, respectively. \textcite{walque_financial_2010} assess the role of the banking sector in market liquidity recovery, considering the endogenous possibilities of agent default.
+	
+	\textcite{holm_transmission_2021} study the transmission of monetary policy to household consumption, estimating the response of consumption, income, and savings. They utilize a heterogeneous agent New Keynesian model (HANK). The results demonstrate that a restrictive monetary policy prompts households with lower liquidity to reduce consumption as disposable income starts to decline, while households with average liquidity save less or borrow more. The study also highlights the differences in consumption changes between savers and borrowers in the face of a monetary policy alteration.
+	
+	\textcite{capeleti_countercyclical_2022} evaluate the effects of pro-cyclical and counter-cyclical credit expansions by public banks on economic growth. The model implements a banking sector with public and private banks competing in a Cournot oligopoly. The results show that the supply of public credit has a stronger effect when the policy is counter-cyclical.
+	
+	\textcite{soltani_investigating_2021} investigate financial and monetary shocks on macroeconomic variables, with special attention to the role of banks. For this analysis, the model considers an economy with a banking sector. The results indicate that banking activity can influence the effects of economic policies.
+	
+	\textcite{vinhado_politica_2016} employ a model with financial frictions to examine the transmission of monetary policy to the banking sector and economic activity. The results demonstrate that the banking sector plays a significant role in economic activity and impacts the outcomes of monetary policy by having to adjust the bank spread in response to changes in the interest rate or reserve requirements.
+	
+\end{document}

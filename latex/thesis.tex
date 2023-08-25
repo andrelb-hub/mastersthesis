@@ -1,0 +1,128 @@
+% --------------------------------------------------
+% DOCUMENT CLASS
+% --------------------------------------------------
+
+\documentclass[
+	12pt, 
+	]{article}
+
+% --------------------------------------------------
+% PACKAGE FILE mypackage.sty
+% --------------------------------------------------
+
+\usepackage{import}
+\usepackage{files/andrlb}
+
+% --------------------------------------------------
+% REFERENCES: BIBER
+% --------------------------------------------------
+
+\usepackage[
+style        = abnt, %alphabetic, %
+sorting      = nyt, 
+backref      = true, 
+backend      = biber, 
+citecounter  = true, 
+backrefstyle = three, 
+url          = true, 
+maxbibnames  = 99, 
+mincitenames = 1, 
+maxcitenames = 2, 
+hyperref     = true, 
+giveninits   = true, 
+uniquename   = false, 
+uniquelist   = false
+]{biblatex}
+
+\addbibresource{files/ref.bib}
+
+% --------------------------------------------------
+% MULTI-FILES PROJECT
+% --------------------------------------------------
+
+% best loaded last in the preamble
+\usepackage{subfiles}
+
+% --------------------------------------------------
+% TITLE
+% --------------------------------------------------
+
+\begin{comment}
+	Análise do Impacto da Política Monetária 
+	sobre 	o Produto Interno Bruto Regional: 
+	Um Modelo DSGE Regional
+\end{comment}
+
+\title{
+	Analysis of the Monetary Policy Impact \\ 
+	on Regional Gross Domestic Product: \\ 
+	A Regional DSGE Model \vspace{2cm}}
+
+\author{
+	\LARGE André Luiz Brito 
+	\footnote{ \href{ 
+	mailto:andreluizmtg@gmail.com}{
+	andreluizmtg@gmail.com}}}
+
+\date{
+	\vfill Curitiba, from March 1st to August 23rd, 2023}
+
+% --------------------------------------------------
+% DOCUMENT
+% --------------------------------------------------
+
+\begin{document}
+
+% --------------------------------------------------
+% PRE-TEXT ELEMENTS
+% --------------------------------------------------
+
+\subfile{pre/cover}
+\subfile{pre/inside_cover}
+\subfile{pre/catalog_record}
+\subfile{pre/approval_form}
+\subfile{pre/dedication}
+\subfile{pre/acknowledgments}
+\subfile{pre/epigraph}
+\subfile{pre/abstract}
+\subfile{pre/lists}
+\subfile{pre/table_of_contents}
+
+% --------------------------------------------------
+% TEXT ELEMENTS
+% --------------------------------------------------
+
+\sloppy
+
+\subfile{sections/introduction}
+
+\subfile{sections/literature_review}
+
+\subfile{sections/model}
+	\subfile{sections/nk_model}
+	\subfile{sections/calibration}
+	\subfile{sections/reg_model}
+	\subfile{sections/data}
+
+\subfile{sections/results}
+	\subfile{sections/IRF}
+	\subfile{sections/parametrization}
+
+\subfile{sections/final_remarks}
+
+% --------------------------------------------------
+% POST-TEXT ELEMENTS
+% --------------------------------------------------
+
+\subfile{post/references}
+\subfile{post/appendix}
+	\subfile{post/app_parameters}
+	\subfile{post/app_literature_review}
+	\subfile{post/app_definitions}
+	\subfile{post/app_dynare}
+
+\end{document}
+
+
+
+
