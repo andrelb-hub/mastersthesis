@@ -1,0 +1,374 @@
+\ProvidesPackage{andrlb}
+
+% --------------------------------------------------
+% DOCUMENT MARGINS:
+% --------------------------------------------------
+
+\usepackage[
+a4paper, 
+left   = 2.5cm, 
+right  = 2.5cm,
+top    = 3cm, 
+bottom = 2.5cm
+]{geometry}
+
+% --------------------------------------------------
+% INPUT ENCODING:
+% --------------------------------------------------
+
+\usepackage[utf8]{inputenc}
+
+% --------------------------------------------------
+% FONT ENCODING:
+% --------------------------------------------------
+
+\usepackage[T1]{fontenc}
+
+% --------------------------------------------------
+% LANGUAGE:
+% --------------------------------------------------
+
+\usepackage[
+brazilian,
+english,
+]{babel}
+
+\hyphenation{pa-la-vras pa-ra hi-fe-ni-zar}
+
+% --------------------------------------------------
+% FONT:
+% --------------------------------------------------
+
+\usepackage{mathpazo}
+% \usepackage{palatino} 
+
+% --------------------------------------------------
+% PAGE LAYOUT:
+% --------------------------------------------------
+
+%\usepackage{fancyhdr}
+%\pagestyle{fancy}
+%\fancyhead{}
+%%\fancyhead[RO,LE]{Section \thesection}
+%\fancyfoot{}
+%\fancyfoot[R]{\thepage}
+%%\fancyfoot[C]{André Luiz Brito}
+%\renewcommand{\headrulewidth}{0.0pt}
+%\renewcommand{\footrulewidth}{0.0pt}
+
+% --------------------------------------------------
+% ENUMERATE INLINE:
+% --------------------------------------------------
+
+\usepackage[inline]{enumitem}
+
+% USAGE:
+%\begin{enumerate*}[label=(\arabic*)]
+%	\item
+%	...
+%\end{enumerate*}
+
+% --------------------------------------------------
+% COLOURS:
+% --------------------------------------------------
+
+\usepackage[dvipsnames]{xcolor}
+
+% --------------------------------------------------
+% SPACES BETWEEN LINES:
+% --------------------------------------------------
+
+\usepackage{setspace}
+%\singlespacing
+\onehalfspacing
+%\doublespacing
+
+% --------------------------------------------------
+% PARAGRAPHS:
+% --------------------------------------------------
+
+\setlength{\parindent}{1cm}
+
+% --------------------------------------------------
+% FIRST PARAGRAPH ALSO 'INDENTED':
+% --------------------------------------------------
+
+\usepackage{indentfirst}
+
+% --------------------------------------------------
+% SPACES BETWEEN PARAGRAPHS:
+% --------------------------------------------------
+
+\setlength{\parskip}{10pt}
+
+% --------------------------------------------------
+% SPACE BETWEEN MAIN TEXT AND FOOTNOTES:
+% --------------------------------------------------
+
+\setlength{\skip\footins}{1cm}
+
+% --------------------------------------------------
+% SPACE BETWEEN FOOTNOTES:
+% --------------------------------------------------
+
+\setlength{\footnotesep}{1.5pc}
+
+% --------------------------------------------------
+% SPACE BETWEEN FOOTNOTE NUMBER AND TEXT:
+% --------------------------------------------------
+
+\usepackage[hang]{footmisc}
+\setlength{\footnotemargin}{4mm}
+
+% --------------------------------------------------
+% IMAGES
+% --------------------------------------------------
+
+\usepackage{graphicx}
+
+\graphicspath{{images/}{images/shock_ZAt/}{images/shock_ZMt/}}
+
+% --------------------------------------------------
+% WATERMARK (MARCA D'ÁGUA)
+% --------------------------------------------------
+
+\usepackage[firstpage = true]{background}
+
+\backgroundsetup{
+	scale     = 1,
+	opacity   = 1,
+	angle     = 0,
+	contents  = {
+		\includegraphics[width=\paperwidth]{../images/marca_dagua_ufpr}}
+}
+
+% --------------------------------------------------
+% MULTIFIGURES AND SUBFIGURES
+% --------------------------------------------------
+
+\usepackage{caption}
+\usepackage{subcaption}
+
+% --------------------------------------------------
+% QUOTATION
+% --------------------------------------------------
+
+\usepackage{csquotes}
+
+% --------------------------------------------------
+% TABLES
+% --------------------------------------------------
+
+% new table package:
+\usepackage{tabularray}
+
+% commands: \toprule, \midrule, \bottomrule
+\usepackage{booktabs}
+
+% Tabelas:
+% line break in table cell:
+\usepackage{makecell}
+% multirow:
+\usepackage{multirow}
+
+% long tables:
+\usepackage{longtable}
+
+% --------------------------------------------------
+% TABLE OF CONTENTS DEPTH:
+% --------------------------------------------------
+
+\setcounter{tocdepth}{2}
+
+% --------------------------------------------------
+% SUBTABLE OF CONTENTS INSIDE SECTIONS:
+% --------------------------------------------------
+
+\usepackage{etoc}
+
+% --------------------------------------------------
+% LIPSUM TEXT
+% --------------------------------------------------
+
+\usepackage{lipsum}
+\setlipsum{
+	par-before = \begingroup\color{gray},
+	par-after  = \endgroup
+}
+
+% --------------------------------------------------
+% MATH ENVIRONMENT
+% --------------------------------------------------
+
+\usepackage[
+fleqn % align all equations left
+]{amsmath}
+
+% always after \usepackage{amsmath}:
+\usepackage{mathtools}
+
+% --------------------------------------------------
+% MATH SYMBOLS
+% --------------------------------------------------
+
+\usepackage{amssymb}
+
+% --------------------------------------------------
+% NUMBER THE EQUATIONS WITHIN THE SECTION
+% --------------------------------------------------
+
+\numberwithin{equation}{section}
+
+% --------------------------------------------------
+% SPACE BETWEEN EQUATIONS
+% --------------------------------------------------
+
+\setlength{\jot}{5pt}
+
+% --------------------------------------------------
+% MATH FONTS
+% --------------------------------------------------
+
+% https://ctan.org/pkg/mathalpha?lang=en
+\usepackage[
+frak = euler, %boondox, %(for fraktur fonts)
+scr  = cm, %euler, %stixplain, %pxtx, %cm, %zapfc, %(for calligraphic fonts)
+cal  = boondoxo, %boondox, %(for script fonts)
+bb   = bboldx, %pazo, %boondox, %dsfontsans, % (for blackboard bold (double-struck) fonts)
+%bfscr, % force \mathscr to point to the bold version.
+%bfcal, % force \mathcal to point to the bold version.
+%bfbb,  % force \mathbb  to point to the bold version.
+]{mathalpha}
+
+% --------------------------------------------------
+% BOLD MATH SYMBOLS
+% --------------------------------------------------
+
+% command: \bm{}
+\usepackage{bm}
+
+% --------------------------------------------------
+% VERBATIM ENVIRONMENT
+% --------------------------------------------------
+
+\usepackage{verbatim}
+% usage: \begin{verbatim} code \end{verbatim}
+
+% --------------------------------------------------
+% MATH COMMANDS
+% --------------------------------------------------
+
+% differential d:
+\DeclareMathOperator{\dif}{d}
+
+% subject to:
+\DeclareMathOperator{\st}{s.t.}
+
+% expectation symbol:
+\newcommand{\E}[1][t]{{\mathbb{E}_{#1}}}
+
+% subscript text: $_t$
+\newcommand{\subt}[1][t]{{_{#1}}}
+
+% superscript text: $^$
+\newcommand{\supt}[1]{{^{#1}}}
+
+% the name of the command:
+\newcommand{\com}[1]{\texttt{\textbackslash #1}}
+
+% the greek letter omicron:
+\newcommand{\omicron}{o}
+
+% the name of the software:
+% \newcommand{\dynare}{\texttt{Dynare}}
+\newcommand{\dynare}{\colorbox{lightgray}{$\mathsf{Dynare}$}}
+\newcommand{\matlab}{\texttt{MATLAB}}
+\newcommand{\octave}{\texttt{OCTAVE}}
+
+% --------------------------------------------------
+% CANCEL LINE IN EQUATIONS
+% --------------------------------------------------
+
+\usepackage{cancel}
+% https://ctan.org/pkg/cancel?lang=en
+
+% --------------------------------------------------
+% NICE FRACTIONS INLINE
+% --------------------------------------------------
+
+\usepackage{xfrac}
+
+% --------------------------------------------------
+% INDEX
+% --------------------------------------------------
+
+% USAGE: \index{exemplo}
+% options: configure: build: Compile & View | txs:///pdflatex | txs:///makeindex
+\usepackage{imakeidx}
+\makeindex[intoc] % in table of contents
+\indexsetup{othercode=\renewcommand{\indexspace}{\string\textbar\ }}
+
+% --------------------------------------------------
+% HYPERTEXT LINKS
+% --------------------------------------------------
+
+\usepackage[
+	colorlinks = true, 
+	linkcolor  = teal, 
+	filecolor  = teal, 
+	urlcolor   = teal, 
+	citecolor  = teal
+	]{hyperref}
+
+% --------------------------------------------------
+% BOOKMARKS
+% --------------------------------------------------
+
+\usepackage{bookmark}
+
+% --------------------------------------------------
+% THEOREMS
+% --------------------------------------------------
+
+\usepackage{amsthm}
+
+% DEFINITION:
+\theoremstyle{definition}
+\newtheorem{definition}{Definition}[section]
+
+% THEOREM:
+\theoremstyle{plain}
+\newtheorem{theorem}{Theorem}[section]
+
+% LEMMA:
+\theoremstyle{plain}
+\newtheorem{lemma}{Lemma}[section]
+
+% COROLLARY:
+\theoremstyle{plain}
+\newtheorem{corollary}{Corollary}[lemma]
+
+% \blacksquare to end the proof:
+\renewcommand\qedsymbol{$\blacksquare$}
+
+% --------------------------------------------------
+% ACRONYMS
+% --------------------------------------------------
+
+\usepackage{acronym} 
+% usage: \ac{TLA}
+
+% --------------------------------------------------
+% TODO NOTES
+% --------------------------------------------------
+
+\setlength{\marginparwidth}{2cm}
+
+\usepackage[
+%disable, % OPTION TO DISABLE THE TODO NOTES.
+textsize = footnotesize,
+color=green!30,
+]{todonotes}
+
+% todo command:
+% \todo[inline]{sua tarefa aqui.}
