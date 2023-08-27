@@ -1,0 +1,69 @@
+\ProvidesPackage{slides_package}
+
+% --------------------------------------------------
+% PACKAGES
+% --------------------------------------------------
+
+\usetheme[progressbar=frametitle]{metropolis}
+
+\usepackage{appendixnumberbeamer}
+
+\usepackage{booktabs}
+
+\usepackage[scale=2]{ccicons}
+
+\usepackage{pgfplots}
+
+\usepgfplotslibrary{dateplot}
+
+\usepackage{xspace}
+
+\newcommand{\themename}{\textbf{\textsc{metropolis}}\xspace}
+
+% --------------------------------------------------
+% MY PACKAGES
+% --------------------------------------------------
+
+% Fira Font:
+\usepackage[sfdefault]{FiraSans}
+
+% cor da barra de progresso:
+\setbeamercolor{progress bar}{fg=orange,bg=white}
+
+% largura da barra de progresso:
+\makeatletter
+\setlength{\metropolis@titleseparator@linewidth}{2pt}
+\setlength{\metropolis@progressonsectionpage@linewidth}{2pt}
+\setlength{\metropolis@progressinheadfoot@linewidth}{2pt}
+\makeatother
+
+% itens transparentes:
+\setbeamercovered{transparent}
+
+% space between items:
+\newlength{\wideitemsep}
+\setlength{\wideitemsep}{\itemsep}\addtolength{\wideitemsep}{10pt}
+
+% reconfigure itemize lists:
+\let\olditem\item
+\renewcommand{\item}{%
+	\olditem\vspace{5pt}}
+
+% tabela:
+\usepackage{graphicx}
+
+% line break in table cell:
+\usepackage{makecell}
+
+\graphicspath{{images/}{images/shock_ZAt/}{images/shock_ZMt/}}
+
+% define o idioma português:
+\usepackage[
+	brazilian,
+	english,
+	]{babel}
+
+\usepackage{csquotes}
+
+\usepackage{comment}
+

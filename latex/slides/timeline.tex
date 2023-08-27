@@ -1,0 +1,49 @@
+% --------------------------------------------------
+% DOCUMENT CLASS
+% --------------------------------------------------
+
+\documentclass[
+presentation.tex
+]{subfiles}
+
+\begin{document}
+
+\section{Project Timeline}
+
+% --------------------------------------------------
+% SLIDE
+% --------------------------------------------------
+
+\begin{frame}[fragile]{Cronograma}
+		
+% Please add the following required packages to your document preamble:
+% \usepackage{graphicx}
+\renewcommand{\arraystretch}{1.5}
+\begin{table}[]
+\tiny
+%\centering
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{l|ccccccccc}
+\hline
+Atividade              &mar&abr&mai&jun&jul&ago&set&out&nov\\ \hline
+Pesquisa Bibliográfica & x & x & x &   &   &   &   &   &   \\ \hline
+Projeto de Pesquisa    &   &   & x &   &   &   &   &   &   \\ \hline
+Modelagem              &   &   & x & x &   &   &   &   &   \\ \hline
+Programação no
+\texttt{Dynare}        &   &   &   & x &   &   &   &   &   \\ \hline
+Seminário do Projeto   &   &   &   & x &   &   &   &   &   \\ \hline
+Coleta dos dados       &   &   &   &   & x &   &   &   &   \\ \hline
+Tratamento dos dados   &   &   &   &   & x &   &   &   &   \\ \hline
+Cálculo dos Parâmetros &   &   &   &   &   & x &   &   &   \\ \hline
+Banca de Qualificação  &   &   &   &   &   & x &   &   &   \\ \hline
+Análise dos Resultados &   &   &   &   &   &   & x &   &   \\ \hline
+Revisão e Edição       &   &   &   &   &   &   &   & x &   \\ \hline
+Defesa da Dissertação  &   &   &   &   &   &   &   &   & x \\ \hline
+Reuniões de Orientação & x & x & x & x & x & x & x & x & x \\ \hline
+\end{tabular}%
+}
+\end{table}
+\renewcommand{\arraystretch}{1}
+\end{frame}
+
+\end{document}
