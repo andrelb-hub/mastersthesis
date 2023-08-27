@@ -295,10 +295,8 @@ thesis.tex
 	
 	Consider an economy with price stickiness, following the Calvo Rule \cite{calvo_staggered_1983}: each firm has a probability $(0 < \theta < 1)$ of keeping its price in the next period ($P_{j,t+1} = P_{j,t}$), and a probability of $(1 - \theta)$ of setting a new optimal price $P_{j,t}^\ast$ that maximizes its profits. Therefore, each firm must take this uncertainty into account when deciding the optimal price: the intertemporal profit flow, given the nominal interest rate $R_t$ of each period, is calculated considering the probability $\theta$ of keeping the previous price.
 	\begin{align}
-		\label{eq:int-good-firm-optimal-price-problem}
-		\max_{P_{jt}}: & \quad \E \sum_{s=0}^{\infty} \left\{ \frac{ \theta^s \left[ P_{jt} Y_{j,t+s} - TC_{j,t+s} \right] }{\prod_{k=0}^{s-1}(1+R_{t+k})} \right\} \\
-		\tag{\ref{eq:final-good-firm-FOC}}
-		\st: & \quad Y_{jt} = Y_t \left( \frac{P_t}{P_{jt}} \right)^{\psi}
+		\max_{P_{jt}}: & \quad \E \sum_{s=0}^{\infty} \left\{ \frac{ \theta^s \left[ P_{jt} Y_{j,t+s} - TC_{j,t+s} \right] }{\prod_{k=0}^{s-1}(1+R_{t+k})} \right\} \label{eq:int-good-firm-optimal-price-problem} \\
+		\st: & \quad Y_{jt} = Y_t \left( \frac{P_t}{P_{jt}} \right)^{\psi} \tag{\ref{eq:final-good-firm-FOC}}
 	\end{align}
 	
 	%%%%%

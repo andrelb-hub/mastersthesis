@@ -1,0 +1,8 @@
+\babel@toc {english}{}\relax 
+\beamer@sectionintoc {1}{Introduction}{3}{0}{1}
+\beamer@sectionintoc {2}{Literature Review}{10}{0}{2}
+\beamer@sectionintoc {3}{Model}{16}{0}{3}
+\beamer@subsectionintoc {3}{1}{Steady State}{32}{0}{3}
+\beamer@subsectionintoc {3}{2}{Log-linearization}{33}{0}{3}
+\beamer@sectionintoc {4}{Expected Results}{36}{0}{4}
+\beamer@sectionintoc {5}{Project Timeline}{38}{0}{5}

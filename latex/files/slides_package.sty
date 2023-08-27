@@ -24,6 +24,11 @@
 % MY PACKAGES
 % --------------------------------------------------
 
+\usepackage{setspace}
+%\singlespacing
+\onehalfspacing
+%\doublespacing
+
 % Fira Font:
 \usepackage[sfdefault]{FiraSans}
 
@@ -67,3 +72,41 @@
 
 \usepackage{comment}
 
+% --------------------------------------------------
+% MATH COMMANDS
+% --------------------------------------------------
+
+\usepackage{amsmath}
+
+% differential d:
+\DeclareMathOperator{\dif}{d}
+
+% subject to:
+\DeclareMathOperator{\st}{s.t.}
+
+% expectation symbol:
+\newcommand{\E}[1][t]{{\mathbb{E}_{#1}}}
+
+% subscript text: $_t$
+\newcommand{\subt}[1][t]{{_{#1}}}
+
+% superscript text: $^$
+\newcommand{\supt}[1]{{^{#1}}}
+
+% the name of the command:
+\newcommand{\com}[1]{\texttt{\textbackslash #1}}
+
+% the greek letter omicron:
+\newcommand{\omicron}{o}
+
+% the name of the software:
+% \newcommand{\dynare}{\texttt{Dynare}}
+\newcommand{\dynare}{\colorbox{lightgray}{$\mathsf{Dynare}$}}
+\newcommand{\matlab}{\texttt{MATLAB}}
+\newcommand{\octave}{\texttt{OCTAVE}}
+
+% checkmark and xmark:
+% usage: \cmark, \xmark
+\usepackage{pifont}% http://ctan.org/pkg/pifont
+\newcommand{\cmark}{\textcolor{Green}{\ding{51}}}
+\newcommand{\xmark}{\textcolor{Gray} {\ding{55}}}
