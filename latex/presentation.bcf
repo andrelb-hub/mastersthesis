@@ -2485,10 +2485,12 @@
     <bcf:citekey order="40" intorder="1">osterno_uma_2022</bcf:citekey>
     <bcf:citekey order="41" intorder="1">calvo_staggered_1983</bcf:citekey>
     <bcf:citekey order="42" intorder="1">taylor_discretion_1993</bcf:citekey>
-    <bcf:citekey order="43" intorder="1">calvo_staggered_1983</bcf:citekey>
-    <bcf:citekey order="44" intorder="1">calvo_staggered_1983</bcf:citekey>
-    <bcf:citekey order="45" intorder="1">costa_junior_understanding_2016</bcf:citekey>
-    <bcf:citekey order="46" intorder="1">costa_junior_understanding_2016</bcf:citekey>
+    <bcf:citekey order="43" intorder="1">costa_junior_understanding_2016</bcf:citekey>
+    <bcf:citekey order="44" intorder="1">uhlig_toolkit_1999</bcf:citekey>
+    <bcf:citekey order="45" intorder="1">calvo_staggered_1983</bcf:citekey>
+    <bcf:citekey order="46" intorder="1">calvo_staggered_1983</bcf:citekey>
+    <bcf:citekey order="47" intorder="1">costa_junior_understanding_2016</bcf:citekey>
+    <bcf:citekey order="48" intorder="1">costa_junior_understanding_2016</bcf:citekey>
     <bcf:citekeycount count="3">gali_monetary_2015</bcf:citekeycount>
     <bcf:citekeycount count="1">bertanha_efeitos_2008</bcf:citekeycount>
     <bcf:citekeycount count="1">simonsen_microeconomia_1979</bcf:citekeycount>
@@ -2499,7 +2501,7 @@
     <bcf:citekeycount count="1">pereira_desmatamento_2013</bcf:citekeycount>
     <bcf:citekeycount count="1">albuquerquemello_mercado_2018</bcf:citekeycount>
     <bcf:citekeycount count="1">ribeiro_alongamento_2023</bcf:citekeycount>
-    <bcf:citekeycount count="2">costa_junior_understanding_2016</bcf:citekeycount>
+    <bcf:citekeycount count="3">costa_junior_understanding_2016</bcf:citekeycount>
     <bcf:citekeycount count="1">bergholt_basic_2012</bcf:citekeycount>
     <bcf:citekeycount count="1">smets_estimated_2003</bcf:citekeycount>
     <bcf:citekeycount count="1">smets_shocks_2007</bcf:citekeycount>
@@ -2509,6 +2511,7 @@
     <bcf:citekeycount count="1">osterno_uma_2022</bcf:citekeycount>
     <bcf:citekeycount count="2">calvo_staggered_1983</bcf:citekeycount>
     <bcf:citekeycount count="1">taylor_discretion_1993</bcf:citekeycount>
+    <bcf:citekeycount count="1">uhlig_toolkit_1999</bcf:citekeycount>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="nyt">

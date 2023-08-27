@@ -672,6 +672,39 @@
       \verb 10.1016/0167-2231(93)90009-L
       \endverb
     \endentry
+    \entry{uhlig_toolkit_1999}{incollection}{}
+      \name{author}{1}{}{%
+        {{hash=23c65b2fd3969e3b79f89556ae2384b8}{%
+           family={Uhlig},
+           familyi={U\bibinitperiod},
+           given={Harald},
+           giveni={H\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Oxford}%
+      }
+      \list{publisher}{1}{%
+        {Oxford University Press}%
+      }
+      \strng{namehash}{23c65b2fd3969e3b79f89556ae2384b8}
+      \strng{fullhash}{23c65b2fd3969e3b79f89556ae2384b8}
+      \strng{bibnamehash}{23c65b2fd3969e3b79f89556ae2384b8}
+      \strng{authorbibnamehash}{23c65b2fd3969e3b79f89556ae2384b8}
+      \strng{authornamehash}{23c65b2fd3969e3b79f89556ae2384b8}
+      \strng{authorfullhash}{23c65b2fd3969e3b79f89556ae2384b8}
+      \field{sortinit}{U}
+      \field{sortinithash}{6901a00e45705986ee5e7ca9fd39adca}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Computational Methods for the Study of Dynamic Economies}
+      \field{title}{A Toolkit For Analysing Nonlinear Dynamic Stochastic Models Easily}
+      \field{year}{1999}
+      \field{dateera}{ce}
+      \field{pages}{30\bibrangedash 61}
+      \range{pages}{32}
+    \endentry
   \enddatalist
 \endrefsection
 \endinput

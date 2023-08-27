@@ -2,7 +2,19 @@
 \beamer@sectionintoc {1}{Introduction}{3}{0}{1}
 \beamer@sectionintoc {2}{Literature Review}{10}{0}{2}
 \beamer@sectionintoc {3}{Model}{16}{0}{3}
-\beamer@subsectionintoc {3}{1}{Steady State}{32}{0}{3}
-\beamer@subsectionintoc {3}{2}{Log-linearization}{33}{0}{3}
-\beamer@sectionintoc {4}{Expected Results}{36}{0}{4}
-\beamer@sectionintoc {5}{Project Timeline}{38}{0}{5}
+\beamer@subsectionintoc {3}{1}{Agents}{17}{0}{3}
+\beamer@subsectionintoc {3}{2}{Model Structure}{18}{0}{3}
+\beamer@subsectionintoc {3}{3}{Household}{19}{0}{3}
+\beamer@subsectionintoc {3}{4}{Final-goods Firm}{20}{0}{3}
+\beamer@subsectionintoc {3}{5}{Intermediate-goods Firm}{21}{0}{3}
+\beamer@subsectionintoc {3}{6}{Monetary Authority}{23}{0}{3}
+\beamer@subsectionintoc {3}{7}{Stochastic Shocks}{24}{0}{3}
+\beamer@subsectionintoc {3}{8}{Model Structure}{25}{0}{3}
+\beamer@subsectionintoc {3}{9}{Steady State}{32}{0}{3}
+\beamer@subsectionintoc {3}{10}{Log-linearization}{34}{0}{3}
+\beamer@subsectionintoc {3}{11}{Log-linear Model}{36}{0}{3}
+\beamer@subsectionintoc {3}{12}{Matlab and Dynare}{41}{0}{3}
+\beamer@subsectionintoc {3}{13}{Productivity Shock}{42}{0}{3}
+\beamer@subsectionintoc {3}{14}{Monetary Shock}{44}{0}{3}
+\beamer@sectionintoc {4}{Expected Results}{50}{0}{4}
+\beamer@sectionintoc {5}{Project Timeline}{52}{0}{5}
