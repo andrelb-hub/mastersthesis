@@ -2457,59 +2457,40 @@
     <bcf:citekey order="12" intorder="1">gali_monetary_2015</bcf:citekey>
     <bcf:citekey order="13" intorder="1">gali_macroeconomic_2007</bcf:citekey>
     <bcf:citekey order="14" intorder="1">gali_macroeconomic_2007</bcf:citekey>
-    <bcf:citekey order="15" intorder="1">solis-garcia_ucb_2022</bcf:citekey>
-    <bcf:citekey order="16" intorder="1">solis-garcia_ucb_2022</bcf:citekey>
-    <bcf:citekey order="17" intorder="1">pereira_desmatamento_2013</bcf:citekey>
-    <bcf:citekey order="18" intorder="1">pereira_desmatamento_2013</bcf:citekey>
-    <bcf:citekey order="19" intorder="1">albuquerquemello_mercado_2018</bcf:citekey>
-    <bcf:citekey order="20" intorder="1">albuquerquemello_mercado_2018</bcf:citekey>
-    <bcf:citekey order="21" intorder="1">ribeiro_alongamento_2023</bcf:citekey>
-    <bcf:citekey order="22" intorder="1">ribeiro_alongamento_2023</bcf:citekey>
-    <bcf:citekey order="23" intorder="1">costa_junior_understanding_2016</bcf:citekey>
-    <bcf:citekey order="24" intorder="1">costa_junior_understanding_2016</bcf:citekey>
-    <bcf:citekey order="25" intorder="1">gali_monetary_2015</bcf:citekey>
-    <bcf:citekey order="26" intorder="1">gali_monetary_2015</bcf:citekey>
-    <bcf:citekey order="27" intorder="1">bergholt_basic_2012</bcf:citekey>
-    <bcf:citekey order="28" intorder="1">bergholt_basic_2012</bcf:citekey>
-    <bcf:citekey order="29" intorder="1">smets_estimated_2003</bcf:citekey>
-    <bcf:citekey order="30" intorder="1">smets_estimated_2003</bcf:citekey>
-    <bcf:citekey order="31" intorder="1">smets_shocks_2007</bcf:citekey>
-    <bcf:citekey order="32" intorder="1">smets_shocks_2007</bcf:citekey>
-    <bcf:citekey order="33" intorder="1">rickman_modern_2010</bcf:citekey>
-    <bcf:citekey order="34" intorder="1">rickman_modern_2010</bcf:citekey>
-    <bcf:citekey order="35" intorder="1">mora_fdi_2019</bcf:citekey>
-    <bcf:citekey order="36" intorder="1">mora_fdi_2019</bcf:citekey>
-    <bcf:citekey order="37" intorder="1">costa_junior_dsge_2022</bcf:citekey>
-    <bcf:citekey order="38" intorder="1">costa_junior_dsge_2022</bcf:citekey>
-    <bcf:citekey order="39" intorder="1">osterno_uma_2022</bcf:citekey>
-    <bcf:citekey order="40" intorder="1">osterno_uma_2022</bcf:citekey>
-    <bcf:citekey order="41" intorder="1">calvo_staggered_1983</bcf:citekey>
-    <bcf:citekey order="42" intorder="1">taylor_discretion_1993</bcf:citekey>
-    <bcf:citekey order="43" intorder="1">costa_junior_understanding_2016</bcf:citekey>
-    <bcf:citekey order="44" intorder="1">uhlig_toolkit_1999</bcf:citekey>
-    <bcf:citekey order="45" intorder="1">calvo_staggered_1983</bcf:citekey>
-    <bcf:citekey order="46" intorder="1">calvo_staggered_1983</bcf:citekey>
-    <bcf:citekey order="47" intorder="1">costa_junior_understanding_2016</bcf:citekey>
-    <bcf:citekey order="48" intorder="1">costa_junior_understanding_2016</bcf:citekey>
+    <bcf:citekey order="15" intorder="1">costa_junior_understanding_2016</bcf:citekey>
+    <bcf:citekey order="16" intorder="1">costa_junior_understanding_2016</bcf:citekey>
+    <bcf:citekey order="17" intorder="1">gali_monetary_2015</bcf:citekey>
+    <bcf:citekey order="18" intorder="1">gali_monetary_2015</bcf:citekey>
+    <bcf:citekey order="19" intorder="1">bergholt_basic_2012</bcf:citekey>
+    <bcf:citekey order="20" intorder="1">bergholt_basic_2012</bcf:citekey>
+    <bcf:citekey order="21" intorder="1">solis-garcia_ucb_2022</bcf:citekey>
+    <bcf:citekey order="22" intorder="1">solis-garcia_ucb_2022</bcf:citekey>
+    <bcf:citekey order="23" intorder="1">rickman_modern_2010</bcf:citekey>
+    <bcf:citekey order="24" intorder="1">rickman_modern_2010</bcf:citekey>
+    <bcf:citekey order="25" intorder="1">mora_fdi_2019</bcf:citekey>
+    <bcf:citekey order="26" intorder="1">mora_fdi_2019</bcf:citekey>
+    <bcf:citekey order="27" intorder="1">costa_junior_dsge_2022</bcf:citekey>
+    <bcf:citekey order="28" intorder="1">costa_junior_dsge_2022</bcf:citekey>
+    <bcf:citekey order="29" intorder="1">osterno_uma_2022</bcf:citekey>
+    <bcf:citekey order="30" intorder="1">osterno_uma_2022</bcf:citekey>
+    <bcf:citekey order="31" intorder="1">calvo_staggered_1983</bcf:citekey>
+    <bcf:citekey order="32" intorder="1">taylor_discretion_1993</bcf:citekey>
+    <bcf:citekey order="33" intorder="1">costa_junior_understanding_2016</bcf:citekey>
+    <bcf:citekey order="34" intorder="1">uhlig_toolkit_1999</bcf:citekey>
     <bcf:citekeycount count="3">gali_monetary_2015</bcf:citekeycount>
     <bcf:citekeycount count="1">bertanha_efeitos_2008</bcf:citekeycount>
     <bcf:citekeycount count="1">simonsen_microeconomia_1979</bcf:citekeycount>
     <bcf:citekeycount count="1">kydland_time_1982</bcf:citekeycount>
     <bcf:citekeycount count="1">prescott_theory_1986</bcf:citekeycount>
     <bcf:citekeycount count="1">gali_macroeconomic_2007</bcf:citekeycount>
-    <bcf:citekeycount count="1">solis-garcia_ucb_2022</bcf:citekeycount>
-    <bcf:citekeycount count="1">pereira_desmatamento_2013</bcf:citekeycount>
-    <bcf:citekeycount count="1">albuquerquemello_mercado_2018</bcf:citekeycount>
-    <bcf:citekeycount count="1">ribeiro_alongamento_2023</bcf:citekeycount>
-    <bcf:citekeycount count="3">costa_junior_understanding_2016</bcf:citekeycount>
+    <bcf:citekeycount count="2">costa_junior_understanding_2016</bcf:citekeycount>
     <bcf:citekeycount count="1">bergholt_basic_2012</bcf:citekeycount>
-    <bcf:citekeycount count="1">smets_estimated_2003</bcf:citekeycount>
-    <bcf:citekeycount count="1">smets_shocks_2007</bcf:citekeycount>
+    <bcf:citekeycount count="1">solis-garcia_ucb_2022</bcf:citekeycount>
     <bcf:citekeycount count="1">rickman_modern_2010</bcf:citekeycount>
     <bcf:citekeycount count="1">mora_fdi_2019</bcf:citekeycount>
     <bcf:citekeycount count="1">costa_junior_dsge_2022</bcf:citekeycount>
     <bcf:citekeycount count="1">osterno_uma_2022</bcf:citekeycount>
-    <bcf:citekeycount count="2">calvo_staggered_1983</bcf:citekeycount>
+    <bcf:citekeycount count="1">calvo_staggered_1983</bcf:citekeycount>
     <bcf:citekeycount count="1">taylor_discretion_1993</bcf:citekeycount>
     <bcf:citekeycount count="1">uhlig_toolkit_1999</bcf:citekeycount>
   </bcf:section>

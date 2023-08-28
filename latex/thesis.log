@@ -1,4 +1,4 @@
-This is LuaHBTeX, Version 1.17.0 (MiKTeX 23.5) (format=lualatex 2023.8.25)  27 AUG 2023 17:27
+This is LuaHBTeX, Version 1.17.0 (MiKTeX 23.5) (format=lualatex 2023.8.25)  28 AUG 2023 10:42
  restricted system commands enabled.
 **thesis.tex
 (./thesis.tex
@@ -2241,7 +2241,7 @@ Package logreq Info: Writing requests to 'thesis.run.xml'.
 
 Here is how much of LuaTeX's memory you used:
  44764 strings out of 477545
- 125081,3417909 words of node,token memory allocated
+ 125081,2848258 words of node,token memory allocated
  5991 words of node memory still in use:
    156 hlist, 25 vlist, 10 rule, 10 math, 80 glue, 73 kern, 58 sub_mlist, 197 gl
 yph, 418 attribute, 75 glue_spec, 210 attribute_list, 3 write, 3 pdf_action node
