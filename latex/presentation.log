@@ -1,4 +1,4 @@
-This is LuaHBTeX, Version 1.17.0 (MiKTeX 23.5) (format=lualatex 2023.8.25)  28 AUG 2023 13:17
+This is LuaHBTeX, Version 1.17.0 (MiKTeX 23.5) (format=lualatex 2023.8.25)  28 AUG 2023 18:52
  restricted system commands enabled.
 **presentation.tex
 (./presentation.tex
@@ -2389,16 +2389,16 @@ LaTeX Font Info:    Font shape `TU/FiraSans(0)/m/it' will be
 ] [16
 
 ]
-<images/flowchart.png, id=254, 1620.0525pt x 749.80125pt>
-File: images/flowchart.png Graphic file (type png)
-<use images/flowchart.png>
-Package luatex.def Info: images/flowchart.png  used on input line 70.
-(luatex.def)             Requested size: 307.28987pt x 142.212pt.
+<images/flowchart.jpg, id=254, 1335.99126pt x 752.8125pt>
+File: images/flowchart.jpg Graphic file (type jpg)
+<use images/flowchart.jpg>
+Package luatex.def Info: images/flowchart.jpg  used on input line 70.
+(luatex.def)             Requested size: 307.28987pt x 173.15471pt.
 LaTeX Font Info:    Font shape `TU/FiraSans(0)/b/n' will be
 (Font)              scaled to size 9.0pt on input line 70.
  [17
 
-<./images/flowchart.png>] [18
+<./images/flowchart.jpg>] [18
 
 ] [19
 
@@ -2756,7 +2756,7 @@ Package logreq Info: Writing requests to 'presentation.run.xml'.
 )
 
 Here is how much of LuaTeX's memory you used:
- 51054 strings out of 477545
+ 51070 strings out of 477545
  125031,2373549 words of node,token memory allocated
  1657 words of node memory still in use:
    18 hlist, 6 vlist, 2 rule, 3 disc, 3 local_par, 29 glue, 14 kern, 10 penalty,
@@ -2764,7 +2764,7 @@ Here is how much of LuaTeX's memory you used:
  2 pdf_action, 5 pdf_colorstack nodes
    avail lists: 1:2,2:2879,3:1230,4:462,5:883,6:90,7:6760,8:103,9:1159,10:56,11:
 313
- 69494 multiletter control sequences out of 65536+600000
+ 69496 multiletter control sequences out of 65536+600000
  144 fonts using 43510791 bytes
  130i,15n,146p,1903b,4453s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/Users/andre/AppData/Local/Programs/MiKTeX/fonts/opentype/public/fira/firamon
@@ -2783,7 +2783,7 @@ c/amsfonts/cm/cmsy10.pfb><C:/Users/andre/AppData/Local/Programs/MiKTeX/fonts/typ
 e1/public/amsfonts/cm/cmsy5.pfb><C:/Users/andre/AppData/Local/Programs/MiKTeX/fo
 nts/type1/public/amsfonts/cm/cmsy7.pfb><C:/Users/andre/AppData/Local/Programs/Mi
 KTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on presentation.pdf (63 pages, 1164740 bytes).
+Output written on presentation.pdf (63 pages, 797271 bytes).
 
 PDF statistics: 724 PDF objects out of 1000 (max. 8388607)
  228 named destinations out of 1000 (max. 131072)
