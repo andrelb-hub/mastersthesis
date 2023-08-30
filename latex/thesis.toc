@@ -12,7 +12,7 @@
 \contentsline {subsubsection}{\numberline {3.1.3}Intermediate-Good Firms}{28}{subsubsection.3.1.3}%
 \contentsline {subsubsection}{\numberline {3.1.4}Final-Good Firm, part II}{32}{subsubsection.3.1.4}%
 \contentsline {subsubsection}{\numberline {3.1.5}Monetary Authority}{33}{subsubsection.3.1.5}%
-\contentsline {subsubsection}{\numberline {3.1.6}Stochastic Shocks}{33}{subsubsection.3.1.6}%
+\contentsline {subsubsection}{\numberline {3.1.6}Stochastic Shocks}{34}{subsubsection.3.1.6}%
 \contentsline {subsubsection}{\numberline {3.1.7}Equilibrium Conditions}{34}{subsubsection.3.1.7}%
 \contentsline {subsubsection}{\numberline {3.1.8}Model Structure}{34}{subsubsection.3.1.8}%
 \contentsline {subsubsection}{\numberline {3.1.9}Steady State}{36}{subsubsection.3.1.9}%

@@ -2477,6 +2477,8 @@
     <bcf:citekey order="32" intorder="1">taylor_discretion_1993</bcf:citekey>
     <bcf:citekey order="33" intorder="1">costa_junior_understanding_2016</bcf:citekey>
     <bcf:citekey order="34" intorder="1">uhlig_toolkit_1999</bcf:citekey>
+    <bcf:citekey order="35" intorder="1">calvo_staggered_1983</bcf:citekey>
+    <bcf:citekey order="36" intorder="1">taylor_discretion_1993</bcf:citekey>
     <bcf:citekeycount count="3">gali_monetary_2015</bcf:citekeycount>
     <bcf:citekeycount count="1">bertanha_efeitos_2008</bcf:citekeycount>
     <bcf:citekeycount count="1">simonsen_microeconomia_1979</bcf:citekeycount>
@@ -2490,8 +2492,8 @@
     <bcf:citekeycount count="1">mora_fdi_2019</bcf:citekeycount>
     <bcf:citekeycount count="1">costa_junior_dsge_2022</bcf:citekeycount>
     <bcf:citekeycount count="1">osterno_uma_2022</bcf:citekeycount>
-    <bcf:citekeycount count="1">calvo_staggered_1983</bcf:citekeycount>
-    <bcf:citekeycount count="1">taylor_discretion_1993</bcf:citekeycount>
+    <bcf:citekeycount count="2">calvo_staggered_1983</bcf:citekeycount>
+    <bcf:citekeycount count="2">taylor_discretion_1993</bcf:citekeycount>
     <bcf:citekeycount count="1">uhlig_toolkit_1999</bcf:citekeycount>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
