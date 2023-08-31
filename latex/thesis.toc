@@ -12,7 +12,7 @@
 \contentsline {subsubsection}{\numberline {3.1.3}Intermediate-Good Firms}{28}{subsubsection.3.1.3}%
 \contentsline {subsubsection}{\numberline {3.1.4}Final-Good Firm, part II}{32}{subsubsection.3.1.4}%
 \contentsline {subsubsection}{\numberline {3.1.5}Monetary Authority}{33}{subsubsection.3.1.5}%
-\contentsline {subsubsection}{\numberline {3.1.6}Stochastic Shocks}{34}{subsubsection.3.1.6}%
+\contentsline {subsubsection}{\numberline {3.1.6}Stochastic Shocks}{33}{subsubsection.3.1.6}%
 \contentsline {subsubsection}{\numberline {3.1.7}Equilibrium Conditions}{34}{subsubsection.3.1.7}%
 \contentsline {subsubsection}{\numberline {3.1.8}Model Structure}{34}{subsubsection.3.1.8}%
 \contentsline {subsubsection}{\numberline {3.1.9}Steady State}{36}{subsubsection.3.1.9}%
@@ -23,11 +23,11 @@
 \contentsline {subsubsection}{\numberline {3.1.14}Calibration}{54}{subsubsection.3.1.14}%
 \contentsline {subsection}{\numberline {3.2}Regional Model}{56}{subsection.3.2}%
 \contentsline {subsubsection}{\numberline {3.2.1}Household}{57}{subsubsection.3.2.1}%
-\contentsline {subsubsection}{\numberline {3.2.2}Final-Goods Firm}{60}{subsubsection.3.2.2}%
+\contentsline {subsubsection}{\numberline {3.2.2}Final-Goods Firm}{61}{subsubsection.3.2.2}%
 \contentsline {subsubsection}{\numberline {3.2.3}Intermediate-Goods Firms}{62}{subsubsection.3.2.3}%
 \contentsline {subsubsection}{\numberline {3.2.4}Monetary Authority}{67}{subsubsection.3.2.4}%
 \contentsline {subsubsection}{\numberline {3.2.5}Stochastic Shocks}{68}{subsubsection.3.2.5}%
-\contentsline {subsubsection}{\numberline {3.2.6}Equilibrium Conditions}{68}{subsubsection.3.2.6}%
+\contentsline {subsubsection}{\numberline {3.2.6}Equilibrium Conditions}{69}{subsubsection.3.2.6}%
 \contentsline {subsubsection}{\numberline {3.2.7}Steady State}{71}{subsubsection.3.2.7}%
 \contentsline {subsection}{\numberline {3.3}Data}{76}{subsection.3.3}%
 \contentsline {section}{\numberline {4}Results}{77}{section.4}%

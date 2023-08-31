@@ -1,4 +1,4 @@
-This is LuaHBTeX, Version 1.17.0 (MiKTeX 23.5) (format=lualatex 2023.8.25)  30 AUG 2023 21:13
+This is LuaHBTeX, Version 1.17.0 (MiKTeX 23.5) (format=lualatex 2023.8.25)  30 AUG 2023 22:17
  restricted system commands enabled.
 **presentation.tex
 (./presentation.tex
@@ -2732,7 +2732,7 @@ Package logreq Info: Writing requests to 'presentation.run.xml'.
 )
 
 Here is how much of LuaTeX's memory you used:
- 50936 strings out of 477545
+ 50925 strings out of 477545
  125031,2373549 words of node,token memory allocated
  1233 words of node memory still in use:
    14 hlist, 6 vlist, 2 rule, 2 disc, 1 local_par, 17 glue, 7 kern, 8 penalty, 1
@@ -2740,7 +2740,7 @@ Here is how much of LuaTeX's memory you used:
  pdf_colorstack nodes
    avail lists: 1:2,2:1504,3:515,4:323,5:456,6:70,7:3584,8:81,9:1163,10:13,11:14
 9
- 69374 multiletter control sequences out of 65536+600000
+ 69363 multiletter control sequences out of 65536+600000
  128 fonts using 41143031 bytes
  130i,15n,146p,1903b,4453s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
