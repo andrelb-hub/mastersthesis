@@ -44,7 +44,7 @@ presentation.tex
 	\st: \quad & P_{C1t} C_{1\eta t} + P_{C2t} C_{2\eta t} + P_{C\eta t} I_{\eta t} = W_t L_{\eta t} + R_t K_{\eta t} + \Pi_{\nu t} \label{eq:reg-budget-constraint} \\
 	\quad & K_{\eta, t+1} = (1-\delta)K_{\eta t} + I_{\eta t} \label{eq:reg-law-of-motion-for-capital} \\
 	% \quad & C_{\eta t} = \prod_{o=1}^{n} C_{o\eta t}^{\theta_o} \quad ; \quad \sum_{o=1}^{n} \theta_o = 1 \label{eq:reg-consumption-aggregation} \\
-	\quad & C_{\eta t} = C_{1\eta t}^{\omega_{\eta}} C_{2\eta t}^{1-\omega_{\eta}} \label{eq:reg-consumption-aggregation} \\
+	\quad & \textcolor{blue}{C_{\eta t} = C_{1\eta t}^{\omega_{\eta}} C_{2\eta t}^{1-\omega_{\eta}}}  \label{eq:reg-consumption-aggregation} \\
 	\quad & C_{\nu\eta t}, L_{\eta t}, K_{\eta, t+1} > 0 \text{ ; $K_0$ given.} \nonumber
 \end{align}
 	
@@ -147,9 +147,27 @@ presentation.tex
 % SLIDE
 % --------------------------------------------------
 
-\begin{frame}{slide}
+\subsection{Model Structure}
+
+\begin{frame}{Model Structure}
 	
-	slide
+	The model is a square system of 27 variables and 27 equations.
+	
+	\begin{itemize}
+		
+		\item from the household problem: $C_{\eta t}, L_{\eta t}, K_{\eta, t+1}$;
+		
+		\item from the final-goods firm problem: $Y_{\nu t}, Y_{\nu jt}, P_{C\nu t}$;
+		
+		\item from the intermediate-goods firm problems: $K_{\eta jt}, L_{\eta jt}, P_{C\nu t}^\ast$;
+		
+		\item from the market clearing condition: $Y_t, I_{\eta t}$;
+		
+		\item prices: $W_t, R_t, \Lambda_{\nu t}, \pi_t$;
+		
+		\item shocks: $Z_{A\nu t}, Z_{Mt}$.
+		
+	\end{itemize}
 	
 \end{frame}
 
@@ -157,19 +175,23 @@ presentation.tex
 % SLIDE
 % --------------------------------------------------
 
-\begin{frame}{slide}
+\begin{frame}{Next Steps}
 	
-	slide
-	
-\end{frame}
-
-% --------------------------------------------------
-% SLIDE
-% --------------------------------------------------
-
-\begin{frame}{slide}
-	
-	slide
+	\begin{itemize}
+		
+		\item Steady State
+		
+		\item Parameter Calibration
+		
+		\item Steady State Solution
+		
+		\item Log-linearization
+		
+		\item Dynare Programming
+		
+		\item Impulse Response Functions
+		
+	\end{itemize}
 	
 \end{frame}
 
