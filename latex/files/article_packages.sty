@@ -84,6 +84,18 @@ bottom = 2.5cm
 \setlength{\parskip}{10pt}
 
 % --------------------------------------------------
+% TEXT MARGINS: (cover page text)
+% --------------------------------------------------
+
+\usepackage{changepage}
+
+% --------------------------------------------------
+% JUSTIFIED TEXT: 
+% --------------------------------------------------
+
+\usepackage{ragged2e}
+
+% --------------------------------------------------
 % SPACE BETWEEN MAIN TEXT AND FOOTNOTES:
 % --------------------------------------------------
 
@@ -113,7 +125,7 @@ bottom = 2.5cm
 	opacity   = 1,
 	angle     = 0,
 	contents  = {
-		\includegraphics[width=\paperwidth]{../images/marca_dagua_ufpr}}
+		\includegraphics[width=\paperwidth]{marca_dagua_ufpr}}
 }
 
 % --------------------------------------------------
@@ -147,14 +159,6 @@ bottom = 2.5cm
 \usepackage[
 	% dvipsnames
 	]{xcolor}
-
-% --------------------------------------------------
-% IMAGES
-% --------------------------------------------------
-
-\usepackage{graphicx}
-
-\graphicspath{{images/}{images/shock_ZAt/}{images/shock_ZMt/}}
 
 % --------------------------------------------------
 % MULTIFIGURES AND SUBFIGURES
