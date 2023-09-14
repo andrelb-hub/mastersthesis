@@ -1,4 +1,4 @@
-This is LuaHBTeX, Version 1.17.0 (MiKTeX 23.5) (format=lualatex 2023.8.25)  13 SEP 2023 21:51
+This is LuaHBTeX, Version 1.17.0 (MiKTeX 23.5) (format=lualatex 2023.8.25)  13 SEP 2023 22:00
  restricted system commands enabled.
 **thesis.tex
 (./thesis.tex
@@ -2424,7 +2424,7 @@ Package logreq Info: Writing requests to 'thesis.run.xml'.
 
 Here is how much of LuaTeX's memory you used:
  44684 strings out of 477545
- 125081,3417909 words of node,token memory allocated
+ 125081,2848258 words of node,token memory allocated
  6022 words of node memory still in use:
    156 hlist, 25 vlist, 10 rule, 10 math, 77 glue, 73 kern, 58 sub_mlist, 197 gl
 yph, 412 attribute, 89 glue_spec, 207 attribute_list, 3 write, 3 pdf_action node
@@ -2463,7 +2463,7 @@ ocal/Programs/MiKTeX/fonts/type1/urw/palatino/uplri8a.pfb><C:/Users/andre/AppDat
 a/Local/Programs/MiKTeX/fonts/type1/urw/zapfding/uzdr.pfb><C:/Users/andre/AppDat
 a/Local/Programs/MiKTeX/fonts/type1/public/boondox/zxxbw8a.pfb><C:/Users/andre/A
 ppData/Local/Programs/MiKTeX/fonts/type1/public/boondox/zxxrw8a.pfb>
-Output written on thesis.pdf (103 pages, 4266994 bytes).
+Output written on thesis.pdf (103 pages, 4267052 bytes).
 
 PDF statistics: 1989 PDF objects out of 2073 (max. 8388607)
  668 named destinations out of 1000 (max. 131072)
