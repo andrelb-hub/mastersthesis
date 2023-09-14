@@ -5,8 +5,8 @@ Master's Thesis presented to PPGDE-UFPR in 2023 in order to receive the Master i
 The objective is to analyse the impact of monetary policy on the regional gross domestic product using a NK DSGE model featuring:
 - four agents:
   - a representative household;
-  - a intermediate-good firm;
-  - a final-good firm;
+  - a final-goods firm;
+  - a continuum of intermediate-goods firms;
   - a monetary authority.
 - and also:
   - price stickiness;
