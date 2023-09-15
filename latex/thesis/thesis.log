@@ -1,4 +1,4 @@
-This is LuaHBTeX, Version 1.17.0 (MiKTeX 23.5) (format=lualatex 2023.8.25)  13 SEP 2023 22:00
+This is LuaHBTeX, Version 1.17.0 (MiKTeX 23.5) (format=lualatex 2023.8.25)  15 SEP 2023 12:37
  restricted system commands enabled.
 **thesis.tex
 (./thesis.tex
@@ -1866,9 +1866,14 @@ t line 45.
 mages/marca_dagua_ufpr.jpg>])
 (./pre/inside_cover.tex [2]) (./pre/catalog_record.tex)
 (./pre/approval_form.tex [3]) (./pre/dedication.tex [4])
-(./pre/acknowledgments.tex [5]) (./pre/epigraph.tex [6]
-Excluding 'comment' comment.) (./pre/abstract.tex [7] [8]) (./pre/lists.tex
-[9] (./thesis.lof
+(./pre/acknowledgments.tex [5]
+Overfull \hbox (14.74413pt too wide) in paragraph at lines 23--24
+[]\T1/ppl/m/n/12 Ao meu chefe Greis-son Almeida Pereira, por acred-i-tar neste 
+pro-jeto desde a primeira
+ []
+
+) (./pre/epigraph.tex [6] Excluding 'comment' comment.) (./pre/abstract.tex
+[7] [8]) (./pre/lists.tex [9] (./thesis.lof
 LaTeX Font Info:    Trying to load font information for OT1+ppl on input line 4
 .
 
@@ -2424,7 +2429,7 @@ Package logreq Info: Writing requests to 'thesis.run.xml'.
 
 Here is how much of LuaTeX's memory you used:
  44684 strings out of 477545
- 125081,2848258 words of node,token memory allocated
+ 125081,4101490 words of node,token memory allocated
  6022 words of node memory still in use:
    156 hlist, 25 vlist, 10 rule, 10 math, 77 glue, 73 kern, 58 sub_mlist, 197 gl
 yph, 412 attribute, 89 glue_spec, 207 attribute_list, 3 write, 3 pdf_action node
@@ -2463,7 +2468,7 @@ ocal/Programs/MiKTeX/fonts/type1/urw/palatino/uplri8a.pfb><C:/Users/andre/AppDat
 a/Local/Programs/MiKTeX/fonts/type1/urw/zapfding/uzdr.pfb><C:/Users/andre/AppDat
 a/Local/Programs/MiKTeX/fonts/type1/public/boondox/zxxbw8a.pfb><C:/Users/andre/A
 ppData/Local/Programs/MiKTeX/fonts/type1/public/boondox/zxxrw8a.pfb>
-Output written on thesis.pdf (103 pages, 4267052 bytes).
+Output written on thesis.pdf (103 pages, 4267089 bytes).
 
 PDF statistics: 1989 PDF objects out of 2073 (max. 8388607)
  668 named destinations out of 1000 (max. 131072)
