@@ -1,4 +1,4 @@
-This is LuaHBTeX, Version 1.17.0 (MiKTeX 23.5) (format=lualatex 2023.8.25)  15 SEP 2023 12:37
+This is LuaHBTeX, Version 1.17.0 (MiKTeX 23.5) (format=lualatex 2023.8.25)  18 SEP 2023 13:18
  restricted system commands enabled.
 **thesis.tex
 (./thesis.tex
@@ -1645,7 +1645,7 @@ Package csquotes Info: Checking for multilingual support...
 Package csquotes Info: ... found 'babel' package.
 Package csquotes Info: Adjusting default style.
 Package csquotes Info: Redefining alias 'default' -> 'english'.
-LaTeX Font Info:    Trying to load font information for T1+ppl on input line 87
+LaTeX Font Info:    Trying to load font information for T1+ppl on input line 93
 .
 
 (C:/Users/andre/AppData/Local/Programs/MiKTeX/tex/latex/psnfss/t1ppl.fd
@@ -1654,32 +1654,32 @@ File: t1ppl.fd 2001/06/04 font definitions for T1/ppl.
 (./thesis.aux)
 \openout1 = thesis.aux
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 87.
-LaTeX Font Info:    ... okay on input line 87.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 87.
-LaTeX Font Info:    ... okay on input line 87.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 87.
-LaTeX Font Info:    ... okay on input line 87.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 87.
-LaTeX Font Info:    ... okay on input line 87.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 87.
-LaTeX Font Info:    Trying to load font information for TS1+cmr on input line 8
-7.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 93.
+LaTeX Font Info:    ... okay on input line 93.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 93.
+LaTeX Font Info:    ... okay on input line 93.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 93.
+LaTeX Font Info:    ... okay on input line 93.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 93.
+LaTeX Font Info:    ... okay on input line 93.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 93.
+LaTeX Font Info:    Trying to load font information for TS1+cmr on input line 9
+3.
 
 (C:/Users/andre/AppData/Local/Programs/MiKTeX/tex/latex/base/ts1cmr.fd
 File: ts1cmr.fd 2023/04/13 v2.5m Standard LaTeX font definitions
 )
-LaTeX Font Info:    ... okay on input line 87.
-LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 87.
-LaTeX Font Info:    ... okay on input line 87.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 87.
-LaTeX Font Info:    ... okay on input line 87.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 87.
-LaTeX Font Info:    ... okay on input line 87.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 87.
-LaTeX Font Info:    ... okay on input line 87.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 87.
-LaTeX Font Info:    ... okay on input line 87.
+LaTeX Font Info:    ... okay on input line 93.
+LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 93.
+LaTeX Font Info:    ... okay on input line 93.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 93.
+LaTeX Font Info:    ... okay on input line 93.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 93.
+LaTeX Font Info:    ... okay on input line 93.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 93.
+LaTeX Font Info:    ... okay on input line 93.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 93.
+LaTeX Font Info:    ... okay on input line 93.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: luatex
@@ -1756,7 +1756,7 @@ ty
 Package: ninecolors 2022-02-13 vv2022D Select colors with proper color contrast
 
 )
-Package hyperref Info: Link coloring ON on input line 87.
+Package hyperref Info: Link coloring ON on input line 93.
 Package biblatex Info: Trying to load language 'english' -> 'english-abnt'...
 Package biblatex Info: ... file 'english-abnt.lbx' found.
 
@@ -1851,8 +1851,8 @@ Package biblatex Info: Automatic encoding selection.
 Package biblatex Info: Trying to load bibliographic data...
 Package biblatex Info: ... file 'thesis.bbl' found.
  (./thesis.bbl)
-Package biblatex Info: Reference section=0 on input line 87.
-Package biblatex Info: Reference segment=0 on input line 87.
+Package biblatex Info: Reference section=0 on input line 93.
+Package biblatex Info: Reference segment=0 on input line 93.
  (./pre/cover.tex
 <../images/../images/marca_dagua_ufpr.jpg, id=6, 502.5174pt x 569.4876pt>
 File: ../images/../images/marca_dagua_ufpr.jpg Graphic file (type jpg)
@@ -1866,14 +1866,9 @@ t line 45.
 mages/marca_dagua_ufpr.jpg>])
 (./pre/inside_cover.tex [2]) (./pre/catalog_record.tex)
 (./pre/approval_form.tex [3]) (./pre/dedication.tex [4])
-(./pre/acknowledgments.tex [5]
-Overfull \hbox (14.74413pt too wide) in paragraph at lines 23--24
-[]\T1/ppl/m/n/12 Ao meu chefe Greis-son Almeida Pereira, por acred-i-tar neste 
-pro-jeto desde a primeira
- []
-
-) (./pre/epigraph.tex [6] Excluding 'comment' comment.) (./pre/abstract.tex
-[7] [8]) (./pre/lists.tex [9] (./thesis.lof
+(./pre/acknowledgments.tex [5]) (./pre/epigraph.tex [6]
+Excluding 'comment' comment.) (./pre/abstract.tex [7] [8]) (./pre/lists.tex
+[9] (./thesis.lof
 LaTeX Font Info:    Trying to load font information for OT1+ppl on input line 4
 .
 
@@ -1945,7 +1940,22 @@ LaTeX Font Info:    Font shape `U/msb/m/n' will be
 (Font)              scaled to size 6.25204pt on input line 17.
  [15]
 [16]) (./sections/literature_review.tex [17] [18] [19] [20])
-(./sections/model.tex [21]) (./sections/nk_model.tex [22] [23]
+(./sections/model.tex [21]) (./sections/nk_model.tex [22]
+LaTeX Font Info:    Calculating math sizes for size <8.76118> on input line 39.
+
+LaTeX Font Info:    Font shape `U/msa/m/n' will be
+(Font)              scaled to size 9.12921pt on input line 39.
+LaTeX Font Info:    Font shape `U/msa/m/n' will be
+(Font)              scaled to size 6.93814pt on input line 39.
+LaTeX Font Info:    Font shape `U/msa/m/n' will be
+(Font)              scaled to size 5.47757pt on input line 39.
+LaTeX Font Info:    Font shape `U/msb/m/n' will be
+(Font)              scaled to size 9.12921pt on input line 39.
+LaTeX Font Info:    Font shape `U/msb/m/n' will be
+(Font)              scaled to size 6.93814pt on input line 39.
+LaTeX Font Info:    Font shape `U/msb/m/n' will be
+(Font)              scaled to size 5.47757pt on input line 39.
+ [23]
 <../images/../images/flowchart.jpg, id=359, 1335.99126pt x 752.8125pt>
 File: ../images/../images/flowchart.jpg Graphic file (type jpg)
 <use ../images/../images/flowchart.jpg>
@@ -2422,22 +2432,27 @@ Missing character: There is no 0 (U+0030) in font fplmbb!
 LaTeX2e <2023-06-01> patch level 1
 L3 programming layer <2020/03/25>
  ***********
+
+
+LaTeX Font Warning: Size substitutions with differences
+(Font)              up to 1.93356pt have occurred.
+
 Package logreq Info: Writing requests to 'thesis.run.xml'.
 
 \openout1 = thesis.run.xml
 )
 
 Here is how much of LuaTeX's memory you used:
- 44684 strings out of 477545
- 125081,4101490 words of node,token memory allocated
+ 45128 strings out of 477545
+ 125081,3417909 words of node,token memory allocated
  6022 words of node memory still in use:
    156 hlist, 25 vlist, 10 rule, 10 math, 77 glue, 73 kern, 58 sub_mlist, 197 gl
 yph, 412 attribute, 89 glue_spec, 207 attribute_list, 3 write, 3 pdf_action node
 s
    avail lists: 1:2,2:6369,3:1001,4:227,5:716,6:252,7:6631,8:105,9:4081,10:73,11
 :521,12:1
- 62546 multiletter control sequences out of 65536+600000
- 380 fonts using 23386895 bytes
+ 62660 multiletter control sequences out of 65536+600000
+ 645 fonts using 39794975 bytes
  132i,26n,128p,1090b,4379s stack positions out of 10000i,1000n,20000p,200000b,200000s
 {C:/Users/andre/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-ec.enc}{C:/U
 sers/andre/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/base/8r.enc}<C:/Users/a
@@ -2468,7 +2483,7 @@ ocal/Programs/MiKTeX/fonts/type1/urw/palatino/uplri8a.pfb><C:/Users/andre/AppDat
 a/Local/Programs/MiKTeX/fonts/type1/urw/zapfding/uzdr.pfb><C:/Users/andre/AppDat
 a/Local/Programs/MiKTeX/fonts/type1/public/boondox/zxxbw8a.pfb><C:/Users/andre/A
 ppData/Local/Programs/MiKTeX/fonts/type1/public/boondox/zxxrw8a.pfb>
-Output written on thesis.pdf (103 pages, 4267089 bytes).
+Output written on thesis.pdf (103 pages, 4267209 bytes).
 
 PDF statistics: 1989 PDF objects out of 2073 (max. 8388607)
  668 named destinations out of 1000 (max. 131072)

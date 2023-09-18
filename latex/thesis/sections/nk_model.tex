@@ -36,7 +36,7 @@ thesis.tex
 	
 	Households will lack mobility between regions. The link connecting the two regions will be the final-goods.
 	
-	Then, equilibrium conditions of the system will be determined. Assuming the system tends toward long-term equilibrium, a steady state will be reached where variables cease to change. Thus, for a given $t \longrightarrow \infty$, we will have $\boldsymbol{X}_t = \boldsymbol{X}_{t+1} = \boldsymbol{X}_{ss} \implies \boldsymbol{\dot{X}} = 0$, where $\boldsymbol{X}$ denotes the vector of system variables, $ss$ indicates the steady state and $\boldsymbol{\dot{X}} = \frac{\partial \boldsymbol{X}}{\partial t}$.
+	Then, equilibrium conditions of the system will be determined. Assuming the system tends toward long-term equilibrium, a steady state will be reached where variables cease to change. Thus, for a given $t \longrightarrow \infty$, we will have $\boldsymbol{X}_t = \boldsymbol{X}_{t+1} = \boldsymbol{X}_{ss} \implies \boldsymbol{\dot{X}} = 0$, where $\boldsymbol{X}$ denotes the vector of system variables, $ss$ indicates the steady state and $\boldsymbol{\dot{X}} = \sfrac{\partial \boldsymbol{X}}{\partial t}$. 
 	
 	After that, the log-linearization method proposed by \textcite{uhlig_toolkit_1999} will be employed to convert the system of equations into a linear system, so that this linear system can be solved by the program \dynare{}, which computes the solution and produces impulse-response graphs based on the stochastic shocks.
 	
@@ -196,7 +196,7 @@ thesis.tex
 	
 	\subsubsection*{Cost Minimization Problem}
 	
-	The intermediate-good firms, denoted by $j \in [0,1]$, produce varieties of a representative good with a certain level of substitutability. Each of these firms has to choose capital $K_{jt}$ and labor $N_{jt}$ to minimize production costs, subject to a technology rule.
+	There is an intermediate-good continuum, where each firm, denoted by $j \in [0,1]$, produces varieties of a representative good with a specific level of substitutability. Each of these firms must choose capital $K_{jt}$ and labor $N_{jt}$ to minimize production costs, subject to a technology rule:
 	\begin{align}
 		\label{eq:int-good-firm-total-cost}
 		\min_{K_{jt}, L_{jt}}: \quad & R_t K_{jt} + W_t L_{jt} \\
