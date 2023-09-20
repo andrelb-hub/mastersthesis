@@ -29,7 +29,7 @@ For a regional model, it is considered that different representative agents exis
 	
 	\item Final-good production \(Y_{\nu t}\): there is one representative final-good firm in each region that aggregates all intermediate-goods of that region.
 	
-	\item Final-good price \(P_{\nu t}\) and regional inflation \(\pi_{\nu t}\): in each region, there is a final-good price and a regional inflation level.
+	\item Final-good price \(P_{C\nu t}\) and regional inflation \(\pi_{\nu t}\): in each region, there is a final-good price and a regional inflation level.
 	
 	\item Intermediate-goods firms \(Y_{\nu jt}\): there is a continuum $j \in [0,1]$ for each region and these firms will demand labor and capital from within the region.
 	
@@ -129,7 +129,7 @@ The first order conditions are:
 	C_{2\eta t}: \quad & \mu_t = \frac{(1 -\omega_1) C_{1\eta t}^{\omega_1 (1 -\sigma)} C_{2\eta t}^{(1 -\omega_1)(1 -\sigma)-1}}{P_{C2t}} = \frac{(1 -\omega_1)}{P_{C2t} C_{2\eta t}} C_{\eta t}^{1 -\sigma} \label{eq:reg-FOC-C-2-eta-t} \\
 	L_{\eta t}: \quad & -\phi L_{\eta t}^{\varphi} +\mu_t W_t = 0 \implies \mu_t = \frac{\phi L_{\eta t}^{\varphi}}{W_t} \label{eq:reg-household-FOC-Lt} \\
 	\begin{split}
-		K_{\eta, t+1}: \quad & -\mu_t P_{C\nu t} +\beta \mathbb{E}_t \mu_{t+1} [(1-\delta) P_{\eta t+1} + R_{t+1}] = 0 \implies \\ & \qquad \mu_t P_{C\nu t} = \beta \mathbb{E}_t \mu_{t+1} [(1-\delta) P_{\eta t+1} + R_{t+1}]
+		K_{\eta, t+1}: \quad & -\mu_t P_{C\nu t} +\beta \mathbb{E}_t \mu_{t+1} [(1-\delta) P_{C\eta t+1} + R_{t+1}] = 0 \implies \\ & \qquad \mu_t P_{C\nu t} = \beta \mathbb{E}_t \mu_{t+1} [(1-\delta) P_{C\eta t+1} + R_{t+1}]
 	\end{split} \label{eq:reg-household-FOC-Kt} \\
 	\begin{split}
 		\mu_t: \quad & P_{C1t} C_{1\eta t} + P_{C2t} C_{2\eta t} + P_{C\nu t} (K_{\eta, t+1} - (1-\delta)K_{\eta t}) = \\ & \qquad = W_t L_{\eta t} + R_t K_{\eta t} + \Pi_{\nu t}
@@ -158,7 +158,7 @@ Substitute \ref{eq:reg-C2-Cn} in \ref{eq:reg-FOC-C1-C2}:
 	C_{1\eta t} &= C_{\eta t} \left[ \frac{P_{C1t} }{P_{C2t}} \cdot \frac{1 -\omega_1}{\omega_1} \right]^{\omega_1 -1} \label{eq:reg-C1-Cn}
 \end{align}
 
-Define the total goods expense $P_{\eta t} C_{\eta t}$ of household $\eta$ in time $t$:
+Define the total goods expense $P_{t}^{\eta} C_{\eta t}$ $P_{\eta t} C_{\eta t}$ of household $\eta$ in time $t$:
 \begin{align}
 	P_{\eta t} C_{\eta t} = P_{C1 t} C_{1\eta t} + P_{C2 t} C_{2\eta t} \label{eq:reg-total-expense}
 \end{align}
@@ -186,9 +186,9 @@ Equation \ref{eq:reg-labor-supply} is the Household Labor Supply and shows that 
 
 Substitute $\mu_t$ and $\mu_{t+1}$ from equation \ref{eq:reg-FOC-Ct} in \ref{eq:reg-household-FOC-Kt}:
 \begin{alignat}{2}
-	\mu_t P_{\eta t} & = \beta \mathbb{E}_t \mu_{t+1} [(1-\delta) P_{\eta t+1} + R_{t+1}] \quad &\implies \nonumber \\
-	\frac{C_{\eta t}^{-\sigma}}{P_{\eta t}} P_{\eta t} & = \beta \mathbb{E}_t \frac{C_{\eta, t+1}^{-\sigma}}{P_{\eta t+1}} [(1-\delta) P_{\eta t+1} + R_{t+1}] &\implies \nonumber \\
-	\left( \frac{\mathbb{E}_t C_{\eta, t+1}}{C_{\eta t}} \right)^\sigma & = \beta \left[ (1-\delta) + \mathbb{E}_t \left(\frac{R_{t+1}}{P_{\eta t+1}}\right) \right] \label{eq:reg-household-euler-equation}
+	\mu_t P_{\eta t} & = \beta \mathbb{E}_t \mu_{t+1} [(1-\delta) P_{C\eta t+1} + R_{t+1}] \quad &\implies \nonumber \\
+	\frac{C_{\eta t}^{-\sigma}}{P_{\eta t}} P_{\eta t} & = \beta \mathbb{E}_t \frac{C_{\eta, t+1}^{-\sigma}}{P_{\eta t+1}} [(1-\delta) P_{C\eta t+1} + R_{t+1}] &\implies \nonumber \\
+	\left( \frac{\mathbb{E}_t C_{\eta, t+1}}{C_{\eta t}} \right)^\sigma & = \beta \left[ (1-\delta) + \mathbb{E}_t \left(\frac{R_{t+1}}{P_{C\eta t+1}}\right) \right] \label{eq:reg-household-euler-equation}
 \end{alignat}
 
 Equation \ref{eq:reg-household-euler-equation} is the Household Euler equation.
@@ -197,7 +197,7 @@ Equation \ref{eq:reg-household-euler-equation} is the Household Euler equation.
 % FIRMS
 % --------------------------------------------------
 
-\subsection*{Firms}
+\subsubsection*{Firms}
 
 Consider two types of firms: 
 \begin{enumerate*}[label=(\arabic*)]
@@ -533,7 +533,7 @@ A Competitive Equilibrium consists of sequences of prices $\{P_{C\nu t}^\ast, R_
 
 \subsubsection*{Model Structure}
 
-The model is composed of the preview solutions, forming a square system of 31 variables and 31 equations, summarized as follows:
+The model is composed of the preview solutions, forming a square system of 33 variables and 33 equations, summarized as follows:
 
 {\singlespacing
 	
@@ -542,7 +542,7 @@ The model is composed of the preview solutions, forming a square system of 31 va
 		\item Variables:
 		
 		\begin{itemize}
-			\item from the household problem: $C_{\eta t}, L_{\eta t}, K_{\eta, t+1}$;
+			\item from the household problem: $C_{\eta t}, C_{\nu \eta t}, L_{\eta t}, K_{\eta, t+1}$;
 			\item from the final-goods firm problem: $Y_{\nu t}, Y_{\nu jt}, P_{C\nu t}$;
 			\item from the intermediate-goods firm problems: $K_{\eta jt}, L_{\eta jt}, P_{C\nu t}^\ast$;
 			\item from the market clearing condition: $Y_t, I_{\eta t}$;
@@ -561,7 +561,7 @@ The model is composed of the preview solutions, forming a square system of 31 va
 			
 			\item Household Euler Equation:
 			\begin{align}
-				\left( \frac{\mathbb{E}_t C_{\eta, t+1}}{C_{\eta t}} \right)^\sigma = \beta \left[ (1-\delta) + \mathbb{E}_t \left(\frac{R_{t+1}}{P_{\eta t+1}}\right) \right]
+				\left( \frac{\mathbb{E}_t C_{\eta, t+1}}{C_{\eta t}} \right)^\sigma = \beta \left[ (1-\delta) + \mathbb{E}_t \left(\frac{R_{t+1}}{P_{C\eta t+1}}\right) \right]
 				\tag{\ref{eq:reg-household-euler-equation}}
 			\end{align}
 			
@@ -577,6 +577,11 @@ The model is composed of the preview solutions, forming a square system of 31 va
 				\tag{\ref{eq:reg-law-of-motion-for-capital}}
 			\end{align}
 			
+			\item Regional Consumption:
+			\begin{align}
+				C_{\eta t} = C_{1\eta t}^{\omega_{\eta}} C_{2\eta t}^{1-\omega_{\eta}} \tag{\ref{eq:reg-consumption-aggregation}}
+			\end{align}
+			
 			\item Bundle Technology:
 			\begin{align}
 				Y_{\nu t} = \left( \int_{0}^{1} Y_{\nu jt}^{\frac{\psi-1}{\psi}} \dif j \right)^{\frac{\psi}{\psi-1}}
@@ -585,7 +590,7 @@ The model is composed of the preview solutions, forming a square system of 31 va
 			
 			\item Regional Price Level:
 			\begin{align}
-				P_{C\nu t} = \left[ \theta P_{t-1}^{1-\psi} + (1-\theta) P_{C\nu t}^{\ast 1-\psi} \right]^\frac{1}{1-\psi}
+				P_{C\nu t} = \left[ \theta P_{C\nu,t-1}^{1-\psi} + (1-\theta) P_{C\nu t}^{\ast 1-\psi} \right]^\frac{1}{1-\psi}
 				\tag{\ref{eq:reg-general-price-level}}
 			\end{align}
 			
@@ -691,8 +696,8 @@ The steady state of a variable is defined by its constancy through time. For any
 	
 	\item Household Euler Equation: 
 	\begin{align}
-		\left( \frac{\mathbb{E}_t C_{\eta, t+1}}{C_{\eta t}} \right)^\sigma &= \beta \left[ (1-\delta) + \mathbb{E}_t \left(\frac{R_{t+1}}{P_{\eta t+1}}\right) \right] \implies \nonumber \\
-		1 &= \beta \left[ (1-\delta) + \frac{R}{P} \right] \label{eq:reg-ss-household-euler-equation}
+		\left( \frac{\mathbb{E}_t C_{\eta, t+1}}{C_{\eta t}} \right)^\sigma &= \beta \left[ (1-\delta) + \mathbb{E}_t \left(\frac{R_{t+1}}{P_{C\eta t+1}}\right) \right] \implies \nonumber \\
+		1 &= \beta \left[ (1-\delta) + \frac{R}{P_{C\eta}} \right] \label{eq:reg-ss-household-euler-equation}
 	\end{align}
 	
 	\item Budget Constraint: 
@@ -705,6 +710,11 @@ The steady state of a variable is defined by its constancy through time. For any
 	\begin{align}
 		K_{\eta, t+1} &= (1-\delta)K_{\eta t} + I_{\eta t} \implies K_{\eta} = (1-\delta)K_{\eta} + I_{\eta} \implies \nonumber \\
 		I_{\eta} &= \delta K_{\eta} \label{eq:reg-ss-law-of-motion-for-capital}
+	\end{align}
+	
+	\item Regional Consumption:
+	\begin{align}
+		C_{\eta t} = C_{1\eta t}^{\omega_{\eta}} C_{2\eta t}^{1-\omega_{\eta}} \implies C_{\eta} = C_{1\eta}^{\omega_{\eta}} C_{2\eta}^{1-\omega_{\eta}} \label{eq:reg-ss-consumption-aggregation}
 	\end{align}
 	
 	\item Bundle Technology:
@@ -747,8 +757,8 @@ The steady state of a variable is defined by its constancy through time. For any
 	
 	\item Optimal Price:
 	\begin{alignat}{2}
-		P_{C\nu t}^\ast &= \frac{\psi}{\psi-1} \cdot \frac{\E \sum_{s=0}^{\infty} \left\{\theta^s Y_{\nu j,t+s} \Lambda_{\nu t+s} / \prod_{k=0}^{s-1}(1+R_{t+k}) \right\}} {\E \sum_{s=0}^{\infty} \left\{ \theta^s Y_{\nu j,t+s} / \prod_{k=0}^{s-1}(1+R_{t+k}) \right\}} &\implies \tag{\ref{eq:reg-int-good-firm-optimal-price-FOC-3}} \\
-		P_{C\nu}^\ast &= \frac{\psi}{\psi-1} \cdot \frac{ Y_{\nu j} \Lambda_{\nu} / [1-\theta(1-R)]} {Y_{\nu j} / [1-\theta(1-R)]} &\implies \nonumber \\
+		P_{C\nu t}^\ast &= \frac{\psi}{\psi-1} \cdot \frac{\E \sum_{s=0}^{\infty} \left\{\theta^s Y_{\nu j,t+s} \Lambda_{\nu t+s} / \prod_{k=0}^{s-1}(1+R_{t+k}) \right\}} {\E \sum_{s=0}^{\infty} \left\{ \theta^s Y_{\nu j,t+s} / \prod_{k=0}^{s-1}(1+R_{t+k}) \right\}} \tag{\ref{eq:reg-int-good-firm-optimal-price-FOC-3}} \\
+		P_{C\nu}^\ast &= \frac{\psi}{\psi-1} \cdot \frac{ Y_{\nu j} \Lambda_{\nu} / [1-\theta(1-R)]} {Y_{\nu j} / [1-\theta(1-R)]} \implies \nonumber \\
 		P_{C\nu}^\ast &= \frac{\psi}{\psi-1} \Lambda_{\nu} \label{eq:reg-ss-int-good-firm-optimal-price-FOC-3}
 	\end{alignat}
 	
@@ -813,7 +823,7 @@ The steady state of a variable is defined by its constancy through time. For any
 
 For the steady state solution, all endogenous variables will be determined with respect to the parameters. It's assumed that the productivity and the price level are normalized to one: $\left[ \begin{smallmatrix} P & Z_{A\nu} \end{smallmatrix} \right] = \vec{\bm{1}}$.\footnote{where $\vec{\bm{1}}$ is the unit vector.}
 
-From \ref{eq:reg-ss-general-price-level}, the regional optimal price $P^\ast$ is:
+From \ref{eq:reg-ss-general-price-level}, the regional optimal price $P_{C\nu}^\ast$ is:
 \begin{align}
 	P_{C\nu} = P_{C\nu}^\ast
 \end{align}
@@ -840,8 +850,8 @@ From \ref{eq:reg-ss-productivity-shock} and \ref{eq:reg-ss-monetary-shock}, the 
 From \ref{eq:reg-ss-household-euler-equation}, the return on capital $R$ is:
 \begin{align}
 	\label{eq:reg-ss-return-on-capital}
-	1 = \beta \left[ (1-\delta) + \frac{R}{P} \right] \implies 
-	R = P\left[ \frac{1}{\beta} - (1-\delta) \right]
+	1 = \beta \left[ (1-\delta) + \frac{R}{P_{C\eta}} \right] \implies 
+	R = P_{C\eta} \left[ \frac{1}{\beta} - (1-\delta) \right]
 \end{align}
 
 From \ref{eq:reg-ss-int-good-firm-optimal-price-FOC-3} and \ref{eq:reg-ss-general-price-level}, the marginal cost $\Lambda_{\nu}$ is:
@@ -861,10 +871,6 @@ In steady state, prices are the same ($P_{C\nu} = P_{C\nu}^\ast$), resulting in 
 	L_{\eta} &= (1-{\alpha_\nu}) Y_{\nu} \frac{\Lambda_{\nu}}{W} \label{eq:reg-ss-int-good-firm-FOC-Lt-2} \\
 	Y_{\nu} &= Z_{A\nu} K_{\eta}^{\alpha_\nu} L_{\eta}^{1 -{\alpha_\nu}} \label{eq:reg-ss-int-good-firm-production-function-2}
 \end{align}
-
-At the time of delivering this document, the development of the model was at this stage.
-
-\begin{comment}
 	
 	\todo[inline]{here, there is no Y = C + I to substitute...}
 	
@@ -872,13 +878,13 @@ At the time of delivering this document, the development of the model was at thi
 	\begin{align}
 		I_{\eta} = \delta K_{\eta} \implies I_{\eta} = \delta {\alpha_\nu} Y_{\eta} \frac{\Lambda_{\nu}}{R} \label{eq:reg-ss-investment}
 	\end{align}
-	
+
 	Substitute \ref{eq:reg-ss-int-good-firm-FOC-Lt-2} in \ref{eq:reg-ss-household-labor-supply}:
 	\begin{align}
 		\frac{\phi L_{\eta}^{\varphi}}{C_{\eta}^{-\sigma}} = \frac{W}{P_{\eta}} \implies C_{\eta} &= \left[ L_{\eta}^{-\varphi} \frac{W}{\phi P_{\eta}} \right]^{\frac{1}{\sigma}} \implies \nonumber\\
 		C_{\eta} &= \left[ \left( (1-{\alpha_\nu}) Y_{\nu} \frac{\Lambda_{\nu}}{W} \right)^{-\varphi} \frac{W}{\phi P_{\eta}} \right]^{\frac{1}{\sigma}} \label{eq:reg-ss-consumption}
 	\end{align}
-	
+
 	Substitute \ref{eq:reg-ss-investment} and \ref{eq:reg-ss-consumption} in \ref{eq:reg-ss-market-clearing-condition}:
 	\begin{alignat}{2}
 		Y_{\nu} &= \sum_{\eta=1}^{n} (C_{\eta} + I_{\eta}) &\implies \nonumber \\
@@ -889,6 +895,8 @@ At the time of delivering this document, the development of the model was at thi
 		\left( \frac{R}{R-\delta{\alpha_\nu}\Lambda} \right)^\sigma
 		\right]^\frac{1}{\varphi+\sigma} & \label{eq:reg-ss-production}
 	\end{alignat}
+
+\begin{comment}
 	
 	For $C,K,L,I$, use the result from \ref{eq:reg-ss-production} in \ref{eq:reg-ss-consumption}, \ref{eq:reg-ss-int-good-firm-FOC-Kt-2}, \ref{eq:reg-ss-int-good-firm-FOC-Lt-2} and \ref{eq:reg-ss-law-of-motion-for-capital}, respectively.
 	
