@@ -568,7 +568,7 @@ where $\rho_M \in [0,1]$ and $\varepsilon_{Mt} \sim \mathscr{N}(0,\sigma_M)$.
 
 % removed from the household solution set: I_{\eta t}^\ast, 
 
-A Competitive Equilibrium consists of sequences of prices $\{P_{\nu t}^\ast, R_t^\ast, R_{Kt}^\ast, W_t^\ast\}$, allocations for households $\mathbfscr{A}_H \coloneq \{C_{\eta t}^\ast, L_{\eta t}^\ast, K_{\eta, t+1}^\ast\}$ and allocations  for firms $\mathbfscr{A}_F \coloneq \{K_{\eta jt}^\ast, L_{\eta jt}^\ast, Y_{\nu jt}^\ast, Y_{\nu t}^\ast\}$. In such an equilibrium, given the set of exogenous variables $\{K_0, Z_{A\nu t}, Z_{Mt}\}$, the elements in $\mathbfscr{A}_H$ solve the household problem, while the elements in $\mathbfscr{A}_F$ solve the firms' problems, and the markets for goods and labor clear:
+A Competitive Equilibrium consists of sequences of prices $\{P_{\nu t}^\ast, R_t^\ast, R_{Kt}^\ast, W_t^\ast\}$, allocations for households $\mathbfscr{A}_H \coloneq \{C_{\eta t}^\ast, L_{\eta t}^\ast, B_{\eta t}^\ast, K_{\eta, t+1}^\ast\}$ and allocations  for firms $\mathbfscr{A}_F \coloneq \{K_{\eta jt}^\ast, L_{\eta jt}^\ast, Y_{\nu jt}^\ast, Y_{\nu t}^\ast\}$. In such an equilibrium, given the set of exogenous variables $\{K_0, Z_{A\nu t}, Z_{Mt}\}$, the elements in $\mathbfscr{A}_H$ solve the household problem, while the elements in $\mathbfscr{A}_F$ solve the firms' problems, and the markets for goods and labor clear:
 \begin{align}
 	% Y_t &= \sum_{\eta=1}^{n} (C_{\eta t} + I_{\eta t})
 	Y_t &= \sum_{\nu=1}^{n} Y_{\nu t} \label{eq:reg-market-clearing-condition} \\
@@ -581,7 +581,7 @@ A Competitive Equilibrium consists of sequences of prices $\{P_{\nu t}^\ast, R_t
 % MODEL STRUCTURE
 % --------------------------------------------------
 
-\subsubsection*{Model Structure}
+\subsubsection{Model Structure}
 
 The model is composed of the preview solutions, forming a square system of 35 variables and 37 equations, summarized as follows:
 
@@ -611,7 +611,7 @@ The model is composed of the preview solutions, forming a square system of 35 va
 		
 	\begin{enumerate}
 
-		\item Budget Constraint: 
+		\item Budget Constraint:
 		\begin{align}
 		\begin{split}
 			& P_{1t} C_{1\eta t} + P_{2t} C_{2\eta t} + P_{\eta t} I_{\eta t} + B_{\eta t} = \\ & \quad = W_t L_{\eta t} + R_{Kt} K_{\eta t} + (1 + R_{t-1}) B_{\eta,t-1} + \Pi_{\nu t}
