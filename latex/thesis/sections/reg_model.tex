@@ -201,15 +201,22 @@ Substitute \ref{eq:reg-C2-Cn} and \ref{eq:reg-C1-Cn} in \ref{eq:reg-total-expens
 
 Equation \ref{eq:reg-price-eta-level} show that the total expense with goods is proportional to the goods' prices $P_{\eta t}$.
 
+Rewrite \ref{eq:reg-C2-Cn} in terms of \ref{eq:reg-price-eta-level}:
+\begin{alignat}{2}
+	C_{2\eta t} &= C_{\eta t} \left[ \frac{P_{1t} }{P_{2t}} \cdot \frac{1 -\omega_{\eta}}{\omega_{\eta}} \right]^{\omega_{\eta}} &\implies \tag{\ref{eq:reg-C2-Cn}} \\
+	C_{2\eta t} &= C_{\eta t} \left[ \frac{P_{1t}}{\omega_{\eta}} \right]^{\omega_{\eta}} \left[ \frac{P_{2t}}{1 -\omega_{\eta}} \right]^{1 -\omega_{\eta}} \left[ \frac{P_{2t}}{1 -\omega_{\eta}} \cdot \frac{1 -\omega_{\eta}}{P_{2t}} \right] &\implies \nonumber \\
+	C_{2\eta t} &= \te \frac{1 -\omega_{\eta}}{P_{2t}} \label{eq:reg-C2-Cn-2}
+\end{alignat}
+
 Rewrite \ref{eq:reg-C1-Cn} in terms of \ref{eq:reg-price-eta-level} and isolate $(\sfrac{\omega_{\eta}}{P_{1t} C_{1\eta t}})$:
 	\begin{alignat}{2}
 		C_{1\eta t} &= C_{\eta t} \left[ \frac{P_{1t}}{P_{2t}} \cdot \frac{1 -\omega_{\eta}}{\omega_{\eta}} \right]^{\omega_{\eta} -1} &\implies \tag{\ref{eq:reg-C1-Cn}} \\
 		C_{1\eta t} &= C_{\eta t} \left[ \frac{ P_{1t} }{ \omega_{\eta} }\right]^{ \omega_{\eta} } \left[ \frac{P_{2t}}{1-\omega_{\eta}} \right]^{1 -\omega_{\eta}} \left[ \frac{\omega_{\eta}}{P_{1t}} \right] &\implies \nonumber \\
 		C_{1\eta t} &= \te \frac{\omega_{\eta}}{P_{1t}} \iff
-		\frac{\omega_{\eta}}{P_{1t} C_{1\eta t}} = \frac{1}{\te} \label{eq:reg-qc-pc}
+		\frac{\omega_{\eta}}{P_{1t} C_{1\eta t}} = \frac{1}{\te} \label{eq:reg-C1-Cn-2}
 	\end{alignat}
 
-Substitute \ref{eq:reg-qc-pc} in \ref{eq:reg-FOC-C1-eta-t}:
+Substitute \ref{eq:reg-C1-Cn-2} in \ref{eq:reg-FOC-C1-eta-t}:
 \begin{align}
 	\mu_t &= \frac{\omega_{\eta}}{P_{1t} C_{1\eta t}} C_{\eta t}^{1 -\sigma} \tag{\ref{eq:reg-FOC-C1-eta-t}} \implies \\
 	\mu_t &= \frac{ C_{\eta t}^{1-\sigma} }{ \te }  \label{eq:reg-FOC-C1-eta-t2}
@@ -621,19 +628,29 @@ The model is composed of the preview solutions, forming a square system of 39 va
 			K_{\eta, t+1} = (1-\delta)K_{\eta t} + I_{\eta t} \tag{\ref{eq:reg-law-of-motion-for-capital}}
 		\end{align}
 
-		\item Regional Consumption:
+		\item Regional Consumption of good 1:
 		\begin{align}
-			C_{\eta t} = C_{1\eta t}^{\omega_{\eta}} C_{2\eta t}^{1-\omega_{\eta}} \tag{\ref{eq:reg-consumption-aggregation}}
+			C_{1\eta t} &= \te \frac{\omega_{\eta}}{P_{1t}} \tag{\ref{eq:reg-C1-Cn-2}}
 		\end{align}
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-		\item Relative Consumption of Regional Goods:
+		\item Regional Consumption of good 2:
 		\begin{align}
-			\frac{C_{1\eta t}}{C_{2\eta t}} = \frac{P_{2t}}{P_{1t}} \cdot \frac{\omega_{\eta}}{1 -\omega_{\eta}} \tag{\ref{eq:reg-FOC-C1-C2}}
+			C_{2\eta t} &= \te \frac{1 -\omega_{\eta}}{P_{2t}} \tag{\ref{eq:reg-C2-Cn-2}}
 		\end{align}
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{comment}
+	
+	\item Regional Consumption:
+	\begin{align}
+		C_{\eta t} = C_{1\eta t}^{\omega_{\eta}} C_{2\eta t}^{1-\omega_{\eta}} \tag{\ref{eq:reg-consumption-aggregation}}
+	\end{align}
+
+	\item Relative Consumption of Regional Goods:
+	\begin{align}
+		\frac{C_{1\eta t}}{C_{2\eta t}} = \frac{P_{2t}}{P_{1t}} \cdot \frac{\omega_{\eta}}{1 -\omega_{\eta}} \tag{\ref{eq:reg-FOC-C1-C2}}
+	\end{align}	
+	
+\end{comment}
 
 		\item Price Composition of Consumption Bundle:
 		\begin{align}
@@ -727,7 +744,7 @@ The model is composed of the preview solutions, forming a square system of 39 va
 		
 		\item Regional Market Clearing Condition:
 		\begin{align}
-			Y_{\eta t} = C_{\eta t} + I_{\eta t} \tag{\ref{eq:reg-total-yn}} \\
+			Y_{\eta t} = C_{\eta t} + I_{\eta t} \tag{\ref{eq:reg-total-yn}}
 		\end{align}
 			
 		\end{enumerate}
@@ -754,7 +771,7 @@ The steady state of a variable is defined by its constancy through time. For any
 		& P_{1t} C_{1\eta t} + P_{2t} C_{2\eta t} + P_{\eta t} I_{\eta t} + B_{\eta t} = \\ & \quad = W_t L_{\eta t} + R_{Kt} K_{\eta t} + (1 + R_{t-1}) B_{\eta,t-1} + \Pi_{\eta t} \implies
 	\end{split} \tag{\ref{eq:reg-budget-constraint}}
 	\\
-	& P_{1} C_{1\eta} + P_{2} C_{2\eta} + P_{\eta} I_{\eta} = W L_{\eta} + R_{K} K_{\eta} + R B_{\eta} + \Pi_{\eta} \label{eq:reg-ss-household-budget-constraint}
+	& P_{1} C_{1\eta} + P_{2} C_{2\eta} + P_{\eta} I_{\eta} = W L_{\eta} + R_{K} K_{\eta} + R B_{\eta} + \Pi_{\eta} \label{eq:reg-ss-budget-constraint}
 	\end{align}
 
 	\item Law of Motion for Capital:
@@ -764,21 +781,32 @@ The steady state of a variable is defined by its constancy through time. For any
 		I_{\eta} &= \delta K_{\eta} \label{eq:reg-ss-law-of-motion-for-capital}
 	\end{alignat}
 
+	\item Regional Consumption of good 1:
+	\begin{align}
+		C_{1\eta t} &= \te \frac{\omega_{\eta}}{P_{1t}} \implies \tag{\ref{eq:reg-C1-Cn-2}} \\
+		C_{1\eta} &= \te \frac{\omega_{\eta}}{P_{1}} \implies \label{eq:reg-ss-C1-Cn-2}
+	\end{align}
+
+	\item Regional Consumption of good 2:
+	\begin{align}
+		C_{2\eta t} &= \te \frac{1 -\omega_{\eta}}{P_{2t}} \implies \tag{\ref{eq:reg-C2-Cn-2}} \\
+		C_{2\eta} &= \te \frac{1 -\omega_{\eta}}{P_{2}} \label{eq:reg-ss-C2-Cn-2}
+	\end{align}
+
+\begin{comment}
 	\item Regional Consumption:
 	\begin{align}
 		C_{\eta t} &= C_{1\eta t}^{\omega_{\eta}} C_{2\eta t}^{1-\omega_{\eta}} \implies \tag{\ref{eq:reg-consumption-aggregation}} \\
 		C_{\eta} &= C_{1\eta}^{\omega_{\eta}} C_{2\eta}^{1-\omega_{\eta}} \label{eq:reg-ss-consumption-aggregation}
 	\end{align}
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
+	
 	\item Relative Consumption of Regional Goods:
 	\begin{align}
 		\frac{C_{1\eta t}}{C_{2\eta t}} &= \frac{P_{2t}}{P_{1t}} \cdot \frac{\omega_{\eta}}{1 -\omega_{\eta}} \implies \tag{\ref{eq:reg-FOC-C1-C2}}\\
 		\frac{C_{1\eta}}{C_{2\eta}} &= \frac{P_{2}}{P_{1}} \cdot \frac{\omega_{\eta}}{1 -\omega_{\eta}} \label{eq:reg-ss-FOC-C1-C2}
 	\end{align}
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	
+\end{comment}
 
 	\item Price Composition of Consumption Bundle:
 	\begin{align}
@@ -984,13 +1012,15 @@ In steady state, prices are the same ($P_{\eta} = P_{\eta}^\ast$), resulting in 
 	Substitute \ref{eq:reg-ss-int-good-firm-FOC-Kt-2} in \ref{eq:reg-ss-law-of-motion-for-capital}:
 	\begin{align}
 		I_{\eta} &= \delta K_{\eta} \implies I_{\eta} = \delta {\alpha_\eta} \frac{\Lambda_{\eta}}{R_K} Y_{\eta} \implies \nonumber \\
-		I_{\eta} &= b_{\eta} Y_{\eta} \quad\text{where:}\quad b_{\eta} = \delta {\alpha_\eta} \frac{\Lambda_{\eta}}{R_K} \label{eq:reg-ss-investment}
+		I_{\eta} &= b_{\eta} Y_{\eta} \label{eq:reg-ss-investment} \\
+		& \text{where:} \quad b_{\eta} = \delta {\alpha_\eta} \frac{\Lambda_{\eta}}{R_K} \label{eq:reg-ss-b-eta}
 	\end{align}
 	
 	Isolate $C_{\eta}$ in \ref{eq:reg-ss-household-labor-supply} and then substitute \ref{eq:reg-ss-te} and \ref{eq:reg-ss-int-good-firm-FOC-Lt-2}:
 	\begin{align}
 		\frac{\phi L_{\eta}^{\varphi}}{C_{\eta}^{1-\sigma}} &= \frac{W}{\te[]} \implies C_{\eta}^{\sigma -1} = \frac{W}{\te[] \phi L_{\eta}^{\varphi}} \implies \nonumber\\
-		C_{\eta} &= a_{\eta} Y_{\eta}^{\frac{-\varphi}{\sigma}} \quad\text{where:}\quad a_{\eta} = \left[ \frac{W^{1 +\varphi} \omega_{\eta}^{\omega_{\eta}} (1 -\omega_{\eta})^{1 -\omega_{\eta}} }{\phi P_{\eta} \left[ (1 -\alpha_{\eta}) \Lambda_{\eta} \right]^{\varphi} } \right]^{\frac{1}{\sigma}} \label{eq:reg-ss-consumption}
+		C_{\eta} &= a_{\eta} Y_{\eta}^{\frac{-\varphi}{\sigma}} \label{eq:reg-ss-consumption} \\
+		& \text{where:} \quad a_{\eta} = \left[ \frac{W^{1 +\varphi} \omega_{\eta}^{\omega_{\eta}} (1 -\omega_{\eta})^{1 -\omega_{\eta}} }{\phi P_{\eta} \left[ (1 -\alpha_{\eta}) \Lambda_{\eta} \right]^{\varphi} } \right]^{\frac{1}{\sigma}} \label{eq:reg-ss-a-eta}
 	\end{align}
 
 	Substitute \ref{eq:reg-ss-investment} and \ref{eq:reg-ss-consumption} in \ref{eq:reg-ss-total-yn}:
@@ -1005,14 +1035,15 @@ Substitute \ref{eq:reg-ss-total-yn-2} in \ref{eq:reg-ss-market-clearing-conditio
 		Y &= \sum_{\eta=1}^{2} Y_{\eta} \implies \tag{\ref{eq:reg-ss-market-clearing-condition}} \\
 		Y &= \sum_{\eta=1}^{2} \left( \frac{a_{\eta}}{1 -b_{\eta}} \right) ^{\frac{\sigma}{\sigma + \varphi}} \label{eq:reg-ss-market-clearing-condition-2}
 	\end{align}
-		
 
-
-
-\begin{comment}
+	The result of \ref{eq:reg-ss-total-yn-2} determines $C_{\eta}, K_{\eta}, L_{\eta}, I_{\eta}$ in \ref{eq:reg-ss-consumption}, \ref{eq:reg-ss-int-good-firm-FOC-Kt-2} and \ref{eq:reg-ss-int-good-firm-FOC-Lt-2}, \ref{eq:reg-ss-law-of-motion-for-capital}, respectively.
 	
-	For $C,K,L,I$, use the result from \ref{eq:reg-ss-production} in \ref{eq:reg-ss-consumption}, \ref{eq:reg-ss-int-good-firm-FOC-Kt-2}, \ref{eq:reg-ss-int-good-firm-FOC-Lt-2} and \ref{eq:reg-ss-law-of-motion-for-capital}, respectively.
+	For $\te[]$, substitute \ref{eq:reg-ss-consumption} in \ref{eq:reg-ss-te};
 	
+	For $C_{1\eta}$ and $C_{2\eta}$, substitute \ref{eq:reg-ss-te} in \ref{eq:reg-ss-C1-Cn-2} and \ref{eq:reg-ss-C2-Cn-2}, respectively;
+
+	Finally, determine $B_{\eta}$ in \ref{eq:reg-ss-budget-constraint} with the previous results.
+
 	% --------------------------------------------------
 	% STEADY STATE SOLUTION
 	% --------------------------------------------------
@@ -1020,6 +1051,15 @@ Substitute \ref{eq:reg-ss-total-yn-2} in \ref{eq:reg-ss-market-clearing-conditio
 	\subsubsection*{Steady State Solution}
 	
 	\vspace*{-1cm}
+
+	\begin{align}
+		content...
+	\end{align}
+
+\begin{comment}
+	
+	
+	
 	
 	\begin{align}
 		\label{eq:reg-unity-vector}
