@@ -52,6 +52,13 @@ uniquelist   = false
 \hyphenation{ins-ti-tu-i-ções pri-mei-ra}
 
 % --------------------------------------------------
+% MATH COMMANDS
+% --------------------------------------------------
+
+% total expense:
+\newcommand{\te}[1][t]{{\mathscr{E}_{\eta #1}}}
+
+% --------------------------------------------------
 % MULTI-FILES PROJECT
 % --------------------------------------------------
 
@@ -121,7 +128,6 @@ uniquelist   = false
 	\subfile{sections/reg_model}
 	\subfile{sections/calibration}
 	\subfile{sections/data}
-%	\subfile{sections/nk_model}
 
 \subfile{sections/results}
 	\subfile{sections/IRF}
@@ -142,5 +148,6 @@ uniquelist   = false
 	\subfile{post/app_dynare}
 	\subfile{post/app_latex}
 	\subfile{post/app_todo}
+	\subfile{sections/nk_model}
 
 \end{document}
