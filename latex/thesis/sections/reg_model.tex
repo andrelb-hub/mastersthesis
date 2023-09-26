@@ -586,7 +586,7 @@ A Competitive Equilibrium consists of sequences of prices $\{P_{\eta t}^\ast, R_
 
 \subsubsection{Model Structure}
 
-The model is composed of the preview solutions, forming a square system of 39 variables and 39 equations, summarized as follows:
+The model is composed of the preview solutions, forming a square system of 41 variables and 41 equations, summarized as follows:
 
 {\singlespacing
 	
@@ -596,9 +596,7 @@ The model is composed of the preview solutions, forming a square system of 39 va
 		
 	\begin{itemize}
 	
-		\item from the household problem: $
-		%C_{\eta t}, % - acho que esta variável está sobrando... ela não faz parte da maximização...
-		C_{1 \eta t}, C_{2 \eta t}, L_{\eta t}, B_{\eta t}, K_{\eta, t+1}, \te$;
+		\item from the household problem: $C_{\eta t}, C_{1 \eta t}, C_{2 \eta t}, L_{\eta t}, B_{\eta t}, K_{\eta, t+1}, \te$;
 	
 		\item from the final-goods firm problem: $Y_{\eta t}, Y_{\eta jt}, P_{\eta t}$;
 	
@@ -654,7 +652,7 @@ The model is composed of the preview solutions, forming a square system of 39 va
 
 		\item Price Composition of Consumption Bundle:
 		\begin{align}
-			\te &= \left[ \frac{P_{1t}}{\omega_{\eta}} \right]^{\omega_{\eta}} \left[ \frac{P_{2t}}{1 -\omega_{\eta}} \right]^{1 -\omega_{\eta}} \tag{\ref{eq:reg-price-eta-level}}
+			\te &= C_{\eta t} \left[ \frac{P_{1t}}{\omega_{\eta}} \right]^{\omega_{\eta}} \left[ \frac{P_{2t}}{1 -\omega_{\eta}} \right]^{1 -\omega_{\eta}} \tag{\ref{eq:reg-price-eta-level}}
 		\end{align}
 
 		\item Labor Supply:
