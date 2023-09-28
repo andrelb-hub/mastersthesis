@@ -1133,11 +1133,24 @@ In steady state, prices are the same ($P_{\eta} = P_{\eta}^\ast$), resulting in 
 	\subsubsection{Log-linearization}
 	
 	Due to the number of variables and equations to be solved, computational brute force will be necessary. \dynare \ is a software specialized on macroeconomic modeling, used for solving DSGE models. Before the model can be processed by the software, it must be linearized in order to eliminate the infinite sum in equation \ref{eq:reg-int-good-firm-optimal-price-FOC-3}. For this purpose, Uhlig's rules of log-linearization \cite{uhlig_toolkit_1999} will be applied to all equations in the model.\footnote{see lemma \ref{lemma:uhligs-rules} for details.}
-	
-	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+	% --------------------------------------------------
+	% REGIONAL GROSS INFLATION RATE
+	% --------------------------------------------------
 		
+	\subsubsection*{Regional Gross Inflation Rate}
+
+	Log-linearize \ref{eq:reg-gross-inflation-rate} and define the level deviation of regional inflation rate $\widetilde{\pi}_{\eta t}$:
+	\begin{align}
+		\pi_{\eta t} &= \frac{P_{\eta t}}{P_{\eta, t-1}} \tag{\ref{eq:regional-inflation}} \\
+		\widetilde{\pi}_{\eta t} &= \hat{P}_{\eta t} - \hat{P}_{\eta, t-1}
+		\label{eq:level-dev-regional-inflation}
+	\end{align}
+
+\begin{comment}
+
 	\subsubsection*{Gross Inflation Rate}
-	
+
 	Log-linearize \ref{eq:reg-gross-inflation-rate} and define the level deviation of gross inflation rate $\widetilde{\pi}_t$:
 	\begin{align}
 		\tag{\ref{eq:reg-gross-inflation-rate}}
@@ -1145,13 +1158,11 @@ In steady state, prices are the same ($P_{\eta} = P_{\eta}^\ast$), resulting in 
 		\widetilde{\pi}_t &= \hat{P}_t - \hat{P}_{t-1}
 		\label{eq:reg-level-dev-gross-inflation-rate}
 	\end{align}
-
-\begin{comment}
 	
 	% --------------------------------------------------
 	% NK PHILLIPS CURVE
 	% --------------------------------------------------
-	
+
 	\subsubsection*{New Keynesian Phillips Curve}
 	
 	In order to log-linearize equation \ref{eq:reg-int-good-firm-optimal-price-FOC-3}, it is necessary to eliminate both the summation and the product operators. To handle the product operator, apply lemma \ref{product-operator}:
