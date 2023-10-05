@@ -1,6 +1,0 @@
-\babel@toc {brazil}{}\relax 
-\beamer@sectionintoc {1}{Introdução}{3}{0}{1}
-\beamer@sectionintoc {2}{Referencial Teórico}{11}{0}{2}
-\beamer@sectionintoc {3}{Modelo}{17}{0}{3}
-\beamer@sectionintoc {4}{Resultados Esperados}{20}{0}{4}
-\beamer@sectionintoc {5}{Cronograma}{22}{0}{5}
