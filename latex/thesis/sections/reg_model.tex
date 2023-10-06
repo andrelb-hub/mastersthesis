@@ -1229,8 +1229,7 @@ Join both sides of the equation again:
 Substitute \ref{eq:reg-ss-bonds-euler-equation} in \ref{eq:reg-ll-optimal-price-2}:
 \begin{align}
 	& \beta = \frac{1}{(1 + R)} \tag{\ref{eq:reg-ss-bonds-euler-equation}} \\
-	\begin{split} & \frac{ P_{\eta}^{\ast} Y_{\eta j} ( 1 + \hat{P}_{\eta t}^{\ast} )}{1- \theta \beta} + P_{\eta}^{\ast} Y_{\eta j} \E \sum_{s=0}^{\infty} \left\{ \left( \theta \beta \right)^s \left( \hat{Y}_{\eta j, t+s} - \beta \sum_{k=0}^{s-1} \widetilde{R}_{t+k} \right) \right\} = \frac{\psi}{\psi-1} \cdot \frac{Y_{\eta j} \Lambda_{\eta}}{1- \theta \beta} \, + \\ 
-		& \qquad + \frac{\psi}{\psi-1} Y_{\eta j} \Lambda_{\eta} \E \sum_{s=0}^{\infty} \left\{ \left( \theta \beta \right)^s \left( \hat{Y}_{\eta j, t+s} + \hat{\Lambda}_{\eta, t+s} - \beta \sum_{k=0}^{s-1} \widetilde{R}_{t+k} \right) \right\} \end{split} \label{eq:reg-ll-optimal-price-3}
+	\begin{split} & \frac{ P_{\eta}^{\ast} Y_{\eta j} ( 1 + \hat{P}_{\eta t}^{\ast} )}{1- \theta \beta} + P_{\eta}^{\ast} Y_{\eta j} \E \sum_{s=0}^{\infty} \left\{ \left( \theta \beta \right)^s \left( \hat{Y}_{\eta j, t+s} - \beta \sum_{k=0}^{s-1} \widetilde{R}_{t+k} \right) \right\} = \\ & \qquad = \frac{\psi}{\psi-1} \cdot \frac{Y_{\eta j} \Lambda_{\eta}}{1- \theta \beta} \, + \\ & \qquad + \frac{\psi}{\psi-1} Y_{\eta j} \Lambda_{\eta} \E \sum_{s=0}^{\infty} \left\{ \left( \theta \beta \right)^s \left( \hat{Y}_{\eta j, t+s} + \hat{\Lambda}_{\eta, t+s} - \beta \sum_{k=0}^{s-1} \widetilde{R}_{t+k} \right) \right\} \end{split} \label{eq:reg-ll-optimal-price-3}
 \end{align}
 
 Substitute \ref{eq:reg-ss-marginal-cost} in \ref{eq:reg-ll-optimal-price-3} and simplify all common terms:
@@ -1290,7 +1289,8 @@ In the first summation, factor out the first term and in the second summation, i
 		\\
 		& - \cancel{(1-\theta) (1- \theta \beta) \E \sum_{s=0}^{\infty} \left( \theta \beta \right)^{s+1} \left( \hat{P}_{t+s+1} + \hat{\lambda}_{\eta, t+s+1} \right)} \implies \nonumber 
 	\end{split} \\
-	\hat{P}_{\eta t} - \theta \beta \E \hat{P}_{t+1} &= \theta \hat{P}_{\eta, t-1} - \theta^2 \beta \hat{P}_{\eta t} + (1- \theta -\theta \beta + \theta^2 \beta) \hat{P}_{\eta t} + (1-\theta) (1- \theta \beta) \hat{\lambda}_{\eta t} \implies \nonumber \\
+	\hat{P}_{\eta t} - \theta \beta \E \hat{P}_{t+1} &= \theta \hat{P}_{\eta, t-1} - \theta^2 \beta \hat{P}_{\eta t} + \nonumber \\
+	& + (1- \theta -\theta \beta + \theta^2 \beta) \hat{P}_{\eta t} + (1-\theta) (1- \theta \beta) \hat{\lambda}_{\eta t} \implies \nonumber \\
 	(\hat{P}_{\eta t} - \hat{P}_{\eta, t-1}) &= \beta (\E \hat{P}_{t+1} - \hat{P}_{\eta t}) + \frac{(1-\theta) (1- \theta \beta)}{\theta} \hat{\lambda}_{\eta t}
 	\label{eq:reg-ll-general-price-level-4}
 \end{align}
@@ -1395,13 +1395,13 @@ Log-linearize \ref{eq:reg-bonds-euler-equation}:
 
 Log-linearize \ref{eq:reg-capital-euler-equation}:
 	\begin{alignat}{2}
-		& \frac{ C_{\eta t}^{1-\sigma}}{ \te} P_{\eta t} = \beta \mathbb{E}_t \left\{ \frac{ C_{\eta, t+1}^{1-\sigma}}{ \te[t+1]} [(1-\delta) P_{\eta, t+1} + R_{K,t+1}] \right\} & \implies \tag{\ref{eq:reg-capital-euler-equation}} \\
-		& \frac{P_{\eta t} C_{\eta t}^{1-\sigma}}{\te} = \mathbb{E}_t \left\{ \frac{P_{\eta, t+1} C_{\eta, t+1}^{1-\sigma}}{ \te[t+1]} \right\} \left[ \beta (1-\delta) + \beta \mathbb{E}_t \left\{ \frac{R_{K,t+1}}{P_{\eta, t+1}} \right\} \right] & \implies \nonumber \\
-		& \frac{P_{\eta} C_{\eta}^{1-\sigma}}{\te[]} (1 +\hat{P}_{\eta t} + (1 -\sigma) \hat{C}_{\eta t} - \hat{\mathscr{E}}_{\eta t}) = & \nonumber \\
-		& \qquad = \frac{P_{\eta} C_{\eta}^{1-\sigma}}{\te[]} (1 +\hat{P}_{\eta, t+1} + (1 -\sigma) \hat{C}_{\eta, t+1} - \hat{\mathscr{E}}_{\eta, t+1}) \cdot & \nonumber \\ 
-		& \qquad \cdot \left[ \beta (1-\delta) + \beta \frac{R_{K}}{P_{\eta}} \mathbb{E}_t \left\{ 1 + \hat{R}_{K, t+1} -\hat{P}_{\eta, t+1} \right\} \right] & \implies \nonumber \\
-		& \frac{1 +\hat{P}_{\eta t} + (1 -\sigma) \hat{C}_{\eta t} - \hat{\mathscr{E}}_{\eta t}}{1 + \E \left\{ \hat{P}_{\eta, t+1} + (1 -\sigma) \hat{C}_{\eta, t+1} - \hat{\mathscr{E}}_{\eta, t+1} \right\}} = & \nonumber \\
-		& \qquad = 1 + \beta \frac{R_{K}}{P_{\eta}} \mathbb{E}_t \left\{ \hat{R}_{K, t+1} -\hat{P}_{\eta, t+1} \right\} & \label{eq:reg-ll-capital-euler-equation}
+		& \frac{ C_{\eta t}^{1-\sigma}}{ \te} P_{\eta t} = \beta \mathbb{E}_t \left\{ \frac{ C_{\eta, t+1}^{1-\sigma}}{ \te[t+1]} [(1-\delta) P_{\eta, t+1} + R_{K,t+1}] \right\} \implies \tag{\ref{eq:reg-capital-euler-equation}} \\
+		& \frac{P_{\eta t} C_{\eta t}^{1-\sigma}}{\te} \mathbb{E}_t \left\{ \frac{\te[t+1]}{P_{\eta, t+1} C_{\eta, t+1}^{1-\sigma}} \right\} = \beta \left[ (1-\delta) + \mathbb{E}_t \left\{ \frac{R_{K,t+1}}{P_{\eta, t+1}} \right\} \right] \implies \nonumber \\
+		& \frac{P_{\eta} C_{\eta}^{1-\sigma}}{\te[]} \cdot \frac{\te[]}{P_{\eta} C_{\eta}^{1-\sigma}} (1 + \hat{P}_{\eta t} + (1 -\sigma) \hat{C}_{\eta t} - \hat{\mathscr{E}}_{\eta t} + \nonumber \\ 
+		& \qquad + \E \{\hat{\mathscr{E}}_{\eta, t+1} - \hat{P}_{\eta, t+1} - (1 -\sigma) \hat{C}_{\eta, t+1}\}) = \nonumber \\
+		& \qquad = \beta \left[ (1-\delta) + \frac{R_{K}}{P_{\eta}} \mathbb{E}_t \left\{ 1 + \hat{R}_{K, t+1} -\hat{P}_{\eta, t+1} \right\} \right] \implies \nonumber \\
+		& \E \left\{ \hat{\mathscr{E}}_{\eta, t+1} - \hat{P}_{\eta, t+1}  - (1 -\sigma) \hat{C}_{\eta, t+1} \right\} - (\hat{\mathscr{E}}_{\eta t} - \hat{P}_{\eta t} - (1 -\sigma) \hat{C}_{\eta t}) = \nonumber \\
+		& \qquad = \beta \frac{R_{K}}{P_{\eta}} \mathbb{E}_t \left\{ \hat{R}_{K, t+1} - \hat{P}_{\eta, t+1} \right\} \label{eq:reg-ll-capital-euler-equation}
 	\end{alignat}
 	
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -1526,7 +1526,7 @@ Equation \ref{eq:reg-ll-int-good-firm-TMRS} is the log-linearized version of \re
 Log-linearize \ref{eq:reg-int-good-firm-MC-2}:
 \begin{alignat}{2}
 	& \Lambda_{\eta t} = Z_{A\eta t}^{-1} \frac{R_{Kt}^{{\alpha_{\eta}}} W_t^{1-{\alpha_{\eta}}}}{{\alpha_{\eta}}^{{\alpha_{\eta}}} (1-{\alpha_{\eta}})^{1-{\alpha_{\eta}}}} \implies \tag{\ref{eq:reg-int-good-firm-MC-2}} \\
-	& \Lambda (1+ \hat{\Lambda}_{\eta t}) = \frac{1}{Z_{A\eta}} \left( \frac{R_{K}}{{\alpha_{\eta}}} \right)^{{\alpha_{\eta}}} \left( \frac{W}{1-{\alpha_{\eta}}} \right)^{1-{\alpha_{\eta}}} (1- \hat{Z}_{A\eta t} + {\alpha_{\eta}} \hat{R}_{Kt} + (1- {\alpha_{\eta}}) \hat{W}_{t} ) \implies \nonumber \\
+	& \Lambda (1+ \hat{\Lambda}_{\eta t}) = \nonumber \\ & \qquad = \frac{1}{Z_{A\eta}} \left( \frac{R_{K}}{{\alpha_{\eta}}} \right)^{{\alpha_{\eta}}} \left( \frac{W}{1-{\alpha_{\eta}}} \right)^{1-{\alpha_{\eta}}} (1- \hat{Z}_{A\eta t} + {\alpha_{\eta}} \hat{R}_{Kt} + (1- {\alpha_{\eta}}) \hat{W}_{t} ) \implies \nonumber \\
 	& \hat{\Lambda}_{\eta t} = {\alpha_{\eta}} \hat{R}_{Kt} + (1- {\alpha_{\eta}}) \hat{W}_{t} - \hat{Z}_{A\eta t} \label{eq:reg-ll-int-good-firm-MC-2}
 \end{alignat}
 
@@ -1735,8 +1735,8 @@ The log-linear model is a square system of 29 variables and 29 equations, summar
 		
 		\item Euler equation for the capital return
 		\begin{alignat}{2}
-			& \frac{1 +\hat{P}_{\eta t} + (1 -\sigma) \hat{C}_{\eta t} - \hat{\mathscr{E}}_{\eta t}}{1 + \E \left\{ \hat{P}_{\eta, t+1} + (1 -\sigma) \hat{C}_{\eta, t+1} - \hat{\mathscr{E}}_{\eta, t+1} \right\}} = & \nonumber \\
-			& \qquad \qquad = 1 + \beta \frac{R_{K}}{P_{\eta}} \mathbb{E}_t \left\{ \hat{R}_{K, t+1} -\hat{P}_{\eta, t+1} \right\} \tag{\ref{eq:reg-ll-capital-euler-equation}}
+			& \E \left\{ \hat{\mathscr{E}}_{\eta, t+1} - \hat{P}_{\eta, t+1}  - (1 -\sigma) \hat{C}_{\eta, t+1} \right\} - (\hat{\mathscr{E}}_{\eta t} - \hat{P}_{\eta t} - (1 -\sigma) \hat{C}_{\eta t}) = \nonumber \\
+			& \qquad = \beta \frac{R_{K}}{P_{\eta}} \mathbb{E}_t \left\{ \hat{R}_{K, t+1} - \hat{P}_{\eta, t+1} \right\} \tag{\ref{eq:reg-ll-capital-euler-equation}}
 		\end{alignat}
 		
 		\item Production Function
