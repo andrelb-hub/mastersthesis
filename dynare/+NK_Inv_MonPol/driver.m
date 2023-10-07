@@ -273,7 +273,6 @@ oo_.dr.eigval = check(M_,options_,oo_);
 % SHOCKS instructions
 %
 M_.exo_det_length = 0;
-M_.Sigma_e(1, 1) = (M_.params(16))^2;
 M_.Sigma_e(2, 2) = (M_.params(17))^2;
 options_.irf = 100;
 options_.order = 1;

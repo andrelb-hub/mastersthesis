@@ -52,24 +52,24 @@ thesis.tex
 	
 	\todo[inline]{colocar estatística descritiva para justificar as variáveis.}
 	
-	Regions will have an index $\eta \in \{1,2,\ldots,n\}$ representing the variables of each region. Whenever necessary, a second region index $\nu \in \{1,2,\ldots,n\}$ will be used. For example, the variable $C_{t}$ represents the total consumption (the grand total of all regions), $C_{\eta t}$ represents the consumption composition of region $\eta$ and $C_{\eta \nu t}$ represents the consumption of final-good of region $\nu$ by region $\eta$ (the first index indicating the origin and the second the destiny of the good). Without loss of generality, the model will have two regions: the main region $1$ and the remaining of the country $2$, so that $\eta,\nu \in \{1,2\}$.
+	Regions will have an index $\eta \in \{1,2,\ldots,n\}$ representing the variables of each region. Whenever necessary, a second region index $\nu \in \{1,2,\ldots,n\}$ will be used. For example, the variable $C_{t}$ represents the total consumption (the grand total of all regions), $C_{\eta t}$ represents the consumption composition of region $\eta$ and $C_{\eta 2 t}$ represents the consumption of final-good of region $\nu$ by region $\eta$ (the first index indicating the origin and the second the destiny of the good). Without loss of generality, the model will have two regions: the main region $1$ and the remaining of the country $2$, so that $\eta,\nu \in \{1,2\}$.
 
 	For each region, the variables are:
 
 \begin{itemize}
-	\item Consumption \(C_{\eta \nu t}\): households from region $\eta \in \{1,2\}$ consume from both regions $\eta \in \{1,2\}$.
+	\item Consumption \(C_{\eta 2 t}\): households from region $\eta \in \{1,2\}$ consume from both regions $\eta \in \{1,2\}$.
 	
 	\item Labor \(L_{\eta t}\): there is no mobility in the labor market, so that households will work for firms in the same region they live.
 	
 	\item Investment and Capital \(I_{\eta t}, K_{\eta t}\): there is no mobility in investments and capital rent: households will invest and rent capital in their own region.
 	
-	\item Final-good production \(Y_{\nu t}\): there is one representative final-good firm in each region that aggregates all intermediate-goods of that region.
+	\item Final-good production \(Y_{\eta t}\): there is one representative final-good firm in each region that aggregates all intermediate-goods of that region.
 	
 	\item Final-good price \(P_{\eta t}\) and regional inflation \(\pi_{\eta t}\): in each region, there is a final-good price and a regional inflation level.
 	
-	\item Intermediate-goods firms \(Y_{\nu jt}\): there is a continuum $j \in [0,1]$ for each region and these firms will demand labor and capital from within the region.
+	\item Intermediate-goods firms \(Y_{\eta jt}\): there is a continuum $j \in [0,1]$ for each region and these firms will demand labor and capital from within the region.
 	
-	\item Productivity level \(Z_{A\nu t}\) and capital weight in production $\alpha_{\eta}$: each region has its own characteristics and because of that has a difference productivity level subject to different shock rule and a different capital weight in production.
+	\item Productivity level \(Z_{A\eta t}\) and capital weight in production $\alpha_{\eta}$: each region has its own characteristics and because of that has a difference productivity level subject to different shock rule and a different capital weight in production.
 	
 \end{itemize}
 
@@ -107,29 +107,29 @@ Following the models presented by \textcite{costa_junior_understanding_2016} and
 	\max_{C_{\eta t}, L_{\eta t}, B_{\eta t}, K_{\eta, t+1}}: \quad & U_{\eta}(C_{\eta t},L_{\eta t}) = \E \sum_{t=0}^{\infty} \beta^t \left(\frac{C_{\eta t}^{1-\sigma}}{1-\sigma} - \phi \frac{L_{\eta t}^{1+\varphi}}{1+\varphi} \right) \label{eq:reg-utility-function-0} 
 	\\
 	\begin{split}
-		\st: \quad & P_{\eta t} C_{\eta \eta t} + P_{\nu t} C_{\eta \nu t} + P_{\eta t} I_{\eta t} + B_{\eta t} = \\ & \quad = W_t L_{\eta t} + R_{Kt} K_{\eta t} + (1 + R_{t-1}) B_{\eta,t-1} + \Pi_{\eta t}
+		\st: \quad & P_{1 t} C_{\eta 1 t} + P_{2 t} C_{\eta 2 t} + P_{\eta t} I_{\eta t} + B_{\eta t} = \\ & \quad = W_t L_{\eta t} + R_{Kt} K_{\eta t} + (1 + R_{t-1}) B_{\eta,t-1} + \Pi_{\eta t}
 	\end{split} \label{eq:reg-budget-constraint} \\
 	\quad & K_{\eta, t+1} = (1-\delta)K_{\eta t} + I_{\eta t} \label{eq:reg-law-of-motion-for-capital} \\
-	\quad & C_{\eta t} = C_{\eta \eta t}^{\omega_{\eta}} C_{\eta \nu t}^{1-\omega_{\eta}} \label{eq:reg-consumption-aggregation} \\
+	\quad & C_{\eta t} = C_{\eta 1 t}^{\omega_{\eta 1}} C_{\eta 2 t}^{1-\omega_{\eta 1}} \label{eq:reg-consumption-aggregation} \\
 	\quad & C_{\eta t}, L_{\eta t}, K_{\eta, t+1} > 0 \text{ ; $K_0$ given.} \nonumber
 \end{align}
 
-where $\E$ is the expectation operator, $\beta$ is the intertemporal discount factor, $\sigma$ is the relative risk aversion coefficient, $\phi$ is the relative labor weight in utility, $\varphi$ is the marginal disutility of labor supply. In the budget constraint, $P_{\eta t}$ is the price level of region $\eta$, $C_{\eta \eta t}$ is the good produced in region $\eta$ and consumed in region $\eta$, $C_{\eta \nu t}$ is the good produced in region $\nu$ and consumed in region $\eta$, $I_{\eta t}$ is the investment, $B_{\eta t}$ are the bonds, $W_t$ is the wage level, $K_{\eta t}$ is the capital stock, $R_{Kt}$ is the return on capital, $R_t$ is the return on bonds (which is also the nominal interest rate of the economy) and $\Pi_{\eta t}$ is the firm profit. In the capital accumulation rule, $\delta$ is the capital depreciation rate. In the consumption aggregation, ${\omega_\eta}$ is the weight of good $C_{\eta  \eta t}$ in the consumption bundle $C_{\eta t}$ of region $\eta$.
+where $\E$ is the expectation operator, $\beta$ is the intertemporal discount factor, $\sigma$ is the relative risk aversion coefficient, $\phi$ is the relative labor weight in utility, $\varphi$ is the marginal disutility of labor supply. In the budget constraint, $P_{\eta t}$ is the price level of region $\eta$, $C_{\eta 1 t}$ is the good produced in region $\eta$ and consumed in region $\eta$, $C_{\eta 2 t}$ is the good produced in region $\nu$ and consumed in region $\eta$, $I_{\eta t}$ is the investment, $B_{\eta t}$ are the bonds, $W_t$ is the wage level, $K_{\eta t}$ is the capital stock, $R_{Kt}$ is the return on capital, $R_t$ is the return on bonds (which is also the nominal interest rate of the economy) and $\Pi_{\eta t}$ is the firm profit. In the capital accumulation rule, $\delta$ is the capital depreciation rate. In the consumption aggregation, ${\omega_{\eta 1}}$ is the weight of good $C_{\eta 1 t}$ in the consumption bundle $C_{\eta t}$ of region $\eta$.
 
 Substitute \ref{eq:reg-consumption-aggregation} in \ref{eq:reg-utility-function-0}:
 \begin{align}
-	U_{\eta}(C_{\eta \eta t}, C_{\eta \nu t}, L_{\eta t}) = \E \sum_{t=0}^{\infty} \beta^t \left( \frac{\left[ C_{\eta \eta t}^{\omega_{\eta}} C_{\eta \nu t}^{1-\omega_{\eta}} \right]^{1-\sigma}}{1-\sigma} - \phi \frac{L_{\eta t}^{1+\varphi}}{1+\varphi} \right) \label{eq:reg-utility-function}
+	U_{\eta}(C_{\eta 1 t}, C_{\eta 2 t}, L_{\eta t}) = \E \sum_{t=0}^{\infty} \beta^t \left( \frac{\left[ C_{\eta 1 t}^{\omega_{\eta 1}} C_{\eta 2 t}^{1-\omega_{\eta 1}} \right]^{1-\sigma}}{1-\sigma} - \phi \frac{L_{\eta t}^{1+\varphi}}{1+\varphi} \right) \label{eq:reg-utility-function}
 \end{align}
 
 Isolate $I_{\eta t}$ in \ref{eq:reg-law-of-motion-for-capital} and substitute in \ref{eq:reg-budget-constraint}:
 \begin{align}
 	& K_{\eta, t+1} = (1-\delta)K_{\eta t} + I_{\eta t} \implies I_{\eta t} = K_{\eta, t+1} - (1-\delta)K_{\eta t} \tag{\ref{eq:reg-law-of-motion-for-capital}} \\
 	\begin{split}
-		& P_{\eta t} C_{\eta \eta t} + P_{\nu t} C_{\eta \nu t} + P_{\eta t} I_{\eta t} + B_{\eta t} = \\ & \quad = W_t L_{\eta t} + R_{Kt} K_{\eta t} + (1 + R_{t-1}) B_{\eta,t-1} + \Pi_{\eta t} \implies
+		& P_{1 t} C_{\eta 1 t} + P_{2 t} C_{\eta 2 t} + P_{\eta t} I_{\eta t} + B_{\eta t} = \\ & \quad = W_t L_{\eta t} + R_{Kt} K_{\eta t} + (1 + R_{t-1}) B_{\eta,t-1} + \Pi_{\eta t} \implies
 	\end{split} \tag{\ref{eq:reg-budget-constraint}}
 	\\
 	\begin{split}
-		& P_{\eta t} C_{\eta \eta t} + P_{\nu t} C_{\eta \nu t} + P_{\eta t} [ K_{\eta, t+1} - (1-\delta)K_{\eta t} ] + B_{\eta t} = \\ & \quad = W_t L_{\eta t} + R_{Kt} K_{\eta t} + (1 + R_{t-1}) B_{\eta,t-1} + \Pi_{\eta t}
+		& P_{1 t} C_{\eta 1 t} + P_{2 t} C_{\eta 2 t} + P_{\eta t} [ K_{\eta, t+1} - (1-\delta)K_{\eta t} ] + B_{\eta t} = \\ & \quad = W_t L_{\eta t} + R_{Kt} K_{\eta t} + (1 + R_{t-1}) B_{\eta,t-1} + \Pi_{\eta t}
 	\end{split} \label{eq:reg-budget-constraint-2}
 \end{align}
 
@@ -138,7 +138,7 @@ Isolate $I_{\eta t}$ in \ref{eq:reg-law-of-motion-for-capital} and substitute in
 The maximization problem with restriction can be transformed in one without restriction using the Lagrangian function $\mathcal{L}$ with \ref{eq:reg-utility-function} and \ref{eq:reg-budget-constraint-2}:
 \begin{align}
 	\begin{split}
-	& \mathcal{L} = \mathbb{E}_t \sum_{t=0}^{\infty} \beta^t \left\{ \left( \frac{ \left[ C_{\eta \eta t}^{\omega_{\eta}} C_{\eta \nu t}^{1-\omega_{\eta}} \right]^{1 -\sigma}}{1 -\sigma} - \phi \frac{L_{\eta t}^{1+\varphi}}{1+\varphi} \right) \right. - \\ & \qquad - \mu_t \Big[ P_{\eta t} C_{\eta \eta t} + P_{\nu t} C_{\eta \nu t} + P_{\eta t} [ K_{\eta, t+1} - (1-\delta)K_{\eta t} ] + B_{\eta t} - \\ & \qquad \qquad \left. - ( W_t L_{\eta t} + R_{Kt} K_{\eta t} + (1 + R_{t-1}) B_{\eta,t-1} + \Pi_{\eta t} ) \Big] \right\} \label{eq:reg-household-lagrangian}
+	& \mathcal{L} = \mathbb{E}_t \sum_{t=0}^{\infty} \beta^t \left\{ \left( \frac{ \left[ C_{\eta 1 t}^{\omega_{\eta 1}} C_{\eta 2 t}^{1-\omega_{\eta 1}} \right]^{1 -\sigma}}{1 -\sigma} - \phi \frac{L_{\eta t}^{1+\varphi}}{1+\varphi} \right) \right. - \\ & \qquad - \mu_t \Big[ P_{1 t} C_{\eta 1 t} + P_{2 t} C_{\eta 2 t} + P_{\eta t} [ K_{\eta, t+1} - (1-\delta)K_{\eta t} ] + B_{\eta t} - \\ & \qquad \qquad \left. - ( W_t L_{\eta t} + R_{Kt} K_{\eta t} + (1 + R_{t-1}) B_{\eta,t-1} + \Pi_{\eta t} ) \Big] \right\} \label{eq:reg-household-lagrangian}
 	\end{split}
 \end{align}
 
@@ -146,9 +146,9 @@ The maximization problem with restriction can be transformed in one without rest
 
 The first order conditions are:
 \begin{align}
-	C_{\eta \eta t}: \quad & \mu_t = \frac{\omega_{\eta} C_{\eta \eta t}^{\omega_{\eta} (1 -\sigma) -1} C_{\eta \nu t}^{(1 -\omega_{\eta})(1 -\sigma)}}{P_{\eta t}} = \frac{\omega_{\eta}}{P_{\eta t} C_{\eta \eta t}} C_{\eta t}^{1 -\sigma} \label{eq:reg-FOC-C1-eta-t} 
+	C_{\eta 1 t}: \quad & \mu_t = \frac{\omega_{\eta 1} C_{\eta 1 t}^{\omega_{\eta 1} (1 -\sigma) -1} C_{\eta 2 t}^{(1 -\omega_{\eta 1})(1 -\sigma)}}{P_{1 t}} = \frac{\omega_{\eta 1}}{P_{1 t} C_{\eta 1 t}} C_{\eta t}^{1 -\sigma} \label{eq:reg-FOC-C1-eta-t} 
 	\\
-	C_{\eta \nu t}: \quad & \mu_t = \frac{(1 -\omega_{\eta}) C_{\eta \eta t}^{\omega_{\eta} (1 -\sigma)} C_{\eta \nu t}^{(1 -\omega_{\eta})(1 -\sigma)-1}}{P_{\nu t}} = \frac{(1 -\omega_{\eta})}{P_{\nu t} C_{\eta \nu t}} C_{\eta t}^{1 -\sigma} \label{eq:reg-FOC-C-2-eta-t} 
+	C_{\eta 2 t}: \quad & \mu_t = \frac{(1 -\omega_{\eta 1}) C_{\eta 1 t}^{\omega_{\eta 1} (1 -\sigma)} C_{\eta 2 t}^{(1 -\omega_{\eta 1})(1 -\sigma)-1}}{P_{2 t}} = \frac{(1 -\omega_{\eta 1})}{P_{2 t} C_{\eta 2 t}} C_{\eta t}^{1 -\sigma} \label{eq:reg-FOC-C-2-eta-t} 
 	\\
 	L_{\eta t}: \quad & -\phi L_{\eta t}^{\varphi} +\mu_t W_t = 0 \implies \mu_t = \frac{\phi L_{\eta t}^{\varphi}}{W_t} \label{eq:reg-household-FOC-Lt} 
 	\\
@@ -160,7 +160,7 @@ The first order conditions are:
 		K_{\eta, t+1}: \quad & -\mu_t P_{\eta t} + \mathbb{E}_t \beta \{ \mu_{t+1} [(1-\delta) P_{\eta, t+1} + R_{K,t+1}] \} = 0 \implies \\ & \qquad \mu_t P_{\eta t} = \beta \mathbb{E}_t \{ \mu_{t+1} [(1-\delta) P_{\eta, t+1} + R_{K,t+1}] \}
 	\end{split} \label{eq:reg-household-FOC-Kt} \\
 	\begin{split}
-		\mu_t: \quad & P_{\eta t} C_{\eta \eta t} + P_{\nu t} C_{\eta \nu t} + P_{\eta t} [ K_{\eta, t+1} - (1-\delta)K_{\eta t} ] + B_{\eta t} = \\ & \qquad = W_t L_{\eta t} + R_{Kt} K_{\eta t} + (1 + R_{t-1}) B_{\eta,t-1} + \Pi_{\eta t}
+		\mu_t: \quad & P_{1 t} C_{\eta 1 t} + P_{2 t} C_{\eta 2 t} + P_{\eta t} [ K_{\eta, t+1} - (1-\delta)K_{\eta t} ] + B_{\eta t} = \\ & \qquad = W_t L_{\eta t} + R_{Kt} K_{\eta t} + (1 + R_{t-1}) B_{\eta,t-1} + \Pi_{\eta t}
 	\end{split} \tag{\ref{eq:reg-budget-constraint-2}}
 \end{align}
 
@@ -168,57 +168,57 @@ The first order conditions are:
 
 Match \ref{eq:reg-FOC-C1-eta-t} and \ref{eq:reg-FOC-C-2-eta-t}:
 \begin{align}
-	& \mu_t = \frac{\omega_{\eta}}{P_{\eta t} C_{\eta \eta t}} C_{\eta t}^{1 -\sigma} = \frac{(1 -\omega_{\eta})}{P_{\nu t} C_{\eta \nu t}} C_{\eta t}^{1 -\sigma} \implies \nonumber \\
-	& \frac{C_{\eta \eta t}}{C_{\eta \nu t}} = \frac{P_{\nu t}}{P_{\eta t}} \cdot \frac{\omega_{\eta}}{1 -\omega_{\eta}} \iff C_{\eta \eta t} = \frac{P_{\nu t}}{P_{\eta t}} \cdot \frac{\omega_{\eta}}{1 -\omega_{\eta}} \cdot C_{\eta \nu t} \label{eq:reg-FOC-C1-C2}
+	& \mu_t = \frac{\omega_{\eta 1}}{P_{1 t} C_{\eta 1 t}} C_{\eta t}^{1 -\sigma} = \frac{(1 -\omega_{\eta 1})}{P_{2 t} C_{\eta 2 t}} C_{\eta t}^{1 -\sigma} \implies \nonumber \\
+	& \frac{C_{\eta 1 t}}{C_{\eta 2 t}} = \frac{P_{2 t}}{P_{1 t}} \cdot \frac{\omega_{\eta 1}}{1 -\omega_{\eta 1}} \iff C_{\eta 1 t} = \frac{P_{2 t}}{P_{1 t}} \cdot \frac{\omega_{\eta 1}}{1 -\omega_{\eta 1}} \cdot C_{\eta 2 t} \label{eq:reg-FOC-C1-C2}
 \end{align}
 
 Equation \ref{eq:reg-FOC-C1-C2} is the relative consumption of regional goods in region $\eta$.
 
 Substitute \ref{eq:reg-FOC-C1-C2} in \ref{eq:reg-consumption-aggregation}:
 \begin{alignat}{2}
-	C_{\eta t} &= C_{\eta \eta t}^{\omega_{\eta}} C_{\eta \nu t}^{1-\omega_{\eta}} &\implies \tag{\ref{eq:reg-consumption-aggregation}} \\
-	C_{\eta t} &= \left[ \frac{P_{\nu t}}{P_{\eta t}} \cdot \frac{\omega_{\eta}}{1 -\omega_{\eta}} \cdot C_{\eta \nu t} \right]^{\omega_{\eta}} C_{\eta \nu t}^{1-\omega_{\eta}} &\implies \nonumber \\
-	C_{\eta \nu t} &= C_{\eta t} \left[ \frac{P_{\eta t}}{P_{\nu t}} \cdot \frac{1 -\omega_{\eta}}{\omega_{\eta}} \right]^{\omega_{\eta}} \label{eq:reg-Cn-Cv}
+	C_{\eta t} &= C_{\eta 1 t}^{\omega_{\eta 1}} C_{\eta 2 t}^{1-\omega_{\eta 1}} &\implies \tag{\ref{eq:reg-consumption-aggregation}} \\
+	C_{\eta t} &= \left[ \frac{P_{2 t}}{P_{1 t}} \cdot \frac{\omega_{\eta 1}}{1 -\omega_{\eta 1}} \cdot C_{\eta 2 t} \right]^{\omega_{\eta 1}} C_{\eta 2 t}^{1-\omega_{\eta 1}} &\implies \nonumber \\
+	C_{\eta 2 t} &= C_{\eta t} \left[ \frac{P_{1 t}}{P_{2 t}} \cdot \frac{1 -\omega_{\eta 1}}{\omega_{\eta 1}} \right]^{\omega_{\eta 1}} \label{eq:reg-Cn-Cv}
 \end{alignat}
 
 Substitute \ref{eq:reg-Cn-Cv} in \ref{eq:reg-FOC-C1-C2}:
 \begin{alignat}{2}
-	C_{\eta \eta t} &= \frac{P_{\nu t}}{P_{\eta t}} \cdot \frac{\omega_{\eta}}{1 -\omega_{\eta}} \cdot C_{\eta \nu t} \tag{\ref{eq:reg-FOC-C1-C2}} &\implies \nonumber \\
-	C_{\eta \eta t} &= \frac{P_{\nu t}}{P_{\eta t}} \cdot \frac{\omega_{\eta}}{1 -\omega_{\eta}} \cdot C_{\eta t} \left[ \frac{P_{\eta t}}{P_{\nu t}} \cdot \frac{1 -\omega_{\eta}}{\omega_{\eta}} \right]^{\omega_{\eta}} &\implies \nonumber \\
-	C_{\eta \eta t} &= C_{\eta t} \left[ \frac{P_{\eta t}}{P_{\nu t}} \cdot \frac{1 -\omega_{\eta}}{\omega_{\eta}} \right]^{\omega_{\eta} -1} \label{eq:reg-Cn-Cn}
+	C_{\eta 1 t} &= \frac{P_{2 t}}{P_{1 t}} \cdot \frac{\omega_{\eta 1}}{1 -\omega_{\eta 1}} \cdot C_{\eta 2 t} \tag{\ref{eq:reg-FOC-C1-C2}} &\implies \nonumber \\
+	C_{\eta 1 t} &= \frac{P_{2 t}}{P_{1 t}} \cdot \frac{\omega_{\eta 1}}{1 -\omega_{\eta 1}} \cdot C_{\eta t} \left[ \frac{P_{1 t}}{P_{2 t}} \cdot \frac{1 -\omega_{\eta 1}}{\omega_{\eta 1}} \right]^{\omega_{\eta 1}} &\implies \nonumber \\
+	C_{\eta 1 t} &= C_{\eta t} \left[ \frac{P_{1 t}}{P_{2 t}} \cdot \frac{1 -\omega_{\eta 1}}{\omega_{\eta 1}} \right]^{\omega_{\eta 1} -1} \label{eq:reg-Cn-Cn}
 \end{alignat}
 
 Define the total goods expense $\te$ of household $\eta$ in time $t$:
 \begin{align}
-	\te = P_{\eta  t} C_{\eta \eta t} + P_{\nu  t} C_{\eta \nu t} \label{eq:reg-total-expense}
+	\te = P_{1 t} C_{\eta 1 t} + P_{2 t} C_{\eta 2 t} \label{eq:reg-total-expense}
 \end{align}
 
 Substitute \ref{eq:reg-Cn-Cv} and \ref{eq:reg-Cn-Cn} in \ref{eq:reg-total-expense}:
 \begin{align}
-	\te &= P_{\eta  t} C_{\eta t} \left[ \frac{P_{\eta t}}{P_{\nu t}} \cdot \frac{1 -\omega_{\eta}}{\omega_{\eta}} \right]^{\omega_{\eta} -1} + P_{\nu  t} C_{\eta t} \left[ \frac{P_{\eta t}}{P_{\nu t}} \cdot \frac{1 -\omega_{\eta}}{\omega_{\eta}} \right]^{\omega_{\eta}} \implies \nonumber \\
-	\te &= C_{\eta t} \left[ \frac{P_{\eta t}}{\omega_{\eta}} \right]^{\omega_{\eta}} \left[ \frac{P_{\nu t}}{1 -\omega_{\eta}} \right]^{1 -\omega_{\eta}} \label{eq:reg-total-expense-level}
+	\te &= P_{1 t} C_{\eta t} \left[ \frac{P_{1 t}}{P_{2 t}} \cdot \frac{1 -\omega_{\eta 1}}{\omega_{\eta 1}} \right]^{\omega_{\eta 1} -1} + P_{2 t} C_{\eta t} \left[ \frac{P_{1 t}}{P_{2 t}} \cdot \frac{1 -\omega_{\eta 1}}{\omega_{\eta 1}} \right]^{\omega_{\eta 1}} \implies \nonumber \\
+	\te &= C_{\eta t} \left[ \frac{P_{1 t}}{\omega_{\eta 1}} \right]^{\omega_{\eta 1}} \left[ \frac{P_{2 t}}{1 -\omega_{\eta 1}} \right]^{1 -\omega_{\eta 1}} \label{eq:reg-total-expense-level}
 \end{align}
 
-Equation \ref{eq:reg-total-expense-level} shows that the total expense with goods is proportional to the goods' prices $P_{\eta t}$ and $P_{\nu t}$.
+Equation \ref{eq:reg-total-expense-level} shows that the total expense with goods is proportional to the goods' prices $P_{1 t}$ and $P_{2 t}$.
 
 Rewrite \ref{eq:reg-Cn-Cv} in terms of \ref{eq:reg-total-expense-level}:
 \begin{alignat}{2}
-	C_{\eta \nu t} &= C_{\eta t} \left[ \frac{P_{\eta t}}{P_{\nu t}} \cdot \frac{1 -\omega_{\eta}}{\omega_{\eta}} \right]^{\omega_{\eta}} &\implies \tag{\ref{eq:reg-Cn-Cv}} \\
-	C_{\eta \nu t} &= C_{\eta t} \left[ \frac{P_{\eta t}}{\omega_{\eta}} \right]^{\omega_{\eta}} \left[ \frac{P_{\nu t}}{1 -\omega_{\eta}} \right]^{-\omega_{\eta}} \left[ \frac{P_{\nu t}}{1 -\omega_{\eta}} \cdot \frac{1 -\omega_{\eta}}{P_{\nu t}} \right] &\implies \nonumber \\
-	C_{\eta \nu t} &= \te \frac{1 -\omega_{\eta}}{P_{\nu t}} \label{eq:reg-Cn-Cv-2}
+	C_{\eta 2 t} &= C_{\eta t} \left[ \frac{P_{1 t}}{P_{2 t}} \cdot \frac{1 -\omega_{\eta 1}}{\omega_{\eta 1}} \right]^{\omega_{\eta 1}} &\implies \tag{\ref{eq:reg-Cn-Cv}} \\
+	C_{\eta 2 t} &= C_{\eta t} \left[ \frac{P_{1 t}}{\omega_{\eta 1}} \right]^{\omega_{\eta 1}} \left[ \frac{P_{2 t}}{1 -\omega_{\eta 1}} \right]^{-\omega_{\eta 1}} \left[ \frac{P_{2 t}}{1 -\omega_{\eta 1}} \cdot \frac{1 -\omega_{\eta 1}}{P_{2 t}} \right] &\implies \nonumber \\
+	C_{\eta 2 t} &= \te \frac{1 -\omega_{\eta 1}}{P_{2 t}} \label{eq:reg-Cn-Cv-2}
 \end{alignat}
 
-Rewrite \ref{eq:reg-Cn-Cn} in terms of \ref{eq:reg-total-expense-level} and isolate $(\sfrac{\omega_{\eta}}{P_{\eta t} C_{\eta \eta t}})$:
+Rewrite \ref{eq:reg-Cn-Cn} in terms of \ref{eq:reg-total-expense-level} and isolate $(\sfrac{\omega_{\eta 1}}{P_{1 t} C_{\eta 1 t}})$:
 	\begin{alignat}{2}
-		C_{\eta \eta t} &= C_{\eta t} \left[ \frac{P_{\eta t}}{P_{\nu t}} \cdot \frac{1 -\omega_{\eta}}{\omega_{\eta}} \right]^{\omega_{\eta} -1} &\implies \tag{\ref{eq:reg-Cn-Cn}} \\
-		C_{\eta \eta t} &= C_{\eta t} \left[ \frac{ P_{\eta t}}{ \omega_{\eta}}\right]^{ \omega_{\eta}} \left[ \frac{P_{\nu t}}{1-\omega_{\eta}} \right]^{1 -\omega_{\eta}} \left[ \frac{\omega_{\eta}}{P_{\eta t}} \right] &\implies \nonumber \\
-		C_{\eta \eta t} &= \te \frac{\omega_{\eta}}{P_{\eta t}} \iff
-		\frac{\omega_{\eta}}{P_{\eta t} C_{\eta \eta t}} = \frac{1}{\te} \label{eq:reg-Cn-Cn-2}
+		C_{\eta 1 t} &= C_{\eta t} \left[ \frac{P_{1 t}}{P_{2 t}} \cdot \frac{1 -\omega_{\eta 1}}{\omega_{\eta 1}} \right]^{\omega_{\eta 1} -1} &\implies \tag{\ref{eq:reg-Cn-Cn}} \\
+		C_{\eta 1 t} &= C_{\eta t} \left[ \frac{ P_{1 t}}{ \omega_{\eta 1}}\right]^{ \omega_{\eta 1}} \left[ \frac{P_{2 t}}{1-\omega_{\eta 1}} \right]^{1 -\omega_{\eta 1}} \left[ \frac{\omega_{\eta 1}}{P_{1 t}} \right] &\implies \nonumber \\
+		C_{\eta 1 t} &= \te \frac{\omega_{\eta 1}}{P_{1 t}} \iff
+		\frac{\omega_{\eta 1}}{P_{1 t} C_{\eta 1 t}} = \frac{1}{\te} \label{eq:reg-Cn-Cn-2}
 	\end{alignat}
 
 Substitute \ref{eq:reg-Cn-Cn-2} in \ref{eq:reg-FOC-C1-eta-t}:
 \begin{align}
-	\mu_t &= \frac{\omega_{\eta}}{P_{\eta t} C_{\eta \eta t}} C_{\eta t}^{1 -\sigma} \tag{\ref{eq:reg-FOC-C1-eta-t}} \implies \\
+	\mu_t &= \frac{\omega_{\eta 1}}{P_{1 t} C_{\eta 1 t}} C_{\eta t}^{1 -\sigma} \tag{\ref{eq:reg-FOC-C1-eta-t}} \implies \\
 	\mu_t &= \frac{ C_{\eta t}^{1-\sigma}}{ \te}  \label{eq:reg-FOC-C1-eta-t2}
 \end{align}
 
@@ -571,14 +571,24 @@ where $\rho_M \in [0,1]$ and $\varepsilon_{Mt} \sim \mathscr{N}(0,\sigma_M)$.
 
 % removed from the household solution set: I_{\eta t}^\ast, 
 
-A Competitive Equilibrium consists of sequences of prices $\{P_{\eta t}^\ast, R_t^\ast, R_{Kt}^\ast, W_t^\ast\}$, allocations for households $\mathbfscr{A}_H \coloneq \{C_{\eta \eta t}^\ast, C_{\eta \nu t}^\ast, L_{\eta t}^\ast, B_{\eta t}^\ast, K_{\eta, t+1}^\ast\}$ and allocations  for firms $\mathbfscr{A}_F \coloneq \{K_{\eta jt}^\ast, L_{\eta jt}^\ast, Y_{\eta jt}^\ast, Y_{\eta t}^\ast\}$. In such an equilibrium, given the set of exogenous variables $\{K_0, Z_{A\eta t}, Z_{Mt}\}$, the elements in $\mathbfscr{A}_H$ solve the household problem, while the elements in $\mathbfscr{A}_F$ solve the firms' problems, and the markets for goods and labor clear:
+A Competitive Equilibrium consists of sequences of prices $\{P_{\eta t}^\ast, R_t^\ast, R_{Kt}^\ast, W_t^\ast\}$, allocations for households $\mathbfscr{A}_H \coloneq \{C_{\eta 1 t}^\ast, C_{\eta 2 t}^\ast, L_{\eta t}^\ast, B_{\eta t}^\ast, K_{\eta, t+1}^\ast\}$ and allocations  for firms $\mathbfscr{A}_F \coloneq \{K_{\eta jt}^\ast, L_{\eta jt}^\ast, Y_{\eta jt}^\ast, Y_{\eta t}^\ast\}$. In such an equilibrium, given the set of exogenous variables $\{K_0, Z_{A\eta t}, Z_{Mt}\}$, the elements in $\mathbfscr{A}_H$ solve the household problem, while the elements in $\mathbfscr{A}_F$ solve the firms' problems, and the markets for goods and labor clear.
 \begin{align}
-	& Y_{t} = \sum_{\eta=1}^{2} Y_{\eta t} \label{eq:reg-market-clearing-condition-Yt} \\
-	& \text{where:} \quad Y_{\eta t} = C_{\eta \eta t} + C_{\eta \nu t} + I_{\eta t} \label{eq:reg-total-yn} \\
-	& L_{\eta t} = \int_{0}^{1} L_{\eta jt} \dif j \label{eq:reg-market-clearing-condition-Lt}
+	Y_{t} &= Y_{1 t} + Y_{2 t} \label{eq:reg-market-clearing-condition-Yt} \\
+	& \text{where:} \quad Y_{\eta t} = C_{\eta 1 t} + C_{\eta 2 t} + I_{\eta t} \label{eq:reg-regional-demand} \\
+	L_{\eta t} &= \int_{0}^{1} L_{\eta jt} \dif j \label{eq:reg-market-clearing-condition-Lt}
 \end{align}
 
-%\newpage
+\begin{comment}
+	Define the total demand $Y_{t}$ and the regional demands $Y_{\eta}$:
+	\begin{align}
+		Y_{t} &= Y_{1 t} + Y_{2 t} \label{eq:reg-total-demand} \\
+		& \text{where:} \quad Y_{\eta t} = C_{\eta 1 t} + C_{\eta 2 t} + I_{\eta t} 
+	\end{align}
+	
+	The market clearing conditions are:
+\end{comment}
+
+% \newpage
 
 % --------------------------------------------------
 % MODEL STRUCTURE
@@ -596,7 +606,7 @@ The model is composed of the preview solutions, forming a square system of 41 va
 		
 	\begin{itemize}
 	
-		\item from the household problem: $C_{\eta t}, C_{\eta \eta t}, C_{\eta \nu t}, L_{\eta t}, B_{\eta t}, K_{\eta, t+1}, \te$;
+		\item from the household problem: $C_{\eta t}, C_{\eta 1 t}, C_{\eta 2 t}, L_{\eta t}, B_{\eta t}, K_{\eta, t+1}, \te$;
 
 		\item from the final-goods firm problem: $Y_{\eta t}, Y_{\eta jt}, P_{\eta t}$;
 		
@@ -617,7 +627,7 @@ The model is composed of the preview solutions, forming a square system of 41 va
 		\item Budget Constraint:
 		\begin{align}
 		\begin{split}
-			& P_{\eta t} C_{\eta \eta t} + P_{\nu t} C_{\eta \nu t} + P_{\eta t} I_{\eta t} + B_{\eta t} = \\ & \quad = W_t L_{\eta t} + R_{Kt} K_{\eta t} + (1 + R_{t-1}) B_{\eta,t-1} + \Pi_{\eta t}
+			& P_{1 t} C_{\eta 1 t} + P_{2 t} C_{\eta 2 t} + P_{\eta t} I_{\eta t} + B_{\eta t} = \\ & \quad = W_t L_{\eta t} + R_{Kt} K_{\eta t} + (1 + R_{t-1}) B_{\eta,t-1} + \Pi_{\eta t}
 		\end{split} \tag{\ref{eq:reg-budget-constraint}}
 		\end{align}
 
@@ -626,33 +636,33 @@ The model is composed of the preview solutions, forming a square system of 41 va
 			K_{\eta, t+1} = (1-\delta)K_{\eta t} + I_{\eta t} \tag{\ref{eq:reg-law-of-motion-for-capital}}
 		\end{align}
 
-		\item Regional Consumption of good $\eta$:
+		\item Regional Consumption of good 1:
 		\begin{align}
-			C_{\eta \eta t} &= \te \frac{\omega_{\eta}}{P_{\eta t}} \tag{\ref{eq:reg-Cn-Cn-2}}
+			C_{\eta 1 t} &= \te \frac{\omega_{\eta 1}}{P_{1 t}} \tag{\ref{eq:reg-Cn-Cn-2}}
 		\end{align}
 
-		\item Regional Consumption of good $\nu$:
+		\item Regional Consumption of good 2:
 		\begin{align}
-			C_{\eta \nu t} &= \te \frac{1 -\omega_{\eta}}{P_{\nu t}} \tag{\ref{eq:reg-Cn-Cv-2}}
+			C_{\eta 2 t} &= \te \frac{1 -\omega_{\eta 1}}{P_{2 t}} \tag{\ref{eq:reg-Cn-Cv-2}}
 		\end{align}
 
 \begin{comment}
 	
 	\item Regional Consumption:
 	\begin{align}
-		C_{\eta t} = C_{\eta \eta t}^{\omega_{\eta}} C_{\eta \nu t}^{1-\omega_{\eta}} \tag{\ref{eq:reg-consumption-aggregation}}
+		C_{\eta t} = C_{\eta 1 t}^{\omega_{\eta 1}} C_{\eta 2 t}^{1-\omega_{\eta 1}} \tag{\ref{eq:reg-consumption-aggregation}}
 	\end{align}
 
 	\item Relative Consumption of Regional Goods:
 	\begin{align}
-		\frac{C_{\eta \eta t}}{C_{\eta \nu t}} = \frac{P_{\nu t}}{P_{\eta t}} \cdot \frac{\omega_{\eta}}{1 -\omega_{\eta}} \tag{\ref{eq:reg-FOC-C1-C2}}
+		\frac{C_{\eta 1 t}}{C_{\eta 2 t}} = \frac{P_{\nu t}}{P_{\eta t}} \cdot \frac{\omega_{\eta 1}}{1 -\omega_{\eta 1}} \tag{\ref{eq:reg-FOC-C1-C2}}
 	\end{align}	
 	
 \end{comment}
 
 		\item Price Composition of Consumption Bundle:
 		\begin{align}
-			\te &= C_{\eta t} \left[ \frac{P_{\eta t}}{\omega_{\eta}} \right]^{\omega_{\eta}} \left[ \frac{P_{\nu t}}{1 -\omega_{\eta}} \right]^{1 -\omega_{\eta}} \tag{\ref{eq:reg-total-expense-level}}
+			\te &= C_{\eta t} \left[ \frac{P_{1 t}}{\omega_{\eta 1}} \right]^{\omega_{\eta 1}} \left[ \frac{P_{2 t}}{1 -\omega_{\eta 1}} \right]^{1 -\omega_{\eta 1}} \tag{\ref{eq:reg-total-expense-level}}
 		\end{align}
 
 		\item Labor Supply:
@@ -737,7 +747,7 @@ The model is composed of the preview solutions, forming a square system of 41 va
 
 		\item Market Clearing Condition:
 		\begin{align}
-			Y_{t} = \sum_{\eta=1}^{2} Y_{\eta t} \tag{\ref{eq:reg-market-clearing-condition-Yt}}
+			Y_{t} &= Y_{1 t} + Y_{2 t} \tag{\ref{eq:reg-market-clearing-condition-Yt}}
 		\end{align}
 
 		\begin{comment}
@@ -746,7 +756,7 @@ The model is composed of the preview solutions, forming a square system of 41 va
 		
 		\item Regional Market Clearing Condition:
 		\begin{align}
-			Y_{\eta t} = C_{\eta \eta t} + C_{\eta \nu t} + I_{\eta t} \tag{\ref{eq:reg-total-yn}}
+			Y_{\eta t} = C_{\eta 1 t} + C_{\eta 2 t} + I_{\eta t} \tag{\ref{eq:reg-regional-demand}}
 		\end{align}
 			
 		\end{enumerate}
@@ -770,10 +780,10 @@ The steady state of a variable is defined by its constancy through time. For any
 	\item Budget Constraint: 
 	\begin{align}
 	\begin{split}
-		& P_{\eta t} C_{\eta \eta t} + P_{\nu t} C_{\eta \nu t} + P_{\eta t} I_{\eta t} + B_{\eta t} = \\ & \quad = W_t L_{\eta t} + R_{Kt} K_{\eta t} + (1 + R_{t-1}) B_{\eta,t-1} + \Pi_{\eta t} \implies
+		& P_{1 t} C_{\eta 1 t} + P_{2 t} C_{\eta 2 t} + P_{\eta t} I_{\eta t} + B_{\eta t} = \\ & \quad = W_t L_{\eta t} + R_{Kt} K_{\eta t} + (1 + R_{t-1}) B_{\eta,t-1} + \Pi_{\eta t} \implies
 	\end{split} \tag{\ref{eq:reg-budget-constraint}}
 	\\
-	& P_{\eta} C_{\eta \eta} + P_{\nu} C_{\eta \nu} + P_{\eta} I_{\eta} = W L_{\eta} + R_{K} K_{\eta} + R B_{\eta} + \Pi_{\eta} \label{eq:reg-ss-budget-constraint}
+	& P_{1} C_{\eta 1} + P_{2} C_{\eta 2} + P_{\eta} I_{\eta} = W L_{\eta} + R_{K} K_{\eta} + R B_{\eta} + \Pi_{\eta} \label{eq:reg-ss-budget-constraint}
 	\end{align}
 
 	\item Law of Motion for Capital:
@@ -783,38 +793,38 @@ The steady state of a variable is defined by its constancy through time. For any
 		I_{\eta} &= \delta K_{\eta} \label{eq:reg-ss-law-of-motion-for-capital}
 	\end{alignat}
 
-	\item Regional Consumption of good $\eta$:
+	\item Regional Consumption of good 1:
 	\begin{align}
-		C_{\eta \eta t} &= \te \frac{\omega_{\eta}}{P_{\eta t}} \implies \tag{\ref{eq:reg-Cn-Cn-2}} \\
-		C_{\eta \eta} &= \te \frac{\omega_{\eta}}{P_{\eta}} \label{eq:reg-ss-C1-Cn-2}
+		C_{\eta 1 t} &= \te \frac{\omega_{\eta 1}}{P_{1 t}} \implies \tag{\ref{eq:reg-Cn-Cn-2}} \\
+		C_{\eta 1} &= \te \frac{\omega_{\eta 1}}{P_{1}} \label{eq:reg-ss-C1-Cn-2}
 	\end{align}
 
-	\item Regional Consumption of good $\nu$:
+	\item Regional Consumption of good 2:
 	\begin{align}
-		C_{\eta \nu t} &= \te \frac{1 -\omega_{\eta}}{P_{\nu t}} \implies \tag{\ref{eq:reg-Cn-Cv-2}} \\
-		C_{\eta \nu} &= \te \frac{1 -\omega_{\eta}}{P_{\nu}} \label{eq:reg-ss-C2-Cn-2}
+		C_{\eta 2 t} &= \te \frac{1 -\omega_{\eta 1}}{P_{2 t}} \implies \tag{\ref{eq:reg-Cn-Cv-2}} \\
+		C_{\eta 2} &= \te \frac{1 -\omega_{\eta 1}}{P_{2}} \label{eq:reg-ss-C2-Cn-2}
 	\end{align}
 
 \begin{comment}
 	\item Regional Consumption:
 	\begin{align}
-		C_{\eta t} &= C_{\eta \eta t}^{\omega_{\eta}} C_{\eta \nu t}^{1-\omega_{\eta}} \implies \tag{\ref{eq:reg-consumption-aggregation}} \\
-		C_{\eta} &= C_{\eta \eta}^{\omega_{\eta}} C_{\eta \nu}^{1-\omega_{\eta}} \label{eq:reg-ss-consumption-aggregation}
+		C_{\eta t} &= C_{\eta 1 t}^{\omega_{\eta 1}} C_{\eta 2 t}^{1-\omega_{\eta 1}} \implies \tag{\ref{eq:reg-consumption-aggregation}} \\
+		C_{\eta} &= C_{\eta 1}^{\omega_{\eta 1}} C_{\eta 2}^{1-\omega_{\eta 1}} \label{eq:reg-ss-consumption-aggregation}
 	\end{align}
 	
 	\item Relative Consumption of Regional Goods:
 	\begin{align}
-		\frac{C_{\eta \eta t}}{C_{\eta \nu t}} &= \frac{P_{\nu t}}{P_{\eta t}} \cdot \frac{\omega_{\eta}}{1 -\omega_{\eta}} \implies \tag{\ref{eq:reg-FOC-C1-C2}}\\
-		\frac{C_{\eta \eta}}{C_{\eta \nu}} &= \frac{P_{\nu}}{P_{\eta}} \cdot \frac{\omega_{\eta}}{1 -\omega_{\eta}} \label{eq:reg-ss-FOC-C1-C2}
+		\frac{C_{\eta 1 t}}{C_{\eta 2 t}} &= \frac{P_{\nu t}}{P_{\eta t}} \cdot \frac{\omega_{\eta 1}}{1 -\omega_{\eta 1}} \implies \tag{\ref{eq:reg-FOC-C1-C2}}\\
+		\frac{C_{\eta 1}}{C_{\eta 2}} &= \frac{P_{\nu}}{P_{\eta}} \cdot \frac{\omega_{\eta 1}}{1 -\omega_{\eta 1}} \label{eq:reg-ss-FOC-C1-C2}
 	\end{align}
 	
 \end{comment}
 
 	\item Price Composition of Consumption Bundle:
 	\begin{align}
-		\te &= C_{\eta t} \left[ \frac{P_{\eta t}}{\omega_{\eta}} \right]^{\omega_{\eta}} \left[ \frac{P_{\nu t}}{1 -\omega_{\eta}} \right]^{1 -\omega_{\eta}} \implies \tag{\ref{eq:reg-total-expense-level}} 
+		\te &= C_{\eta t} \left[ \frac{P_{1 t}}{\omega_{\eta 1}} \right]^{\omega_{\eta 1}} \left[ \frac{P_{2 t}}{1 -\omega_{\eta 1}} \right]^{1 -\omega_{\eta 1}} \implies \tag{\ref{eq:reg-total-expense-level}} 
 		\\
-		\te[] &= C_{\eta} \left[ \frac{P_{\eta}}{\omega_{\eta}} \right]^{\omega_{\eta}} \left[ \frac{P_{\nu}}{1 -\omega_{\eta}} \right]^{1 -\omega_{\eta}} \label{eq:reg-ss-price-eta-level}
+		\te[] &= C_{\eta} \left[ \frac{P_{1}}{\omega_{\eta 1}} \right]^{\omega_{\eta 1}} \left[ \frac{P_{2}}{1 -\omega_{\eta 1}} \right]^{1 -\omega_{\eta 1}} \label{eq:reg-ss-price-eta-level}
 	\end{align}
 
 	\item Labor Supply:
@@ -921,14 +931,14 @@ The steady state of a variable is defined by its constancy through time. For any
 	
 	\item Market Clearing Condition:
 	\begin{align}
-		Y_{t} &= \sum_{\eta=1}^{2} Y_{\eta t} \implies \nonumber \\
-		Y &= \sum_{\eta=1}^{2} Y_{\eta} \label{eq:reg-ss-market-clearing-condition}
+		Y_{t} &= Y_{1 t} + Y_{2 t} \implies \tag{\ref{eq:reg-market-clearing-condition-Yt}} \\
+		Y &= Y_{1} + Y_{2} \label{eq:reg-ss-market-clearing-condition}
 	\end{align}
 	
 	\item Regional Market Clearing Condition:
 	\begin{align}
-		Y_{\eta t} &= C_{\eta \eta t} + C_{\eta \nu t} + I_{\eta t} \implies \tag{\ref{eq:reg-total-yn}} \\
-		Y_{\eta} &= C_{\eta \eta} + C_{\eta \nu} + I_{\eta} \label{eq:reg-ss-total-yn}
+		Y_{\eta t} &= C_{\eta 1 t} + C_{\eta 2 t} + I_{\eta t} \implies \tag{\ref{eq:reg-regional-demand}} \\
+		Y_{\eta} &= C_{\eta 1} + C_{\eta 2} + I_{\eta} \label{eq:reg-ss-total-yn}
 	\end{align}
 	
 \end{enumerate}
@@ -951,13 +961,13 @@ From \ref{eq:reg-ss-general-price-level}, the regional optimal price $P_{\eta}^\
 From \ref{eq:ss-national-price-level}, the national price level is:
 \begin{align}
 	P &= \vartheta_{1} P_{1} + (1 -\vartheta_{1}) P_{2} \implies \vartheta_{1} P_{1} + (1 -\vartheta_{1}) P_{1} \implies \tag{\ref{eq:ss-national-price-level}} \\
-	P &= P_{1}
+	P &= P_{1} = P_{2}
 \end{align}
 
 From \ref{eq:reg-ss-price-eta-level}, price composition of consumption bundle is:
 \begin{align}
-	\te[] &= C_{\eta} \left[ \frac{P_{\eta}}{\omega_{\eta}} \right]^{\omega_{\eta}} \left[ \frac{P_{\nu}}{1 -\omega_{\eta}} \right]^{1 -\omega_{\eta}} = C_{\eta} \left[ \frac{P_{\eta}}{\omega_{\eta}} \right]^{\omega_{\eta}} \left[ \frac{P_{\eta}}{1 -\omega_{\eta}} \right]^{1 -\omega_{\eta}} \implies \tag{\ref{eq:reg-ss-price-eta-level}} \\
-	\te[] &= \frac{P_{\eta} C_{\eta}}{(\omega_{\eta})^{\omega_{\eta}} (1 -\omega_{\eta})^{1 -\omega_{\eta}}} \label{eq:reg-ss-te}
+	\te[] &= C_{\eta} \left[ \frac{P_{1}}{\omega_{\eta 1}} \right]^{\omega_{\eta 1}} \left[ \frac{P_{2}}{1 -\omega_{\eta 1}} \right]^{1 -\omega_{\eta 1}} = C_{\eta} \left[ \frac{P_{}}{\omega_{\eta 1}} \right]^{\omega_{\eta 1}} \left[ \frac{P_{}}{1 -\omega_{\eta 1}} \right]^{1 -\omega_{\eta 1}} \implies \tag{\ref{eq:reg-ss-price-eta-level}} \\
+	\te[] &= \frac{P_{} C_{\eta}}{\omega_{\eta 1}^{\omega_{\eta 1}} (1 -\omega_{\eta 1})^{1 -\omega_{\eta 1}}} \label{eq:reg-ss-te}
 \end{align}
 
 From \ref{eq:reg-ss-gross-inflation-rate} and \ref{eq:ss-regional-inflation}, the national and regional gross inflation rates are:
@@ -988,13 +998,13 @@ From \ref{eq:reg-ss-bonds-euler-equation}, the return on bonds is:
 From \ref{eq:reg-ss-capital-euler-equation}, the return on capital $R_K$ is:
 \begin{align}
 	1 &= \beta \left[ (1-\delta) + \frac{R_K}{P_{\eta}} \right] \implies \tag{\ref{eq:reg-ss-capital-euler-equation}} \\
-	R_K &= P_{\eta} \left[ \frac{1}{\beta} - (1-\delta) \right] \label{eq:reg-ss-RK}
+	R_K &= P_{} \left[ \frac{1}{\beta} - (1-\delta) \right] \label{eq:reg-ss-RK}
 \end{align}
 
 From \ref{eq:reg-ss-int-good-firm-optimal-price-FOC-3} and \ref{eq:reg-ss-general-price-level}, the marginal cost $\Lambda_{\eta}$ is:
 \begin{align}
 	P_{\eta}^\ast &= \frac{\psi}{\psi-1} \Lambda_{\eta} \implies \tag{\ref{eq:reg-ss-int-good-firm-optimal-price-FOC-3}} \\
-	\Lambda_{\eta} &= P_{\eta} \frac{\psi-1}{\psi} \label{eq:reg-ss-marginal-cost}
+	\Lambda_{\eta} &= P_{} \frac{\psi-1}{\psi} \label{eq:reg-ss-marginal-cost}
 \end{align}
 
 From \ref{eq:reg-ss-int-good-firm-MC-2}, the nominal wage $W$ is:
@@ -1021,55 +1031,55 @@ In steady state, prices are the same ($P_{\eta} = P_{\eta}^\ast$), resulting in 
 	\begin{align}
 		\frac{\phi L_{\eta}^{\varphi}}{C_{\eta}^{1-\sigma}} &= \frac{W}{\te[]} \implies C_{\eta}^{\sigma -1} = \frac{W}{\te[] \phi L_{\eta}^{\varphi}} \implies \nonumber\\
 		C_{\eta} &= a_{\eta} Y_{\eta}^{\frac{-\varphi}{\sigma}} \label{eq:reg-ss-consumption} \\
-		& \text{where:} \quad a_{\eta} = \left[ \frac{W^{1 +\varphi} \omega_{\eta}^{\omega_{\eta}} (1 -\omega_{\eta})^{1 -\omega_{\eta}}}{\phi P_{\eta} \left[ (1 -\alpha_{\eta}) \Lambda_{\eta} \right]^{\varphi}} \right]^{\frac{1}{\sigma}} \label{eq:reg-ss-a-eta}
+		& \text{where:} \quad a_{\eta} = \left[ \frac{W^{1 +\varphi} \omega_{\eta 1}^{\omega_{\eta 1}} (1 -\omega_{\eta 1})^{1 -\omega_{\eta 1}}}{\phi P_{} \left[ (1 -\alpha_{\eta}) \Lambda_{\eta} \right]^{\varphi}} \right]^{\frac{1}{\sigma}} \label{eq:reg-ss-a-eta}
 	\end{align}
 
 	Substitute \ref{eq:reg-ss-consumption} in \ref{eq:reg-ss-te}:
 	\begin{align}
-		\te[] &= \frac{P_{\eta} C_{\eta}}{(\omega_{\eta})^{\omega_{\eta}} (1 -\omega_{\eta})^{1 -\omega_{\eta}}} \implies \tag{\ref{eq:reg-ss-te}} \\
-		\te[] &= \frac{P_{\eta} a_{\eta} Y_{\eta}^{\frac{-\varphi}{\sigma}}}{(\omega_{\eta})^{\omega_{\eta}} (1 -\omega_{\eta})^{1 -\omega_{\eta}}} \label{eq:reg-ss-te-2}
+		\te[] &= \frac{P_{} C_{\eta}}{\omega_{\eta 1}^{\omega_{\eta 1}} (1 -\omega_{\eta 1})^{1 -\omega_{\eta 1}}} \implies \tag{\ref{eq:reg-ss-te}} \\
+		\te[] &= \frac{P_{} a_{\eta} Y_{\eta}^{\frac{-\varphi}{\sigma}}}{\omega_{\eta 1}^{\omega_{\eta 1}} (1 -\omega_{\eta 1})^{1 -\omega_{\eta 1}}} \label{eq:reg-ss-te-2}
 	\end{align}
 
 	Substitute \ref{eq:reg-ss-te-2} in \ref{eq:reg-ss-C1-Cn-2}:
 	\begin{alignat}{2}
-		C_{\eta \eta} &= \te \frac{\omega_{\eta}}{P_{\eta}} &\implies \tag{\ref{eq:reg-ss-C1-Cn-2}} \\
-		C_{\eta \eta} &= \frac{P_{\eta} a_{\eta} Y_{\eta}^{\frac{-\varphi}{\sigma}}}{(\omega_{\eta})^{\omega_{\eta}} (1 -\omega_{\eta})^{1 -\omega_{\eta}}} \cdot \frac{\omega_{\eta}}{P_{\eta}} &\implies \nonumber \\
-		C_{\eta \eta} &= \left( \frac{\omega_{\eta}}{1 -\omega_{\eta}} \right)^{1 -\omega_{\eta}} a_{\eta} Y_{\eta}^{\frac{-\varphi}{\sigma}} \label{eq:reg-ss-C1-Cn-3}
+		C_{\eta 1} &= \te \frac{\omega_{\eta 1}}{P_{1}} &\implies \tag{\ref{eq:reg-ss-C1-Cn-2}} \\
+		C_{\eta 1} &= \frac{P_{} a_{\eta} Y_{\eta}^{\frac{-\varphi}{\sigma}}}{\omega_{\eta 1}^{\omega_{\eta 1}} (1 -\omega_{\eta 1})^{1 -\omega_{\eta 1}}} \cdot \frac{\omega_{\eta 1}}{P_{}} &\implies \nonumber \\
+		C_{\eta 1} &= \left( \frac{\omega_{\eta 1}}{1 -\omega_{\eta 1}} \right)^{1 -\omega_{\eta 1}} a_{\eta} Y_{\eta}^{\frac{-\varphi}{\sigma}} \label{eq:reg-ss-C1-Cn-3}
 	\end{alignat}
 		
 	Substitute \ref{eq:reg-ss-te-2} in \ref{eq:reg-ss-C2-Cn-2}:
 	\begin{alignat}{2}
-		C_{\eta \nu} &= \te \frac{1 -\omega_{\eta}}{P_{\nu}} &\implies \tag{\ref{eq:reg-ss-C2-Cn-2}} \\
-		C_{\eta \nu} &= \frac{P_{\eta} a_{\eta} Y_{\eta}^{\frac{-\varphi}{\sigma}}}{(\omega_{\eta})^{\omega_{\eta}} (1 -\omega_{\eta})^{1 -\omega_{\eta}}} \cdot \frac{1 -\omega_{\eta}}{P_{\nu}} &\implies \nonumber \\
-		C_{\eta \nu} &= \frac{P_{\eta}}{P_{\nu}} \left( \frac{1 -\omega_{\eta}}{\omega_{\eta}} \right)^{\omega_{\eta}} a_{\eta} Y_{\eta}^{\frac{-\varphi}{\sigma}} \label{eq:reg-ss-C2-Cn-3}
+		C_{\eta 2} &= \te \frac{1 -\omega_{\eta 1}}{P_{2}} &\implies \tag{\ref{eq:reg-ss-C2-Cn-2}} \\
+		C_{\eta 2} &= \frac{P_{} a_{\eta} Y_{\eta}^{\frac{-\varphi}{\sigma}}}{\omega_{\eta 1}^{\omega_{\eta 1}} (1 -\omega_{\eta 1})^{1 -\omega_{\eta 1}}} \cdot \frac{1 -\omega_{\eta 1}}{P_{}} &\implies \nonumber \\
+		C_{\eta 2} &= \left( \frac{1 -\omega_{\eta 1}}{\omega_{\eta 1}} \right)^{\omega_{\eta 1}} a_{\eta} Y_{\eta}^{\frac{-\varphi}{\sigma}} \label{eq:reg-ss-C2-Cn-3}
 	\end{alignat}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 	For region $\eta = 1$, substitute \ref{eq:reg-ss-investment}, \ref{eq:reg-ss-C1-Cn-3} and \ref{eq:reg-ss-C2-Cn-3} in \ref{eq:reg-ss-total-yn}:
-	\begin{alignat}{2}
-		Y_{\eta} &= C_{\eta \eta} + C_{\eta \nu} + I_{\eta} &\implies \tag{\ref{eq:reg-ss-total-yn}} \\
-		Y_{1} &= C_{11} + C_{12} + I_{1} &\implies \nonumber \\
-		Y_{1} &= \left( \frac{\omega_{1}}{1 -\omega_{1}} \right)^{1 -\omega_{1}} a_{1} Y_{1}^{\frac{-\varphi}{\sigma}} + \frac{P_{1}}{P_{2}} \left( \frac{\omega_{1}}{1 -\omega_{1}} \right)^{1 -\omega_{1}} a_{1} Y_{1}^{\frac{-\varphi}{\sigma}} + b_{1} Y_{1} &\implies \nonumber \\
-		Y_{1} &= \left[ \left( \frac{a_{1}}{1 - b_{1}} \right) \left( \frac{\omega_{1} P_{2} + (1 - \omega_{1}) P_{1}}{P_{2} \omega_{1}^{\omega_{1}} (1 - \omega_{1})^{1 - \omega_{1}}} \right) \right]^{\frac{\sigma}{\sigma + \varphi}} \label{eq:reg-ss-total-y1}
-	\end{alignat}
+\begin{alignat}{2}
+	Y_{\eta} &= C_{\eta 1} + C_{\eta 2} + I_{\eta} &\implies \tag{\ref{eq:reg-ss-total-yn}} \\
+	Y_{1} &= C_{11} + C_{12} + I_{1} &\implies \nonumber \\
+	Y_{1} &= \left( \frac{\omega_{11}}{1 -\omega_{11}} \right)^{1 -\omega_{11}} a_{1} Y_{1}^{\frac{-\varphi}{\sigma}} + \left( \frac{\omega_{11}}{1 -\omega_{11}} \right)^{1 -\omega_{11}} a_{1} Y_{1}^{\frac{-\varphi}{\sigma}} + b_{1} Y_{1} &\implies \nonumber \\
+	Y_{1} &= \left[ \left( \frac{a_{1}}{1 - b_{1}} \right) \left( \frac{1}{\omega_{11}^{\omega_{11}} (1 - \omega_{11})^{1 - \omega_{11}}} \right) \right]^{\frac{\sigma}{\sigma + \varphi}} \label{eq:reg-ss-total-y1}
+\end{alignat}
 
 	For region $\eta = 2$, substitute \ref{eq:reg-ss-investment}, \ref{eq:reg-ss-C2-Cn-3} and \ref{eq:reg-ss-C1-Cn-3} in \ref{eq:reg-ss-total-yn}:
-	\begin{alignat}{2}
-		Y_{\eta} &= C_{\eta \eta} + C_{\eta \nu} + I_{\eta} &\implies \tag{\ref{eq:reg-ss-total-yn}} \\
-		Y_{2} &= C_{22} + C_{21} + I_{2} &\implies \nonumber \\
-		Y_{2} &= \left( \frac{\omega_{2}}{1 -\omega_{2}} \right)^{1 -\omega_{2}} a_{2} Y_{2}^{\frac{-\varphi}{\sigma}} + \frac{P_{2}}{P_{1}} \left( \frac{\omega_{2}}{1 -\omega_{2}} \right)^{1 -\omega_{2}} a_{2} Y_{2}^{\frac{-\varphi}{\sigma}} + b_{2} Y_{2} &\implies \nonumber \\
-		Y_{2} &= \left[ \left( \frac{a_{2}}{1 - b_{2}} \right) \left( \frac{\omega_{2} P_{1} + (1 - \omega_{2}) P_{2}}{P_{1} \omega_{2}^{\omega_{2}} (1 - \omega_{2})^{1 - \omega_{2}}} \right) \right]^{\frac{\sigma}{\sigma + \varphi}} \label{eq:reg-ss-total-y2}
-	\end{alignat}	
+\begin{alignat}{2}
+	Y_{\eta} &= C_{\eta 1} + C_{\eta 2} + I_{\eta} &\implies \tag{\ref{eq:reg-ss-total-yn}} \\
+	Y_{2} &= C_{22} + C_{21} + I_{2} &\implies \nonumber \\
+	Y_{2} &= \left( \frac{\omega_{21}}{1 -\omega_{21}} \right)^{1 -\omega_{21}} a_{2} Y_{2}^{\frac{-\varphi}{\sigma}} + \left( \frac{\omega_{21}}{1 -\omega_{21}} \right)^{1 -\omega_{21}} a_{2} Y_{2}^{\frac{-\varphi}{\sigma}} + b_{2} Y_{2} &\implies \nonumber \\
+	Y_{2} &= \left[ \left( \frac{a_{2}}{1 - b_{2}} \right) \left( \frac{1}{\omega_{21}^{\omega_{21}} (1 - \omega_{21})^{1 - \omega_{21}}} \right) \right]^{\frac{\sigma}{\sigma + \varphi}} \label{eq:reg-ss-total-y2}
+\end{alignat}	
 
-	The results of \ref{eq:reg-ss-total-y1} and \ref{eq:reg-ss-total-y2} determines $C_{\eta}, I_{\eta}, \te[],  C_{\eta \eta}, C_{\eta \nu}, K_{\eta}, L_{\eta}$ in \ref{eq:reg-ss-consumption}, \ref{eq:reg-ss-investment}, \ref{eq:reg-ss-te},  \ref{eq:reg-ss-C1-Cn-2}, \ref{eq:reg-ss-C2-Cn-2}, \ref{eq:reg-ss-int-good-firm-FOC-Kt-2} and \ref{eq:reg-ss-int-good-firm-FOC-Lt-2}, respectively.
+	The results of \ref{eq:reg-ss-total-y1} and \ref{eq:reg-ss-total-y2} determines $I_{\eta}, C_{\eta}, \te[],  C_{\eta 1}, C_{\eta 2}, K_{\eta}, L_{\eta}$ in \ref{eq:reg-ss-investment}, \ref{eq:reg-ss-consumption}, \ref{eq:reg-ss-te},  \ref{eq:reg-ss-C1-Cn-2}, \ref{eq:reg-ss-C2-Cn-2}, \ref{eq:reg-ss-int-good-firm-FOC-Kt-2} and \ref{eq:reg-ss-int-good-firm-FOC-Lt-2}, respectively.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \begin{comment}
 	Substitute \ref{eq:reg-ss-total-yn-2} in \ref{eq:reg-ss-market-clearing-condition}:
 	\begin{align}
-		Y &= \sum_{\eta=1}^{2} Y_{\nu} \implies \tag{\ref{eq:reg-ss-market-clearing-condition}} \\
+		Y &= \sum_{\eta=1}^{2} Y_{\eta} \implies \tag{\ref{eq:reg-ss-market-clearing-condition}} \\
 		Y &= \sum_{\eta=1}^{2} \left( \frac{a_{\eta}}{1 -b_{\eta}} \right) ^{\frac{\sigma}{\sigma + \varphi}} \label{eq:reg-ss-market-clearing-condition-2}
 	\end{align}
 	
@@ -1101,23 +1111,23 @@ In steady state, prices are the same ($P_{\eta} = P_{\eta}^\ast$), resulting in 
 		\\
 		W &= (1-{\alpha_{\eta}}) \left[ \Lambda_{\eta} Z_{A\eta} \left( \frac{{\alpha_{\eta}}}{R_K} \right)^{{\alpha_{\eta}}} \right]^\frac{1}{1-{\alpha_{\eta}}} \tag{\ref{eq:reg-ss-nominal-wage}}
 		\\
-		a_{\eta} &= \left[ \frac{W^{1 +\varphi} \omega_{\eta}^{\omega_{\eta}} (1 -\omega_{\eta})^{1 -\omega_{\eta}}}{\phi P_{\eta} \left[ (1 -\alpha_{\eta}) \Lambda_{\eta} \right]^{\varphi}} \right]^{\frac{1}{\sigma}} \tag{\ref{eq:reg-ss-a-eta}}
+		a_{\eta} &= \left[ \frac{W^{1 +\varphi} \omega_{\eta 1}^{\omega_{\eta 1}} (1 -\omega_{\eta 1})^{1 -\omega_{\eta 1}}}{\phi P_{\eta} \left[ (1 -\alpha_{\eta}) \Lambda_{\eta} \right]^{\varphi}} \right]^{\frac{1}{\sigma}} \tag{\ref{eq:reg-ss-a-eta}}
 		\\
 		b_{\eta} &= \delta {\alpha_{\eta}} \frac{\Lambda_{\eta}}{R_K} \tag{\ref{eq:reg-ss-b-eta}}
 		\\
-		Y_{1} &= \left[ \left( \frac{a_{1}}{1 - b_{1}} \right) \left( \frac{\omega_{1} P_{2} + (1 - \omega_{1}) P_{1}}{P_{2} \omega_{1}^{\omega_{1}} (1 - \omega_{1})^{1 - \omega_{1}}} \right) \right]^{\frac{\sigma}{\sigma + \varphi}} \tag{\ref{eq:reg-ss-total-y1}}
+		Y_{1} &= \left[ \left( \frac{a_{1}}{1 - b_{1}} \right) \left( \frac{1}{\omega_{11}^{\omega_{11}} (1 - \omega_{11})^{1 - \omega_{11}}} \right) \right]^{\frac{\sigma}{\sigma + \varphi}} \tag{\ref{eq:reg-ss-total-y1}}
 		\\
-		Y_{2} &= \left[ \left( \frac{a_{2}}{1 - b_{2}} \right) \left( \frac{\omega_{2} P_{1} + (1 - \omega_{2}) P_{2}}{P_{1} \omega_{2}^{\omega_{2}} (1 - \omega_{2})^{1 - \omega_{2}}} \right) \right]^{\frac{\sigma}{\sigma + \varphi}} \tag{\ref{eq:reg-ss-total-y2}}
+		Y_{2} &= \left[ \left( \frac{a_{2}}{1 - b_{2}} \right) \left( \frac{1}{\omega_{21}^{\omega_{21}} (1 - \omega_{21})^{1 - \omega_{21}}} \right) \right]^{\frac{\sigma}{\sigma + \varphi}} \tag{\ref{eq:reg-ss-total-y2}}
 		\\
 		I_{\eta} &= b_{\eta} Y_{\eta} \tag{\ref{eq:reg-ss-investment}}
 		\\
 		C_{\eta} &= a_{\eta} Y_{\eta}^{\frac{-\varphi}{\sigma}} \tag{\ref{eq:reg-ss-consumption}}
 		\\
-		\te[] &= \frac{P_{\eta} C_{\eta}}{(\omega_{\eta})^{\omega_{\eta}} (1 -\omega_{\eta})^{1 -\omega_{\eta}}} \tag{\ref{eq:reg-ss-te}}
+		\te[] &= \frac{P_{\eta} C_{\eta}}{\omega_{\eta 1}^{\omega_{\eta 1}} (1 -\omega_{\eta 1})^{1 -\omega_{\eta 1}}} \tag{\ref{eq:reg-ss-te}}
 		\\
-		C_{\eta \eta} &= \te \frac{\omega_{\eta}}{P_{\eta}} \tag{\ref{eq:reg-ss-C1-Cn-2}}
+		C_{\eta 1} &= \te \frac{\omega_{\eta 1}}{P_{\eta}} \tag{\ref{eq:reg-ss-C1-Cn-2}}
 		\\
-		C_{\eta \nu} &= \te \frac{1 -\omega_{\eta}}{P_{\nu}} \tag{\ref{eq:reg-ss-C2-Cn-2}}
+		C_{\eta 2} &= \te \frac{1 -\omega_{\eta 1}}{P_{\nu}} \tag{\ref{eq:reg-ss-C2-Cn-2}}
 		\\
 		K_{\eta} &= {\alpha_{\eta}} Y_{\eta} \frac{\Lambda_{\eta}}{R_K} \tag{\ref{eq:reg-ss-int-good-firm-FOC-Kt-2}}
 		\\
@@ -1315,55 +1325,62 @@ Log-linearize \ref{eq:reg-law-of-motion-for-capital}:
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\subsubsection*{Regional Consumption of goods $\eta$ and $\nu$}
+\subsubsection*{Regional Levels of Consumption and Prices}
 
 Log-linearize \ref{eq:reg-Cn-Cn-2}:
 \begin{alignat}{2}
-	C_{\eta \eta t} &= \te \frac{\omega_{\eta}}{P_{\eta t}} &\implies \tag{\ref{eq:reg-Cn-Cn-2}} \\
-	C_{\eta \eta} (1 + \hat{C}_{\eta \eta t}) &= \mathscr{E}_{\eta} \frac{\omega_{\eta}}{P_{\eta}} (1 + \hat{\mathscr{E}}_{\eta t} - \hat{P}_{\eta t}) &\implies \nonumber \\
-	\hat{C}_{\eta \eta t} &= \hat{\mathscr{E}}_{\eta t} - \hat{P}_{\eta t} \label{eq:reg-ll-Cn-Cn-2}
+	C_{\eta 1 t} &= \te \frac{\omega_{\eta 1}}{P_{1 t}} &\implies \tag{\ref{eq:reg-Cn-Cn-2}} \\
+	C_{\eta 1} (1 + \hat{C}_{\eta 1 t}) &= \mathscr{E}_{\eta} \frac{\omega_{\eta 1}}{P_{1}} (1 + \hat{\mathscr{E}}_{\eta t} - \hat{P}_{1 t}) &\implies \nonumber \\
+	\hat{C}_{\eta 1 t} &= \hat{\mathscr{E}}_{\eta t} - \hat{P}_{1 t} \iff \hat{\mathscr{E}}_{\eta t} = \hat{C}_{\eta 1 t} + \hat{P}_{1 t} \label{eq:reg-ll-Cn-Cn-2}
 \end{alignat}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 Log-linearize \ref{eq:reg-Cn-Cv-2}:
 \begin{alignat}{2}
-	C_{\eta \nu t} &= \te \frac{1 - \omega_{\eta}}{P_{\eta t}} &\implies \tag{\ref{eq:reg-Cn-Cv-2}} \\
-	C_{\eta \nu} (1 + \hat{C}_{\eta \nu t}) &= \mathscr{E}_{\eta} \frac{1 - \omega_{\eta}}{P_{\eta}} (1 + \hat{\mathscr{E}}_{\eta t} - \hat{P}_{\eta t}) &\implies \nonumber \\
-	\hat{C}_{\eta \nu t} &= \hat{\mathscr{E}}_{\eta t} - \hat{P}_{\eta t} \label{eq:reg-ll-Cn-Cv-2}
+	C_{\eta 2 t} &= \te \frac{1 - \omega_{\eta 1}}{P_{2 t}} &\implies \tag{\ref{eq:reg-Cn-Cv-2}} \\
+	C_{\eta 2} (1 + \hat{C}_{\eta 2 t}) &= \mathscr{E}_{\eta} \frac{1 - \omega_{\eta 1}}{P_{2}} (1 + \hat{\mathscr{E}}_{\eta t} - \hat{P}_{2 t}) &\implies \nonumber \\
+	\hat{C}_{\eta 2 t} &= \hat{\mathscr{E}}_{\eta t} - \hat{P}_{2 t} \iff \hat{\mathscr{E}}_{\eta t} = \hat{C}_{\eta 2 t} + \hat{P}_{2 t} \label{eq:reg-ll-Cn-Cv-2}
 \end{alignat}
 
 Match equations \ref{eq:reg-ll-Cn-Cn-2} and \ref{eq:reg-ll-Cn-Cv-2}:
 \begin{align}
-	\hat{C}_{\eta \eta t} &= \hat{C}_{\eta \nu t} = \hat{\mathscr{E}}_{\eta t} - \hat{P}_{\eta t} \label{eq:reg-ll-Cnn-equals-Cnv}
+	\hat{\mathscr{E}}_{\eta t} = \hat{C}_{\eta 1 t} + \hat{P}_{1 t} &= \hat{C}_{\eta 2 t} + \hat{P}_{2 t} \implies \nonumber \\
+	\hat{C}_{\eta 1 t} - \hat{C}_{\eta 2 t} &= \hat{P}_{2 t} - \hat{P}_{1 t} \label{eq:reg-ll-regional-consumption-and-prices}
 \end{align}
 
-Equation \ref{eq:reg-ll-Cnn-equals-Cnv} shows that the variation of both goods in each region depends on the distance between the variations of total expense and the regional price level.
+Equation \ref{eq:reg-ll-regional-consumption-and-prices} shows that the variation of both goods consumption in each region correspond to the distance between the variations of the regional price  levels.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 % \subsubsection*{Price Composition of Consumption Bundle}
 
-\subsubsection*{Variation of Regional Consumption and Prices}
+\subsubsection*{Total Expenses}
 
 Log-linearize \ref{eq:reg-total-expense-level}:
 	\begin{alignat}{2}
-		\te &= C_{\eta t} \left[ \frac{P_{\eta t}}{\omega_{\eta}} \right]^{\omega_{\eta}} \left[ \frac{P_{\nu t}}{1 -\omega_{\eta}} \right]^{1 -\omega_{\eta}} &\implies \tag{\ref{eq:reg-total-expense-level}} \\
-		\te[] (1 + \hat{\mathscr{E}}_{\eta t}) &= \frac{C_{\eta} P_{\eta}^{\omega_{\eta}} P_{\nu}^{1 -\omega_{\eta}}}{\omega_{\eta}^{\omega_{\eta}} (1 - \omega_{\eta})^{(1 - \omega_{\eta})}} \cdot \nonumber \\
-		 \qquad &\cdot (1 + \hat{C}_{\eta t} + \omega_{\eta} \hat{P}_{\eta t} + (1 -\omega_{\eta}) \hat{P}_{\nu t}) &\implies \nonumber \\
-		\hat{\mathscr{E}}_{\eta t} &= \hat{C}_{\eta t} + \omega_{\eta} \hat{P}_{\eta t} + (1 -\omega_{\eta}) \hat{P}_{\nu t} \label{eq:reg-ll-total-expense-level}
+		\te &= C_{\eta t} \left[ \frac{P_{1 t}}{\omega_{\eta 1}} \right]^{\omega_{\eta 1}} \left[ \frac{P_{2 t}}{1 -\omega_{\eta 1}} \right]^{1 -\omega_{\eta 1}} &\implies \tag{\ref{eq:reg-total-expense-level}} \\
+		\te[] (1 + \hat{\mathscr{E}}_{\eta t}) &= \frac{C_{\eta} P_{1}^{\omega_{\eta 1}} P_{2}^{1 -\omega_{\eta 1}}}{\omega_{\eta 1}^{\omega_{\eta 1}} (1 - \omega_{\eta 1})^{(1 - \omega_{\eta 1})}} \cdot \nonumber \\
+		 \qquad &\cdot (1 + \hat{C}_{\eta t} + \omega_{\eta 1} \hat{P}_{1 t} + (1 -\omega_{\eta 1}) \hat{P}_{2 t}) &\implies \nonumber \\
+		\hat{\mathscr{E}}_{\eta t} &= \hat{C}_{\eta t} + \omega_{\eta 1} \hat{P}_{1 t} + (1 -\omega_{\eta 1}) \hat{P}_{2 t} \label{eq:reg-ll-total-expense-level}
 	\end{alignat}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-Isolate $\hat{\mathscr{E}}_{\eta t}$ in \ref{eq:reg-ll-Cnn-equals-Cnv} and substitute in \ref{eq:reg-ll-total-expense-level}:
+\begin{comment}
+	
+Isolate $\hat{\mathscr{E}}_{\eta t}$ in \ref{eq:reg-ll-regional-consumption-and-prices} and substitute in \ref{eq:reg-ll-total-expense-level}:
 \begin{align}
-	\hat{C}_{\eta \eta t} &= \hat{\mathscr{E}}_{\eta t} - \hat{P}_{\eta t} \iff \hat{\mathscr{E}}_{\eta t} = \hat{C}_{\eta \eta t} + \hat{P}_{\eta t} \tag{\ref{eq:reg-ll-Cnn-equals-Cnv}} \\
-	\hat{C}_{\eta \eta t} + \hat{P}_{\eta t} &= \hat{C}_{\eta t} + \omega_{\eta} \hat{P}_{\eta t} + (1 -\omega_{\eta}) \hat{P}_{\nu t} \implies \nonumber \\
-	\hat{C}_{\eta t} - \hat{C}_{\eta \eta t} &= (1 -\omega_{\eta}) (\hat{P}_{\eta t} - \hat{P}_{\nu t}) \label{eq:reg-ll-total-expense-level-2}
+	\hat{C}_{\eta 1 t} &= \hat{\mathscr{E}}_{\eta t} - \hat{P}_{\eta t} \iff \hat{\mathscr{E}}_{\eta t} = \hat{C}_{\eta 1 t} + \hat{P}_{\eta t} \tag{\ref{eq:reg-ll-regional-consumption-and-prices}} \\
+	\hat{C}_{\eta 1 t} + \hat{P}_{\eta t} &= \hat{C}_{\eta t} + \omega_{\eta 1} \hat{P}_{\eta t} + (1 -\omega_{\eta 1}) \hat{P}_{\nu t} \implies \nonumber \\
+	\hat{C}_{\eta t} - \hat{C}_{\eta 1 t} &= (1 -\omega_{\eta 1}) (\hat{P}_{\eta t} - \hat{P}_{\nu t}) \label{eq:reg-ll-total-expense-level-2}
 \end{align}
 
-Equation \ref{eq:reg-ll-total-expense-level-2} shows that the distance between the regional consumption and the good $\eta$ consumption is proportional to the distance between the variations of both regional price levels.
+Equation \ref{eq:reg-ll-total-expense-level-2} shows that the distance between the regional consumption and the good $\eta$ consumption is proportional to the distance between the variations of both regional price levels.	
+	
+\end{comment}
+
+
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -1603,12 +1620,12 @@ Log-linearize \ref{eq:reg-monetary-shock}:
 
 Log-linearize \ref{eq:reg-market-clearing-condition-Yt}:
 \begin{alignat}{2}
-	Y_{t} &= \sum_{\eta=1}^{2} Y_{\eta t} \tag{\ref{eq:reg-market-clearing-condition-Yt}} \\
+	Y_{t} &= Y_{1 t} + Y_{2 t} \tag{\ref{eq:reg-market-clearing-condition-Yt}} \\
 	Y (1 +\hat{Y}_{t}) &= Y_{1} (1 +\hat{Y}_{1t}) + Y_{2} (1 +\hat{Y}_{2t}) \implies \nonumber \\
 	\hat{Y}_{t} &= \frac{Y_{1}}{Y} \hat{Y}_{1t} + \frac{Y_{2}}{Y} \hat{Y}_{2t} \label{eq:reg-ll-market-clearing-condition-Yt-2}
 \end{alignat}
 
-Define regional production weights $\left[ \begin{smallmatrix} \theta_{Y1} & (1-\theta_{Y1}) \end{smallmatrix} \right] $ in the production total:
+Define the regional weights $\left[ \begin{smallmatrix} \theta_{Y1} & (1-\theta_{Y1}) \end{smallmatrix} \right] $ in the production total:
 \begin{align}
 	\begin{bmatrix}
 		\theta_{Y1} & (1-\theta_{Y1})
@@ -1627,33 +1644,27 @@ Substitute \ref{eq:reg-ss-Y1-Y2-weight-in-Y} in \ref{eq:reg-ll-market-clearing-c
 
 \subsubsection*{Regional Market Clearing Condition}
 
-Log-linearize \ref{eq:reg-total-yn}:
+Log-linearize \ref{eq:reg-regional-demand}:
 \begin{align}
-	Y_{\eta t} &= C_{\eta \eta t} + C_{\eta \nu t} + I_{\eta t} \implies \tag{\ref{eq:reg-total-yn}} \\
-	Y_{\eta} (1 +\hat{Y}_{\eta t}) &= C_{\eta \eta} (1 +\hat{C}_{\eta \eta t}) + C_{\eta \nu} (1 +\hat{C}_{\eta \nu t}) + I_{\eta} (1 +\hat{I}_{\eta t}) \implies \nonumber \\
-	\hat{Y}_{\eta t} &= \frac{C_{\eta \eta}}{Y_{\eta}} \hat{C}_{\eta \eta t} + \frac{C_{\eta \nu}}{Y_{\eta}} \hat{C}_{\eta \nu t} + \frac{I_{\eta}}{Y_{\eta}} \hat{I}_{\eta t} \label{eq:reg-ll-total-yn}
+	Y_{\eta t} &= C_{\eta 1 t} + C_{\eta 2 t} + I_{\eta t} \implies \tag{\ref{eq:reg-regional-demand}} \\
+	Y_{\eta} (1 +\hat{Y}_{\eta t}) &= C_{\eta 1} (1 +\hat{C}_{\eta 1 t}) + C_{\eta 2} (1 +\hat{C}_{\eta 2 t}) + I_{\eta} (1 +\hat{I}_{\eta t}) \implies \nonumber \\
+	\hat{Y}_{\eta t} &= \frac{C_{\eta 1}}{Y_{\eta}} \hat{C}_{\eta 1 t} + \frac{C_{\eta 2}}{Y_{\eta}} \hat{C}_{\eta 2 t} + \frac{I_{\eta}}{Y_{\eta}} \hat{I}_{\eta t} \label{eq:reg-ll-total-yn}
 \end{align}
 
-Substitute \ref{eq:reg-ll-Cnn-equals-Cnv} in \ref{eq:reg-ll-total-yn}:
-\begin{align}
-	\hat{Y}_{\eta t} &= \frac{C_{\eta \eta} + C_{\eta \nu}}{Y_{\eta}} \hat{C}_{\eta \eta t} + \frac{I_{\eta}}{Y_{\eta}} \hat{I}_{\eta t} \label{eq:reg-ll-total-yn-2}
-\end{align}
-
-
-Define the investment and consumption weights $\left[ \begin{smallmatrix} \theta_{I\eta} & (1 - \theta_{I\eta}) \end{smallmatrix} \right] $ in the regional production:
+Define the consumption and investment weights $\left[ \begin{smallmatrix} \theta_{C\eta 1} & \theta_{C\eta 2} & (1 - \theta_{C\eta 1} - \theta_{C\eta 2}) \end{smallmatrix} \right] $ in the regional production:
 \begin{align}
 	\label{eq:reg-ss-C-I-weight-in-Y}
 	\begin{bmatrix}
-		\theta_{I\eta} & (1 - \theta_{I\eta})
+		\theta_{C\eta 1} & \theta_{C\eta 2} & (1 - \theta_{C\eta 1} - \theta_{C\eta 2})
 	\end{bmatrix} \coloneq 
 	\begin{bmatrix}
-		\frac{I_{\eta}}{Y} & \frac{C_{\eta \eta} + C_{\eta \nu}}{Y_{\eta}}
+		\frac{C_{\eta 1}}{Y_{\eta}} & \frac{C_{\eta 2}}{Y_{\eta}} & \frac{I_{\eta}}{Y_{\eta}}
 	\end{bmatrix}
 \end{align}
 
-Substitute \ref{eq:reg-ss-C-I-weight-in-Y} in \ref{eq:reg-ll-total-yn-2}:
+Substitute \ref{eq:reg-ss-C-I-weight-in-Y} in \ref{eq:reg-ll-total-yn}:
 \begin{align}
-	\hat{Y}_{\eta t} &= (1 - \theta_{I\eta}) \hat{C}_{\eta \eta t} + \theta_{I\eta} \hat{I}_{\eta t} \label{eq:reg-ll-total-yn-3}
+	\hat{Y}_{\eta t} &= \theta_{C\eta 1} \hat{C}_{\eta 1 t} + \theta_{C\eta 2} \hat{C}_{\eta 2 t} + (1 - \theta_{C\eta 1} - \theta_{C\eta 2}) \hat{I}_{\eta t} \label{eq:reg-ll-total-yn-2}
 \end{align}
 
 \newpage
@@ -1666,7 +1677,7 @@ Substitute \ref{eq:reg-ss-C-I-weight-in-Y} in \ref{eq:reg-ll-total-yn-2}:
 
 \subsubsection*{Log-linear Model Structure}
 
-The log-linear model is a square system of 29 variables and 29 equations, summarized as follows:
+The log-linear model is a square system of 31 variables and 31 equations, summarized as follows:
 
 {\singlespacing
 
@@ -1675,7 +1686,7 @@ The log-linear model is a square system of 29 variables and 29 equations, summar
 	\item Variables:
 	\[
 	\begin{matrix}
-		\hat{C}_{\eta} & \hat{C}_{\eta \eta} & \hat{L}_{\eta} & \hat{K}_{\eta} & \hat{\mathscr{E}}_{\eta} & \hat{Y} & \hat{Y}_{\eta} & \hat{P} & \hat{P}_{\eta} \\ \hat{I}_{\eta} & \hat{R} & \hat{R}_{K} & \hat{W} & \hat{\pi} & \hat{\pi}_{\eta} & \hat{\lambda}_{\eta} & \hat{Z}_{A\eta} & \hat{Z}_M
+		\hat{C}_{\eta} & \hat{C}_{\eta 1} & \hat{C}_{\eta 2} & \hat{L}_{\eta} & \hat{K}_{\eta} & \hat{\mathscr{E}}_{\eta} & \hat{Y} & \hat{Y}_{\eta} & \hat{P} & \hat{P}_{\eta} \\ \hat{I}_{\eta} & \hat{R} & \hat{R}_{K} & \hat{W} & \hat{\pi} & \hat{\pi}_{\eta} & \hat{\lambda}_{\eta} & \hat{Z}_{A\eta} & \hat{Z}_M &
 	\end{matrix} 
 	\]
 	
@@ -1698,27 +1709,36 @@ The log-linear model is a square system of 29 variables and 29 equations, summar
 			\hat{K}_{\eta, t+1} &= (1-\delta) \hat{K}_{\eta t} + \delta \hat{I}_{\eta t} \tag{\ref{eq:reg-ll-law-of-motion-for-capital}}
 		\end{alignat}
 		
-		\item Variation of Regional Consumption and Prices
+		\item Regional Levels of Consumption and Prices
 		\begin{align}
-			\hat{C}_{\eta t} - \hat{C}_{\eta \eta t} &= (1 -\omega_{\eta}) (\hat{P}_{\eta t} - \hat{P}_{\nu t}) \tag{\ref{eq:reg-ll-total-expense-level-2}}
+			\hat{C}_{\eta 1 t} - \hat{C}_{\eta 2 t} &= \hat{P}_{2 t} - \hat{P}_{1 t} \tag{\ref{eq:reg-ll-regional-consumption-and-prices}}
+		\end{align}
+		
+		\item Total Expenses
+		\begin{align}
+			\hat{\mathscr{E}}_{\eta t} &= \hat{C}_{\eta t} + \omega_{\eta 1} \hat{P}_{1 t} + (1 -\omega_{\eta 1}) \hat{P}_{2 t} \tag{\ref{eq:reg-ll-total-expense-level}}
 		\end{align}
 
-
 \begin{comment}
+	
+		\item Variation of Regional Consumption and Prices
+		\begin{align}
+			\hat{C}_{\eta t} - \hat{C}_{\eta 1 t} &= (1 -\omega_{\eta 1}) (\hat{P}_{\eta t} - \hat{P}_{\nu t}) \tag{\ref{eq:reg-ll-total-expense-level-2}}
+		\end{align}
 
 		\item Regional Consumption of good $\eta$
 		\begin{alignat}{2}
-			\hat{C}_{\eta \eta t} &= \hat{\mathscr{E}}_{\eta t} - \hat{P}_{\eta t} \tag{\ref{eq:reg-ll-Cn-Cn-2}}
+			\hat{C}_{\eta 1 t} &= \hat{\mathscr{E}}_{\eta t} - \hat{P}_{\eta t} \tag{\ref{eq:reg-ll-Cn-Cn-2}}
 		\end{alignat}
 
 		\item Regional Consumption of good $\nu$
 		\begin{alignat}{2}
-			\hat{C}_{\eta \nu t} &= \hat{\mathscr{E}}_{\eta t} - \hat{P}_{\eta t} \tag{\ref{eq:reg-ll-Cn-Cv-2}}
+			\hat{C}_{\eta 2 t} &= \hat{\mathscr{E}}_{\eta t} - \hat{P}_{\eta t} \tag{\ref{eq:reg-ll-Cn-Cv-2}}
 		\end{alignat}
 
 		\item Price Composition of Consumption Bundle
 		\begin{alignat}{2}
-			\hat{\mathscr{E}}_{\eta t} &= \hat{C}_{\eta t} + \omega_{\eta} \hat{P}_{\eta t} + (1 -\omega_{\eta}) \hat{P}_{\nu t} \tag{\ref{eq:reg-ll-total-expense-level}}
+			\hat{\mathscr{E}}_{\eta t} &= \hat{C}_{\eta t} + \omega_{\eta 1} \hat{P}_{\eta t} + (1 -\omega_{\eta 1}) \hat{P}_{\nu t} \tag{\ref{eq:reg-ll-total-expense-level}}
 		\end{alignat}
 	
 \end{comment}
@@ -1786,7 +1806,7 @@ The log-linear model is a square system of 29 variables and 29 equations, summar
 		
 		\item Regional Market Clearing Condition
 		\begin{align}
-			\hat{Y}_{\eta t} &= (1 - \theta_{I\eta}) \hat{C}_{\eta \eta t} + \theta_{I\eta} \hat{I}_{\eta t} \tag{\ref{eq:reg-ll-total-yn-3}}
+			\hat{Y}_{\eta t} &= \theta_{C\eta 1} \hat{C}_{\eta 1 t} + \theta_{C\eta 2} \hat{C}_{\eta 2 t} + (1 - \theta_{C\eta 1} - \theta_{C\eta 2}) \hat{I}_{\eta t} \tag{\ref{eq:reg-ll-total-yn-2}}
 		\end{align}
 		
 	\end{enumerate}
@@ -1847,12 +1867,12 @@ The log-linear model is a square system of 29 variables and 29 equations, summar
 			
 			\item Real Marginal Cost:
 			\begin{align}
-				\hat{\lambda}_t &= {\alpha_{\eta}} \hat{R}_t + (1- {\alpha_{\eta}}) \hat{W}_t - \hat{Z}_{A\nu t} - \hat{P}_t \tag{\ref{eq:reg-ll-int-good-firm-MC-3}}
+				\hat{\lambda}_t &= {\alpha_{\eta}} \hat{R}_t + (1- {\alpha_{\eta}}) \hat{W}_t - \hat{Z}_{A\eta t} - \hat{P}_t \tag{\ref{eq:reg-ll-int-good-firm-MC-3}}
 			\end{align}
 			
 			\item Production Function:
 			\begin{align}
-				\hat{Y}_t &= \hat{Z}_{A\nu t} + {\alpha_{\eta}} \hat{K}_t + (1-{\alpha_{\eta}}) \hat{L}_t \tag{\ref{eq:reg-ll-final-goods-firm-bundle-rule-3}}
+				\hat{Y}_t &= \hat{Z}_{A\eta t} + {\alpha_{\eta}} \hat{K}_t + (1-{\alpha_{\eta}}) \hat{L}_t \tag{\ref{eq:reg-ll-final-goods-firm-bundle-rule-3}}
 			\end{align}
 			
 			%		\item Capital Demand:
@@ -1885,7 +1905,7 @@ The log-linear model is a square system of 29 variables and 29 equations, summar
 			
 			\item Productivity Shock:
 			\begin{align}
-				\hat{Z}_{A\nu t} &= \rho_{A\eta} \hat{Z}_{A,t-1} + \varepsilon_{A\eta} \tag{\ref{eq:reg-ll-productivity-shock}}
+				\hat{Z}_{A\eta t} &= \rho_{A\eta} \hat{Z}_{A,t-1} + \varepsilon_{A\eta} \tag{\ref{eq:reg-ll-productivity-shock}}
 			\end{align}
 			
 			\item Monetary Shock:
