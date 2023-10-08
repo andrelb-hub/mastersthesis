@@ -64,7 +64,7 @@ model_local_variable
 % steady state variables used as locals:
   Pss ZA1ss ZA2ss ZMss piss pi1ss pi2ss Rss RKss LAMBDAss 
   Wss a1ss a2ss b1ss b2ss Y1ss Y2ss I1ss I2ss C1ss C2ss 
-  E1ss E2ss C11ss C21ss C21ss C22ss K1ss K2ss L1ss L2ss
+  E1ss E2ss C11ss C21ss C12ss C22ss K1ss K2ss L1ss L2ss
 
 % -------------------------------------------------- %
 % EXOGENOUS VARIABLES                                %
@@ -100,7 +100,7 @@ rhoA2   ${\rho_A2}$     (long_name='autoregressive parameter of productivity in 
 rhoM    ${\rho_M}$      (long_name='autoregressive parameter of monetary policy')
 sig     ${\sigma}$      (long_name='relative risk aversion coefficient')
 phi     ${\phi}$        (long_name='relative labor weight in utility')
-var     ${\varphi}$     (long_name='marginal disutility of labor supply')
+varp    ${\varphi}$     (long_name='marginal disutility of labor supply')
 psi     ${\psi}$        (long_name='elasticity of substitution between intermediate goods')
 ome11   ${\omega_11}$   (long_name='weight of good 1 in consumption composition of region 1')
 ome21   ${\omega_21}$   (long_name='weight of good 1 in consumption composition of region 2')
@@ -137,7 +137,7 @@ rhoA2   = 0.95 ; % autoregressive parameter of productivity in region 2
 rhoM    = 0.9  ; % autoregressive parameter of monetary policy
 sig     = 2    ; % relative risk aversion coefficient
 phi     = 1    ; % relative labor weight in utility
-var     = 1.5  ; % marginal disutility of labor supply
+varp    = 1.5  ; % marginal disutility of labor supply
 psi     = 8    ; % elasticity of substitution between intermediate goods
 ome11   = 0.8  ; % weight of good 1 in consumption composition of region 1
 ome21   = 0.7  ; % weight of good 1 in consumption composition of region 2
