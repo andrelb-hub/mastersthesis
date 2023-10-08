@@ -524,13 +524,26 @@ and $\pi_t$ is the gross inflation rate, defined by:
 	\label{eq:reg-gross-inflation-rate}
 \end{align}
 
+\subsection{aqui}
+
 where $P_t$ is the national price level, defined by:
 \begin{align}
-	P_t = \theta_{P1} P_{1t} + (1 -\theta_{P1}) P_{2t}
-	\label{eq:national-price-level}
+	P_{t} Y_{t} &= P_{1t} Y_{1t} + P_{2t} Y_{2t} \implies \nonumber \\
+	P_{t} &= \frac{P_{1t} Y_{1t} + P_{2t} Y_{2t}}{Y_{t}} \label{eq:national-price-level}
 \end{align}
 
-where $\theta_{P1}$ and $(1-\theta_{P1})$ are the price level weights in the national price level of regions $1$ and $2$, respectively.
+\begin{comment}
+	\begin{align}
+		P_{t} Y_{t} &= P_{1t} Y_{1t} + P_{2t} Y_{2t} \implies \nonumber \\
+		P_{t} &= \frac{Y_{1t}}{Y_{t}} P_{1t} + \frac{Y_{2t}}{Y_{t}} P_{2t} \implies \nonumber \\
+		P_{t} &= \theta_{P1} P_{1t} + (1 -\theta_{P1}) P_{2t} %\label{eq:national-price-level}
+	\end{align}
+	
+	where $\theta_{P1}$ and $(1-\theta_{P1})$ are the price level weights of regions 1 and 2 in the national price level composition, respectively:
+	\begin{align}
+		\left\langle \begin{matrix} \theta_{P1} & (1-\theta_{P1}) \end{matrix} \right\rangle \coloneq \left\langle \begin{matrix} \frac{Y_{1t}}{Yt} & \frac{Y_{2t}}{Yt} \end{matrix} \right\rangle \label{eq:reg-ss-P1-P2-weight-in-P}
+	\end{align}
+\end{comment}
 
 \subsubsection*{Regional Inflation}
 
@@ -729,7 +742,7 @@ The model is composed of the preview solutions, forming a square system of 41 va
 		
 		\item National Price Level:
 		\begin{align}
-			P_t = \theta_{P1} P_{1t} + (1 -\theta_{P1}) P_{2t} \tag{\ref{eq:national-price-level}}
+			P_{t} &= \frac{P_{1t} Y_{1t} + P_{2t} Y_{2t}}{Y_{t}} \tag{\ref{eq:national-price-level}} % P_{t} = \theta_{P1} P_{1t} + (1 -\theta_{P1}) P_{2t}
 		\end{align}
 		
 		\item Regional Gross Inflation Rate:
@@ -772,6 +785,8 @@ The model is composed of the preview solutions, forming a square system of 41 va
 % --------------------------------------------------
 % STEADY STATE
 % --------------------------------------------------
+
+\subsection{aqui}
 
 \subsubsection{Steady State}
 
@@ -909,7 +924,7 @@ The steady state of a variable is defined by its constancy through time. For any
 	
 	\item National Price Level:
 	\begin{align}
-		P_t = \theta_{P1} P_{1t} + (1 -\theta_{P1}) P_{2t} \implies P = \theta_{P1} P_{1} + (1 -\theta_{P1}) P_{2} \label{eq:ss-national-price-level}
+		P_t &= \frac{P_{1t} Y_{1t} + P_{2t} Y_{2t}}{Y_{t}} \implies P = \frac{P_{1} Y_{1} + P_{2} Y_{2}}{Y_{}} \label{eq:ss-national-price-level} % P_{t} = \theta_{P1} P_{1t} + (1 -\theta_{P1}) P_{2t} \implies P = \theta_{P1} P_{1} + (1 -\theta_{P1}) P_{2} 
 	\end{align}
 	
 	\item Regional Gross Inflation Rate:
@@ -951,65 +966,73 @@ The steady state of a variable is defined by its constancy through time. For any
 
 \subsubsection*{Variables at Steady State}
 
-% All endogenous prices $\{P, R, W, MC\}$ and quantities $\{C, I, Y, K, L\}$
+	For the steady state solution, all endogenous variables will be determined with respect to the parameters. It's assumed that one regional price and one productivity levels are normalized to one:\footnote{where $\vec{\bm{1}}$ is the unit vector.}
+	\begin{align}
+		\langle \begin{smallmatrix} P_{1} & Z_{A1} \end{smallmatrix} \rangle = \vec{\bm{1}} \label{eq:reg-ss-p1-za1}
+	\end{align}
+	
+	From \ref{eq:reg-ss-monetary-policy}, \ref{eq:reg-ss-gross-inflation-rate} and \ref{eq:ss-regional-inflation}, the monetary shock, the national and regional gross inflation rates are:
+	\begin{align}
+		\langle \begin{matrix} Z_{M} & \pi & \pi_{\eta} \end{matrix} \rangle  = \vec{\bm{1}}
+	\end{align}
+	
+	From \ref{eq:reg-ss-productivity-shock} and \ref{eq:reg-ss-monetary-shock}, the productivity and monetary shocks are:
+	\begin{align}
+		\langle \begin{matrix} \varepsilon_{A\eta} & \varepsilon_{M} \end{matrix} \rangle = \vec{\bm{0}} \label{eq:reg-ss-epsilon}
+	\end{align}
+	
+	From \ref{eq:reg-ss-bonds-euler-equation}, the return on bonds is:
+	\begin{align}
+		\beta &= \frac{1}{(1 + R)} \implies \tag{\ref{eq:reg-ss-bonds-euler-equation}} \\
+		R &= \frac{1}{\beta} - 1 \label{eq:reg-ss-R}
+	\end{align}
+	
+	From \ref{eq:reg-ss-capital-euler-equation}, the return on capital $R_K$ is:
+	\begin{align}
+		1 &= \beta \left[ (1-\delta) + \frac{R_K}{P_{\eta}} \right] \implies \tag{\ref{eq:reg-ss-capital-euler-equation}} \\
+		R_K &= P_{\eta} \left[ \frac{1}{\beta} - (1-\delta) \right] \label{eq:reg-ss-RK}
+	\end{align}
 
-For the steady state solution, all endogenous variables will be determined with respect to the parameters. It's assumed that the regional price and the productivity levels are normalized to one: $\langle \begin{smallmatrix} P_{1} & P_{2} & Z_{A1} & Z_{A2} \rangle \end{smallmatrix} = \vec{\bm{1}}$.\footnote{where $\vec{\bm{1}}$ is the unit vector.}
+	In \ref{eq:reg-ss-RK}, write the regional equations by substituting $\eta$ with $\{1,2\}$ and then divide one equation by the other:
+	\begin{align}
+		\frac{R_K}{R_K} &= \frac{P_{1} \left[ \frac{1}{\beta} - (1-\delta) \right]}{P_{2} \left[ \frac{1}{\beta} - (1-\delta) \right]} \implies \nonumber \\
+		1 &= \frac{P_{1}}{P_{2}} \implies P_{1} = P_{2} \label{eq:reg-ss-p1-p2}
+	\end{align}
 
-From \ref{eq:reg-ss-general-price-level}, the regional optimal price $P_{\eta}^{\ast}$ is:
+From \ref{eq:reg-ss-general-price-level} and \ref{eq:reg-ss-p1-p2}, the regional optimal price $P_{\eta}^{\ast}$ is:
 \begin{align}
-	P_{\eta}^{\ast} = P_{\eta} \tag{\ref{eq:reg-ss-general-price-level}}
+	P_{\eta}^{\ast} = P_{\eta} \implies \langle \begin{matrix} P_{1}^{\ast} & P_{2}^{\ast} \end{matrix} \rangle = \langle \begin{matrix} P_{1} & P_{2} \end{matrix} \rangle = \langle \begin{matrix} P_{1} & P_{1} \end{matrix} \rangle \tag{\ref{eq:reg-ss-general-price-level}}
 \end{align}
 
-From \ref{eq:ss-national-price-level}, the national price level is:
-\begin{align}
-	P &= \theta_{P1} P_{1} + (1 -\theta_{P1}) P_{2} \implies \theta_{P1} P_{1} + (1 -\theta_{P1}) P_{1} \implies \tag{\ref{eq:ss-national-price-level}} \\
-	P &= P_{1} = P_{2}
-\end{align}
+Substitute \ref{eq:reg-ss-p1-p2} and then \ref{eq:reg-ss-total-yn} in \ref{eq:ss-national-price-level} for the national price level:
+	\begin{align}
+		P_{} &= \frac{P_{1} Y_{1} + P_{2} Y_{2}}{Y_{}} = \frac{P_{1} Y_{1} + P_{1} Y_{2}}{Y_{}} \tag{\ref{eq:ss-national-price-level}} \implies \nonumber \\
+		P_{} &= P_{1} = P_{2} \label{eq:reg-ss-P1-P2-P}
+	\end{align}
 
-From \ref{eq:reg-ss-price-eta-level}, price composition of consumption bundle is:
+Substitute \ref{eq:reg-ss-P1-P2-P} in \ref{eq:reg-ss-price-eta-level} for the price composition of consumption bundle $\te[]$:
 \begin{align}
 	\te[] &= C_{\eta} \left[ \frac{P_{1}}{\omega_{\eta 1}} \right]^{\omega_{\eta 1}} \left[ \frac{P_{2}}{1 -\omega_{\eta 1}} \right]^{1 -\omega_{\eta 1}} = C_{\eta} \left[ \frac{P_{}}{\omega_{\eta 1}} \right]^{\omega_{\eta 1}} \left[ \frac{P_{}}{1 -\omega_{\eta 1}} \right]^{1 -\omega_{\eta 1}} \implies \tag{\ref{eq:reg-ss-price-eta-level}} \\
 	\te[] &= \frac{P_{} C_{\eta}}{\omega_{\eta 1}^{\omega_{\eta 1}} (1 -\omega_{\eta 1})^{1 -\omega_{\eta 1}}} \label{eq:reg-ss-te}
 \end{align}
 
-From \ref{eq:reg-ss-gross-inflation-rate} and \ref{eq:ss-regional-inflation}, the national and regional gross inflation rates are:
-\begin{align}
-	\langle \begin{matrix} \pi & \pi_{\eta} \end{matrix} \rangle  = \vec{\bm{1}}
-\end{align}
-
-From \ref{eq:reg-ss-monetary-policy}, the monetary shock is:
-\begin{align}
-	Z_{M} = 1
-\end{align}
-
-From \ref{eq:reg-ss-productivity-shock} and \ref{eq:reg-ss-monetary-shock}, the productivity and monetary shocks are:
-\begin{align}
-	\langle \begin{matrix} \varepsilon_{A\eta} & \varepsilon_{M} \end{matrix} \rangle = \vec{\bm{0}} \label{eq:reg-ss-epsilon}
-\end{align}
-
-From \ref{eq:reg-ss-bonds-euler-equation}, the return on bonds is:
-\begin{align}
-	\beta &= \frac{1}{(1 + R)} \implies \tag{\ref{eq:reg-ss-bonds-euler-equation}} \\
-	R &= \frac{1}{\beta} - 1 \label{eq:reg-ss-R}
-\end{align}
-
-From \ref{eq:reg-ss-capital-euler-equation}, the return on capital $R_K$ is:
-\begin{align}
-	1 &= \beta \left[ (1-\delta) + \frac{R_K}{P_{\eta}} \right] \implies \tag{\ref{eq:reg-ss-capital-euler-equation}} \\
-	R_K &= P_{} \left[ \frac{1}{\beta} - (1-\delta) \right] \label{eq:reg-ss-RK}
-\end{align}
-
-From \ref{eq:reg-ss-int-good-firm-optimal-price-FOC-3} and \ref{eq:reg-ss-general-price-level}, the marginal cost $\Lambda_{\eta}$ is:
+Substitute \ref{eq:reg-ss-general-price-level} and \ref{eq:reg-ss-P1-P2-P} in \ref{eq:reg-ss-int-good-firm-optimal-price-FOC-3} for the marginal cost $\Lambda_{\eta}$:
 \begin{align}
 	P_{\eta}^{\ast} &= \frac{\psi}{\psi-1} \Lambda_{\eta} \implies \tag{\ref{eq:reg-ss-int-good-firm-optimal-price-FOC-3}} \\
-	\Lambda_{\eta} &= P_{} \frac{\psi-1}{\psi} \label{eq:reg-ss-marginal-cost}
+	\Lambda_{\eta} &= P_{} \frac{\psi-1}{\psi} = \Lambda_{} \label{eq:reg-ss-marginal-cost}
 \end{align}
 
-From \ref{eq:reg-ss-int-good-firm-MC-2}, the nominal wage $W$ is:
+Substitute \ref{eq:reg-ss-marginal-cost} in \ref{eq:reg-ss-int-good-firm-MC-2} for the nominal wage $W$ in terms of region 1:
 \begin{alignat}{2}
 	\Lambda_{\eta} &= \frac{1}{Z_{A\eta}} \left( \frac{R_K}{{\alpha_{\eta}}} \right)^{{\alpha_{\eta}}} \left( \frac{W}{1-{\alpha_{\eta}}} \right)^{1-{\alpha_{\eta}}} &\implies \tag{\ref{eq:reg-ss-int-good-firm-MC-2}} \\ 
-	W &= (1-{\alpha_{\eta}}) \left[ \Lambda_{\eta} Z_{A\eta} \left( \frac{{\alpha_{\eta}}}{R_K} \right)^{{\alpha_{\eta}}} \right]^\frac{1}{1-{\alpha_{\eta}}} &\, \label{eq:reg-ss-nominal-wage}
+	W &= (1-{\alpha_{1}}) \left[ \Lambda_{} Z_{A1} \left( \frac{{\alpha_{1}}}{R_K} \right)^{{\alpha_{1}}} \right]^\frac{1}{1-{\alpha_{1}}} & \label{eq:reg-ss-nominal-wage}
 \end{alignat}
+
+Substitute \ref{eq:reg-ss-nominal-wage} in \ref{eq:reg-ss-int-good-firm-MC-2} for the technology level of region 2, $Z_{A2}$:
+\begin{align}
+	\Lambda_{\eta} &= \frac{1}{Z_{A\eta}} \left( \frac{R_K}{{\alpha_{\eta}}} \right)^{{\alpha_{\eta}}} \left( \frac{W}{1-{\alpha_{\eta}}} \right)^{1-{\alpha_{\eta}}} \implies \tag{\ref{eq:reg-ss-int-good-firm-MC-2}} \\
+	Z_{A2} &= \frac{1}{\Lambda_{}} \left( \frac{R_K}{{\alpha_{2}}} \right)^{{\alpha_{2}}} \left( \frac{W}{1-{\alpha_{2}}} \right)^{1-{\alpha_{2}}} \label{eq:reg-ss-za2}
+\end{align}
 
 In steady state, prices are the same ($P_{\eta} = P_{\eta}^{\ast}$), resulting in a gross inflation level of one ($\pi_{\eta} = 1$), and all firms producing the same output level ($Y_{\eta j} = Y_{\eta}$) due to the price parity \cite[Lecture 13, p.12]{solis-garcia_ucb_2022}. For this reason, they all demand the same amount of factors ($K_{\eta}, L_{\eta}$), and equations \ref{eq:reg-ss-int-good-firm-production-function}, \ref{eq:reg-ss-int-good-firm-FOC-Kt} and \ref{eq:reg-ss-int-good-firm-FOC-Lt} become:
 \begin{align}
@@ -1104,7 +1127,7 @@ Substitute \ref{eq:reg-ss-investment}, \ref{eq:reg-ss-C1-Cn-3} and \ref{eq:reg-s
 		\\
 		R_K &= P_{} \left[ \frac{1}{\beta} - (1-\delta) \right] \tag{\ref{eq:reg-ss-RK}}
 		\\
-		\Lambda_{\eta} &= P_{} \frac{\psi-1}{\psi} \tag{\ref{eq:reg-ss-marginal-cost}}
+		\Lambda_{\eta} &= P_{\eta} \frac{\psi-1}{\psi} \tag{\ref{eq:reg-ss-marginal-cost}}
 		\\
 		W &= (1-{\alpha_{\eta}}) \left[ \Lambda_{\eta} Z_{A\eta} \left( \frac{{\alpha_{\eta}}}{R_K} \right)^{{\alpha_{\eta}}} \right]^\frac{1}{1-{\alpha_{\eta}}} \tag{\ref{eq:reg-ss-nominal-wage}}
 		\\
@@ -1589,10 +1612,16 @@ Log-linearize \ref{eq:reg-gross-inflation-rate} and define the level deviation o
 
 Log-linearize \ref{eq:national-price-level}:
 \begin{alignat}{2}
+	P_{t} Y_{t} &= P_{1t} Y_{1t} + P_{2t} Y_{2t} & \implies \tag{\ref{eq:national-price-level}} \\ 
+	P Y (1 + \hat{P}_{t} + \hat{Y}_{t}) &= P_{1} Y_{1} (1 + \hat{P}_{1t} + \hat{Y}_{1t}) + P_{2} Y_{2} (1 + \hat{P}_{2t} + \hat{Y}_{2t}) &\implies \nonumber \\
+	P Y (\hat{P}_{t} + \hat{Y}_{t}) &= P_{1} Y_{1} (\hat{P}_{1t} + \hat{Y}_{1t}) + P_{2} Y_{2} (\hat{P}_{2t} + \hat{Y}_{2t}) \label{eq:reg-ll-national-price-level}
+\end{alignat}
+
+\begin{comment}
 	P_{t} &= \theta_{P1} P_{1t} + (1 -\theta_{P1}) P_{2t} &\implies \tag{\ref{eq:national-price-level}} \\ 
 	P (1 +\hat{P}_{t}) &= \theta_{P1} P_{1} (1 +\hat{P}_{1t}) + (1 -\theta_{P1}) P_{2} (1 +\hat{P}_{2t}) &\implies \nonumber \\
-	\hat{P}_{t} &= \theta_{P1} \hat{P}_{1t} + (1 -\theta_{P1}) \hat{P}_{2t} \label{eq:ll-national-price-level}
-\end{alignat}
+	\hat{P}_{t} &= \theta_{P1} \hat{P}_{1t} + (1 -\theta_{P1}) \hat{P}_{2t} % \label{eq:reg-ll-national-price-level}	
+\end{comment}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -1775,7 +1804,7 @@ The log-linear model is a square system of 31 variables and 31 equations, summar
 		
 		\item National Price Level
 		\begin{alignat}{2}
-			\hat{P}_{t} &= \theta_{P1} \hat{P}_{1t} + (1 -\theta_{P1}) \hat{P}_{2t} \tag{\ref{eq:ll-national-price-level}}
+			\hat{P}_{t} &= \theta_{P1} \hat{P}_{1t} + (1 -\theta_{P1}) \hat{P}_{2t} \tag{\ref{eq:reg-ll-national-price-level}}
 		\end{alignat}
 		
 		\item Productivity Shock
