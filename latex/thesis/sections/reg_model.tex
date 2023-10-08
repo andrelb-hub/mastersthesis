@@ -524,8 +524,6 @@ and $\pi_t$ is the gross inflation rate, defined by:
 	\label{eq:reg-gross-inflation-rate}
 \end{align}
 
-\subsection{aqui}
-
 where $P_t$ is the national price level, defined by:
 \begin{align}
 	P_{t} Y_{t} &= P_{1t} Y_{1t} + P_{2t} Y_{2t} \implies \nonumber \\
@@ -786,9 +784,7 @@ The model is composed of the preview solutions, forming a square system of 41 va
 % STEADY STATE
 % --------------------------------------------------
 
-\subsection{aqui}
-
-\subsubsection{Steady State}
+\subsection{Steady State}
 
 The steady state of a variable is defined by its constancy through time. For any given variable $X_t$, it is in steady state if $\mathbb{E}_t X_{t+1} = X_t = X_{t-1} = X_{ss}$ \cite[p.41]{costa_junior_understanding_2016}. For conciseness, the $ss$ index representing the steady state will be omitted, so that $X \coloneq X_{ss}$. The model in steady state is:
 
@@ -964,11 +960,11 @@ The steady state of a variable is defined by its constancy through time. For any
 % STEADY STATE SOLUTION
 % --------------------------------------------------
 
-\subsubsection*{Variables at Steady State}
+\subsubsection{Variables at Steady State}
 
-	For the steady state solution, all endogenous variables will be determined with respect to the parameters. It's assumed that one regional price and one productivity levels are normalized to one:\footnote{where $\vec{\bm{1}}$ is the unit vector.}
+	For the steady state solution, all endogenous variables will be determined with respect to the parameters. It is assumed that one regional price level and one productivity level are normalized to one:\footnote{where $\vec{\bm{1}}$ is the unit vector.}
 	\begin{align}
-		\langle \begin{smallmatrix} P_{1} & Z_{A1} \end{smallmatrix} \rangle = \vec{\bm{1}} \label{eq:reg-ss-p1-za1}
+		\langle \begin{matrix} P_{1} & Z_{A1} \end{matrix} \rangle = \vec{\bm{1}} \label{eq:reg-ss-p1-za1}
 	\end{align}
 	
 	From \ref{eq:reg-ss-monetary-policy}, \ref{eq:reg-ss-gross-inflation-rate} and \ref{eq:ss-regional-inflation}, the monetary shock, the national and regional gross inflation rates are:
@@ -1037,22 +1033,22 @@ Substitute \ref{eq:reg-ss-nominal-wage} in \ref{eq:reg-ss-int-good-firm-MC-2} fo
 In steady state, prices are the same ($P_{\eta} = P_{\eta}^{\ast}$), resulting in a gross inflation level of one ($\pi_{\eta} = 1$), and all firms producing the same output level ($Y_{\eta j} = Y_{\eta}$) due to the price parity \cite[Lecture 13, p.12]{solis-garcia_ucb_2022}. For this reason, they all demand the same amount of factors ($K_{\eta}, L_{\eta}$), and equations \ref{eq:reg-ss-int-good-firm-production-function}, \ref{eq:reg-ss-int-good-firm-FOC-Kt} and \ref{eq:reg-ss-int-good-firm-FOC-Lt} become:
 \begin{align}
 	Y_{\eta} &= Z_{A\eta} K_{\eta}^{\alpha_{\eta}} L_{\eta}^{1 -{\alpha_{\eta}}} \label{eq:reg-ss-int-good-firm-production-function-2} \\	
-	K_{\eta} &= {\alpha_{\eta}} Y_{\eta} \frac{\Lambda_{\eta}}{R_K} \label{eq:reg-ss-int-good-firm-FOC-Kt-2} \\
-	L_{\eta} &= (1-{\alpha_{\eta}}) Y_{\eta} \frac{\Lambda_{\eta}}{W} \label{eq:reg-ss-int-good-firm-FOC-Lt-2}
+	K_{\eta} &= {\alpha_{\eta}} Y_{\eta} \frac{\Lambda_{}}{R_K} \label{eq:reg-ss-int-good-firm-FOC-Kt-2} \\
+	L_{\eta} &= (1-{\alpha_{\eta}}) Y_{\eta} \frac{\Lambda_{}}{W} \label{eq:reg-ss-int-good-firm-FOC-Lt-2}
 \end{align}
 	
 	Substitute \ref{eq:reg-ss-int-good-firm-FOC-Kt-2} in \ref{eq:reg-ss-law-of-motion-for-capital}:
 	\begin{align}
-		I_{\eta} &= \delta K_{\eta} \implies I_{\eta} = \delta {\alpha_{\eta}} \frac{\Lambda_{\eta}}{R_K} Y_{\eta} \implies \tag{\ref{eq:reg-ss-law-of-motion-for-capital}} \\
+		I_{\eta} &= \delta K_{\eta} \implies I_{\eta} = \delta {\alpha_{\eta}} \frac{\Lambda_{}}{R_K} Y_{\eta} \implies \tag{\ref{eq:reg-ss-law-of-motion-for-capital}} \\
 		I_{\eta} &= b_{\eta} Y_{\eta} \label{eq:reg-ss-investment} \\
-		& \text{where:} \quad b_{\eta} = \delta {\alpha_{\eta}} \frac{\Lambda_{\eta}}{R_K} \label{eq:reg-ss-b-eta}
+		& \text{where:} \quad b_{\eta} = \delta {\alpha_{\eta}} \frac{\Lambda_{}}{R_K} \label{eq:reg-ss-b-eta}
 	\end{align}
 	
 	Isolate $C_{\eta}$ in \ref{eq:reg-ss-household-labor-supply} and then substitute \ref{eq:reg-ss-te} and \ref{eq:reg-ss-int-good-firm-FOC-Lt-2}:
 	\begin{align}
 		\frac{\phi L_{\eta}^{\varphi}}{C_{\eta}^{1-\sigma}} &= \frac{W}{\te[]} \implies C_{\eta}^{\sigma -1} = \frac{W}{\te[] \phi L_{\eta}^{\varphi}} \implies \nonumber\\
 		C_{\eta} &= a_{\eta} Y_{\eta}^{\frac{-\varphi}{\sigma}} \label{eq:reg-ss-consumption} \\
-		& \text{where:} \quad a_{\eta} = \left[ \frac{W^{1 +\varphi} \omega_{\eta 1}^{\omega_{\eta 1}} (1 -\omega_{\eta 1})^{1 -\omega_{\eta 1}}}{\phi P_{} \left[ (1 -\alpha_{\eta}) \Lambda_{\eta} \right]^{\varphi}} \right]^{\frac{1}{\sigma}} \label{eq:reg-ss-a-eta}
+		& \text{where:} \quad a_{\eta} = \left[ \frac{W^{1 +\varphi} \omega_{\eta 1}^{\omega_{\eta 1}} (1 -\omega_{\eta 1})^{1 -\omega_{\eta 1}}}{\phi P_{} \left[ (1 -\alpha_{\eta}) \Lambda_{} \right]^{\varphi}} \right]^{\frac{1}{\sigma}} \label{eq:reg-ss-a-eta}
 	\end{align}
 
 	Substitute \ref{eq:reg-ss-consumption} in \ref{eq:reg-ss-te}:
@@ -1119,7 +1115,7 @@ Substitute \ref{eq:reg-ss-investment}, \ref{eq:reg-ss-C1-Cn-3} and \ref{eq:reg-s
 	\vspace*{-1cm}
 
 	\begin{align}
-		\vec{\bm{1}} &= \langle \begin{matrix} P & P_{\eta} & Z_{A\eta} & Z_{M} & \pi & \pi_{\eta} \end{matrix} \rangle \label{eq:reg-unity-vector}
+		\vec{\bm{1}} &= \langle \begin{matrix} P & P_{\eta} & Z_{A1} & Z_{M} & \pi & \pi_{\eta} \end{matrix} \rangle \label{eq:reg-unity-vector}
 		\\
 		\vec{\bm{0}} &= \langle \begin{matrix} \varepsilon_{A\eta} & \varepsilon_{M} \end{matrix} \rangle \tag{\ref{eq:reg-ss-epsilon}}
 		\\
@@ -1127,13 +1123,15 @@ Substitute \ref{eq:reg-ss-investment}, \ref{eq:reg-ss-C1-Cn-3} and \ref{eq:reg-s
 		\\
 		R_K &= P_{} \left[ \frac{1}{\beta} - (1-\delta) \right] \tag{\ref{eq:reg-ss-RK}}
 		\\
-		\Lambda_{\eta} &= P_{\eta} \frac{\psi-1}{\psi} \tag{\ref{eq:reg-ss-marginal-cost}}
+		\Lambda_{} &= P_{} \frac{\psi-1}{\psi} \tag{\ref{eq:reg-ss-marginal-cost}}
 		\\
-		W &= (1-{\alpha_{\eta}}) \left[ \Lambda_{\eta} Z_{A\eta} \left( \frac{{\alpha_{\eta}}}{R_K} \right)^{{\alpha_{\eta}}} \right]^\frac{1}{1-{\alpha_{\eta}}} \tag{\ref{eq:reg-ss-nominal-wage}}
+		W &= (1-{\alpha_{1}}) \left[ \Lambda_{} Z_{A1} \left( \frac{{\alpha_{1}}}{R_K} \right)^{{\alpha_{1}}} \right]^\frac{1}{1-{\alpha_{1}}} \tag{\ref{eq:reg-ss-nominal-wage}}
 		\\
-		a_{\eta} &= \left[ \frac{W^{1 +\varphi} \omega_{\eta 1}^{\omega_{\eta 1}} (1 -\omega_{\eta 1})^{1 -\omega_{\eta 1}}}{\phi P_{} \left[ (1 -\alpha_{\eta}) \Lambda_{\eta} \right]^{\varphi}} \right]^{\frac{1}{\sigma}} \tag{\ref{eq:reg-ss-a-eta}}
+		Z_{A2} &= \frac{1}{\Lambda_{}} \left( \frac{R_K}{{\alpha_{2}}} \right)^{{\alpha_{2}}} \left( \frac{W}{1-{\alpha_{2}}} \right)^{1-{\alpha_{2}}} \tag{\ref{eq:reg-ss-za2}}
 		\\
-		b_{\eta} &= \delta {\alpha_{\eta}} \frac{\Lambda_{\eta}}{R_K} \tag{\ref{eq:reg-ss-b-eta}}
+		a_{\eta} &= \left[ \frac{W^{1 +\varphi} \omega_{\eta 1}^{\omega_{\eta 1}} (1 -\omega_{\eta 1})^{1 -\omega_{\eta 1}}}{\phi P_{} \left[ (1 -\alpha_{\eta}) \Lambda_{} \right]^{\varphi}} \right]^{\frac{1}{\sigma}} \tag{\ref{eq:reg-ss-a-eta}}
+		\\
+		b_{\eta} &= \delta {\alpha_{\eta}} \frac{\Lambda_{}}{R_K} \tag{\ref{eq:reg-ss-b-eta}}
 		\\
 		Y_{\eta} &= \left[ \left( \frac{a_{1}}{1 - b_{1}} \right) \left( \frac{1}{\omega_{\eta 1}^{\omega_{\eta 1}} (1 - \omega_{\eta 1})^{1 - \omega_{\eta 1}}} \right) \right]^{\frac{\sigma}{\sigma + \varphi}} \tag{\ref{eq:reg-ss-total-yn-2}}
 		\\
@@ -1147,9 +1145,9 @@ Substitute \ref{eq:reg-ss-investment}, \ref{eq:reg-ss-C1-Cn-3} and \ref{eq:reg-s
 		\\
 		C_{\eta 2} &= \te[] \frac{1 -\omega_{\eta 1}}{P_{}} \tag{\ref{eq:reg-ss-C2-Cn-2}}
 		\\
-		K_{\eta} &= {\alpha_{\eta}} Y_{\eta} \frac{\Lambda_{\eta}}{R_K} \tag{\ref{eq:reg-ss-int-good-firm-FOC-Kt-2}}
+		K_{\eta} &= {\alpha_{\eta}} Y_{\eta} \frac{\Lambda_{}}{R_K} \tag{\ref{eq:reg-ss-int-good-firm-FOC-Kt-2}}
 		\\
-		L_{\eta} &= (1-{\alpha_{\eta}}) Y_{\eta} \frac{\Lambda_{\eta}}{W} \tag{\ref{eq:reg-ss-int-good-firm-FOC-Lt-2}}
+		L_{\eta} &= (1-{\alpha_{\eta}}) Y_{\eta} \frac{\Lambda_{}}{W} \tag{\ref{eq:reg-ss-int-good-firm-FOC-Lt-2}}
 	\end{align}
 
 		\begin{comment}
@@ -1161,11 +1159,11 @@ Substitute \ref{eq:reg-ss-investment}, \ref{eq:reg-ss-C1-Cn-3} and \ref{eq:reg-s
 
 	\newpage
 	
-	% --------------------------------------------------
-	% LOG-LINEARIZATION
-	% --------------------------------------------------
+% --------------------------------------------------
+% LOG-LINEARIZATION
+% --------------------------------------------------
 	
-	\subsubsection{Log-linearization}
+\subsection{Log-linearization}
 	
 	Due to the number of variables and equations to be solved, computational brute force will be necessary. \dynare \ is a software specialized on macroeconomic modeling, used for solving DSGE models. Before the model can be processed by the software, it must be linearized in order to eliminate the infinite sum in equation \ref{eq:reg-int-good-firm-optimal-price-FOC-3}. For this purpose, Uhlig's rules of log-linearization \cite{uhlig_toolkit_1999} will be applied to all equations in the model.\footnote{see lemma \ref{lemma:uhligs-rules} for details.}
 
