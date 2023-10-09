@@ -1159,42 +1159,6 @@ Substitute \ref{eq:reg-ss-investment}, \ref{eq:reg-ss-C1-Cn-3} and \ref{eq:reg-s
 % --------------------------------------------------
 % LOG-LINEARIZATION
 % --------------------------------------------------
-
-\subsection{aqui}
-	
-\begin{align*}
-	P_{\text{ss}}   &= 1; \\
-	ZA1_{\text{ss}} &= 1; \\
-	R_{\text{ss}}   &= \frac{1}{\beta} - 1; \\
-	RK_{\text{ss}}  &= P_{\text{ss}} \left(\frac{1}{\beta} - (1 - \delta)\right); \\
-	\Lambda_{\text{ss}} &= P_{\text{ss}} \frac{\psi - 1}{\psi}; \\
-	W_{\text{ss}}   &= (1 - \alpha_1) \left(\Lambda_{\text{ss}} ZA1_{\text{ss}} \left(\frac{\alpha_1}{RK_{\text{ss}}}\right)^{\alpha_1}\right)^{\frac{1}{1 - \alpha_1}}; \\
-	a1_{\text{ss}} &= \left(\frac{W_{\text{ss}}^{1 + \text{varp}} \omega_{11}^{\omega_{11}} (1 - \omega_{11})^{1 - \omega_{11}}}{\phi P_{\text{ss}} ((1 - \alpha) \Lambda_{\text{ss}})^{\text{varp}}}\right)^{\frac{1}{\sigma}}; \\
-	a2_{\text{ss}} &= \left(\frac{W_{\text{ss}}^{1 + \text{varp}} \omega_{21}^{\omega_{21}} (1 - \omega_{21})^{1 - \omega_{21}}}{\phi P_{\text{ss}} ((1 - \alpha) \Lambda_{\text{ss}})^{\text{varp}}}\right)^{\frac{1}{\sigma}}; \\
-	b1_{\text{ss}}  &= \delta \alpha_1 \Lambda_{\text{ss}} / RK_{\text{ss}}; \\
-	b2_{\text{ss}}  &= \delta \alpha_2 \Lambda_{\text{ss}} / RK_{\text{ss}}; \\
-	Y1_{\text{ss}}  &= \left(\frac{a1_{\text{ss}}}{1 - b1_{\text{ss}}}\right) \left(\frac{1}{\omega_{11}^{\omega_{11}} (1 - \omega_{11})^{1 - \omega_{11}}}\right)^{\frac{\sigma}{\sigma + \text{varp}}}; \\
-	Y2_{\text{ss}}  &= \left(\frac{a2_{\text{ss}}}{1 - b2_{\text{ss}}}\right) \left(\frac{1}{\omega_{21}^{\omega_{21}} (1 - \omega_{21})^{1 - \omega_{21}}}\right)^{\frac{\sigma}{\sigma + \text{varp}}}; \\
-\end{align*}
-
-\begin{align*}
-	I1_{\text{ss}}  &= b1_{\text{ss}} Y1_{\text{ss}}; \\
-	I2_{\text{ss}}  &= b2_{\text{ss}} Y2_{\text{ss}}; \\
-	C1_{\text{ss}}  &= a1_{\text{ss}} Y1_{\text{ss}}^{-\frac{\text{varp}}{\sigma}}; \\
-	C2_{\text{ss}}  &= a2_{\text{ss}} Y2_{\text{ss}}^{-\frac{\text{varp}}{\sigma}}; \\
-	E1_{\text{ss}}  &= \frac{P_{\text{ss}} C1_{\text{ss}}}{\omega_{11}^{\omega_{11}} (1 - \omega_{11})^{1 - \omega_{11}}}; \\
-	E2_{\text{ss}}  &= \frac{P_{\text{ss}} C2_{\text{ss}}}{\omega_{21}^{\omega_{21}} (1 - \omega_{21})^{1 - \omega_{21}}}; \\
-	C11_{\text{ss}} &= E1_{\text{ss}} \omega_{11} / P_{\text{ss}}; \\
-	C21_{\text{ss}} &= E2_{\text{ss}} \omega_{21} / P_{\text{ss}}; \\
-	C12_{\text{ss}} &= E1_{\text{ss}} (1 - \omega_{11}) / P_{\text{ss}}; \\
-	C22_{\text{ss}} &= E2_{\text{ss}} (1 - \omega_{21}) / P_{\text{ss}}; \\
-	K1_{\text{ss}}  &= \alpha_1 Y1_{\text{ss}} \Lambda_{\text{ss}} / RK_{\text{ss}}; \\
-	K2_{\text{ss}}  &= \alpha_2 Y2_{\text{ss}} \Lambda_{\text{ss}} / RK_{\text{ss}}; \\
-	L1_{\text{ss}}  &= (1 - \alpha_1) Y1_{\text{ss}} \Lambda_{\text{ss}} / W_{\text{ss}}; \\
-	L2_{\text{ss}}  &= (1 - \alpha_2) Y2_{\text{ss}} \Lambda_{\text{ss}} / W_{\text{ss}};
-\end{align*}
-
-	
 	
 \subsection{Log-linearization}
 	
@@ -1674,8 +1638,8 @@ Substitute \ref{eq:reg-ss-PYn-weight-in-PY} in \ref{eq:reg-ll-national-price-lev
 Log-linearize \ref{eq:reg-productivity-shock}:
 \begin{alignat}{2}
 	\ln{Z_{A\eta t}} &= (1-\rho_{A\eta})\ln{Z_{A\eta}} + \rho_{A\eta}\ln{Z_{A\eta,t-1}} + \varepsilon_{A\eta t} &\implies \tag{\ref{eq:reg-productivity-shock}} \\
-	\ln{Z_{A\eta}} + \hat{Z}_{A\eta t} &= (1-\rho_{A\eta}) \ln{Z_{A\eta}} + \rho_{A\eta} (\ln{Z_{A\eta}} + \hat{Z}_{A,t-1}) + \varepsilon_{A\eta} &\implies \nonumber \\
-	\hat{Z}_{A\eta t} &= \rho_{A\eta} \hat{Z}_{A,t-1} + \varepsilon_{A\eta} \label{eq:reg-ll-productivity-shock}
+	\ln{Z_{A\eta}} + \hat{Z}_{A\eta t} &= (1-\rho_{A\eta}) \ln{Z_{A\eta}} + \rho_{A\eta} (\ln{Z_{A\eta}} + \hat{Z}_{A\eta, t-1}) + \varepsilon_{A\eta} &\implies \nonumber \\
+	\hat{Z}_{A\eta t} &= \rho_{A\eta} \hat{Z}_{A\eta, t-1} + \varepsilon_{A\eta} \label{eq:reg-ll-productivity-shock}
 \end{alignat}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -1781,30 +1745,6 @@ The log-linear model is a square system of 31 variables and 31 equations, summar
 			\hat{\mathscr{E}}_{\eta t} &= \hat{C}_{\eta t} + \omega_{\eta 1} \hat{P}_{1 t} + (1 -\omega_{\eta 1}) \hat{P}_{2 t} \tag{\ref{eq:reg-ll-total-expense-level}}
 		\end{align}
 
-\begin{comment}
-	
-		\item Variation of Regional Consumption and Prices
-		\begin{align}
-			\hat{C}_{\eta t} - \hat{C}_{\eta 1 t} &= (1 -\omega_{\eta 1}) (\hat{P}_{\eta t} - \hat{P}_{\nu t}) \tag{\ref{eq:reg-ll-total-expense-level-2}}
-		\end{align}
-
-		\item Regional Consumption of good $\eta$
-		\begin{alignat}{2}
-			\hat{C}_{\eta 1 t} &= \hat{\mathscr{E}}_{\eta t} - \hat{P}_{\eta t} \tag{\ref{eq:reg-ll-Cn-Cn-2}}
-		\end{alignat}
-
-		\item Regional Consumption of good $\nu$
-		\begin{alignat}{2}
-			\hat{C}_{\eta 2 t} &= \hat{\mathscr{E}}_{\eta t} - \hat{P}_{\eta t} \tag{\ref{eq:reg-ll-Cn-Cv-2}}
-		\end{alignat}
-
-		\item Price Composition of Consumption Bundle
-		\begin{alignat}{2}
-			\hat{\mathscr{E}}_{\eta t} &= \hat{C}_{\eta t} + \omega_{\eta 1} \hat{P}_{\eta t} + (1 -\omega_{\eta 1}) \hat{P}_{\nu t} \tag{\ref{eq:reg-ll-total-expense-level}}
-		\end{alignat}
-	
-\end{comment}
-
 		\item Labor Supply
 		\begin{alignat}{2}
 			\varphi \hat{L}_{\eta t} - (1 -\sigma) \hat{C}_{\eta t} &= \hat{W}_t - \hat{ \mathscr{E} }_{\eta t} \tag{\ref{eq:reg-ll-labor-supply}}
@@ -1853,7 +1793,7 @@ The log-linear model is a square system of 31 variables and 31 equations, summar
 		
 		\item Productivity Shock
 		\begin{alignat}{2}
-			\hat{Z}_{A\eta t} &= \rho_{A\eta} \hat{Z}_{A,t-1} + \varepsilon_{A\eta} \tag{\ref{eq:reg-ll-productivity-shock}}
+			\hat{Z}_{A\eta t} &= \rho_{A\eta} \hat{Z}_{A\eta, t-1} + \varepsilon_{A\eta} \tag{\ref{eq:reg-ll-productivity-shock}}
 		\end{alignat}
 		
 		\item Monetary Shock
@@ -1876,5 +1816,283 @@ The log-linear model is a square system of 31 variables and 31 equations, summar
 \end{itemize}
 
 } %\singlespacing
+
+\begin{comment}
+	
+\newpage
+
+\hrule
+
+\subsection{Extended Log-linear Structure}
+
+\begin{enumerate}
+	
+	\item Regional Gross Inflation Rate
+	\begin{align}
+		\hat{\pi}_{1 t} = \hat{P}_{1 t} - \hat{P}_{1, t-1}
+	\end{align}
+	
+	\item Regional Gross Inflation Rate
+	\begin{align}
+		\hat{\pi}_{2 t} = \hat{P}_{2 t} - \hat{P}_{2, t-1}
+	\end{align}
+	
+	\item New Keynesian Phillips Curve
+	\begin{align}
+		\hat{\pi}_{1 t} = \beta \E \hat{\pi}_{1, t+1} + \frac{(1-\theta) (1- \theta \beta)}{\theta} \hat{\lambda}_{1 t}
+	\end{align}
+	
+	\item New Keynesian Phillips Curve
+	\begin{align}
+		\hat{\pi}_{2 t} = \beta \E \hat{\pi}_{2, t+1} + \frac{(1-\theta) (1- \theta \beta)}{\theta} \hat{\lambda}_{2 t}
+	\end{align}
+	
+	\item Law of Motion for Capital
+	\begin{alignat}{2}
+		\hat{K}_{1, t+1} = (1-\delta) \hat{K}_{1 t} + \delta \hat{I}_{1 t}
+	\end{alignat}
+	
+	\item Law of Motion for Capital
+	\begin{alignat}{2}
+		\hat{K}_{2, t+1} = (1-\delta) \hat{K}_{2 t} + \delta \hat{I}_{2 t}
+	\end{alignat}
+	
+	\item Regional Levels of Consumption and Prices
+	\begin{align}
+		\hat{C}_{1 1 t} - \hat{C}_{1 2 t} = \hat{P}_{2 t} - \hat{P}_{1 t}
+	\end{align}
+	
+	\item Regional Levels of Consumption and Prices
+	\begin{align}
+		\hat{C}_{2 1 t} - \hat{C}_{2 2 t} = \hat{P}_{2 t} - \hat{P}_{1 t}
+	\end{align}
+	
+	\item Total Expenses
+	\begin{align}
+		\hat{\mathscr{E}}_{1 t} = \hat{C}_{1 t} + \omega_{1 1} \hat{P}_{1 t} + (1 -\omega_{1 1}) \hat{P}_{2 t}
+	\end{align}
+	
+	\item Total Expenses
+	\begin{align}
+		\hat{\mathscr{E}}_{2 t} = \hat{C}_{2 t} + \omega_{2 1} \hat{P}_{1 t} + (1 -\omega_{2 1}) \hat{P}_{2 t}
+	\end{align}
+	
+	\item Labor Supply
+	\begin{alignat}{2}
+		\varphi \hat{L}_{1 t} - (1 -\sigma) \hat{C}_{1 t} = \hat{W}_t - \hat{ \mathscr{E} }_{1 t}
+	\end{alignat}
+	
+	\item Labor Supply
+	\begin{alignat}{2}
+		\varphi \hat{L}_{2 t} - (1 -\sigma) \hat{C}_{2 t} = \hat{W}_t - \hat{ \mathscr{E} }_{2 t}
+	\end{alignat}
+	
+	\item Euler equation for the bonds return
+	\begin{alignat}{2}
+		\E \left\{ \hat{\mathscr{E}}_{1, t+1} - (1 -\sigma)\hat{C}_{1, t+1} \right\} - \nonumber \\  \qquad - [\hat{\mathscr{E}}_{1 t} - (1 -\sigma)\hat{C}_{1 t}] = (1 -\beta) \hat{R}_{t}
+	\end{alignat}
+	
+	\item Euler equation for the bonds return
+	\begin{alignat}{2}
+		\E \left\{ \hat{\mathscr{E}}_{2, t+1} - (1 -\sigma)\hat{C}_{2, t+1} \right\} - \nonumber \\  \qquad - [\hat{\mathscr{E}}_{2 t} - (1 -\sigma)\hat{C}_{2 t}] = (1 -\beta) \hat{R}_{t}
+	\end{alignat}
+	
+	\item Euler equation for the capital return
+	\begin{alignat}{2}
+		\E \left\{ \hat{\mathscr{E}}_{1, t+1} - \hat{P}_{1, t+1}  - (1 -\sigma) \hat{C}_{1, t+1} \right\} - (\hat{\mathscr{E}}_{1 t} - \hat{P}_{1 t} - (1 -\sigma) \hat{C}_{1 t}) = \nonumber \\
+		\qquad = \beta \frac{R_{K}}{P_{1}} \mathbb{E}_t \left\{ \hat{R}_{K, t+1} - \hat{P}_{1, t+1} \right\}
+	\end{alignat}
+	
+	\item Euler equation for the capital return
+	\begin{alignat}{2}
+		\E \left\{ \hat{\mathscr{E}}_{2, t+1} - \hat{P}_{2, t+1}  - (1 -\sigma) \hat{C}_{2, t+1} \right\} - (\hat{\mathscr{E}}_{2 t} - \hat{P}_{2 t} - (1 -\sigma) \hat{C}_{2 t}) = \nonumber \\
+		\qquad = \beta \frac{R_{K}}{P_{2}} \mathbb{E}_t \left\{ \hat{R}_{K, t+1} - \hat{P}_{2, t+1} \right\}
+	\end{alignat}
+	
+	\item Production Function
+	\begin{align}
+		\hat{Y}_{1 t} = \hat{Z}_{A1 t} + {\alpha_{}} \hat{K}_{1 t} + (1-{\alpha_{}}) \hat{L}_{1 t}
+	\end{align}
+	
+	\item Production Function
+	\begin{align}
+		\hat{Y}_{2 t} = \hat{Z}_{A2 t} + {\alpha_{}} \hat{K}_{2 t} + (1-{\alpha_{}}) \hat{L}_{2 t}
+	\end{align}
+	
+	\item Marginal Rates of Substitution of Factors
+	\begin{align}
+		\hat{K}_{1 t} - \hat{L}_{1 t} = \hat{W}_{t} - \hat{R}_{K t}
+	\end{align}
+	
+	\item Marginal Rates of Substitution of Factors
+	\begin{align}
+		\hat{K}_{2 t} - \hat{L}_{2 t} = \hat{W}_{t} - \hat{R}_{K t}
+	\end{align}
+	
+	\item Marginal Cost
+	\begin{alignat}{2}
+		\hat{\lambda}_{1 t} = {\alpha_{}} \hat{R}_{Kt} + (1- {\alpha_{}}) \hat{W}_{t} - \hat{Z}_{A1 t} - \hat{P}_{1 t}
+	\end{alignat}
+	
+	\item Marginal Cost
+	\begin{alignat}{2}
+		\hat{\lambda}_{2 t} = {\alpha_{}} \hat{R}_{Kt} + (1- {\alpha_{}}) \hat{W}_{t} - \hat{Z}_{A2 t} - \hat{P}_{2 t}
+	\end{alignat}
+	
+	\item Monetary Policy
+	\begin{align}
+		& \hat{R}_t = \gamma_R \hat{R}_{t-1} + (1-\gamma_R)(\gamma_\pi \hat{\pi}_t + \gamma_Y \hat{Y}_t) + \hat{Z}_{Mt}
+	\end{align}
+	
+	\item National Gross Inflation Rate
+	\begin{align}
+		\hat{\pi}_{t} &= \hat{P}_{t} - \hat{P}_{t-1}
+	\end{align}
+	
+	\item National Price Level
+	\begin{alignat}{2}
+		\hat{P}_{t} + \hat{Y}_{t} &= \theta_{PY1} (\hat{P}_{1t} + \hat{Y}_{1t}) + (1-\theta_{PY1}) (\hat{P}_{2t} + \hat{Y}_{2t})
+	\end{alignat}
+	
+	\item Productivity Shock
+	\begin{alignat}{2}
+		\hat{Z}_{A1 t} = \rho_{A1} \hat{Z}_{A\eta, t-1} + \varepsilon_{A1}
+	\end{alignat}
+	
+	\item Productivity Shock
+	\begin{alignat}{2}
+		\hat{Z}_{A2 t} = \rho_{A2} \hat{Z}_{A\eta, t-1} + \varepsilon_{A2}
+	\end{alignat}
+	
+	\item Monetary Shock
+	\begin{alignat}{2}
+		\hat{Z}_{Mt} &= \rho_M \hat{Z}_{M,t-1} + \varepsilon_{M}
+	\end{alignat}
+	
+	\item Market Clearing Condition
+	\begin{align}
+		\hat{Y}_{t} &= \theta_{Y1} \hat{Y}_{1t} + (1-\theta_{Y1}) \hat{Y}_{2t}
+	\end{align}
+	
+	\item Regional Market Clearing Condition
+	\begin{align}
+		\hat{Y}_{1 t} = \theta_{C1 1} \hat{C}_{1 1 t} + \theta_{C1 2} \hat{C}_{1 2 t} + (1 - \theta_{C1 1} - \theta_{C1 2}) \hat{I}_{1 t}
+	\end{align}
+	
+	\item Regional Market Clearing Condition
+	\begin{align}
+		\hat{Y}_{2 t} = \theta_{C2 1} \hat{C}_{2 1 t} + \theta_{C2 2} \hat{C}_{2 2 t} + (1 - \theta_{C2 1} - \theta_{C2 2}) \hat{I}_{2 t}
+	\end{align}
+	
+\end{enumerate}
+
+\hrule
+
+\subsubsection{Equations without $\eta$}
+
+\begin{enumerate}
+	
+	\item Monetary Policy
+	\begin{align}
+		& \hat{R}_t = \gamma_R \hat{R}_{t-1} + (1-\gamma_R)(\gamma_\pi \hat{\pi}_t + \gamma_Y \hat{Y}_t) + \hat{Z}_{Mt}
+	\end{align}
+	
+	\item National Gross Inflation Rate
+	\begin{align}
+		\hat{\pi}_{t} &= \hat{P}_{t} - \hat{P}_{t-1}
+	\end{align}
+	
+	\item National Price Level
+	\begin{alignat}{2}
+		\hat{P}_{t} + \hat{Y}_{t} &= \theta_{PY1} (\hat{P}_{1t} + \hat{Y}_{1t}) + (1-\theta_{PY1}) (\hat{P}_{2t} + \hat{Y}_{2t})
+	\end{alignat}
+	
+	\item Monetary Shock
+	\begin{alignat}{2}
+		\hat{Z}_{Mt} &= \rho_M \hat{Z}_{M,t-1} + \varepsilon_{M}
+	\end{alignat}
+	
+	\item Market Clearing Condition
+	\begin{align}
+		\hat{Y}_{t} &= \theta_{Y1} \hat{Y}_{1t} + (1-\theta_{Y1}) \hat{Y}_{2t}
+	\end{align}
+	
+\end{enumerate}
+
+\hrule
+
+\subsubsection{Equations with $\eta$}
+
+\begin{enumerate}
+	\item Regional Gross Inflation Rate
+	\begin{align}
+		\hat{\pi}_{\eta t} = \hat{P}_{\eta t} - \hat{P}_{\eta, t-1}
+	\end{align}
+	
+	\item New Keynesian Phillips Curve
+	\begin{align}
+		\hat{\pi}_{\eta t} = \beta \E \hat{\pi}_{\eta, t+1} + \frac{(1-\theta) (1- \theta \beta)}{\theta} \hat{\lambda}_{\eta t}
+	\end{align}
+	
+	\item Law of Motion for Capital
+	\begin{alignat}{2}
+		\hat{K}_{\eta, t+1} = (1-\delta) \hat{K}_{\eta t} + \delta \hat{I}_{\eta t}
+	\end{alignat}
+	
+	\item Regional Levels of Consumption and Prices
+	\begin{align}
+		\hat{C}_{\eta 1 t} - \hat{C}_{\eta 2 t} = \hat{P}_{2 t} - \hat{P}_{1 t}
+	\end{align}
+	
+	\item Total Expenses
+	\begin{align}
+		\hat{\mathscr{E}}_{\eta t} = \hat{C}_{\eta t} + \omega_{\eta 1} \hat{P}_{1 t} + (1 -\omega_{\eta 1}) \hat{P}_{2 t}
+	\end{align}
+	
+	\item Labor Supply
+	\begin{alignat}{2}
+		\varphi \hat{L}_{\eta t} - (1 -\sigma) \hat{C}_{\eta t} = \hat{W}_t - \hat{ \mathscr{E} }_{\eta t}
+	\end{alignat}
+	
+	\item Euler equation for the bonds return
+	\begin{alignat}{2}
+		\E \left\{ \hat{\mathscr{E}}_{\eta, t+1} - (1 -\sigma)\hat{C}_{\eta, t+1} \right\} - \nonumber \\  \qquad - [\hat{\mathscr{E}}_{\eta t} - (1 -\sigma)\hat{C}_{\eta t}] = (1 -\beta) \hat{R}_{t}
+	\end{alignat}
+	
+	\item Euler equation for the capital return
+	\begin{alignat}{2}
+		\E \left\{ \hat{\mathscr{E}}_{\eta, t+1} - \hat{P}_{\eta, t+1}  - (1 -\sigma) \hat{C}_{\eta, t+1} \right\} - (\hat{\mathscr{E}}_{\eta t} - \hat{P}_{\eta t} - (1 -\sigma) \hat{C}_{\eta t}) = \nonumber \\
+		\qquad = \beta \frac{R_{K}}{P_{\eta}} \mathbb{E}_t \left\{ \hat{R}_{K, t+1} - \hat{P}_{\eta, t+1} \right\}
+	\end{alignat}
+	
+	\item Production Function
+	\begin{align}
+		\hat{Y}_{\eta t} = \hat{Z}_{A\eta t} + {\alpha_{}} \hat{K}_{\eta t} + (1-{\alpha_{}}) \hat{L}_{\eta t}
+	\end{align}
+	
+	\item Marginal Rates of Substitution of Factors
+	\begin{align}
+		\hat{K}_{\eta t} - \hat{L}_{\eta t} = \hat{W}_{t} - \hat{R}_{K t}
+	\end{align}
+	
+	\item Marginal Cost
+	\begin{alignat}{2}
+		\hat{\lambda}_{\eta t} = {\alpha_{}} \hat{R}_{Kt} + (1- {\alpha_{}}) \hat{W}_{t} - \hat{Z}_{A\eta t} - \hat{P}_{\eta t}
+	\end{alignat}
+	
+	\item Productivity Shock
+	\begin{alignat}{2}
+		\hat{Z}_{A\eta t} = \rho_{A\eta} \hat{Z}_{A\eta, t-1} + \varepsilon_{A\eta}
+	\end{alignat}
+	
+	\item Regional Market Clearing Condition
+	\begin{align}
+		\hat{Y}_{\eta t} = \theta_{C\eta 1} \hat{C}_{\eta 1 t} + \theta_{C\eta 2} \hat{C}_{\eta 2 t} + (1 - \theta_{C\eta 1} - \theta_{C\eta 2}) \hat{I}_{\eta t}
+	\end{align}
+\end{enumerate}
+
+\hrule	
+	
+\end{comment}
 
 \end{document}

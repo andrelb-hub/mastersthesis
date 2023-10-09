@@ -17,37 +17,36 @@
 \contentsline {subsection}{\numberline {3.2}Steady State}{42}{subsection.3.2}%
 \contentsline {subsubsection}{\numberline {3.2.1}Variables at Steady State}{46}{subsubsection.3.2.1}%
 \contentsline {subsubsection}{\numberline {3.2.2}Steady State Solution}{50}{subsubsection.3.2.2}%
-\contentsline {section}{\numberline {4}aqui}{51}{section.4}%
-\contentsline {subsection}{\numberline {4.1}Log-linearization}{52}{subsection.4.1}%
-\contentsline {subsubsection}{\numberline {4.1.1}Log-linear Model Structure}{67}{subsubsection.4.1.1}%
-\contentsline {subsection}{\numberline {4.2}Data}{69}{subsection.4.2}%
-\contentsline {subsubsection}{\numberline {4.2.1}Parameter Calibration}{70}{subsubsection.4.2.1}%
-\contentsline {subsubsection}{\numberline {4.2.2}Variables at Steady State}{71}{subsubsection.4.2.2}%
-\contentsline {section}{\numberline {5}Results}{72}{section.5}%
-\contentsline {subsection}{\numberline {5.1}Impulse Response Functions}{73}{subsection.5.1}%
-\contentsline {subsubsection}{\numberline {5.1.1}Productivity Shock}{73}{subsubsection.5.1.1}%
-\contentsline {subsubsection}{\numberline {5.1.2}Monetary Shock}{74}{subsubsection.5.1.2}%
-\contentsline {subsection}{\numberline {5.2}Parametrization}{75}{subsection.5.2}%
-\contentsline {section}{References}{77}{section*.297}%
-\contentsline {section}{\numberline {A}Appendix}{80}{appendix.A}%
-\contentsline {subsection}{\numberline {A.1}Table of the Literature Review}{81}{subsection.A.1}%
-\contentsline {subsection}{\numberline {A.2}Greek Letters}{81}{subsection.A.2}%
-\contentsline {subsection}{\numberline {A.3}Definitions and Lemmas}{83}{subsection.A.3}%
-\contentsline {subsection}{\numberline {A.4}Dynare Program}{87}{subsection.A.4}%
-\contentsline {subsection}{\numberline {A.5}\LaTeX }{94}{subsection.A.5}%
-\contentsline {subsection}{\numberline {A.6}NK Model}{99}{subsection.A.6}%
-\contentsline {subsubsection}{\numberline {A.6.1}Household}{99}{subsubsection.A.6.1}%
-\contentsline {subsubsection}{\numberline {A.6.2}Final-Good Firm}{101}{subsubsection.A.6.2}%
-\contentsline {subsubsection}{\numberline {A.6.3}Intermediate-Good Firms}{102}{subsubsection.A.6.3}%
-\contentsline {subsubsection}{\numberline {A.6.4}Final-Good Firm, part II}{106}{subsubsection.A.6.4}%
-\contentsline {subsubsection}{\numberline {A.6.5}Monetary Authority}{107}{subsubsection.A.6.5}%
-\contentsline {subsubsection}{\numberline {A.6.6}Stochastic Shocks}{108}{subsubsection.A.6.6}%
-\contentsline {subsubsection}{\numberline {A.6.7}Equilibrium Conditions}{108}{subsubsection.A.6.7}%
-\contentsline {subsubsection}{\numberline {A.6.8}Model Structure}{108}{subsubsection.A.6.8}%
-\contentsline {subsubsection}{\numberline {A.6.9}Steady State}{110}{subsubsection.A.6.9}%
-\contentsline {subsubsection}{\numberline {A.6.10}Variables in Steady State}{113}{subsubsection.A.6.10}%
-\contentsline {subsubsection}{\numberline {A.6.11}Steady State Solution}{115}{subsubsection.A.6.11}%
-\contentsline {subsubsection}{\numberline {A.6.12}Log-linearization}{115}{subsubsection.A.6.12}%
-\contentsline {subsubsection}{\numberline {A.6.13}Log-linear Model Structure}{126}{subsubsection.A.6.13}%
-\contentsline {subsection}{\numberline {A.7}ToDo List}{128}{subsection.A.7}%
-\contentsline {section}{Todo list}{128}{subsection.A.7}%
+\contentsline {subsection}{\numberline {3.3}Log-linearization}{51}{subsection.3.3}%
+\contentsline {subsubsection}{\numberline {3.3.1}Log-linear Model Structure}{65}{subsubsection.3.3.1}%
+\contentsline {subsection}{\numberline {3.4}Data}{67}{subsection.3.4}%
+\contentsline {subsubsection}{\numberline {3.4.1}Parameter Calibration}{68}{subsubsection.3.4.1}%
+\contentsline {subsubsection}{\numberline {3.4.2}Variables at Steady State}{69}{subsubsection.3.4.2}%
+\contentsline {section}{\numberline {4}Results}{70}{section.4}%
+\contentsline {subsection}{\numberline {4.1}Impulse Response Functions}{71}{subsection.4.1}%
+\contentsline {subsubsection}{\numberline {4.1.1}Productivity Shock}{71}{subsubsection.4.1.1}%
+\contentsline {subsubsection}{\numberline {4.1.2}Monetary Shock}{72}{subsubsection.4.1.2}%
+\contentsline {subsection}{\numberline {4.2}Parametrization}{73}{subsection.4.2}%
+\contentsline {section}{References}{75}{section*.297}%
+\contentsline {section}{\numberline {A}Appendix}{78}{appendix.A}%
+\contentsline {subsection}{\numberline {A.1}Table of the Literature Review}{79}{subsection.A.1}%
+\contentsline {subsection}{\numberline {A.2}Greek Letters}{79}{subsection.A.2}%
+\contentsline {subsection}{\numberline {A.3}Definitions and Lemmas}{81}{subsection.A.3}%
+\contentsline {subsection}{\numberline {A.4}Dynare Program}{85}{subsection.A.4}%
+\contentsline {subsection}{\numberline {A.5}\LaTeX }{92}{subsection.A.5}%
+\contentsline {subsection}{\numberline {A.6}NK Model}{97}{subsection.A.6}%
+\contentsline {subsubsection}{\numberline {A.6.1}Household}{97}{subsubsection.A.6.1}%
+\contentsline {subsubsection}{\numberline {A.6.2}Final-Good Firm}{99}{subsubsection.A.6.2}%
+\contentsline {subsubsection}{\numberline {A.6.3}Intermediate-Good Firms}{100}{subsubsection.A.6.3}%
+\contentsline {subsubsection}{\numberline {A.6.4}Final-Good Firm, part II}{104}{subsubsection.A.6.4}%
+\contentsline {subsubsection}{\numberline {A.6.5}Monetary Authority}{105}{subsubsection.A.6.5}%
+\contentsline {subsubsection}{\numberline {A.6.6}Stochastic Shocks}{106}{subsubsection.A.6.6}%
+\contentsline {subsubsection}{\numberline {A.6.7}Equilibrium Conditions}{106}{subsubsection.A.6.7}%
+\contentsline {subsubsection}{\numberline {A.6.8}Model Structure}{106}{subsubsection.A.6.8}%
+\contentsline {subsubsection}{\numberline {A.6.9}Steady State}{108}{subsubsection.A.6.9}%
+\contentsline {subsubsection}{\numberline {A.6.10}Variables in Steady State}{111}{subsubsection.A.6.10}%
+\contentsline {subsubsection}{\numberline {A.6.11}Steady State Solution}{113}{subsubsection.A.6.11}%
+\contentsline {subsubsection}{\numberline {A.6.12}Log-linearization}{113}{subsubsection.A.6.12}%
+\contentsline {subsubsection}{\numberline {A.6.13}Log-linear Model Structure}{124}{subsubsection.A.6.13}%
+\contentsline {subsection}{\numberline {A.7}ToDo List}{126}{subsection.A.7}%
+\contentsline {section}{Todo list}{126}{subsection.A.7}%

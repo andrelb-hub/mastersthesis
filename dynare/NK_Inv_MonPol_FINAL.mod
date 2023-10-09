@@ -189,8 +189,6 @@ check(qz_zero_threshold=1e-20);
 % -------------------------------------------------- % 
 shocks; 
 % Productivity Shock
-     var    epsilonA;
-     stderr sigmaA;
 % Monetary Shock
      var    epsilonM;
      stderr sigmaM;
