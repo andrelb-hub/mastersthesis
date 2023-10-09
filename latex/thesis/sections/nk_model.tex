@@ -10,13 +10,21 @@ thesis.tex
 	
 	\newpage
 	
-	\subsection{NK Model}
+\section{New Keynesian Model}
 	
-	% --------------------------------------------------
-	% HOUSEHOLD
-	% --------------------------------------------------
-	
-	\subsubsection{Household}
+	% local table os contents:
+	{
+		\setlength{\parskip}{1pt}
+		\singlespacing
+		\etocsettocdepth{3}
+		\localtableofcontents
+	}
+
+% --------------------------------------------------
+% HOUSEHOLD
+% --------------------------------------------------
+
+	\subsection{Household}
 	
 	\subsubsection*{Utility Maximization Problem}
 	
@@ -92,7 +100,7 @@ thesis.tex
 	% FIRMS
 	% --------------------------------------------------
 	
-	\subsubsection*{Firms}
+\subsection{Firms}
 	
 	Consider two types of firms: 
 	\begin{enumerate*}[label=(\arabic*)]
@@ -338,7 +346,7 @@ thesis.tex
 	% MONETARY AUTHORITY
 	% --------------------------------------------------
 	
-	\subsubsection{Monetary Authority}
+	\subsection{Monetary Authority}
 	
 	The objective of the monetary authority is to conduct the economy to price stability and economic growth, using a Taylor rule \cite{taylor_discretion_1993} to determine the nominal interest rate:
 	\begin{align}
@@ -385,7 +393,7 @@ thesis.tex
 	% EQUILIBRIUM CONDITIONS
 	% --------------------------------------------------
 	
-	\subsubsection{Equilibrium Conditions}
+	\subsection{Equilibrium Conditions}
 	
 	% removed from the household solution set: I_t^\ast, 
 	
@@ -534,7 +542,7 @@ thesis.tex
 	% STEADY STATE
 	% --------------------------------------------------
 	
-	\subsubsection{Steady State}
+	\subsection{Steady State}
 	
 	The steady state is defined by the constancy of the variables through time. For any given endogenous variable $X_t$, it is in steady state if $\mathbb{E}_t X_{t+1} = X_t = X_{t-1} = X_{ss}$ \cite[p.41]{costa_junior_understanding_2016}. For conciseness, the $ss$ index representing the steady state will be omitted, so that $X \coloneq X_{ss}$. The steady state of each equation of the model is:
 	
@@ -790,7 +798,7 @@ thesis.tex
 	% LOG-LINEARIZATION
 	% --------------------------------------------------
 	
-	\subsubsection{Log-linearization}
+	\subsection{Log-linearization}
 	
 	Due to the number of variables and equations to be solved, computational brute force will be necessary. \dynare \ is a software specialized on macroeconomic modeling, used for solving DSGE models. Before the model can be processed by the software, it must be linearized in order to eliminate the infinite sum in equation \ref{eq:int-good-firm-optimal-price-FOC-3}. For this purpose, Uhlig's rules of log-linearization \cite{uhlig_toolkit_1999} will be applied to all equations in the model\footnote{see lemma \ref{lemma:uhligs-rules} for details.}.
 	
