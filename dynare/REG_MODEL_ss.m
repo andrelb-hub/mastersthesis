@@ -1,7 +1,6 @@
 % parameters:
 
-alp1    = 0.4  ; % capital elasticity of production in region 1
-alp2    = 0.2  ; % capital elasticity of production in region 2
+alp     = 0.35 ; % capital elasticity of production
 bet     = 0.985; % intertemporal discount factor
 gamR    = 0.79 ; % interest-rate smoothing parameter
 gampi   = 2.43 ; % interest-rate sensitivity in relation to inflation
@@ -26,39 +25,36 @@ ome21   = 0.7  ; % weight of good 1 in consumption composition of region 2
 
 % steady state variables:
 
-Pss = 1;
+Pss   = 1;
 ZA1ss = 1;
-ZA2ss = 1;
-Rss = 1/bet - 1;
-RKss = Pss * (1/bet - (1-del));
+Rss   = 1/bet - 1;
+RKss  = Pss * (1/bet - (1-del));
 LAMBDAss = Pss * (psi-1)/psi;
-Wss = (1 - alp1) * (LAMBDAss * ZA1ss * (alp1/RKss)^alp1)^(1/(1 - alp1));
-W2ss = (1 - alp2) * (LAMBDAss * ZA2ss * (alp2/RKss)^alp2)^(1/(1 - alp2));
-a1ss = ((Wss^(1 + varp) * ome11^(ome11) * (1 - ome11)^(1 - ome11)) / (phi * Pss * (1 - alp1) * LAMBDAss)^varp)^(1/sig);
-a2ss = ((Wss^(1 + varp) * ome21^(ome21) * (1 - ome21)^(1 - ome21)) / (phi * Pss * (1 - alp2) * LAMBDAss)^varp)^(1/sig);
-b1ss = del * alp1 * LAMBDAss / RKss;
-b2ss = del * alp2 * LAMBDAss / RKss;
-Y1ss = ((a1ss / (1 - b1ss)) * (1 / (ome11^ome11 * (1 - ome11)^(1 - ome11))))^(sig / (sig + varp));
-Y2ss = ((a2ss / (1 - b2ss)) * (1 / (ome21^ome21 * (1 - ome21)^(1 - ome21))))^(sig / (sig + varp));
-I1ss = b1ss * Y1ss;
-I2ss = b2ss * Y2ss;
-C1ss = a1ss * Y1ss^(-varp / sig);
-C2ss = a2ss * Y2ss^(-varp / sig);
-E1ss = Pss * C1ss / (ome11^ome11 * (1 - ome11)^(1 - ome11));
-E2ss = Pss * C2ss / (ome21^ome21 * (1 - ome21)^(1 - ome21));
+Wss   = (1 - alp) * (LAMBDAss * ZA1ss * (alp/RKss)^alp)^(1/(1 - alp));
+a1ss  = ((Wss^(1 + varp) * ome11^(ome11) * (1 - ome11)^(1 - ome11)) / (phi * Pss * ((1 - alp) * LAMBDAss)^varp))^(1/sig);
+a2ss  = ((Wss^(1 + varp) * ome21^(ome21) * (1 - ome21)^(1 - ome21)) / (phi * Pss * ((1 - alp) * LAMBDAss)^varp))^(1/sig);
+b1ss  = del * alp * LAMBDAss / RKss;
+b2ss  = del * alp * LAMBDAss / RKss;
+Y1ss  = ((a1ss / (1 - b1ss)) * (1 / (ome11^ome11 * (1 - ome11)^(1 - ome11))))^(sig / (sig + varp));
+Y2ss  = ((a2ss / (1 - b2ss)) * (1 / (ome21^ome21 * (1 - ome21)^(1 - ome21))))^(sig / (sig + varp));
+I1ss  = b1ss * Y1ss;
+I2ss  = b2ss * Y2ss;
+C1ss  = a1ss * Y1ss^(-varp / sig);
+C2ss  = a2ss * Y2ss^(-varp / sig);
+E1ss  = Pss * C1ss / (ome11^ome11 * (1 - ome11)^(1 - ome11));
+E2ss  = Pss * C2ss / (ome21^ome21 * (1 - ome21)^(1 - ome21));
 C11ss = E1ss * ome11 / Pss;
 C21ss = E2ss * ome21 / Pss;
 C12ss = E1ss * (1 - ome11) / Pss;
 C22ss = E2ss * (1 - ome21) / Pss;
-K1ss = alp1 * Y1ss * LAMBDAss / RKss;
-K2ss = alp2 * Y2ss * LAMBDAss / RKss;
-L1ss = (1 - alp1) * Y1ss * LAMBDAss / Wss;
-L2ss = (1 - alp2) * Y2ss * LAMBDAss / Wss;
+K1ss  = alp * Y1ss * LAMBDAss / RKss;
+K2ss  = alp * Y2ss * LAMBDAss / RKss;
+L1ss  = (1 - alp) * Y1ss * LAMBDAss / Wss;
+L2ss  = (1 - alp) * Y2ss * LAMBDAss / Wss;
 
 % Create a cell array to store variable names and their corresponding values
 variables = {
-    'alp1', alp1;
-    'alp2', alp2;
+    'alp', alp;
     'bet', bet;
     'gamR', gamR;
     'gampi', gampi;

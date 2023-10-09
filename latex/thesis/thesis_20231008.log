@@ -1,4 +1,4 @@
-This is LuaHBTeX, Version 1.17.0 (MiKTeX 23.5) (format=lualatex 2023.8.25)  8 OCT 2023 15:16
+This is LuaHBTeX, Version 1.17.0 (MiKTeX 23.5) (format=lualatex 2023.8.25)  8 OCT 2023 18:30
  restricted system commands enabled.
 **thesis_20231008.tex
 (./thesis_20231008.tex
@@ -2034,11 +2034,12 @@ LaTeX Font Info:    Font shape `U/cmsy/b/n' will be
 (Font)              scaled to size 7.6pt on input line 965.
 LaTeX Font Info:    Font shape `U/cmsy/b/n' will be
 (Font)              scaled to size 6.0pt on input line 965.
- [46] [47] [48]
-Excluding 'comment' comment. [49] Excluding 'comment' comment. [50] [51]
-[52] [53] [54] [55] [56] Excluding 'comment' comment. [57] [58] [59] [60]
-[61] [62] Excluding 'comment' comment. [63] [64] Excluding 'comment' comment.
-[65]) (./sections/data.tex [66]) (./sections/calibration.tex [67]
+ [46]
+Excluding 'comment' comment. [47] [48] Excluding 'comment' comment. [49]
+Excluding 'comment' comment. [50] [51] [52] [53] [54] [55] [56]
+Excluding 'comment' comment. [57] [58] [59] [60] [61] [62]
+Excluding 'comment' comment. [63] [64] Excluding 'comment' comment. [65])
+(./sections/data.tex [66]) (./sections/calibration.tex [67]
 > Step: init table outer spec.
 > Step: parse table options.
 > Step: split table.
@@ -2474,29 +2475,21 @@ L3 programming layer <2020/03/25>
 LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 1.93356pt have occurred.
 
-
-LaTeX Warning: There were undefined references.
-
-
-Package biblatex Warning: Please (re)run Biber on the file:
-(biblatex)                thesis_20231008
-(biblatex)                and rerun LaTeX afterwards.
-
 Package logreq Info: Writing requests to 'thesis_20231008.run.xml'.
 
 \openout1 = thesis_20231008.run.xml
 )
 
 Here is how much of LuaTeX's memory you used:
- 45614 strings out of 477545
+ 45615 strings out of 477545
  125081,4101490 words of node,token memory allocated
- 5805 words of node memory still in use:
-   116 hlist, 17 vlist, 7 rule, 10 math, 69 glue, 33 kern, 140 sub_mlist, 161 gl
-yph, 580 attribute, 89 glue_spec, 291 attribute_list, 3 write, 3 pdf_action node
+ 5787 words of node memory still in use:
+   116 hlist, 17 vlist, 7 rule, 10 math, 69 glue, 33 kern, 138 sub_mlist, 161 gl
+yph, 576 attribute, 89 glue_spec, 289 attribute_list, 3 write, 3 pdf_action node
 s
-   avail lists: 1:2,2:6065,3:943,4:206,5:724,6:229,7:6736,8:105,9:3624,10:73,11:
+   avail lists: 1:2,2:6065,3:943,4:206,5:724,6:229,7:6716,8:105,9:3624,10:73,11:
 521,12:1
- 62849 multiletter control sequences out of 65536+600000
+ 62850 multiletter control sequences out of 65536+600000
  706 fonts using 43102543 bytes
  132i,26n,128p,1099b,4379s stack positions out of 10000i,1000n,20000p,200000b,200000s
 {C:/Users/andre/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-ec.enc}{C:/U
@@ -2528,7 +2521,7 @@ ocal/Programs/MiKTeX/fonts/type1/urw/palatino/uplri8a.pfb><C:/Users/andre/AppDat
 a/Local/Programs/MiKTeX/fonts/type1/urw/zapfding/uzdr.pfb><C:/Users/andre/AppDat
 a/Local/Programs/MiKTeX/fonts/type1/public/boondox/zxxbw8a.pfb><C:/Users/andre/A
 ppData/Local/Programs/MiKTeX/fonts/type1/public/boondox/zxxrw8a.pfb>
-Output written on thesis_20231008.pdf (126 pages, 4435108 bytes).
+Output written on thesis_20231008.pdf (126 pages, 4435841 bytes).
 
 PDF statistics: 2652 PDF objects out of 2984 (max. 8388607)
  905 named destinations out of 1000 (max. 131072)

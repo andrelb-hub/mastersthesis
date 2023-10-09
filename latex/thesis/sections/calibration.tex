@@ -22,25 +22,26 @@ thesis.tex
 \begin{longtblr}[
 	label = {table:parameter-calibration},
 	caption = {Parameter Calibration},
-	remark{Source} = {The Author and \textcite{costa_junior_understanding_2016}}]
+	remark{Sources} = {The Author and \textcite{costa_junior_understanding_2016}}]
 	{rowhead = 1,
 	colspec = {Q[c]|Q[l]|Q[si={table-format=3.2,table-number-alignment=center},c,white]}}
 	\hline[2pt]
 	\textbf{Parameter} & \textbf{Definition} & \textbf{Calibration} \\ \hline[2pt]
-	$\alpha_1$     & capital elasticity of production in region 1 & $0.4$ \\ \hline
-	$\alpha_2$     & capital elasticity of production in region 2 & $0.2$ \\ \hline
+	$\alpha$       & capital elasticity of production & $0.35$ \\ \hline
+	% $\alpha_1$     & capital elasticity of production in region 1 & $0.4$ \\ \hline
+	% $\alpha_2$     & capital elasticity of production in region 2 & $0.2$ \\ \hline
 	$\beta$        & intertemporal discount factor & $0.985$ \\ \hline
 	$\gamma_R$     & interest-rate smoothing parameter & $0.79$ \\ \hline
 	$\gamma_\pi$   & interest-rate sensitivity in relation to inflation & $2.43$ \\ \hline
 	$\gamma_Y$     & interest-rate sensitivity in relation to product & $0.16$ \\ \hline
 	$\delta$       & capital depreciation rate & $0.025$ \\ \hline
 	$\theta$       & price stickness parameter & $0.8$ \\ \hline
-	$\theta_{Y1}$  & weight of region 1 production in total production & $0.8$ \\ \hline
 	$\theta_{C11}$ & weight of good 1 in demand of region 1 & $0.4$ \\ \hline
 	$\theta_{C12}$ & weight of good 2 in demand of region 1 & $0.4$ \\ \hline
 	$\theta_{C21}$ & weight of good 1 in demand of region 2 & $0.4$ \\ \hline
 	$\theta_{C22}$ & weight of good 2 in demand of region 2 & $0.4$ \\ \hline
-	$\theta_{P1}$  & weight of price level 1 in national price level & $0.5$ \\ \hline
+	$\theta_{PY1}$ & weight of region 1 in gross domestic product & $0.3$ \\ \hline
+	$\theta_{Y1}$  & weight of region 1 in total production & $0.3$ \\ \hline
 	$\rho_{A1}$    & autoregressive parameter of productivity in region 1 & $0.95$ \\ \hline
 	$\rho_{A2}$    & autoregressive parameter of productivity in region 2 & $0.95$ \\ \hline
 	$\rho_{M}$     & autoregressive parameter of monetary policy & $0.9$ \\ \hline
@@ -66,15 +67,17 @@ thesis.tex
 \begin{center}
 \begin{longtblr}[
 	label = {table:ss-values},
-	caption = {Steady State Values},
+	caption = {Variables at Steady State},
 	remark{Source} = {The Author.}]
 	{rowhead = 1,
 	 colspec = {Q[c]|Q[si = {table-format=3.2, table-number-alignment=center}, c, white]}}
 		\hline[2pt]
 		\textbf{Variable} & \textbf{Steady State Value} \\
 		\hline[2pt]
-		$\langle \begin{matrix} P & P_{\eta} & Z_{A\eta} & Z_{M} & \pi & \pi_{\eta} \end{matrix} \rangle$ & $\vec{\bm{1}}$ \\ \hline
-		$\langle \begin{matrix} \varepsilon_{A\eta} & \varepsilon_{M} \end{matrix} \rangle$ & $\vec{\bm{0}}$ \\ \hline
+		$\langle \begin{matrix} P & P_{1} & P_{2} & Z_{A1} & Z_{A2} & Z_{M} & \pi & \pi_{1} & \pi_{2} \end{matrix} \rangle$ & $\vec{\bm{1}}$ \\ \hline
+		% $\langle \begin{matrix} P & P_{\eta} & Z_{A\eta} & Z_{M} & \pi & \pi_{\eta} \end{matrix} \rangle$ & $\vec{\bm{1}}$ \\ \hline
+		$\langle \begin{matrix} \varepsilon_{A1} & \varepsilon_{A2} & \varepsilon_{M} \end{matrix} \rangle$ & $\vec{\bm{0}}$ \\ \hline
+		% $\langle \begin{matrix} \varepsilon_{A\eta} & \varepsilon_{M} \end{matrix} \rangle$ & $\vec{\bm{0}}$ \\ \hline
 		$R$       & $0.0402$ \\ \hline
 		$R_{K}$   & $0.0402$ \\ \hline
 		$\Lambda$ & $0.8750$ \\ \hline

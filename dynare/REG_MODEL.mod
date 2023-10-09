@@ -20,37 +20,37 @@
 % -------------------------------------------------- %
 
 var
-C1t      ${\hat{C}_{1}}$      (long_name='Consumption aggregation of region 1')
-C2t      ${\hat{C}_{2}}$      (long_name='Consumption aggregation of region 2')
-C11t     ${\hat{C}_{1 1}}$    (long_name='Comsumption of good 1 in region 1')
-C21t     ${\hat{C}_{2 1}}$    (long_name='Comsumption of good 1 in region 2')
-C12t     ${\hat{C}_{1 2}}$    (long_name='Comsumption of good 2 in region 1')
-C22t     ${\hat{C}_{2 2}}$    (long_name='Comsumption of good 2 in region 2')
-L1t      ${\hat{L}_{1}}$      (long_name='Labor in region 1')
-L2t      ${\hat{L}_{2}}$      (long_name='Labor in region 2')
-K1t      ${\hat{K}_{1}}$      (long_name='Capital in region 1')
-K2t      ${\hat{K}_{2}}$      (long_name='Capital in region 2')
-Yt       ${\hat{Y}}$          (long_name='Total Production')
-Y1t      ${\hat{Y}_{1}}$      (long_name='Production of region 1')
-Y2t      ${\hat{Y}_{2}}$      (long_name='Production of region 2')
-I1t      ${\hat{I}_{1}}$      (long_name='Investment in region 1')
-I2t      ${\hat{I}_{2}}$      (long_name='Investment in region 2')
-ZA1      ${\hat{Z}_{A1}}$     (long_name='Production technology level of region 1')
-ZA2      ${\hat{Z}_{A2}}$     (long_name='Production technology level of region 2')
+C1t      ${\hat{C}_{1}}$    (long_name='Consumption aggregation of region 1')
+C2t      ${\hat{C}_{2}}$    (long_name='Consumption aggregation of region 2')
+C11t     ${\hat{C}_{1 1}}$  (long_name='Comsumption of good 1 in region 1')
+C21t     ${\hat{C}_{2 1}}$  (long_name='Comsumption of good 1 in region 2')
+C12t     ${\hat{C}_{1 2}}$  (long_name='Comsumption of good 2 in region 1')
+C22t     ${\hat{C}_{2 2}}$  (long_name='Comsumption of good 2 in region 2')
+L1t      ${\hat{L}_{1}}$    (long_name='Labor in region 1')
+L2t      ${\hat{L}_{2}}$    (long_name='Labor in region 2')
+K1t      ${\hat{K}_{1}}$    (long_name='Capital in region 1')
+K2t      ${\hat{K}_{2}}$    (long_name='Capital in region 2')
+Yt       ${\hat{Y}}$        (long_name='Total Production')
+Y1t      ${\hat{Y}_{1}}$    (long_name='Production of region 1')
+Y2t      ${\hat{Y}_{2}}$    (long_name='Production of region 2')
+I1t      ${\hat{I}_{1}}$    (long_name='Investment in region 1')
+I2t      ${\hat{I}_{2}}$    (long_name='Investment in region 2')
+ZA1      ${\hat{Z}_{A1}}$   (long_name='Production technology level of region 1')
+ZA2      ${\hat{Z}_{A2}}$   (long_name='Production technology level of region 2')
 E1t      ${\hat{\mathscr{E}}_{1}}$ (long_name='Total expense of region 1')
 E2t      ${\hat{\mathscr{E}}_{2}}$ (long_name='Total expense of region 2')
-Pt       ${\hat{P}}$          (long_name='National price level')
-P1t      ${\hat{P}_{1}}$      (long_name='Price level of region 1')
-P2t      ${\hat{P}_{2}}$      (long_name='Price level of region 2')
-Rt       ${\hat{R}}$          (long_name='Interest rate')
-RKt      ${\hat{R}_{K}}$      (long_name='Return on capital')
-Wt       ${\hat{W}}$          (long_name='Wages')
-pit      ${\hat{\pi}}$        (long_name='National gross inflation rate')
-pi1t     ${\hat{\pi}_{1}}$    (long_name='Gross inflation rate in region 1')
-pi2t     ${\hat{\pi}_{2}}$    (long_name='Gross inflation rate in region 2')
+Pt       ${\hat{P}}$        (long_name='National price level')
+P1t      ${\hat{P}_{1}}$    (long_name='Price level of region 1')
+P2t      ${\hat{P}_{2}}$    (long_name='Price level of region 2')
+Rt       ${\hat{R}}$        (long_name='Interest rate')
+RKt      ${\hat{R}_{K}}$    (long_name='Return on capital')
+Wt       ${\hat{W}}$        (long_name='Wages')
+pit      ${\hat{\pi}}$      (long_name='National gross inflation rate')
+pi1t     ${\hat{\pi}_{1}}$  (long_name='Gross inflation rate in region 1')
+pi2t     ${\hat{\pi}_{2}}$  (long_name='Gross inflation rate in region 2')
 lambda1t ${\hat{\lambda}_{1}}$ (long_name='Marginal cost in region 1')
 lambda2t ${\hat{\lambda}_{2}}$ (long_name='Marginal cost in region 2')
-ZMt      ${\hat{Z}_M}$         (long_name='Monetary Policy')
+ZMt      ${\hat{Z}_M}$       (long_name='Monetary Policy')
 ;
 
 % -------------------------------------------------- %
@@ -81,20 +81,19 @@ varexo
 % -------------------------------------------------- %
 
 parameters
-alp1    ${\alpha_1}$    (long_name='capital elasticity of production in region 1')
-alp2    ${\alpha_2}$    (long_name='capital elasticity of production in region 2')
+alp     ${\alpha}$      (long_name='capital elasticity of production')
 bet     ${\beta}$       (long_name='intertemporal discount factor')
 gamR    ${\gamma_R}$    (long_name='interest-rate smoothing parameter')
 gampi   ${\gamma_pi}$   (long_name='interest-rate sensitivity in relation to inflation')
 gamY    ${\gamma_Y}$    (long_name='interest-rate sensitivity in relation to product')
 del     ${\delta}$      (long_name='capital depreciation rate')
 the     ${\theta}$      (long_name='price stickiness parameter')
-theY1   ${\theta_Y1}$   (long_name='weight of region 1 production in total production')
 theC11  ${\theta_C11}$  (long_name='weight of good 1 in demand of region 1')
 theC12  ${\theta_C12}$  (long_name='weight of good 2 in demand of region 1')
 theC21  ${\theta_C21}$  (long_name='weight of good 1 in demand of region 2')
 theC22  ${\theta_C22}$  (long_name='weight of good 2 in demand of region 2')
-theP1   ${\theta_P1}$   (long_name='weight of price level 1 in national price level')
+thePY1  ${\theta_PY1}$  (long_name='weight of region 1 in gross domestic product')
+theY1   ${\theta_Y1}$   (long_name='weight of region 1 in total production')
 rhoA1   ${\rho_A1}$     (long_name='autoregressive parameter of productivity in region 1')
 rhoA2   ${\rho_A2}$     (long_name='autoregressive parameter of productivity in region 2')
 rhoM    ${\rho_M}$      (long_name='autoregressive parameter of monetary policy')
@@ -118,20 +117,19 @@ sigmaM  ${\sigma_M}$     (long_name='Standard Error of monetary shock')
 % parameters values                                  %
 % -------------------------------------------------- % 
 
-alp1    = 0.4  ; % capital elasticity of production in region 1
-alp2    = 0.2  ; % capital elasticity of production in region 2
+alp     = 0.35 ; % capital elasticity of production
 bet     = 0.985; % intertemporal discount factor
 gamR    = 0.79 ; % interest-rate smoothing parameter
 gampi   = 2.43 ; % interest-rate sensitivity in relation to inflation
 gamY    = 0.16 ; % interest-rate sensitivity in relation to product
 del     = 0.025; % capital depreciation rate
 the     = 0.8  ; % price stickiness parameter
-theY1   = 0.6  ; % weight of region 1 production in total production
 theC11  = 0.85 ; % weight of good 1 in demand of region 1
 theC12  = 0.05 ; % weight of good 2 in demand of region 1
 theC21  = 0.25 ; % weight of good 1 in demand of region 2
 theC22  = 0.7  ; % weight of good 2 in demand of region 2
-theP1   = 0.6  ; % weight of price level 1 in national price level
+thePY1  = 0.6  ; % weight of region 1 in gross domestic product
+theY1   = 0.6  ; % weight of region 1 in total production
 rhoA1   = 0.95 ; % autoregressive parameter of productivity in region 1
 rhoA2   = 0.95 ; % autoregressive parameter of productivity in region 2
 rhoM    = 0.9  ; % autoregressive parameter of monetary policy
@@ -158,19 +156,32 @@ model(linear);
 
 % First, the steady state variables as local varibles, for the log-linear use:
 
-#Ps   = 1 ;
-#PIs  = 1 ;
-#ZAs  = 1 ;
-#ZMs  = 1 ;
-#Rs   = Ps*(1/BETA-(1-DELTA)) ;
-#LAMs = Ps*(PSI-1)/PSI ;
-#Ws   = (1-ALPHA)*(LAMs*ZAs*(ALPHA/Rs)^ALPHA)^(1/(1-ALPHA)) ;
-#Ys   = ((Ws/(PHI*Ps))*((Ws/((1-ALPHA)*LAMs))^PSI)*(Rs/(Rs-DELTA*ALPHA*LAMs))^SIGMA)^(1/(PSI+SIGMA)) ;
-#Cs   = ((Ws/(PHI*Ps))*((1-ALPHA)*Ys*LAMs/Ws)^(-PSI))^(1/SIGMA) ;
-#Ks   = ALPHA*Ys*LAMs/Rs ;
-#Ls   = (1-ALPHA)*Ys*LAMs/Ws ;
-#Is   = DELTA*Ks ;
-#RHO  = 1/(1+Rs) ;
+#Pss   = 1;
+#ZA1ss = 1;
+#Rss   = 1/bet - 1;
+#RKss  = Pss * (1/bet - (1-del));
+#LAMBDAss = Pss * (psi-1)/psi;
+#Wss   = (1 - alp) * (LAMBDAss * ZA1ss * (alp/RKss)^alp)^(1/(1 - alp));
+#a1ss  = ((Wss^(1 + varp) * ome11^(ome11) * (1 - ome11)^(1 - ome11)) / (phi * Pss * ((1 - alp) * LAMBDAss)^varp))^(1/sig);
+#a2ss  = ((Wss^(1 + varp) * ome21^(ome21) * (1 - ome21)^(1 - ome21)) / (phi * Pss * ((1 - alp) * LAMBDAss)^varp))^(1/sig);
+#b1ss  = del * alp * LAMBDAss / RKss;
+#b2ss  = del * alp * LAMBDAss / RKss;
+#Y1ss  = ((a1ss / (1 - b1ss)) * (1 / (ome11^ome11 * (1 - ome11)^(1 - ome11))))^(sig / (sig + varp));
+#Y2ss  = ((a2ss / (1 - b2ss)) * (1 / (ome21^ome21 * (1 - ome21)^(1 - ome21))))^(sig / (sig + varp));
+#I1ss  = b1ss * Y1ss;
+#I2ss  = b2ss * Y2ss;
+#C1ss  = a1ss * Y1ss^(-varp / sig);
+#C2ss  = a2ss * Y2ss^(-varp / sig);
+#E1ss  = Pss * C1ss / (ome11^ome11 * (1 - ome11)^(1 - ome11));
+#E2ss  = Pss * C2ss / (ome21^ome21 * (1 - ome21)^(1 - ome21));
+#C11ss = E1ss * ome11 / Pss;
+#C21ss = E2ss * ome21 / Pss;
+#C12ss = E1ss * (1 - ome11) / Pss;
+#C22ss = E2ss * (1 - ome21) / Pss;
+#K1ss  = alp * Y1ss * LAMBDAss / RKss;
+#K2ss  = alp * Y2ss * LAMBDAss / RKss;
+#L1ss  = (1 - alp) * Y1ss * LAMBDAss / Wss;
+#L2ss  = (1 - alp) * Y2ss * LAMBDAss / Wss;
 
 % -------------------------------------------------- % 
 % MODEL EQUATIONS                                    %

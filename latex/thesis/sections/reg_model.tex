@@ -69,7 +69,7 @@ thesis.tex
 	
 	\item Intermediate-goods firms \(Y_{\eta jt}\): there is a continuum $j \in [0,1]$ for each region and these firms will demand labor and capital from within the region.
 	
-	\item Productivity level \(Z_{A\eta t}\) and capital weight in production $\alpha_{\eta}$: each region has its own characteristics and because of that has a difference productivity level subject to different shock rule and a different capital weight in production.
+	\item Productivity level \(Z_{A\eta t}\) and capital weight in production $\alpha_{}$: each region has its own characteristics and because of that has a difference productivity level subject to different shock rule and a different capital weight in production.
 	
 \end{itemize}
 
@@ -320,17 +320,17 @@ The intermediate-goods firms, denoted by $j \in [0,1]$, produce varieties of a r
 	\label{eq:reg-int-good-firm-total-cost}
 	\min_{K_{\eta jt}, L_{\eta jt}}: \quad & R_{Kt} K_{\eta jt} + W_t L_{\eta jt} \\
 	\label{eq:reg-int-good-firm-production-function}
-	\st: \quad & Y_{\eta jt} = Z_{A\eta t} K_{\eta jt}^{\alpha_{\eta}} L_{\eta jt}^{1-{\alpha_{\eta}}}
+	\st: \quad & Y_{\eta jt} = Z_{A\eta t} K_{\eta jt}^{\alpha_{}} L_{\eta jt}^{1-{\alpha_{}}}
 \end{align}
 
-where $Y_{\eta jt}$ is the output obtained by the production technology level $Z_{A\eta t}$ that transforms capital $K_{\eta jt}$ and labor $L_{\eta jt}$ in proportions ${\alpha_{\eta}}$ and $(1-{\alpha_{\eta}})$, respectively, into intermediate goods.\footnote{the production technology level $Z_{A\eta t}$ will be submitted to a productivity shock, detailed in section \ref{sec:reg-productivity-shock}.}
+where $Y_{\eta jt}$ is the output obtained by the production technology level $Z_{A\eta t}$ that transforms capital $K_{\eta jt}$ and labor $L_{\eta jt}$ in proportions ${\alpha_{}}$ and $(1-{\alpha_{}})$, respectively, into intermediate goods.\footnote{the production technology level $Z_{A\eta t}$ will be submitted to a productivity shock, detailed in section \ref{sec:reg-productivity-shock}.}
 
 \subsubsection*{Lagrangian}
 
 Applying the Lagrangian:
 \begin{align}
 	\label{eq:reg-int-good-firm-lagrangian}
-	\mathcal{L} = (R_{Kt} K_{\eta jt} + W_t L_{\eta jt}) - \Lambda_{\eta jt} (Z_{A\eta t} K_{\eta jt}^{\alpha_{\eta}} L_{\eta jt}^{1-{\alpha_{\eta}}} - Y_{\eta jt})
+	\mathcal{L} = (R_{Kt} K_{\eta jt} + W_t L_{\eta jt}) - \Lambda_{\eta jt} (Z_{A\eta t} K_{\eta jt}^{\alpha_{}} L_{\eta jt}^{1-{\alpha_{}}} - Y_{\eta jt})
 \end{align}
 
 where the Lagrangian multiplier $\Lambda_{\eta jt}$ is the marginal cost.\footnote{see Lemma \ref{lemma:marginal-cost}}
@@ -339,37 +339,37 @@ where the Lagrangian multiplier $\Lambda_{\eta jt}$ is the marginal cost.\footno
 
 The first-order conditions are:
 \begin{alignat}{2}
-	K_{\eta jt}: \quad & R_{Kt} - \Lambda_{\eta jt} Z_{A\eta t} {\alpha_{\eta}} K_{\eta jt}^{{\alpha_{\eta}}-1} L_{\eta jt}^{1-{\alpha_{\eta}}} = 0 &&\implies \nonumber \\
-	& K_{\eta jt} = {\alpha_{\eta}} Y_{\eta jt} \frac{\Lambda_{\eta jt}}{R_{Kt}} \label{eq:reg-int-good-firm-FOC-Kt} \\
-	L_{\eta jt}: \quad & W_t - \Lambda_{\eta jt} Z_{A\eta t} K_{\eta jt}^{\alpha_{\eta}} (1-{\alpha_{\eta}}) L_{\eta jt}^{-{\alpha_{\eta}}} = 0 \quad &&\implies \nonumber \\ 
-	& L_{\eta jt} = (1-{\alpha_{\eta}}) Y_{\eta jt} \frac{\Lambda_{\eta jt}}{W_t} \label{eq:reg-int-good-firm-FOC-Lt} \\
-	\Lambda_{\eta jt}: \quad & Y_{\eta jt} = Z_{A\eta t} K_{\eta jt}^{\alpha_{\eta}} L_{\eta jt}^{1-{\alpha_{\eta}}} \tag{\ref{eq:reg-int-good-firm-production-function}}
+	K_{\eta jt}: \quad & R_{Kt} - \Lambda_{\eta jt} Z_{A\eta t} {\alpha_{}} K_{\eta jt}^{{\alpha_{}}-1} L_{\eta jt}^{1-{\alpha_{}}} = 0 &&\implies \nonumber \\
+	& K_{\eta jt} = {\alpha_{}} Y_{\eta jt} \frac{\Lambda_{\eta jt}}{R_{Kt}} \label{eq:reg-int-good-firm-FOC-Kt} \\
+	L_{\eta jt}: \quad & W_t - \Lambda_{\eta jt} Z_{A\eta t} K_{\eta jt}^{\alpha_{}} (1-{\alpha_{}}) L_{\eta jt}^{-{\alpha_{}}} = 0 \quad &&\implies \nonumber \\ 
+	& L_{\eta jt} = (1-{\alpha_{}}) Y_{\eta jt} \frac{\Lambda_{\eta jt}}{W_t} \label{eq:reg-int-good-firm-FOC-Lt} \\
+	\Lambda_{\eta jt}: \quad & Y_{\eta jt} = Z_{A\eta t} K_{\eta jt}^{\alpha_{}} L_{\eta jt}^{1-{\alpha_{}}} \tag{\ref{eq:reg-int-good-firm-production-function}}
 \end{alignat}
 
 \subsubsection*{Solutions}
 
 Divide equation \ref{eq:reg-int-good-firm-FOC-Kt} by \ref{eq:reg-int-good-firm-FOC-Lt}:
 \begin{align}
-	\frac{K_{\eta jt}}{L_{\eta jt}} = \frac{{\alpha_{\eta}} Y_{\eta jt} \Lambda_{\eta jt} /R_{Kt}}{(1-{\alpha_{\eta}}) Y_{\eta jt} \Lambda_{\eta jt} /W_t} \implies
-	\frac{K_{\eta jt}}{L_{\eta jt}} = \left( \frac{{\alpha_{\eta}}}{1-{\alpha_{\eta}}} \right) \frac{W_t}{R_{Kt}} \label{eq:reg-int-good-firm-TMRS}
+	\frac{K_{\eta jt}}{L_{\eta jt}} = \frac{{\alpha_{}} Y_{\eta jt} \Lambda_{\eta jt} /R_{Kt}}{(1-{\alpha_{}}) Y_{\eta jt} \Lambda_{\eta jt} /W_t} \implies
+	\frac{K_{\eta jt}}{L_{\eta jt}} = \left( \frac{{\alpha_{}}}{1-{\alpha_{}}} \right) \frac{W_t}{R_{Kt}} \label{eq:reg-int-good-firm-TMRS}
 \end{align}
 
 Equation \ref{eq:reg-int-good-firm-TMRS} demonstrates the relationship between the technical marginal rate of substitution (TMRS) and the economical marginal rate of substitution (EMRS). 
 
 Substitute $L_{\eta jt}$ from equation \ref{eq:reg-int-good-firm-TMRS} in \ref{eq:reg-int-good-firm-production-function}:
 \begin{alignat}{2}
-	Y_{\eta jt} & = Z_{A\eta t} K_{\eta jt}^{\alpha_{\eta}} L_{\eta jt}^{1-{\alpha_{\eta}}} &\implies \nonumber \\
-	Y_{\eta jt} & = Z_{A\eta t} K_{\eta jt}^{\alpha_{\eta}} \left[ \left( \frac{1-{\alpha_{\eta}}}{{\alpha_{\eta}}} \right) \frac{R_{Kt} K_{\eta jt}}{W_t} \right]^{1-{\alpha_{\eta}}} &\implies \nonumber \\
-	K_{\eta jt} & = \frac{Y_{\eta jt}}{Z_{A\eta t}} \left[ \left( \frac{{\alpha_{\eta}}}{1-{\alpha_{\eta}}} \right) \frac{W_t}{R_{Kt}}\right]^{1-{\alpha_{\eta}}} \label{eq:reg-int-good-firm-Kt-demand}
+	Y_{\eta jt} & = Z_{A\eta t} K_{\eta jt}^{\alpha_{}} L_{\eta jt}^{1-{\alpha_{}}} &\implies \nonumber \\
+	Y_{\eta jt} & = Z_{A\eta t} K_{\eta jt}^{\alpha_{}} \left[ \left( \frac{1-{\alpha_{}}}{{\alpha_{}}} \right) \frac{R_{Kt} K_{\eta jt}}{W_t} \right]^{1-{\alpha_{}}} &\implies \nonumber \\
+	K_{\eta jt} & = \frac{Y_{\eta jt}}{Z_{A\eta t}} \left[ \left( \frac{{\alpha_{}}}{1-{\alpha_{}}} \right) \frac{W_t}{R_{Kt}}\right]^{1-{\alpha_{}}} \label{eq:reg-int-good-firm-Kt-demand}
 \end{alignat}
 
 Equation \ref{eq:reg-int-good-firm-Kt-demand} is the intermediate-goods firm demand for capital. 
 
 Substitute \ref{eq:reg-int-good-firm-Kt-demand} in \ref{eq:reg-int-good-firm-TMRS}:
 \begin{alignat}{2}
-	L_{\eta jt} & = \left( \frac{1-{\alpha_{\eta}}}{{\alpha_{\eta}}} \right) \frac{R_{Kt} K_{\eta jt}}{W_t} &\implies \nonumber \\
-	L_{\eta jt} & = \left( \frac{1-{\alpha_{\eta}}}{{\alpha_{\eta}}} \right) \frac{R_{Kt}}{W_t} \frac{Y_{\eta jt}}{Z_{A\eta t}} \left[ \left( \frac{{\alpha_{\eta}}}{1-{\alpha_{\eta}}} \right) \frac{W_t}{R_{Kt}}\right]^{1-{\alpha_{\eta}}} &\implies \nonumber \\
-	L_{\eta jt} & = \frac{Y_{\eta jt}}{Z_{A\eta t}} \left[ \left( \frac{{\alpha_{\eta}}}{1-{\alpha_{\eta}}} \right) \frac{W_t}{R_{Kt}}\right]^{-{\alpha_{\eta}}} \label{eq:reg-int-good-firm-Lt-demand}
+	L_{\eta jt} & = \left( \frac{1-{\alpha_{}}}{{\alpha_{}}} \right) \frac{R_{Kt} K_{\eta jt}}{W_t} &\implies \nonumber \\
+	L_{\eta jt} & = \left( \frac{1-{\alpha_{}}}{{\alpha_{}}} \right) \frac{R_{Kt}}{W_t} \frac{Y_{\eta jt}}{Z_{A\eta t}} \left[ \left( \frac{{\alpha_{}}}{1-{\alpha_{}}} \right) \frac{W_t}{R_{Kt}}\right]^{1-{\alpha_{}}} &\implies \nonumber \\
+	L_{\eta jt} & = \frac{Y_{\eta jt}}{Z_{A\eta t}} \left[ \left( \frac{{\alpha_{}}}{1-{\alpha_{}}} \right) \frac{W_t}{R_{Kt}}\right]^{-{\alpha_{}}} \label{eq:reg-int-good-firm-Lt-demand}
 \end{alignat}
 
 Equation \ref{eq:reg-int-good-firm-Lt-demand} is the intermediate-goods firm demand for labor.
@@ -379,8 +379,8 @@ Equation \ref{eq:reg-int-good-firm-Lt-demand} is the intermediate-goods firm dem
 Calculate the total cost $TC$ using \ref{eq:reg-int-good-firm-Kt-demand} and \ref{eq:reg-int-good-firm-Lt-demand}:
 \begin{alignat}{2}
 	TC_{\eta jt} & = W_t L_{\eta jt} + R_{Kt} K_{\eta jt} &\implies \nonumber \\
-	TC_{\eta jt} & = W_t \frac{Y_{\eta jt}}{Z_{A\eta t}} \left[ \left( \frac{{\alpha_{\eta}}}{1-{\alpha_{\eta}}} \right) \frac{W_t}{R_{Kt}} \right]^{-{\alpha_{\eta}}} + R_{Kt} \frac{Y_{\eta jt}}{Z_{A\eta t}} \left[ \left( \frac{{\alpha_{\eta}}}{1-{\alpha_{\eta}}} \right) \frac{W_t}{R_{Kt}} \right]^{1-{\alpha_{\eta}}} &\implies \nonumber \\
-	TC_{\eta jt} & = \frac{Y_{\eta jt}}{Z_{A\eta t}} \left( \frac{R_{Kt}}{{\alpha_{\eta}}} \right)^{{\alpha_{\eta}}} \left( \frac{W_t}{1-{\alpha_{\eta}}} \right)^{1-{\alpha_{\eta}}} \label{eq:reg-int-good-firm-TC}
+	TC_{\eta jt} & = W_t \frac{Y_{\eta jt}}{Z_{A\eta t}} \left[ \left( \frac{{\alpha_{}}}{1-{\alpha_{}}} \right) \frac{W_t}{R_{Kt}} \right]^{-{\alpha_{}}} + R_{Kt} \frac{Y_{\eta jt}}{Z_{A\eta t}} \left[ \left( \frac{{\alpha_{}}}{1-{\alpha_{}}} \right) \frac{W_t}{R_{Kt}} \right]^{1-{\alpha_{}}} &\implies \nonumber \\
+	TC_{\eta jt} & = \frac{Y_{\eta jt}}{Z_{A\eta t}} \left( \frac{R_{Kt}}{{\alpha_{}}} \right)^{{\alpha_{}}} \left( \frac{W_t}{1-{\alpha_{}}} \right)^{1-{\alpha_{}}} \label{eq:reg-int-good-firm-TC}
 \end{alignat}
 
 %%%%%
@@ -388,13 +388,13 @@ Calculate the total cost $TC$ using \ref{eq:reg-int-good-firm-Kt-demand} and \re
 Calculate the marginal cost $\Lambda$ using \ref{eq:reg-int-good-firm-TC}: 
 \begin{align}
 	\Lambda_{\eta jt} & = \frac{\partial TC_{\eta jt}}{\partial Y_{\eta jt}} \implies 
-	\Lambda_{\eta jt} = \frac{1}{Z_{A\eta t}} \left( \frac{R_{Kt}}{{\alpha_{\eta}}} \right)^{{\alpha_{\eta}}} \left( \frac{W_t}{1-{\alpha_{\eta}}} \right)^{1-{\alpha_{\eta}}} \label{eq:reg-int-good-firm-MC}
+	\Lambda_{\eta jt} = \frac{1}{Z_{A\eta t}} \left( \frac{R_{Kt}}{{\alpha_{}}} \right)^{{\alpha_{}}} \left( \frac{W_t}{1-{\alpha_{}}} \right)^{1-{\alpha_{}}} \label{eq:reg-int-good-firm-MC}
 \end{align}
 
 The marginal cost depends on the technological level $Z_{A\eta t}$, the nominal interest rate $R_{Kt}$ and the nominal wage level $W_t$, which are the same for all intermediate-goods firms, and because of that, the index $j$ may be dropped:
 \begin{align}
 	\label{eq:reg-int-good-firm-MC-2}
-	\Lambda_{\eta t} = \frac{1}{Z_{A\eta t}} \left( \frac{R_{Kt}}{{\alpha_{\eta}}} \right)^{{\alpha_{\eta}}} \left( \frac{W_t}{1-{\alpha_{\eta}}} \right)^{1-{\alpha_{\eta}}}
+	\Lambda_{\eta t} = \frac{1}{Z_{A\eta t}} \left( \frac{R_{Kt}}{{\alpha_{}}} \right)^{{\alpha_{}}} \left( \frac{W_t}{1-{\alpha_{}}} \right)^{1-{\alpha_{}}}
 \end{align}
 
 notice that:
@@ -516,9 +516,7 @@ The objective of the monetary authority is to conduct the economy to price stabi
 	\left( \frac{Y_{t}}{Y} \right)^{\gamma_Y} \right]^{1-\gamma_R} Z_{Mt}
 \end{align}
 
-where $R, \pi, Y$ are the variables in steady state, $\gamma_R$ is the smoothing parameter for the interest rate $R_{Kt}$, while $\gamma_\pi$ and $\gamma_Y$ are the interest-rate sensitivities in relation to inflation and product, respectively and $Z_{Mt}$ is the monetary shock.\footnote{for the monetary shock definition, see section \ref{sec:reg-monetary-shock}.}
-
-and $\pi_t$ is the gross inflation rate, defined by:
+where $R, \pi, Y$ are the variables in steady state, $\gamma_R$ is the smoothing parameter for the interest rate $R_{Kt}$, while $\gamma_\pi$ and $\gamma_Y$ are the interest-rate sensitivities in relation to inflation and product, respectively and $Z_{Mt}$ is the monetary shock and $\pi_t$ is the gross inflation rate, defined by:\footnote{for the monetary shock definition, see section \ref{sec:reg-monetary-shock}.}
 \begin{align}
 	\pi_t = \frac{P_t}{P_{t-1}}
 	\label{eq:reg-gross-inflation-rate}
@@ -526,8 +524,7 @@ and $\pi_t$ is the gross inflation rate, defined by:
 
 where $P_t$ is the national price level, defined by:
 \begin{align}
-	P_{t} Y_{t} &= P_{1t} Y_{1t} + P_{2t} Y_{2t} \implies \nonumber \\
-	P_{t} &= \frac{P_{1t} Y_{1t} + P_{2t} Y_{2t}}{Y_{t}} \label{eq:national-price-level}
+	P_{t} Y_{t} &= P_{1t} Y_{1t} + P_{2t} Y_{2t} \iff P_{t} = \frac{P_{1t} Y_{1t} + P_{2t} Y_{2t}}{Y_{t}} \label{eq:national-price-level}
 \end{align}
 
 \begin{comment}
@@ -700,22 +697,22 @@ The model is composed of the preview solutions, forming a square system of 41 va
 		
 		\item Production Function:
 		\begin{align}
-			Y_{\eta jt} = Z_{A\eta t} K_{\eta jt}^{\alpha_{\eta}} L_{\eta jt}^{1-{\alpha_{\eta}}} \tag{\ref{eq:reg-int-good-firm-production-function}}
+			Y_{\eta jt} = Z_{A\eta t} K_{\eta jt}^{\alpha_{}} L_{\eta jt}^{1-{\alpha_{}}} \tag{\ref{eq:reg-int-good-firm-production-function}}
 		\end{align}
 		
 		\item Capital Demand:
 		\begin{align}
-			K_{\eta jt} = {\alpha_{\eta}} Y_{\eta jt} \frac{\Lambda_{\eta t}}{R_{Kt}} \tag{\ref{eq:reg-int-good-firm-FOC-Kt}}
+			K_{\eta jt} = {\alpha_{}} Y_{\eta jt} \frac{\Lambda_{\eta t}}{R_{Kt}} \tag{\ref{eq:reg-int-good-firm-FOC-Kt}}
 		\end{align}
 		
 		\item Labor Demand:
 		\begin{align}
-			L_{\eta jt} = (1-{\alpha_{\eta}}) Y_{\eta jt} \frac{\Lambda_{\eta t}}{W_t} \tag{\ref{eq:reg-int-good-firm-FOC-Lt}}
+			L_{\eta jt} = (1-{\alpha_{}}) Y_{\eta jt} \frac{\Lambda_{\eta t}}{W_t} \tag{\ref{eq:reg-int-good-firm-FOC-Lt}}
 		\end{align}
 		
 		\item Marginal Cost:
 		\begin{align}
-			\Lambda_{\eta t} = \frac{1}{Z_{A\eta t}} \left( \frac{R_{Kt}}{{\alpha_{\eta}}} \right)^{{\alpha_{\eta}}} \left( \frac{W_t}{1-{\alpha_{\eta}}} \right)^{1-{\alpha_{\eta}}} \tag{\ref{eq:reg-int-good-firm-MC-2}}
+			\Lambda_{\eta t} = \frac{1}{Z_{A\eta t}} \left( \frac{R_{Kt}}{{\alpha_{}}} \right)^{{\alpha_{}}} \left( \frac{W_t}{1-{\alpha_{}}} \right)^{1-{\alpha_{}}} \tag{\ref{eq:reg-int-good-firm-MC-2}}
 		\end{align}
 		
 		\item Optimal Price:
@@ -870,23 +867,23 @@ The steady state of a variable is defined by its constancy through time. For any
 	
 	\item Production Function:
 	\begin{align}
-		Y_{\eta jt} = Z_{A\eta t} K_{\eta jt}^{\alpha_{\eta}} L_{\eta jt}^{1-{\alpha_{\eta}}} \implies Y_{\eta j} = Z_{A\eta} K_{\eta j}^{\alpha_{\eta}} L_{\eta j}^{1-{\alpha_{\eta}}} \label{eq:reg-ss-int-good-firm-production-function}
+		Y_{\eta jt} = Z_{A\eta t} K_{\eta jt}^{\alpha_{}} L_{\eta jt}^{1-{\alpha_{}}} \implies Y_{\eta j} = Z_{A\eta} K_{\eta j}^{\alpha_{}} L_{\eta j}^{1-{\alpha_{}}} \label{eq:reg-ss-int-good-firm-production-function}
 	\end{align}
 	
 	\item Capital Demand:
 	\begin{align}
-		K_{\eta jt} = {\alpha_{\eta}} Y_{\eta jt} \frac{\Lambda_{\eta t}}{R_{Kt}} \implies K_{\eta j} = {\alpha_{\eta}} Y_{\eta j} \frac{\Lambda_{\eta}}{R_K} \label{eq:reg-ss-int-good-firm-FOC-Kt}
+		K_{\eta jt} = {\alpha_{}} Y_{\eta jt} \frac{\Lambda_{\eta t}}{R_{Kt}} \implies K_{\eta j} = {\alpha_{}} Y_{\eta j} \frac{\Lambda_{\eta}}{R_K} \label{eq:reg-ss-int-good-firm-FOC-Kt}
 	\end{align}
 	
 	\item Labor Demand:
 	\begin{align}
-		L_{\eta jt} = (1-{\alpha_{\eta}}) Y_{\eta jt} \frac{\Lambda_{\eta t}}{W_t} \implies L_{\eta j} = (1 -{\alpha_{\eta}}) Y_{\eta j} \frac{\Lambda_{\eta}}{W} \label{eq:reg-ss-int-good-firm-FOC-Lt}
+		L_{\eta jt} = (1-{\alpha_{}}) Y_{\eta jt} \frac{\Lambda_{\eta t}}{W_t} \implies L_{\eta j} = (1 -{\alpha_{}}) Y_{\eta j} \frac{\Lambda_{\eta}}{W} \label{eq:reg-ss-int-good-firm-FOC-Lt}
 	\end{align}
 	
 	\item Marginal Cost:
 	\begin{align}
-		\Lambda_{\eta t} &= \frac{1}{Z_{A\eta t}} \left( \frac{R_{Kt}}{{\alpha_{\eta}}} \right)^{{\alpha_{\eta}}} \left( \frac{W_t}{1-{\alpha_{\eta}}} \right)^{1-{\alpha_{\eta}}} \implies \nonumber \\
-		\Lambda_{\eta} &= \frac{1}{Z_{A\eta}} \left( \frac{R_K}{{\alpha_{\eta}}} \right)^{{\alpha_{\eta}}} \left( \frac{W}{1-{\alpha_{\eta}}} \right)^{1-{\alpha_{\eta}}} \label{eq:reg-ss-int-good-firm-MC-2}
+		\Lambda_{\eta t} &= \frac{1}{Z_{A\eta t}} \left( \frac{R_{Kt}}{{\alpha_{}}} \right)^{{\alpha_{}}} \left( \frac{W_t}{1-{\alpha_{}}} \right)^{1-{\alpha_{}}} \implies \nonumber \\
+		\Lambda_{\eta} &= \frac{1}{Z_{A\eta}} \left( \frac{R_K}{{\alpha_{}}} \right)^{{\alpha_{}}} \left( \frac{W}{1-{\alpha_{}}} \right)^{1-{\alpha_{}}} \label{eq:reg-ss-int-good-firm-MC-2}
 	\end{align}
 	
 	\item Optimal Price:
@@ -962,19 +959,19 @@ The steady state of a variable is defined by its constancy through time. For any
 
 \subsubsection{Variables at Steady State}
 
-	For the steady state solution, all endogenous variables will be determined with respect to the parameters. It is assumed that one regional price level and one productivity level are normalized to one:\footnote{where $\vec{\bm{1}}$ is the unit vector.}
+	For the steady state solution, all endogenous variables will be determined with respect to the parameters. It is assumed that one regional price level and both productivity levels are normalized to one:\footnote{where $\vec{\bm{1}}$ is the unit vector.}
 	\begin{align}
-		\langle \begin{matrix} P_{1} & Z_{A1} \end{matrix} \rangle = \vec{\bm{1}} \label{eq:reg-ss-p1-za1}
+		\langle \begin{matrix} P_{1} & Z_{A1} & Z_{A2} \end{matrix} \rangle = \vec{\bm{1}} \label{eq:reg-ss-p1-za1}
 	\end{align}
 	
 	From \ref{eq:reg-ss-monetary-policy}, \ref{eq:reg-ss-gross-inflation-rate} and \ref{eq:ss-regional-inflation}, the monetary shock, the national and regional gross inflation rates are:
 	\begin{align}
-		\langle \begin{matrix} Z_{M} & \pi & \pi_{\eta} \end{matrix} \rangle  = \vec{\bm{1}}
+		\langle \begin{matrix} Z_{M} & \pi & \pi_{1} & \pi_{2} \end{matrix} \rangle  = \vec{\bm{1}}
 	\end{align}
 	
 	From \ref{eq:reg-ss-productivity-shock} and \ref{eq:reg-ss-monetary-shock}, the productivity and monetary shocks are:
 	\begin{align}
-		\langle \begin{matrix} \varepsilon_{A\eta} & \varepsilon_{M} \end{matrix} \rangle = \vec{\bm{0}} \label{eq:reg-ss-epsilon}
+		\langle \begin{matrix} \varepsilon_{A1} & \varepsilon_{A2} & \varepsilon_{M} \end{matrix} \rangle = \vec{\bm{0}} \label{eq:reg-ss-epsilon}
 	\end{align}
 	
 	From \ref{eq:reg-ss-bonds-euler-equation}, the return on bonds is:
@@ -983,13 +980,13 @@ The steady state of a variable is defined by its constancy through time. For any
 		R &= \frac{1}{\beta} - 1 \label{eq:reg-ss-R}
 	\end{align}
 	
-	From \ref{eq:reg-ss-capital-euler-equation}, the return on capital $R_K$ is:
+	From \ref{eq:reg-ss-capital-euler-equation}, the return on capital $R_K$ for $\eta = 1$ is:
 	\begin{align}
-		1 &= \beta \left[ (1-\delta) + \frac{R_K}{P_{\eta}} \right] \implies \tag{\ref{eq:reg-ss-capital-euler-equation}} \\
-		R_K &= P_{\eta} \left[ \frac{1}{\beta} - (1-\delta) \right] \label{eq:reg-ss-RK}
+		1 &= \beta \left[ (1-\delta) + \frac{R_K}{P_{1}} \right] \implies \tag{\ref{eq:reg-ss-capital-euler-equation}} \\
+		R_K &= P_{1} \left[ \frac{1}{\beta} - (1-\delta) \right] \label{eq:reg-ss-RK}
 	\end{align}
 
-	In \ref{eq:reg-ss-RK}, write the regional equations by substituting $\eta$ with $\{1,2\}$ and then divide one equation by the other:
+	Divide \ref{eq:reg-ss-RK} for $\eta = 1$ by \ref{eq:reg-ss-RK} for $\eta = 2$:
 	\begin{align}
 		\frac{R_K}{R_K} &= \frac{P_{1} \left[ \frac{1}{\beta} - (1-\delta) \right]}{P_{2} \left[ \frac{1}{\beta} - (1-\delta) \right]} \implies \nonumber \\
 		1 &= \frac{P_{1}}{P_{2}} \implies P_{1} = P_{2} \label{eq:reg-ss-p1-p2}
@@ -1018,37 +1015,39 @@ Substitute \ref{eq:reg-ss-general-price-level} and \ref{eq:reg-ss-P1-P2-P} in \r
 	\Lambda_{\eta} &= P_{} \frac{\psi-1}{\psi} = \Lambda_{} \label{eq:reg-ss-marginal-cost}
 \end{align}
 
-Substitute \ref{eq:reg-ss-marginal-cost} in \ref{eq:reg-ss-int-good-firm-MC-2} for the nominal wage $W$ in terms of region 1:
+Substitute \ref{eq:reg-ss-p1-za1} and \ref{eq:reg-ss-marginal-cost} in \ref{eq:reg-ss-int-good-firm-MC-2} for the nominal wage $W$ in terms of region 1:
 \begin{alignat}{2}
-	\Lambda_{\eta} &= \frac{1}{Z_{A\eta}} \left( \frac{R_K}{{\alpha_{\eta}}} \right)^{{\alpha_{\eta}}} \left( \frac{W}{1-{\alpha_{\eta}}} \right)^{1-{\alpha_{\eta}}} &\implies \tag{\ref{eq:reg-ss-int-good-firm-MC-2}} \\ 
-	W &= (1-{\alpha_{1}}) \left[ \Lambda_{} Z_{A1} \left( \frac{{\alpha_{1}}}{R_K} \right)^{{\alpha_{1}}} \right]^\frac{1}{1-{\alpha_{1}}} & \label{eq:reg-ss-nominal-wage}
+	\Lambda_{\eta} &= \frac{1}{Z_{A\eta}} \left( \frac{R_K}{{\alpha_{}}} \right)^{{\alpha_{}}} \left( \frac{W}{1-{\alpha_{}}} \right)^{1-{\alpha_{}}} &\implies \tag{\ref{eq:reg-ss-int-good-firm-MC-2}} \\ 
+	W &= (1-{\alpha_{}}) \left[ \Lambda_{} Z_{A1} \left( \frac{{\alpha_{}}}{R_K} \right)^{{\alpha_{}}} \right]^\frac{1}{1-{\alpha_{}}} & \label{eq:reg-ss-nominal-wage}
 \end{alignat}
 
-Substitute \ref{eq:reg-ss-nominal-wage} in \ref{eq:reg-ss-int-good-firm-MC-2} for the technology level of region 2, $Z_{A2}$:
-\begin{align}
-	\Lambda_{\eta} &= \frac{1}{Z_{A\eta}} \left( \frac{R_K}{{\alpha_{\eta}}} \right)^{{\alpha_{\eta}}} \left( \frac{W}{1-{\alpha_{\eta}}} \right)^{1-{\alpha_{\eta}}} \implies \tag{\ref{eq:reg-ss-int-good-firm-MC-2}} \\
-	Z_{A2} &= \frac{1}{\Lambda_{}} \left( \frac{R_K}{{\alpha_{2}}} \right)^{{\alpha_{2}}} \left( \frac{W}{1-{\alpha_{2}}} \right)^{1-{\alpha_{2}}} \label{eq:reg-ss-za2}
-\end{align}
+\begin{comment}
+	Substitute \ref{eq:reg-ss-nominal-wage} in \ref{eq:reg-ss-int-good-firm-MC-2} for the technology level of region 2, $Z_{A2}$:
+	\begin{align}
+		\Lambda_{\eta} &= \frac{1}{Z_{A\eta}} \left( \frac{R_K}{{\alpha_{}}} \right)^{{\alpha_{}}} \left( \frac{W}{1-{\alpha_{}}} \right)^{1-{\alpha_{}}} \implies \tag{\ref{eq:reg-ss-int-good-firm-MC-2}} \\
+		Z_{A2} &= \frac{1}{\Lambda_{}} \left( \frac{R_K}{{\alpha_{}}} \right)^{{\alpha_{}}} \left( \frac{W}{1-{\alpha_{}}} \right)^{1-{\alpha_{}}} \label{eq:reg-ss-za2}
+	\end{align}
+\end{comment}
 
-In steady state, prices are the same ($P_{\eta} = P_{\eta}^{\ast}$), resulting in a gross inflation level of one ($\pi_{\eta} = 1$), and all firms producing the same output level ($Y_{\eta j} = Y_{\eta}$) due to the price parity \cite[Lecture 13, p.12]{solis-garcia_ucb_2022}. For this reason, they all demand the same amount of factors ($K_{\eta}, L_{\eta}$), and equations \ref{eq:reg-ss-int-good-firm-production-function}, \ref{eq:reg-ss-int-good-firm-FOC-Kt} and \ref{eq:reg-ss-int-good-firm-FOC-Lt} become:
+Due to price parity in steady state, where prices are identical ($P_{\eta} = P_{\eta}^{\ast}$) and resulting in a gross inflation level of one ($\pi_{\eta} = 1$), all firms produce the same output level ($Y_{\eta j} = Y_{\eta}$) \cite[Lecture 13, p.12]{solis-garcia_ucb_2022}. As a consequence, they uniformly demand the same amount of factors ($K_{\eta}, L_{\eta}$), and equations \ref{eq:reg-ss-int-good-firm-production-function}, \ref{eq:reg-ss-int-good-firm-FOC-Kt} and \ref{eq:reg-ss-int-good-firm-FOC-Lt} become: % In steady state, prices are the same ($P_{\eta} = P_{\eta}^{\ast}$), resulting in a gross inflation level of one ($\pi_{\eta} = 1$), and all firms producing the same output level ($Y_{\eta j} = Y_{\eta}$) due to the price parity \cite[Lecture 13, p.12]{solis-garcia_ucb_2022}. For this reason, they all demand the same amount of factors ($K_{\eta}, L_{\eta}$), and equations \ref{eq:reg-ss-int-good-firm-production-function}, \ref{eq:reg-ss-int-good-firm-FOC-Kt} and \ref{eq:reg-ss-int-good-firm-FOC-Lt} become:
 \begin{align}
-	Y_{\eta} &= Z_{A\eta} K_{\eta}^{\alpha_{\eta}} L_{\eta}^{1 -{\alpha_{\eta}}} \label{eq:reg-ss-int-good-firm-production-function-2} \\	
-	K_{\eta} &= {\alpha_{\eta}} Y_{\eta} \frac{\Lambda_{}}{R_K} \label{eq:reg-ss-int-good-firm-FOC-Kt-2} \\
-	L_{\eta} &= (1-{\alpha_{\eta}}) Y_{\eta} \frac{\Lambda_{}}{W} \label{eq:reg-ss-int-good-firm-FOC-Lt-2}
+	Y_{\eta} &= Z_{A\eta} K_{\eta}^{\alpha_{}} L_{\eta}^{1 -{\alpha_{}}} \label{eq:reg-ss-int-good-firm-production-function-2} \\	
+	K_{\eta} &= {\alpha_{}} Y_{\eta} \frac{\Lambda_{}}{R_K} \label{eq:reg-ss-int-good-firm-FOC-Kt-2} \\
+	L_{\eta} &= (1-{\alpha_{}}) Y_{\eta} \frac{\Lambda_{}}{W} \label{eq:reg-ss-int-good-firm-FOC-Lt-2}
 \end{align}
 	
 	Substitute \ref{eq:reg-ss-int-good-firm-FOC-Kt-2} in \ref{eq:reg-ss-law-of-motion-for-capital}:
 	\begin{align}
-		I_{\eta} &= \delta K_{\eta} \implies I_{\eta} = \delta {\alpha_{\eta}} \frac{\Lambda_{}}{R_K} Y_{\eta} \implies \tag{\ref{eq:reg-ss-law-of-motion-for-capital}} \\
+		I_{\eta} &= \delta K_{\eta} \implies I_{\eta} = \delta {\alpha_{}} \frac{\Lambda_{}}{R_K} Y_{\eta} \implies \tag{\ref{eq:reg-ss-law-of-motion-for-capital}} \\
 		I_{\eta} &= b_{\eta} Y_{\eta} \label{eq:reg-ss-investment} \\
-		& \text{where:} \quad b_{\eta} = \delta {\alpha_{\eta}} \frac{\Lambda_{}}{R_K} \label{eq:reg-ss-b-eta}
+		& \text{where:} \quad b_{\eta} = \delta {\alpha_{}} \frac{\Lambda_{}}{R_K} \label{eq:reg-ss-b-eta}
 	\end{align}
 	
 	Isolate $C_{\eta}$ in \ref{eq:reg-ss-household-labor-supply} and then substitute \ref{eq:reg-ss-te} and \ref{eq:reg-ss-int-good-firm-FOC-Lt-2}:
 	\begin{align}
 		\frac{\phi L_{\eta}^{\varphi}}{C_{\eta}^{1-\sigma}} &= \frac{W}{\te[]} \implies C_{\eta}^{\sigma -1} = \frac{W}{\te[] \phi L_{\eta}^{\varphi}} \implies \nonumber\\
 		C_{\eta} &= a_{\eta} Y_{\eta}^{\frac{-\varphi}{\sigma}} \label{eq:reg-ss-consumption} \\
-		& \text{where:} \quad a_{\eta} = \left[ \frac{W^{1 +\varphi} \omega_{\eta 1}^{\omega_{\eta 1}} (1 -\omega_{\eta 1})^{1 -\omega_{\eta 1}}}{\phi P_{} \left[ (1 -\alpha_{\eta}) \Lambda_{} \right]^{\varphi}} \right]^{\frac{1}{\sigma}} \label{eq:reg-ss-a-eta}
+		& \text{where:} \quad a_{\eta} = \left[ \frac{W^{1 +\varphi} \omega_{\eta 1}^{\omega_{\eta 1}} (1 -\omega_{\eta 1})^{1 -\omega_{\eta 1}}}{\phi P_{} \left[ (1 -\alpha_{}) \Lambda_{} \right]^{\varphi}} \right]^{\frac{1}{\sigma}} \label{eq:reg-ss-a-eta}
 	\end{align}
 
 	Substitute \ref{eq:reg-ss-consumption} in \ref{eq:reg-ss-te}:
@@ -1115,9 +1114,9 @@ Substitute \ref{eq:reg-ss-investment}, \ref{eq:reg-ss-C1-Cn-3} and \ref{eq:reg-s
 	\vspace*{-1cm}
 
 	\begin{align}
-		\vec{\bm{1}} &= \langle \begin{matrix} P & P_{\eta} & Z_{A1} & Z_{M} & \pi & \pi_{\eta} \end{matrix} \rangle \label{eq:reg-unity-vector}
+		\vec{\bm{1}} &= \langle \begin{matrix} P & P_{1} & P_{2} & Z_{A1} & Z_{A2} & Z_{M} & \pi & \pi_{1} & \pi_{2} \end{matrix} \rangle \label{eq:reg-unity-vector}
 		\\
-		\vec{\bm{0}} &= \langle \begin{matrix} \varepsilon_{A\eta} & \varepsilon_{M} \end{matrix} \rangle \tag{\ref{eq:reg-ss-epsilon}}
+		\vec{\bm{0}} &= \langle \begin{matrix} \varepsilon_{A1} & \varepsilon_{A2} & \varepsilon_{M} \end{matrix} \rangle \tag{\ref{eq:reg-ss-epsilon}}
 		\\
 		R &= \frac{1}{\beta} - 1 \tag{\ref{eq:reg-ss-R}}
 		\\
@@ -1125,13 +1124,11 @@ Substitute \ref{eq:reg-ss-investment}, \ref{eq:reg-ss-C1-Cn-3} and \ref{eq:reg-s
 		\\
 		\Lambda_{} &= P_{} \frac{\psi-1}{\psi} \tag{\ref{eq:reg-ss-marginal-cost}}
 		\\
-		W &= (1-{\alpha_{1}}) \left[ \Lambda_{} Z_{A1} \left( \frac{{\alpha_{1}}}{R_K} \right)^{{\alpha_{1}}} \right]^\frac{1}{1-{\alpha_{1}}} \tag{\ref{eq:reg-ss-nominal-wage}}
+		W &= (1-{\alpha_{}}) \left[ \Lambda_{} Z_{A1} \left( \frac{{\alpha_{}}}{R_K} \right)^{{\alpha_{}}} \right]^\frac{1}{1-{\alpha_{}}} \tag{\ref{eq:reg-ss-nominal-wage}}
+		\\ % Z_{A2} &= \frac{1}{\Lambda_{}} \left( \frac{R_K}{{\alpha_{}}} \right)^{{\alpha_{}}} \left( \frac{W}{1-{\alpha_{}}} \right)^{1-{\alpha_{}}} \tag{\ref{eq:reg-ss-za2}}
+		a_{\eta} &= \left[ \frac{W^{1 +\varphi} \omega_{\eta 1}^{\omega_{\eta 1}} (1 -\omega_{\eta 1})^{1 -\omega_{\eta 1}}}{\phi P_{} \left[ (1 -\alpha_{}) \Lambda_{} \right]^{\varphi}} \right]^{\frac{1}{\sigma}} \tag{\ref{eq:reg-ss-a-eta}}
 		\\
-		Z_{A2} &= \frac{1}{\Lambda_{}} \left( \frac{R_K}{{\alpha_{2}}} \right)^{{\alpha_{2}}} \left( \frac{W}{1-{\alpha_{2}}} \right)^{1-{\alpha_{2}}} \tag{\ref{eq:reg-ss-za2}}
-		\\
-		a_{\eta} &= \left[ \frac{W^{1 +\varphi} \omega_{\eta 1}^{\omega_{\eta 1}} (1 -\omega_{\eta 1})^{1 -\omega_{\eta 1}}}{\phi P_{} \left[ (1 -\alpha_{\eta}) \Lambda_{} \right]^{\varphi}} \right]^{\frac{1}{\sigma}} \tag{\ref{eq:reg-ss-a-eta}}
-		\\
-		b_{\eta} &= \delta {\alpha_{\eta}} \frac{\Lambda_{}}{R_K} \tag{\ref{eq:reg-ss-b-eta}}
+		b_{\eta} &= \delta {\alpha_{}} \frac{\Lambda_{}}{R_K} \tag{\ref{eq:reg-ss-b-eta}}
 		\\
 		Y_{\eta} &= \left[ \left( \frac{a_{1}}{1 - b_{1}} \right) \left( \frac{1}{\omega_{\eta 1}^{\omega_{\eta 1}} (1 - \omega_{\eta 1})^{1 - \omega_{\eta 1}}} \right) \right]^{\frac{\sigma}{\sigma + \varphi}} \tag{\ref{eq:reg-ss-total-yn-2}}
 		\\
@@ -1145,9 +1142,9 @@ Substitute \ref{eq:reg-ss-investment}, \ref{eq:reg-ss-C1-Cn-3} and \ref{eq:reg-s
 		\\
 		C_{\eta 2} &= \te[] \frac{1 -\omega_{\eta 1}}{P_{}} \tag{\ref{eq:reg-ss-C2-Cn-2}}
 		\\
-		K_{\eta} &= {\alpha_{\eta}} Y_{\eta} \frac{\Lambda_{}}{R_K} \tag{\ref{eq:reg-ss-int-good-firm-FOC-Kt-2}}
+		K_{\eta} &= {\alpha_{}} Y_{\eta} \frac{\Lambda_{}}{R_K} \tag{\ref{eq:reg-ss-int-good-firm-FOC-Kt-2}}
 		\\
-		L_{\eta} &= (1-{\alpha_{\eta}}) Y_{\eta} \frac{\Lambda_{}}{W} \tag{\ref{eq:reg-ss-int-good-firm-FOC-Lt-2}}
+		L_{\eta} &= (1-{\alpha_{}}) Y_{\eta} \frac{\Lambda_{}}{W} \tag{\ref{eq:reg-ss-int-good-firm-FOC-Lt-2}}
 	\end{align}
 
 		\begin{comment}
@@ -1162,6 +1159,42 @@ Substitute \ref{eq:reg-ss-investment}, \ref{eq:reg-ss-C1-Cn-3} and \ref{eq:reg-s
 % --------------------------------------------------
 % LOG-LINEARIZATION
 % --------------------------------------------------
+
+\subsection{aqui}
+	
+\begin{align*}
+	P_{\text{ss}}   &= 1; \\
+	ZA1_{\text{ss}} &= 1; \\
+	R_{\text{ss}}   &= \frac{1}{\beta} - 1; \\
+	RK_{\text{ss}}  &= P_{\text{ss}} \left(\frac{1}{\beta} - (1 - \delta)\right); \\
+	\Lambda_{\text{ss}} &= P_{\text{ss}} \frac{\psi - 1}{\psi}; \\
+	W_{\text{ss}}   &= (1 - \alpha_1) \left(\Lambda_{\text{ss}} ZA1_{\text{ss}} \left(\frac{\alpha_1}{RK_{\text{ss}}}\right)^{\alpha_1}\right)^{\frac{1}{1 - \alpha_1}}; \\
+	a1_{\text{ss}} &= \left(\frac{W_{\text{ss}}^{1 + \text{varp}} \omega_{11}^{\omega_{11}} (1 - \omega_{11})^{1 - \omega_{11}}}{\phi P_{\text{ss}} ((1 - \alpha) \Lambda_{\text{ss}})^{\text{varp}}}\right)^{\frac{1}{\sigma}}; \\
+	a2_{\text{ss}} &= \left(\frac{W_{\text{ss}}^{1 + \text{varp}} \omega_{21}^{\omega_{21}} (1 - \omega_{21})^{1 - \omega_{21}}}{\phi P_{\text{ss}} ((1 - \alpha) \Lambda_{\text{ss}})^{\text{varp}}}\right)^{\frac{1}{\sigma}}; \\
+	b1_{\text{ss}}  &= \delta \alpha_1 \Lambda_{\text{ss}} / RK_{\text{ss}}; \\
+	b2_{\text{ss}}  &= \delta \alpha_2 \Lambda_{\text{ss}} / RK_{\text{ss}}; \\
+	Y1_{\text{ss}}  &= \left(\frac{a1_{\text{ss}}}{1 - b1_{\text{ss}}}\right) \left(\frac{1}{\omega_{11}^{\omega_{11}} (1 - \omega_{11})^{1 - \omega_{11}}}\right)^{\frac{\sigma}{\sigma + \text{varp}}}; \\
+	Y2_{\text{ss}}  &= \left(\frac{a2_{\text{ss}}}{1 - b2_{\text{ss}}}\right) \left(\frac{1}{\omega_{21}^{\omega_{21}} (1 - \omega_{21})^{1 - \omega_{21}}}\right)^{\frac{\sigma}{\sigma + \text{varp}}}; \\
+\end{align*}
+
+\begin{align*}
+	I1_{\text{ss}}  &= b1_{\text{ss}} Y1_{\text{ss}}; \\
+	I2_{\text{ss}}  &= b2_{\text{ss}} Y2_{\text{ss}}; \\
+	C1_{\text{ss}}  &= a1_{\text{ss}} Y1_{\text{ss}}^{-\frac{\text{varp}}{\sigma}}; \\
+	C2_{\text{ss}}  &= a2_{\text{ss}} Y2_{\text{ss}}^{-\frac{\text{varp}}{\sigma}}; \\
+	E1_{\text{ss}}  &= \frac{P_{\text{ss}} C1_{\text{ss}}}{\omega_{11}^{\omega_{11}} (1 - \omega_{11})^{1 - \omega_{11}}}; \\
+	E2_{\text{ss}}  &= \frac{P_{\text{ss}} C2_{\text{ss}}}{\omega_{21}^{\omega_{21}} (1 - \omega_{21})^{1 - \omega_{21}}}; \\
+	C11_{\text{ss}} &= E1_{\text{ss}} \omega_{11} / P_{\text{ss}}; \\
+	C21_{\text{ss}} &= E2_{\text{ss}} \omega_{21} / P_{\text{ss}}; \\
+	C12_{\text{ss}} &= E1_{\text{ss}} (1 - \omega_{11}) / P_{\text{ss}}; \\
+	C22_{\text{ss}} &= E2_{\text{ss}} (1 - \omega_{21}) / P_{\text{ss}}; \\
+	K1_{\text{ss}}  &= \alpha_1 Y1_{\text{ss}} \Lambda_{\text{ss}} / RK_{\text{ss}}; \\
+	K2_{\text{ss}}  &= \alpha_2 Y2_{\text{ss}} \Lambda_{\text{ss}} / RK_{\text{ss}}; \\
+	L1_{\text{ss}}  &= (1 - \alpha_1) Y1_{\text{ss}} \Lambda_{\text{ss}} / W_{\text{ss}}; \\
+	L2_{\text{ss}}  &= (1 - \alpha_2) Y2_{\text{ss}} \Lambda_{\text{ss}} / W_{\text{ss}};
+\end{align*}
+
+	
 	
 \subsection{Log-linearization}
 	
@@ -1478,16 +1511,16 @@ Apply corollary \ref{coro:steady-state-YKL}:
 
 Log-linearize \ref{eq:reg-int-good-firm-production-function}:
 \begin{alignat}{2}
-	Y_{\eta jt} &= Z_{A\eta t} K_{\eta jt}^{\alpha_{\eta}} L_{\eta jt}^{1-{\alpha_{\eta}}} &\implies \tag{\ref{eq:reg-int-good-firm-production-function}} \\
-	Y_{\eta j} (1+ \hat{Y}_{\eta jt}) &= Z_{A\eta} K_{\eta j}^{\alpha_{\eta}} L_{\eta j}^{1-{\alpha_{\eta}}} (1+ \hat{Z}_{A\eta t} + {\alpha_{\eta}} \hat{K}_{\eta jt} + (1-{\alpha_{\eta}}) \hat{L}_{\eta jt}) &\implies \nonumber \\
-	\hat{Y}_{\eta jt} &= \hat{Z}_{A\eta t} + {\alpha_{\eta}} \hat{K}_{\eta jt} + (1-{\alpha_{\eta}}) \hat{L}_{\eta jt} \label{eq:reg-ll-int-good-firm-production-function}
+	Y_{\eta jt} &= Z_{A\eta t} K_{\eta jt}^{\alpha_{}} L_{\eta jt}^{1-{\alpha_{}}} &\implies \tag{\ref{eq:reg-int-good-firm-production-function}} \\
+	Y_{\eta j} (1+ \hat{Y}_{\eta jt}) &= Z_{A\eta} K_{\eta j}^{\alpha_{}} L_{\eta j}^{1-{\alpha_{}}} (1+ \hat{Z}_{A\eta t} + {\alpha_{}} \hat{K}_{\eta jt} + (1-{\alpha_{}}) \hat{L}_{\eta jt}) &\implies \nonumber \\
+	\hat{Y}_{\eta jt} &= \hat{Z}_{A\eta t} + {\alpha_{}} \hat{K}_{\eta jt} + (1-{\alpha_{}}) \hat{L}_{\eta jt} \label{eq:reg-ll-int-good-firm-production-function}
 \end{alignat}
 
 Substitute \ref{eq:reg-ll-int-good-firm-production-function} in \ref{eq:reg-ll-final-goods-firm-bundle-rule}:
 \begin{alignat}{2}
 	\hat{Y}_{\eta t} &= \int_{0}^{1} \hat{Y}_{\eta jt} \dif j &\implies \tag{\ref{eq:reg-ll-final-goods-firm-bundle-rule}} \\
-	\hat{Y}_{\eta t} &= \int_{0}^{1} \left[ \hat{Z}_{A\eta t} + {\alpha_{\eta}} \hat{K}_{\eta jt} + (1-{\alpha_{\eta}}) \hat{L}_{\eta jt} \right] \dif j &\implies \nonumber \\
-	\hat{Y}_{\eta t} &= \hat{Z}_{A\eta t} + {\alpha_{\eta}} \int_{0}^{1} \hat{K}_{\eta jt} \dif j + (1-{\alpha_{\eta}}) \int_{0}^{1} \hat{L}_{\eta jt} \dif j \label{eq:reg-ll-final-goods-firm-bundle-rule-2}
+	\hat{Y}_{\eta t} &= \int_{0}^{1} \left[ \hat{Z}_{A\eta t} + {\alpha_{}} \hat{K}_{\eta jt} + (1-{\alpha_{}}) \hat{L}_{\eta jt} \right] \dif j &\implies \nonumber \\
+	\hat{Y}_{\eta t} &= \hat{Z}_{A\eta t} + {\alpha_{}} \int_{0}^{1} \hat{K}_{\eta jt} \dif j + (1-{\alpha_{}}) \int_{0}^{1} \hat{L}_{\eta jt} \dif j \label{eq:reg-ll-final-goods-firm-bundle-rule-2}
 \end{alignat}
 
 Apply the natural logarithm and then log-linearize \ref{eq:reg-market-clearing-condition-Lt}:
@@ -1512,8 +1545,8 @@ By analogy, the total capital deviation is the sum of all firm's deviations:
 Substitute \ref{eq:reg-ll-market-clearing-condition-Lt} and \ref{eq:reg-ll-capital-clearing-condition} in \ref{eq:reg-ll-final-goods-firm-bundle-rule-2}:
 \begin{align}
 	\tag{\ref{eq:reg-ll-final-goods-firm-bundle-rule-2}}
-	\hat{Y}_{\eta t} &= \hat{Z}_{A\eta t} + {\alpha_{\eta}} \int_{0}^{1} \hat{K}_{\eta jt} \dif j + (1-{\alpha_{\eta}}) \int_{0}^{1} \hat{L}_{\eta jt} \dif j \implies \\
-	\hat{Y}_{\eta t} &= \hat{Z}_{A\eta t} + {\alpha_{\eta}} \hat{K}_{\eta t} + (1-{\alpha_{\eta}}) \hat{L}_{\eta t} \label{eq:reg-ll-final-goods-firm-bundle-rule-3}
+	\hat{Y}_{\eta t} &= \hat{Z}_{A\eta t} + {\alpha_{}} \int_{0}^{1} \hat{K}_{\eta jt} \dif j + (1-{\alpha_{}}) \int_{0}^{1} \hat{L}_{\eta jt} \dif j \implies \\
+	\hat{Y}_{\eta t} &= \hat{Z}_{A\eta t} + {\alpha_{}} \hat{K}_{\eta t} + (1-{\alpha_{}}) \hat{L}_{\eta t} \label{eq:reg-ll-final-goods-firm-bundle-rule-3}
 \end{align}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -1522,15 +1555,15 @@ Substitute \ref{eq:reg-ll-market-clearing-condition-Lt} and \ref{eq:reg-ll-capit
 
 Log-linearize \ref{eq:reg-int-good-firm-FOC-Kt}:
 \begin{alignat}{2}
-	K_{\eta jt} &= {\alpha_{\eta}} Y_{\eta jt} \frac{\Lambda_{\eta t}}{R_{Kt}} &\implies \tag{\ref{eq:reg-int-good-firm-FOC-Kt}} \\
-	K_{\eta j} (1+ \hat{K}_{\eta jt}) &= {\alpha_{\eta}} Y_{\eta j} \frac{\Lambda_{\eta}}{R_{K}} (1+ \hat{Y}_{\eta jt} + \hat{\Lambda}_{\eta t} - \hat{R}_{K \eta t}) \quad &\implies \nonumber \\
-	\hat{K}_{\eta jt} &= \hat{Y}_{\eta jt} + \hat{\Lambda}_{\eta t} - \hat{R}_{K \eta t} \nonumber
+	K_{\eta jt} &= {\alpha_{}} Y_{\eta jt} \frac{\Lambda_{\eta t}}{R_{Kt}} &\implies \tag{\ref{eq:reg-int-good-firm-FOC-Kt}} \\
+	K_{\eta j} (1+ \hat{K}_{\eta jt}) &= {\alpha_{}} Y_{\eta j} \frac{\Lambda_{\eta}}{R_{K}} (1+ \hat{Y}_{\eta jt} + \hat{\Lambda}_{\eta t} - \hat{R}_{K t}) \quad &\implies \nonumber \\
+	\hat{K}_{\eta jt} &= \hat{Y}_{\eta jt} + \hat{\Lambda}_{\eta t} - \hat{R}_{K t} \nonumber
 \end{alignat}
 
 Integrate both sides and then substitute \ref{eq:reg-ll-capital-clearing-condition} and \ref{eq:reg-ll-final-goods-firm-bundle-rule}:
 \begin{alignat}{2}
-	\int_{0}^{1} \hat{K}_{\eta jt} \dif j &= \int_{0}^{1} \left( \hat{Y}_{\eta jt} + \hat{\Lambda}_{\eta t} - \hat{R}_{K \eta t} \right) \dif j \quad &\implies \nonumber \\
-	\hat{K}_{\eta t} &= \hat{Y}_{\eta t} + \hat{\Lambda}_{\eta t} - \hat{R}_{K \eta t} \label{eq:reg-ll-int-good-firm-FOC-Kt}
+	\int_{0}^{1} \hat{K}_{\eta jt} \dif j &= \int_{0}^{1} \left( \hat{Y}_{\eta jt} + \hat{\Lambda}_{\eta t} - \hat{R}_{K t} \right) \dif j \quad &\implies \nonumber \\
+	\hat{K}_{\eta t} &= \hat{Y}_{\eta t} + \hat{\Lambda}_{\eta t} - \hat{R}_{K t} \label{eq:reg-ll-int-good-firm-FOC-Kt}
 \end{alignat}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -1539,8 +1572,8 @@ Integrate both sides and then substitute \ref{eq:reg-ll-capital-clearing-conditi
 
 Log-linearize \ref{eq:reg-int-good-firm-FOC-Lt}:
 \begin{alignat}{2}
-	L_{\eta jt} &= (1-{\alpha_{\eta}}) Y_{\eta jt} \frac{\Lambda_{\eta t}}{W_{t}} &\implies \tag{\ref{eq:reg-int-good-firm-FOC-Lt}} \\
-	L_{\eta j} (1+ \hat{L}_{\eta jt}) &= (1-{\alpha_{\eta}}) Y_{\eta j} \frac{\Lambda_{\eta}}{W} (1+ \hat{Y}_{\eta jt} +\hat{\Lambda}_{\eta t} -\hat{W}_{t}) \quad &\implies \nonumber \\
+	L_{\eta jt} &= (1-{\alpha_{}}) Y_{\eta jt} \frac{\Lambda_{\eta t}}{W_{t}} &\implies \tag{\ref{eq:reg-int-good-firm-FOC-Lt}} \\
+	L_{\eta j} (1+ \hat{L}_{\eta jt}) &= (1-{\alpha_{}}) Y_{\eta j} \frac{\Lambda_{\eta}}{W} (1+ \hat{Y}_{\eta jt} +\hat{\Lambda}_{\eta t} -\hat{W}_{t}) \quad &\implies \nonumber \\
 	\hat{L}_{\eta jt} &= \hat{Y}_{\eta jt} +\hat{\Lambda}_{\eta t} -\hat{W}_{t} \nonumber
 \end{alignat}
 
@@ -1553,8 +1586,8 @@ Integrate both sides and then substitute \ref{eq:reg-ll-market-clearing-conditio
 
 Subtract \ref{eq:reg-ll-int-good-firm-FOC-Lt} from \ref{eq:reg-ll-int-good-firm-FOC-Kt}:
 \begin{align}
-	\hat{K}_{\eta t} - \hat{L}_{\eta t} &= \hat{Y}_{\eta t} + \hat{\Lambda}_{\eta t} - \hat{R}_{K \eta t} - (\hat{Y}_{\eta t} + \hat{\Lambda}_{\eta t} - \hat{W}_{t}) \implies \nonumber \\
-	\hat{K}_{\eta t} - \hat{L}_{\eta t} &= \hat{W}_{t} - \hat{R}_{K \eta t} \label{eq:reg-ll-int-good-firm-TMRS}
+	\hat{K}_{\eta t} - \hat{L}_{\eta t} &= \hat{Y}_{\eta t} + \hat{\Lambda}_{\eta t} - \hat{R}_{K t} - (\hat{Y}_{\eta t} + \hat{\Lambda}_{\eta t} - \hat{W}_{t}) \implies \nonumber \\
+	\hat{K}_{\eta t} - \hat{L}_{\eta t} &= \hat{W}_{t} - \hat{R}_{K t} \label{eq:reg-ll-int-good-firm-TMRS}
 \end{align}
 
 Equation \ref{eq:reg-ll-int-good-firm-TMRS} is the log-linearized version of \ref{eq:reg-int-good-firm-TMRS}.
@@ -1565,16 +1598,16 @@ Equation \ref{eq:reg-ll-int-good-firm-TMRS} is the log-linearized version of \re
 
 Log-linearize \ref{eq:reg-int-good-firm-MC-2}:
 \begin{alignat}{2}
-	& \Lambda_{\eta t} = Z_{A\eta t}^{-1} \frac{R_{Kt}^{{\alpha_{\eta}}} W_t^{1-{\alpha_{\eta}}}}{{\alpha_{\eta}}^{{\alpha_{\eta}}} (1-{\alpha_{\eta}})^{1-{\alpha_{\eta}}}} \implies \tag{\ref{eq:reg-int-good-firm-MC-2}} \\
-	& \Lambda (1+ \hat{\Lambda}_{\eta t}) = \nonumber \\ & \qquad = \frac{1}{Z_{A\eta}} \left( \frac{R_{K}}{{\alpha_{\eta}}} \right)^{{\alpha_{\eta}}} \left( \frac{W}{1-{\alpha_{\eta}}} \right)^{1-{\alpha_{\eta}}} (1- \hat{Z}_{A\eta t} + {\alpha_{\eta}} \hat{R}_{Kt} + (1- {\alpha_{\eta}}) \hat{W}_{t} ) \implies \nonumber \\
-	& \hat{\Lambda}_{\eta t} = {\alpha_{\eta}} \hat{R}_{Kt} + (1- {\alpha_{\eta}}) \hat{W}_{t} - \hat{Z}_{A\eta t} \label{eq:reg-ll-int-good-firm-MC-2}
+	& \Lambda_{\eta t} = Z_{A\eta t}^{-1} \frac{R_{Kt}^{{\alpha_{}}} W_t^{1-{\alpha_{}}}}{{\alpha_{}}^{{\alpha_{}}} (1-{\alpha_{}})^{1-{\alpha_{}}}} \implies \tag{\ref{eq:reg-int-good-firm-MC-2}} \\
+	& \Lambda (1+ \hat{\Lambda}_{\eta t}) = \nonumber \\ & \qquad = \frac{1}{Z_{A\eta}} \left( \frac{R_{K}}{{\alpha_{}}} \right)^{{\alpha_{}}} \left( \frac{W}{1-{\alpha_{}}} \right)^{1-{\alpha_{}}} (1- \hat{Z}_{A\eta t} + {\alpha_{}} \hat{R}_{Kt} + (1- {\alpha_{}}) \hat{W}_{t} ) \implies \nonumber \\
+	& \hat{\Lambda}_{\eta t} = {\alpha_{}} \hat{R}_{Kt} + (1- {\alpha_{}}) \hat{W}_{t} - \hat{Z}_{A\eta t} \label{eq:reg-ll-int-good-firm-MC-2}
 \end{alignat}
 
 Substitute \ref{eq:reg-hat-real-marginal-cost} in \ref{eq:reg-ll-int-good-firm-MC-2}:
 \begin{alignat}{2}
-	\hat{\Lambda}_{\eta t} &= {\alpha_{\eta}} \hat{R}_{Kt} + (1- {\alpha_{\eta}}) \hat{W}_{t} - \hat{Z}_{A\eta t} &\implies \nonumber \\
-	\hat{P}_{\eta t} + \hat{\lambda}_{\eta t} &= {\alpha_{\eta}} \hat{R}_{Kt} + (1- {\alpha_{\eta}}) \hat{W}_{t} - \hat{Z}_{A\eta t} &\implies \nonumber \\
-	\hat{\lambda}_{\eta t} &= {\alpha_{\eta}} \hat{R}_{Kt} + (1- {\alpha_{\eta}}) \hat{W}_{t} - \hat{Z}_{A\eta t} - \hat{P}_{\eta t} \label{eq:reg-ll-int-good-firm-MC-3}
+	\hat{\Lambda}_{\eta t} &= {\alpha_{}} \hat{R}_{Kt} + (1- {\alpha_{}}) \hat{W}_{t} - \hat{Z}_{A\eta t} &\implies \nonumber \\
+	\hat{P}_{\eta t} + \hat{\lambda}_{\eta t} &= {\alpha_{}} \hat{R}_{Kt} + (1- {\alpha_{}}) \hat{W}_{t} - \hat{Z}_{A\eta t} &\implies \nonumber \\
+	\hat{\lambda}_{\eta t} &= {\alpha_{}} \hat{R}_{Kt} + (1- {\alpha_{}}) \hat{W}_{t} - \hat{Z}_{A\eta t} - \hat{P}_{\eta t} \label{eq:reg-ll-int-good-firm-MC-3}
 \end{alignat}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -1612,10 +1645,23 @@ Log-linearize \ref{eq:national-price-level}:
 \begin{alignat}{2}
 	P_{t} Y_{t} &= P_{1t} Y_{1t} + P_{2t} Y_{2t} & \implies \tag{\ref{eq:national-price-level}} \\ 
 	P Y (1 + \hat{P}_{t} + \hat{Y}_{t}) &= P_{1} Y_{1} (1 + \hat{P}_{1t} + \hat{Y}_{1t}) + P_{2} Y_{2} (1 + \hat{P}_{2t} + \hat{Y}_{2t}) &\implies \nonumber \\
-	P Y (\hat{P}_{t} + \hat{Y}_{t}) &= P_{1} Y_{1} (\hat{P}_{1t} + \hat{Y}_{1t}) + P_{2} Y_{2} (\hat{P}_{2t} + \hat{Y}_{2t}) \label{eq:reg-ll-national-price-level}
+	\hat{P}_{t} + \hat{Y}_{t} &= \frac{P_{1} Y_{1}}{P Y} (\hat{P}_{1t} + \hat{Y}_{1t}) + \frac{P_{2} Y_{2}}{P Y} (\hat{P}_{2t} + \hat{Y}_{2t}) \label{eq:reg-ll-national-price-level}
 \end{alignat}
 
+	Define the regional weights $\langle \begin{smallmatrix} \theta_{PY1} & (1-\theta_{PY1}) \end{smallmatrix} \rangle$ in the gross domestic production:
+	\begin{align}
+		\left\langle \begin{matrix} \theta_{PY1} & (1-\theta_{PY1}) \end{matrix} \right\rangle \coloneq \left\langle \begin{matrix} \frac{P_{1} Y_{1}}{P Y} & \frac{P_{2} Y_{2}}{PY} \end{matrix} \right\rangle \label{eq:reg-ss-PYn-weight-in-PY}
+	\end{align}
+
+Substitute \ref{eq:reg-ss-PYn-weight-in-PY} in \ref{eq:reg-ll-national-price-level}:
+\begin{alignat}{2}
+	\hat{P}_{t} + \hat{Y}_{t} &= \frac{P_{1} Y_{1}}{P Y} (\hat{P}_{1t} + \hat{Y}_{1t}) + \frac{P_{2} Y_{2}}{P Y} (\hat{P}_{2t} + \hat{Y}_{2t}) \tag{\ref{eq:reg-ll-national-price-level}} \implies \\
+	\hat{P}_{t} + \hat{Y}_{t} &= \theta_{PY1} (\hat{P}_{1t} + \hat{Y}_{1t}) + (1-\theta_{PY1}) (\hat{P}_{2t} + \hat{Y}_{2t}) \label{eq:reg-ll-national-price-level-2}
+\end{alignat}
+
+
 \begin{comment}
+	
 	P_{t} &= \theta_{P1} P_{1t} + (1 -\theta_{P1}) P_{2t} &\implies \tag{\ref{eq:national-price-level}} \\ 
 	P (1 +\hat{P}_{t}) &= \theta_{P1} P_{1} (1 +\hat{P}_{1t}) + (1 -\theta_{P1}) P_{2} (1 +\hat{P}_{2t}) &\implies \nonumber \\
 	\hat{P}_{t} &= \theta_{P1} \hat{P}_{1t} + (1 -\theta_{P1}) \hat{P}_{2t} % \label{eq:reg-ll-national-price-level}	
@@ -1777,17 +1823,17 @@ The log-linear model is a square system of 31 variables and 31 equations, summar
 		
 		\item Production Function
 		\begin{align}
-			\hat{Y}_{\eta t} &= \hat{Z}_{A\eta t} + {\alpha_{\eta}} \hat{K}_{\eta t} + (1-{\alpha_{\eta}}) \hat{L}_{\eta t} \tag{\ref{eq:reg-ll-final-goods-firm-bundle-rule-3}}
+			\hat{Y}_{\eta t} &= \hat{Z}_{A\eta t} + {\alpha_{}} \hat{K}_{\eta t} + (1-{\alpha_{}}) \hat{L}_{\eta t} \tag{\ref{eq:reg-ll-final-goods-firm-bundle-rule-3}}
 		\end{align}
 		
 		\item Marginal Rates of Substitution of Factors
 		\begin{align}
-			\hat{K}_{\eta t} - \hat{L}_{\eta t} &= \hat{W}_{t} - \hat{R}_{K \eta t} \tag{\ref{eq:reg-ll-int-good-firm-TMRS}}
+			\hat{K}_{\eta t} - \hat{L}_{\eta t} &= \hat{W}_{t} - \hat{R}_{K t} \tag{\ref{eq:reg-ll-int-good-firm-TMRS}}
 		\end{align}
 		
 		\item Marginal Cost
 		\begin{alignat}{2}
-			\hat{\lambda}_{\eta t} &= {\alpha_{\eta}} \hat{R}_{Kt} + (1- {\alpha_{\eta}}) \hat{W}_{t} - \hat{Z}_{A\eta t} - \hat{P}_{\eta t} \tag{\ref{eq:reg-ll-int-good-firm-MC-3}}
+			\hat{\lambda}_{\eta t} &= {\alpha_{}} \hat{R}_{Kt} + (1- {\alpha_{}}) \hat{W}_{t} - \hat{Z}_{A\eta t} - \hat{P}_{\eta t} \tag{\ref{eq:reg-ll-int-good-firm-MC-3}}
 		\end{alignat}
 		
 		\item Monetary Policy
@@ -1802,7 +1848,7 @@ The log-linear model is a square system of 31 variables and 31 equations, summar
 		
 		\item National Price Level
 		\begin{alignat}{2}
-			\hat{P}_{t} &= \theta_{P1} \hat{P}_{1t} + (1 -\theta_{P1}) \hat{P}_{2t} \tag{\ref{eq:reg-ll-national-price-level}}
+			\hat{P}_{t} + \hat{Y}_{t} &= \theta_{PY1} (\hat{P}_{1t} + \hat{Y}_{1t}) + (1-\theta_{PY1}) (\hat{P}_{2t} + \hat{Y}_{2t}) \tag{\ref{eq:reg-ll-national-price-level}}
 		\end{alignat}
 		
 		\item Productivity Shock
