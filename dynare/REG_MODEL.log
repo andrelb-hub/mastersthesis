@@ -47,27 +47,27 @@ ZMt      		 0
 EIGENVALUES:
          Modulus             Real        Imaginary
 
-       1.649e-18       -1.649e-18                0
-       5.176e-15       -5.176e-15                0
-        0.009243         0.009243                0
-          0.7948           0.7948                0
+       3.968e-17       -3.968e-17                0
+       1.025e-15        1.025e-15                0
+         0.05799         -0.05799                0
+          0.8152           0.8152                0
              0.9              0.9                0
+          0.9382           0.9377          0.03104
+          0.9382           0.9377         -0.03104
             0.95             0.95                0
             0.95             0.95                0
-          0.9922           0.9922                0
+          0.9967           0.9967                0
                1                1                0
-               1                1                0
-           1.021            1.021                0
-            1.19             1.19                0
-            2.02             2.02                0
-        3.38e+08         3.38e+08                0
-        4.54e+15         4.54e+15                0
+           1.101            1.101                0
+            1.92            1.898           0.2891
+            1.92            1.898          -0.2891
+       7.756e+15        7.756e+15                0
              Inf              Inf                0
              Inf              Inf                0
              Inf              Inf                0
 
 
-There are 9 eigenvalue(s) larger than 1 in modulus 
+There are 7 eigenvalue(s) larger than 1 in modulus 
 for 9 forward-looking variable(s)
 
 The rank condition ISN'T verified!
