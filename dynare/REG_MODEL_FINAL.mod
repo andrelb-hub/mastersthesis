@@ -44,7 +44,7 @@ pi1t     ${\hat{\pi}_{1}}$  (long_name='Gross inflation rate in region 1')
 pi2t     ${\hat{\pi}_{2}}$  (long_name='Gross inflation rate in region 2')
 lambda1t ${\hat{\lambda}_{1}}$ (long_name='Marginal cost in region 1')
 lambda2t ${\hat{\lambda}_{2}}$ (long_name='Marginal cost in region 2')
-ZMt      ${\hat{Z}_M}$       (long_name='Monetary Policy')
+ZMt      ${\hat{Z}_M}$      (long_name='Monetary Policy')
 ;
 % -------------------------------------------------- %
 % LOCAL VARIABLES                                    %
@@ -77,7 +77,17 @@ model_local_variable
     K1ss
     K2ss
     L1ss
-    L2ss 
+    L2ss
+    Yss
+% local variables:
+    rK       % real return on capital.
+    thetaC11 % weight of good 1 in demand of region 1
+    thetaC12 % weight of good 2 in demand of region 1
+    thetaC21 % weight of good 1 in demand of region 2
+    thetaC22 % weight of good 2 in demand of region 2
+    thetaY1  % weight of region 1 in total production
+    % thetaPY1 % weight of region 1 in gross domestic product
+    
     ;
 % -------------------------------------------------- %
 % EXOGENOUS VARIABLES                                %
@@ -98,12 +108,12 @@ gammapi   ${\gamma_{pi}}$   (long_name='interest-rate sensitivity in relation to
 gammaY    ${\gamma_{Y}}$    (long_name='interest-rate sensitivity in relation to product')
 dellta    ${\delta}$        (long_name='capital depreciation rate')
 thetta    ${\theta}$        (long_name='price stickiness parameter')
-thetaC11  ${\theta_{C11}}$  (long_name='weight of good 1 in demand of region 1')
-thetaC12  ${\theta_{C12}}$  (long_name='weight of good 2 in demand of region 1')
-thetaC21  ${\theta_{C21}}$  (long_name='weight of good 1 in demand of region 2')
-thetaC22  ${\theta_{C22}}$  (long_name='weight of good 2 in demand of region 2')
-thetaPY1  ${\theta_{PY1}}$  (long_name='weight of region 1 in gross domestic product')
-thetaY1   ${\theta_{Y1}}$   (long_name='weight of region 1 in total production')
+% thetaC11  ${\theta_{C11}}$  (long_name='weight of good 1 in demand of region 1')
+% thetaC12  ${\theta_{C12}}$  (long_name='weight of good 2 in demand of region 1')
+% thetaC21  ${\theta_{C21}}$  (long_name='weight of good 1 in demand of region 2')
+% thetaC22  ${\theta_{C22}}$  (long_name='weight of good 2 in demand of region 2')
+% thetaPY1  ${\theta_{PY1}}$  (long_name='weight of region 1 in gross domestic product')
+% thetaY1   ${\theta_{Y1}}$   (long_name='weight of region 1 in total production')
 rhoA1     ${\rho_{A1}}$     (long_name='autoregressive parameter of productivity in region 1')
 rhoA2     ${\rho_{A2}}$     (long_name='autoregressive parameter of productivity in region 2')
 rhoM      ${\rho_{M}}$      (long_name='autoregressive parameter of monetary policy')
@@ -130,12 +140,12 @@ gammapi  = 2.43  ;  % interest-rate sensitivity in relation to inflation
 gammaY   = 0.16  ;  % interest-rate sensitivity in relation to product
 dellta   = 0.025 ;  % capital depreciation rate
 thetta   = 0.8   ;  % price stickiness parameter
-thetaC11 = 0.85  ;  % weight of good 1 in demand of region 1
-thetaC12 = 0.05  ;  % weight of good 2 in demand of region 1
-thetaC21 = 0.25  ;  % weight of good 1 in demand of region 2
-thetaC22 = 0.7   ;  % weight of good 2 in demand of region 2
-thetaPY1 = 0.6   ;  % weight of region 1 in gross domestic product
-thetaY1  = 0.6   ;  % weight of region 1 in total production
+% thetaC11 = 0.85  ;  % weight of good 1 in demand of region 1
+% thetaC12 = 0.05  ;  % weight of good 2 in demand of region 1
+% thetaC21 = 0.25  ;  % weight of good 1 in demand of region 2
+% thetaC22 = 0.7   ;  % weight of good 2 in demand of region 2
+% thetaY1  = 0.6   ;  % weight of region 1 in total production
+% thetaPY1 = 0.6   ;  % weight of region 1 in gross domestic product
 rhoA1    = 0.95  ;  % autoregressive parameter of productivity in region 1
 rhoA2    = 0.95  ;  % autoregressive parameter of productivity in region 2
 rhoM     = 0.9   ;  % autoregressive parameter of monetary policy
@@ -168,6 +178,7 @@ model(linear);
 #b2ss  = dellta * alppha * LAMBDAss / RKss;
 #Y1ss  = ((a1ss / (1 - b1ss)) * (1 / (omega11^omega11 * (1 - omega11)^(1 - omega11))))^(siggma / (siggma + varphhi));
 #Y2ss  = ((a2ss / (1 - b2ss)) * (1 / (omega21^omega21 * (1 - omega21)^(1 - omega21))))^(siggma / (siggma + varphhi));
+#Yss   = Y1ss + Y2ss;
 #I1ss  = b1ss * Y1ss;
 #I2ss  = b2ss * Y2ss;
 #C1ss  = a1ss * Y1ss^(-varphhi / siggma);
@@ -182,6 +193,13 @@ model(linear);
 #K2ss  = alppha * Y2ss * LAMBDAss / RKss;
 #L1ss  = (1 - alppha) * Y1ss * LAMBDAss / Wss;
 #L2ss  = (1 - alppha) * Y2ss * LAMBDAss / Wss;
+% Parameters derived from steady state variables:
+#rK       =  RKss / Pss  ;
+#thetaY1  =  Y1ss / Yss  ;
+#thetaC11 = C11ss / Y1ss ;
+#thetaC12 = C21ss / Y1ss ;
+#thetaC21 = C12ss / Y2ss ;
+#thetaC22 = C22ss / Y2ss ;
 % -------------------------------------------------- % 
 % MODEL EQUATIONS                                    %
 % -------------------------------------------------- %
@@ -208,8 +226,8 @@ varphhi * L2t - (1 - siggma) * C2t = Wt - E2t;
 (E1t(+1) - (1 - siggma) * C1t(+1)) - (E1t - (1 - siggma) * C1t) = (1 - betta) * Rt;
 (E2t(+1) - (1 - siggma) * C2t(+1)) - (E2t - (1 - siggma) * C2t) = (1 - betta) * Rt;
 [name='Euler equation for the capital return']
-(E1t(+1) - P1t(+1) - (1 - siggma) * C1t(+1)) - (E1t - P1t - (1 - siggma) * C1t) = betta * (RKss/Pss) * (RKt(+1) - P1t(+1));
-(E2t(+1) - P2t(+1) - (1 - siggma) * C2t(+1)) - (E2t - P2t - (1 - siggma) * C2t) = betta * (RKss/Pss) * (RKt(+1) - P2t(+1));
+(E1t(+1) - P1t(+1) - (1 - siggma) * C1t(+1)) - (E1t - P1t - (1 - siggma) * C1t) = betta * rK * (RKt(+1) - P1t(+1));
+(E2t(+1) - P2t(+1) - (1 - siggma) * C2t(+1)) - (E2t - P2t - (1 - siggma) * C2t) = betta * rK * (RKt(+1) - P2t(+1));
 [name='Production Function']
 Y1t = ZA1t + alppha * K1t(-1) + (1 - alppha) * L1t;
 Y2t = ZA2t + alppha * K2t(-1) + (1 - alppha) * L2t;
@@ -224,9 +242,9 @@ Rt = gammaR * Rt(-1) + (1 - gammaR) * (gammapi * pit + gammaY * Yt) + ZMt;
 [name='National Gross Inflation Rate']
 pit = Pt - Pt(-1);
 [name='National Price Level']
-Pt + Yt = thetaPY1 * (P1t + Y1t) + (1 - thetaPY1) * (P2t + Y2t);
+Pt = thetaY1 * P1t + (1 - thetaY1) * P2t ;
 [name='Market Clearing Condition']
-Yt = thetaY1 * Y1t + (1 - thetaY1) * Y2t;
+Yt = thetaY1 * Y1t + (1 - thetaY1) * Y2t ;
 [name='Regional Market Clearing Condition']
 Y1t = thetaC11 * C11t + thetaC12 * C12t + (1 - thetaC11 - thetaC12) * I1t;
 Y2t = thetaC21 * C21t + thetaC22 * C22t + (1 - thetaC21 - thetaC22) * I2t;

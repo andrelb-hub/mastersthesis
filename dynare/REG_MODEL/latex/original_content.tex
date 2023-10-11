@@ -35,6 +35,9 @@ Y1ss = \left(\frac{{a1ss}}{1-{b1ss}}\, \frac{1}{{{\omega_{11}}}^{{{\omega_{11}}}
 Y2ss = \left(\frac{{a2ss}}{1-{b2ss}}\, \frac{1}{{{\omega_{21}}}^{{{\omega_{21}}}}\, \left(1-{{\omega_{21}}}\right)^{1-{{\omega_{21}}}}}\right)^{\frac{{{\sigma}}}{{{\varphi}}+{{\sigma}}}}
 \end{dmath*}
 \begin{dmath*}
+Yss = {Y1ss}+{Y2ss}
+\end{dmath*}
+\begin{dmath*}
 I1ss = {b1ss}\, {Y1ss}
 \end{dmath*}
 \begin{dmath*}
@@ -75,6 +78,24 @@ L1ss = \frac{{LAMBDAss}\, \left(1-{{\alpha}}\right)\, {Y1ss}}{{Wss}}
 \end{dmath*}
 \begin{dmath*}
 L2ss = \frac{{LAMBDAss}\, \left(1-{{\alpha}}\right)\, {Y2ss}}{{Wss}}
+\end{dmath*}
+\begin{dmath*}
+rK = \frac{{RKss}}{{Pss}}
+\end{dmath*}
+\begin{dmath*}
+thetaY1 = \frac{{Y1ss}}{{Yss}}
+\end{dmath*}
+\begin{dmath*}
+thetaC11 = \frac{{C11ss}}{{Y1ss}}
+\end{dmath*}
+\begin{dmath*}
+thetaC12 = \frac{{C21ss}}{{Y1ss}}
+\end{dmath*}
+\begin{dmath*}
+thetaC21 = \frac{{C12ss}}{{Y2ss}}
+\end{dmath*}
+\begin{dmath*}
+thetaC22 = \frac{{C22ss}}{{Y2ss}}
 \end{dmath*}
 % Equation 1
 \begin{dmath}
@@ -134,11 +155,11 @@ L2ss = \frac{{LAMBDAss}\, \left(1-{{\alpha}}\right)\, {Y2ss}}{{Wss}}
 \end{dmath}
 % Equation 15
 \begin{dmath}
-{{\hat{\mathscr{E}}_{1}}}_{t+1}-{{\hat{P}_{1}}}_{t+1}-\left(1-{{\sigma}}\right)\, {{\hat{C}_{1}}}_{t+1}-\left({{\hat{\mathscr{E}}_{1}}}_{t}-{{\hat{P}_{1}}}_{t}-{{\hat{C}_{1}}}_{t}\, \left(1-{{\sigma}}\right)\right)={{\beta}}\, \frac{{RKss}}{{Pss}}\, \left({{\hat{R}_{K}}}_{t+1}-{{\hat{P}_{1}}}_{t+1}\right)
+{{\hat{\mathscr{E}}_{1}}}_{t+1}-{{\hat{P}_{1}}}_{t+1}-\left(1-{{\sigma}}\right)\, {{\hat{C}_{1}}}_{t+1}-\left({{\hat{\mathscr{E}}_{1}}}_{t}-{{\hat{P}_{1}}}_{t}-{{\hat{C}_{1}}}_{t}\, \left(1-{{\sigma}}\right)\right)={{\beta}}\, {rK}\, \left({{\hat{R}_{K}}}_{t+1}-{{\hat{P}_{1}}}_{t+1}\right)
 \end{dmath}
 % Equation 16
 \begin{dmath}
-{{\hat{\mathscr{E}}_{2}}}_{t+1}-{{\hat{P}_{2}}}_{t+1}-\left(1-{{\sigma}}\right)\, {{\hat{C}_{2}}}_{t+1}-\left({{\hat{\mathscr{E}}_{2}}}_{t}-{{\hat{P}_{2}}}_{t}-{{\hat{C}_{2}}}_{t}\, \left(1-{{\sigma}}\right)\right)={{\beta}}\, \frac{{RKss}}{{Pss}}\, \left({{\hat{R}_{K}}}_{t+1}-{{\hat{P}_{2}}}_{t+1}\right)
+{{\hat{\mathscr{E}}_{2}}}_{t+1}-{{\hat{P}_{2}}}_{t+1}-\left(1-{{\sigma}}\right)\, {{\hat{C}_{2}}}_{t+1}-\left({{\hat{\mathscr{E}}_{2}}}_{t}-{{\hat{P}_{2}}}_{t}-{{\hat{C}_{2}}}_{t}\, \left(1-{{\sigma}}\right)\right)={{\beta}}\, {rK}\, \left({{\hat{R}_{K}}}_{t+1}-{{\hat{P}_{2}}}_{t+1}\right)
 \end{dmath}
 % Equation 17
 \begin{dmath}
@@ -174,19 +195,19 @@ L2ss = \frac{{LAMBDAss}\, \left(1-{{\alpha}}\right)\, {Y2ss}}{{Wss}}
 \end{dmath}
 % Equation 25
 \begin{dmath}
-{{\hat{Y}}}_{t}+{{\hat{P}}}_{t}={{\theta_{PY1}}}\, \left({{\hat{P}_{1}}}_{t}+{{\hat{Y}_{1}}}_{t}\right)+\left(1-{{\theta_{PY1}}}\right)\, \left({{\hat{P}_{2}}}_{t}+{{\hat{Y}_{2}}}_{t}\right)
+{{\hat{P}}}_{t}={{\hat{P}_{1}}}_{t}\, {thetaY1}+{{\hat{P}_{2}}}_{t}\, \left(1-{thetaY1}\right)
 \end{dmath}
 % Equation 26
 \begin{dmath}
-{{\hat{Y}}}_{t}={{\hat{Y}_{1}}}_{t}\, {{\theta_{Y1}}}+{{\hat{Y}_{2}}}_{t}\, \left(1-{{\theta_{Y1}}}\right)
+{{\hat{Y}}}_{t}={{\hat{Y}_{1}}}_{t}\, {thetaY1}+{{\hat{Y}_{2}}}_{t}\, \left(1-{thetaY1}\right)
 \end{dmath}
 % Equation 27
 \begin{dmath}
-{{\hat{Y}_{1}}}_{t}={{\hat{C}_{1 1}}}_{t}\, {{\theta_{C11}}}+{{\hat{C}_{1 2}}}_{t}\, {{\theta_{C12}}}+{{\hat{I}_{1}}}_{t}\, \left(1-{{\theta_{C11}}}-{{\theta_{C12}}}\right)
+{{\hat{Y}_{1}}}_{t}={{\hat{C}_{1 1}}}_{t}\, {thetaC11}+{{\hat{C}_{1 2}}}_{t}\, {thetaC12}+{{\hat{I}_{1}}}_{t}\, \left(1-{thetaC11}-{thetaC12}\right)
 \end{dmath}
 % Equation 28
 \begin{dmath}
-{{\hat{Y}_{2}}}_{t}={{\hat{C}_{2 1}}}_{t}\, {{\theta_{C21}}}+{{\hat{C}_{2 2}}}_{t}\, {{\theta_{C22}}}+{{\hat{I}_{2}}}_{t}\, \left(1-{{\theta_{C21}}}-{{\theta_{C22}}}\right)
+{{\hat{Y}_{2}}}_{t}={{\hat{C}_{2 1}}}_{t}\, {thetaC21}+{{\hat{C}_{2 2}}}_{t}\, {thetaC22}+{{\hat{I}_{2}}}_{t}\, \left(1-{thetaC21}-{thetaC22}\right)
 \end{dmath}
 % Equation 29
 \begin{dmath}

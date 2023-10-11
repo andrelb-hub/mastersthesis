@@ -1,0 +1,24 @@
+% --------------------------------------------------
+% DOCUMENT CLASS
+% --------------------------------------------------
+
+\documentclass[
+	thesis.tex
+	]{subfiles}
+
+\begin{document}
+
+	\newpage
+	
+	\pdfbookmark[1]{\contentsname}{toc}
+	
+	{
+		\setlength{\parskip}{1pt}
+		\singlespacing
+		\tableofcontents
+	}
+	
+	% no page number:
+	\thispagestyle{empty}
+
+\end{document}

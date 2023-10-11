@@ -1097,7 +1097,7 @@ Substitute \ref{eq:reg-ss-investment}, \ref{eq:reg-ss-C1-Cn-3} and \ref{eq:reg-s
 	\end{alignat}
 \end{comment}
 
-	The result of \ref{eq:reg-ss-total-yn-2} determines $I_{\eta}, C_{\eta}, \te[],  C_{\eta 1}, C_{\eta 2}, K_{\eta}, L_{\eta}$ in \ref{eq:reg-ss-investment}, \ref{eq:reg-ss-consumption}, \ref{eq:reg-ss-te},  \ref{eq:reg-ss-C1-Cn-2}, \ref{eq:reg-ss-C2-Cn-2}, \ref{eq:reg-ss-int-good-firm-FOC-Kt-2} and \ref{eq:reg-ss-int-good-firm-FOC-Lt-2}, respectively.
+	The result of \ref{eq:reg-ss-total-yn-2} determines $Y, I_{\eta}, C_{\eta}, \te[],  C_{\eta 1}, C_{\eta 2}, K_{\eta}, L_{\eta}$ in \ref{eq:reg-ss-market-clearing-condition} \ref{eq:reg-ss-investment}, \ref{eq:reg-ss-consumption}, \ref{eq:reg-ss-te},  \ref{eq:reg-ss-C1-Cn-2}, \ref{eq:reg-ss-C2-Cn-2}, \ref{eq:reg-ss-int-good-firm-FOC-Kt-2} and \ref{eq:reg-ss-int-good-firm-FOC-Lt-2}, respectively.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -1129,6 +1129,8 @@ Substitute \ref{eq:reg-ss-investment}, \ref{eq:reg-ss-C1-Cn-3} and \ref{eq:reg-s
 		b_{\eta} &= \delta {\alpha_{}} \frac{\Lambda_{}}{R_K} \tag{\ref{eq:reg-ss-b-eta}}
 		\\
 		Y_{\eta} &= \left[ \left( \frac{a_{1}}{1 - b_{1}} \right) \left( \frac{1}{\omega_{\eta 1}^{\omega_{\eta 1}} (1 - \omega_{\eta 1})^{1 - \omega_{\eta 1}}} \right) \right]^{\frac{\sigma}{\sigma + \varphi}} \tag{\ref{eq:reg-ss-total-yn-2}}
+		\\
+		Y &= Y_{1} + Y_{2} tag{\ref{eq:reg-ss-market-clearing-condition}}
 		\\
 		I_{\eta} &= b_{\eta} Y_{\eta} \tag{\ref{eq:reg-ss-investment}}
 		\\
@@ -1419,7 +1421,7 @@ Log-linearize \ref{eq:reg-bonds-euler-equation}:
 	& \frac{ C_{\eta t}^{1-\sigma}}{ \te} = \beta (1 + R_{t}) \E \left\{ \frac{ C_{\eta, t+1}^{1-\sigma}}{ \te[t+1]} \right\} &\implies \tag{\ref{eq:reg-bonds-euler-equation}}\\
 	& \frac{ C_{\eta t}^{1-\sigma}}{\te} \cdot \frac{\E \te[t+1]}{\E C_{\eta, t+1}^{1-\sigma}} = \beta + \beta R_{t} &\implies \nonumber \\
 	\begin{split}
-		& \frac{C_{\eta}^{1-\sigma}}{\te[]} \cdot \frac{\te[]}{C_{\eta}^{1-\sigma}} (1 + (1-\sigma) \hat{C}_{\eta t} - \hat{\mathscr{E}}_{\eta t} + \E \{ \hat{\mathscr{E}}_{\eta t+1} - \hat{C}_{\eta t+1} \}) = \\ & \qquad \qquad = \beta + \beta (R(1 + R_{t})) \implies
+		& \frac{C_{\eta}^{1-\sigma}}{\te[]} \cdot \frac{\te[]}{C_{\eta}^{1-\sigma}} (1 + (1-\sigma) \hat{C}_{\eta t} - \hat{\mathscr{E}}_{\eta t} + \E \{ \hat{\mathscr{E}}_{\eta t+1} - \hat{C}_{\eta t+1} \}) = \\ & \qquad \qquad = \beta + \beta (R(1 + \hat{R}_{t})) \implies
 	\end{split} \nonumber \\
 	& \E \left\{ \hat{\mathscr{E}}_{\eta, t+1} - (1 -\sigma)\hat{C}_{\eta, t+1} \right\} - [\hat{\mathscr{E}}_{\eta t} - (1 -\sigma)\hat{C}_{\eta t}] = (1 -\beta) \hat{R}_{t} \label{eq:reg-ll-bonds-euler-equation}
 \end{alignat}
@@ -1436,7 +1438,8 @@ Log-linearize \ref{eq:reg-capital-euler-equation}:
 		& \qquad + \E \{\hat{\mathscr{E}}_{\eta, t+1} - \hat{P}_{\eta, t+1} - (1 -\sigma) \hat{C}_{\eta, t+1}\}) = \nonumber \\
 		& \qquad = \beta \left[ (1-\delta) + \frac{R_{K}}{P_{\eta}} \mathbb{E}_t \left\{ 1 + \hat{R}_{K, t+1} -\hat{P}_{\eta, t+1} \right\} \right] \implies \nonumber \\
 		& \E \left\{ \hat{\mathscr{E}}_{\eta, t+1} - \hat{P}_{\eta, t+1}  - (1 -\sigma) \hat{C}_{\eta, t+1} \right\} - (\hat{\mathscr{E}}_{\eta t} - \hat{P}_{\eta t} - (1 -\sigma) \hat{C}_{\eta t}) = \nonumber \\
-		& \qquad = \beta \frac{R_{K}}{P_{\eta}} \mathbb{E}_t \left\{ \hat{R}_{K, t+1} - \hat{P}_{\eta, t+1} \right\} \label{eq:reg-ll-capital-euler-equation}
+		& \qquad = \beta r_{K} \mathbb{E}_t \left\{ \hat{R}_{K, t+1} - \hat{P}_{\eta, t+1} \right\} \label{eq:reg-ll-capital-euler-equation} \\
+		& \qquad \text{where: } r_{K} = \frac{R_{K}}{P_{}} \label{eq:reg-rk}
 	\end{alignat}
 	
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -1601,33 +1604,64 @@ Log-linearize \ref{eq:reg-gross-inflation-rate} and define the level deviation o
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
+\subsubsection*{Market Clearing Condition}
+
+Log-linearize \ref{eq:reg-market-clearing-condition-Yt}:
+\begin{alignat}{2}
+	Y_{t} &= Y_{1 t} + Y_{2 t} \tag{\ref{eq:reg-market-clearing-condition-Yt}} \\
+	Y (1 +\hat{Y}_{t}) &= Y_{1} (1 +\hat{Y}_{1t}) + Y_{2} (1 +\hat{Y}_{2t}) \implies \nonumber \\
+	\hat{Y}_{t} &= \frac{Y_{1}}{Y} \hat{Y}_{1t} + \frac{Y_{2}}{Y} \hat{Y}_{2t} \label{eq:reg-ll-market-clearing-condition-Yt-2}
+\end{alignat}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+Define the regional weights $\langle \begin{smallmatrix} \theta_{Y1} & (1-\theta_{Y1}) \end{smallmatrix} \rangle$ in the production total:
+\begin{align}
+	\left\langle \begin{matrix} \theta_{Y1} & (1-\theta_{Y1}) \end{matrix} \right\rangle \coloneq \left\langle \begin{matrix} \frac{Y_{1}}{Y} & \frac{Y_{2}}{Y} \end{matrix} \right\rangle \label{eq:reg-ss-Y1-Y2-weight-in-Y}
+\end{align}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+Substitute \ref{eq:reg-ss-Y1-Y2-weight-in-Y} in \ref{eq:reg-ll-market-clearing-condition-Yt-2}:
+\begin{align}
+	\hat{Y}_{t} &= \theta_{Y1} \hat{Y}_{1t} + (1-\theta_{Y1}) \hat{Y}_{2t} \label{eq:reg-ll-market-clearing-condition-Yt-3}
+\end{align}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 \subsubsection*{National Price Level}
 
 Log-linearize \ref{eq:national-price-level}:
 \begin{alignat}{2}
 	P_{t} Y_{t} &= P_{1t} Y_{1t} + P_{2t} Y_{2t} & \implies \tag{\ref{eq:national-price-level}} \\ 
 	P Y (1 + \hat{P}_{t} + \hat{Y}_{t}) &= P_{1} Y_{1} (1 + \hat{P}_{1t} + \hat{Y}_{1t}) + P_{2} Y_{2} (1 + \hat{P}_{2t} + \hat{Y}_{2t}) &\implies \nonumber \\
-	\hat{P}_{t} + \hat{Y}_{t} &= \frac{P_{1} Y_{1}}{P Y} (\hat{P}_{1t} + \hat{Y}_{1t}) + \frac{P_{2} Y_{2}}{P Y} (\hat{P}_{2t} + \hat{Y}_{2t}) \label{eq:reg-ll-national-price-level}
+	\hat{P}_{t} + \hat{Y}_{t} &= \frac{Y_{1}}{Y} (\hat{P}_{1t} + \hat{Y}_{1t}) + \frac{Y_{2}}{Y} (\hat{P}_{2t} + \hat{Y}_{2t}) \label{eq:reg-ll-national-price-level}
 \end{alignat}
 
-	Define the regional weights $\langle \begin{smallmatrix} \theta_{PY1} & (1-\theta_{PY1}) \end{smallmatrix} \rangle$ in the gross domestic production:
-	\begin{align}
-		\left\langle \begin{matrix} \theta_{PY1} & (1-\theta_{PY1}) \end{matrix} \right\rangle \coloneq \left\langle \begin{matrix} \frac{P_{1} Y_{1}}{P Y} & \frac{P_{2} Y_{2}}{PY} \end{matrix} \right\rangle \label{eq:reg-ss-PYn-weight-in-PY}
-	\end{align}
-
-Substitute \ref{eq:reg-ss-PYn-weight-in-PY} in \ref{eq:reg-ll-national-price-level}:
-\begin{alignat}{2}
-	\hat{P}_{t} + \hat{Y}_{t} &= \frac{P_{1} Y_{1}}{P Y} (\hat{P}_{1t} + \hat{Y}_{1t}) + \frac{P_{2} Y_{2}}{P Y} (\hat{P}_{2t} + \hat{Y}_{2t}) \tag{\ref{eq:reg-ll-national-price-level}} \implies \\
-	\hat{P}_{t} + \hat{Y}_{t} &= \theta_{PY1} (\hat{P}_{1t} + \hat{Y}_{1t}) + (1-\theta_{PY1}) (\hat{P}_{2t} + \hat{Y}_{2t}) \label{eq:reg-ll-national-price-level-2}
-\end{alignat}
-
-
-\begin{comment}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 	
-	P_{t} &= \theta_{P1} P_{1t} + (1 -\theta_{P1}) P_{2t} &\implies \tag{\ref{eq:national-price-level}} \\ 
-	P (1 +\hat{P}_{t}) &= \theta_{P1} P_{1} (1 +\hat{P}_{1t}) + (1 -\theta_{P1}) P_{2} (1 +\hat{P}_{2t}) &\implies \nonumber \\
-	\hat{P}_{t} &= \theta_{P1} \hat{P}_{1t} + (1 -\theta_{P1}) \hat{P}_{2t} % \label{eq:reg-ll-national-price-level}	
-\end{comment}
+	\begin{comment}
+		Define the regional weights $\langle \begin{smallmatrix} \theta_{PY1} & (1-\theta_{PY1}) \end{smallmatrix} \rangle$ in the gross domestic production:
+		\begin{align}
+			\left\langle \begin{matrix} \theta_{PY1} & (1-\theta_{PY1}) \end{matrix} \right\rangle \coloneq \left\langle \begin{matrix} \frac{P_{1} Y_{1}}{P Y} & \frac{P_{2} Y_{2}}{PY} \end{matrix} \right\rangle \label{eq:reg-ss-PYn-weight-in-PY}
+		\end{align}
+		
+		Substitute \ref{eq:reg-ss-PYn-weight-in-PY} in \ref{eq:reg-ll-national-price-level}:
+		
+	\end{comment}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+Substitute \ref{eq:reg-ss-Y1-Y2-weight-in-Y} in \ref{eq:reg-ll-national-price-level}:
+\begin{alignat}{2}
+	\hat{P}_{t} + \hat{Y}_{t} &= \theta_{Y1} (\hat{P}_{1t} + \hat{Y}_{1t}) + (1-\theta_{Y1}) (\hat{P}_{2t} + \hat{Y}_{2t})  \label{eq:reg-ll-national-price-level-2}
+\end{alignat}
+
+Subtract \ref{eq:reg-ll-market-clearing-condition-Yt-3} from \ref{eq:reg-ll-national-price-level-2}:
+\begin{alignat}{2}
+	\hat{P}_{t} + \hat{Y}_{t} - \hat{Y}_{t} &= \theta_{Y1} (\hat{P}_{1t} + \hat{Y}_{1t}) + (1-\theta_{Y1}) (\hat{P}_{2t} + \hat{Y}_{2t}) - \nonumber \\ & \qquad \qquad - (\theta_{Y1} \hat{Y}_{1t} + (1-\theta_{Y1}) \hat{Y}_{2t}) \implies \nonumber \\
+	\hat{P}_{t} &= \theta_{Y1} \hat{P}_{1t} + (1-\theta_{Y1}) \hat{P}_{2t} \label{eq:reg-ll-national-price-level-3}
+\end{alignat}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -1650,27 +1684,6 @@ Log-linearize \ref{eq:reg-monetary-shock}:
 	\ln{Z_{M}} + \hat{Z}_{Mt} &= (1-\rho_M) \ln{Z_M} + \rho_M (\ln{Z_{M}} + \hat{Z}_{M,t-1}) + \varepsilon_{M} \quad &\implies \nonumber \\
 	\hat{Z}_{Mt} &= \rho_M \hat{Z}_{M,t-1} + \varepsilon_{M} \label{eq:reg-ll-monetary-shock}
 \end{alignat}
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-\subsubsection*{Market Clearing Condition}
-
-Log-linearize \ref{eq:reg-market-clearing-condition-Yt}:
-\begin{alignat}{2}
-	Y_{t} &= Y_{1 t} + Y_{2 t} \tag{\ref{eq:reg-market-clearing-condition-Yt}} \\
-	Y (1 +\hat{Y}_{t}) &= Y_{1} (1 +\hat{Y}_{1t}) + Y_{2} (1 +\hat{Y}_{2t}) \implies \nonumber \\
-	\hat{Y}_{t} &= \frac{Y_{1}}{Y} \hat{Y}_{1t} + \frac{Y_{2}}{Y} \hat{Y}_{2t} \label{eq:reg-ll-market-clearing-condition-Yt-2}
-\end{alignat}
-
-Define the regional weights $\langle \begin{smallmatrix} \theta_{Y1} & (1-\theta_{Y1}) \end{smallmatrix} \rangle$ in the production total:
-\begin{align}
-	\left\langle \begin{matrix} \theta_{Y1} & (1-\theta_{Y1}) \end{matrix} \right\rangle \coloneq \left\langle \begin{matrix} \frac{Y_{1}}{Y} & \frac{Y_{2}}{Y} \end{matrix} \right\rangle \label{eq:reg-ss-Y1-Y2-weight-in-Y}
-\end{align}
-
-Substitute \ref{eq:reg-ss-Y1-Y2-weight-in-Y} in \ref{eq:reg-ll-market-clearing-condition-Yt-2}:
-\begin{align}
-	\hat{Y}_{t} &= \theta_{Y1} \hat{Y}_{1t} + (1-\theta_{Y1}) \hat{Y}_{2t} \label{eq:reg-ll-market-clearing-condition-Yt-3}
-\end{align}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -1756,7 +1769,7 @@ The log-linear model is a square system of 31 variables and 31 equations, summar
 		\item Euler equation for the capital return
 		\begin{alignat}{2}
 			& \E \left\{ \hat{\mathscr{E}}_{\eta, t+1} - \hat{P}_{\eta, t+1}  - (1 -\sigma) \hat{C}_{\eta, t+1} \right\} - (\hat{\mathscr{E}}_{\eta t} - \hat{P}_{\eta t} - (1 -\sigma) \hat{C}_{\eta t}) = \nonumber \\
-			& \qquad = \beta \frac{R_{K}}{P_{\eta}} \mathbb{E}_t \left\{ \hat{R}_{K, t+1} - \hat{P}_{\eta, t+1} \right\} \tag{\ref{eq:reg-ll-capital-euler-equation}}
+			& \qquad = \beta r_{K} \mathbb{E}_t \left\{ \hat{R}_{K, t+1} - \hat{P}_{\eta, t+1} \right\} \tag{\ref{eq:reg-ll-capital-euler-equation}}
 		\end{alignat}
 		
 		\item Production Function
@@ -1786,7 +1799,7 @@ The log-linear model is a square system of 31 variables and 31 equations, summar
 		
 		\item National Price Level
 		\begin{alignat}{2}
-			\hat{P}_{t} + \hat{Y}_{t} &= \theta_{PY1} (\hat{P}_{1t} + \hat{Y}_{1t}) + (1-\theta_{PY1}) (\hat{P}_{2t} + \hat{Y}_{2t}) \tag{\ref{eq:reg-ll-national-price-level}}
+			\hat{P}_{t} &= \theta_{Y1} \hat{P}_{1t} + (1-\theta_{Y1}) \hat{P}_{2t} \tag{\ref{eq:reg-ll-national-price-level-3}}
 		\end{alignat}
 		
 		\item Productivity Shock

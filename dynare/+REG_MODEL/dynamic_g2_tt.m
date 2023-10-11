@@ -18,7 +18,7 @@ function T = dynamic_g2_tt(T, y, x, params, steady_state, it_)
 %   T           [#temp variables by 1]       double  vector of temporary terms
 %
 
-assert(length(T) >= 1);
+assert(length(T) >= 18);
 
 T = REG_MODEL.dynamic_g1_tt(T, y, x, params, steady_state, it_);
 
