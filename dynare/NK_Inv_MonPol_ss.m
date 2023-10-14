@@ -1,3 +1,4 @@
+% parameters
 
 SIGMA   = 2     ; % Relative Risk Aversion
 PHI     = 1     ; % Labor Disutility Weight
@@ -15,6 +16,8 @@ rhoA    = 0.95  ; % Autoregressive Parameter of Productivity Shock
 rhoM    = 0.9   ; % Autoregressive Parameter of Monetary Policy Shock
 thetaC  = 0.8   ; % Consumption weight in Output
 thetaI  = 0.2   ; % Investment weight in Output
+
+% steady state variables
 
 Ps   = 1 ;
 PIs  = 1 ;
