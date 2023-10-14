@@ -104,8 +104,6 @@ model_local_variable
     thetaC21 % weight of good 1 in demand of region 2
     thetaC22 % weight of good 2 in demand of region 2
     thetaY1  % weight of region 1 in total production
-    % thetaPY1 % weight of region 1 in gross domestic product
-    
     ;
 
 % -------------------------------------------------- %
@@ -132,12 +130,6 @@ gammapi   ${\gamma_{pi}}$   (long_name='interest-rate sensitivity in relation to
 gammaY    ${\gamma_{Y}}$    (long_name='interest-rate sensitivity in relation to product')
 dellta    ${\delta}$        (long_name='capital depreciation rate')
 thetta    ${\theta}$        (long_name='price stickiness parameter')
-% thetaC11  ${\theta_{C11}}$  (long_name='weight of good 1 in demand of region 1')
-% thetaC12  ${\theta_{C12}}$  (long_name='weight of good 2 in demand of region 1')
-% thetaC21  ${\theta_{C21}}$  (long_name='weight of good 1 in demand of region 2')
-% thetaC22  ${\theta_{C22}}$  (long_name='weight of good 2 in demand of region 2')
-% thetaPY1  ${\theta_{PY1}}$  (long_name='weight of region 1 in gross domestic product')
-% thetaY1   ${\theta_{Y1}}$   (long_name='weight of region 1 in total production')
 rhoA1     ${\rho_{A1}}$     (long_name='autoregressive parameter of productivity in region 1')
 rhoA2     ${\rho_{A2}}$     (long_name='autoregressive parameter of productivity in region 2')
 rhoM      ${\rho_{M}}$      (long_name='autoregressive parameter of monetary policy')
@@ -168,12 +160,6 @@ gammapi  = 2.43  ;  % interest-rate sensitivity in relation to inflation
 gammaY   = 0.16  ;  % interest-rate sensitivity in relation to product
 dellta   = 0.025 ;  % capital depreciation rate
 thetta   = 0.8   ;  % price stickiness parameter
-% thetaC11 = 0.85  ;  % weight of good 1 in demand of region 1
-% thetaC12 = 0.05  ;  % weight of good 2 in demand of region 1
-% thetaC21 = 0.25  ;  % weight of good 1 in demand of region 2
-% thetaC22 = 0.7   ;  % weight of good 2 in demand of region 2
-% thetaY1  = 0.6   ;  % weight of region 1 in total production
-% thetaPY1 = 0.6   ;  % weight of region 1 in gross domestic product
 rhoA1    = 0.95  ;  % autoregressive parameter of productivity in region 1
 rhoA2    = 0.95  ;  % autoregressive parameter of productivity in region 2
 rhoM     = 0.9   ;  % autoregressive parameter of monetary policy
@@ -182,7 +168,7 @@ phhi     = 1     ;  % relative labor weight in utility
 varphhi  = 1.5   ;  % marginal disutility of labor supply
 pssi     = 8     ;  % elasticity of substitution between intermediate goods
 omega11  = 0.8   ;  % weight of good 1 in consumption composition of region 1
-omega21  = 0.7   ;  % weight of good 1 in consumption composition of region 2
+omega21  = 0.5   ;  % weight of good 1 in consumption composition of region 2
 
 % -------------------------------------------------- % 
 % standard errors values                             %

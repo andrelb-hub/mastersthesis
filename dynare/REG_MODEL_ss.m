@@ -6,12 +6,6 @@ gammapi  = 2.43  ;  % interest-rate sensitivity in relation to inflation
 gammaY   = 0.16  ;  % interest-rate sensitivity in relation to product
 dellta   = 0.025 ;  % capital depreciation rate
 thetta   = 0.8   ;  % price stickiness parameter
-thetaC11 = 0.85  ;  % weight of good 1 in demand of region 1
-thetaC12 = 0.05  ;  % weight of good 2 in demand of region 1
-thetaC21 = 0.25  ;  % weight of good 1 in demand of region 2
-thetaC22 = 0.7   ;  % weight of good 2 in demand of region 2
-thetaPY1 = 0.6   ;  % weight of region 1 in gross domestic product
-thetaY1  = 0.6   ;  % weight of region 1 in total production
 rhoA1    = 0.95  ;  % autoregressive parameter of productivity in region 1
 rhoA2    = 0.95  ;  % autoregressive parameter of productivity in region 2
 rhoM     = 0.9   ;  % autoregressive parameter of monetary policy
@@ -35,6 +29,7 @@ b1ss  = dellta * alppha * LAMBDAss / RKss;
 b2ss  = dellta * alppha * LAMBDAss / RKss;
 Y1ss  = ((a1ss / (1 - b1ss)) * (1 / (omega11^omega11 * (1 - omega11)^(1 - omega11))))^(siggma / (siggma + varphhi));
 Y2ss  = ((a2ss / (1 - b2ss)) * (1 / (omega21^omega21 * (1 - omega21)^(1 - omega21))))^(siggma / (siggma + varphhi));
+Yss   = Y1ss + Y2ss;
 I1ss  = b1ss * Y1ss;
 I2ss  = b2ss * Y2ss;
 C1ss  = a1ss * Y1ss^(-varphhi / siggma);
@@ -50,6 +45,14 @@ K2ss  = alppha * Y2ss * LAMBDAss / RKss;
 L1ss  = (1 - alppha) * Y1ss * LAMBDAss / Wss;
 L2ss  = (1 - alppha) * Y2ss * LAMBDAss / Wss;
 
+% Parameters derived from steady state variables:
+rK       =  RKss / Pss  ;
+thetaY1  =  Y1ss / Yss  ;
+thetaC11 = C11ss / Y1ss ;
+thetaC12 = C21ss / Y1ss ;
+thetaC21 = C12ss / Y2ss ;
+thetaC22 = C22ss / Y2ss ;
+
 % Create a cell array to store variable names and their corresponding values
 variables = {
     'alppha', alppha;
@@ -59,12 +62,6 @@ variables = {
     'gammaY', gammaY;
     'dellta', dellta;
     'thetta', thetta;
-    'thetaY1', thetaY1;
-    'thetaC11', thetaC11;
-    'thetaC12', thetaC12;
-    'thetaC21', thetaC21;
-    'thetaC22', thetaC22;
-    'thetaPY1', thetaPY1;
     'rhoA1', rhoA1;
     'rhoA2', rhoA2;
     'rhoM', rhoM;
@@ -99,11 +96,18 @@ variables = {
     'K1ss', K1ss;
     'K2ss', K2ss;
     'L1ss', L1ss;
-    'L2ss', L2ss};
-
+    'L2ss', L2ss;
+    'rK', rK;
+    'thetaY1', thetaY1;
+    'thetaC11', thetaC11;
+    'thetaC12', thetaC12;
+    'thetaC21', thetaC21;
+    'thetaC22', thetaC22};
 
 % Specify the Excel file name
 excelFileName = 'values.xlsx';
 
 % Write the cell array to the Excel file
-xlswrite(excelFileName, variables);
+% xlswrite(excelFileName, variables);
+% writematrix(excelFileName, variables);
+writecell(variables,excelFileName);

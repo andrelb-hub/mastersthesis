@@ -27,7 +27,7 @@
 \contentsline {subsubsection}{\numberline {4.1.1}Productivity Shock}{71}{subsubsection.4.1.1}%
 \contentsline {subsubsection}{\numberline {4.1.2}Monetary Shock}{72}{subsubsection.4.1.2}%
 \contentsline {subsection}{\numberline {4.2}Parametrization}{73}{subsection.4.2}%
-\contentsline {section}{References}{75}{section*.295}%
+\contentsline {section}{References}{75}{section*.297}%
 \contentsline {section}{\numberline {A}Appendix}{78}{appendix.A}%
 \contentsline {subsection}{\numberline {A.1}Table of the Literature Review}{79}{subsection.A.1}%
 \contentsline {subsection}{\numberline {A.2}Definitions and Lemmas}{80}{subsection.A.2}%
