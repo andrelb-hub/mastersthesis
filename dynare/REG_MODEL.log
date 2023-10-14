@@ -1,0 +1,74 @@
+Starting Dynare (version 5.4).
+Calling Dynare with arguments: savemacro=REG_MODEL_FINAL.mod
+Starting preprocessing of the model file ...
+Found 31 equation(s).
+Evaluating expressions...done
+Computing static model derivatives (order 1).
+Computing dynamic model derivatives (order 2).
+Processing outputs ...
+done
+Preprocessing completed.
+
+
+STEADY-STATE RESULTS:
+
+C1t      		 0
+C2t      		 0
+C11t     		 0
+C21t     		 0
+C12t     		 0
+C22t     		 0
+L1t      		 0
+L2t      		 0
+K1t      		 0
+K2t      		 0
+Yt       		 0
+Y1t      		 0
+Y2t      		 0
+I1t      		 0
+I2t      		 0
+ZA1t     		 0
+ZA2t     		 0
+E1t      		 0
+E2t      		 0
+Pt       		 0
+P1t      		 0
+P2t      		 0
+Rt       		 0
+RKt      		 0
+Wt       		 0
+pit      		 0
+pi1t     		 0
+pi2t     		 0
+lambda1t 		 0
+lambda2t 		 0
+ZMt      		 0
+
+EIGENVALUES:
+         Modulus             Real        Imaginary
+
+        2.16e-16         2.16e-16                0
+       2.217e-15        2.217e-15                0
+         0.01346          0.01346                0
+          0.7835           0.7835                0
+             0.9              0.9                0
+          0.9137           0.9137                0
+            0.95             0.95                0
+            0.95             0.95                0
+               1                1                0
+               1                1                0
+           1.021            1.021                0
+           1.148            1.148                0
+           1.901            1.887           0.2299
+           1.901            1.887          -0.2299
+       8.124e+16        8.124e+16                0
+             Inf              Inf                0
+             Inf              Inf                0
+             Inf              Inf                0
+
+
+There are 9 eigenvalue(s) larger than 1 in modulus 
+for 9 forward-looking variable(s)
+
+The rank condition ISN'T verified!
+

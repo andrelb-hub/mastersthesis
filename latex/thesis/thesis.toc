@@ -19,39 +19,40 @@
 \contentsline {subsubsection}{\numberline {3.2.2}Steady State Solution}{50}{subsubsection.3.2.2}%
 \contentsline {subsection}{\numberline {3.3}Log-linearization}{51}{subsection.3.3}%
 \contentsline {subsubsection}{\numberline {3.3.1}Log-linear Model Structure}{65}{subsubsection.3.3.1}%
-\contentsline {subsection}{\numberline {3.4}Data}{67}{subsection.3.4}%
-\contentsline {subsubsection}{\numberline {3.4.1}Parameter Calibration}{68}{subsubsection.3.4.1}%
-\contentsline {subsubsection}{\numberline {3.4.2}Variables at Steady State}{69}{subsubsection.3.4.2}%
-\contentsline {section}{\numberline {4}Results}{70}{section.4}%
-\contentsline {subsection}{\numberline {4.1}Impulse Response Functions}{71}{subsection.4.1}%
-\contentsline {subsubsection}{\numberline {4.1.1}Productivity Shock}{71}{subsubsection.4.1.1}%
-\contentsline {subsubsection}{\numberline {4.1.2}Monetary Shock}{72}{subsubsection.4.1.2}%
-\contentsline {subsection}{\numberline {4.2}Parametrization}{73}{subsection.4.2}%
-\contentsline {section}{References}{75}{section*.297}%
-\contentsline {section}{\numberline {A}Appendix}{78}{appendix.A}%
-\contentsline {subsection}{\numberline {A.1}Table of the Literature Review}{79}{subsection.A.1}%
-\contentsline {subsection}{\numberline {A.2}Definitions and Lemmas}{80}{subsection.A.2}%
-\contentsline {subsection}{\numberline {A.3}Dynare mod file}{84}{subsection.A.3}%
-\contentsline {subsection}{\numberline {A.4}\LaTeX }{91}{subsection.A.4}%
-\contentsline {section}{\numberline {B}New Keynesian Model}{96}{appendix.B}%
+\contentsline {subsubsection}{\numberline {3.3.2}Extended Log-linear Structure}{67}{subsubsection.3.3.2}%
+\contentsline {subsection}{\numberline {3.4}Data}{70}{subsection.3.4}%
+\contentsline {subsubsection}{\numberline {3.4.1}Parameter Calibration}{71}{subsubsection.3.4.1}%
+\contentsline {subsubsection}{\numberline {3.4.2}Variables at Steady State}{72}{subsubsection.3.4.2}%
+\contentsline {section}{\numberline {4}Results}{73}{section.4}%
+\contentsline {subsection}{\numberline {4.1}Impulse Response Functions}{74}{subsection.4.1}%
+\contentsline {subsubsection}{\numberline {4.1.1}Productivity Shock}{74}{subsubsection.4.1.1}%
+\contentsline {subsubsection}{\numberline {4.1.2}Monetary Shock}{75}{subsubsection.4.1.2}%
+\contentsline {subsection}{\numberline {4.2}Parametrization}{76}{subsection.4.2}%
+\contentsline {section}{References}{78}{section*.333}%
+\contentsline {section}{\numberline {A}Appendix}{81}{appendix.A}%
+\contentsline {subsection}{\numberline {A.1}Table of the Literature Review}{82}{subsection.A.1}%
+\contentsline {subsection}{\numberline {A.2}Definitions and Lemmas}{83}{subsection.A.2}%
+\contentsline {subsection}{\numberline {A.3}Dynare mod file}{87}{subsection.A.3}%
+\contentsline {subsection}{\numberline {A.4}\LaTeX }{94}{subsection.A.4}%
+\contentsline {section}{\numberline {B}New Keynesian Model}{99}{appendix.B}%
 \etoc@startlocaltoc {3}
-\contentsline {subsection}{\numberline {B.1}Household}{96}{subsection.B.1}%
-\contentsline {subsection}{\numberline {B.2}Firms}{98}{subsection.B.2}%
-\contentsline {subsubsection}{\numberline {B.2.1}Final-Good Firm}{98}{subsubsection.B.2.1}%
-\contentsline {subsubsection}{\numberline {B.2.2}Intermediate-Good Firms}{100}{subsubsection.B.2.2}%
-\contentsline {subsubsection}{\numberline {B.2.3}Final-Good Firm, part II}{104}{subsubsection.B.2.3}%
-\contentsline {subsection}{\numberline {B.3}Monetary Authority}{105}{subsection.B.3}%
-\contentsline {subsubsection}{\numberline {B.3.1}Stochastic Shocks}{105}{subsubsection.B.3.1}%
-\contentsline {subsection}{\numberline {B.4}Equilibrium Conditions}{106}{subsection.B.4}%
-\contentsline {subsubsection}{\numberline {B.4.1}Model Structure}{106}{subsubsection.B.4.1}%
-\contentsline {subsection}{\numberline {B.5}Steady State}{108}{subsection.B.5}%
-\contentsline {subsubsection}{\numberline {B.5.1}Variables in Steady State}{110}{subsubsection.B.5.1}%
-\contentsline {subsubsection}{\numberline {B.5.2}Steady State Solution}{113}{subsubsection.B.5.2}%
-\contentsline {subsection}{\numberline {B.6}Log-linearization}{113}{subsection.B.6}%
-\contentsline {subsubsection}{\numberline {B.6.1}Log-linear Model Structure}{124}{subsubsection.B.6.1}%
-\contentsline {subsection}{\numberline {B.7}Parameter Calibration}{126}{subsection.B.7}%
-\contentsline {subsection}{\numberline {B.8}Variables at Steady State}{127}{subsection.B.8}%
-\contentsline {subsection}{\numberline {B.9}Impulse Response Functions}{128}{subsection.B.9}%
-\contentsline {subsection}{\numberline {B.10}Dynare mod file}{130}{subsection.B.10}%
-\contentsline {subsection}{\numberline {B.11}ToDo List}{137}{subsection.B.11}%
-\contentsline {section}{Todo list}{137}{subsection.B.11}%
+\contentsline {subsection}{\numberline {B.1}Household}{99}{subsection.B.1}%
+\contentsline {subsection}{\numberline {B.2}Firms}{101}{subsection.B.2}%
+\contentsline {subsubsection}{\numberline {B.2.1}Final-Good Firm}{101}{subsubsection.B.2.1}%
+\contentsline {subsubsection}{\numberline {B.2.2}Intermediate-Good Firms}{103}{subsubsection.B.2.2}%
+\contentsline {subsubsection}{\numberline {B.2.3}Final-Good Firm, part II}{107}{subsubsection.B.2.3}%
+\contentsline {subsection}{\numberline {B.3}Monetary Authority}{108}{subsection.B.3}%
+\contentsline {subsubsection}{\numberline {B.3.1}Stochastic Shocks}{108}{subsubsection.B.3.1}%
+\contentsline {subsection}{\numberline {B.4}Equilibrium Conditions}{109}{subsection.B.4}%
+\contentsline {subsubsection}{\numberline {B.4.1}Model Structure}{109}{subsubsection.B.4.1}%
+\contentsline {subsection}{\numberline {B.5}Steady State}{111}{subsection.B.5}%
+\contentsline {subsubsection}{\numberline {B.5.1}Variables in Steady State}{113}{subsubsection.B.5.1}%
+\contentsline {subsubsection}{\numberline {B.5.2}Steady State Solution}{116}{subsubsection.B.5.2}%
+\contentsline {subsection}{\numberline {B.6}Log-linearization}{116}{subsection.B.6}%
+\contentsline {subsubsection}{\numberline {B.6.1}Log-linear Model Structure}{127}{subsubsection.B.6.1}%
+\contentsline {subsection}{\numberline {B.7}Parameter Calibration}{129}{subsection.B.7}%
+\contentsline {subsection}{\numberline {B.8}Variables at Steady State}{130}{subsection.B.8}%
+\contentsline {subsection}{\numberline {B.9}Impulse Response Functions}{131}{subsection.B.9}%
+\contentsline {subsection}{\numberline {B.10}Dynare mod file}{133}{subsection.B.10}%
+\contentsline {subsection}{\numberline {B.11}ToDo List}{140}{subsection.B.11}%
+\contentsline {section}{Todo list}{140}{subsection.B.11}%

@@ -1,4 +1,4 @@
-This is LuaHBTeX, Version 1.17.0 (MiKTeX 23.5) (format=lualatex 2023.8.25)  13 OCT 2023 22:32
+This is LuaHBTeX, Version 1.17.0 (MiKTeX 23.5) (format=lualatex 2023.8.25)  14 OCT 2023 13:51
  restricted system commands enabled.
 **thesis.tex
 (./thesis.tex
@@ -2115,7 +2115,7 @@ LaTeX Font Info:    Trying to load font information for TS1+ppl on input line 5
 File: ts1ppl.fd 2001/06/04 font definitions for TS1/ppl.
 )
 [24]
-<../images/../images/flowchart.jpg, id=383, 1335.99126pt x 752.8125pt>
+<../images/../images/flowchart.jpg, id=385, 1335.99126pt x 752.8125pt>
 File: ../images/../images/flowchart.jpg Graphic file (type jpg)
 <use ../images/../images/flowchart.jpg>
 Package luatex.def Info: ../images/../images/flowchart.jpg  used on input line 
@@ -2188,8 +2188,9 @@ LaTeX Font Info:    Font shape `U/cmsy/b/n' will be
 Excluding 'comment' comment. [47] [48] Excluding 'comment' comment. [49]
 Excluding 'comment' comment. [50] [51] [52] [53] [54] [55] [56]
 Excluding 'comment' comment. [57] [58] [59] [60] [61] [62]
-Excluding 'comment' comment. [63] [64] [65] Excluding 'comment' comment.)
-(./sections/data.tex [66]) (./sections/calibration.tex [67]
+Excluding 'comment' comment. [63] [64] [65] [66] [67] [68]
+Excluding 'comment' comment.) (./sections/data.tex [69])
+(./sections/calibration.tex [70]
 > Step: init table outer spec.
 > Step: parse table options.
 > Step: split table.
@@ -2207,7 +2208,7 @@ Overfull \hbox (3.69965pt too wide) detected at line 54
  [] 
  []
 
-[68]
+[71]
 > Step: init table outer spec.
 > Step: parse table options.
 > Step: split table.
@@ -2216,36 +2217,36 @@ Overfull \hbox (3.69965pt too wide) detected at line 54
 > Step: execute table commands.
 > Step: calculate cell and line sizes.
 > Step: build the whole table.
-) (./sections/results.tex [69]) (./sections/IRF.tex [70]
-<../images/../images/shock_ZAt/shock_ZAt_ZAt.png, id=1447, 347.8596pt x 184.047
+) (./sections/results.tex [72]) (./sections/IRF.tex [73]
+<../images/../images/shock_ZAt/shock_ZAt_ZAt.png, id=1537, 347.8596pt x 184.047
 6pt>
 File: ../images/../images/shock_ZAt/shock_ZAt_ZAt.png Graphic file (type png)
 <use ../images/../images/shock_ZAt/shock_ZAt_ZAt.png>
 Package luatex.def Info: ../images/../images/shock_ZAt/shock_ZAt_ZAt.png  used 
 on input line 23.
 (luatex.def)             Requested size: 136.57462pt x 72.2613pt.
-<../images/../images/shock_ZAt/shock_ZAt_Kt.png, id=1448, 347.8596pt x 184.0476
+<../images/../images/shock_ZAt/shock_ZAt_Kt.png, id=1538, 347.8596pt x 184.0476
 pt>
 File: ../images/../images/shock_ZAt/shock_ZAt_Kt.png Graphic file (type png)
 <use ../images/../images/shock_ZAt/shock_ZAt_Kt.png>
 Package luatex.def Info: ../images/../images/shock_ZAt/shock_ZAt_Kt.png  used o
 n input line 30.
 (luatex.def)             Requested size: 136.57462pt x 72.2613pt.
-<../images/../images/shock_ZAt/shock_ZAt_It.png, id=1449, 347.8596pt x 184.0476
+<../images/../images/shock_ZAt/shock_ZAt_It.png, id=1539, 347.8596pt x 184.0476
 pt>
 File: ../images/../images/shock_ZAt/shock_ZAt_It.png Graphic file (type png)
 <use ../images/../images/shock_ZAt/shock_ZAt_It.png>
 Package luatex.def Info: ../images/../images/shock_ZAt/shock_ZAt_It.png  used o
 n input line 37.
 (luatex.def)             Requested size: 136.57462pt x 72.2613pt.
-<../images/../images/shock_ZAt/shock_ZAt_Ct.png, id=1450, 328.1058pt x 185.0112
+<../images/../images/shock_ZAt/shock_ZAt_Ct.png, id=1540, 328.1058pt x 185.0112
 pt>
 File: ../images/../images/shock_ZAt/shock_ZAt_Ct.png Graphic file (type png)
 <use ../images/../images/shock_ZAt/shock_ZAt_Ct.png>
 Package luatex.def Info: ../images/../images/shock_ZAt/shock_ZAt_Ct.png  used o
 n input line 47.
 (luatex.def)             Requested size: 136.57462pt x 77.01253pt.
-<../images/../images/shock_ZAt/shock_ZAt_LAMBDAt.png, id=1451, 331.9602pt x 185
+<../images/../images/shock_ZAt/shock_ZAt_LAMBDAt.png, id=1541, 331.9602pt x 185
 .0112pt>
 File: ../images/../images/shock_ZAt/shock_ZAt_LAMBDAt.png Graphic file (type pn
 g)
@@ -2253,55 +2254,55 @@ g)
 Package luatex.def Info: ../images/../images/shock_ZAt/shock_ZAt_LAMBDAt.png  u
 sed on input line 54.
 (luatex.def)             Requested size: 136.57462pt x 76.11761pt.
-<../images/../images/shock_ZAt/shock_ZAt_Lt.png, id=1452, 339.669pt x 185.0112p
+<../images/../images/shock_ZAt/shock_ZAt_Lt.png, id=1542, 339.669pt x 185.0112p
 t>
 File: ../images/../images/shock_ZAt/shock_ZAt_Lt.png Graphic file (type png)
 <use ../images/../images/shock_ZAt/shock_ZAt_Lt.png>
 Package luatex.def Info: ../images/../images/shock_ZAt/shock_ZAt_Lt.png  used o
 n input line 61.
 (luatex.def)             Requested size: 136.57462pt x 74.38992pt.
-<../images/../images/shock_ZAt/shock_ZAt_PIt.png, id=1453, 337.26pt x 185.0112p
+<../images/../images/shock_ZAt/shock_ZAt_PIt.png, id=1543, 337.26pt x 185.0112p
 t>
 File: ../images/../images/shock_ZAt/shock_ZAt_PIt.png Graphic file (type png)
 <use ../images/../images/shock_ZAt/shock_ZAt_PIt.png>
 Package luatex.def Info: ../images/../images/shock_ZAt/shock_ZAt_PIt.png  used 
 on input line 71.
 (luatex.def)             Requested size: 136.57462pt x 74.92065pt.
-<../images/../images/shock_ZAt/shock_ZAt_Pt.png, id=1454, 331.4784pt x 185.0112
+<../images/../images/shock_ZAt/shock_ZAt_Pt.png, id=1544, 331.4784pt x 185.0112
 pt>
 File: ../images/../images/shock_ZAt/shock_ZAt_Pt.png Graphic file (type png)
 <use ../images/../images/shock_ZAt/shock_ZAt_Pt.png>
 Package luatex.def Info: ../images/../images/shock_ZAt/shock_ZAt_Pt.png  used o
 n input line 78.
 (luatex.def)             Requested size: 136.57462pt x 76.22772pt.
-<../images/../images/shock_ZAt/shock_ZAt_Rt.png, id=1455, 340.1508pt x 185.0112
+<../images/../images/shock_ZAt/shock_ZAt_Rt.png, id=1545, 340.1508pt x 185.0112
 pt>
 File: ../images/../images/shock_ZAt/shock_ZAt_Rt.png Graphic file (type png)
 <use ../images/../images/shock_ZAt/shock_ZAt_Rt.png>
 Package luatex.def Info: ../images/../images/shock_ZAt/shock_ZAt_Rt.png  used o
 n input line 85.
 (luatex.def)             Requested size: 136.57462pt x 74.28546pt.
-<../images/../images/shock_ZAt/shock_ZAt_Wt.png, id=1456, 348.3414pt x 184.0476
+<../images/../images/shock_ZAt/shock_ZAt_Wt.png, id=1546, 348.3414pt x 184.0476
 pt>
 File: ../images/../images/shock_ZAt/shock_ZAt_Wt.png Graphic file (type png)
 <use ../images/../images/shock_ZAt/shock_ZAt_Wt.png>
 Package luatex.def Info: ../images/../images/shock_ZAt/shock_ZAt_Wt.png  used o
 n input line 95.
 (luatex.def)             Requested size: 136.57462pt x 72.1602pt.
-<../images/../images/shock_ZAt/shock_ZAt_Yt.png, id=1457, 348.3414pt x 184.0476
+<../images/../images/shock_ZAt/shock_ZAt_Yt.png, id=1547, 348.3414pt x 184.0476
 pt>
 File: ../images/../images/shock_ZAt/shock_ZAt_Yt.png Graphic file (type png)
 <use ../images/../images/shock_ZAt/shock_ZAt_Yt.png>
 Package luatex.def Info: ../images/../images/shock_ZAt/shock_ZAt_Yt.png  used o
 n input line 102.
 (luatex.def)             Requested size: 136.57462pt x 72.1602pt.
-<../images/../images/shock_ZAt/blank.png, id=1458, 122.70844pt x 70.76437pt>
+<../images/../images/shock_ZAt/blank.png, id=1548, 122.70844pt x 70.76437pt>
 File: ../images/../images/shock_ZAt/blank.png Graphic file (type png)
 <use ../images/../images/shock_ZAt/blank.png>
 Package luatex.def Info: ../images/../images/shock_ZAt/blank.png  used on input
  line 109.
 (luatex.def)             Requested size: 136.57462pt x 78.76317pt.
- [71<../images/../images/shock_ZAt/shock_ZAt_ZAt.png><../images/../images/shock_
+ [74<../images/../images/shock_ZAt/shock_ZAt_ZAt.png><../images/../images/shock_
 ZAt/shock_ZAt_Kt.png><../images/../images/shock_ZAt/shock_ZAt_It.png><../images/
 ../images/shock_ZAt/shock_ZAt_Ct.png><../images/../images/shock_ZAt/shock_ZAt_LA
 MBDAt.png><../images/../images/shock_ZAt/shock_ZAt_Lt.png><../images/../images/s
@@ -2309,35 +2310,35 @@ hock_ZAt/shock_ZAt_PIt.png><../images/../images/shock_ZAt/shock_ZAt_Pt.png><../i
 mages/../images/shock_ZAt/shock_ZAt_Rt.png><../images/../images/shock_ZAt/shock_
 ZAt_Wt.png><../images/../images/shock_ZAt/shock_ZAt_Yt.png><../images/../images/
 shock_ZAt/blank.png>]
-<../images/../images/shock_ZMt/shock_ZMt_ZMt.png, id=1465, 347.8596pt x 184.047
+<../images/../images/shock_ZMt/shock_ZMt_ZMt.png, id=1554, 347.8596pt x 184.047
 6pt>
 File: ../images/../images/shock_ZMt/shock_ZMt_ZMt.png Graphic file (type png)
 <use ../images/../images/shock_ZMt/shock_ZMt_ZMt.png>
 Package luatex.def Info: ../images/../images/shock_ZMt/shock_ZMt_ZMt.png  used 
 on input line 124.
 (luatex.def)             Requested size: 136.57462pt x 72.2613pt.
-<../images/../images/shock_ZMt/shock_ZMt_Kt.png, id=1466, 328.1058pt x 185.0112
+<../images/../images/shock_ZMt/shock_ZMt_Kt.png, id=1555, 328.1058pt x 185.0112
 pt>
 File: ../images/../images/shock_ZMt/shock_ZMt_Kt.png Graphic file (type png)
 <use ../images/../images/shock_ZMt/shock_ZMt_Kt.png>
 Package luatex.def Info: ../images/../images/shock_ZMt/shock_ZMt_Kt.png  used o
 n input line 131.
 (luatex.def)             Requested size: 136.57462pt x 77.01253pt.
-<../images/../images/shock_ZMt/shock_ZMt_It.png, id=1467, 351.2322pt x 184.0476
+<../images/../images/shock_ZMt/shock_ZMt_It.png, id=1556, 351.2322pt x 184.0476
 pt>
 File: ../images/../images/shock_ZMt/shock_ZMt_It.png Graphic file (type png)
 <use ../images/../images/shock_ZMt/shock_ZMt_It.png>
 Package luatex.def Info: ../images/../images/shock_ZMt/shock_ZMt_It.png  used o
 n input line 138.
 (luatex.def)             Requested size: 136.57462pt x 71.56764pt.
-<../images/../images/shock_ZMt/shock_ZMt_Ct.png, id=1468, 340.1508pt x 185.0112
+<../images/../images/shock_ZMt/shock_ZMt_Ct.png, id=1557, 340.1508pt x 185.0112
 pt>
 File: ../images/../images/shock_ZMt/shock_ZMt_Ct.png Graphic file (type png)
 <use ../images/../images/shock_ZMt/shock_ZMt_Ct.png>
 Package luatex.def Info: ../images/../images/shock_ZMt/shock_ZMt_Ct.png  used o
 n input line 148.
 (luatex.def)             Requested size: 136.57462pt x 74.28546pt.
-<../images/../images/shock_ZMt/shock_ZMt_LAMBDAt.png, id=1469, 332.9238pt x 185
+<../images/../images/shock_ZMt/shock_ZMt_LAMBDAt.png, id=1558, 332.9238pt x 185
 .0112pt>
 File: ../images/../images/shock_ZMt/shock_ZMt_LAMBDAt.png Graphic file (type pn
 g)
@@ -2345,55 +2346,55 @@ g)
 Package luatex.def Info: ../images/../images/shock_ZMt/shock_ZMt_LAMBDAt.png  u
 sed on input line 155.
 (luatex.def)             Requested size: 136.57462pt x 75.89459pt.
-<../images/../images/shock_ZMt/shock_ZMt_Lt.png, id=1470, 331.4784pt x 185.0112
+<../images/../images/shock_ZMt/shock_ZMt_Lt.png, id=1559, 331.4784pt x 185.0112
 pt>
 File: ../images/../images/shock_ZMt/shock_ZMt_Lt.png Graphic file (type png)
 <use ../images/../images/shock_ZMt/shock_ZMt_Lt.png>
 Package luatex.def Info: ../images/../images/shock_ZMt/shock_ZMt_Lt.png  used o
 n input line 162.
 (luatex.def)             Requested size: 136.57462pt x 76.22772pt.
-<../images/../images/shock_ZMt/shock_ZMt_PIt.png, id=1471, 331.4784pt x 185.011
+<../images/../images/shock_ZMt/shock_ZMt_PIt.png, id=1560, 331.4784pt x 185.011
 2pt>
 File: ../images/../images/shock_ZMt/shock_ZMt_PIt.png Graphic file (type png)
 <use ../images/../images/shock_ZMt/shock_ZMt_PIt.png>
 Package luatex.def Info: ../images/../images/shock_ZMt/shock_ZMt_PIt.png  used 
 on input line 172.
 (luatex.def)             Requested size: 136.57462pt x 76.22772pt.
-<../images/../images/shock_ZMt/shock_ZMt_Pt.png, id=1472, 348.3414pt x 184.0476
+<../images/../images/shock_ZMt/shock_ZMt_Pt.png, id=1561, 348.3414pt x 184.0476
 pt>
 File: ../images/../images/shock_ZMt/shock_ZMt_Pt.png Graphic file (type png)
 <use ../images/../images/shock_ZMt/shock_ZMt_Pt.png>
 Package luatex.def Info: ../images/../images/shock_ZMt/shock_ZMt_Pt.png  used o
 n input line 179.
 (luatex.def)             Requested size: 136.57462pt x 72.1602pt.
-<../images/../images/shock_ZMt/shock_ZMt_Rt.png, id=1473, 342.5598pt x 184.0476
+<../images/../images/shock_ZMt/shock_ZMt_Rt.png, id=1562, 342.5598pt x 184.0476
 pt>
 File: ../images/../images/shock_ZMt/shock_ZMt_Rt.png Graphic file (type png)
 <use ../images/../images/shock_ZMt/shock_ZMt_Rt.png>
 Package luatex.def Info: ../images/../images/shock_ZMt/shock_ZMt_Rt.png  used o
 n input line 186.
 (luatex.def)             Requested size: 136.57462pt x 73.37901pt.
-<../images/../images/shock_ZMt/shock_ZMt_Wt.png, id=1474, 348.3414pt x 184.0476
+<../images/../images/shock_ZMt/shock_ZMt_Wt.png, id=1563, 348.3414pt x 184.0476
 pt>
 File: ../images/../images/shock_ZMt/shock_ZMt_Wt.png Graphic file (type png)
 <use ../images/../images/shock_ZMt/shock_ZMt_Wt.png>
 Package luatex.def Info: ../images/../images/shock_ZMt/shock_ZMt_Wt.png  used o
 n input line 196.
 (luatex.def)             Requested size: 136.57462pt x 72.1602pt.
-<../images/../images/shock_ZMt/shock_ZMt_Yt.png, id=1475, 331.4784pt x 185.0112
+<../images/../images/shock_ZMt/shock_ZMt_Yt.png, id=1564, 331.4784pt x 185.0112
 pt>
 File: ../images/../images/shock_ZMt/shock_ZMt_Yt.png Graphic file (type png)
 <use ../images/../images/shock_ZMt/shock_ZMt_Yt.png>
 Package luatex.def Info: ../images/../images/shock_ZMt/shock_ZMt_Yt.png  used o
 n input line 203.
 (luatex.def)             Requested size: 136.57462pt x 76.22772pt.
-<../images/../images/shock_ZMt/blank.png, id=1476, 122.70844pt x 70.76437pt>
+<../images/../images/shock_ZMt/blank.png, id=1565, 122.70844pt x 70.76437pt>
 File: ../images/../images/shock_ZMt/blank.png Graphic file (type png)
 <use ../images/../images/shock_ZMt/blank.png>
 Package luatex.def Info: ../images/../images/shock_ZMt/blank.png  used on input
  line 210.
 (luatex.def)             Requested size: 136.57462pt x 78.76317pt.
-) (./sections/parametrization.tex [72<../images/../images/shock_ZMt/shock_ZMt_ZM
+) (./sections/parametrization.tex [75<../images/../images/shock_ZMt/shock_ZMt_ZM
 t.png><../images/../images/shock_ZMt/shock_ZMt_Kt.png><../images/../images/shock
 _ZMt/shock_ZMt_It.png><../images/../images/shock_ZMt/shock_ZMt_Ct.png><../images
 /../images/shock_ZMt/shock_ZMt_LAMBDAt.png><../images/../images/shock_ZMt/shock_
@@ -2401,17 +2402,17 @@ ZMt_Lt.png><../images/../images/shock_ZMt/shock_ZMt_PIt.png><../images/../images
 /shock_ZMt/shock_ZMt_Pt.png><../images/../images/shock_ZMt/shock_ZMt_Rt.png><../
 images/../images/shock_ZMt/shock_ZMt_Wt.png><../images/../images/shock_ZMt/shock
 _ZMt_Yt.png><../images/../images/shock_ZMt/blank.png>])
-(./sections/final_remarks.tex [73]) (./post/references.tex [74]
+(./sections/final_remarks.tex [76]) (./post/references.tex [77]
 LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 1
 5.
 
 (C:/Users/andre/AppData/Local/Programs/MiKTeX/tex/latex/lm/t1lmtt.fd
 File: t1lmtt.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
-) [75]
-[76]) (./post/appendix.tex [77]) (./post/app_literature_review.tex [78])
-(./post/app_definitions.tex [79] Excluding 'comment' comment. [80] [81]
-[82] Excluding 'comment' comment.) (./post/app_dynare.tex [83] [84] [85]
-[86] [87] [88] [89]) (./post/app_latex.tex [90]
+) [78]
+[79]) (./post/appendix.tex [80]) (./post/app_literature_review.tex [81])
+(./post/app_definitions.tex [82] Excluding 'comment' comment. [83] [84]
+[85] Excluding 'comment' comment.) (./post/app_dynare.tex [86] [87] [88]
+[89] [90] [91] [92]) (./post/app_latex.tex [93]
 LaTeX Font Info:    Font shape `U/msa/m/n' will be
 (Font)              scaled to size 15.0049pt on input line 13.
 LaTeX Font Info:    Font shape `U/msa/m/n' will be
@@ -2432,7 +2433,7 @@ LaTeX Font Info:    Font shape `U/cmsy/b/n' will be
 (Font)              scaled to size 14.4pt on input line 13.
 LaTeX Font Info:    Font shape `U/cmsy/b/n' will be
 (Font)              scaled to size 8.0pt on input line 13.
- [91] [92]
+ [94] [95]
 LaTeX Font Info:    Font shape `U/BOONDOX-calo/b/n' will be
 (Font)              scaled to size 12.0pt on input line 140.
 LaTeX Font Info:    Font shape `U/BOONDOX-calo/b/n' will be
@@ -2576,7 +2577,7 @@ Missing character: There is no 8 (U+0038) in font fplmbb!
 Missing character: There is no 9 (U+0039) in font fplmbb!
 Missing character: There is no 9 (U+0039) in font fplmbb!
 Missing character: There is no 0 (U+0030) in font fplmbb!
-[93] [94]
+[96] [97]
 > Step: init table outer spec.
 > Step: parse table options.
 > Step: split table.
@@ -2585,17 +2586,17 @@ Missing character: There is no 0 (U+0030) in font fplmbb!
 > Step: execute table commands.
 > Step: calculate cell and line sizes.
 > Step: build the whole table.
-) (./sections/nk_model.tex [95] [96] [97] [98] [99]
+) (./sections/nk_model.tex [98] [99] [100] [101] [102]
 LaTeX Font Info:    Font shape `U/BOONDOX-calo/b/n' will be
 (Font)              scaled to size 10.0pt on input line 172.
 LaTeX Font Info:    Font shape `U/BOONDOX-calo/b/n' will be
 (Font)              scaled to size 7.6pt on input line 172.
 LaTeX Font Info:    Font shape `U/BOONDOX-calo/b/n' will be
 (Font)              scaled to size 6.0pt on input line 172.
- [100] [101]
-[102] [103] [104] [105] [106] [107] [108] [109] [110] [111] [112] [113]
-[114] [115] [116] [117] [118] [119] [120] [121] [122] [123] [124])
-(./sections/nk_calibration.tex [125]
+ [103] [104]
+[105] [106] [107] [108] [109] [110] [111] [112] [113] [114] [115] [116]
+[117] [118] [119] [120] [121] [122] [123] [124] [125] [126] [127])
+(./sections/nk_calibration.tex [128]
 > Step: init table outer spec.
 > Step: parse table options.
 > Step: split table.
@@ -2613,7 +2614,7 @@ Overfull \hbox (3.69965pt too wide) detected at line 56
  [] 
  []
 
-[126]
+[129]
 > Step: init table outer spec.
 > Step: parse table options.
 > Step: split table.
@@ -2622,7 +2623,7 @@ Overfull \hbox (3.69965pt too wide) detected at line 56
 > Step: execute table commands.
 > Step: calculate cell and line sizes.
 > Step: build the whole table.
-) (./sections/nk_IRF.tex [127]
+) (./sections/nk_IRF.tex [130]
 File: ../images/../images/shock_ZAt/shock_ZAt_ZAt.png Graphic file (type png)
 <use ../images/../images/shock_ZAt/shock_ZAt_ZAt.png>
 Package luatex.def Info: ../images/../images/shock_ZAt/shock_ZAt_ZAt.png  used 
@@ -2684,7 +2685,7 @@ File: ../images/../images/shock_ZAt/blank.png Graphic file (type png)
 Package luatex.def Info: ../images/../images/shock_ZAt/blank.png  used on input
  line 109.
 (luatex.def)             Requested size: 136.57462pt x 78.76317pt.
- [128]
+ [131]
 File: ../images/../images/shock_ZMt/shock_ZMt_ZMt.png Graphic file (type png)
 <use ../images/../images/shock_ZMt/shock_ZMt_ZMt.png>
 Package luatex.def Info: ../images/../images/shock_ZMt/shock_ZMt_ZMt.png  used 
@@ -2746,12 +2747,12 @@ File: ../images/../images/shock_ZMt/blank.png Graphic file (type png)
 Package luatex.def Info: ../images/../images/shock_ZMt/blank.png  used on input
  line 210.
 (luatex.def)             Requested size: 136.57462pt x 78.76317pt.
-) (./sections/nk_dynare.tex [129]
-[130] [131] [132] [133] [134] [135]) (./post/app_todo.tex [136] (./thesis.tdo)
+) (./sections/nk_dynare.tex [132]
+[133] [134] [135] [136] [137] [138]) (./post/app_todo.tex [139] (./thesis.tdo)
 \tf@tdo=\write10
 
 \openout10 = thesis.tdo
-) [137] (./thesis.aux)
+) [140] (./thesis.aux)
  ***********
 LaTeX2e <2023-06-01> patch level 1
 L3 programming layer <2020/03/25>
@@ -2762,15 +2763,7 @@ LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 1.93356pt have occurred.
 
 
-LaTeX Warning: There were undefined references.
-
-
 LaTeX Warning: There were multiply-defined labels.
-
-
-Package biblatex Warning: Please (re)run Biber on the file:
-(biblatex)                thesis
-(biblatex)                and rerun LaTeX afterwards.
 
 Package logreq Info: Writing requests to 'thesis.run.xml'.
 
@@ -2778,15 +2771,15 @@ Package logreq Info: Writing requests to 'thesis.run.xml'.
 )
 
 Here is how much of LuaTeX's memory you used:
- 46213 strings out of 477545
+ 46254 strings out of 477545
  125081,4921788 words of node,token memory allocated
- 5823 words of node memory still in use:
-   116 hlist, 17 vlist, 7 rule, 10 math, 69 glue, 33 kern, 142 sub_mlist, 161 gl
-yph, 584 attribute, 89 glue_spec, 293 attribute_list, 3 write, 3 pdf_action node
+ 5877 words of node memory still in use:
+   116 hlist, 17 vlist, 7 rule, 10 math, 69 glue, 33 kern, 148 sub_mlist, 161 gl
+yph, 596 attribute, 89 glue_spec, 299 attribute_list, 3 write, 3 pdf_action node
 s
    avail lists: 1:2,2:5949,3:950,4:238,5:724,6:206,7:6490,8:105,9:3322,10:73,11:
 521,12:1
- 62826 multiletter control sequences out of 65536+600000
+ 62827 multiletter control sequences out of 65536+600000
  706 fonts using 43102543 bytes
  132i,26n,128p,1134b,4379s stack positions out of 10000i,1000n,20000p,200000b,200000s
 {C:/Users/andre/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-ec.enc}{C:/U
@@ -2818,9 +2811,9 @@ ocal/Programs/MiKTeX/fonts/type1/urw/palatino/uplri8a.pfb><C:/Users/andre/AppDat
 a/Local/Programs/MiKTeX/fonts/type1/urw/zapfding/uzdr.pfb><C:/Users/andre/AppDat
 a/Local/Programs/MiKTeX/fonts/type1/public/boondox/zxxbw8a.pfb><C:/Users/andre/A
 ppData/Local/Programs/MiKTeX/fonts/type1/public/boondox/zxxrw8a.pfb>
-Output written on thesis.pdf (137 pages, 4462770 bytes).
+Output written on thesis.pdf (140 pages, 4481236 bytes).
 
-PDF statistics: 2766 PDF objects out of 2984 (max. 8388607)
- 928 named destinations out of 1000 (max. 131072)
- 432 words of extra memory for PDF output out of 10000 (max. 100000000)
+PDF statistics: 2860 PDF objects out of 2984 (max. 8388607)
+ 968 named destinations out of 1000 (max. 131072)
+ 440 words of extra memory for PDF output out of 10000 (max. 100000000)
 
