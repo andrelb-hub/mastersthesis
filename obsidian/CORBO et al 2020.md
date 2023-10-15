@@ -1,5 +1,10 @@
-### 1. intro
-### 2. model
+---
+link:
+---
+
+### Abstract
+### 1. Introduction
+### 2. Model
 
 small open-economy medium-sized DSGE model, similar to the models in [[Adolfson et al. (2007)]]
 

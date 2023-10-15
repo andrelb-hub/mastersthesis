@@ -4,19 +4,15 @@
     "type": "split",
     "children": [
       {
-        "id": "65706387f59a2fc9",
+        "id": "e99642aaac03f361",
         "type": "tabs",
         "children": [
           {
-            "id": "977355f136df8317",
+            "id": "95d708c31e809c84",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "CORBO et al 2020.md",
-                "mode": "source",
-                "source": false
-              }
+              "type": "graph",
+              "state": {}
             }
           }
         ]
@@ -85,7 +81,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "CORBO et al 2020.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +97,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "CORBO et al 2020.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -124,9 +118,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "CORBO et al 2020.md"
-              }
+              "state": {}
             }
           }
         ]
@@ -146,9 +138,16 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "536598f563bb5a03",
+  "active": "95d708c31e809c84",
   "lastOpenFiles": [
-    "rascunho.md",
-    "CORBO et al 2020.md"
+    "CORBO et al 2020.md",
+    "Abadir.md",
+    "Abadir et al 2005 Matrix Algebra.pdf - Atalho 1.lnk",
+    "Abadir et al 2005 Matrix Algebra.pdf - Atalho.lnk",
+    "www.google.com.md",
+    "Corbo.md",
+    "Corbo et al 2020 MAJA A two-region DSGE model for Sweden and its main trading partners.pdf",
+    "Corbo et al 2020 MAJA A two-region DSGE model for Sweden and its main trading partners.pdf - Atalho.lnk",
+    "rascunho.md"
   ]
 }
