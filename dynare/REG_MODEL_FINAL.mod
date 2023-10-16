@@ -1,6 +1,8 @@
 % command to run dynare and write
 % a new file with all the choices:
 % dynare REG_MODEL savemacro=REG_MODEL_FINAL.mod
+% diagnostic command:
+% model_diagnostics(M_, options_, oo_)
 % -------------------------------------------------- %
 % MODEL OPTIONS                                      %
 % -------------------------------------------------- %
@@ -139,8 +141,8 @@ siggma   = 2     ;  % relative risk aversion coefficient
 phhi     = 1     ;  % relative labor weight in utility
 varphhi  = 1.5   ;  % marginal disutility of labor supply
 pssi     = 8     ;  % elasticity of substitution between intermediate goods
-omega11  = 0.8   ;  % weight of good 1 in consumption composition of region 1
-omega21  = 0.5   ;  % weight of good 1 in consumption composition of region 2
+omega11  = 0.7   ;  % weight of good 1 in consumption composition of region 1
+omega21  = 0.7   ;  % weight of good 1 in consumption composition of region 2
 % -------------------------------------------------- % 
 % standard errors values                             %
 % -------------------------------------------------- %
