@@ -1,5 +1,0 @@
-Starting Dynare (version 5.4).
-Calling Dynare with arguments: savemacro=REG_MODEL_2_FINAL.mod
-Starting preprocessing of the model file ...
-ERROR: There are 31 equations but 32 endogenous variables!
-
