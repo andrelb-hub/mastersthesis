@@ -776,7 +776,7 @@ The model is composed of the preview solutions, forming a square system of 41 va
 			Y_{t} &= Y_{1 t} + Y_{2 t} \tag{\ref{eq:reg-market-clearing-condition-Yt}}
 		\end{align}
 
-		\item Regional Market Clearing Condition: \colorbox{orange}{alterations}
+		\item Regional Market Clearing Condition: \colorbox{orange}{version 02}
 		\begin{align}
 			Y_{\eta t} = C_{\eta t} + I_{\eta t} \tag{\ref{eq:reg-regional-demand}}
 		\end{align}
@@ -815,13 +815,13 @@ The steady state of a variable is defined by its constancy through time. For any
 		I_{\eta} &= \delta K_{\eta} \label{eq:reg-ss-law-of-motion-for-capital}
 	\end{alignat}
 
-	\item Regional Consumption: \colorbox{orange}{alterations}
+	\item Regional Consumption: \colorbox{orange}{version 02}
 	\begin{align}
 		C_{\eta t} &= C_{\eta 1 t}^{\omega_{\eta 1}} C_{\eta 2 t}^{1-\omega_{\eta 1}} \tag{\ref{eq:reg-consumption-aggregation}} \implies \\
 		C_{\eta} &= C_{\eta 1}^{\omega_{\eta 1}} C_{\eta 2}^{1-\omega_{\eta 1}} \label{eq:reg-ss-consumption-aggregation}
 	\end{align}
 	
-	\item Regional Expense Weight: \colorbox{orange}{alterations}
+	\item Regional Expense Weight: \colorbox{orange}{version 02}
 	\begin{align}
 		\frac{P_{1 t} C_{\eta 1 t}}{\omega_{\eta 1}} &= \frac{P_{2 t} C_{\eta 2 t}}{1 -\omega_{\eta 1}} \tag{\ref{eq:reg-Cn1-Cn2}} \implies \\
 		\frac{P_{1} C_{\eta 1}}{\omega_{\eta 1}} &= \frac{P_{2} C_{\eta 2}}{1 -\omega_{\eta 1}} \label{eq:reg-ss-Cn1-Cn2}
@@ -1823,12 +1823,12 @@ The log-linear model is a square system of 31 variables and 31 equations, summar
 		
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\item Regional Consumption \colorbox{orange}{alterations}
+\item Regional Consumption \colorbox{orange}{version 02}
 \begin{align}
 	\hat{C}_{\eta t} &= \omega_{\eta 1} \hat{C}_{\eta 1 t} + (1-\omega_{\eta 1}) \hat{C}_{\eta 2 t} \tag{\ref{eq:reg-ll-consumption-aggregation}}
 \end{align}
 
-\item Regional Consumption and Expense Weights \colorbox{orange}{alterations}
+\item Regional Consumption Levels \colorbox{orange}{version 02}
 \begin{align}
 	\hat{C}_{11t} - \hat{C}_{12t} &= \hat{C}_{22t} - \hat{C}_{21t} \tag{\ref{eq:reg-ll-Cn1-Cn2-b}}
 \end{align}		
@@ -1872,7 +1872,7 @@ The log-linear model is a square system of 31 variables and 31 equations, summar
 			\hat{Y}_{\eta t} &= \hat{Z}_{A\eta t} + {\alpha_{}} \hat{K}_{\eta t} + (1-{\alpha_{}}) \hat{L}_{\eta t} \tag{\ref{eq:reg-ll-final-goods-firm-bundle-rule-3}}
 		\end{align}
 
-		\item Capital and Labor Levels \colorbox{orange}{alterations}
+		\item Capital and Labor Levels \colorbox{orange}{version 02}
 		\begin{align}
 			\hat{K}_{1t} - \hat{L}_{1t} &= \hat{K}_{2t} - \hat{L}_{2t} \tag{\ref{eq:reg-ll-int-good-firm-TMRS-b}}
 		\end{align}		
@@ -1964,13 +1964,13 @@ The log-linear model is a square system of 31 variables and 31 equations, summar
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-		\item Regional Consumption \colorbox{orange}{alterations}
+		\item Regional Consumption \colorbox{orange}{version 02}
 		\begin{align}
 			\hat{C}_{1t} &= \omega_{11} \hat{C}_{11t} + (1-\omega_{11}) \hat{C}_{12t} \nonumber \\ 
 			\hat{C}_{2t} &= \omega_{21} \hat{C}_{21t} + (1-\omega_{21}) \hat{C}_{22t} \tag{\ref{eq:reg-ll-consumption-aggregation}}
 		\end{align}
 		
-		\item Regional Consumption and Expense Weights \colorbox{orange}{alterations}
+		\item Regional Consumption Levels \colorbox{orange}{version 02}
 		\begin{align}
 			\hat{C}_{11t} - \hat{C}_{12t} &= \hat{C}_{22t} - \hat{C}_{21t} \tag{\ref{eq:reg-ll-Cn1-Cn2-b}}
 		\end{align}
@@ -2008,8 +2008,8 @@ The log-linear model is a square system of 31 variables and 31 equations, summar
 		
 		\item Euler equation for the capital return
 		\begin{alignat}{2}
-			&\E \left\{ \hat{\mathscr{E}}_{1, t+1} - \hat{P}_{1, t+1}  - (1 -\sigma) \hat{C}_{1, t+1} \right\} - \nonumber \\ &\qquad - (\hat{\mathscr{E}}_{1 t} - \hat{P}_{1 t} - (1 -\sigma) \hat{C}_{1 t}) = \beta \frac{R_{K}}{P_{1}} \mathbb{E}_t \left\{ \hat{R}_{K, t+1} - \hat{P}_{1, t+1} \right\} \nonumber \\
-			&\E \left\{ \hat{\mathscr{E}}_{2, t+1} - \hat{P}_{2, t+1}  - (1 -\sigma) \hat{C}_{2, t+1} \right\} - \nonumber \\ &\qquad - (\hat{\mathscr{E}}_{2 t} - \hat{P}_{2 t} - (1 -\sigma) \hat{C}_{2 t}) = \beta \frac{R_{K}}{P_{2}} \mathbb{E}_t \left\{ \hat{R}_{K, t+1} - \hat{P}_{2, t+1} \right\} \tag{\ref{eq:reg-ll-capital-euler-equation}}
+			&\E \left\{ \hat{\mathscr{E}}_{1, t+1} - \hat{P}_{1, t+1}  - (1 -\sigma) \hat{C}_{1, t+1} \right\} - \nonumber \\ &\qquad - (\hat{\mathscr{E}}_{1 t} - \hat{P}_{1 t} - (1 -\sigma) \hat{C}_{1 t}) = \beta r_{K} \mathbb{E}_t \left\{ \hat{R}_{K, t+1} - \hat{P}_{1, t+1} \right\} \nonumber \\
+			&\E \left\{ \hat{\mathscr{E}}_{2, t+1} - \hat{P}_{2, t+1}  - (1 -\sigma) \hat{C}_{2, t+1} \right\} - \nonumber \\ &\qquad - (\hat{\mathscr{E}}_{2 t} - \hat{P}_{2 t} - (1 -\sigma) \hat{C}_{2 t}) = \beta r_{K} \mathbb{E}_t \left\{ \hat{R}_{K, t+1} - \hat{P}_{2, t+1} \right\} \tag{\ref{eq:reg-ll-capital-euler-equation}}
 		\end{alignat}
 		
 		\item Production Function
@@ -2018,7 +2018,7 @@ The log-linear model is a square system of 31 variables and 31 equations, summar
 			\hat{Y}_{2 t} = \hat{Z}_{A2 t} + {\alpha_{}} \hat{K}_{2 t} + (1-{\alpha_{}}) \hat{L}_{2 t} \tag{\ref{eq:reg-ll-final-goods-firm-bundle-rule-3}}
 		\end{align}
 
-		\item Capital and Labor Levels
+		\item Capital and Labor Levels \colorbox{orange}{version 02}
 		\begin{align}
 			\hat{K}_{1t} - \hat{L}_{1t} &= \hat{K}_{2t} - \hat{L}_{2t} \tag{\ref{eq:reg-ll-int-good-firm-TMRS-b}}
 		\end{align}
@@ -2075,7 +2075,7 @@ The log-linear model is a square system of 31 variables and 31 equations, summar
 			\hat{Y}_{t} &= \theta_{Y1} \hat{Y}_{1t} + (1-\theta_{Y1}) \hat{Y}_{2t} \tag{\ref{eq:reg-ll-market-clearing-condition-Yt-3}}
 		\end{align}
 		
-		\item Regional Market Clearing Condition \colorbox{orange}{alterations}
+		\item Regional Market Clearing Condition \colorbox{orange}{version 02}
 		\begin{align}
 			\hat{Y}_{1t} = \theta_{C1} \hat{C}_{1t} + (1 - \theta_{C1}) \hat{I}_{1t} \nonumber \\
 			\hat{Y}_{2t} = \theta_{C2} \hat{C}_{2t} + (1 - \theta_{C2}) \hat{I}_{2t} \tag{\ref{eq:reg-ll-total-yn-2}}
