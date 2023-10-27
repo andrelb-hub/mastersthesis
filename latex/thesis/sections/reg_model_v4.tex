@@ -202,15 +202,15 @@ Substitute \ref{eq:reg-Cn-Cv} in \ref{eq:reg-FOC-C1-C2}:
 	C_{\eta 1 t} &= C_{\eta t} \left[ \frac{P_{1 t}}{P_{2 t}} \cdot \frac{1 -\omega_{\eta 1}}{\omega_{\eta 1}} \right]^{\omega_{\eta 1} -1} \label{eq:reg-Cn-Cn}
 \end{alignat}
 
-Define the total goods expense $\te$ of household $\eta$:
+Define the regional consumer price index $P_{C \eta t}$: \colorbox{cyan}{version 04}
 \begin{align}
-	\te = P_{1 t} C_{\eta 1 t} + P_{2 t} C_{\eta 2 t} \label{eq:reg-total-expense}
+	P_{C \eta t} C_{\eta t} = P_{1 t} C_{\eta 1 t} + P_{2 t} C_{\eta 2 t} \implies P_{C \eta t} = \frac{P_{1 t} C_{\eta 1 t} + P_{2 t} C_{\eta 2 t}}{C_{\eta t}} \label{eq:reg-total-expense}
 \end{align}
 
 Substitute \ref{eq:reg-Cn-Cv} and \ref{eq:reg-Cn-Cn} in \ref{eq:reg-total-expense}:
 \begin{align}
-	\te &= P_{1 t} C_{\eta t} \left[ \frac{P_{1 t}}{P_{2 t}} \cdot \frac{1 -\omega_{\eta 1}}{\omega_{\eta 1}} \right]^{\omega_{\eta 1} -1} + P_{2 t} C_{\eta t} \left[ \frac{P_{1 t}}{P_{2 t}} \cdot \frac{1 -\omega_{\eta 1}}{\omega_{\eta 1}} \right]^{\omega_{\eta 1}} \implies \nonumber \\
-	\te &= C_{\eta t} \left[ \frac{P_{1 t}}{\omega_{\eta 1}} \right]^{\omega_{\eta 1}} \left[ \frac{P_{2 t}}{1 -\omega_{\eta 1}} \right]^{1 -\omega_{\eta 1}} \label{eq:reg-total-expense-level}
+	P_{C \eta t} C_{\eta t} &= P_{1 t} C_{\eta t} \left[ \frac{P_{1 t}}{P_{2 t}} \cdot \frac{1 -\omega_{\eta 1}}{\omega_{\eta 1}} \right]^{\omega_{\eta 1} -1} + P_{2 t} C_{\eta t} \left[ \frac{P_{1 t}}{P_{2 t}} \cdot \frac{1 -\omega_{\eta 1}}{\omega_{\eta 1}} \right]^{\omega_{\eta 1}} \implies \nonumber \\
+	P_{C \eta t} &= \left[ \frac{P_{1 t}}{\omega_{\eta 1}} \right]^{\omega_{\eta 1}} \left[ \frac{P_{2 t}}{1 -\omega_{\eta 1}} \right]^{1 -\omega_{\eta 1}} \label{eq:reg-total-expense-level}
 \end{align}
 
 Equation \ref{eq:reg-total-expense-level} shows that the total expense with goods is proportional to the goods' prices $P_{1 t}$ and $P_{2 t}$.
@@ -1024,13 +1024,14 @@ The steady state of a variable is defined by its constancy through time. For any
 
 From \ref{eq:reg-ss-general-price-level} and \ref{eq:reg-ss-p1-p2}, the regional optimal price $P_{\eta}^{\ast}$ is:
 \begin{align}
-	P_{\eta}^{\ast} = P_{\eta} \implies \langle \begin{matrix} P_{1}^{\ast} & P_{2}^{\ast} \end{matrix} \rangle = \langle \begin{matrix} P_{1} & P_{2} \end{matrix} \rangle = \langle \begin{matrix} P_{1} & P_{1} \end{matrix} \rangle \tag{\ref{eq:reg-ss-general-price-level}}
+	P_{\eta}^{\ast} &= P_{\eta} \implies \langle \begin{matrix} P_{1}^{\ast} & P_{2}^{\ast} \end{matrix} \rangle = \langle \begin{matrix} P_{1} & P_{2} \end{matrix} \rangle \tag{\ref{eq:reg-ss-general-price-level}} \implies \\
+	P_{1} &= P_{2} = P_{1}^{\ast} = P_{2}^{\ast} \label{eq:reg-ss-p1-p2-b}
 \end{align}
 
 Substitute \ref{eq:reg-ss-p1-p2} and then \ref{eq:reg-ss-total-yn} in \ref{eq:ss-national-price-level} for the national price level:
 	\begin{align}
 		P_{} &= \frac{P_{1} Y_{1} + P_{2} Y_{2}}{Y_{}} = \frac{P_{1} Y_{1} + P_{1} Y_{2}}{Y_{}} \tag{\ref{eq:ss-national-price-level}} \implies \nonumber \\
-		P_{} &= P_{1} = P_{2} \label{eq:reg-ss-P1-P2-P}
+		P_{} &= P_{1} = P_{2} = P_{1}^{\ast} = P_{2}^{\ast} \label{eq:reg-ss-P1-P2-P}
 	\end{align}
 
 Substitute \ref{eq:reg-ss-P1-P2-P} in \ref{eq:reg-ss-price-eta-level} for the price composition of consumption bundle $\te[]$:
@@ -1039,7 +1040,7 @@ Substitute \ref{eq:reg-ss-P1-P2-P} in \ref{eq:reg-ss-price-eta-level} for the pr
 	\te[] &= \frac{P_{} C_{\eta}}{\omega_{\eta 1}^{\omega_{\eta 1}} (1 -\omega_{\eta 1})^{1 -\omega_{\eta 1}}} \label{eq:reg-ss-te}
 \end{align}
 
-Substitute \ref{eq:reg-ss-general-price-level} and \ref{eq:reg-ss-P1-P2-P} in \ref{eq:reg-ss-int-good-firm-optimal-price-FOC-3} for the marginal cost $\Lambda_{\eta}$:
+Substitute \ref{eq:reg-ss-P1-P2-P} in \ref{eq:reg-ss-int-good-firm-optimal-price-FOC-3} for the marginal cost $\Lambda_{\eta}$:
 \begin{align}
 	P_{\eta}^{\ast} &= \frac{\psi}{\psi-1} \Lambda_{\eta} \implies \tag{\ref{eq:reg-ss-int-good-firm-optimal-price-FOC-3}} \\
 	\Lambda_{\eta} &= P_{} \frac{\psi-1}{\psi} = \Lambda_{} \label{eq:reg-ss-marginal-cost}

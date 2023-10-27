@@ -1,4 +1,4 @@
-This is LuaHBTeX, Version 1.17.0 (MiKTeX 23.5) (format=lualatex 2023.8.25)  26 OCT 2023 21:54
+This is LuaHBTeX, Version 1.17.0 (MiKTeX 23.5) (format=lualatex 2023.8.25)  27 OCT 2023 18:23
  restricted system commands enabled.
 **thesis.tex
 (./thesis.tex
@@ -2158,11 +2158,11 @@ LaTeX Font Info:    Font shape `U/BOONDOX-calo/m/n' will be
 (Font)              scaled to size 7.0pt on input line 152.
  [27] [28]
 LaTeX Font Info:    Font shape `U/cmsy/m/n' will be
-(Font)              scaled to size 12.0pt on input line 205.
+(Font)              scaled to size 12.0pt on input line 223.
 LaTeX Font Info:    Font shape `U/cmsy/m/n' will be
-(Font)              scaled to size 9.0pt on input line 205.
+(Font)              scaled to size 9.0pt on input line 223.
 LaTeX Font Info:    Font shape `U/cmsy/m/n' will be
-(Font)              scaled to size 7.0pt on input line 205.
+(Font)              scaled to size 7.0pt on input line 223.
 LaTeX Font Info:    Font shape `U/BOONDOX-calo/m/n' will be
 (Font)              scaled to size 8.76118pt on input line 225.
 LaTeX Font Info:    Font shape `U/BOONDOX-calo/m/n' will be
@@ -2208,17 +2208,17 @@ LaTeX Font Info:    Font shape `U/cmsy/b/n' will be
  [46] [47] Excluding 'comment' comment. [48] [49]
 
 LaTeX Warning: Reference `eq:reg-ss-nominal-wage' on page 50 undefined on input
- line 1165.
+ line 1166.
 
 
 LaTeX Warning: Reference `eq:reg-ss-nominal-wage' on page 50 undefined on input
- line 1165.
+ line 1166.
 
 [50] Excluding 'comment' comment. [51] [52] [53] [54] [55] [56]
 Excluding 'comment' comment. [57] Excluding 'comment' comment. [58] [59]
 [60] [61] Excluding 'comment' comment. [62] [63] Excluding 'comment' comment.
 [64] Excluding 'comment' comment. [65] Excluding 'comment' comment. [66]
-Underfull \hbox (badness 1237) in paragraph at lines 1896--1897
+Underfull \hbox (badness 1237) in paragraph at lines 1897--1898
 []\T1/ppl/m/n/12 Tech-ni-cal and Eco-nom-i-cal Marginal Rates of Sub-sti-tu-tion
  (TMRS and
  []
@@ -2811,7 +2811,7 @@ Package logreq Info: Writing requests to 'thesis.run.xml'.
 )
 
 Here is how much of LuaTeX's memory you used:
- 48245 strings out of 477545
+ 48247 strings out of 477545
  125081,4921788 words of node,token memory allocated
  5931 words of node memory still in use:
    116 hlist, 17 vlist, 7 rule, 10 math, 69 glue, 33 kern, 154 sub_mlist, 161 gl
@@ -2819,7 +2819,7 @@ yph, 608 attribute, 89 glue_spec, 305 attribute_list, 3 write, 3 pdf_action node
 s
    avail lists: 1:2,2:5949,3:950,4:238,5:724,6:204,7:6490,8:105,9:3322,10:73,11:
 521,12:1
- 64793 multiletter control sequences out of 65536+600000
+ 64794 multiletter control sequences out of 65536+600000
  706 fonts using 43102543 bytes
  132i,26n,128p,1138b,4379s stack positions out of 10000i,1000n,20000p,200000b,200000s
 {C:/Users/andre/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-ec.enc}{C:/U
@@ -2851,9 +2851,9 @@ ocal/Programs/MiKTeX/fonts/type1/urw/palatino/uplri8a.pfb><C:/Users/andre/AppDat
 a/Local/Programs/MiKTeX/fonts/type1/urw/zapfding/uzdr.pfb><C:/Users/andre/AppDat
 a/Local/Programs/MiKTeX/fonts/type1/public/boondox/zxxbw8a.pfb><C:/Users/andre/A
 ppData/Local/Programs/MiKTeX/fonts/type1/public/boondox/zxxrw8a.pfb>
-Output written on thesis.pdf (141 pages, 4487874 bytes).
+Output written on thesis.pdf (141 pages, 4488295 bytes).
 
 PDF statistics: 2875 PDF objects out of 2984 (max. 8388607)
- 978 named destinations out of 1000 (max. 131072)
+ 979 named destinations out of 1000 (max. 131072)
  440 words of extra memory for PDF output out of 10000 (max. 100000000)
 
