@@ -13,13 +13,26 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Torres 2016.md",
+                "file": "Rickman, 2010.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "793961df39cfd6fd",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Christiano er al 2018 On DSGE Models.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -69,7 +82,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 233.5
   },
   "right": {
     "id": "fb01c65dc3a8a205",
@@ -85,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Torres 2016.md",
+                "file": "Christiano er al 2018 On DSGE Models.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Torres 2016.md",
+                "file": "Christiano er al 2018 On DSGE Models.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Torres 2016.md"
+                "file": "Christiano er al 2018 On DSGE Models.md"
               }
             }
           }
@@ -146,10 +159,16 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "07402cfcbe19210e",
+  "active": "793961df39cfd6fd",
   "lastOpenFiles": [
-    "CORBO et al 2020.md",
+    "Rickman, 2010.md",
+    "Christiano er al 2018 On DSGE Models.md",
+    "DeJong and Dave, 2007.md",
+    "Kydland and Prescott, 1991b.md",
+    "Long and Plosser, 1983.md",
     "Torres 2016.md",
+    "Kydland and Prescott, 1982.md",
+    "CORBO et al 2020.md",
     "Abadir.md",
     "Abadir et al 2005 Matrix Algebra.pdf - Atalho 1.lnk",
     "Abadir et al 2005 Matrix Algebra.pdf - Atalho.lnk",
