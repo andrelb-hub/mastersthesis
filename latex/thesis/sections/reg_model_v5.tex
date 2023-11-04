@@ -121,11 +121,10 @@ Following the models presented by \textcite{costa_junior_understanding_2016} and
 	\max_{C_{\eta t}, L_{\eta t}, B_{\eta t}, K_{\eta, t+1}}: \quad & U_{\eta}(C_{\eta t},L_{\eta t}) = \E \sum_{t=0}^{\infty} \beta^t \left(\frac{C_{\eta t}^{1-\sigma}}{1-\sigma} - \phi \frac{L_{\eta t}^{1+\varphi}}{1+\varphi} \right) \label{eq:reg-utility-function-0} 
 	\\
 	\begin{split}
-		\st: \quad & P_{1 t} C_{\eta 1 t} + P_{2 t} C_{\eta 2 t} + P_{\eta t} I_{\eta t} + B_{\eta t} = \\ & \quad = W_t L_{\eta t} + R_{Kt} K_{\eta t} + (1 + R_{t-1}) B_{\eta,t-1} + \Pi_{\eta t}
+		\st: \quad & P_{1 t} C_{\eta 1 t} + P_{2 t} C_{\eta 2 t} + B_{\eta t} = \\ & \quad = W_t L_{\eta t} + (1 + R_{t-1}) B_{\eta,t-1} + \Pi_{\eta t}
 	\end{split} \label{eq:reg-budget-constraint} \\
-	\quad & K_{\eta, t+1} = (1-\delta)K_{\eta t} + I_{\eta t} \label{eq:reg-law-of-motion-for-capital} \\
 	\quad & C_{\eta t} = C_{\eta 1 t}^{\omega_{\eta 1}} C_{\eta 2 t}^{1-\omega_{\eta 1}} \label{eq:reg-consumption-aggregation} \\
-	\quad & C_{\eta t}, L_{\eta t}, K_{\eta, t+1} > 0 \text{ ; $K_0$ given.} \nonumber
+	\quad & C_{\eta t}, L_{\eta t} > 0 \nonumber
 \end{align}
 
 where $\E$ is the expectation operator, $\beta$ is the intertemporal discount factor, $\sigma$ is the relative risk aversion coefficient, $\phi$ is the relative labor weight in utility, $\varphi$ is the marginal disutility of labor supply. In the budget constraint, $P_{1t}$ and $P_{2t}$ are the prices of goods $1$ and $2$, respectively, $C_{\eta 1 t}$ and $C_{\eta 2 t}$ are the goods produced in region $1$ and $2$, respectively, and consumed in region $\eta$, $I_{\eta t}$ is the investment, $B_{\eta t}$ are the bonds, $W_t$ is the wage level, $K_{\eta t}$ is the capital, $R_{Kt}$ is the return on capital, $R_t$ is the return on bonds (which is also the nominal interest rate of the economy) and $\Pi_{\eta t}$ is the firm profit. In the capital accumulation rule, $\delta$ is the capital depreciation rate. In the consumption aggregation, ${\omega_{\eta 1}}$ and ${1 - \omega_{\eta 1}}$ are the weights of goods $C_{\eta 1 t}$ and $C_{\eta 2 t}$, respectively, in the consumption bundle $C_{\eta t}$.
@@ -135,24 +134,12 @@ To solve the household problem, first substitute \ref{eq:reg-consumption-aggrega
 	U_{\eta}(C_{\eta 1 t}, C_{\eta 2 t}, L_{\eta t}) = \E \sum_{t=0}^{\infty} \beta^t \left( \frac{\left[ C_{\eta 1 t}^{\omega_{\eta 1}} C_{\eta 2 t}^{1-\omega_{\eta 1}} \right]^{1-\sigma}}{1-\sigma} - \phi \frac{L_{\eta t}^{1+\varphi}}{1+\varphi} \right) \label{eq:reg-utility-function}
 \end{align}
 
-Isolate $I_{\eta t}$ in \ref{eq:reg-law-of-motion-for-capital} and substitute in \ref{eq:reg-budget-constraint}:
-\begin{align}
-	& K_{\eta, t+1} = (1-\delta)K_{\eta t} + I_{\eta t} \implies I_{\eta t} = K_{\eta, t+1} - (1-\delta)K_{\eta t} \tag{\ref{eq:reg-law-of-motion-for-capital}} \\
-	\begin{split}
-		& P_{1 t} C_{\eta 1 t} + P_{2 t} C_{\eta 2 t} + P_{\eta t} I_{\eta t} + B_{\eta t} = \\ & \quad = W_t L_{\eta t} + R_{Kt} K_{\eta t} + (1 + R_{t-1}) B_{\eta,t-1} + \Pi_{\eta t} \implies
-	\end{split} \tag{\ref{eq:reg-budget-constraint}}
-	\\
-	\begin{split}
-		& P_{1 t} C_{\eta 1 t} + P_{2 t} C_{\eta 2 t} + P_{\eta t} [ K_{\eta, t+1} - (1-\delta)K_{\eta t} ] + B_{\eta t} = \\ & \quad = W_t L_{\eta t} + R_{Kt} K_{\eta t} + (1 + R_{t-1}) B_{\eta,t-1} + \Pi_{\eta t}
-	\end{split} \label{eq:reg-budget-constraint-2}
-\end{align}
-
 \subsubsection*{Lagrangian}
 
-The maximization problem with restrictions can be transformed into one without restriction using the Lagrangian function $\mathcal{L}$ formed by \ref{eq:reg-utility-function} and \ref{eq:reg-budget-constraint-2}:
+The maximization problem with restrictions can be transformed into one without restriction using the Lagrangian function $\mathcal{L}$ formed by \ref{eq:reg-utility-function} and \ref{eq:reg-budget-constraint}:
 \begin{align}
 	\begin{split}
-	& \mathcal{L} = \mathbb{E}_t \sum_{t=0}^{\infty} \beta^t \left\{ \left( \frac{ \left[ C_{\eta 1 t}^{\omega_{\eta 1}} C_{\eta 2 t}^{1-\omega_{\eta 1}} \right]^{1 -\sigma}}{1 -\sigma} - \phi \frac{L_{\eta t}^{1+\varphi}}{1+\varphi} \right) \right. - \\ & \qquad - \mu_t \Big[ P_{1 t} C_{\eta 1 t} + P_{2 t} C_{\eta 2 t} + P_{\eta t} [ K_{\eta, t+1} - (1-\delta)K_{\eta t} ] + B_{\eta t} - \\ & \qquad \qquad \left. - ( W_t L_{\eta t} + R_{Kt} K_{\eta t} + (1 + R_{t-1}) B_{\eta,t-1} + \Pi_{\eta t} ) \Big] \right\} \label{eq:reg-household-lagrangian}
+	& \mathcal{L} = \mathbb{E}_t \sum_{t=0}^{\infty} \beta^t \left\{ \left( \frac{ \left[ C_{\eta 1 t}^{\omega_{\eta 1}} C_{\eta 2 t}^{1-\omega_{\eta 1}} \right]^{1 -\sigma}}{1 -\sigma} - \phi \frac{L_{\eta t}^{1+\varphi}}{1+\varphi} \right) \right. - \\ & \qquad - \mu_t \Big[ P_{1 t} C_{\eta 1 t} + P_{2 t} C_{\eta 2 t} + B_{\eta t} - \\ & \qquad \qquad \left. - ( W_t L_{\eta t} + (1 + R_{t-1}) B_{\eta,t-1} + \Pi_{\eta t} ) \Big] \right\} \label{eq:reg-household-lagrangian}
 	\end{split}
 \end{align}
 
@@ -1180,7 +1167,7 @@ Substitute \ref{eq:reg-ss-investment}, \ref{eq:reg-ss-consumption} in \ref{eq:re
 	
 \subsection{Log-linearization}
 	
-	Due to the number of variables and equations to be solved, computational brute force will be necessary. \dynare \ is a software specialized on macroeconomic modeling, used for solving DSGE models. Before the model can be processed by the software, it must be linearized in order to eliminate the infinite sum in equation \ref{eq:reg-int-good-firm-optimal-price-FOC-3}. For this purpose, Uhlig's rules of log-linearization \cite{uhlig_toolkit_1999} will be applied to all equations in the model.\footnote{see lemma \ref{lemma:uhligs-rules} for details.}
+	Due to the number of variables and equations to be solved, computational brute force will be necessary. \dynare \ is a software specialized on macroeconomic modeling, used for solving DSGE models. Before the model can be processed by the software, it must be linearized ,in order to eliminate the infinite sum in equation \ref{eq:reg-int-good-firm-optimal-price-FOC-3}. For this purpose, Uhlig's rules of log-linearization \cite{uhlig_toolkit_1999} will be applied to all equations in the model.\footnote{see lemma \ref{lemma:uhligs-rules} for details.}
 
 % --------------------------------------------------
 % REGIONAL PRICE LEVEL

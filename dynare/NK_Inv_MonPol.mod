@@ -9,10 +9,13 @@
 
 % Productivity Shock ON/OFF
     @#define ZA_SHOCK    = 0
+
 % Productivity Shock sign: +/-
     @#define ZA_POSITIVE = 1
+
 % Monetary Shock ON/OFF
     @#define ZM_SHOCK    = 1
+
 % Monetary Shock sign: +/-
     @#define ZM_POSITIVE = 1
 

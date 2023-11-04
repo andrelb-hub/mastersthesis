@@ -1,0 +1,111 @@
+Starting Dynare (version 5.5).
+Calling Dynare with arguments: savemacro=m001_canonical_NK_FINAL.mod
+Starting preprocessing of the model file ...
+Found 9 equation(s).
+Evaluating expressions...done
+Computing static model derivatives (order 1).
+Computing dynamic model derivatives (order 2).
+Processing outputs ...
+done
+Preprocessing completed.
+
+
+STEADY-STATE RESULTS:
+
+pit   		 0
+Pt    		 0
+lambt 		 0
+Lt    		 0
+Rt    		 0
+Wt    		 0
+Yt    		 0
+ZAt   		 0
+ZMt   		 0
+
+EIGENVALUES:
+         Modulus             Real        Imaginary
+
+          0.5683           0.5683                0
+             0.9              0.9                0
+            0.95             0.95                0
+               1                1                0
+           1.188            1.173           0.1874
+           1.188            1.173          -0.1874
+
+
+There are 2 eigenvalue(s) larger than 1 in modulus 
+for 2 forward-looking variable(s)
+
+The rank condition is verified.
+
+
+MODEL SUMMARY
+
+  Number of variables:         9
+  Number of stochastic shocks: 2
+  Number of state variables:   4
+  Number of jumpers:           2
+  Number of static variables:  3
+
+
+MATRIX OF COVARIANCE OF EXOGENOUS SHOCKS
+Variables    epsilonA  epsilonM
+epsilonA     0.000100  0.000000
+epsilonM     0.000000  0.000000
+
+POLICY AND TRANSITION FUNCTIONS
+                                 ZAt             ZMt              Yt              Pt             pit           lambt              Lt              Rt              Wt
+Pt(-1)                             0               0               0        1.000000               0               0               0               0        1.000000
+Rt(-1)                             0               0       -0.891866       -0.375785       -0.375785       -3.121530       -0.891866        0.568270       -3.497315
+ZAt(-1)                     0.950000               0        0.501184       -0.154614       -0.154614       -0.620857       -0.448816       -0.062060        0.174529
+ZMt(-1)                            0        0.900000       -2.849609       -2.732578       -2.732578       -9.973631       -2.849609       -0.590181      -12.706209
+epsilonA                    1.000000               0        0.527562       -0.162752       -0.162752       -0.653533       -0.472438       -0.065326        0.183714
+epsilonM                           0        1.000000       -3.166232       -3.036198       -3.036198      -11.081813       -3.166232       -0.655757      -14.118010
+
+
+THEORETICAL MOMENTS
+VARIABLE         MEAN  STD. DEV.   VARIANCE
+ZAt            0.0000     0.0320     0.0010
+ZMt            0.0000     0.0000     0.0000
+Yt             0.0000     0.0208     0.0004
+Pt                NaN        NaN        NaN
+pit            0.0000     0.0036     0.0000
+lambt          0.0000     0.0092     0.0001
+Lt             0.0000     0.0114     0.0001
+Rt             0.0000     0.0047     0.0000
+Wt                NaN        NaN        NaN
+
+
+
+VARIANCE DECOMPOSITION (in percent)
+         epsilonA  epsilonM
+ZAt        100.00      0.00
+ZMt          0.00    100.00
+Yt         100.00      0.00
+pit        100.00      0.00
+lambt      100.00      0.00
+Lt         100.00      0.00
+Rt         100.00      0.00
+
+
+
+MATRIX OF CORRELATIONS
+Variables        ZAt       Yt      pit    lambt       Lt       Rt
+ZAt           1.0000   0.9973  -0.9841  -0.8103  -0.9908  -0.9775
+Yt            0.9973   1.0000  -0.9682  -0.7647  -0.9781  -0.9904
+pit          -0.9841  -0.9682   1.0000   0.9016   0.9991   0.9245
+lambt        -0.8103  -0.7647   0.9016   1.0000   0.8821   0.6686
+Lt           -0.9908  -0.9781   0.9991   0.8821   1.0000   0.9401
+Rt           -0.9775  -0.9904   0.9245   0.6686   0.9401   1.0000
+
+
+
+COEFFICIENTS OF AUTOCORRELATION
+Order          1       2       3       4       5
+ZAt       0.9500  0.9025  0.8574  0.8145  0.7738
+Yt        0.9669  0.9281  0.8871  0.8459  0.8053
+pit       0.8930  0.8159  0.7567  0.7084  0.6671
+lambt     0.6969  0.5182  0.4106  0.3436  0.3000
+Lt        0.9086  0.8397  0.7843  0.7375  0.6963
+Rt        0.9860  0.9571  0.9209  0.8815  0.8411
+Total computing time : 0h00m02s
