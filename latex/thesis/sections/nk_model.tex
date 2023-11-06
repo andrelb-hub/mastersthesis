@@ -10,7 +10,7 @@ thesis.tex
 	
 	\newpage
 	
-\section{New Keynesian Model}
+\section{New Keynesian Model}\label{sec_v0:nk-model}
 	
 	% local table os contents:
 	{
@@ -34,32 +34,32 @@ thesis.tex
 	
 	Following the models presented by \textcite{costa_junior_understanding_2016} and \textcite{solis-garcia_ucb_2022}, the representative household problem is to maximize an intertemporal utility function $U$ with respect to consumption $C_t$ and labor $L_t$, subject to a budget constraint, a capital accumulation rule and the non-negativity of real variables:
 	\begin{align}
-		\label{eq:household-utility-function}
+		\label{eq_v0:household-utility-function}
 		\max_{C_t,L_t,K_{t+1}}: \quad & U(C_t,L_t) = \E \sum_{t=0}^{\infty} \beta^t \left(\frac{C_t^{1-\sigma}}{1-\sigma} - \phi \frac{L_t^{1+\varphi}}{1+\varphi} \right) \\
-		\label{eq:household-budget-constraint}
+		\label{eq_v0:household-budget-constraint}
 		\st: \quad & P_t (C_t + I_t) = W_t L_t + R_t K_t + \Pi_t \\
-		\label{eq:law-of-motion-for-capital}
+		\label{eq_v0:law-of-motion-for-capital}
 		\quad & K_{t+1} = (1-\delta)K_t + I_t \\
 		\quad & C_t,L_t,K_{t+1} \geq 0 \text{ ; $K_0$ given.} \nonumber
 	\end{align}
 	
 	where $\E$ is the expectation operator, $\beta$ is the intertemporal discount factor, $\sigma$ is the relative risk aversion coefficient, $\phi$ is the labor relative weight in utility, $\varphi$ is the marginal disutility of labor supply. In the budget constraint, $P_t$ is the price level, $I_t$ is the investment, $W_t$ is the wage level, $K_t$ is the capital stock, $R_t$ is the return on capital, and $\Pi_t$ is the firm profit. In the capital accumulation rule, $\delta$ is the capital depreciation rate.
 	
-	Isolate $I_t$ in \ref{eq:law-of-motion-for-capital} and substitute in \ref{eq:household-budget-constraint}:
+	Isolate $I_t$ in \ref{eq_v0:law-of-motion-for-capital} and substitute in \ref{eq_v0:household-budget-constraint}:
 	\begin{align}
-		\tag{\ref{eq:law-of-motion-for-capital}}
+		\tag{\ref{eq_v0:law-of-motion-for-capital}}
 		& K_{t+1} = (1-\delta)K_t + I_t \implies I_t = K_{t+1} - (1-\delta)K_t \\
-		\tag{\ref{eq:household-budget-constraint}}
+		\tag{\ref{eq_v0:household-budget-constraint}}
 		& P_t (C_t + I_t) = W_t L_t + R_t K_t + \Pi_t \implies \\
-		\label{eq:household-budget-constraint-2}
+		\label{eq_v0:household-budget-constraint-2}
 		& P_t (C_t + K_{t+1} - (1-\delta)K_t) = W_t L_t + R_t K_t + \Pi_t
 	\end{align}
 	
 	\subsubsection*{Lagrangian}
 	
-	The maximization problem with restriction can be transformed in one without restriction using the Lagrangian function $\mathcal{L}$ with \ref{eq:household-utility-function} and \ref{eq:household-budget-constraint-2}:
+	The maximization problem with restriction can be transformed in one without restriction using the Lagrangian function $\mathcal{L}$ with \ref{eq_v0:household-utility-function} and \ref{eq_v0:household-budget-constraint-2}:
 	\begin{multline}
-		\label{eq:household-lagrangian}
+		\label{eq_v0:household-lagrangian}
 		\mathcal{L} = \mathbb{E}_t \sum_{t=0}^{\infty} \beta^t 
 		\left\{ \left( \frac{C_t^{1-\sigma}}{1-\sigma} - \phi \frac{L_t^{1+\varphi}}{1+\varphi} \right) - \right.
 		\\
@@ -70,33 +70,33 @@ thesis.tex
 	
 	The first order conditions with respect to $C_t$, $L_t$, $K_{t+1}$ and $\mu_t$ are:
 	\begin{align}
-		C_t: \quad & C_t^{-\sigma} -\mu_t P_t = 0 \implies \mu_t = \frac{C_t^{-\sigma}}{P_t} \label{eq:household-FOC-Ct} \\
-		L_t: \quad & -\phi L_t^{\varphi} +\mu_t W_t = 0 \implies \mu_t = \frac{\phi L_t^{\varphi}}{W_t} \label{eq:household-FOC-Lt} \\
+		C_t: \quad & C_t^{-\sigma} -\mu_t P_t = 0 \implies \mu_t = \frac{C_t^{-\sigma}}{P_t} \label{eq_v0:household-FOC-Ct} \\
+		L_t: \quad & -\phi L_t^{\varphi} +\mu_t W_t = 0 \implies \mu_t = \frac{\phi L_t^{\varphi}}{W_t} \label{eq_v0:household-FOC-Lt} \\
 		\begin{split}
 			K_{t+1}: \quad & -\mu_t P_t +\beta \mathbb{E}_t \mu_{t+1} [(1-\delta) P_{t+1} + R_{t+1}] = 0 \implies \\ & \qquad \mu_t P_t = \beta \mathbb{E}_t \mu_{t+1} [(1-\delta) P_{t+1} + R_{t+1}]
-		\end{split} \label{eq:household-FOC-Kt} \\
-		\mu_t: \quad & P_t (C_t + K_{t+1} - (1-\delta)K_t) = W_t L_t + R_t K_t + \Pi_t \tag{\ref{eq:household-budget-constraint-2}}
+		\end{split} \label{eq_v0:household-FOC-Kt} \\
+		\mu_t: \quad & P_t (C_t + K_{t+1} - (1-\delta)K_t) = W_t L_t + R_t K_t + \Pi_t \tag{\ref{eq_v0:household-budget-constraint-2}}
 	\end{align}
 	
 	\subsubsection*{Solutions}
 	
-	Match equations \ref{eq:household-FOC-Ct} and \ref{eq:household-FOC-Lt}:
+	Match equations \ref{eq_v0:household-FOC-Ct} and \ref{eq_v0:household-FOC-Lt}:
 	\begin{align}
-		\label{eq:household-labor-supply}
+		\label{eq_v0:household-labor-supply}
 		\frac{C_t^{-\sigma}}{P_t} = \frac{\phi L_t^{\varphi}}{W_t} \implies 
 		\frac{\phi L_t^{\varphi}}{C_t^{-\sigma}} = \frac{W_t}{P_t}
 	\end{align}
 	
-	Equation \ref{eq:household-labor-supply} is the Household Labor Supply and shows that the marginal rate of substitution (MRS) of labor for consumption is equal to the real wage, which is the relative price between labor and goods.
+	Equation \ref{eq_v0:household-labor-supply} is the Household Labor Supply and shows that the marginal rate of substitution (MRS) of labor for consumption is equal to the real wage, which is the relative price between labor and goods.
 	
-	Substitute $\mu_t$ and $\mu_{t+1}$ from equation \ref{eq:household-FOC-Ct} in \ref{eq:household-FOC-Kt}:
+	Substitute $\mu_t$ and $\mu_{t+1}$ from equation \ref{eq_v0:household-FOC-Ct} in \ref{eq_v0:household-FOC-Kt}:
 	\begin{alignat}{2}
 		\mu_t P_t & = \beta \mathbb{E}_t \mu_{t+1} [(1-\delta) P_{t+1} + R_{t+1}] \quad &\implies \nonumber \\
 		\frac{C_t^{-\sigma}}{P_t} P_t & = \beta \mathbb{E}_t \frac{C_{t+1}^{-\sigma}}{P_{t+1}} [(1-\delta) P_{t+1} + R_{t+1}] &\implies \nonumber \\
-		\left( \frac{\mathbb{E}_t C_{t+1}}{C_t} \right)^\sigma & = \beta \left[ (1-\delta) + \mathbb{E}_t \left(\frac{R_{t+1}}{P_{t+1}}\right) \right] \label{eq:household-euler-equation}
+		\left( \frac{\mathbb{E}_t C_{t+1}}{C_t} \right)^\sigma & = \beta \left[ (1-\delta) + \mathbb{E}_t \left(\frac{R_{t+1}}{P_{t+1}}\right) \right] \label{eq_v0:household-euler-equation}
 	\end{alignat}
 	
-	Equation \ref{eq:household-euler-equation} is the Household Euler equation.
+	Equation \ref{eq_v0:household-euler-equation} is the Household Euler equation.
 	
 	% --------------------------------------------------
 	% FIRMS
@@ -121,15 +121,15 @@ thesis.tex
 	
 	The role of the final-good firm is to aggregate all the varieties produced by the intermediate-good firms, so that the representative consumer can buy only one good $Y_t$, the bundle good. The final-good firm problem is to maximize its profit, considering that its output is the bundle $Y_t$ formed by the continuum of intermediate goods $Y_{jt}$, where $j \in [0,1]$ and $\psi$ is the elasticity of substitution between intermediate goods:
 	\begin{align}
-		\label{eq:final-good-firm-max-problem}
+		\label{eq_v0:final-good-firm-max-problem}
 		\max_{Y_{jt}}: &\quad \Pi_t = P_t Y_t - \int_{0}^{1} P_{jt} Y_{jt} \dif j\\
-		\label{eq:final-good-firm-bundle-rule}
+		\label{eq_v0:final-good-firm-bundle-rule}
 		\st: & \quad Y_t = \left( \int_{0}^{1} Y_{jt}^{\frac{\psi-1}{\psi}} \dif j \right)^{\frac{\psi}{\psi-1}}
 	\end{align}
 	
-	Substitute \ref{eq:final-good-firm-bundle-rule} in \ref{eq:final-good-firm-max-problem}:
+	Substitute \ref{eq_v0:final-good-firm-bundle-rule} in \ref{eq_v0:final-good-firm-max-problem}:
 	\begin{align}
-		\label{eq:final-good-firm-max-problem-2}
+		\label{eq_v0:final-good-firm-max-problem-2}
 		\max_{Y_{jt}}: & \quad \Pi_t = P_t \left( \int_{0}^{1} Y_{jt}^{\frac{\psi-1}{\psi}} \dif j \right)^{\frac{\psi}{\psi-1}} - \int_{0}^{1} P_{jt} Y_{jt} \dif j
 	\end{align}
 	
@@ -138,20 +138,20 @@ thesis.tex
 	The first order condition is:
 	\begin{align}
 		Y_{jt}:\quad & P_t \left( \frac{\psi}{\psi-1} \right) \left( \int_{0}^{1} Y_{jt}^{\frac{\psi-1}{\psi}} \dif j \right)^{\frac{\psi}{\psi-1}-1} \left( \frac{\psi-1}{\psi} \right) Y_{jt}^{\frac{\psi-1}{\psi}-1} - P_{jt} = 0 \implies \nonumber \\
-		\label{eq:final-good-firm-FOC}
+		\label{eq_v0:final-good-firm-FOC}
 		& Y_{jt} = Y_t \left( \frac{P_t}{P_{jt}} \right)^{\psi}
 	\end{align}
 	
-	Equation \ref{eq:final-good-firm-FOC} shows that the demand for variety $j$ depends on its relative price. 
+	Equation \ref{eq_v0:final-good-firm-FOC} shows that the demand for variety $j$ depends on its relative price. 
 	
-	Substitute \ref{eq:final-good-firm-FOC} in \ref{eq:final-good-firm-bundle-rule}:
+	Substitute \ref{eq_v0:final-good-firm-FOC} in \ref{eq_v0:final-good-firm-bundle-rule}:
 	\begin{alignat}{2}
 		Y_t & = \left( \int_{0}^{1} Y_{jt}^{\frac{\psi-1}{\psi}} \dif j \right)^{\frac{\psi}{\psi-1}} &\implies \nonumber \\
 		Y_t & = \left( \int_{0}^{1} \left[ Y_t \left( \frac{P_t}{P_{jt}} \right)^{\psi} \right]^{\frac{\psi-1}{\psi}} \dif j \right)^{\frac{\psi}{\psi-1}} \quad &\implies \nonumber \\
-		P_t & = \left[ \int_{0}^{1} P_{jt}^{1-\psi} \dif j \right]^{\frac{1}{1-\psi}} \label{eq:final-good-firm-markup}
+		P_t & = \left[ \int_{0}^{1} P_{jt}^{1-\psi} \dif j \right]^{\frac{1}{1-\psi}} \label{eq_v0:final-good-firm-markup}
 	\end{alignat}
 	
-	Equation \ref{eq:final-good-firm-markup} is the final-good firm's markup.
+	Equation \ref{eq_v0:final-good-firm-markup} is the final-good firm's markup.
 	
 	% --------------------------------------------------
 	% INTERMEDIATE-GOOD FIRM
@@ -163,21 +163,21 @@ thesis.tex
 	
 	There is an intermediate-good continuum, where each firm, denoted by $j \in [0,1]$, produces varieties of a representative good with a specific level of substitutability. Each of these firms must choose capital $K_{jt}$ and labor $N_{jt}$ to minimize production costs, subject to a technology rule:
 	\begin{align}
-		\label{eq:int-good-firm-total-cost}
+		\label{eq_v0:int-good-firm-total-cost}
 		\min_{K_{jt}, L_{jt}}: \quad & R_t K_{jt} + W_t L_{jt} \\
-		\label{eq:int-good-firm-production-function}
+		\label{eq_v0:int-good-firm-production-function}
 		\st: \quad & Y_{jt} = Z_{At} K_{jt}^\alpha L_{jt}^{1-\alpha}
 	\end{align}
 	
 	where $Y_{jt}$ is the output obtained by the production technology level $Z_{At}$\footnotemark{} that transforms capital $K_{jt}$ and labor $L_{jt}$ in proportions $\alpha$ and $(1-\alpha)$, respectively, into intermediate goods.
 	
-	\footnotetext{the production technology level $Z_{At}$ will be submitted to a productivity shock, detailed in section \ref{sec:productivity shock}.}
+	\footnotetext{the production technology level $Z_{At}$ will be submitted to a productivity shock, detailed in section \ref{sec_v0:productivity shock}.}
 	
 	\subsubsection*{Lagrangian}
 	
 	Applying the Lagrangian:
 	\begin{align}
-		\label{eq:int-good-firm-lagrangian}
+		\label{eq_v0:int-good-firm-lagrangian}
 		\mathcal{L} = (R_t K_{jt} + W_t L_{jt}) - \Lambda_t (Z_{At} K_{jt}^\alpha L_{jt}^{1-\alpha} - Y_{jt})
 	\end{align}
 	
@@ -187,53 +187,53 @@ thesis.tex
 	
 	The first-order conditions are:
 	\begin{alignat}{2}
-		K_{jt}: \quad & R_t - \Lambda_t Z_{At} \alpha K_{jt}^{\alpha-1} L_{jt}^{1-\alpha} = 0 &&\implies K_{jt} = \alpha Y_{jt} \frac{\Lambda_t}{R_t} \label{eq:int-good-firm-FOC-Kt} \\
-		L_{jt}: \quad & W_t - \Lambda_t Z_{At} K_{jt}^\alpha (1-\alpha) L_{jt}^{-\alpha} = 0 \quad &&\implies L_{jt} = (1-\alpha) Y_{jt} \frac{\Lambda_t}{W_t} \label{eq:int-good-firm-FOC-Lt} \\
-		\Lambda_t: \quad & Y_{jt} = Z_{At} K_{jt}^\alpha L_{jt}^{1-\alpha} \tag{\ref{eq:int-good-firm-production-function}}
+		K_{jt}: \quad & R_t - \Lambda_t Z_{At} \alpha K_{jt}^{\alpha-1} L_{jt}^{1-\alpha} = 0 &&\implies K_{jt} = \alpha Y_{jt} \frac{\Lambda_t}{R_t} \label{eq_v0:int-good-firm-FOC-Kt} \\
+		L_{jt}: \quad & W_t - \Lambda_t Z_{At} K_{jt}^\alpha (1-\alpha) L_{jt}^{-\alpha} = 0 \quad &&\implies L_{jt} = (1-\alpha) Y_{jt} \frac{\Lambda_t}{W_t} \label{eq_v0:int-good-firm-FOC-Lt} \\
+		\Lambda_t: \quad & Y_{jt} = Z_{At} K_{jt}^\alpha L_{jt}^{1-\alpha} \tag{\ref{eq_v0:int-good-firm-production-function}}
 	\end{alignat}
 	
 	\subsubsection*{Solutions}
 	
-	Divide equation \ref{eq:int-good-firm-FOC-Kt} by \ref{eq:int-good-firm-FOC-Lt}:
+	Divide equation \ref{eq_v0:int-good-firm-FOC-Kt} by \ref{eq_v0:int-good-firm-FOC-Lt}:
 	\begin{align}
 		\frac{K_{jt}}{L_{jt}} = \frac{\alpha Y_{jt} \Lambda_t /R_t}{(1-\alpha) Y_{jt} \Lambda_t /W_t} \implies
-		\frac{K_{jt}}{L_{jt}} = \left( \frac{\alpha}{1-\alpha} \right) \frac{W_t}{R_t} \label{eq:int-good-firm-TMRS}
+		\frac{K_{jt}}{L_{jt}} = \left( \frac{\alpha}{1-\alpha} \right) \frac{W_t}{R_t} \label{eq_v0:int-good-firm-TMRS}
 	\end{align}
 	
-	Equation \ref{eq:int-good-firm-TMRS} demonstrates the relationship between the technical marginal rate of substitution (TMRS) and the economical marginal rate of substitution (EMRS). 
+	Equation \ref{eq_v0:int-good-firm-TMRS} demonstrates the relationship between the technical marginal rate of substitution (TMRS) and the economical marginal rate of substitution (EMRS). 
 	
-	Substitute $L_{jt}$ from equation \ref{eq:int-good-firm-TMRS} in \ref{eq:int-good-firm-production-function}:
+	Substitute $L_{jt}$ from equation \ref{eq_v0:int-good-firm-TMRS} in \ref{eq_v0:int-good-firm-production-function}:
 	\begin{alignat}{2}
 		Y_{jt} & = Z_{At} K_{jt}^\alpha L_{jt}^{1-\alpha} &\implies \nonumber \\
 		Y_{jt} & = Z_{At} K_{jt}^\alpha \left[ \left( \frac{1-\alpha}{\alpha} \right) \frac{R_t K_{jt}}{W_t} \right]^{1-\alpha} &\implies \nonumber \\
-		K_{jt} & = \frac{Y_{jt}}{Z_{At}} \left[ \left( \frac{\alpha}{1-\alpha} \right) \frac{W_t}{R_t}\right]^{1-\alpha} \label{eq:int-good-firm-Kt-demand}
+		K_{jt} & = \frac{Y_{jt}}{Z_{At}} \left[ \left( \frac{\alpha}{1-\alpha} \right) \frac{W_t}{R_t}\right]^{1-\alpha} \label{eq_v0:int-good-firm-Kt-demand}
 	\end{alignat}
 	
-	Equation \ref{eq:int-good-firm-Kt-demand} is the intermediate-good firm demand for capital. 
+	Equation \ref{eq_v0:int-good-firm-Kt-demand} is the intermediate-good firm demand for capital. 
 	
-	Substitute \ref{eq:int-good-firm-Kt-demand} in \ref{eq:int-good-firm-TMRS}:
+	Substitute \ref{eq_v0:int-good-firm-Kt-demand} in \ref{eq_v0:int-good-firm-TMRS}:
 	\begin{alignat}{2}
 		L_{jt} & = \left( \frac{1-\alpha}{\alpha} \right) \frac{R_t K_{jt}}{W_t} &\implies \nonumber \\
 		L_{jt} & = \left( \frac{1-\alpha}{\alpha} \right) \frac{R_t}{W_t} \frac{Y_{jt}}{Z_{At}} \left[ \left( \frac{\alpha}{1-\alpha} \right) \frac{W_t}{R_t}\right]^{1-\alpha} &\implies \nonumber \\
-		L_{jt} & = \frac{Y_{jt}}{Z_{At}} \left[ \left( \frac{\alpha}{1-\alpha} \right) \frac{W_t}{R_t}\right]^{-\alpha} \label{eq:int-good-firm-Lt-demand}
+		L_{jt} & = \frac{Y_{jt}}{Z_{At}} \left[ \left( \frac{\alpha}{1-\alpha} \right) \frac{W_t}{R_t}\right]^{-\alpha} \label{eq_v0:int-good-firm-Lt-demand}
 	\end{alignat}
 	
-	Equation \ref{eq:int-good-firm-Lt-demand} is the intermediate-good firm demand for labor.
+	Equation \ref{eq_v0:int-good-firm-Lt-demand} is the intermediate-good firm demand for labor.
 	
 	\subsubsection*{Total and Marginal Costs}
 	
-	Calculate the total cost using \ref{eq:int-good-firm-Kt-demand} and \ref{eq:int-good-firm-Lt-demand}:
+	Calculate the total cost using \ref{eq_v0:int-good-firm-Kt-demand} and \ref{eq_v0:int-good-firm-Lt-demand}:
 	\begin{alignat}{2}
 		TC_{jt} & = W_t L_{jt} + R_t K_{jt} &\implies \nonumber \\
 		TC_{jt} & = W_t \frac{Y_{jt}}{Z_{At}} \left[ \left( \frac{\alpha}{1-\alpha} \right) \frac{W_t}{R_t} \right]^{-\alpha} + R_t \frac{Y_{jt}}{Z_{At}} \left[ \left( \frac{\alpha}{1-\alpha} \right) \frac{W_t}{R_t} \right]^{1-\alpha} &\implies \nonumber \\
-		TC_{jt} & = \frac{Y_{jt}}{Z_{At}} \left( \frac{R_t}{\alpha} \right)^{\alpha} \left( \frac{W_t}{1-\alpha} \right)^{1-\alpha} \label{eq:int-good-firm-TC}
+		TC_{jt} & = \frac{Y_{jt}}{Z_{At}} \left( \frac{R_t}{\alpha} \right)^{\alpha} \left( \frac{W_t}{1-\alpha} \right)^{1-\alpha} \label{eq_v0:int-good-firm-TC}
 	\end{alignat}
 	
 	%%%%%
 	
-	Calculate the marginal cost using \ref{eq:int-good-firm-TC}: 
+	Calculate the marginal cost using \ref{eq_v0:int-good-firm-TC}: 
 	\begin{align}
-		\label{eq:int-good-firm-MC}
+		\label{eq_v0:int-good-firm-MC}
 		\Lambda_{jt} & = \frac{\partial TC_{jt}}{\partial Y_{jt}}
 		\implies 
 		\Lambda_{jt} = \frac{1}{Z_{At}} \left( \frac{R_t}{\alpha} \right)^{\alpha} \left( \frac{W_t}{1-\alpha} \right)^{1-\alpha}
@@ -241,13 +241,13 @@ thesis.tex
 	
 	The marginal cost depends on the technological level $Z_{At}$, the nominal interest rate $R_t$ and the nominal wage level $W_t$, which are the same for all intermediate-good firms, and because of that, the index $j$ may be dropped:
 	\begin{align}
-		\label{eq:int-good-firm-MC-2}
+		\label{eq_v0:int-good-firm-MC-2}
 		\Lambda_t = \frac{1}{Z_{At}} \left( \frac{R_t}{\alpha} \right)^{\alpha} \left( \frac{W_t}{1-\alpha} \right)^{1-\alpha}
 	\end{align}
 	
 	notice that:
 	\begin{align}
-		\label{eq:int-good-firm-TC-MC}
+		\label{eq_v0:int-good-firm-TC-MC}
 		\Lambda_t = \frac{TC_{jt}}{Y_{jt}} \implies 
 		TC_{jt} = \Lambda_t Y_{jt}
 	\end{align}
@@ -260,19 +260,19 @@ thesis.tex
 	
 	Consider an economy with price stickiness, following the Calvo Rule \cite{calvo_staggered_1983}: each firm has a probability $(0 < \theta < 1)$ of keeping its price in the next period ($P_{j,t+1} = P_{j,t}$), and a probability of $(1 - \theta)$ of setting a new optimal price $P_{j,t}^\ast$ that maximizes its profits. Therefore, each firm must take this uncertainty into account when deciding the optimal price: the intertemporal profit flow, given the nominal interest rate $R_t$ of each period, is calculated considering the probability $\theta$ of keeping the previous price.
 	\begin{align}
-		\max_{P_{jt}}: & \quad \E \sum_{s=0}^{\infty} \left\{ \frac{ \theta^s \left[ P_{jt} Y_{j,t+s} - TC_{j,t+s} \right] }{\prod_{k=0}^{s-1}(1+R_{t+k})} \right\} \label{eq:int-good-firm-optimal-price-problem} \\
-		\st: & \quad Y_{jt} = Y_t \left( \frac{P_t}{P_{jt}} \right)^{\psi} \tag{\ref{eq:final-good-firm-FOC}}
+		\max_{P_{jt}}: & \quad \E \sum_{s=0}^{\infty} \left\{ \frac{ \theta^s \left[ P_{jt} Y_{j,t+s} - TC_{j,t+s} \right] }{\prod_{k=0}^{s-1}(1+R_{t+k})} \right\} \label{eq_v0:int-good-firm-optimal-price-problem} \\
+		\st: & \quad Y_{jt} = Y_t \left( \frac{P_t}{P_{jt}} \right)^{\psi} \tag{\ref{eq_v0:final-good-firm-FOC}}
 	\end{align}
 	
 	%%%%%
 	
-	Substitute \ref{eq:int-good-firm-TC-MC} in \ref{eq:int-good-firm-optimal-price-problem}:
+	Substitute \ref{eq_v0:int-good-firm-TC-MC} in \ref{eq_v0:int-good-firm-optimal-price-problem}:
 	\begin{align}
-		\label{eq:int-good-firm-optimal-price-problem-2}
+		\label{eq_v0:int-good-firm-optimal-price-problem-2}
 		\max_{P_{jt}}: & \quad \E \sum_{s=0}^{\infty} \left\{ \frac{\theta^s \big[ P_{jt} Y_{j,t+s} - \Lambda_{t+s} Y_{j,t+s} \big]}{\prod_{k=0}^{s-1}(1+R_{t+k})} \right\}
 	\end{align}
 	
-	Substitute \ref{eq:final-good-firm-FOC} in \ref{eq:int-good-firm-optimal-price-problem-2} and rearrange the variables:
+	Substitute \ref{eq_v0:final-good-firm-FOC} in \ref{eq_v0:int-good-firm-optimal-price-problem-2} and rearrange the variables:
 	\begin{align}
 		\max_{P_{jt}}: & \quad \E \sum_{s=0}^{\infty} \left\{ \frac{\theta^s \left[ P_{jt} Y_{t+s} \left( \frac{P_{t+s}}{P_{jt}} \right)^{\psi} - \Lambda_{t+s} Y_{t+s} \left( \frac{P_{t+s}}{P_{jt}} \right)^{\psi} \right] }{\prod_{k=0}^{s-1}(1+R_{t+k})} \right\} \implies \nonumber 
 		\\
@@ -292,13 +292,13 @@ thesis.tex
 	
 	Separate the summations and rearrange the variables:
 	\begin{align}
-		\label{eq:int-good-firm-optimal-price-FOC}
+		\label{eq_v0:int-good-firm-optimal-price-FOC}
 		& \E \sum_{s=0}^{\infty} \left\{ \frac{\theta^s (\psi-1) \left( \frac{P_{t+s}} {P_{jt}} \right)^{\psi} Y_{t+s}} {\prod_{k=0}^{s-1} (1+R_{t+k})} \right\} = \E \sum_{s=0}^{\infty} \left\{ \frac{\theta^s \psi P_{jt}^{-1} \left( \frac{P_{t+s}} {P_{jt}} \right)^{\psi} Y_{t+s} \Lambda_{t+s} }{\prod_{k=0}^{s-1}(1+R_{t+k})} \right\}
 	\end{align}
 	
 	%%%%%
 	
-	Substitute \ref{eq:final-good-firm-FOC} in \ref{eq:int-good-firm-optimal-price-FOC}:
+	Substitute \ref{eq_v0:final-good-firm-FOC} in \ref{eq_v0:int-good-firm-optimal-price-FOC}:
 	\begin{alignat}{2}
 		\E \sum_{s=0}^{\infty} \Bigg\{ \frac{\theta^s (\psi-1) Y_{j,t+s}}{\prod_{k=0}^{s-1}(1+R_{t+k})} \Bigg\} &= \E \sum_{s=0}^{\infty} \Bigg\{ \frac{\theta^s \psi P_{jt}^{-1} Y_{j,t+s} \Lambda_{t+s}}{\prod_{k=0}^{s-1}(1+R_{t+k})}  \Bigg\} &\implies \nonumber \\
 		(\psi-1) \E \sum_{s=0}^{\infty} \Bigg\{ \frac{\theta^s Y_{j,t+s}}{\prod_{k=0}^{s-1}(1+R_{t+k})} \Bigg\} &= \psi P_{jt}^{-1} \E \sum_{s=0}^{\infty} \Bigg\{ \frac{\theta^s Y_{j,t+s} \Lambda_{t+s}}{\prod_{k=0}^{s-1}(1+R_{t+k})}  \Bigg\} &\implies \nonumber \\
@@ -308,7 +308,7 @@ thesis.tex
 	\vspace*{-1cm}
 	
 	\begin{align}
-		\label{eq:int-good-firm-optimal-price-FOC-2}
+		\label{eq_v0:int-good-firm-optimal-price-FOC-2}
 		P_{jt}^\ast &= 
 		\frac{\psi}{\psi-1} \cdot
 		\frac{
@@ -319,9 +319,9 @@ thesis.tex
 	
 	% as firmas que maximizam em dado período, escolherão o mesmo preço, P novo i,t = P (ot) t (Walsh 2003, pág. 235).
 	
-	Equation \ref{eq:int-good-firm-optimal-price-FOC-2} represents the optimal price that firm $j$ will choose. Since all firms that are able to choose will opt for the highest possible price, they will all select the same price. As a result, the index $j$ can be omitted:
+	Equation \ref{eq_v0:int-good-firm-optimal-price-FOC-2} represents the optimal price that firm $j$ will choose. Since all firms that are able to choose will opt for the highest possible price, they will all select the same price. As a result, the index $j$ can be omitted:
 	\begin{align}
-		\label{eq:int-good-firm-optimal-price-FOC-3}
+		\label{eq_v0:int-good-firm-optimal-price-FOC-3}
 		P_t^\ast &= 
 		\frac{\psi}{\psi-1} \cdot
 		\frac{
@@ -336,13 +336,13 @@ thesis.tex
 	
 	\subsubsection{Final-Good Firm, part II}
 	
-	The process of fixing prices is random: in each period, $\theta$ firms will maintain the price from the previous period, while $(1-\theta)$ firms will choose a new optimal price. The price level for each period will be a composition of these two prices. Use this information in \ref{eq:final-good-firm-markup} to determine the aggregate price level:
+	The process of fixing prices is random: in each period, $\theta$ firms will maintain the price from the previous period, while $(1-\theta)$ firms will choose a new optimal price. The price level for each period will be a composition of these two prices. Use this information in \ref{eq_v0:final-good-firm-markup} to determine the aggregate price level:
 	\begin{align}
 		P_t & = \left[ \int_{0}^{\theta} P_{t-1}^{1-\psi} \dif j + \int_{\theta}^{1} P_t^{\ast 1-\psi} \dif j \right]^{\frac{1}{1-\psi}}  \implies \nonumber \\
-		P_t & = \left[ \theta P_{t-1}^{1-\psi} + (1-\theta) P_t^{\ast 1-\psi} \right]^\frac{1}{1-\psi} \label{eq:general-price-level}
+		P_t & = \left[ \theta P_{t-1}^{1-\psi} + (1-\theta) P_t^{\ast 1-\psi} \right]^\frac{1}{1-\psi} \label{eq_v0:general-price-level}
 	\end{align}
 	
-	Equation \ref{eq:general-price-level} is the aggregate price level.
+	Equation \ref{eq_v0:general-price-level} is the aggregate price level.
 	
 	% --------------------------------------------------
 	% MONETARY AUTHORITY
@@ -352,7 +352,7 @@ thesis.tex
 	
 	The objective of the monetary authority is to conduct the economy to price stability and economic growth, using a Taylor rule \cite{taylor_discretion_1993} to determine the nominal interest rate:
 	\begin{align}
-		\label{eq:monetary-policy}
+		\label{eq_v0:monetary-policy}
 		\frac{R_t}{R} =
 		\left( \frac{R_{t-1}}{R} \right)^{\gamma_R}  \left[
 		\left( \frac{\pi_t}{\pi} \right)^{\gamma_\pi}
@@ -362,31 +362,31 @@ thesis.tex
 	where $\pi_t$ is the gross inflation rate, defined by:
 	\begin{align}
 		\pi_t = \frac{P_t}{P_{t-1}}
-		\label{eq:gross-inflation-rate}
+		\label{eq_v0:gross-inflation-rate}
 	\end{align}
 	
-	and $R, \pi, Y$ are the variables in steady state, $\gamma_R$ is the smoothing parameter for the interest rate $R_t$, while $\gamma_\pi$ and $\gamma_Y$ are the interest-rate sensitivities in relation to inflation and product, respectively and $Z_{Mt}$ is the monetary shock\footnote{for the monetary shock definition, see section \ref{sec:monetary shock}.}.
+	and $R, \pi, Y$ are the variables in steady state, $\gamma_R$ is the smoothing parameter for the interest rate $R_t$, while $\gamma_\pi$ and $\gamma_Y$ are the interest-rate sensitivities in relation to inflation and product, respectively and $Z_{Mt}$ is the monetary shock\footnote{for the monetary shock definition, see section \ref{sec_v0:monetary shock}.}.
 	
 	% --------------------------------------------------
 	% STOCHASTIC SHOCKS
 	% --------------------------------------------------
 	
-	\subsubsection{Stochastic Shocks}\label{sec:stochastic-shocks}
+	\subsubsection{Stochastic Shocks}\label{sec_v0:stochastic-shocks}
 	
-	\subsubsection*{Productivity Shock} \label{sec:productivity shock}
+	\subsubsection*{Productivity Shock} \label{sec_v0:productivity shock}
 	
 	The production technology level $Z_{At}$ will be submitted to a productivity shock defined by a first-order autoregressive process $AR(1)$:
 	\begin{align}
-		\ln{Z_{At}} = (1-\rho_A)\ln{Z_A} + \rho_A\ln{Z_{A,t-1}} + \varepsilon_{At} \label{eq:productivity-shock}
+		\ln{Z_{At}} = (1-\rho_A)\ln{Z_A} + \rho_A\ln{Z_{A,t-1}} + \varepsilon_{At} \label{eq_v0:productivity-shock}
 	\end{align}
 	
 	where $\rho_A \in [0,1]$ is the autoregressive parameter and $\varepsilon_{At} \sim \mathscr{N}(0,\sigma_A)$.
 	
-	\subsubsection*{Monetary Shock} \label{sec:monetary shock}
+	\subsubsection*{Monetary Shock} \label{sec_v0:monetary shock}
 	
 	The monetary policy will also be submitted to a shock, through the variable $Z_{Mt}$, defined by a first-order autoregressive process $AR(1)$:
 	\begin{align}
-		\ln{Z_{Mt}} = (1-\rho_M)\ln{Z_{M}} + \rho_M\ln{Z_{M,t-1}} + \varepsilon_{Mt} \label{eq:monetary-shock}
+		\ln{Z_{Mt}} = (1-\rho_M)\ln{Z_{M}} + \rho_M\ln{Z_{M,t-1}} + \varepsilon_{Mt} \label{eq_v0:monetary-shock}
 	\end{align}
 	
 	where $\rho_M \in [0,1]$ and $\varepsilon_{Mt} \sim \mathscr{N}(0,\sigma_M)$.
@@ -401,8 +401,8 @@ thesis.tex
 	
 	A Competitive Equilibrium consists of sequences of prices $\{P_t^\ast, R_t^\ast, W_t^\ast\}$, allocations for households $\mathbfscr{A}_H \coloneq \{C_t^\ast, L_t^\ast, K_{t+1}^\ast\}$ and for firms $\mathbfscr{A}_F \coloneq \{K_{jt}^\ast, L_{jt}^\ast, Y_{jt}^\ast, Y_t^\ast\}$. In such an equilibrium, given the set of exogenous variables $\{K_0, Z_{At}, Z_{Mt}\}$, the elements in $\mathbfscr{A}_H$ solve the household problem, while the elements in $\mathbfscr{A}_F$ solve the firms' problems, and the markets for goods and labor clear:
 	\begin{align}
-		Y_t &= C_t + I_t \label{eq:market-clearing-condition} \\
-		L_t &= \int_{0}^{1} L_{jt} \dif j \label{eq:market-clearing-condition-2}
+		Y_t &= C_t + I_t \label{eq_v0:market-clearing-condition} \\
+		L_t &= \int_{0}^{1} L_{jt} \dif j \label{eq_v0:market-clearing-condition-2}
 	\end{align}
 	
 	%\newpage
@@ -434,75 +434,75 @@ thesis.tex
 				\item Labor Supply:
 				\begin{align}
 					\frac{\phi L_t^{\varphi}}{C_t^{-\sigma}} = \frac{W_t}{P_t}
-					\tag{\ref{eq:household-labor-supply}}
+					\tag{\ref{eq_v0:household-labor-supply}}
 				\end{align}
 				
 				\item Household Euler Equation:
 				\begin{align}
 					\left( \frac{\mathbb{E}_t C_{t+1}}{C_t} \right)^\sigma = \beta \left[ (1-\delta) + \mathbb{E}_t \left(\frac{R_{t+1}}{P_{t+1}}\right) \right]
-					\tag{\ref{eq:household-euler-equation}}
+					\tag{\ref{eq_v0:household-euler-equation}}
 				\end{align}
 				
 				\item Budget Constraint: 
 				\begin{align}
 					P_t (C_t + I_t) = W_t L_t + R_t K_t + \Pi_t
-					\tag{\ref{eq:household-budget-constraint}}
+					\tag{\ref{eq_v0:household-budget-constraint}}
 				\end{align}
 				
 				\item Law of Motion for Capital:
 				\begin{align}
 					K_{t+1} = (1-\delta)K_t + I_t
-					\tag{\ref{eq:law-of-motion-for-capital}}
+					\tag{\ref{eq_v0:law-of-motion-for-capital}}
 				\end{align}
 				
 				\item Bundle Technology:
 				\begin{align}
 					Y_t = \left( \int_{0}^{1} Y_{jt}^{\frac{\psi-1}{\psi}} \dif j \right)^{\frac{\psi}{\psi-1}}
-					\tag{\ref{eq:final-good-firm-bundle-rule}}
+					\tag{\ref{eq_v0:final-good-firm-bundle-rule}}
 				\end{align}
 				
 				\item General Price Level:
 				\begin{align}
 					P_t = \left[ \theta P_{t-1}^{1-\psi} + (1-\theta) P_t^{\ast 1-\psi} \right]^\frac{1}{1-\psi}
-					\tag{\ref{eq:general-price-level}}
+					\tag{\ref{eq_v0:general-price-level}}
 				\end{align}
 				
 				\item Capital Demand:
 				\begin{align}
 					K_{jt} = \alpha Y_{jt} \frac{\Lambda_t}{R_t}
-					\tag{\ref{eq:int-good-firm-FOC-Kt}}
+					\tag{\ref{eq_v0:int-good-firm-FOC-Kt}}
 				\end{align}
 				
 				\item Labor Demand:
 				\begin{align}
 					L_{jt} = (1-\alpha) Y_{jt} \frac{\Lambda_t}{W_t}
-					\tag{\ref{eq:int-good-firm-FOC-Lt}}
+					\tag{\ref{eq_v0:int-good-firm-FOC-Lt}}
 				\end{align}
 				
-				% \item Marginal Rate of Substitution of Factors (\ref{eq:int-good-firm-TMRS}):
+				% \item Marginal Rate of Substitution of Factors (\ref{eq_v0:int-good-firm-TMRS}):
 				% \[ \frac{K_{jt}}{L_{jt}} = \left( \frac{\alpha}{1-\alpha} \right) \frac{W_t}{R_t} \]
 				
 				\item Marginal Cost:
 				\begin{align}
 					\Lambda_t = \frac{1}{Z_{At}} \left( \frac{R_t}{\alpha} \right)^{\alpha} \left( \frac{W_t}{1-\alpha} \right)^{1-\alpha}
-					\tag{\ref{eq:int-good-firm-MC-2}}
+					\tag{\ref{eq_v0:int-good-firm-MC-2}}
 				\end{align}
 				
 				\item Production Function:
 				\begin{align}
 					Y_{jt} = Z_{At} K_{jt}^\alpha L_{jt}^{1-\alpha}
-					\tag{\ref{eq:int-good-firm-production-function}}
+					\tag{\ref{eq_v0:int-good-firm-production-function}}
 				\end{align}
 				
 				\item Optimal Price:
 				\begin{align}
-					P_t^\ast = \frac{\psi}{\psi-1} \cdot \frac{ \E \sum_{s=0}^{\infty} \left\{ \theta^s Y_{j,t+s} \Lambda_{t+s} / \prod_{k=0}^{s-1}(1+R_{t+k}) \right\} } {\E \sum_{s=0}^{\infty} \left\{ \theta^s Y_{j,t+s} / \prod_{k=0}^{s-1}(1 + R_{t+k}) \right\}} \tag{\ref{eq:int-good-firm-optimal-price-FOC-3}}
+					P_t^\ast = \frac{\psi}{\psi-1} \cdot \frac{ \E \sum_{s=0}^{\infty} \left\{ \theta^s Y_{j,t+s} \Lambda_{t+s} / \prod_{k=0}^{s-1}(1+R_{t+k}) \right\} } {\E \sum_{s=0}^{\infty} \left\{ \theta^s Y_{j,t+s} / \prod_{k=0}^{s-1}(1 + R_{t+k}) \right\}} \tag{\ref{eq_v0:int-good-firm-optimal-price-FOC-3}}
 				\end{align}
 				
 				\item Market Clearing Condition:
 				\begin{align}
 					Y_t = C_t + I_t
-					\tag{\ref{eq:market-clearing-condition}}
+					\tag{\ref{eq_v0:market-clearing-condition}}
 				\end{align}
 				
 				\item Monetary Policy:
@@ -511,25 +511,25 @@ thesis.tex
 					\frac{R_{t-1}}{R} \right)^{\gamma_R} \left[ \left(
 					\frac{\pi_t}{\pi} \right)^{\gamma_\pi} \left( 
 					\frac{Y_t}{Y} \right)^{\gamma_Y} \right]^{1-\gamma_R} Z_{Mt}
-					\tag{\ref{eq:monetary-policy}}
+					\tag{\ref{eq_v0:monetary-policy}}
 				\end{align}
 				
 				\item Gross Inflation Rate:
 				\begin{align}
 					\pi_t = \frac{P_t}{P_{t-1}}
-					\tag{\ref{eq:gross-inflation-rate}}
+					\tag{\ref{eq_v0:gross-inflation-rate}}
 				\end{align}
 				
 				\item Productivity Shock:
 				\begin{align}
 					\ln{Z_{At}} = (1-\rho_A)\ln{Z_A} + \rho_A\ln{Z_{A,t-1}} + \varepsilon_{At}
-					\tag{\ref{eq:productivity-shock}}
+					\tag{\ref{eq_v0:productivity-shock}}
 				\end{align}
 				
 				\item Monetary Shock:
 				\begin{align}
 					\ln{Z_{Mt}} = (1-\rho_M)\ln{Z_{M}} + \rho_M\ln{Z_{M,t-1}} + \varepsilon_{Mt}
-					\tag{\ref{eq:monetary-shock}}
+					\tag{\ref{eq_v0:monetary-shock}}
 				\end{align}
 				
 			\end{enumerate}
@@ -551,42 +551,42 @@ thesis.tex
 	\begin{enumerate}
 		\item Labor Supply:
 		\begin{align}
-			\label{eq:ss-household-labor-supply}
+			\label{eq_v0:ss-household-labor-supply}
 			\frac{\phi L_t^{\varphi}}{C_t^{-\sigma}} = \frac{W_t}{P_t} \implies
 			\frac{\phi L^{\varphi}}{C^{-\sigma}} = \frac{W}{P}
 		\end{align}
 		
 		\item Household Euler Equation: 
 		\begin{align}
-			\label{eq:ss-household-euler-equation}
+			\label{eq_v0:ss-household-euler-equation}
 			\left( \frac{\mathbb{E}_t C_{t+1}}{C_t} \right)^\sigma = \beta \left[ (1-\delta) + \mathbb{E}_t \left(\frac{R_{t+1}}{P_{t+1}}\right) \right] \implies 
 			1 = \beta \left[ (1-\delta) + \frac{R}{P} \right]
 		\end{align}
 		
 		\item Budget Constraint: 
 		\begin{align}
-			\label{eq:ss-household-budget-constraint}
+			\label{eq_v0:ss-household-budget-constraint}
 			P_t (C_t + I_t) = W_t L_t + R_t K_t + \Pi_t \implies 
 			P (C + I) = W L + R K + \Pi
 		\end{align}
 		
 		\item Law of Motion for Capital:
 		\begin{align}
-			\label{eq:ss-law-of-motion-for-capital}
+			\label{eq_v0:ss-law-of-motion-for-capital}
 			K_{t+1} = (1-\delta)K_t + I_t \implies
 			K = (1-\delta)K + I \implies I = \delta K
 		\end{align}
 		
 		\item Bundle Technology:
 		\begin{align}
-			\label{eq:ss-final-good-firm-bundle-rule}
+			\label{eq_v0:ss-final-good-firm-bundle-rule}
 			Y_t = \left( \int_{0}^{1} Y_{jt}^{\frac{\psi-1}{\psi}} \dif j \right)^{\frac{\psi}{\psi-1}} \implies 
 			Y = \left( \int_{0}^{1} Y_{j}^{\frac{\psi-1}{\psi}} \dif j \right)^{\frac{\psi}{\psi-1}}
 		\end{align}
 		
 		\item General Price Level:
 		\begin{alignat}{2}
-			\label{eq:ss-general-price-level}
+			\label{eq_v0:ss-general-price-level}
 			P_t &= \left[ \theta P_{t-1}^{1-\psi} + (1-\theta) P_t^{\ast 1-\psi} \right]^\frac{1}{1-\psi} &&\implies \nonumber \\
 			P^{1-\psi} &= \theta P^{1-\psi} + (1-\theta) P^{\ast 1-\psi} &&\implies \nonumber \\ 
 			(1-\theta) P^{1-\psi} &= (1-\theta) P^{\ast 1-\psi} &&\implies P = P^\ast
@@ -594,51 +594,51 @@ thesis.tex
 		
 		\item Capital Demand:
 		\begin{align}
-			\label{eq:ss-int-good-firm-FOC-Kt}
+			\label{eq_v0:ss-int-good-firm-FOC-Kt}
 			K_{jt} = \alpha Y_{jt} \frac{\Lambda_t}{R_t} \implies 
 			K_{j} = \alpha Y{j} \frac{\Lambda}{R}
 		\end{align}
 		
 		\item Labor Demand:
 		\begin{align}
-			\label{eq:ss-int-good-firm-FOC-Lt}
+			\label{eq_v0:ss-int-good-firm-FOC-Lt}
 			L_{jt} = (1-\alpha) Y_{jt} \frac{\Lambda_t}{W_t} \implies 
 			L_{j} = (1-\alpha) Y{j} \frac{\Lambda}{W}
 		\end{align}
 		
-		% \item Marginal Rate of Substitution of Factors (\ref{eq:int-good-firm-TMRS}):
+		% \item Marginal Rate of Substitution of Factors (\ref{eq_v0:int-good-firm-TMRS}):
 		% \[ \frac{K_{jt}}{L_{jt}} = \left( \frac{\alpha}{1-\alpha} \right) \frac{W_t}{R_t} \]
 		
 		\item Marginal Cost:
 		\begin{align}
-			\label{eq:ss-int-good-firm-MC-2}
+			\label{eq_v0:ss-int-good-firm-MC-2}
 			\Lambda_t = \frac{1}{Z_{At}} \left( \frac{R_t}{\alpha} \right)^{\alpha} \left( \frac{W_t}{1-\alpha} \right)^{1-\alpha} \implies
 			\Lambda = \frac{1}{Z_{A}} \left( \frac{R}{\alpha} \right)^{\alpha} \left( \frac{W}{1-\alpha} \right)^{1-\alpha}
 		\end{align}
 		
 		\item Production Technology:
 		\begin{align}
-			\label{eq:ss-int-good-firm-production-function}
+			\label{eq_v0:ss-int-good-firm-production-function}
 			Y_{jt} = Z_{At} K_{jt}^\alpha L_{jt}^{1-\alpha} \implies 
 			Y_{j} = Z_{A} K_{j}^\alpha L_{j}^{1-\alpha}
 		\end{align}
 		
 		\item Optimal Price:
 		\begin{alignat}{2}
-			P_t^\ast &= \frac{\psi}{\psi-1} \cdot \frac{\E \sum_{s=0}^{\infty} \left\{\theta^s Y_{j,t+s} \Lambda_{t+s} / \prod_{k=0}^{s-1}(1+R_{t+k}) \right\}} {\E \sum_{s=0}^{\infty} \left\{ \theta^s Y_{j,t+s} / \prod_{k=0}^{s-1}(1+R_{t+k}) \right\}} &\implies \tag{\ref{eq:int-good-firm-optimal-price-FOC-3}} \\
+			P_t^\ast &= \frac{\psi}{\psi-1} \cdot \frac{\E \sum_{s=0}^{\infty} \left\{\theta^s Y_{j,t+s} \Lambda_{t+s} / \prod_{k=0}^{s-1}(1+R_{t+k}) \right\}} {\E \sum_{s=0}^{\infty} \left\{ \theta^s Y_{j,t+s} / \prod_{k=0}^{s-1}(1+R_{t+k}) \right\}} &\implies \tag{\ref{eq_v0:int-good-firm-optimal-price-FOC-3}} \\
 			P^\ast &= \frac{\psi}{\psi-1} \cdot \frac{ Y_j \Lambda / [1-\theta(1-R)]} {Y_j / [1-\theta(1-R)]} &\implies \nonumber \\
-			P^\ast &= \frac{\psi}{\psi-1} \Lambda \label{eq:ss-int-good-firm-optimal-price-FOC-3}
+			P^\ast &= \frac{\psi}{\psi-1} \Lambda \label{eq_v0:ss-int-good-firm-optimal-price-FOC-3}
 		\end{alignat}
 		
 		\item Market Clearing Condition:
 		\begin{align}
-			\label{eq:ss-market-clearing-condition}
+			\label{eq_v0:ss-market-clearing-condition}
 			Y_t = C_t + I_t \implies Y = C + I
 		\end{align}
 		
 		\item Monetary Policy:
 		\begin{align}
-			\label{eq:ss-monetary-policy}
+			\label{eq_v0:ss-monetary-policy}
 			\frac{R_t}{R} =
 			\left( \frac{R_{t-1}}{R} \right)^{\gamma_R}  \left[
 			\left( \frac{\pi_t}{\pi} \right)^{\gamma_\pi}
@@ -648,7 +648,7 @@ thesis.tex
 		
 		\item Gross Inflation Rate:
 		\begin{align}
-			\label{eq:ss-gross-inflation-rate}
+			\label{eq_v0:ss-gross-inflation-rate}
 			\pi_t = \frac{P_t}{P_{t-1}} \implies \pi = 1
 		\end{align}
 		
@@ -656,14 +656,14 @@ thesis.tex
 		\begin{alignat}{2}
 			\ln{Z_{At}} &= (1-\rho_A)\ln{Z_A} + \rho_A\ln{Z_{A,t-1}} + \varepsilon_{At} \quad &\implies \nonumber \\
 			\ln{Z_{A}} &= (1-\rho_A)\ln{Z_A} + \rho_A\ln{Z_{A}} + \varepsilon_{A} &\implies \nonumber \\
-			\varepsilon_{A} &= 0 \label{eq:ss-productivity-shock}
+			\varepsilon_{A} &= 0 \label{eq_v0:ss-productivity-shock}
 		\end{alignat}
 		
 		\item Monetary Shock:
 		\begin{alignat}{2}
 			\ln{Z_{Mt}} &= (1-\rho_M)\ln{Z_{M}} + \rho_M\ln{Z_{M,t-1}} + \varepsilon_{Mt} \quad &\implies \nonumber \\
 			\ln{Z_{M}} &= (1-\rho_M)\ln{Z_{M}} + \rho_M\ln{Z_{M}} + \varepsilon_{M} &\implies \nonumber \\
-			\varepsilon_{M} &= 0 \label{eq:ss-monetary-shock}
+			\varepsilon_{M} &= 0 \label{eq_v0:ss-monetary-shock}
 		\end{alignat}
 		
 	\end{enumerate}
@@ -678,63 +678,63 @@ thesis.tex
 	
 	For the steady state solution, all endogenous variables will be determined with respect to the parameters. It's assumed that the productivity and the price level are normalized to one: $\left[ \begin{smallmatrix} P & Z_A \end{smallmatrix} \right] = \vec{\bm{1}}$ \footnotemark{}. \footnotetext{where $\vec{\bm{1}}$ is the unit vector.}
 	
-	From \ref{eq:ss-general-price-level}, the optimal price $P^\ast$ is:
+	From \ref{eq_v0:ss-general-price-level}, the optimal price $P^\ast$ is:
 	\begin{align}
 		P^\ast = P
 	\end{align}
 	
-	From \ref{eq:ss-gross-inflation-rate}, the gross inflation rate is:
+	From \ref{eq_v0:ss-gross-inflation-rate}, the gross inflation rate is:
 	\begin{align}
 		\pi = 1
 	\end{align}
 	
-	From \ref{eq:ss-monetary-policy}, the monetary shock is:
+	From \ref{eq_v0:ss-monetary-policy}, the monetary shock is:
 	\begin{align}
 		Z_{M} = 1
 	\end{align}
 	
-	From \ref{eq:ss-productivity-shock} and \ref{eq:ss-monetary-shock}, the productivity and monetary shocks are:
+	From \ref{eq_v0:ss-productivity-shock} and \ref{eq_v0:ss-monetary-shock}, the productivity and monetary shocks are:
 	\begin{align}
 		\varepsilon_{A} = \varepsilon_{M} = 0
 	\end{align}
 	
-	From \ref{eq:ss-household-euler-equation}, the return on capital $R$ is:
+	From \ref{eq_v0:ss-household-euler-equation}, the return on capital $R$ is:
 	\begin{align}
-		\label{eq:ss-return-on-capital}
+		\label{eq_v0:ss-return-on-capital}
 		1 = \beta \left[ (1-\delta) + \frac{R}{P} \right] \implies 
 		R = P\left[ \frac{1}{\beta} - (1-\delta) \right]
 	\end{align}
 	
-	From \ref{eq:ss-int-good-firm-optimal-price-FOC-3} and \ref{eq:ss-general-price-level}, the marginal cost $\Lambda$ is:
+	From \ref{eq_v0:ss-int-good-firm-optimal-price-FOC-3} and \ref{eq_v0:ss-general-price-level}, the marginal cost $\Lambda$ is:
 	\begin{align}
-		\label{eq:ss-marginal-cost}
+		\label{eq_v0:ss-marginal-cost}
 		P^\ast &= \frac{\psi}{\psi-1} \Lambda \implies 
 		\Lambda = P \frac{\psi-1}{\psi}
 	\end{align}
 	
-	From equation \ref{eq:ss-int-good-firm-MC-2}, the nominal wage $W$ is:
+	From equation \ref{eq_v0:ss-int-good-firm-MC-2}, the nominal wage $W$ is:
 	\begin{align}
 		\Lambda = \frac{1}{Z_{A}} \left( \frac{R}{\alpha} \right)^{\alpha} \left( \frac{W}{1-\alpha} \right)^{1-\alpha} \implies 
 		W = (1-\alpha) \left[ \Lambda Z_{A} \left( \frac{\alpha}{R} \right)^{\alpha} \right]^\frac{1}{1-\alpha} 
-		\label{eq:ss-nominal-wage}
+		\label{eq_v0:ss-nominal-wage}
 	\end{align}
 	
-	In steady state, prices are the same ($P = P^\ast$), resulting in a gross inflation level of one ($\pi=1$), and all firms producing the same output level ($Y_j=Y$) due to the price parity \cite[Lecture 13, p.12]{solis-garcia_ucb_2022}. For this reason, they all demand the same amount of factors ($K,L$), and equations \ref{eq:ss-int-good-firm-FOC-Kt}, \ref{eq:ss-int-good-firm-FOC-Lt}, and \ref{eq:ss-int-good-firm-production-function} become:
+	In steady state, prices are the same ($P = P^\ast$), resulting in a gross inflation level of one ($\pi=1$), and all firms producing the same output level ($Y_j=Y$) due to the price parity \cite[Lecture 13, p.12]{solis-garcia_ucb_2022}. For this reason, they all demand the same amount of factors ($K,L$), and equations \ref{eq_v0:ss-int-good-firm-FOC-Kt}, \ref{eq_v0:ss-int-good-firm-FOC-Lt}, and \ref{eq_v0:ss-int-good-firm-production-function} become:
 	\begin{align}
-		K &= \alpha Y \frac{\Lambda}{R} \label{eq:ss-int-good-firm-FOC-Kt-2} \\
-		L &= (1-\alpha) Y \frac{\Lambda}{W} \label{eq:ss-int-good-firm-FOC-Lt-2} \\
-		Y &= Z_{A} K^\alpha L^{1-\alpha} \label{eq:ss-int-good-firm-production-function-2}
+		K &= \alpha Y \frac{\Lambda}{R} \label{eq_v0:ss-int-good-firm-FOC-Kt-2} \\
+		L &= (1-\alpha) Y \frac{\Lambda}{W} \label{eq_v0:ss-int-good-firm-FOC-Lt-2} \\
+		Y &= Z_{A} K^\alpha L^{1-\alpha} \label{eq_v0:ss-int-good-firm-production-function-2}
 	\end{align}
 	
-	Substitute \ref{eq:ss-int-good-firm-FOC-Kt-2} in \ref{eq:ss-law-of-motion-for-capital}:
+	Substitute \ref{eq_v0:ss-int-good-firm-FOC-Kt-2} in \ref{eq_v0:ss-law-of-motion-for-capital}:
 	\begin{align}
-		\label{eq:ss-investment}
+		\label{eq_v0:ss-investment}
 		I = \delta K \implies I = \delta \alpha Y \frac{\Lambda}{R}
 	\end{align}
 	
-	Substitute \ref{eq:ss-int-good-firm-FOC-Lt-2} in \ref{eq:ss-household-labor-supply}:
+	Substitute \ref{eq_v0:ss-int-good-firm-FOC-Lt-2} in \ref{eq_v0:ss-household-labor-supply}:
 	\begin{align}
-		\label{eq:ss-consumption}
+		\label{eq_v0:ss-consumption}
 		\frac{\phi L^{\varphi}}{C^{-\sigma}} = \frac{W}{P}
 		\implies
 		C = \left[ L^{-\varphi} \frac{W}{\phi P} \right]^{\frac{1}{\sigma}}
@@ -742,7 +742,7 @@ thesis.tex
 		C = \left[ \left( (1-\alpha) Y \frac{\Lambda}{W} \right)^{-\varphi} \frac{W}{\phi P} \right]^{\frac{1}{\sigma}}
 	\end{align}
 	
-	Substitute \ref{eq:ss-investment} and \ref{eq:ss-consumption} in \ref{eq:ss-market-clearing-condition}:
+	Substitute \ref{eq_v0:ss-investment} and \ref{eq_v0:ss-consumption} in \ref{eq_v0:ss-market-clearing-condition}:
 	\begin{alignat}{2}
 		Y &= C + I &\implies \nonumber \\
 		Y &= \left[ \left( (1-\alpha) Y \frac{\Lambda}{W} \right)^{-\varphi} \frac{W}{\phi P} \right]^{\frac{1}{\sigma}} + \left[ \delta \alpha Y \frac{\Lambda}{R} \right] &\implies \nonumber \\
@@ -750,10 +750,10 @@ thesis.tex
 		\left( \frac{W}{\phi P}                \right)
 		\left( \frac{W}{(1-\alpha)\Lambda}     \right)^\varphi
 		\left( \frac{R}{R-\delta\alpha\Lambda} \right)^\sigma
-		\right]^\frac{1}{\varphi+\sigma} & \label{eq:ss-production}
+		\right]^\frac{1}{\varphi+\sigma} & \label{eq_v0:ss-production}
 	\end{alignat}
 	
-	For $C,K,L,I$, use the result from \ref{eq:ss-production} in \ref{eq:ss-consumption}, \ref{eq:ss-int-good-firm-FOC-Kt-2}, \ref{eq:ss-int-good-firm-FOC-Lt-2} and \ref{eq:ss-law-of-motion-for-capital}, respectively.
+	For $C,K,L,I$, use the result from \ref{eq_v0:ss-production} in \ref{eq_v0:ss-consumption}, \ref{eq_v0:ss-int-good-firm-FOC-Kt-2}, \ref{eq_v0:ss-int-good-firm-FOC-Lt-2} and \ref{eq_v0:ss-law-of-motion-for-capital}, respectively.
 	
 	% --------------------------------------------------
 	% STEADY STATE SOLUTION
@@ -764,33 +764,33 @@ thesis.tex
 	\vspace*{-1cm}
 	
 	\begin{align}
-		\label{eq:unity-vector}
+		\label{eq_v0:unity-vector}
 		& \begin{bmatrix}
 			P & P^\ast & \pi & Z_A & Z_M
 		\end{bmatrix} = \vec{\bm{1}} \\
-		\label{eq:null-vector}
+		\label{eq_v0:null-vector}
 		& \begin{bmatrix}
 			\varepsilon_A & \varepsilon_{M}
 		\end{bmatrix} = \vec{\bm{0}}\\
-		\tag{\ref{eq:ss-return-on-capital}}
+		\tag{\ref{eq_v0:ss-return-on-capital}}
 		& R = P\left[ \frac{1}{\beta} - (1-\delta) \right] \\
-		\tag{\ref{eq:ss-marginal-cost}}
+		\tag{\ref{eq_v0:ss-marginal-cost}}
 		& \Lambda = P \frac{\psi-1}{\psi} \\
-		\tag{\ref{eq:ss-nominal-wage}}
+		\tag{\ref{eq_v0:ss-nominal-wage}}
 		& W = (1-\alpha) \left[ \Lambda Z_{A} \left( \frac{\alpha}{R} \right)^{\alpha} \right]^\frac{1}{1-\alpha} \\
-		\tag{\ref{eq:ss-production}}
+		\tag{\ref{eq_v0:ss-production}}
 		& Y =\left[
 		\left( \frac{W}{\phi P}                \right)
 		\left( \frac{W}{(1-\alpha)\Lambda}     \right)^\varphi
 		\left( \frac{R}{R-\delta\alpha\Lambda} \right)^\sigma
 		\right]^\frac{1}{\varphi+\sigma} \\
-		\tag{\ref{eq:ss-consumption}}
+		\tag{\ref{eq_v0:ss-consumption}}
 		& C = \left[ \left( (1-\alpha) Y \frac{\Lambda}{W} \right)^{-\varphi} \frac{W}{\phi P} \right]^{\frac{1}{\sigma}} \\
-		\tag{\ref{eq:ss-int-good-firm-FOC-Kt-2}}
+		\tag{\ref{eq_v0:ss-int-good-firm-FOC-Kt-2}}
 		& K = \alpha Y \frac{\Lambda}{R} \\
-		\tag{\ref{eq:ss-int-good-firm-FOC-Lt-2}}
+		\tag{\ref{eq_v0:ss-int-good-firm-FOC-Lt-2}}
 		& L = (1-\alpha) Y \frac{\Lambda}{W} \\
-		\tag{\ref{eq:ss-law-of-motion-for-capital}}
+		\tag{\ref{eq_v0:ss-law-of-motion-for-capital}}
 		& I = \delta K
 	\end{align}
 	
@@ -802,18 +802,18 @@ thesis.tex
 	
 	\subsection{Log-linearization}
 	
-	Due to the number of variables and equations to be solved, computational brute force will be necessary. \dynare \ is a software specialized on macroeconomic modeling, used for solving DSGE models. Before the model can be processed by the software, it must be linearized in order to eliminate the infinite sum in equation \ref{eq:int-good-firm-optimal-price-FOC-3}. For this purpose, Uhlig's rules of log-linearization \cite{uhlig_toolkit_1999} will be applied to all equations in the model\footnote{see lemma \ref{lemma:uhligs-rules} for details.}.
+	Due to the number of variables and equations to be solved, computational brute force will be necessary. \dynare \ is a software specialized on macroeconomic modeling, used for solving DSGE models. Before the model can be processed by the software, it must be linearized in order to eliminate the infinite sum in equation \ref{eq_v0:int-good-firm-optimal-price-FOC-3}. For this purpose, Uhlig's rules of log-linearization \cite{uhlig_toolkit_1999} will be applied to all equations in the model\footnote{see lemma \ref{lemma:uhligs-rules} for details.}.
 	
 	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 	
 	\subsubsection*{Gross Inflation Rate}
 	
-	Log-linearize \ref{eq:gross-inflation-rate} and define the level deviation of gross inflation rate $\widetilde{\pi}_t$:
+	Log-linearize \ref{eq_v0:gross-inflation-rate} and define the level deviation of gross inflation rate $\widetilde{\pi}_t$:
 	\begin{align}
-		\tag{\ref{eq:gross-inflation-rate}}
+		\tag{\ref{eq_v0:gross-inflation-rate}}
 		\pi_t &= \frac{P_t}{P_{t-1}} \implies \\
 		\widetilde{\pi}_t &= \hat{P}_t - \hat{P}_{t-1}
-		\label{eq:level-dev-gross-inflation-rate}
+		\label{eq_v0:level-dev-gross-inflation-rate}
 	\end{align}
 	
 	% --------------------------------------------------
@@ -822,18 +822,18 @@ thesis.tex
 	
 	\subsubsection*{New Keynesian Phillips Curve}
 	
-	In order to log-linearize equation \ref{eq:int-good-firm-optimal-price-FOC-3}, it is necessary to eliminate both the summation and the product operators. To handle the product operator, apply lemma \ref{product-operator}:
+	In order to log-linearize equation \ref{eq_v0:int-good-firm-optimal-price-FOC-3}, it is necessary to eliminate both the summation and the product operators. To handle the product operator, apply lemma \ref{product-operator}:
 	\begin{align}
-		\tag{\ref{eq:int-good-firm-optimal-price-FOC-3}}
+		\tag{\ref{eq_v0:int-good-firm-optimal-price-FOC-3}}
 		& \E \sum_{s=0}^{\infty} \left\{ \frac{\theta^s P_t^\ast Y_{j,t+s} }{ \prod_{k=0}^{s-1}(1+R_{t+k})} \right\} = \frac{\psi}{\psi-1} \E \sum_{s=0}^{\infty} \left\{ \frac{\theta^s Y_{j,t+s} \Lambda_{t+s}}{\prod_{k=0}^{s-1}(1+R_{t+k})} \right\} \implies
 		\\
 		\begin{split}
 			& \E \sum_{s=0}^{\infty} \left\{ \frac{\theta^s P_t^\ast Y_{j,t+s}}{ (1 + R)^s \left( 1 + \frac{1}{1 + R} \sum_{k=0}^{s-1} \widetilde{R}_{t+k} \right) } \right\} = 
-			\\ & \quad \quad \quad \quad \quad = \frac{\psi}{\psi-1} \E \sum_{s=0}^{\infty} \left\{ \frac{\theta^s Y_{j,t+s} \Lambda_{t+s}}{ (1 + R)^s \left( 1 + \frac{1}{1 + R} \sum_{k=0}^{s-1} \widetilde{R}_{t+k} \right) } \right\} \label{eq:ll-optimal-price}
+			\\ & \quad \quad \quad \quad \quad = \frac{\psi}{\psi-1} \E \sum_{s=0}^{\infty} \left\{ \frac{\theta^s Y_{j,t+s} \Lambda_{t+s}}{ (1 + R)^s \left( 1 + \frac{1}{1 + R} \sum_{k=0}^{s-1} \widetilde{R}_{t+k} \right) } \right\} \label{eq_v0:ll-optimal-price}
 		\end{split}
 	\end{align}
 	
-	First, log-linearize the left hand side of equation \ref{eq:ll-optimal-price} with respect to \( P_t^\ast, Y_{j,t}, \widetilde{R}_t \):
+	First, log-linearize the left hand side of equation \ref{eq_v0:ll-optimal-price} with respect to \( P_t^\ast, Y_{j,t}, \widetilde{R}_t \):
 	\begin{alignat}{2}
 		& \E \sum_{s=0}^{\infty} \left\{ \frac{\theta^s P_t^\ast Y_{j,t+s}}{ (1 + R)^s \left( 1 + \frac{1}{1 + R} \sum_{k=0}^{s-1} \widetilde{R}_{t+k} \right) } \right\} &\implies \nonumber \\
 		& \E \sum_{s=0}^{\infty} \left\{ \left( \frac{\theta}{1 + R} \right)^s  \frac{ P^\ast Y_{j} \left( 1 + \hat{P}_t^\ast + \hat{Y}_{j,t+s} \right) }{ 1 + \frac{1}{1 + R} \sum_{k=0}^{s-1} \widetilde{R}_{t+k} } \right\} &\implies \nonumber \\
@@ -851,7 +851,7 @@ thesis.tex
 		\frac{ P^\ast Y_{j} ( 1 + \hat{P}_t^\ast ) }{1-\theta /(1+R)} + P^\ast Y_{j} \E \sum_{s=0}^{\infty} \left\{ \left( \frac{\theta}{1 + R} \right)^s \left( \hat{Y}_{j,t+s} - \frac{1}{1 + R} \sum_{k=0}^{s-1} \widetilde{R}_{t+k} \right) \right\} \nonumber
 	\end{align}
 	
-	Second, log-linearize the left hand side of equation \ref{eq:ll-optimal-price} with respect to \( \Lambda_t^\ast, Y_{j,t}, \widetilde{R}_t \):
+	Second, log-linearize the left hand side of equation \ref{eq_v0:ll-optimal-price} with respect to \( \Lambda_t^\ast, Y_{j,t}, \widetilde{R}_t \):
 	\begin{alignat}{2}
 		\frac{\psi}{\psi-1} &\E \sum_{s=0}^{\infty} \left\{ \frac{\theta^s Y_{j,t+s} \Lambda_{t+s}}{ (1 + R)^s \left( 1 + \frac{1}{1 + R} \sum_{k=0}^{s-1} \widetilde{R}_{t+k} \right) } \right\} & \implies \nonumber \\
 		\frac{\psi}{\psi-1} &\E \sum_{s=0}^{\infty} \left\{ \left( \frac{\theta}{1 + R} \right)^s \frac{ Y_{j} \Lambda (1+ \hat{Y}_{j,t+s} + \hat{\Lambda}_{t+s}) }{ 1 + \frac{1}{1 + R} \sum_{k=0}^{s-1} \widetilde{R}_{t+k} } \right\} & \implies \nonumber \\
@@ -878,57 +878,57 @@ thesis.tex
 		\\
 		= \frac{\psi}{\psi-1} \cdot \frac{Y_{j} \Lambda}{1-\theta /(1+R)} \, + 
 		\\
-		+ \frac{\psi}{\psi-1} Y_{j} \Lambda \E \sum_{s=0}^{\infty} \left\{ \left( \frac{\theta}{1 + R} \right)^s \left( \hat{Y}_{j,t+s} + \hat{\Lambda}_{t+s} - \frac{1}{1 + R} \sum_{k=0}^{s-1} \widetilde{R}_{t+k} \right) \right\} \label{eq:ll-optimal-price-2}
+		+ \frac{\psi}{\psi-1} Y_{j} \Lambda \E \sum_{s=0}^{\infty} \left\{ \left( \frac{\theta}{1 + R} \right)^s \left( \hat{Y}_{j,t+s} + \hat{\Lambda}_{t+s} - \frac{1}{1 + R} \sum_{k=0}^{s-1} \widetilde{R}_{t+k} \right) \right\} \label{eq_v0:ll-optimal-price-2}
 	\end{multline}
 	
 	Define a nominal discount rate $\varrho$ in steady state:
 	\begin{align}
-		1 = \varrho (1 + R) \implies \varrho = \frac{1}{1 + R} \label{eq:ss-nominal-discount-rate}
+		1 = \varrho (1 + R) \implies \varrho = \frac{1}{1 + R} \label{eq_v0:ss-nominal-discount-rate}
 	\end{align}
 	
-	Substitute \ref{eq:ss-nominal-discount-rate} in \ref{eq:ll-optimal-price-2}:
+	Substitute \ref{eq_v0:ss-nominal-discount-rate} in \ref{eq_v0:ll-optimal-price-2}:
 	\begin{multline}
 		\frac{ P^\ast Y_{j} ( 1 + \hat{P}_t^\ast ) }{1- \theta \varrho} + P^\ast Y_{j} \E \sum_{s=0}^{\infty} \left\{ \left( \theta \varrho \right)^s \left( \hat{Y}_{j,t+s} - \varrho \sum_{k=0}^{s-1} \widetilde{R}_{t+k} \right) \right\} = \frac{\psi}{\psi-1} \cdot \frac{Y_{j} \Lambda}{1- \theta \varrho } \, + 
 		\\ 
-		+ \frac{\psi}{\psi-1} Y_{j} \Lambda \E \sum_{s=0}^{\infty} \left\{ \left( \theta \varrho \right)^s \left( \hat{Y}_{j,t+s} + \hat{\Lambda}_{t+s} - \varrho \sum_{k=0}^{s-1} \widetilde{R}_{t+k} \right) \right\} \label{eq:ll-optimal-price-3}
+		+ \frac{\psi}{\psi-1} Y_{j} \Lambda \E \sum_{s=0}^{\infty} \left\{ \left( \theta \varrho \right)^s \left( \hat{Y}_{j,t+s} + \hat{\Lambda}_{t+s} - \varrho \sum_{k=0}^{s-1} \widetilde{R}_{t+k} \right) \right\} \label{eq_v0:ll-optimal-price-3}
 	\end{multline}
 	
-	Substitute \ref{eq:ss-marginal-cost} in \ref{eq:ll-optimal-price-3} and simplify all common terms:
+	Substitute \ref{eq_v0:ss-marginal-cost} in \ref{eq_v0:ll-optimal-price-3} and simplify all common terms:
 	\begin{align}
 		\begin{split}
 			& \cancel{\frac{P^\ast Y_{j}}{1-\theta\varrho}} + \frac{ \cancel{P^\ast Y_{j}} \hat{P}_t^\ast }{1- \theta \varrho} + \cancel{P^\ast Y_{j}} \E \sum_{s=0}^{\infty} \left\{ \left( \theta \varrho \right)^s \left( \cancel{\hat{Y}_{j,t+s} - \varrho \sum_{k=0}^{s-1} \widetilde{R}_{t+k}} \right) \right\} = 
 			\\
 			& = \cancel{\frac{P^\ast Y_{j}}{1-\theta\varrho}} \, + \cancel{P^\ast Y_{j}} \E \sum_{s=0}^{\infty} \left\{ \left( \theta \varrho \right)^s \left( \cancel{\hat{Y}_{j,t+s} - \varrho \sum_{k=0}^{s-1} \widetilde{R}_{t+k}} + \hat{\Lambda}_{t+s} \right) \right\} \implies	
 		\end{split} \nonumber \\
-		& \frac{ \hat{P}_t^\ast }{1- \theta \varrho} = \E \sum_{s=0}^{\infty} \left\{ \left( \theta \varrho \right)^s \left( \hat{\Lambda}_{t+s} \right) \right\} \label{eq:ll-optimal-price-4}
+		& \frac{ \hat{P}_t^\ast }{1- \theta \varrho} = \E \sum_{s=0}^{\infty} \left\{ \left( \theta \varrho \right)^s \left( \hat{\Lambda}_{t+s} \right) \right\} \label{eq_v0:ll-optimal-price-4}
 	\end{align}
 	
 	Define the real marginal cost $\lambda_t$:
 	\begin{align}
 		& \lambda_t = \frac{\Lambda_t}{P_t} \implies \Lambda_t = P_t \lambda_t \implies \nonumber \\
-		& \hat{\Lambda}_t = \hat{P}_t + \hat{\lambda}_t \label{eq:hat-real-marginal-cost}
+		& \hat{\Lambda}_t = \hat{P}_t + \hat{\lambda}_t \label{eq_v0:hat-real-marginal-cost}
 	\end{align}
 	
-	Substitute \ref{eq:hat-real-marginal-cost} in \ref{eq:ll-optimal-price-4}:
+	Substitute \ref{eq_v0:hat-real-marginal-cost} in \ref{eq_v0:ll-optimal-price-4}:
 	\begin{align}
-		\hat{P}_t^\ast = (1- \theta \varrho) \E \sum_{s=0}^{\infty} \left( \theta \varrho \right)^s \left( \hat{P}_{t+s} + \hat{\lambda}_{t+s} \right) \label{eq:ll-optimal-price-5}
+		\hat{P}_t^\ast = (1- \theta \varrho) \E \sum_{s=0}^{\infty} \left( \theta \varrho \right)^s \left( \hat{P}_{t+s} + \hat{\lambda}_{t+s} \right) \label{eq_v0:ll-optimal-price-5}
 	\end{align}
 	
-	Log-linearize equation \ref{eq:general-price-level}:
+	Log-linearize equation \ref{eq_v0:general-price-level}:
 	\begin{align}
-		P_t^{1-\psi} =\, &\theta P_{t-1}^{1-\psi} + (1-\theta) P_t^{\ast 1-\psi} \qquad \qquad \implies \tag{\ref{eq:general-price-level}} \\
+		P_t^{1-\psi} =\, &\theta P_{t-1}^{1-\psi} + (1-\theta) P_t^{\ast 1-\psi} \qquad \qquad \implies \tag{\ref{eq_v0:general-price-level}} \\
 		\begin{split} P^{1-\psi} (1 + (1-\psi)\hat{P}_t) =\, &\theta P^{1-\psi} (1 + (1-\psi)\hat{P}_{t-1}) \, + \\ & + (1-\theta) P^{1-\psi} (1 + (1-\psi)\hat{P}_t^\ast) \ \implies \nonumber \end{split} \\
 		\hat{P}_t =\, &\theta \hat{P}_{t-1} + (1-\theta) \hat{P}_t^\ast
-		\label{eq:ll-general-price-level}
+		\label{eq_v0:ll-general-price-level}
 	\end{align}
 	
-	Substitute \ref{eq:ll-optimal-price-5} in \ref{eq:ll-general-price-level}:
+	Substitute \ref{eq_v0:ll-optimal-price-5} in \ref{eq_v0:ll-general-price-level}:
 	\begin{align}
-		\hat{P}_t &= \theta \hat{P}_{t-1} + (1-\theta) \hat{P}_t^\ast \tag{\ref{eq:ll-general-price-level}}\\
-		\hat{P}_t &= \theta \hat{P}_{t-1} + (1-\theta) (1- \theta \varrho) \E \sum_{s=0}^{\infty} \left( \theta \varrho \right)^s \left( \hat{P}_{t+s} + \hat{\lambda}_{t+s} \right) \label{eq:ll-general-price-level-2}
+		\hat{P}_t &= \theta \hat{P}_{t-1} + (1-\theta) \hat{P}_t^\ast \tag{\ref{eq_v0:ll-general-price-level}}\\
+		\hat{P}_t &= \theta \hat{P}_{t-1} + (1-\theta) (1- \theta \varrho) \E \sum_{s=0}^{\infty} \left( \theta \varrho \right)^s \left( \hat{P}_{t+s} + \hat{\lambda}_{t+s} \right) \label{eq_v0:ll-general-price-level-2}
 	\end{align}
 	
-	Finally, to eliminate the summation, apply the lead operator $(1- \theta \varrho \mathbb{L}^{-1})$\footnote{see definition \ref{def:lag-operator}.} in \ref{eq:ll-general-price-level-2}:
+	Finally, to eliminate the summation, apply the lead operator $(1- \theta \varrho \mathbb{L}^{-1})$\footnote{see definition \ref{def:lag-operator}.} in \ref{eq_v0:ll-general-price-level-2}:
 	\begin{align}
 		\begin{split}
 			(1- \theta \varrho \mathbb{L}^{-1}) \hat{P}_t &= (1- \theta \varrho \mathbb{L}^{-1}) \left[ \theta \hat{P}_{t-1} \, + \right. \\
@@ -938,7 +938,7 @@ thesis.tex
 			\hat{P}_t - \theta \varrho \E \hat{P}_{t+1} &= \theta \hat{P}_{t-1} - \theta \varrho \theta \hat{P}_t \, + \\
 			& (1-\theta) (1- \theta \varrho) \E \sum_{s=0}^{\infty} \left( \theta \varrho \right)^s \left( \hat{P}_{t+s} + \hat{\lambda}_{t+s} \right) - \\
 			& - \theta \varrho (1-\theta) (1- \theta \varrho) \E \sum_{s=0}^{\infty} \left( \theta \varrho \right)^s \left( \hat{P}_{t+s+1} + \hat{\lambda}_{t+s+1} \right)
-		\end{split} \label{eq:ll-general-price-level-3}
+		\end{split} \label{eq_v0:ll-general-price-level-3}
 	\end{align}
 	
 	In the first summation, factor out the first term and in the second summation, include the term $\theta \varrho$ within the operator. Then, cancel the summations and rearrange the terms:
@@ -958,35 +958,35 @@ thesis.tex
 		\end{split} \\
 		\hat{P}_t - \theta \varrho \E \hat{P}_{t+1} &= \theta \hat{P}_{t-1} - \theta^2 \varrho \hat{P}_t + (1- \theta -\theta \varrho + \theta^2 \varrho) \hat{P}_t + (1-\theta) (1- \theta \varrho) \hat{\lambda}_t \implies \nonumber \\
 		(\hat{P}_t - \hat{P}_{t-1}) &= \varrho (\E \hat{P}_{t+1} - \hat{P}_t) + \frac{(1-\theta) (1- \theta \varrho)}{\theta} \hat{\lambda}_t
-		\label{eq:ll-general-price-level-4}
+		\label{eq_v0:ll-general-price-level-4}
 	\end{align}
 	
-	Substitute \ref{eq:level-dev-gross-inflation-rate} in \ref{eq:ll-general-price-level-4}:
+	Substitute \ref{eq_v0:level-dev-gross-inflation-rate} in \ref{eq_v0:ll-general-price-level-4}:
 	\begin{align}
-		\widetilde{\pi}_t = \varrho \E \widetilde{\pi}_{t+1} + \frac{(1-\theta) (1- \theta \varrho)}{\theta} \hat{\lambda}_t \label{eq:nk-phillips-curve-mc}
+		\widetilde{\pi}_t = \varrho \E \widetilde{\pi}_{t+1} + \frac{(1-\theta) (1- \theta \varrho)}{\theta} \hat{\lambda}_t \label{eq_v0:nk-phillips-curve-mc}
 	\end{align}
 	
-	Equation \ref{eq:nk-phillips-curve-mc} is the New Keynesian Phillips Curve in terms of the real marginal cost. It illustrates that the deviation of inflation depends on both the expectation of future inflation deviation and the present marginal cost deviation.
+	Equation \ref{eq_v0:nk-phillips-curve-mc} is the New Keynesian Phillips Curve in terms of the real marginal cost. It illustrates that the deviation of inflation depends on both the expectation of future inflation deviation and the present marginal cost deviation.
 	
 	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 	
 	\subsubsection*{Labor Supply}
 	
-	Log-linearize \ref{eq:household-labor-supply}:
+	Log-linearize \ref{eq_v0:household-labor-supply}:
 	\begin{alignat}{2}
-		\frac{\phi L_t^{\varphi}}{C_t^{-\sigma}} &= \frac{W_t}{P_t} & \implies \tag{\ref{eq:household-labor-supply}} \\
-		\varphi \hat{L}_t + \sigma \hat{C}_t &= \hat{W}_t - \hat{P}_t & \label{eq:ll-labor-supply}
+		\frac{\phi L_t^{\varphi}}{C_t^{-\sigma}} &= \frac{W_t}{P_t} & \implies \tag{\ref{eq_v0:household-labor-supply}} \\
+		\varphi \hat{L}_t + \sigma \hat{C}_t &= \hat{W}_t - \hat{P}_t & \label{eq_v0:ll-labor-supply}
 	\end{alignat}
 	
 	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 	
 	\subsubsection*{Household Euler Equation}
 	
-	Log-linearize \ref{eq:household-euler-equation}:
+	Log-linearize \ref{eq_v0:household-euler-equation}:
 	\begin{align}
-		\tag{\ref{eq:household-euler-equation}}
+		\tag{\ref{eq_v0:household-euler-equation}}
 		\left( \frac{\mathbb{E}_t C_{t+1}}{C_t} \right)^\sigma &= \beta \left[ (1-\delta) + \mathbb{E}_t \left(\frac{R_{t+1}}{P_{t+1}}\right) \right] \implies \\
-		\label{eq:ll-household-euler-equation}
+		\label{eq_v0:ll-household-euler-equation}
 		\E \hat{C}_{t+1} - \hat{C}_t &= \frac{\beta R}{\sigma P} \E(\hat{R}_{t+1} - \hat{P}_{t+1})
 	\end{align}
 	
@@ -994,11 +994,11 @@ thesis.tex
 	
 	\subsubsection*{Law of Motion for Capital}
 	
-	Log-linearize \ref{eq:law-of-motion-for-capital}:
+	Log-linearize \ref{eq_v0:law-of-motion-for-capital}:
 	\begin{align}
-		\tag{\ref{eq:law-of-motion-for-capital}}
+		\tag{\ref{eq_v0:law-of-motion-for-capital}}
 		K_{t+1} &= (1-\delta)K_t + I_t \implies \\
-		\label{eq:ll-law-of-motion-for-capital}
+		\label{eq_v0:ll-law-of-motion-for-capital}
 		\hat{K}_{t+1} &= (1-\delta)\hat{K}_t + \delta \hat{I}_t
 	\end{align}
 	
@@ -1006,7 +1006,7 @@ thesis.tex
 	
 	\subsubsection*{Bundle Technology}
 	
-	Apply the natural logarithm to \ref{eq:final-good-firm-bundle-rule}:
+	Apply the natural logarithm to \ref{eq_v0:final-good-firm-bundle-rule}:
 	\begin{align}
 		\ln Y_t &= \frac{\psi}{\psi-1} \ln \left( \int_{0}^{1} Y_{jt}^{\frac{\psi-1}{\psi}} \dif j \right) \nonumber
 	\end{align}
@@ -1026,48 +1026,48 @@ thesis.tex
 	\begin{align}
 		\ln Y + \hat{Y}_t &= \ln Y_{j} + \int_{0}^{1} \hat{Y}_{jt} \dif j \implies \nonumber \\
 		\hat{Y}_t &= \int_{0}^{1} \hat{Y}_{jt} \dif j 
-		\label{eq:ll-final-good-firm-bundle-rule}
+		\label{eq_v0:ll-final-good-firm-bundle-rule}
 	\end{align}
 	
 	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 	
 	\subsubsection*{Marginal Cost}
 	
-	Log-linearize \ref{eq:int-good-firm-MC-2}:
+	Log-linearize \ref{eq_v0:int-good-firm-MC-2}:
 	\begin{alignat}{2}
-		& \Lambda_t = Z_{At}^{-1} \frac{R_t^{\alpha} W_t^{1-\alpha} }{ \alpha^{\alpha} (1-\alpha)^{1-\alpha} } \implies \tag{\ref{eq:int-good-firm-MC-2}} \\
+		& \Lambda_t = Z_{At}^{-1} \frac{R_t^{\alpha} W_t^{1-\alpha} }{ \alpha^{\alpha} (1-\alpha)^{1-\alpha} } \implies \tag{\ref{eq_v0:int-good-firm-MC-2}} \\
 		& \Lambda (1+ \hat{\Lambda}_t) = \frac{1}{Z_{A}} \left( \frac{R}{\alpha} \right)^{\alpha} \left( \frac{W}{1-\alpha} \right)^{1-\alpha} (1- \hat{Z}_{At} + \alpha \hat{R}_t + (1- \alpha) \hat{W}_t ) \implies \nonumber \\
-		& \hat{\Lambda}_t = \alpha \hat{R}_t + (1- \alpha) \hat{W}_t - \hat{Z}_{At} \label{eq:ll-int-good-firm-MC-2}
+		& \hat{\Lambda}_t = \alpha \hat{R}_t + (1- \alpha) \hat{W}_t - \hat{Z}_{At} \label{eq_v0:ll-int-good-firm-MC-2}
 	\end{alignat}
 	
-	Substitute \ref{eq:hat-real-marginal-cost} in \ref{eq:ll-int-good-firm-MC-2}:
+	Substitute \ref{eq_v0:hat-real-marginal-cost} in \ref{eq_v0:ll-int-good-firm-MC-2}:
 	\begin{alignat}{2}
 		\hat{\Lambda}_t &= \alpha \hat{R}_t + (1- \alpha) \hat{W}_t - \hat{Z}_{At} &\implies \nonumber \\
 		\hat{P}_t + \hat{\lambda}_t &= \alpha \hat{R}_t + (1- \alpha) \hat{W}_t - \hat{Z}_{At} &\implies \nonumber \\
-		\hat{\lambda}_t &= \alpha \hat{R}_t + (1- \alpha) \hat{W}_t - \hat{Z}_{At} - \hat{P}_t \label{eq:ll-int-good-firm-MC-3}
+		\hat{\lambda}_t &= \alpha \hat{R}_t + (1- \alpha) \hat{W}_t - \hat{Z}_{At} - \hat{P}_t \label{eq_v0:ll-int-good-firm-MC-3}
 	\end{alignat}
 	
 	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 	
 	\subsubsection*{Production Function}
 	
-	Log-linearize \ref{eq:int-good-firm-production-function}:
+	Log-linearize \ref{eq_v0:int-good-firm-production-function}:
 	\begin{alignat}{2}
-		Y_{jt} &= Z_{At} K_{jt}^\alpha L_{jt}^{1-\alpha} &\implies \tag{\ref{eq:int-good-firm-production-function}} \\
+		Y_{jt} &= Z_{At} K_{jt}^\alpha L_{jt}^{1-\alpha} &\implies \tag{\ref{eq_v0:int-good-firm-production-function}} \\
 		Y_{j} (1+ \hat{Y}_{jt}) &= Z_{A} K_{j}^\alpha L_{j}^{1-\alpha} (1+ \hat{Z}_{At} + \alpha \hat{K}_{jt} + (1-\alpha) \hat{L}_{jt}) \quad &\implies \nonumber \\
-		\hat{Y}_{jt} &= \hat{Z}_{At} + \alpha \hat{K}_{jt} + (1-\alpha) \hat{L}_{jt} \label{eq:ll-int-good-firm-production-function}
+		\hat{Y}_{jt} &= \hat{Z}_{At} + \alpha \hat{K}_{jt} + (1-\alpha) \hat{L}_{jt} \label{eq_v0:ll-int-good-firm-production-function}
 	\end{alignat}
 	
-	Substitute \ref{eq:ll-int-good-firm-production-function} in \ref{eq:ll-final-good-firm-bundle-rule}:
+	Substitute \ref{eq_v0:ll-int-good-firm-production-function} in \ref{eq_v0:ll-final-good-firm-bundle-rule}:
 	\begin{alignat}{2}
-		\hat{Y}_t &= \int_{0}^{1} \hat{Y}_{jt} \dif j &\implies \tag{\ref{eq:ll-final-good-firm-bundle-rule}} \\
+		\hat{Y}_t &= \int_{0}^{1} \hat{Y}_{jt} \dif j &\implies \tag{\ref{eq_v0:ll-final-good-firm-bundle-rule}} \\
 		\hat{Y}_t &= \int_{0}^{1} \left[ \hat{Z}_{At} + \alpha \hat{K}_{jt} + (1-\alpha) \hat{L}_{jt} \right] \dif j &\implies \nonumber \\
-		\hat{Y}_t &= \hat{Z}_{At} + \alpha \int_{0}^{1} \hat{K}_{jt} \dif j + (1-\alpha) \int_{0}^{1} \hat{L}_{jt} \dif j \label{eq:ll-final-good-firm-bundle-rule-2}
+		\hat{Y}_t &= \hat{Z}_{At} + \alpha \int_{0}^{1} \hat{K}_{jt} \dif j + (1-\alpha) \int_{0}^{1} \hat{L}_{jt} \dif j \label{eq_v0:ll-final-good-firm-bundle-rule-2}
 	\end{alignat}
 	
-	Apply the natural logarithm and then log-linearize \ref{eq:market-clearing-condition-2}:
+	Apply the natural logarithm and then log-linearize \ref{eq_v0:market-clearing-condition-2}:
 	\begin{alignat}{2}
-		\tag{\ref{eq:market-clearing-condition-2}}
+		\tag{\ref{eq_v0:market-clearing-condition-2}}
 		L_t &= \int_{0}^{1} L_{jt} \dif j &\implies \\
 		\ln L_t &= \ln \left[ \int_{0}^{1} L_{jt} \dif j \right] &\implies \nonumber \\
 		\ln L + \hat{L}_t &= \ln \left[ \int_{0}^{1} L_{j} \dif j \right] + \int_{0}^{1} \hat{L}_{jt} \dif j \quad &\implies \nonumber \\
@@ -1076,81 +1076,81 @@ thesis.tex
 	
 	Apply corollary \ref{coro:steady-state-YKL}:
 	\begin{align}
-		\implies \hat{L}_t &= \int_{0}^{1} \hat{L}_{jt} \dif j \label{eq:ll-market-clearing-condition-2}
+		\implies \hat{L}_t &= \int_{0}^{1} \hat{L}_{jt} \dif j \label{eq_v0:ll-market-clearing-condition-2}
 	\end{align}
 	
 	By analogy, the total capital deviation is the sum of all firm's deviations:
 	\begin{align}
-		\hat{K}_t = \int_{0}^{1} \hat{K}_{jt} \dif j \label{eq:ll-capital-clearing-condition}
+		\hat{K}_t = \int_{0}^{1} \hat{K}_{jt} \dif j \label{eq_v0:ll-capital-clearing-condition}
 	\end{align}
 	
-	Substitute \ref{eq:ll-market-clearing-condition-2} and \ref{eq:ll-capital-clearing-condition} in \ref{eq:ll-final-good-firm-bundle-rule-2}:
+	Substitute \ref{eq_v0:ll-market-clearing-condition-2} and \ref{eq_v0:ll-capital-clearing-condition} in \ref{eq_v0:ll-final-good-firm-bundle-rule-2}:
 	\begin{align}
-		\tag{\ref{eq:ll-final-good-firm-bundle-rule-2}}
+		\tag{\ref{eq_v0:ll-final-good-firm-bundle-rule-2}}
 		\hat{Y}_t &= \hat{Z}_{At} + \alpha \int_{0}^{1} \hat{K}_{jt} \dif j + (1-\alpha) \int_{0}^{1} \hat{L}_{jt} \dif j \implies \\
-		\hat{Y}_t &= \hat{Z}_{At} + \alpha \hat{K}_t + (1-\alpha) \hat{L}_t \label{eq:ll-final-good-firm-bundle-rule-3}
+		\hat{Y}_t &= \hat{Z}_{At} + \alpha \hat{K}_t + (1-\alpha) \hat{L}_t \label{eq_v0:ll-final-good-firm-bundle-rule-3}
 	\end{align}
 	
 	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 	
 	\subsubsection*{Capital Demand}
 	
-	Log-linearize \ref{eq:int-good-firm-FOC-Kt}:
+	Log-linearize \ref{eq_v0:int-good-firm-FOC-Kt}:
 	\begin{alignat}{2}
-		K_{jt} &= \alpha Y_{jt} \frac{\Lambda_t}{R_t} &\implies \tag{\ref{eq:int-good-firm-FOC-Kt}} \\
+		K_{jt} &= \alpha Y_{jt} \frac{\Lambda_t}{R_t} &\implies \tag{\ref{eq_v0:int-good-firm-FOC-Kt}} \\
 		K_j (1+ \hat{K}_{jt}) &= \alpha Y_{j} \frac{\Lambda}{R} (1+ \hat{Y}_{jt} + \hat{\Lambda}_t - \hat{R}_t) \quad &\implies \nonumber \\
 		\hat{K}_{jt} &= \hat{Y}_{jt} + \hat{\Lambda}_t - \hat{R}_t \nonumber
 	\end{alignat}
 	
-	Integrate both sides and then substitute \ref{eq:ll-capital-clearing-condition} and \ref{eq:ll-final-good-firm-bundle-rule}:
+	Integrate both sides and then substitute \ref{eq_v0:ll-capital-clearing-condition} and \ref{eq_v0:ll-final-good-firm-bundle-rule}:
 	\begin{alignat}{2}
 		\int_{0}^{1} \hat{K}_{jt} \dif j &= \int_{0}^{1} \left( \hat{Y}_{jt} + \hat{\Lambda}_t - \hat{R}_t \right) \dif j \quad &\implies \nonumber \\
-		\hat{K}_t &= \hat{Y}_t + \hat{\Lambda}_t - \hat{R}_t \label{eq:ll-int-good-firm-FOC-Kt}
+		\hat{K}_t &= \hat{Y}_t + \hat{\Lambda}_t - \hat{R}_t \label{eq_v0:ll-int-good-firm-FOC-Kt}
 	\end{alignat}
 	
 	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 	
 	\subsubsection*{Labor Demand}
 	
-	Log-linearize \ref{eq:int-good-firm-FOC-Lt}:
+	Log-linearize \ref{eq_v0:int-good-firm-FOC-Lt}:
 	\begin{alignat}{2}
-		L_{jt} &= (1-\alpha) Y_{jt} \frac{\Lambda_t}{W_t} &\implies \tag{\ref{eq:int-good-firm-FOC-Lt}} \\
+		L_{jt} &= (1-\alpha) Y_{jt} \frac{\Lambda_t}{W_t} &\implies \tag{\ref{eq_v0:int-good-firm-FOC-Lt}} \\
 		L_j (1+ \hat{L}_{jt}) &= (1-\alpha) Y_{j} \frac{\Lambda}{W} (1+ \hat{Y}_{jt} +\hat{\Lambda}_t -\hat{W}_t) \quad &\implies \nonumber \\
 		\hat{L}_{jt} &= \hat{Y}_{jt} +\hat{\Lambda}_t -\hat{W}_t \nonumber
 	\end{alignat}
 	
-	Integrate both sides and then substitute \ref{eq:ll-market-clearing-condition-2} and \ref{eq:ll-final-good-firm-bundle-rule}:
+	Integrate both sides and then substitute \ref{eq_v0:ll-market-clearing-condition-2} and \ref{eq_v0:ll-final-good-firm-bundle-rule}:
 	\begin{align}
 		\int_{0}^{1} \hat{L}_{jt} \dif j &= \int_{0}^{1} \hat{Y}_{jt} + \hat{\Lambda}_t - \hat{W}_t \dif j \implies \nonumber \\
 		\hat{L}_t &= \hat{Y}_t + \hat{\Lambda}_t - \hat{W}_t
-		\label{eq:ll-int-good-firm-FOC-Lt}
+		\label{eq_v0:ll-int-good-firm-FOC-Lt}
 	\end{align}
 	
-	Subtract \ref{eq:ll-int-good-firm-FOC-Lt} from \ref{eq:ll-int-good-firm-FOC-Kt}:
+	Subtract \ref{eq_v0:ll-int-good-firm-FOC-Lt} from \ref{eq_v0:ll-int-good-firm-FOC-Kt}:
 	\begin{align}
 		\hat{K}_t - \hat{L}_t &= \hat{Y}_t + \hat{\Lambda}_t - \hat{R}_t - (\hat{Y}_t + \hat{\Lambda}_t - \hat{W}_t) \implies \nonumber \\
-		\hat{K}_t - \hat{L}_t &= \hat{W}_t - \hat{R}_t \label{eq:ll-int-good-firm-TMRS}
+		\hat{K}_t - \hat{L}_t &= \hat{W}_t - \hat{R}_t \label{eq_v0:ll-int-good-firm-TMRS}
 	\end{align}
 	
-	Equation \ref{eq:ll-int-good-firm-TMRS} is the log-linearized version of \ref{eq:int-good-firm-TMRS}.
+	Equation \ref{eq_v0:ll-int-good-firm-TMRS} is the log-linearized version of \ref{eq_v0:int-good-firm-TMRS}.
 	
 	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 	
 	\subsubsection*{Market Clearing Condition}
 	
-	Log-linearize \ref{eq:market-clearing-condition}:
+	Log-linearize \ref{eq_v0:market-clearing-condition}:
 	\begin{alignat}{2}
-		\tag{\ref{eq:market-clearing-condition}}
+		\tag{\ref{eq_v0:market-clearing-condition}}
 		Y_t &= C_t + I_t &\implies \\
 		Y (1+ \hat{Y}_t) &= C(1+ \hat{C}_t) + I (1+ \hat{I}_t) \quad &\implies \nonumber \\
 		Y + Y\hat{Y}_t &= C + C\hat{C}_t + I + I\hat{I}_t &\implies \nonumber  \\
 		Y\hat{Y}_t &= C\hat{C}_t + I\hat{I}_t &\implies \nonumber \\
-		\hat{Y}_t &= \frac{C}{Y}\hat{C}_t + \frac{I}{Y}\hat{I}_t  \label{eq:ll-market-clearing-condition}
+		\hat{Y}_t &= \frac{C}{Y}\hat{C}_t + \frac{I}{Y}\hat{I}_t  \label{eq_v0:ll-market-clearing-condition}
 	\end{alignat}
 	
 	Define the consumption and investment weights $\left[ \begin{smallmatrix} \theta_C & \theta_I \end{smallmatrix} \right] $ in the production total:
 	\begin{align}
-		\label{eq:ss-C-I-weight-in-Y}
+		\label{eq_v0:ss-C-I-weight-in-Y}
 		\begin{bmatrix}
 			\theta_C & \theta_I
 		\end{bmatrix} \coloneq 
@@ -1159,11 +1159,11 @@ thesis.tex
 		\end{bmatrix}
 	\end{align}
 	
-	Substitute \ref{eq:ss-C-I-weight-in-Y} in \ref{eq:ll-market-clearing-condition}:
+	Substitute \ref{eq_v0:ss-C-I-weight-in-Y} in \ref{eq_v0:ll-market-clearing-condition}:
 	\begin{align}
 		\hat{Y}_t &= \frac{C}{Y}\hat{C}_t + \frac{I}{Y}\hat{I}_t \implies \nonumber \\
 		\hat{Y}_t &= \theta_C \hat{C}_t + \theta_I \hat{I}_t 
-		\label{eq:ll-market-clearing-condition-theta}
+		\label{eq_v0:ll-market-clearing-condition-theta}
 	\end{align}
 	
 	
@@ -1172,37 +1172,37 @@ thesis.tex
 	
 	\subsubsection*{Monetary Policy}
 	
-	Log-linearize \ref{eq:monetary-policy}:
+	Log-linearize \ref{eq_v0:monetary-policy}:
 	\begin{align}
-		\tag{\ref{eq:monetary-policy}}
+		\tag{\ref{eq_v0:monetary-policy}}
 		& \frac{R_t}{R} = \frac{R_{t-1}^{\gamma_R} (\pi_t^{\gamma_\pi} Y_t^{\gamma_Y})^{(1-\gamma_R)} Z_{Mt}}{R^{\gamma_R} (\pi^{\gamma_\pi} Y^{\gamma_Y})^{(1-\gamma_R)}} \implies \\
 		\begin{split}
 			& \frac{R(1+ \hat{R}_t)}{R} = \\
 			&= \frac{ R^{\gamma_R} (\pi^{\gamma_\pi} Y^{\gamma_Y})^{(1-\gamma_R)} Z_{M} [1+ \gamma_R \hat{R}_{t-1} + (1-\gamma_R)(\gamma_\pi \widetilde{\pi}_t + \gamma_Y \hat{Y}_t) + \hat{Z}_{Mt}]}{R^{\gamma_R} (\pi^{\gamma_\pi} Y^{\gamma_Y})^{(1-\gamma_R)}} \implies
 		\end{split} \nonumber \\
-		& \hat{R}_t = \gamma_R \hat{R}_{t-1} + (1-\gamma_R)(\gamma_\pi \widetilde{\pi}_t + \gamma_Y \hat{Y}_t) + \hat{Z}_{Mt} \label{eq:ll-monetary-policy}
+		& \hat{R}_t = \gamma_R \hat{R}_{t-1} + (1-\gamma_R)(\gamma_\pi \widetilde{\pi}_t + \gamma_Y \hat{Y}_t) + \hat{Z}_{Mt} \label{eq_v0:ll-monetary-policy}
 	\end{align}
 	
 	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 	
 	\subsubsection*{Productivity Shock}
 	
-	Log-linearize \ref{eq:productivity-shock}:
+	Log-linearize \ref{eq_v0:productivity-shock}:
 	\begin{alignat}{2}
-		\ln{Z_{At}} &= (1-\rho_A)\ln{Z_A} + \rho_A\ln{Z_{A,t-1}} + \varepsilon_{At} &\implies \tag{\ref{eq:productivity-shock}} \\
+		\ln{Z_{At}} &= (1-\rho_A)\ln{Z_A} + \rho_A\ln{Z_{A,t-1}} + \varepsilon_{At} &\implies \tag{\ref{eq_v0:productivity-shock}} \\
 		\ln{Z_{A}} + \hat{Z}_{At} &= (1-\rho_A) \ln{Z_A} + \rho_A (\ln{Z_{A}} + \hat{Z}_{A,t-1}) + \varepsilon_{A} \quad &\implies \nonumber \\
-		\hat{Z}_{At} &= \rho_A \hat{Z}_{A,t-1} + \varepsilon_{A} \label{eq:ll-productivity-shock}
+		\hat{Z}_{At} &= \rho_A \hat{Z}_{A,t-1} + \varepsilon_{A} \label{eq_v0:ll-productivity-shock}
 	\end{alignat}
 	
 	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 	
 	\subsubsection*{Monetary Shock}
 	
-	Log-linearize \ref{eq:monetary-shock}:
+	Log-linearize \ref{eq_v0:monetary-shock}:
 	\begin{alignat}{2}
-		\ln{Z_{Mt}} &= (1-\rho_M)\ln{Z_M} + \rho_M\ln{Z_{M,t-1}} + \varepsilon_{Mt} &\implies \tag{\ref{eq:monetary-shock}} \\
+		\ln{Z_{Mt}} &= (1-\rho_M)\ln{Z_M} + \rho_M\ln{Z_{M,t-1}} + \varepsilon_{Mt} &\implies \tag{\ref{eq_v0:monetary-shock}} \\
 		\ln{Z_{M}} + \hat{Z}_{Mt} &= (1-\rho_M) \ln{Z_M} + \rho_M (\ln{Z_{M}} + \hat{Z}_{M,t-1}) + \varepsilon_{M} \quad &\implies \nonumber \\
-		\hat{Z}_{Mt} &= \rho_M \hat{Z}_{M,t-1} + \varepsilon_{M} \label{eq:ll-monetary-shock}
+		\hat{Z}_{Mt} &= \rho_M \hat{Z}_{M,t-1} + \varepsilon_{M} \label{eq_v0:ll-monetary-shock}
 	\end{alignat}
 	
 	%\newpage
@@ -1228,85 +1228,85 @@ thesis.tex
 				\item Gross Inflation Rate:
 				\begin{align}
 					\widetilde{\pi}_t &= \hat{P}_t - \hat{P}_{t-1}
-					\tag{\ref{eq:level-dev-gross-inflation-rate}}
+					\tag{\ref{eq_v0:level-dev-gross-inflation-rate}}
 				\end{align}
 				
 				\item New Keynesian Phillips Curve:
 				\begin{align}
 					\widetilde{\pi}_t = \varrho \E \widetilde{\pi}_{t+1} + \frac{(1-\theta) (1- \theta \varrho)}{\theta} \hat{\lambda}_t
-					\tag{\ref{eq:nk-phillips-curve-mc}}
+					\tag{\ref{eq_v0:nk-phillips-curve-mc}}
 				\end{align}
 				
 				\item Labor Supply:
 				\begin{align}
 					\varphi \hat{L}_t + \sigma \hat{C}_t &= \hat{W}_t - \hat{P}_t
-					\tag{\ref{eq:ll-labor-supply}}
+					\tag{\ref{eq_v0:ll-labor-supply}}
 				\end{align}
 				
 				\item Household Euler Equation:
 				\begin{align}
 					\E \hat{C}_{t+1} - \hat{C}_t &= \frac{\beta R}{\sigma P} \E(\hat{R}_{t+1} - \hat{P}_{t+1})
-					\tag{\ref{eq:ll-household-euler-equation}}
+					\tag{\ref{eq_v0:ll-household-euler-equation}}
 				\end{align}
 				
 				\item Law of Motion for Capital:
 				\begin{align}
 					\hat{K}_{t+1} &= (1-\delta)\hat{K}_t + \delta \hat{I}_t
-					\tag{\ref{eq:ll-law-of-motion-for-capital}}
+					\tag{\ref{eq_v0:ll-law-of-motion-for-capital}}
 				\end{align}
 				
 				%	\item Bundle Technology:
 				%	\begin{align}
 					%		\hat{Y}_t &= \int_{0}^{1} \hat{Y}_{jt} \dif j 
-					%		\tag{\ref{eq:ll-final-good-firm-bundle-rule}}
+					%		\tag{\ref{eq_v0:ll-final-good-firm-bundle-rule}}
 					%	\end{align}
 				
 				\item Real Marginal Cost:
 				\begin{align}
-					\hat{\lambda}_t &= \alpha \hat{R}_t + (1- \alpha) \hat{W}_t - \hat{Z}_{At} - \hat{P}_t \tag{\ref{eq:ll-int-good-firm-MC-3}}
+					\hat{\lambda}_t &= \alpha \hat{R}_t + (1- \alpha) \hat{W}_t - \hat{Z}_{At} - \hat{P}_t \tag{\ref{eq_v0:ll-int-good-firm-MC-3}}
 				\end{align}
 				
 				\item Production Function:
 				\begin{align}
-					\hat{Y}_t &= \hat{Z}_{At} + \alpha \hat{K}_t + (1-\alpha) \hat{L}_t \tag{\ref{eq:ll-final-good-firm-bundle-rule-3}}
+					\hat{Y}_t &= \hat{Z}_{At} + \alpha \hat{K}_t + (1-\alpha) \hat{L}_t \tag{\ref{eq_v0:ll-final-good-firm-bundle-rule-3}}
 				\end{align}
 				
 				%		\item Capital Demand:
 				%	\begin{align}
 					%		\hat{K}_t &= \hat{Y}_t + \hat{\Lambda}_t - \hat{R}_t
-					%		\tag{\ref{eq:ll-int-good-firm-FOC-Kt}}
+					%		\tag{\ref{eq_v0:ll-int-good-firm-FOC-Kt}}
 					%	\end{align}
 				%	
 				%	\item Labor Demand:
 				%	\begin{align}
 					%		\hat{L}_t &= \hat{Y}_t + \hat{\Lambda}_t - \hat{W}_t
-					%		\tag{\ref{eq:ll-int-good-firm-FOC-Lt}}
+					%		\tag{\ref{eq_v0:ll-int-good-firm-FOC-Lt}}
 					%	\end{align}
 				
 				\item Marginal Rates of Substitution of Factors:
 				\begin{align}
-					\hat{K}_t - \hat{L}_t &= \hat{W}_t - \hat{R}_t \tag{\ref{eq:ll-int-good-firm-TMRS}}
+					\hat{K}_t - \hat{L}_t &= \hat{W}_t - \hat{R}_t \tag{\ref{eq_v0:ll-int-good-firm-TMRS}}
 				\end{align}
 				
 				\item Market Clearing Condition:
 				\begin{align}
 					\hat{Y}_t &= \theta_C \hat{C}_t + \theta_I \hat{I}_t 
-					\tag{\ref{eq:ll-market-clearing-condition-theta}}
+					\tag{\ref{eq_v0:ll-market-clearing-condition-theta}}
 				\end{align}
 				
 				\item Monetary Policy:
 				\begin{align}
-					& \hat{R}_t = \gamma_R \hat{R}_{t-1} + (1-\gamma_R)(\gamma_\pi \widetilde{\pi}_t + \gamma_Y \hat{Y}_t) + \hat{Z}_{Mt} \tag{\ref{eq:ll-monetary-policy}}
+					& \hat{R}_t = \gamma_R \hat{R}_{t-1} + (1-\gamma_R)(\gamma_\pi \widetilde{\pi}_t + \gamma_Y \hat{Y}_t) + \hat{Z}_{Mt} \tag{\ref{eq_v0:ll-monetary-policy}}
 				\end{align}
 				
 				\item Productivity Shock:
 				\begin{align}
-					\hat{Z}_{At} &= \rho_A \hat{Z}_{A,t-1} + \varepsilon_{A} \tag{\ref{eq:ll-productivity-shock}}
+					\hat{Z}_{At} &= \rho_A \hat{Z}_{A,t-1} + \varepsilon_{A} \tag{\ref{eq_v0:ll-productivity-shock}}
 				\end{align}
 				
 				\item Monetary Shock:
 				\begin{align}
-					\hat{Z}_{Mt} &= \rho_M \hat{Z}_{M,t-1} + \varepsilon_{M} \tag{\ref{eq:ll-monetary-shock}}
+					\hat{Z}_{Mt} &= \rho_M \hat{Z}_{M,t-1} + \varepsilon_{M} \tag{\ref{eq_v0:ll-monetary-shock}}
 				\end{align}
 				
 			\end{enumerate}

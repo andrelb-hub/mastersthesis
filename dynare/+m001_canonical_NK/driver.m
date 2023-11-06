@@ -236,6 +236,7 @@ oo_.dr.eigval = check(M_,options_,oo_);
 %
 M_.exo_det_length = 0;
 M_.Sigma_e(1, 1) = (M_.params(12))^2;
+M_.Sigma_e(2, 2) = (M_.params(13))^2;
 options_.irf = 100;
 options_.order = 1;
 options_.qz_zero_threshold = 1e-20;

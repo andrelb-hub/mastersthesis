@@ -163,6 +163,8 @@ shocks;
      var    epsilonA;
      stderr sigmaA;
 % Monetary Shock
+     var    epsilonM;
+     stderr sigmaM;
 end;
 stoch_simul(irf=100, order=1, qz_zero_threshold=1e-20) ZAt ZMt Yt Pt pit lambt Lt Rt Wt ;
 % -------------------------------------------------- % 
