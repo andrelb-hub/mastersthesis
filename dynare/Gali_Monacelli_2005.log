@@ -1,0 +1,212 @@
+Starting Dynare (version 5.5).
+Calling Dynare with arguments: none
+Starting preprocessing of the model file ...
+Found 19 equation(s).
+Evaluating expressions...done
+Computing static model derivatives (order 1).
+Computing dynamic model derivatives (order 2).
+Processing outputs ...
+done
+Preprocessing completed.
+
+
+MODEL SUMMARY
+
+  Number of variables:         19
+  Number of stochastic shocks: 2
+  Number of state variables:   6
+  Number of jumpers:           2
+  Number of static variables:  12
+
+
+MATRIX OF COVARIANCE OF EXOGENOUS SHOCKS
+Variables    eps_star     eps_a
+eps_star     0.000000  0.000000
+eps_a        0.000000  1.000000
+
+POLICY AND TRANSITION FUNCTIONS
+                                 pih               x              pi               s               e               r              ph               p               a
+s(-1)                              0               0       -0.400000               0       -1.000000               0               0       -0.400000               0
+p(-1)                              0               0               0               0               0               0               0        1.000000               0
+ph(-1)                             0               0               0               0               0               0        1.000000               0               0
+e(-1)                              0               0               0               0        1.000000               0               0               0               0
+a(-1)                              0               0        0.360000        0.900000        0.900000       -0.090000               0        0.360000        0.900000
+ystar(-1)                          0               0       -0.344000       -0.860000       -0.860000               0               0       -0.344000               0
+eps_star                           0               0       -0.400000       -1.000000       -1.000000               0               0       -0.400000               0
+eps_a                              0               0        0.400000        1.000000        1.000000       -0.100000               0        0.400000        1.000000
+
+
+THEORETICAL MOMENTS
+VARIABLE         MEAN  STD. DEV.   VARIANCE
+pih            0.0000     0.0000     0.0000
+x              0.0000     0.0000     0.0000
+pi             0.0000     0.4104     0.1684
+s              0.0000     2.2942     5.2632
+e                 NaN        NaN        NaN
+r              0.0000     0.2294     0.0526
+ph                NaN        NaN        NaN
+p                 NaN        NaN        NaN
+a              0.0000     2.2942     5.2632
+
+
+
+VARIANCE DECOMPOSITION (in percent)
+       eps_star     eps_a
+pih         NaN       NaN
+x          0.00    100.00
+pi         0.00    100.00
+s          0.00    100.00
+r          0.00    100.00
+a          0.00    100.00
+
+
+
+MATRIX OF CORRELATIONS
+Variables         pi        s        r        a
+pi            1.0000   0.2236  -0.2236   0.2236
+s             0.2236   1.0000  -1.0000   1.0000
+r            -0.2236  -1.0000   1.0000  -1.0000
+a             0.2236   1.0000  -1.0000   1.0000
+
+
+
+COEFFICIENTS OF AUTOCORRELATION
+Order           1        2        3        4        5
+pi        -0.0500  -0.0450  -0.0405  -0.0365  -0.0328
+s          0.9000   0.8100   0.7290   0.6561   0.5905
+r          0.9000   0.8100   0.7290   0.6561   0.5905
+a          0.9000   0.8100   0.7290   0.6561   0.5905
+
+MODEL SUMMARY
+
+  Number of variables:         19
+  Number of stochastic shocks: 2
+  Number of state variables:   6
+  Number of jumpers:           2
+  Number of static variables:  12
+
+
+MATRIX OF COVARIANCE OF EXOGENOUS SHOCKS
+Variables    eps_star     eps_a
+eps_star     0.000061  0.000017
+eps_a        0.000017  0.000050
+
+POLICY AND TRANSITION FUNCTIONS
+                                 pih               x               y            ynat            rnat               r               s              pi               p              ph               e           ystar          pistar               n              nx       real_wage               a               c     deprec_rate
+s(-1)                              0               0               0               0               0               0               0       -0.400000       -0.400000               0       -1.000000               0               0               0               0               0               0               0       -1.000000
+p(-1)                              0               0               0               0               0               0               0               0        1.000000               0               0               0               0               0               0               0               0               0               0
+ph(-1)                             0               0               0               0               0               0               0               0               0        1.000000               0               0               0               0               0               0               0               0               0
+e(-1)                              0               0               0               0               0               0               0               0               0               0        1.000000               0               0               0               0               0               0               0               0
+a(-1)                              0               0        0.660000        0.660000       -0.224400       -0.224400        0.660000        0.264000        0.264000               0        0.660000               0               0               0               0        0.396000        0.660000        0.396000        0.660000
+ystar(-1)                          0               0               0               0               0               0       -0.860000       -0.344000       -0.344000               0       -0.860000        0.860000               0               0               0        0.344000               0        0.344000       -0.860000
+eps_star                           0               0               0               0               0               0       -1.000000       -0.400000       -0.400000               0       -1.000000        1.000000               0               0               0        0.400000               0        0.400000       -1.000000
+eps_a                              0               0        1.000000        1.000000       -0.340000       -0.340000        1.000000        0.400000        0.400000               0        1.000000               0               0               0               0        0.600000        1.000000        0.600000        1.000000
+
+
+THEORETICAL MOMENTS
+VARIABLE            MEAN  STD. DEV.   VARIANCE
+pih               0.0000     0.0000     0.0000
+x                 0.0000     0.0000     0.0000
+y                 0.0000     0.0095     0.0001
+ynat              0.0000     0.0095     0.0001
+rnat              0.0000     0.0032     0.0000
+r                 0.0000     0.0032     0.0000
+s                 0.0000     0.0157     0.0002
+pi                0.0000     0.0038     0.0000
+p                    NaN        NaN        NaN
+ph                   NaN        NaN        NaN
+e                    NaN        NaN        NaN
+ystar             0.0000     0.0153     0.0002
+pistar            0.0000     0.0000     0.0000
+n                 0.0000     0.0000     0.0000
+nx                0.0000     0.0000     0.0000
+real_wage         0.0000     0.0094     0.0001
+a                 0.0000     0.0095     0.0001
+c                 0.0000     0.0094     0.0001
+deprec_rate       0.0000     0.0094     0.0001
+
+
+
+VARIANCE DECOMPOSITION (in percent)
+               eps_star     eps_a
+pih                 NaN       NaN
+x                 79.41     20.59
+y                  9.00     91.00
+ynat               9.00     91.00
+rnat               9.00     91.00
+r                  9.00     91.00
+s                 66.98     33.02
+pi                38.09     61.91
+ystar            100.00      0.00
+pistar              NaN       NaN
+n                 93.52      6.48
+nx                  NaN       NaN
+real_wage         66.74     33.26
+a                  9.00     91.00
+c                 66.74     33.26
+deprec_rate       38.09     61.91
+
+
+
+MATRIX OF CORRELATIONS
+Variables                y         ynat         rnat            r            s           pi        ystar    real_wage            a            c  deprec_rate
+y                   1.0000       1.0000      -1.0000      -1.0000       0.3433       0.1938       0.2660       0.7779       1.0000       0.7779       0.1938
+ynat                1.0000       1.0000      -1.0000      -1.0000       0.3433       0.1938       0.2660       0.7779       1.0000       0.7779       0.1938
+rnat               -1.0000      -1.0000       1.0000       1.0000      -0.3433      -0.1938      -0.2660      -0.7779      -1.0000      -0.7779      -0.1938
+r                  -1.0000      -1.0000       1.0000       1.0000      -0.3433      -0.1938      -0.2660      -0.7779      -1.0000      -0.7779      -0.1938
+s                   0.3433       0.3433      -0.3433      -0.3433       1.0000       0.3011      -0.8141      -0.3232       0.3433      -0.3232       0.3011
+pi                  0.1938       0.1938      -0.1938      -0.1938       0.3011       1.0000      -0.1892      -0.0062       0.1938      -0.0062       1.0000
+ystar               0.2660       0.2660      -0.2660      -0.2660      -0.8141      -0.1892       1.0000       0.8126       0.2660       0.8126      -0.1892
+real_wage           0.7779       0.7779      -0.7779      -0.7779      -0.3232      -0.0062       0.8126       1.0000       0.7779       1.0000      -0.0062
+a                   1.0000       1.0000      -1.0000      -1.0000       0.3433       0.1938       0.2660       0.7779       1.0000       0.7779       0.1938
+c                   0.7779       0.7779      -0.7779      -0.7779      -0.3232      -0.0062       0.8126       1.0000       0.7779       1.0000      -0.0062
+deprec_rate         0.1938       0.1938      -0.1938      -0.1938       0.3011       1.0000      -0.1892      -0.0062       0.1938      -0.0062       1.0000
+
+
+
+COEFFICIENTS OF AUTOCORRELATION
+Order                1        2        3        4        5
+y               0.6600   0.4356   0.2875   0.1897   0.1252
+ynat            0.6600   0.4356   0.2875   0.1897   0.1252
+rnat            0.6600   0.4356   0.2875   0.1897   0.1252
+r               0.6600   0.4356   0.2875   0.1897   0.1252
+s               0.8186   0.6767   0.5640   0.4731   0.3990
+pi             -0.1088  -0.0804  -0.0604  -0.0462  -0.0360
+ystar           0.8600   0.7396   0.6361   0.5470   0.4704
+real_wage       0.7659   0.5966   0.4721   0.3790   0.3081
+a               0.6600   0.4356   0.2875   0.1897   0.1252
+c               0.7659   0.5966   0.4721   0.3790   0.3081
+deprec_rate    -0.1088  -0.0804  -0.0604  -0.0462  -0.0360
+
+TABLE 1: Cyclical properties of alternative policy regimes
+Case: Optimal Policy
+              Output 	 0.95 
+  Domestic inflation 	 0.00 
+       CPI inflation 	 0.38 
+Nominal interest rate 	 0.32 
+      Terms of trade 	 1.57 
+  Nominal depr. rate 	 0.94 
+
+TABLE 2: Contribution to welfare losses
+Case: Optimal Policy
+mu=1.2, phi=3.0
+Var(Domestic infl.)  	 0.0000 
+Var(Output gap)      	 0.0000 
+Total                	 0.0000 
+
+mu=1.1, phi=3.0
+Var(Domestic infl.)  	 -0.0000 
+Var(Output gap)      	 -0.0000 
+Total                	 -0.0000 
+
+mu=1.2, phi=10.0
+Var(Domestic infl.)  	 -0.0000 
+Var(Output gap)      	 -0.0000 
+Total                	 -0.0000 
+
+mu=1.1, phi=10.0
+Var(Domestic infl.)  	 -0.0000 
+Var(Output gap)      	 -0.0000 
+Total                	 -0.0000 
+
+Total computing time : 0h00m09s

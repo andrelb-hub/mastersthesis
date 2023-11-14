@@ -15,9 +15,9 @@ tic0 = tic;
 global M_ options_ oo_ estim_params_ bayestopt_ dataset_ dataset_info estimation_info ys0_ ex0_
 options_ = [];
 M_.fname = 'REG_MODEL';
-M_.dynare_version = '5.4';
-oo_.dynare_version = '5.4';
-options_.dynare_version = '5.4';
+M_.dynare_version = '5.5';
+oo_.dynare_version = '5.5';
+options_.dynare_version = '5.5';
 %
 % Some global variables initialization
 %
@@ -384,9 +384,9 @@ M_.params(13) = 1.5;
 varphhi = M_.params(13);
 M_.params(14) = 8;
 pssi = M_.params(14);
-M_.params(15) = 0.7;
+M_.params(15) = 0.3;
 omega11 = M_.params(15);
-M_.params(16) = 0.7;
+M_.params(16) = 0.5;
 omega21 = M_.params(16);
 M_.params(17) = 0.01;
 sigmaA1 = M_.params(17);

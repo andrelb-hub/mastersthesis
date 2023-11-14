@@ -27,51 +27,51 @@
 \etoc@startlocaltoc {2}
 \contentsline {subsection}{\numberline {4.1}Regional New Keynesian Model}{27}{subsection.4.1}%
 \contentsline {subsubsection}{\numberline {4.1.1}Household}{30}{subsubsection.4.1.1}%
-\contentsline {subsubsection}{\numberline {4.1.2}Final-Goods Firm}{34}{subsubsection.4.1.2}%
+\contentsline {subsubsection}{\numberline {4.1.2}Final-Goods Firm}{33}{subsubsection.4.1.2}%
 \contentsline {subsubsection}{\numberline {4.1.3}Intermediate-Goods Firms}{35}{subsubsection.4.1.3}%
 \contentsline {subsubsection}{\numberline {4.1.4}Monetary Authority}{39}{subsubsection.4.1.4}%
 \contentsline {subsubsection}{\numberline {4.1.5}Stochastic Shocks}{40}{subsubsection.4.1.5}%
 \contentsline {subsubsection}{\numberline {4.1.6}Equilibrium Conditions}{40}{subsubsection.4.1.6}%
-\contentsline {subsubsection}{\numberline {4.1.7}Model Structure}{42}{subsubsection.4.1.7}%
-\contentsline {subsection}{\numberline {4.2}Steady State}{45}{subsection.4.2}%
-\contentsline {subsubsection}{\numberline {4.2.1}Variables at Steady State}{48}{subsubsection.4.2.1}%
-\contentsline {subsubsection}{\numberline {4.2.2}Steady State Solution}{53}{subsubsection.4.2.2}%
-\contentsline {subsection}{\numberline {4.3}Log-linearization}{54}{subsection.4.3}%
-\contentsline {subsubsection}{\numberline {4.3.1}Log-linear Model Structure}{68}{subsubsection.4.3.1}%
-\contentsline {subsubsection}{\numberline {4.3.2}Extended Log-linear Structure}{70}{subsubsection.4.3.2}%
-\contentsline {subsection}{\numberline {4.4}Data}{73}{subsection.4.4}%
-\contentsline {subsubsection}{\numberline {4.4.1}Parameter Calibration}{74}{subsubsection.4.4.1}%
-\contentsline {subsubsection}{\numberline {4.4.2}Variables at Steady State}{75}{subsubsection.4.4.2}%
-\contentsline {section}{\numberline {5}Results}{76}{section.5}%
-\contentsline {subsection}{\numberline {5.1}Impulse Response Functions}{77}{subsection.5.1}%
-\contentsline {subsubsection}{\numberline {5.1.1}Productivity Shock}{77}{subsubsection.5.1.1}%
-\contentsline {subsubsection}{\numberline {5.1.2}Monetary Shock}{78}{subsubsection.5.1.2}%
-\contentsline {subsection}{\numberline {5.2}Parametrization}{79}{subsection.5.2}%
-\contentsline {section}{References}{81}{section*.332}%
-\contentsline {section}{\numberline {A}Appendix}{84}{appendix.A}%
-\contentsline {subsection}{\numberline {A.1}Table of the Literature Review}{85}{subsection.A.1}%
-\contentsline {subsection}{\numberline {A.2}Definitions and Lemmas}{86}{subsection.A.2}%
-\contentsline {subsection}{\numberline {A.3}Dynare mod file}{90}{subsection.A.3}%
-\contentsline {subsection}{\numberline {A.4}\LaTeX }{97}{subsection.A.4}%
-\contentsline {section}{\numberline {B}New Keynesian Model}{102}{appendix.B}%
+\contentsline {subsubsection}{\numberline {4.1.7}Model Structure}{41}{subsubsection.4.1.7}%
+\contentsline {subsection}{\numberline {4.2}Steady State}{44}{subsection.4.2}%
+\contentsline {subsubsection}{\numberline {4.2.1}Variables at Steady State}{47}{subsubsection.4.2.1}%
+\contentsline {subsubsection}{\numberline {4.2.2}Steady State Solution}{51}{subsubsection.4.2.2}%
+\contentsline {subsection}{\numberline {4.3}Log-linearization}{52}{subsection.4.3}%
+\contentsline {subsubsection}{\numberline {4.3.1}Log-linear Model Structure}{66}{subsubsection.4.3.1}%
+\contentsline {subsubsection}{\numberline {4.3.2}Extended Log-linear Structure}{68}{subsubsection.4.3.2}%
+\contentsline {subsection}{\numberline {4.4}Data}{71}{subsection.4.4}%
+\contentsline {subsubsection}{\numberline {4.4.1}Parameter Calibration}{72}{subsubsection.4.4.1}%
+\contentsline {subsubsection}{\numberline {4.4.2}Variables at Steady State}{73}{subsubsection.4.4.2}%
+\contentsline {section}{\numberline {5}Results}{74}{section.5}%
+\contentsline {subsection}{\numberline {5.1}Impulse Response Functions}{75}{subsection.5.1}%
+\contentsline {subsubsection}{\numberline {5.1.1}Productivity Shock}{75}{subsubsection.5.1.1}%
+\contentsline {subsubsection}{\numberline {5.1.2}Monetary Shock}{76}{subsubsection.5.1.2}%
+\contentsline {subsection}{\numberline {5.2}Parametrization}{77}{subsection.5.2}%
+\contentsline {section}{References}{79}{section*.310}%
+\contentsline {section}{\numberline {A}Appendix}{82}{appendix.A}%
+\contentsline {subsection}{\numberline {A.1}Table of the Literature Review}{83}{subsection.A.1}%
+\contentsline {subsection}{\numberline {A.2}Definitions and Lemmas}{84}{subsection.A.2}%
+\contentsline {subsection}{\numberline {A.3}Dynare mod file}{88}{subsection.A.3}%
+\contentsline {subsection}{\numberline {A.4}\LaTeX }{95}{subsection.A.4}%
+\contentsline {section}{\numberline {B}New Keynesian Model}{101}{appendix.B}%
 \etoc@startlocaltoc {3}
-\contentsline {subsection}{\numberline {B.1}Household}{103}{subsection.B.1}%
-\contentsline {subsection}{\numberline {B.2}Firms}{104}{subsection.B.2}%
-\contentsline {subsubsection}{\numberline {B.2.1}Final-Good Firm}{105}{subsubsection.B.2.1}%
-\contentsline {subsubsection}{\numberline {B.2.2}Intermediate-Good Firms}{106}{subsubsection.B.2.2}%
-\contentsline {subsubsection}{\numberline {B.2.3}Final-Good Firm, part II}{110}{subsubsection.B.2.3}%
-\contentsline {subsection}{\numberline {B.3}Monetary Authority}{111}{subsection.B.3}%
-\contentsline {subsubsection}{\numberline {B.3.1}Stochastic Shocks}{111}{subsubsection.B.3.1}%
-\contentsline {subsection}{\numberline {B.4}Equilibrium Conditions}{112}{subsection.B.4}%
-\contentsline {subsubsection}{\numberline {B.4.1}Model Structure}{112}{subsubsection.B.4.1}%
-\contentsline {subsection}{\numberline {B.5}Steady State}{114}{subsection.B.5}%
-\contentsline {subsubsection}{\numberline {B.5.1}Variables in Steady State}{117}{subsubsection.B.5.1}%
-\contentsline {subsubsection}{\numberline {B.5.2}Steady State Solution}{119}{subsubsection.B.5.2}%
-\contentsline {subsection}{\numberline {B.6}Log-linearization}{119}{subsection.B.6}%
-\contentsline {subsubsection}{\numberline {B.6.1}Log-linear Model Structure}{130}{subsubsection.B.6.1}%
-\contentsline {subsection}{\numberline {B.7}Parameter Calibration}{132}{subsection.B.7}%
-\contentsline {subsection}{\numberline {B.8}Variables at Steady State}{133}{subsection.B.8}%
-\contentsline {subsection}{\numberline {B.9}Impulse Response Functions}{134}{subsection.B.9}%
-\contentsline {subsection}{\numberline {B.10}Dynare mod file}{136}{subsection.B.10}%
-\contentsline {subsection}{\numberline {B.11}ToDo List}{143}{subsection.B.11}%
-\contentsline {section}{Todo list}{143}{subsection.B.11}%
+\contentsline {subsection}{\numberline {B.1}Household}{102}{subsection.B.1}%
+\contentsline {subsection}{\numberline {B.2}Firms}{103}{subsection.B.2}%
+\contentsline {subsubsection}{\numberline {B.2.1}Final-Good Firm}{104}{subsubsection.B.2.1}%
+\contentsline {subsubsection}{\numberline {B.2.2}Intermediate-Good Firms}{105}{subsubsection.B.2.2}%
+\contentsline {subsubsection}{\numberline {B.2.3}Final-Good Firm, part II}{109}{subsubsection.B.2.3}%
+\contentsline {subsection}{\numberline {B.3}Monetary Authority}{110}{subsection.B.3}%
+\contentsline {subsubsection}{\numberline {B.3.1}Stochastic Shocks}{110}{subsubsection.B.3.1}%
+\contentsline {subsection}{\numberline {B.4}Equilibrium Conditions}{111}{subsection.B.4}%
+\contentsline {subsubsection}{\numberline {B.4.1}Model Structure}{111}{subsubsection.B.4.1}%
+\contentsline {subsection}{\numberline {B.5}Steady State}{113}{subsection.B.5}%
+\contentsline {subsubsection}{\numberline {B.5.1}Variables in Steady State}{116}{subsubsection.B.5.1}%
+\contentsline {subsubsection}{\numberline {B.5.2}Steady State Solution}{118}{subsubsection.B.5.2}%
+\contentsline {subsection}{\numberline {B.6}Log-linearization}{118}{subsection.B.6}%
+\contentsline {subsubsection}{\numberline {B.6.1}Log-linear Model Structure}{129}{subsubsection.B.6.1}%
+\contentsline {subsection}{\numberline {B.7}Parameter Calibration}{131}{subsection.B.7}%
+\contentsline {subsection}{\numberline {B.8}Variables at Steady State}{132}{subsection.B.8}%
+\contentsline {subsection}{\numberline {B.9}Impulse Response Functions}{133}{subsection.B.9}%
+\contentsline {subsection}{\numberline {B.10}Dynare mod file}{135}{subsection.B.10}%
+\contentsline {subsection}{\numberline {B.11}ToDo List}{142}{subsection.B.11}%
+\contentsline {section}{Todo list}{142}{subsection.B.11}%

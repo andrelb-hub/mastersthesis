@@ -634,9 +634,9 @@ A Competitive Equilibrium consists of sequences of prices $\{P_{\eta t}^{\ast}, 
 \begin{comment}
 
 \begin{align}
-	Y_{t} &= Y_{1 t} + Y_{2 t} \label{eq_v5:reg-market-clearing-condition-Yt} \\
-	& \text{where:} \quad Y_{\eta t} = C_{\eta 1 t} + C_{\eta 2 t} + I_{\eta t} \label{eq_v5:reg-regional-demand} \\
-	L_{\eta t} &= \int_{0}^{1} L_{\eta jt} \dif j \label{eq_v5:reg-market-clearing-condition-Lt}
+	% Y_{t} &= Y_{1 t} + Y_{2 t} \label{eq_v5:reg-market-clearing-condition-Yt} \\
+	& \text{where:} \quad Y_{\eta t} = C_{\eta 1 t} + C_{\eta 2 t} + I_{\eta t} % \label{eq_v5:reg-regional-demand} \\
+	L_{\eta t} &= \int_{0}^{1} L_{\eta jt} \dif j % \label{eq_v5:reg-market-clearing-condition-Lt}
 \end{align}
 
 \end{comment}
@@ -649,7 +649,7 @@ A Competitive Equilibrium consists of sequences of prices $\{P_{\eta t}^{\ast}, 
 
 \subsubsection{Model Structure}
 
-The model is composed of the preview solutions, forming a square system of 34 variables and \colorbox{yellow}{32 (profit definition missing?)} equations, summarized as follows:
+The model is composed of the preview solutions, forming a square system of 34 variables and 34 equations, summarized as follows:
 
 {\singlespacing
 	
@@ -698,6 +698,18 @@ The model is composed of the preview solutions, forming a square system of 34 va
 			\frac{C_{11t}(1-\omega_{11})}{C_{21t}(1-\omega_{21})} &= \frac{C_{12t}(\omega_{11})}{C_{22t}(\omega_{21})} \tag{\ref{eq_v5:reg-Cn1-Cn2-b}}
 		\end{align}
 		
+		\colorbox{orange}{or below, which closes 35 equations:}
+		
+		\begin{align}
+			\frac{P_{1 t} C_{\eta 1 t}}{\omega_{\eta 1}} &= \frac{P_{2 t} C_{\eta 2 t}}{1 -\omega_{\eta 1}} \tag{\ref{eq_v5:reg-Cn1-Cn2}}
+		\end{align}
+		
+		
+		\item Regional Expense Weight:
+		\begin{align}
+			\frac{C_{11t}(1-\omega_{11})}{C_{21t}(1-\omega_{21})} &= \frac{C_{12t}(\omega_{11})}{C_{22t}(\omega_{21})} \tag{\ref{eq_v5:reg-Cn1-Cn2-b}}
+		\end{align}
+		
 		\item Price Composition of Consumption Bundle:
 		\begin{align}
 			Q_{\eta t} &= C_{\eta t} \left[ \frac{P_{1 t}}{\omega_{\eta 1}} \right]^{\omega_{\eta 1}} \left[ \frac{P_{2 t}}{1 -\omega_{\eta 1}} \right]^{1 -\omega_{\eta 1}} \tag{\ref{eq_v5:reg-total-expense-level}}
@@ -720,7 +732,7 @@ The model is composed of the preview solutions, forming a square system of 34 va
 		
 		\item Production Function:
 		\begin{align}
-			Y_{\eta jt} = Z_{A\eta t} K_{\eta jt}^{\alpha_{\eta}} L_{\eta jt}^{1-\alpha_{\eta}} \tag{\ref{eq_v5:reg-int-good-firm-production-function}}
+			Y_{\eta jt} = Z_{A\eta t} L_{\eta jt} \tag{\ref{eq_v5:reg-int-good-firm-production-function}}
 		\end{align}
 
 		\item Marginal Cost:
@@ -776,6 +788,11 @@ The model is composed of the preview solutions, forming a square system of 34 va
 		\item Regional Market Clearing Condition: \colorbox{orange}{version 02}
 		\begin{align}
 			Y_{\eta t} = C_{1\eta t} + C_{2\eta t} \tag{\ref{eq_v5:reg-regional-demand}}
+		\end{align}
+		
+		\item Labor Regional Market Clearing Condition: \colorbox{orange}{version 02}
+		\begin{align}
+			L_{\eta t} &= \int_{0}^{1} L_{\eta jt} \dif j \tag{\ref{eq_v5:reg-market-clearing-condition-Lt}}
 		\end{align}
 						
 		\end{enumerate}
@@ -834,174 +851,125 @@ The model is composed of the preview solutions, forming a square system of 34 va
 The steady state of a variable is defined by its constancy through time. For any given variable $X_t$, it is in steady state if $\mathbb{E}_t X_{t+1} = X_t = X_{t-1} = X_{ss}$ \cite[p.41]{costa_junior_understanding_2016}. For conciseness, the $ss$ index representing the steady state will be omitted, so that $X \coloneq X_{ss}$. The model in steady state is:
 
 \begin{enumerate}
-
-	\item Budget Constraint: 
+	
+	\item Budget Constraint:
 	\begin{align}
-	\begin{split}
-		& P_{1 t} C_{\eta 1 t} + P_{2 t} C_{\eta 2 t} + P_{\eta t} I_{\eta t} + B_{\eta t} = \\ & \quad = W_{\eta t} L_{\eta t} + R_{Kt} K_{\eta t} + (1 + R_{t-1}) B_{\eta,t-1} + \Pi_{\eta t} \implies
-	\end{split} \tag{\ref{eq_v5:reg-budget-constraint}}
-	\\
-	& P_{1} C_{\eta 1} + P_{2} C_{\eta 2} + P_{\eta} I_{\eta} = W L_{\eta} + R_{K} K_{\eta} + R B_{\eta} + \Pi_{\eta} \label{eq_v5:reg-ss-budget-constraint}
+		& P_{1} C_{\eta 1} + P_{2} C_{\eta 2} + B_{\eta} = W_{\eta} L_{\eta} + (1 + R_{}) B_{\eta} + \Pi_{\eta} \implies \nonumber \\
+		& P_{1} C_{\eta 1} + P_{2} C_{\eta 2} = W_{\eta} L_{\eta} + R_{} B_{\eta} + \Pi_{\eta} \label{eq_v5:reg-ss-budget-constrain}
 	\end{align}
-
-	\item Law of Motion for Capital:
-	\begin{alignat}{2}
-		K_{\eta, t+1} &= (1-\delta)K_{\eta t} + I_{\eta t} &\implies \tag{\ref{eq_v5:reg-law-of-motion-for-capital}} \\
-		K_{\eta} &= (1-\delta)K_{\eta} + I_{\eta} &\implies \nonumber \\
-		I_{\eta} &= \delta K_{\eta} \label{eq_v5:reg-ss-law-of-motion-for-capital}
-	\end{alignat}
-
-	\item Regional Consumption: \colorbox{orange}{version 02}
+	
+	\item Regional Consumption:
 	\begin{align}
-		C_{\eta t} &= C_{\eta 1 t}^{\omega_{\eta 1}} C_{\eta 2 t}^{1-\omega_{\eta 1}} \tag{\ref{eq_v5:reg-consumption-aggregation}} \implies \\
 		C_{\eta} &= C_{\eta 1}^{\omega_{\eta 1}} C_{\eta 2}^{1-\omega_{\eta 1}} \label{eq_v5:reg-ss-consumption-aggregation}
 	\end{align}
 	
-	\item Regional Expense Weight: \colorbox{orange}{version 02}
+	\item Regional Expense Weight:
 	\begin{align}
-		\frac{P_{1 t} C_{\eta 1 t}}{\omega_{\eta 1}} &= \frac{P_{2 t} C_{\eta 2 t}}{1 -\omega_{\eta 1}} \tag{\ref{eq_v5:reg-Cn1-Cn2}} \implies \\
-		\frac{P_{1} C_{\eta 1}}{\omega_{\eta 1}} &= \frac{P_{2} C_{\eta 2}}{1 -\omega_{\eta 1}} \label{eq_v5:reg-ss-Cn1-Cn2}
+		\frac{C_{11}(1-\omega_{11})}{C_{21}(1-\omega_{21})} &= \frac{C_{12}(\omega_{11})}{C_{22}(\omega_{21})} \label{eq_v5:reg-ss-Cn1-Cn2-b}
 	\end{align}
-
-\begin{comment}
-
-	\item Regional Consumption of good 1:
-\begin{align}
-	C_{\eta 1 t} &= Q_{\eta t} \frac{\omega_{\eta 1}}{P_{1 t}} \implies \tag{\ref{eq_v5:reg-Cn-Cn-2}} \\
-	C_{\eta 1} &= \te[] \frac{\omega_{\eta 1}}{P_{1}} \label{eq_v5:reg-ss-C1-Cn-2}
-\end{align}
-
-\item Regional Consumption of good 2:
-\begin{align}
-	C_{\eta 2 t} &= Q_{\eta t} \frac{1 -\omega_{\eta 1}}{P_{2 t}} \implies \tag{\ref{eq_v5:reg-Cn-Cv-2}} \\
-	C_{\eta 2} &= \te[] \frac{1 -\omega_{\eta 1}}{P_{2}} \label{eq_v5:reg-ss-C2-Cn-2}
-\end{align}
-
 	
-\end{comment}
-
+	\colorbox{orange}{or below, which closes 35 equations:}
+	
+	\begin{align}
+		\frac{P_{1} C_{\eta 1}}{\omega_{\eta 1}} &= \frac{P_{2} C_{\eta 2}}{1 -\omega_{\eta 1}} \tag{\ref{eq_v5:reg-Cn1-Cn2}}
+	\end{align}
+	
 	\item Price Composition of Consumption Bundle:
 	\begin{align}
-		Q_{\eta t} &= C_{\eta t} \left[ \frac{P_{1 t}}{\omega_{\eta 1}} \right]^{\omega_{\eta 1}} \left[ \frac{P_{2 t}}{1 -\omega_{\eta 1}} \right]^{1 -\omega_{\eta 1}} \implies \tag{\ref{eq_v5:reg-total-expense-level}} 
-		\\
-		\te[] &= C_{\eta} \left[ \frac{P_{1}}{\omega_{\eta 1}} \right]^{\omega_{\eta 1}} \left[ \frac{P_{2}}{1 -\omega_{\eta 1}} \right]^{1 -\omega_{\eta 1}} \label{eq_v5:reg-ss-price-eta-level}
+		Q_{\eta} &= C_{\eta} \left[ \frac{P_{1}}{\omega_{\eta 1}} \right]^{\omega_{\eta 1}} \left[ \frac{P_{2}}{1 -\omega_{\eta 1}} \right]^{1 -\omega_{\eta 1}} \label{eq_v5:reg-ss-total-expense-level}
 	\end{align}
-
+	
 	\item Labor Supply:
 	\begin{align}
-		\frac{\phi L_{\eta t}^{\varphi}}{C_{\eta t}^{1-\sigma}} &= \frac{W_{\eta t}}{Q_{\eta t}} \implies \tag{\ref{eq_v5:reg-labor-supply}} \\
-		\frac{\phi L_{\eta}^{\varphi}}{C_{\eta}^{1-\sigma}} &= \frac{W}{\te[]} \label{eq_v5:reg-ss-household-labor-supply}
+		\frac{\phi L_{\eta}^{\varphi}}{C_{\eta}^{1-\sigma}} = \frac{W_{\eta}}{Q_{\eta}} \label{eq_v5:reg-ss-labor-supply}
 	\end{align}
-
+	
 	\item Euler equation for the bonds return:
-	\begin{alignat}{2}
-		\frac{ C_{\eta t}^{1-\sigma}}{Q_{\eta t}} &= \beta (1 + R_{t}) \E \left\{ \frac{ C_{\eta, t+1}^{1-\sigma}}{Q_{\eta, t+1}} \right\} &\implies \tag{\ref{eq_v5:reg-bonds-euler-equation}} 
-		\\
-		\frac{ C_{\eta}^{1-\sigma}}{ \te[]} &= \beta (1 + R) \frac{ C_{\eta}^{1-\sigma}}{ \te[]} &\implies \nonumber 
-		\\
-		\beta &= \frac{1}{(1 + R)} \label{eq_v5:reg-ss-bonds-euler-equation}
-	\end{alignat}
-
-	\item Euler equation for the capital return:
-	\begin{alignat}{2}
-		\frac{ C_{\eta t}^{1-\sigma}}{Q_{\eta t}} P_{\eta t} &= \beta \mathbb{E}_t \left\{ \frac{ C_{\eta, t+1}^{1-\sigma}}{Q_{\eta, t+1}} [(1-\delta) P_{\eta, t+1} + R_{K,t+1}] \right\} &\implies \tag{\ref{eq_v5:reg-capital-euler-equation}} \\
-		\frac{ C_{\eta}^{1-\sigma}}{ \te[]} P_{\eta} &= \beta \frac{ C_{\eta}^{1-\sigma}}{ \te[]} P_{\eta} \left[ (1-\delta) + \frac{R_{K}}{P_{\eta}} \right] &\implies \nonumber \\
-		1 &= \beta \left[ (1-\delta) + \frac{R_{K}}{P_{\eta}} \right] \label{eq_v5:reg-ss-capital-euler-equation}
-	\end{alignat}
-
+	\begin{align}
+		\frac{C_{\eta}^{1-\sigma}}{Q_{\eta}} &= \beta (1 + R_{}) \E \left\{ \frac{C_{\eta}^{1-\sigma}}{Q_{\eta}} \right\} \implies \nonumber \\ 
+		1 &= \beta (1 + R_{}) \label{eq_v5:reg-ss-bonds-euler-equation}
+	\end{align}
+	
 	\item Bundle Technology:
 	\begin{align}
-		Y_{\eta t} = \left( \int_{0}^{1} Y_{\eta jt}^{\frac{\psi-1}{\psi}} \dif j \right)^{\frac{\psi}{\psi-1}} \implies %\nonumber \\
 		Y_{\eta} = \left( \int_{0}^{1} Y_{\eta j}^{\frac{\psi-1}{\psi}} \dif j \right)^{\frac{\psi}{\psi-1}} \label{eq_v5:reg-ss-final-goods-firm-bundle-rule}
 	\end{align}
 	
 	\item Production Function:
 	\begin{align}
-		Y_{\eta jt} = Z_{A\eta t} K_{\eta jt}^{\alpha_{\eta}} L_{\eta jt}^{1-\alpha_{\eta}} \implies Y_{\eta j} = Z_{A\eta} K_{\eta j}^{\alpha_{\eta}} L_{\eta j}^{1-\alpha_{\eta}} \label{eq_v5:reg-ss-int-good-firm-production-function}
-	\end{align}
-	
-	\item Capital Demand:
-	\begin{align}
-		K_{\eta jt} = {\alpha_{\eta}} Y_{\eta jt} \frac{\Lambda_{\eta t}}{R_{Kt}} \implies K_{\eta j} = {\alpha_{\eta}} Y_{\eta j} \frac{\Lambda_{\eta}}{R_K} \label{eq_v5:reg-ss-int-good-firm-FOC-Kt}
-	\end{align}
-	
-	\item Labor Demand:
-	\begin{align}
-		L_{\eta jt} = (1-\alpha_{\eta}) Y_{\eta jt} \frac{\Lambda_{\eta t}}{W_{\eta t}} \implies L_{\eta j} = (1 -{\alpha_{\eta}}) Y_{\eta j} \frac{\Lambda_{\eta}}{W} \label{eq_v5:reg-ss-int-good-firm-FOC-Lt}
+		Y_{\eta j} = Z_{A\eta} L_{\eta j} \label{eq_v5:reg-ss-int-good-firm-production-function}
 	\end{align}
 	
 	\item Marginal Cost:
 	\begin{align}
-		\Lambda_{\eta t} &= \frac{1}{Z_{A\eta t}} \left( \frac{R_{Kt}}{{\alpha_{\eta}}} \right)^{{\alpha_{\eta}}} \left( \frac{W_{\eta t}}{1-\alpha_{\eta}} \right)^{1-\alpha_{\eta}} \implies \nonumber \\
-		\Lambda_{\eta} &= \frac{1}{Z_{A\eta}} \left( \frac{R_K}{{\alpha_{\eta}}} \right)^{{\alpha_{\eta}}} \left( \frac{W}{1-\alpha_{\eta}} \right)^{1-\alpha_{\eta}} \label{eq_v5:reg-ss-int-good-firm-MC-2}
+		\Lambda_{\eta} = \frac{W_{\eta}}{Z_{A\eta}} \label{eq_v5:reg-ss-int-good-firm-FOC-L}
 	\end{align}
 	
 	\item Optimal Price:
-	\begin{alignat}{2}
-		P_{\eta t}^{\ast} &= \frac{\psi}{\psi-1} \cdot \frac{\E \sum_{s=0}^{\infty} \left\{\theta^s Y_{\eta j,t+s} \Lambda_{\eta, t+s} / \prod_{k=0}^{s-1}(1+R_{t+k}) \right\}} {\E \sum_{s=0}^{\infty} \left\{ \theta^s Y_{\eta j,t+s} / \prod_{k=0}^{s-1}(1+R_{t+k}) \right\}} \tag{\ref{eq_v5:reg-int-good-firm-optimal-price-FOC-3}} \\
-		P_{\eta}^{\ast} &= \frac{\psi}{\psi-1} \cdot \frac{ Y_{\eta j} \Lambda_{\eta} / [1-\theta(1-R)]} {Y_{\eta j} / [1-\theta(1-R)]} \implies \nonumber \\
-		P_{\eta}^{\ast} &= \frac{\psi}{\psi-1} \Lambda_{\eta} \label{eq_v5:reg-ss-int-good-firm-optimal-price-FOC-3}
-	\end{alignat}
+	\begin{align}
+		P_{\eta}^{\ast} &= \frac{\psi}{\psi-1} \cdot \frac{ \E \sum_{s=0}^{\infty} \left\{ \theta^s Y_{\eta j} \Lambda_{\eta} / \prod_{k=0}^{s-1}(1+R_{}) \right\}} {\E \sum_{s=0}^{\infty} \left\{ \theta^s Y_{\eta j} / \prod_{k=0}^{s-1}(1 + R_{}) \right\}} \implies \nonumber \\
+		P_{\eta}^{\ast} &= \frac{\psi}{\psi-1} \cdot \Lambda_{\eta} \label{eq_v5:reg-ss-int-good-firm-optimal-price-FOC-3}
+	\end{align}
 	
 	\item Regional Price Level:
-	\begin{alignat}{2}
-		P_{\eta t} &= \left[ \theta P_{\eta t-1}^{1-\psi} + (1-\theta) P_{\eta t}^{\ast 1-\psi} \right]^\frac{1}{1-\psi} &&\implies \nonumber \\
-		P_{\eta}^{1-\psi} &= \theta P_{\eta}^{1-\psi} + (1-\theta) P_{\eta}^{\ast 1-\psi} &&\implies \nonumber \\ 
-		(1-\theta) P_{\eta}^{1-\psi} &= (1-\theta) P_{\eta}^{\ast 1-\psi} &&\implies P_{\eta} = P_{\eta}^{\ast} \label{eq_v5:reg-ss-general-price-level}
-	\end{alignat}
+	\begin{align}
+		P_{\eta} &= \left[ \theta P_{\eta}^{1-\psi} + (1-\theta) P_{\eta}^{\ast 1-\psi} \right]^\frac{1}{1-\psi} \implies \nonumber \\
+		P_{\eta} &= P_{\eta}^{\ast} \label{eq_v5:reg-ss-general-price-level}
+	\end{align}
 	
 	\item Monetary Policy:
 	\begin{align}
-		\label{eq_v5:reg-ss-monetary-policy}
-		\frac{R_{t}}{R} =
-		\left( \frac{R_{t-1}}{R} \right)^{\gamma_R}  \left[
-		\left( \frac{\pi_t}{\pi} \right)^{\gamma_\pi}
-		\left( \frac{Y_{t}}{Y} \right)^{\gamma_Y} \right]^{1-\gamma_R} Z_{Mt}
-		\implies Z_{M} = 1
+		\frac{R_{}}{R} &= \left( \frac{R_{}}{R} \right)^{\gamma_{R}} \left[ \left( \frac{\pi_{}}{\pi_{}} \right)^{\gamma_{\pi}} \left( \frac{Y_{}}{Y_{}} \right)^{\gamma_{Y}} \right]^{1-\gamma_{R}} Z_{M} \implies \nonumber \\
+		Z_{M} &= 1\label{eq_v5:reg-ss-monetary-policy}
 	\end{align}
 	
 	\item National Gross Inflation Rate:
 	\begin{align}
-		\pi_t = \frac{P_t}{P_{t-1}} \implies \pi = 1 \label{eq_v5:reg-ss-gross-inflation-rate}
+		\pi_t &= \frac{P_{}}{P_{}} \implies \nonumber \\
+		\pi_t &= 1 \label{eq_v5:reg-ss-gross-inflation-rate}
 	\end{align}
 	
 	\item National Price Level:
 	\begin{align}
-		P_t &= \frac{P_{1t} Y_{1t} + P_{2t} Y_{2t}}{Y_{t}} \implies P = \frac{P_{1} Y_{1} + P_{2} Y_{2}}{Y_{}} \label{eq_v5:ss-national-price-level} % P_{t} = \theta_{P1} P_{1t} + (1 -\theta_{P1}) P_{2t} \implies P = \theta_{P1} P_{1} + (1 -\theta_{P1}) P_{2} 
+		P_{} &= \frac{P_{1} Y_{1} + P_{2} Y_{2}}{Y_{}} \label{eq_v5:reg-ss-national-price-level}
 	\end{align}
 	
 	\item Regional Gross Inflation Rate:
 	\begin{align}
-		\pi_{\eta t} = \frac{P_{\eta t}}{P_{\eta, t-1}} \implies \pi_{\eta} = 1 \label{eq_v5:ss-regional-inflation}
+		\pi_{\eta} &= \frac{P_{\eta}}{P_{\eta}} \implies \nonumber \\
+		\pi_{\eta} &= 1 \label{eq_v5:reg-ss-regional-inflation}
 	\end{align}
 	
 	\item Productivity Shock:
-	\begin{alignat}{2}
-		\ln{Z_{A\eta t}} &= (1 -\rho_{A\eta}) \ln{Z_{A\eta}} + \rho_{A\eta} \ln{Z_{A\eta,t-1}} + \varepsilon_{A\eta t} \quad &\implies \nonumber \\
-		\ln{Z_{A\eta}} &= (1 -\rho_{A\eta}) \ln{Z_{A\eta}} + \rho_{A\eta} \ln{Z_{A\eta}} + \varepsilon_{A\eta} &\implies \nonumber \\
+	\begin{align}
+		\ln{Z_{A\eta}} &= (1-\rho_{A\eta})\ln{Z_{A\eta}} + \rho_{A\eta}\ln{Z_{A\eta}} + \varepsilon_{A\eta} \implies \nonumber \\
 		\varepsilon_{A\eta} &= 0 \label{eq_v5:reg-ss-productivity-shock}
-	\end{alignat}
+	\end{align}
 	
 	\item Monetary Shock:
-	\begin{alignat}{2}
-		\ln{Z_{Mt}} &= (1-\rho_M)\ln{Z_{M}} + \rho_M\ln{Z_{M,t-1}} + \varepsilon_{Mt} \quad &\implies \nonumber \\
-		\ln{Z_{M}} &= (1-\rho_M)\ln{Z_{M}} + \rho_M\ln{Z_{M}} + \varepsilon_{M} &\implies \nonumber \\
+	\begin{align}
+		\ln{Z_{M}} &= (1-\rho_M)\ln{Z_{M}} + \rho_M\ln{Z_{M}} + \varepsilon_{M} \implies \nonumber \\
 		\varepsilon_{M} &= 0 \label{eq_v5:reg-ss-monetary-shock}
-	\end{alignat}
+	\end{align}
 	
 	\item Market Clearing Condition:
 	\begin{align}
-		Y_{t} &= Y_{1 t} + Y_{2 t} \implies \tag{\ref{eq_v5:reg-market-clearing-condition-Yt}} \\
-		Y &= Y_{1} + Y_{2} \label{eq_v5:reg-ss-market-clearing-condition}
+		Y_{} &= Y_{1} + Y_{2} \label{eq_v5:reg-ss-market-clearing-condition-Y}
 	\end{align}
 	
-	\item Regional Market Clearing Condition:
+	\item Regional Market Clearing Condition: \colorbox{orange}{version 02}
 	\begin{align}
-		Y_{\eta t} &= C_{\eta t} + I_{\eta t} \implies \tag{\ref{eq_v5:reg-regional-demand}} \\
-		Y_{\eta} &= C_{\eta} + I_{\eta} \label{eq_v5:reg-ss-total-yn}
+		Y_{\eta} &= C_{1\eta} + C_{2\eta} \label{eq_v5:reg-ss-regional-demand}
+	\end{align}
+	
+	\item Labor Regional Market Clearing Condition: \colorbox{orange}{version 02}
+	\begin{align}
+		L_{\eta} &= \int_{0}^{1} L_{\eta j} \dif j \label{eq_v5:reg-ss-market-clearing-condition-L}
 	\end{align}
 	
 \end{enumerate}
+
+\newpage
 
 % --------------------------------------------------
 % STEADY STATE SOLUTION
@@ -1009,12 +977,13 @@ The steady state of a variable is defined by its constancy through time. For any
 
 \subsubsection{Variables at Steady State}
 
-	For the steady state solution, all endogenous variables will be determined with respect to the parameters. It is assumed that one regional price level and both productivity levels are normalized to one:\footnote{where $\vec{\bm{1}}$ is the unit vector.}
+	For the steady state solution, all endogenous variables will be determined with respect to the parameters. It is assumed that one regional price level and one productivity level are equal to one. The other productivity level is a multiple of the first:\footnote{where $\vec{\bm{1}}$ is the unit vector.}
 	\begin{align}
-		\langle \begin{matrix} P_{1} & Z_{A1} & Z_{A2} \end{matrix} \rangle = \vec{\bm{1}} \label{eq_v5:reg-ss-p1-za1}
+		\langle \begin{matrix} P_{1} & Z_{A1} \end{matrix} \rangle = \vec{\bm{1}} \label{eq_v5:reg-ss-p1-za1} \\
+		Z_{A2} = \theta_{A1} Z_{A1} \label{eq_v5:reg-ss-za2-0}
 	\end{align}
 	
-	From \ref{eq_v5:reg-ss-monetary-policy}, \ref{eq_v5:reg-ss-gross-inflation-rate} and \ref{eq_v5:ss-regional-inflation}, the monetary shock, the national and regional gross inflation rates are:
+	From \ref{eq_v5:reg-ss-monetary-policy}, \ref{eq_v5:reg-ss-gross-inflation-rate} and \ref{eq_v5:reg-ss-regional-inflation}, the monetary shock, the national and regional gross inflation rates are:
 	\begin{align}
 		\langle \begin{matrix} Z_{M} & \pi & \pi_{1} & \pi_{2} \end{matrix} \rangle  = \vec{\bm{1}}
 	\end{align}
@@ -1029,6 +998,8 @@ The steady state of a variable is defined by its constancy through time. For any
 		\beta &= \frac{1}{(1 + R)} \implies \tag{\ref{eq_v5:reg-ss-bonds-euler-equation}} \\
 		R &= \frac{1}{\beta} - 1 \label{eq_v5:reg-ss-R}
 	\end{align}
+
+\begin{comment}
 	
 	From \ref{eq_v5:reg-ss-capital-euler-equation}, the return on capital $R_K$ for $\eta = 1$ is:
 	\begin{align}
@@ -1041,6 +1012,8 @@ The steady state of a variable is defined by its constancy through time. For any
 		\frac{R_K}{R_K} &= \frac{P_{1} \left[ \frac{1}{\beta} - (1-\delta) \right]}{P_{2} \left[ \frac{1}{\beta} - (1-\delta) \right]} \implies \nonumber \\
 		1 &= \frac{P_{1}}{P_{2}} \implies P_{1} = P_{2} \label{eq_v5:reg-ss-p1-p2}
 	\end{align}
+
+\end{comment}
 
 From \ref{eq_v5:reg-ss-general-price-level} and \ref{eq_v5:reg-ss-p1-p2}, the regional optimal price $P_{\eta}^{\ast}$ is:
 \begin{align}

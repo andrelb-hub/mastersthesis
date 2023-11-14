@@ -141,8 +141,8 @@ siggma   = 2     ;  % relative risk aversion coefficient
 phhi     = 1     ;  % relative labor weight in utility
 varphhi  = 1.5   ;  % marginal disutility of labor supply
 pssi     = 8     ;  % elasticity of substitution between intermediate goods
-omega11  = 0.7   ;  % weight of good 1 in consumption composition of region 1
-omega21  = 0.7   ;  % weight of good 1 in consumption composition of region 2
+omega11  = 0.3   ;  % weight of good 1 in consumption composition of region 1
+omega21  = 0.5   ;  % weight of good 1 in consumption composition of region 2
 % -------------------------------------------------- % 
 % standard errors values                             %
 % -------------------------------------------------- %
