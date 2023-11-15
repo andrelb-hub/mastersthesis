@@ -1,4 +1,4 @@
-This is LuaHBTeX, Version 1.17.0 (MiKTeX 23.5) (format=lualatex 2023.8.25)  13 NOV 2023 21:23
+This is LuaHBTeX, Version 1.17.0 (MiKTeX 23.5) (format=lualatex 2023.8.25)  15 NOV 2023 19:29
  restricted system commands enabled.
 **thesis.tex
 (./thesis.tex
@@ -1050,6 +1050,12 @@ LaTeX Info: Redefining \Relbar on input line 971.
 LaTeX Info: Redefining \[ on input line 2953.
 LaTeX Info: Redefining \] on input line 2954.
 )
+(C:/Users/andre/AppData/Local/Programs/MiKTeX/tex/latex/mathtools/empheq.sty
+Package: empheq 2017/03/31 v2.15 Emphasizing equations
+
+(C:/Users/andre/AppData/Local/Programs/MiKTeX/tex/latex/mathtools/mhsetup.sty
+Package: mhsetup 2021/03/18 v1.4 programming setup (MH)
+)
 (C:/Users/andre/AppData/Local/Programs/MiKTeX/tex/latex/mathtools/mathtools.sty
 Package: mathtools 2022/06/29 v1.29 mathematical typesetting tools
 (C:/Users/andre/AppData/Local/Programs/MiKTeX/tex/latex/tools/calc.sty
@@ -1065,9 +1071,6 @@ LaTeX Info: Redefining \addtolength on input line 81.
 \calc@Ccount=\count361
 \calc@Cskip=\skip80
 )
-(C:/Users/andre/AppData/Local/Programs/MiKTeX/tex/latex/mathtools/mhsetup.sty
-Package: mhsetup 2021/03/18 v1.4 programming setup (MH)
-)
 \g_MT_multlinerow_int=\count362
 \l_MT_multwidth_dim=\dimen350
 \origjot=\skip81
@@ -1079,7 +1082,25 @@ Package: mhsetup 2021/03/18 v1.4 programming setup (MH)
 \l_MT_below_shortintertext_sep=\dimen356
 \xmathstrut@box=\box147
 \xmathstrut@dim=\dimen357
-) (C:/Users/andre/AppData/Local/Programs/MiKTeX/tex/latex/amsfonts/amssymb.sty
+)
+\l_EQ_equationtype_int=\count363
+\l_EQ_alignmentmode_int=\count364
+\l_EQ_totalwidth_dim=\dimen358
+\l_EQ_displaywidth_dim=\dimen359
+\l_EQ_temp_linewidth_dim=\dimen360
+\l_EQ_linewidth_dim=\dimen361
+\EmphEqdelimitershortfall=\dimen362
+\EmphEqdelimiterfactor=\count365
+\g_EQ_toptag_height_dim=\dimen363
+\g_EQ_bottomtag_depth_dim=\dimen364
+\g_EQ_toprow_height_dim=\dimen365
+\g_EQ_bottomrow_depth_dim=\dimen366
+\g_EQ_widesttag_dim=\dimen367
+\EQ_mathdisplay_box=\box148
+\EQ_tag_box=\box149
+\g_EQ_temprow_int=\count366
+)
+(C:/Users/andre/AppData/Local/Programs/MiKTeX/tex/latex/amsfonts/amssymb.sty
 Package: amssymb 2013/01/14 v3.01 AMS font symbols
 
 (C:/Users/andre/AppData/Local/Programs/MiKTeX/tex/latex/amsfonts/amsfonts.sty
@@ -1144,19 +1165,19 @@ Package: xparse 2023-02-02 L3 Experimental document command parser
 (C:/Users/andre/AppData/Local/Programs/MiKTeX/tex/latex/l3packages/xtemplate/xt
 emplate.sty
 Package: xtemplate 2023-02-02 L3 Experimental prototype document functions
-\l__xtemplate_tmp_dim=\dimen358
-\l__xtemplate_tmp_int=\count363
+\l__xtemplate_tmp_dim=\dimen368
+\l__xtemplate_tmp_int=\count367
 \l__xtemplate_tmp_muskip=\muskip17
 \l__xtemplate_tmp_skip=\skip82
 )
 Package: xfrac 2023-02-02 L3 Experimental split-level fractions
-\l__xfrac_slash_box=\box148
-\l__xfrac_tmp_box=\box149
-\l__xfrac_denominator_bot_sep_dim=\dimen359
-\l__xfrac_numerator_bot_sep_dim=\dimen360
-\l__xfrac_numerator_top_sep_dim=\dimen361
-\l__xfrac_slash_left_sep_dim=\dimen362
-\l__xfrac_slash_right_sep_dim=\dimen363
+\l__xfrac_slash_box=\box150
+\l__xfrac_tmp_box=\box151
+\l__xfrac_denominator_bot_sep_dim=\dimen369
+\l__xfrac_numerator_bot_sep_dim=\dimen370
+\l__xfrac_numerator_top_sep_dim=\dimen371
+\l__xfrac_slash_left_sep_dim=\dimen372
+\l__xfrac_slash_right_sep_dim=\dimen373
 \l__xfrac_slash_left_muskip=\muskip18
 \l__xfrac_slash_right_muskip=\muskip19
 
@@ -1176,10 +1197,10 @@ Package: amsthm 2020/05/29 v2.20.6
 \thm@headsep=\skip85
 \dth@everypar=\toks55
 )
-\c@definition=\count364
-\c@theorem=\count365
-\c@lemma=\count366
-\c@corollary=\count367
+\c@definition=\count368
+\c@theorem=\count369
+\c@lemma=\count370
+\c@corollary=\count371
 
 (C:/Users/andre/AppData/Local/Programs/MiKTeX/tex/latex/psnfss/pifont.sty
 Package: pifont 2020/03/25 PSNFSS-v9.3 Pi font support (SPQR) 
@@ -1254,11 +1275,11 @@ Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
 lestring.sty
 Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
-\c@section@level=\count368
+\c@section@level=\count372
 )
-\@linkdim=\dimen364
-\Hy@linkcounter=\count369
-\Hy@pagecounter=\count370
+\@linkdim=\dimen374
+\Hy@linkcounter=\count373
+\Hy@pagecounter=\count374
 
 (C:/Users/andre/AppData/Local/Programs/MiKTeX/tex/latex/hyperref/pd1enc.def
 File: pd1enc.def 2023-06-25 v7.01a Hyperref: PDFDocEncoding definition (HO)
@@ -1266,7 +1287,7 @@ File: pd1enc.def 2023-06-25 v7.01a Hyperref: PDFDocEncoding definition (HO)
 (C:/Users/andre/AppData/Local/Programs/MiKTeX/tex/generic/intcalc/intcalc.sty
 Package: intcalc 2019/12/15 v1.3 Expandable calculations with integers (HO)
 )
-\Hy@SavedSpaceFactor=\count371
+\Hy@SavedSpaceFactor=\count375
 
 (C:/Users/andre/AppData/Local/Programs/MiKTeX/tex/latex/hyperref/puenc.def
 File: puenc.def 2023-06-25 v7.01a Hyperref: PDF Unicode definition (HO)
@@ -1279,14 +1300,14 @@ Package hyperref Info: Plain pages OFF on input line 4182.
 Package hyperref Info: Backreferencing OFF on input line 4187.
 Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
 Package hyperref Info: Bookmarks ON on input line 4434.
-\c@Hy@tempcnt=\count372
+\c@Hy@tempcnt=\count376
 
 (C:/Users/andre/AppData/Local/Programs/MiKTeX/tex/latex/url/url.sty
 \Urlmuskip=\muskip20
 Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 )
 LaTeX Info: Redefining \url on input line 4772.
-\XeTeXLinkMargin=\dimen365
+\XeTeXLinkMargin=\dimen375
 
 (C:/Users/andre/AppData/Local/Programs/MiKTeX/tex/generic/bitset/bitset.sty
 Package: bitset 2019/12/09 v1.3 Handle bit-vector datatype (HO)
@@ -1296,9 +1317,9 @@ Package: bitset 2019/12/09 v1.3 Handle bit-vector datatype (HO)
 Package: bigintcalc 2019/12/15 v1.5 Expandable calculations on big integers (HO
 )
 ))
-\Fld@menulength=\count373
-\Field@Width=\dimen366
-\Fld@charsize=\dimen367
+\Fld@menulength=\count377
+\Field@Width=\dimen376
+\Fld@charsize=\dimen377
 Package hyperref Info: Hyper figures OFF on input line 6051.
 Package hyperref Info: Link nesting OFF on input line 6056.
 Package hyperref Info: Hyper index ON on input line 6059.
@@ -1311,9 +1332,9 @@ Package hyperref Info: PDF/A mode OFF on input line 6081.
 Package: atbegshi-ltx 2021/01/10 v1.0c Emulation of the original atbegshi
 package with kernel methods
 )
-\Hy@abspage=\count374
-\c@Item=\count375
-\c@Hfootnote=\count376
+\Hy@abspage=\count378
+\c@Item=\count379
+\c@Hfootnote=\count380
 )
 Package hyperref Info: Driver (autodetected): hluatex.
 (C:/Users/andre/AppData/Local/Programs/MiKTeX/tex/latex/hyperref/hluatex.def
@@ -1329,8 +1350,8 @@ Package: atveryend-ltx 2020/08/19 v1.0a Emulation of the original atveryend pac
 kage
 with kernel methods
 )
-\Fld@listcount=\count377
-\c@bookmark@seq@number=\count378
+\Fld@listcount=\count381
+\c@bookmark@seq@number=\count382
 
 (C:/Users/andre/AppData/Local/Programs/MiKTeX/tex/latex/rerunfilecheck/rerunfil
 echeck.sty
@@ -1350,7 +1371,7 @@ Package: bookmark 2020-11-06 v1.29 PDF bookmarks (HO)
 
 (C:/Users/andre/AppData/Local/Programs/MiKTeX/tex/latex/bookmark/bkm-pdftex.def
 File: bkm-pdftex.def 2020-11-06 v1.29 bookmark driver for pdfTeX (HO)
-\BKM@id=\count379
+\BKM@id=\count383
 )) (C:/Users/andre/AppData/Local/Programs/MiKTeX/tex/latex/acronym/acronym.sty
 Package: acronym 2020/04/17 v1.47 Support for acronyms (Tobias Oetiker)
 
@@ -1359,8 +1380,8 @@ Package: suffix 2006/07/15 1.5a Variant command support
 )
 (C:/Users/andre/AppData/Local/Programs/MiKTeX/tex/latex/xstring/xstring.sty
 (C:/Users/andre/AppData/Local/Programs/MiKTeX/tex/generic/xstring/xstring.tex
-\integerpart=\count380
-\decimalpart=\count381
+\integerpart=\count384
+\decimalpart=\count385
 )
 Package: xstring 2023/01/14 v1.85 String manipulations (CT)
 )
@@ -1375,18 +1396,146 @@ Package: environ 2014/05/04 v0.3 A new way to define environments
 ty
 Package: trimspaces 2009/09/17 v1.1 Trim spaces around a token list
 ))
-\tcb@titlebox=\box150
-\tcb@upperbox=\box151
-\tcb@lowerbox=\box152
-\tcb@phantombox=\box153
-\c@tcbbreakpart=\count382
-\c@tcblayer=\count383
-\c@tcolorbox@number=\count384
-\tcb@temp=\box154
-\tcb@temp=\box155
+\tcb@titlebox=\box152
+\tcb@upperbox=\box153
+\tcb@lowerbox=\box154
+\tcb@phantombox=\box155
+\c@tcbbreakpart=\count386
+\c@tcblayer=\count387
+\c@tcolorbox@number=\count388
 \tcb@temp=\box156
 \tcb@temp=\box157
+\tcb@temp=\box158
+\tcb@temp=\box159
+
+(C:/Users/andre/AppData/Local/Programs/MiKTeX/tex/latex/tcolorbox/tcbraster.cod
+e.tex
+Library (tcolorbox): 'tcbraster.code.tex' version '6.0.4'
+\c@tcbrastercolumn=\count389
+\c@tcbrasterrow=\count390
+\c@tcbrasternum=\count391
+\c@tcbraster=\count392
 )
+(C:/Users/andre/AppData/Local/Programs/MiKTeX/tex/latex/tcolorbox/tcbskins.code
+.tex
+Library (tcolorbox): 'tcbskins.code.tex' version '6.0.4'
+
+(C:/Users/andre/AppData/Local/Programs/MiKTeX/tex/latex/tikzfill/tikzfill.image
+.sty
+Package: tikzfill.image 2023/08/08 v1.0.1 Image filling library for TikZ
+
+(C:/Users/andre/AppData/Local/Programs/MiKTeX/tex/latex/tikzfill/tikzfill-commo
+n.sty
+Package: tikzfill-common 2023/08/08 v1.0.1 Auxiliary code for tikzfill
+)
+(C:/Users/andre/AppData/Local/Programs/MiKTeX/tex/latex/tikzfill/tikzlibraryfil
+l.image.code.tex
+File: tikzlibraryfill.image.code.tex 2023/08/08 v1.0.1 Image filling library
+\l__tikzfill_img_box=\box160
+))
+(C:/Users/andre/AppData/Local/Programs/MiKTeX/tex/latex/tcolorbox/tcbskinsjigsa
+w.code.tex
+Library (tcolorbox): 'tcbskinsjigsaw.code.tex' version '6.0.4'
+))
+(C:/Users/andre/AppData/Local/Programs/MiKTeX/tex/latex/tcolorbox/tcbbreakable.
+code.tex
+Library (tcolorbox): 'tcbbreakable.code.tex' version '6.0.4'
+(C:/Users/andre/AppData/Local/Programs/MiKTeX/tex/latex/pdfcol/pdfcol.sty
+Package: pdfcol 2022-09-21 v1.7 Handle new color stacks for pdfTeX (HO)
+)
+Package pdfcol Info: New color stack `tcb@breakable' = 1 on input line 23.
+\tcb@testbox=\box161
+\tcb@totalupperbox=\box162
+\tcb@totallowerbox=\box163
+)
+(C:/Users/andre/AppData/Local/Programs/MiKTeX/tex/latex/tcolorbox/tcbhooks.code
+.tex
+Library (tcolorbox): 'tcbhooks.code.tex' version '6.0.4'
+)
+(C:/Users/andre/AppData/Local/Programs/MiKTeX/tex/latex/tcolorbox/tcbtheorems.c
+ode.tex
+Library (tcolorbox): 'tcbtheorems.code.tex' version '6.0.4'
+)
+(C:/Users/andre/AppData/Local/Programs/MiKTeX/tex/latex/tcolorbox/tcbfitting.co
+de.tex
+Library (tcolorbox): 'tcbfitting.code.tex' version '6.0.4'
+\tcbfitdim=\dimen378
+\tcb@lowerfitdim=\dimen379
+\tcb@upperfitdim=\dimen380
+\tcb@cur@hbadness=\count393
+)
+(C:/Users/andre/AppData/Local/Programs/MiKTeX/tex/latex/tcolorbox/tcblistingsut
+f8.code.tex
+Library (tcolorbox): 'tcblistingsutf8.code.tex' version '6.0.4'
+
+(C:/Users/andre/AppData/Local/Programs/MiKTeX/tex/latex/tcolorbox/tcblistings.c
+ode.tex
+Library (tcolorbox): 'tcblistings.code.tex' version '6.0.4'
+(C:/Users/andre/AppData/Local/Programs/MiKTeX/tex/latex/listings/listings.sty
+\lst@mode=\count394
+\lst@gtempboxa=\box164
+\lst@token=\toks58
+\lst@length=\count395
+\lst@currlwidth=\dimen381
+\lst@column=\count396
+\lst@pos=\count397
+\lst@lostspace=\dimen382
+\lst@width=\dimen383
+\lst@newlines=\count398
+\lst@lineno=\count399
+\lst@maxwidth=\dimen384
+
+(C:/Users/andre/AppData/Local/Programs/MiKTeX/tex/latex/listings/lstmisc.sty
+File: lstmisc.sty 2023/02/27 1.9 (Carsten Heinz)
+\c@lstnumber=\count400
+\lst@skipnumbers=\count401
+\lst@framebox=\box165
+)
+(C:/Users/andre/AppData/Local/Programs/MiKTeX/tex/latex/listings/listings.cfg
+File: listings.cfg 2023/02/27 1.9 listings configuration
+))
+Package: listings 2023/02/27 1.9 (Carsten Heinz)
+
+(C:/Users/andre/AppData/Local/Programs/MiKTeX/tex/latex/tcolorbox/tcblistingsco
+re.code.tex
+Library (tcolorbox): 'tcblistingscore.code.tex' version '6.0.4'
+
+(C:/Users/andre/AppData/Local/Programs/MiKTeX/tex/latex/tcolorbox/tcbprocessing
+.code.tex
+Library (tcolorbox): 'tcbprocessing.code.tex' version '6.0.4'
+(C:/Users/andre/AppData/Local/Programs/MiKTeX/tex/latex/tools/shellesc.sty
+Package: shellesc 2023/04/15 v1.0d unified shell escape interface for LaTeX
+Package shellesc Info: Restricted shell escape enabled on input line 77.
+))
+\c@tcblisting=\count402
+))
+Package tcolorbox Info: Library `listingsutf8' is compatible with pdftex only. 
+Library `listings` is loaded instead. on input line 29.
+)
+(C:/Users/andre/AppData/Local/Programs/MiKTeX/tex/latex/tcolorbox/tcbexternal.c
+ode.tex
+Library (tcolorbox): 'tcbexternal.code.tex' version '6.0.4'
+)
+(C:/Users/andre/AppData/Local/Programs/MiKTeX/tex/latex/tcolorbox/tcbmagazine.c
+ode.tex
+Library (tcolorbox): 'tcbmagazine.code.tex' version '6.0.4'
+)
+(C:/Users/andre/AppData/Local/Programs/MiKTeX/tex/latex/tcolorbox/tcbvignette.c
+ode.tex
+Library (tcolorbox): 'tcbvignette.code.tex' version '6.0.4'
+
+(C:/Users/andre/AppData/Local/Programs/MiKTeX/tex/generic/pgf/frontendlayer/tik
+z/libraries/tikzlibraryfadings.code.tex
+File: tikzlibraryfadings.code.tex 2023-01-15 v3.1.10 (3.1.10)
+
+(C:/Users/andre/AppData/Local/Programs/MiKTeX/tex/generic/pgf/libraries/pgflibr
+aryfadings.code.tex
+File: pgflibraryfadings.code.tex 2023-01-15 v3.1.10 (3.1.10)
+)))
+(C:/Users/andre/AppData/Local/Programs/MiKTeX/tex/latex/tcolorbox/tcbposter.cod
+e.tex
+Library (tcolorbox): 'tcbposter.code.tex' version '6.0.4'
+))
 (C:/Users/andre/AppData/Local/Programs/MiKTeX/tex/latex/todonotes/todonotes.sty
 Package: todonotes 2023/01/31 v1.1.6 Todonotes source and documentation.
 Package: todonotes 2023/01/31
@@ -1397,7 +1546,7 @@ Package: ifthen 2022/04/13 v1.1d Standard LaTeX ifthen package (DPC)
 z/libraries/tikzlibrarypositioning.code.tex
 File: tikzlibrarypositioning.code.tex 2023-01-15 v3.1.10 (3.1.10)
 )
-\c@@todonotes@numberoftodonotes=\count385
+\c@@todonotes@numberoftodonotes=\count403
 ))
 (C:/Users/andre/AppData/Local/Programs/MiKTeX/tex/latex/comment/comment.sty
 \CommentStream=\write5
@@ -1408,54 +1557,54 @@ Package: biblatex 2023/03/05 v3.19 programmable bibliographies (PK/MW)
 
 (C:/Users/andre/AppData/Local/Programs/MiKTeX/tex/latex/logreq/logreq.sty
 Package: logreq 2010/08/04 v1.0 xml request logger
-\lrq@indent=\count386
+\lrq@indent=\count404
 
 (C:/Users/andre/AppData/Local/Programs/MiKTeX/tex/latex/logreq/logreq.def
 File: logreq.def 2010/08/04 v1.0 logreq spec v1.0
 ))
-\c@tabx@nest=\count387
-\c@listtotal=\count388
-\c@listcount=\count389
-\c@liststart=\count390
-\c@liststop=\count391
-\c@citecount=\count392
-\c@citetotal=\count393
-\c@multicitecount=\count394
-\c@multicitetotal=\count395
-\c@instcount=\count396
-\c@maxnames=\count397
-\c@minnames=\count398
-\c@maxitems=\count399
-\c@minitems=\count400
-\c@citecounter=\count401
-\c@maxcitecounter=\count402
-\c@savedcitecounter=\count403
-\c@uniquelist=\count404
-\c@uniquename=\count405
-\c@refsection=\count406
-\c@refsegment=\count407
-\c@maxextratitle=\count408
-\c@maxextratitleyear=\count409
-\c@maxextraname=\count410
-\c@maxextradate=\count411
-\c@maxextraalpha=\count412
-\c@abbrvpenalty=\count413
-\c@highnamepenalty=\count414
-\c@lownamepenalty=\count415
-\c@maxparens=\count416
-\c@parenlevel=\count417
-\blx@tempcnta=\count418
-\blx@tempcntb=\count419
-\blx@tempcntc=\count420
-\c@blx@maxsection=\count421
-\blx@maxsegment@0=\count422
-\blx@notetype=\count423
-\blx@parenlevel@text=\count424
-\blx@parenlevel@foot=\count425
-\blx@sectionciteorder@0=\count426
-\blx@sectionciteorderinternal@0=\count427
-\blx@entrysetcounter=\count428
-\blx@biblioinstance=\count429
+\c@tabx@nest=\count405
+\c@listtotal=\count406
+\c@listcount=\count407
+\c@liststart=\count408
+\c@liststop=\count409
+\c@citecount=\count410
+\c@citetotal=\count411
+\c@multicitecount=\count412
+\c@multicitetotal=\count413
+\c@instcount=\count414
+\c@maxnames=\count415
+\c@minnames=\count416
+\c@maxitems=\count417
+\c@minitems=\count418
+\c@citecounter=\count419
+\c@maxcitecounter=\count420
+\c@savedcitecounter=\count421
+\c@uniquelist=\count422
+\c@uniquename=\count423
+\c@refsection=\count424
+\c@refsegment=\count425
+\c@maxextratitle=\count426
+\c@maxextratitleyear=\count427
+\c@maxextraname=\count428
+\c@maxextradate=\count429
+\c@maxextraalpha=\count430
+\c@abbrvpenalty=\count431
+\c@highnamepenalty=\count432
+\c@lownamepenalty=\count433
+\c@maxparens=\count434
+\c@parenlevel=\count435
+\blx@tempcnta=\count436
+\blx@tempcntb=\count437
+\blx@tempcntc=\count438
+\c@blx@maxsection=\count439
+\blx@maxsegment@0=\count440
+\blx@notetype=\count441
+\blx@parenlevel@text=\count442
+\blx@parenlevel@foot=\count443
+\blx@sectionciteorder@0=\count444
+\blx@sectionciteorderinternal@0=\count445
+\blx@entrysetcounter=\count446
+\blx@biblioinstance=\count447
 \labelnumberwidth=\skip87
 \labelalphawidth=\skip88
 \biblabelsep=\skip89
@@ -1467,9 +1616,9 @@ File: logreq.def 2010/08/04 v1.0 logreq spec v1.0
 \blx@bcfin=\read5
 \blx@bcfout=\write6
 \blx@langwohyphens=\language80
-\c@mincomprange=\count430
-\c@maxcomprange=\count431
-\c@mincompwidth=\count432
+\c@mincomprange=\count448
+\c@maxcomprange=\count449
+\c@mincompwidth=\count450
 Package biblatex Info: Trying to load biblatex default data model...
 Package biblatex Info: ... file 'blx-dm.def' found.
 
@@ -1480,74 +1629,74 @@ Package biblatex Info: Trying to load biblatex style data model...
 Package biblatex Info: ... file 'abnt.dbx' not found.
 Package biblatex Info: Trying to load biblatex custom data model...
 Package biblatex Info: ... file 'biblatex-dm.cfg' not found.
-\c@afterword=\count433
-\c@savedafterword=\count434
-\c@annotator=\count435
-\c@savedannotator=\count436
-\c@author=\count437
-\c@savedauthor=\count438
-\c@bookauthor=\count439
-\c@savedbookauthor=\count440
-\c@commentator=\count441
-\c@savedcommentator=\count442
-\c@editor=\count443
-\c@savededitor=\count444
-\c@editora=\count445
-\c@savededitora=\count446
-\c@editorb=\count447
-\c@savededitorb=\count448
-\c@editorc=\count449
-\c@savededitorc=\count450
-\c@foreword=\count451
-\c@savedforeword=\count452
-\c@holder=\count453
-\c@savedholder=\count454
-\c@introduction=\count455
-\c@savedintroduction=\count456
-\c@namea=\count457
-\c@savednamea=\count458
-\c@nameb=\count459
-\c@savednameb=\count460
-\c@namec=\count461
-\c@savednamec=\count462
-\c@translator=\count463
-\c@savedtranslator=\count464
-\c@shortauthor=\count465
-\c@savedshortauthor=\count466
-\c@shorteditor=\count467
-\c@savedshorteditor=\count468
-\c@labelname=\count469
-\c@savedlabelname=\count470
-\c@institution=\count471
-\c@savedinstitution=\count472
-\c@lista=\count473
-\c@savedlista=\count474
-\c@listb=\count475
-\c@savedlistb=\count476
-\c@listc=\count477
-\c@savedlistc=\count478
-\c@listd=\count479
-\c@savedlistd=\count480
-\c@liste=\count481
-\c@savedliste=\count482
-\c@listf=\count483
-\c@savedlistf=\count484
-\c@location=\count485
-\c@savedlocation=\count486
-\c@organization=\count487
-\c@savedorganization=\count488
-\c@origlocation=\count489
-\c@savedoriglocation=\count490
-\c@origpublisher=\count491
-\c@savedorigpublisher=\count492
-\c@publisher=\count493
-\c@savedpublisher=\count494
-\c@language=\count495
-\c@savedlanguage=\count496
-\c@origlanguage=\count497
-\c@savedoriglanguage=\count498
-\c@pageref=\count499
-\c@savedpageref=\count500
+\c@afterword=\count451
+\c@savedafterword=\count452
+\c@annotator=\count453
+\c@savedannotator=\count454
+\c@author=\count455
+\c@savedauthor=\count456
+\c@bookauthor=\count457
+\c@savedbookauthor=\count458
+\c@commentator=\count459
+\c@savedcommentator=\count460
+\c@editor=\count461
+\c@savededitor=\count462
+\c@editora=\count463
+\c@savededitora=\count464
+\c@editorb=\count465
+\c@savededitorb=\count466
+\c@editorc=\count467
+\c@savededitorc=\count468
+\c@foreword=\count469
+\c@savedforeword=\count470
+\c@holder=\count471
+\c@savedholder=\count472
+\c@introduction=\count473
+\c@savedintroduction=\count474
+\c@namea=\count475
+\c@savednamea=\count476
+\c@nameb=\count477
+\c@savednameb=\count478
+\c@namec=\count479
+\c@savednamec=\count480
+\c@translator=\count481
+\c@savedtranslator=\count482
+\c@shortauthor=\count483
+\c@savedshortauthor=\count484
+\c@shorteditor=\count485
+\c@savedshorteditor=\count486
+\c@labelname=\count487
+\c@savedlabelname=\count488
+\c@institution=\count489
+\c@savedinstitution=\count490
+\c@lista=\count491
+\c@savedlista=\count492
+\c@listb=\count493
+\c@savedlistb=\count494
+\c@listc=\count495
+\c@savedlistc=\count496
+\c@listd=\count497
+\c@savedlistd=\count498
+\c@liste=\count499
+\c@savedliste=\count500
+\c@listf=\count501
+\c@savedlistf=\count502
+\c@location=\count503
+\c@savedlocation=\count504
+\c@organization=\count505
+\c@savedorganization=\count506
+\c@origlocation=\count507
+\c@savedoriglocation=\count508
+\c@origpublisher=\count509
+\c@savedorigpublisher=\count510
+\c@publisher=\count511
+\c@savedpublisher=\count512
+\c@language=\count513
+\c@savedlanguage=\count514
+\c@origlanguage=\count515
+\c@savedoriglanguage=\count516
+\c@pageref=\count517
+\c@savedpageref=\count518
 \shorthandwidth=\skip95
 \shortjournalwidth=\skip96
 \shortserieswidth=\skip97
@@ -1577,19 +1726,19 @@ Package biblatex Info: Trying to load generic definitions...
 Package biblatex Info: ... file 'biblatex.def' found.
  (C:/Users/andre/AppData/Local/Programs/MiKTeX/tex/latex/biblatex/biblatex.def
 File: biblatex.def 2023/03/05 v3.19 biblatex compatibility (PK/MW)
-\c@textcitecount=\count501
-\c@textcitetotal=\count502
-\c@textcitemaxnames=\count503
-\c@biburlbigbreakpenalty=\count504
-\c@biburlbreakpenalty=\count505
-\c@biburlnumpenalty=\count506
-\c@biburlucpenalty=\count507
-\c@biburllcpenalty=\count508
+\c@textcitecount=\count519
+\c@textcitetotal=\count520
+\c@textcitemaxnames=\count521
+\c@biburlbigbreakpenalty=\count522
+\c@biburlbreakpenalty=\count523
+\c@biburlnumpenalty=\count524
+\c@biburlucpenalty=\count525
+\c@biburllcpenalty=\count526
 \biburlbigskip=\muskip21
 \biburlnumskip=\muskip22
 \biburlucskip=\muskip23
 \biburllcskip=\muskip24
-\c@smartand=\count509
+\c@smartand=\count527
 )
 Package biblatex Info: Trying to load bibliography style 'abnt'...
 Package biblatex Info: ... file 'abnt.bbx' found.
@@ -1606,8 +1755,8 @@ Package biblatex Info: ... file 'standard.bbx' found.
 (C:/Users/andre/AppData/Local/Programs/MiKTeX/tex/latex/biblatex/bbx/standard.b
 bx
 File: standard.bbx 2023/03/05 v3.19 biblatex bibliography style (PK/MW)
-\c@bbx:relatedcount=\count510
-\c@bbx:relatedtotal=\count511
+\c@bbx:relatedcount=\count528
+\c@bbx:relatedtotal=\count529
 ))
 Package biblatex Info: Trying to load citation style 'abnt'...
 Package biblatex Info: ... file 'abnt.cbx' found.
@@ -1743,17 +1892,17 @@ LaTeX Font Info:    ... okay on input line 98.
 (C:/Users/andre/AppData/Local/Programs/MiKTeX/tex/context/base/mkii/supp-pdf.mk
 ii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count512
-\scratchdimen=\dimen368
-\scratchbox=\box158
-\nofMPsegments=\count513
-\nofMParguments=\count514
-\everyMPshowfont=\toks58
-\MPscratchCnt=\count515
-\MPscratchDim=\dimen369
-\MPnumerator=\count516
-\makeMPintoPDFobject=\count517
-\everyMPtoPDFconversion=\toks59
+\scratchcounter=\count530
+\scratchdimen=\dimen385
+\scratchbox=\box166
+\nofMPsegments=\count531
+\nofMParguments=\count532
+\everyMPshowfont=\toks59
+\MPscratchCnt=\count533
+\MPscratchDim=\dimen386
+\MPnumerator=\count534
+\makeMPintoPDFobject=\count535
+\everyMPtoPDFconversion=\toks60
 )
 (C:/Users/andre/AppData/Local/Programs/MiKTeX/tex/latex/epstopdf-pkg/epstopdf-b
 ase.sty
@@ -1768,6 +1917,7 @@ File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
 \Etoc@tf=\read6
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: hyperref package is loaded.
+Package caption Info: listings package is loaded.
 Package caption Info: longtable package is loaded.
 
 (C:/Users/andre/AppData/Local/Programs/MiKTeX/tex/latex/caption/ltcaption.sty
@@ -1781,6 +1931,7 @@ Package: ninecolors 2022-02-13 vv2022D Select colors with proper color contrast
 
 )
 Package hyperref Info: Link coloring ON on input line 98.
+\c@lstlisting=\count536
 Package biblatex Info: Trying to load language 'english' -> 'english-abnt'...
 Package biblatex Info: ... file 'english-abnt.lbx' found.
 
@@ -1878,7 +2029,7 @@ Package biblatex Info: ... file 'thesis.bbl' found.
 Package biblatex Info: Reference section=0 on input line 98.
 Package biblatex Info: Reference segment=0 on input line 98.
  (./pre/cover.tex
-<../images/../images/marca_dagua_ufpr.jpg, id=6, 502.5174pt x 569.4876pt>
+<../images/../images/marca_dagua_ufpr.jpg, id=42, 502.5174pt x 569.4876pt>
 File: ../images/../images/marca_dagua_ufpr.jpg Graphic file (type jpg)
 <use ../images/../images/marca_dagua_ufpr.jpg>
 Package luatex.def Info: ../images/../images/marca_dagua_ufpr.jpg  used on inpu
@@ -1989,7 +2140,7 @@ LaTeX Font Info:    Trying to load font information for TS1+ppl on input line 5
 File: ts1ppl.fd 2001/06/04 font definitions for TS1/ppl.
 )
 [28]
-<../images/../images/flowchart.jpg, id=444, 1335.99126pt x 752.8125pt>
+<../images/../images/flowchart.jpg, id=480, 1335.99126pt x 752.8125pt>
 File: ../images/../images/flowchart.jpg Graphic file (type jpg)
 <use ../images/../images/flowchart.jpg>
 Package luatex.def Info: ../images/../images/flowchart.jpg  used on input line 
@@ -2004,272 +2155,217 @@ LaTeX Font Info:    Font shape `U/BOONDOX-calo/m/n' will be
 (Font)              scaled to size 7.0pt on input line 114.
  [30]
 LaTeX Font Info:    Trying to load font information for U+fplmbb on input line 
-145.
+164.
 
 (C:/Users/andre/AppData/Local/Programs/MiKTeX/tex/latex/psnfss/ufplmbb.fd
 File: ufplmbb.fd 2003/10/30 Fontinst v1.914 font definitions for U/fplmbb.
 )
-[31] [32] [33] [34]
+[31] [32] [33] [34] [35]
 LaTeX Font Info:    Font shape `U/BOONDOX-calo/m/n' will be
-(Font)              scaled to size 10.0pt on input line 286.
+(Font)              scaled to size 10.0pt on input line 308.
 LaTeX Font Info:    Font shape `U/BOONDOX-calo/m/n' will be
-(Font)              scaled to size 7.6pt on input line 286.
+(Font)              scaled to size 7.6pt on input line 308.
 LaTeX Font Info:    Font shape `U/BOONDOX-calo/m/n' will be
-(Font)              scaled to size 6.0pt on input line 286.
- [35
+(Font)              scaled to size 6.0pt on input line 308.
+ [36
 Missing character: There is no “ (U+201C) in font pplr8t!
 Missing character: There is no ” (U+201D) in font pplr8t!
-] Excluding 'comment' comment. [36] [37] [38] Excluding 'comment' comment.
-[39]
+] Excluding 'comment' comment. [37] [38] [39] Excluding 'comment' comment.
+[40]
 LaTeX Font Info:    Font shape `U/cmsy/m/n' will be
-(Font)              scaled to size 12.0pt on input line 537.
+(Font)              scaled to size 12.0pt on input line 576.
 LaTeX Font Info:    Font shape `U/cmsy/m/n' will be
-(Font)              scaled to size 9.0pt on input line 537.
+(Font)              scaled to size 9.0pt on input line 576.
 LaTeX Font Info:    Font shape `U/cmsy/m/n' will be
-(Font)              scaled to size 7.0pt on input line 537.
+(Font)              scaled to size 7.0pt on input line 576.
 LaTeX Font Info:    Font shape `U/cmsy/b/n' will be
-(Font)              scaled to size 12.0pt on input line 556.
+(Font)              scaled to size 12.0pt on input line 595.
 LaTeX Font Info:    Font shape `U/cmsy/b/n' will be
-(Font)              scaled to size 9.0pt on input line 556.
+(Font)              scaled to size 9.0pt on input line 595.
 LaTeX Font Info:    Font shape `U/cmsy/b/n' will be
-(Font)              scaled to size 7.0pt on input line 556.
- Excluding 'comment' comment. [40]
-
-LaTeX Warning: Reference `eq_v6:reg-Cn1-Cn2-b' on page 41 undefined on input li
-ne 630.
-
-
-LaTeX Warning: Reference `eq_v6:reg-Cn1-Cn2-b' on page 41 undefined on input li
-ne 630.
-
-
-LaTeX Warning: Reference `eq_v6:reg-Cn1-Cn2' on page 41 undefined on input line
- 636.
-
-
-LaTeX Warning: Reference `eq_v6:reg-Cn1-Cn2' on page 41 undefined on input line
- 636.
-
-
-LaTeX Warning: Reference `eq_v6:reg-Cn1-Cn2-b' on page 41 undefined on input li
-ne 642.
-
-
-LaTeX Warning: Reference `eq_v6:reg-Cn1-Cn2-b' on page 41 undefined on input li
-ne 642.
-
-[41] [42] Excluding 'comment' comment. [43]
-
-LaTeX Warning: Reference `eq_v6:reg-Cn1-Cn2' on page 44 undefined on input line
- 806.
-
-
-LaTeX Warning: Reference `eq_v6:reg-Cn1-Cn2' on page 44 undefined on input line
- 806.
-
-[44] [45] [46]
+(Font)              scaled to size 7.0pt on input line 595.
+ [41] Excluding 'comment' comment. [42] [43] [44]
+Excluding 'comment' comment. [45] [46] [47] [48] [49]
 LaTeX Font Info:    Font shape `U/cmsy/m/n' will be
-(Font)              scaled to size 10.0pt on input line 911.
+(Font)              scaled to size 10.0pt on input line 969.
 LaTeX Font Info:    Font shape `U/cmsy/m/n' will be
-(Font)              scaled to size 7.6pt on input line 911.
+(Font)              scaled to size 7.6pt on input line 969.
 LaTeX Font Info:    Font shape `U/cmsy/m/n' will be
-(Font)              scaled to size 6.0pt on input line 911.
+(Font)              scaled to size 6.0pt on input line 969.
 LaTeX Font Info:    Font shape `U/cmsy/b/n' will be
-(Font)              scaled to size 10.0pt on input line 911.
+(Font)              scaled to size 10.0pt on input line 969.
 LaTeX Font Info:    Font shape `U/cmsy/b/n' will be
-(Font)              scaled to size 7.6pt on input line 911.
+(Font)              scaled to size 7.6pt on input line 969.
 LaTeX Font Info:    Font shape `U/cmsy/b/n' will be
-(Font)              scaled to size 6.0pt on input line 911.
- Excluding 'comment' comment.
+(Font)              scaled to size 6.0pt on input line 969.
+ [50]
+Excluding 'comment' comment. Excluding 'comment' comment. [51]
 
-LaTeX Warning: Reference `eq_v6:reg-ss-p1-p2' on page 47 undefined on input lin
-e 949.
+LaTeX Warning: Reference `eq_v6:reg-ss-investment' on page 52 undefined on inpu
+t line 1092.
 
 
-LaTeX Warning: Reference `eq_v6:reg-ss-p1-p2' on page 47 undefined on input lin
-e 954.
+LaTeX Warning: Reference `eq_v6:reg-ss-total-yn' on page 52 undefined on input 
+line 1092.
 
 
-LaTeX Warning: Reference `eq_v6:reg-ss-total-yn' on page 47 undefined on input 
-line 954.
+LaTeX Warning: Reference `eq_v6:reg-ss-total-yn' on page 52 undefined on input 
+line 1097.
 
 
-LaTeX Warning: Reference `eq_v6:ss-national-price-level' on page 47 undefined o
-n input line 954.
+LaTeX Warning: Reference `eq_v6:reg-ss-total-yn' on page 52 undefined on input 
+line 1097.
 
+[52]
 
-LaTeX Warning: Reference `eq_v6:ss-national-price-level' on page 47 undefined o
-n input line 958.
+LaTeX Warning: Reference `eq_v6:reg-ss-market-clearing-condition' on page 53 un
+defined on input line 1101.
 
 
-LaTeX Warning: Reference `eq_v6:ss-national-price-level' on page 47 undefined o
-n input line 958.
+LaTeX Warning: Reference `eq_v6:reg-ss-investment' on page 53 undefined on inpu
+t line 1101.
 
 
-LaTeX Warning: Reference `eq_v6:reg-ss-price-eta-level' on page 47 undefined on
- input line 960.
+LaTeX Warning: Reference `eq_v6:reg-ss-C1-Cn-3' on page 53 undefined on input l
+ine 1101.
 
 
-LaTeX Warning: Reference `eq_v6:reg-ss-price-eta-level' on page 47 undefined on
- input line 964.
+LaTeX Warning: Reference `eq_v6:reg-ss-int-good-firm-FOC-Kt-2' on page 53 undef
+ined on input line 1101.
 
 
-LaTeX Warning: Reference `eq_v6:reg-ss-price-eta-level' on page 47 undefined on
- input line 964.
+LaTeX Warning: Reference `eq_v6:reg-ss-int-good-firm-FOC-Lt-2' on page 53 undef
+ined on input line 1101.
 
-[47]
 
-LaTeX Warning: Reference `eq_v6:reg-ss-int-good-firm-MC-2' on page 48 undefined
- on input line 972.
+LaTeX Warning: Reference `eq_v6:reg-ss-RK' on page 53 undefined on input line 1
+149.
 
 
-LaTeX Warning: Reference `eq_v6:reg-ss-int-good-firm-MC-2' on page 48 undefined
- on input line 976.
+LaTeX Warning: Reference `eq_v6:reg-ss-b-eta' on page 53 undefined on input lin
+e 1149.
 
 
-LaTeX Warning: Reference `eq_v6:reg-ss-int-good-firm-MC-2' on page 48 undefined
- on input line 976.
+LaTeX Warning: Reference `eq_v6:reg-ss-market-clearing-condition' on page 53 un
+defined on input line 1149.
 
-Excluding 'comment' comment.
 
-LaTeX Warning: Reference `eq_v6:reg-ss-int-good-firm-FOC-Kt' on page 48 undefin
-ed on input line 986.
+LaTeX Warning: Reference `eq_v6:reg-ss-investment' on page 53 undefined on inpu
+t line 1149.
 
 
-LaTeX Warning: Reference `eq_v6:reg-ss-int-good-firm-FOC-Lt' on page 48 undefin
-ed on input line 986.
+LaTeX Warning: Reference `eq_v6:reg-ss-C1-Cn-3' on page 53 undefined on input l
+ine 1149.
 
 
-LaTeX Warning: Reference `eq_v6:reg-ss-law-of-motion-for-capital' on page 48 un
-defined on input line 993.
+LaTeX Warning: Reference `eq_v6:reg-ss-int-good-firm-FOC-Kt-2' on page 53 undef
+ined on input line 1149.
 
 
-LaTeX Warning: Reference `eq_v6:reg-ss-law-of-motion-for-capital' on page 48 un
-defined on input line 998.
+LaTeX Warning: Reference `eq_v6:reg-ss-int-good-firm-FOC-Lt-2' on page 53 undef
+ined on input line 1149.
 
 
-LaTeX Warning: Reference `eq_v6:reg-ss-law-of-motion-for-capital' on page 48 un
-defined on input line 998.
+LaTeX Warning: Reference `eq_v6:reg-ss-RK' on page 53 undefined on input line 1
+149.
 
 
-LaTeX Warning: Reference `eq_v6:reg-ss-household-labor-supply' on page 48 undef
-ined on input line 1000.
+LaTeX Warning: Reference `eq_v6:reg-ss-b-eta' on page 53 undefined on input lin
+e 1149.
 
-[48]
 
-LaTeX Warning: Reference `eq_v6:reg-ss-Cn1-Cn2' on page 49 undefined on input l
-ine 1015.
+LaTeX Warning: Reference `eq_v6:reg-ss-market-clearing-condition' on page 53 un
+defined on input line 1149.
 
 
-LaTeX Warning: Reference `eq_v6:reg-ss-Cn1-Cn2' on page 49 undefined on input l
-ine 1022.
+LaTeX Warning: Reference `eq_v6:reg-ss-investment' on page 53 undefined on inpu
+t line 1149.
 
 
-LaTeX Warning: Reference `eq_v6:reg-ss-total-yn' on page 49 undefined on input 
-line 1031.
+LaTeX Warning: Reference `eq_v6:reg-ss-C1-Cn-3' on page 53 undefined on input l
+ine 1149.
 
 
-LaTeX Warning: Reference `eq_v6:reg-ss-total-yn' on page 49 undefined on input 
-line 1036.
+LaTeX Warning: Reference `eq_v6:reg-ss-int-good-firm-FOC-Kt-2' on page 53 undef
+ined on input line 1149.
 
 
-LaTeX Warning: Reference `eq_v6:reg-ss-total-yn' on page 49 undefined on input 
-line 1036.
+LaTeX Warning: Reference `eq_v6:reg-ss-int-good-firm-FOC-Lt-2' on page 53 undef
+ined on input line 1149.
 
-[49]
+[53] Excluding 'comment' comment. [54] [55] [56] [57] [58] [59]
 
-LaTeX Warning: Reference `eq_v6:reg-ss-market-clearing-condition' on page 50 un
-defined on input line 1040.
+LaTeX Warning: Reference `eq_v6:reg-law-of-motion-for-capital' on page 60 undef
+ined on input line 1340.
 
 
-LaTeX Warning: Reference `eq_v6:reg-ss-RK' on page 50 undefined on input line 1
-088.
+LaTeX Warning: Reference `eq_v6:reg-law-of-motion-for-capital' on page 60 undef
+ined on input line 1345.
 
 
-LaTeX Warning: Reference `eq_v6:reg-ss-market-clearing-condition' on page 50 un
-defined on input line 1088.
+LaTeX Warning: Reference `eq_v6:reg-law-of-motion-for-capital' on page 60 undef
+ined on input line 1345.
 
 
-LaTeX Warning: Reference `eq_v6:reg-ss-RK' on page 50 undefined on input line 1
-088.
+LaTeX Warning: Reference `eq_v6:reg-Cn1-Cn2' on page 60 undefined on input line
+ 1361.
 
 
-LaTeX Warning: Reference `eq_v6:reg-ss-market-clearing-condition' on page 50 un
-defined on input line 1088.
+LaTeX Warning: Reference `eq_v6:reg-Cn1-Cn2' on page 60 undefined on input line
+ 1365.
 
-[50] Excluding 'comment' comment. [51] [52] [53] [54] [55] [56]
 
-LaTeX Warning: Reference `eq_v6:reg-law-of-motion-for-capital' on page 57 undef
-ined on input line 1279.
+LaTeX Warning: Reference `eq_v6:reg-Cn1-Cn2' on page 60 undefined on input line
+ 1365.
 
+Excluding 'comment' comment. [60] Excluding 'comment' comment.
 
-LaTeX Warning: Reference `eq_v6:reg-law-of-motion-for-capital' on page 57 undef
-ined on input line 1284.
+LaTeX Warning: Reference `eq_v6:reg-capital-euler-equation' on page 61 undefine
+d on input line 1462.
 
 
-LaTeX Warning: Reference `eq_v6:reg-law-of-motion-for-capital' on page 57 undef
-ined on input line 1284.
+LaTeX Warning: Reference `eq_v6:reg-capital-euler-equation' on page 61 undefine
+d on input line 1472.
 
 
-LaTeX Warning: Reference `eq_v6:reg-Cn1-Cn2' on page 57 undefined on input line
- 1300.
+LaTeX Warning: Reference `eq_v6:reg-capital-euler-equation' on page 61 undefine
+d on input line 1472.
 
+[61] [62] [63]
 
-LaTeX Warning: Reference `eq_v6:reg-Cn1-Cn2' on page 57 undefined on input line
- 1304.
+LaTeX Warning: Reference `eq_v6:reg-int-good-firm-FOC-Kt' on page 64 undefined 
+on input line 1550.
 
 
-LaTeX Warning: Reference `eq_v6:reg-Cn1-Cn2' on page 57 undefined on input line
- 1304.
+LaTeX Warning: Reference `eq_v6:reg-int-good-firm-FOC-Kt' on page 64 undefined 
+on input line 1555.
 
-Excluding 'comment' comment. [57] Excluding 'comment' comment.
 
-LaTeX Warning: Reference `eq_v6:reg-capital-euler-equation' on page 58 undefine
-d on input line 1401.
+LaTeX Warning: Reference `eq_v6:reg-int-good-firm-FOC-Kt' on page 64 undefined 
+on input line 1555.
 
+[64]
 
-LaTeX Warning: Reference `eq_v6:reg-capital-euler-equation' on page 58 undefine
-d on input line 1411.
+LaTeX Warning: Reference `eq_v6:reg-int-good-firm-TMRS' on page 65 undefined on
+ input line 1591.
 
 
-LaTeX Warning: Reference `eq_v6:reg-capital-euler-equation' on page 58 undefine
-d on input line 1411.
+LaTeX Warning: Reference `eq_v6:reg-int-good-firm-MC-2' on page 65 undefined on
+ input line 1611.
 
-[58] [59] [60]
 
-LaTeX Warning: Reference `eq_v6:reg-int-good-firm-FOC-Kt' on page 61 undefined 
-on input line 1489.
+LaTeX Warning: Reference `eq_v6:reg-int-good-firm-MC-2' on page 65 undefined on
+ input line 1616.
 
 
-LaTeX Warning: Reference `eq_v6:reg-int-good-firm-FOC-Kt' on page 61 undefined 
-on input line 1494.
+LaTeX Warning: Reference `eq_v6:reg-int-good-firm-MC-2' on page 65 undefined on
+ input line 1616.
 
-
-LaTeX Warning: Reference `eq_v6:reg-int-good-firm-FOC-Kt' on page 61 undefined 
-on input line 1494.
-
-[61]
-
-LaTeX Warning: Reference `eq_v6:reg-int-good-firm-TMRS' on page 62 undefined on
- input line 1530.
-
-
-LaTeX Warning: Reference `eq_v6:reg-int-good-firm-MC-2' on page 62 undefined on
- input line 1550.
-
-
-LaTeX Warning: Reference `eq_v6:reg-int-good-firm-MC-2' on page 62 undefined on
- input line 1555.
-
-
-LaTeX Warning: Reference `eq_v6:reg-int-good-firm-MC-2' on page 62 undefined on
- input line 1555.
-
-[62] [63] Excluding 'comment' comment. [64] Excluding 'comment' comment.
-[65] Excluding 'comment' comment. [66] Excluding 'comment' comment. [67]
-Excluding 'comment' comment. [68] Excluding 'comment' comment. [69]
-Excluding 'comment' comment.) (./sections/data.tex [70])
-(./sections/calibration.tex [71]
+[65] [66] Excluding 'comment' comment. [67] Excluding 'comment' comment.
+[68] Excluding 'comment' comment. [69] Excluding 'comment' comment. [70]
+Excluding 'comment' comment. [71] Excluding 'comment' comment. [72]
+Excluding 'comment' comment.) (./sections/data.tex [73])
+(./sections/calibration.tex [74]
 > Step: init table outer spec.
 > Step: parse table options.
 > Step: split table.
@@ -2287,7 +2383,7 @@ Overfull \hbox (3.69965pt too wide) detected at line 54
  [] 
  []
 
-[72]
+[75]
 > Step: init table outer spec.
 > Step: parse table options.
 > Step: split table.
@@ -2296,36 +2392,36 @@ Overfull \hbox (3.69965pt too wide) detected at line 54
 > Step: execute table commands.
 > Step: calculate cell and line sizes.
 > Step: build the whole table.
-) (./sections/results.tex [73]) (./sections/IRF.tex [74]
-<../images/../images/shock_ZAt/shock_ZAt_ZAt.png, id=1423, 347.8596pt x 184.047
+) (./sections/results.tex [76]) (./sections/IRF.tex [77]
+<../images/../images/shock_ZAt/shock_ZAt_ZAt.png, id=1516, 347.8596pt x 184.047
 6pt>
 File: ../images/../images/shock_ZAt/shock_ZAt_ZAt.png Graphic file (type png)
 <use ../images/../images/shock_ZAt/shock_ZAt_ZAt.png>
 Package luatex.def Info: ../images/../images/shock_ZAt/shock_ZAt_ZAt.png  used 
 on input line 23.
 (luatex.def)             Requested size: 136.57462pt x 72.2613pt.
-<../images/../images/shock_ZAt/shock_ZAt_Kt.png, id=1424, 347.8596pt x 184.0476
+<../images/../images/shock_ZAt/shock_ZAt_Kt.png, id=1517, 347.8596pt x 184.0476
 pt>
 File: ../images/../images/shock_ZAt/shock_ZAt_Kt.png Graphic file (type png)
 <use ../images/../images/shock_ZAt/shock_ZAt_Kt.png>
 Package luatex.def Info: ../images/../images/shock_ZAt/shock_ZAt_Kt.png  used o
 n input line 30.
 (luatex.def)             Requested size: 136.57462pt x 72.2613pt.
-<../images/../images/shock_ZAt/shock_ZAt_It.png, id=1425, 347.8596pt x 184.0476
+<../images/../images/shock_ZAt/shock_ZAt_It.png, id=1518, 347.8596pt x 184.0476
 pt>
 File: ../images/../images/shock_ZAt/shock_ZAt_It.png Graphic file (type png)
 <use ../images/../images/shock_ZAt/shock_ZAt_It.png>
 Package luatex.def Info: ../images/../images/shock_ZAt/shock_ZAt_It.png  used o
 n input line 37.
 (luatex.def)             Requested size: 136.57462pt x 72.2613pt.
-<../images/../images/shock_ZAt/shock_ZAt_Ct.png, id=1426, 328.1058pt x 185.0112
+<../images/../images/shock_ZAt/shock_ZAt_Ct.png, id=1519, 328.1058pt x 185.0112
 pt>
 File: ../images/../images/shock_ZAt/shock_ZAt_Ct.png Graphic file (type png)
 <use ../images/../images/shock_ZAt/shock_ZAt_Ct.png>
 Package luatex.def Info: ../images/../images/shock_ZAt/shock_ZAt_Ct.png  used o
 n input line 47.
 (luatex.def)             Requested size: 136.57462pt x 77.01253pt.
-<../images/../images/shock_ZAt/shock_ZAt_LAMBDAt.png, id=1427, 331.9602pt x 185
+<../images/../images/shock_ZAt/shock_ZAt_LAMBDAt.png, id=1520, 331.9602pt x 185
 .0112pt>
 File: ../images/../images/shock_ZAt/shock_ZAt_LAMBDAt.png Graphic file (type pn
 g)
@@ -2333,55 +2429,55 @@ g)
 Package luatex.def Info: ../images/../images/shock_ZAt/shock_ZAt_LAMBDAt.png  u
 sed on input line 54.
 (luatex.def)             Requested size: 136.57462pt x 76.11761pt.
-<../images/../images/shock_ZAt/shock_ZAt_Lt.png, id=1428, 339.669pt x 185.0112p
+<../images/../images/shock_ZAt/shock_ZAt_Lt.png, id=1521, 339.669pt x 185.0112p
 t>
 File: ../images/../images/shock_ZAt/shock_ZAt_Lt.png Graphic file (type png)
 <use ../images/../images/shock_ZAt/shock_ZAt_Lt.png>
 Package luatex.def Info: ../images/../images/shock_ZAt/shock_ZAt_Lt.png  used o
 n input line 61.
 (luatex.def)             Requested size: 136.57462pt x 74.38992pt.
-<../images/../images/shock_ZAt/shock_ZAt_PIt.png, id=1429, 337.26pt x 185.0112p
+<../images/../images/shock_ZAt/shock_ZAt_PIt.png, id=1522, 337.26pt x 185.0112p
 t>
 File: ../images/../images/shock_ZAt/shock_ZAt_PIt.png Graphic file (type png)
 <use ../images/../images/shock_ZAt/shock_ZAt_PIt.png>
 Package luatex.def Info: ../images/../images/shock_ZAt/shock_ZAt_PIt.png  used 
 on input line 71.
 (luatex.def)             Requested size: 136.57462pt x 74.92065pt.
-<../images/../images/shock_ZAt/shock_ZAt_Pt.png, id=1430, 331.4784pt x 185.0112
+<../images/../images/shock_ZAt/shock_ZAt_Pt.png, id=1523, 331.4784pt x 185.0112
 pt>
 File: ../images/../images/shock_ZAt/shock_ZAt_Pt.png Graphic file (type png)
 <use ../images/../images/shock_ZAt/shock_ZAt_Pt.png>
 Package luatex.def Info: ../images/../images/shock_ZAt/shock_ZAt_Pt.png  used o
 n input line 78.
 (luatex.def)             Requested size: 136.57462pt x 76.22772pt.
-<../images/../images/shock_ZAt/shock_ZAt_Rt.png, id=1431, 340.1508pt x 185.0112
+<../images/../images/shock_ZAt/shock_ZAt_Rt.png, id=1524, 340.1508pt x 185.0112
 pt>
 File: ../images/../images/shock_ZAt/shock_ZAt_Rt.png Graphic file (type png)
 <use ../images/../images/shock_ZAt/shock_ZAt_Rt.png>
 Package luatex.def Info: ../images/../images/shock_ZAt/shock_ZAt_Rt.png  used o
 n input line 85.
 (luatex.def)             Requested size: 136.57462pt x 74.28546pt.
-<../images/../images/shock_ZAt/shock_ZAt_Wt.png, id=1432, 348.3414pt x 184.0476
+<../images/../images/shock_ZAt/shock_ZAt_Wt.png, id=1525, 348.3414pt x 184.0476
 pt>
 File: ../images/../images/shock_ZAt/shock_ZAt_Wt.png Graphic file (type png)
 <use ../images/../images/shock_ZAt/shock_ZAt_Wt.png>
 Package luatex.def Info: ../images/../images/shock_ZAt/shock_ZAt_Wt.png  used o
 n input line 95.
 (luatex.def)             Requested size: 136.57462pt x 72.1602pt.
-<../images/../images/shock_ZAt/shock_ZAt_Yt.png, id=1433, 348.3414pt x 184.0476
+<../images/../images/shock_ZAt/shock_ZAt_Yt.png, id=1526, 348.3414pt x 184.0476
 pt>
 File: ../images/../images/shock_ZAt/shock_ZAt_Yt.png Graphic file (type png)
 <use ../images/../images/shock_ZAt/shock_ZAt_Yt.png>
 Package luatex.def Info: ../images/../images/shock_ZAt/shock_ZAt_Yt.png  used o
 n input line 102.
 (luatex.def)             Requested size: 136.57462pt x 72.1602pt.
-<../images/../images/shock_ZAt/blank.png, id=1434, 122.70844pt x 70.76437pt>
+<../images/../images/shock_ZAt/blank.png, id=1527, 122.70844pt x 70.76437pt>
 File: ../images/../images/shock_ZAt/blank.png Graphic file (type png)
 <use ../images/../images/shock_ZAt/blank.png>
 Package luatex.def Info: ../images/../images/shock_ZAt/blank.png  used on input
  line 109.
 (luatex.def)             Requested size: 136.57462pt x 78.76317pt.
- [75<../images/../images/shock_ZAt/shock_ZAt_ZAt.png><../images/../images/shock_
+ [78<../images/../images/shock_ZAt/shock_ZAt_ZAt.png><../images/../images/shock_
 ZAt/shock_ZAt_Kt.png><../images/../images/shock_ZAt/shock_ZAt_It.png><../images/
 ../images/shock_ZAt/shock_ZAt_Ct.png><../images/../images/shock_ZAt/shock_ZAt_LA
 MBDAt.png><../images/../images/shock_ZAt/shock_ZAt_Lt.png><../images/../images/s
@@ -2389,35 +2485,35 @@ hock_ZAt/shock_ZAt_PIt.png><../images/../images/shock_ZAt/shock_ZAt_Pt.png><../i
 mages/../images/shock_ZAt/shock_ZAt_Rt.png><../images/../images/shock_ZAt/shock_
 ZAt_Wt.png><../images/../images/shock_ZAt/shock_ZAt_Yt.png><../images/../images/
 shock_ZAt/blank.png>]
-<../images/../images/shock_ZMt/shock_ZMt_ZMt.png, id=1440, 347.8596pt x 184.047
+<../images/../images/shock_ZMt/shock_ZMt_ZMt.png, id=1533, 347.8596pt x 184.047
 6pt>
 File: ../images/../images/shock_ZMt/shock_ZMt_ZMt.png Graphic file (type png)
 <use ../images/../images/shock_ZMt/shock_ZMt_ZMt.png>
 Package luatex.def Info: ../images/../images/shock_ZMt/shock_ZMt_ZMt.png  used 
 on input line 124.
 (luatex.def)             Requested size: 136.57462pt x 72.2613pt.
-<../images/../images/shock_ZMt/shock_ZMt_Kt.png, id=1441, 328.1058pt x 185.0112
+<../images/../images/shock_ZMt/shock_ZMt_Kt.png, id=1534, 328.1058pt x 185.0112
 pt>
 File: ../images/../images/shock_ZMt/shock_ZMt_Kt.png Graphic file (type png)
 <use ../images/../images/shock_ZMt/shock_ZMt_Kt.png>
 Package luatex.def Info: ../images/../images/shock_ZMt/shock_ZMt_Kt.png  used o
 n input line 131.
 (luatex.def)             Requested size: 136.57462pt x 77.01253pt.
-<../images/../images/shock_ZMt/shock_ZMt_It.png, id=1442, 351.2322pt x 184.0476
+<../images/../images/shock_ZMt/shock_ZMt_It.png, id=1535, 351.2322pt x 184.0476
 pt>
 File: ../images/../images/shock_ZMt/shock_ZMt_It.png Graphic file (type png)
 <use ../images/../images/shock_ZMt/shock_ZMt_It.png>
 Package luatex.def Info: ../images/../images/shock_ZMt/shock_ZMt_It.png  used o
 n input line 138.
 (luatex.def)             Requested size: 136.57462pt x 71.56764pt.
-<../images/../images/shock_ZMt/shock_ZMt_Ct.png, id=1443, 340.1508pt x 185.0112
+<../images/../images/shock_ZMt/shock_ZMt_Ct.png, id=1536, 340.1508pt x 185.0112
 pt>
 File: ../images/../images/shock_ZMt/shock_ZMt_Ct.png Graphic file (type png)
 <use ../images/../images/shock_ZMt/shock_ZMt_Ct.png>
 Package luatex.def Info: ../images/../images/shock_ZMt/shock_ZMt_Ct.png  used o
 n input line 148.
 (luatex.def)             Requested size: 136.57462pt x 74.28546pt.
-<../images/../images/shock_ZMt/shock_ZMt_LAMBDAt.png, id=1444, 332.9238pt x 185
+<../images/../images/shock_ZMt/shock_ZMt_LAMBDAt.png, id=1537, 332.9238pt x 185
 .0112pt>
 File: ../images/../images/shock_ZMt/shock_ZMt_LAMBDAt.png Graphic file (type pn
 g)
@@ -2425,55 +2521,55 @@ g)
 Package luatex.def Info: ../images/../images/shock_ZMt/shock_ZMt_LAMBDAt.png  u
 sed on input line 155.
 (luatex.def)             Requested size: 136.57462pt x 75.89459pt.
-<../images/../images/shock_ZMt/shock_ZMt_Lt.png, id=1445, 331.4784pt x 185.0112
+<../images/../images/shock_ZMt/shock_ZMt_Lt.png, id=1538, 331.4784pt x 185.0112
 pt>
 File: ../images/../images/shock_ZMt/shock_ZMt_Lt.png Graphic file (type png)
 <use ../images/../images/shock_ZMt/shock_ZMt_Lt.png>
 Package luatex.def Info: ../images/../images/shock_ZMt/shock_ZMt_Lt.png  used o
 n input line 162.
 (luatex.def)             Requested size: 136.57462pt x 76.22772pt.
-<../images/../images/shock_ZMt/shock_ZMt_PIt.png, id=1446, 331.4784pt x 185.011
+<../images/../images/shock_ZMt/shock_ZMt_PIt.png, id=1539, 331.4784pt x 185.011
 2pt>
 File: ../images/../images/shock_ZMt/shock_ZMt_PIt.png Graphic file (type png)
 <use ../images/../images/shock_ZMt/shock_ZMt_PIt.png>
 Package luatex.def Info: ../images/../images/shock_ZMt/shock_ZMt_PIt.png  used 
 on input line 172.
 (luatex.def)             Requested size: 136.57462pt x 76.22772pt.
-<../images/../images/shock_ZMt/shock_ZMt_Pt.png, id=1447, 348.3414pt x 184.0476
+<../images/../images/shock_ZMt/shock_ZMt_Pt.png, id=1540, 348.3414pt x 184.0476
 pt>
 File: ../images/../images/shock_ZMt/shock_ZMt_Pt.png Graphic file (type png)
 <use ../images/../images/shock_ZMt/shock_ZMt_Pt.png>
 Package luatex.def Info: ../images/../images/shock_ZMt/shock_ZMt_Pt.png  used o
 n input line 179.
 (luatex.def)             Requested size: 136.57462pt x 72.1602pt.
-<../images/../images/shock_ZMt/shock_ZMt_Rt.png, id=1448, 342.5598pt x 184.0476
+<../images/../images/shock_ZMt/shock_ZMt_Rt.png, id=1541, 342.5598pt x 184.0476
 pt>
 File: ../images/../images/shock_ZMt/shock_ZMt_Rt.png Graphic file (type png)
 <use ../images/../images/shock_ZMt/shock_ZMt_Rt.png>
 Package luatex.def Info: ../images/../images/shock_ZMt/shock_ZMt_Rt.png  used o
 n input line 186.
 (luatex.def)             Requested size: 136.57462pt x 73.37901pt.
-<../images/../images/shock_ZMt/shock_ZMt_Wt.png, id=1449, 348.3414pt x 184.0476
+<../images/../images/shock_ZMt/shock_ZMt_Wt.png, id=1542, 348.3414pt x 184.0476
 pt>
 File: ../images/../images/shock_ZMt/shock_ZMt_Wt.png Graphic file (type png)
 <use ../images/../images/shock_ZMt/shock_ZMt_Wt.png>
 Package luatex.def Info: ../images/../images/shock_ZMt/shock_ZMt_Wt.png  used o
 n input line 196.
 (luatex.def)             Requested size: 136.57462pt x 72.1602pt.
-<../images/../images/shock_ZMt/shock_ZMt_Yt.png, id=1450, 331.4784pt x 185.0112
+<../images/../images/shock_ZMt/shock_ZMt_Yt.png, id=1543, 331.4784pt x 185.0112
 pt>
 File: ../images/../images/shock_ZMt/shock_ZMt_Yt.png Graphic file (type png)
 <use ../images/../images/shock_ZMt/shock_ZMt_Yt.png>
 Package luatex.def Info: ../images/../images/shock_ZMt/shock_ZMt_Yt.png  used o
 n input line 203.
 (luatex.def)             Requested size: 136.57462pt x 76.22772pt.
-<../images/../images/shock_ZMt/blank.png, id=1451, 122.70844pt x 70.76437pt>
+<../images/../images/shock_ZMt/blank.png, id=1544, 122.70844pt x 70.76437pt>
 File: ../images/../images/shock_ZMt/blank.png Graphic file (type png)
 <use ../images/../images/shock_ZMt/blank.png>
 Package luatex.def Info: ../images/../images/shock_ZMt/blank.png  used on input
  line 210.
 (luatex.def)             Requested size: 136.57462pt x 78.76317pt.
-) (./sections/parametrization.tex [76<../images/../images/shock_ZMt/shock_ZMt_ZM
+) (./sections/parametrization.tex [79<../images/../images/shock_ZMt/shock_ZMt_ZM
 t.png><../images/../images/shock_ZMt/shock_ZMt_Kt.png><../images/../images/shock
 _ZMt/shock_ZMt_It.png><../images/../images/shock_ZMt/shock_ZMt_Ct.png><../images
 /../images/shock_ZMt/shock_ZMt_LAMBDAt.png><../images/../images/shock_ZMt/shock_
@@ -2481,17 +2577,17 @@ ZMt_Lt.png><../images/../images/shock_ZMt/shock_ZMt_PIt.png><../images/../images
 /shock_ZMt/shock_ZMt_Pt.png><../images/../images/shock_ZMt/shock_ZMt_Rt.png><../
 images/../images/shock_ZMt/shock_ZMt_Wt.png><../images/../images/shock_ZMt/shock
 _ZMt_Yt.png><../images/../images/shock_ZMt/blank.png>])
-(./sections/final_remarks.tex [77]) (./post/references.tex [78]
+(./sections/final_remarks.tex [80]) (./post/references.tex [81]
 LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 1
 5.
 
 (C:/Users/andre/AppData/Local/Programs/MiKTeX/tex/latex/lm/t1lmtt.fd
 File: t1lmtt.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
-) [79]
-[80]) (./post/appendix.tex [81]) (./post/app_literature_review.tex [82])
-(./post/app_definitions.tex [83] Excluding 'comment' comment. [84] [85]
-[86] Excluding 'comment' comment.) (./post/app_dynare.tex [87] [88] [89]
-[90] [91] [92] [93]) (./post/app_latex.tex [94]
+) [82]
+[83]) (./post/appendix.tex [84]) (./post/app_literature_review.tex [85])
+(./post/app_definitions.tex [86] Excluding 'comment' comment. [87] [88]
+[89] Excluding 'comment' comment.) (./post/app_dynare.tex [90] [91] [92]
+[93] [94] [95] [96]) (./post/app_latex.tex [97]
 LaTeX Font Info:    Font shape `U/msa/m/n' will be
 (Font)              scaled to size 15.0049pt on input line 13.
 LaTeX Font Info:    Font shape `U/msa/m/n' will be
@@ -2512,7 +2608,7 @@ LaTeX Font Info:    Font shape `U/cmsy/b/n' will be
 (Font)              scaled to size 14.4pt on input line 13.
 LaTeX Font Info:    Font shape `U/cmsy/b/n' will be
 (Font)              scaled to size 8.0pt on input line 13.
- [95] [96]
+ [98] [99]
 LaTeX Font Info:    Font shape `U/BOONDOX-calo/b/n' will be
 (Font)              scaled to size 12.0pt on input line 140.
 LaTeX Font Info:    Font shape `U/BOONDOX-calo/b/n' will be
@@ -2649,269 +2745,4 @@ Missing character: There is no 5 (U+0035) in font fplmbb!
 Missing character: There is no 5 (U+0035) in font fplmbb!
 Missing character: There is no 6 (U+0036) in font fplmbb!
 Missing character: There is no 6 (U+0036) in font fplmbb!
-Missing character: There is no 7 (U+0037) in font fplmbb!
-Missing character: There is no 7 (U+0037) in font fplmbb!
-Missing character: There is no 8 (U+0038) in font fplmbb!
-Missing character: There is no 8 (U+0038) in font fplmbb!
-Missing character: There is no 9 (U+0039) in font fplmbb!
-Missing character: There is no 9 (U+0039) in font fplmbb!
-Missing character: There is no 0 (U+0030) in font fplmbb!
-[97] [98]
-> Step: init table outer spec.
-> Step: parse table options.
-> Step: split table.
-> Step: init table inner spec.
-> Step: parse table inner spec.
-> Step: execute table commands.
-> Step: calculate cell and line sizes.
-> Step: build the whole table.
- [99]
-> Step: init table outer spec.
-> Step: parse table options.
-> Step: split table.
-> Step: init table inner spec.
-> Step: parse table inner spec.
-> Step: execute table commands.
-> Step: calculate cell and line sizes.
-> Step: build the whole table.
-
-Underfull \hbox (badness 10000) in paragraph at lines 258--258
-[]\T1/ppl/m/n/12 Ta-ble 4: Vari-ables (Con-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 258--258
-[]\T1/ppl/m/n/12 Ta-ble 4: Vari-ables (Con-
- []
-
-) (./sections/nk_model.tex [100] [101] [102] [103] [104]
-LaTeX Font Info:    Font shape `U/BOONDOX-calo/b/n' will be
-(Font)              scaled to size 10.0pt on input line 174.
-LaTeX Font Info:    Font shape `U/BOONDOX-calo/b/n' will be
-(Font)              scaled to size 7.6pt on input line 174.
-LaTeX Font Info:    Font shape `U/BOONDOX-calo/b/n' will be
-(Font)              scaled to size 6.0pt on input line 174.
- [105] [106] [107]
-[108] [109] [110] [111] [112] [113] [114] [115] [116] [117] [118] [119]
-[120] [121] [122] [123] [124] [125] [126] [127] [128] [129])
-(./sections/nk_calibration.tex [130]
-> Step: init table outer spec.
-> Step: parse table options.
-> Step: split table.
-> Step: init table inner spec.
-> Step: parse table inner spec.
-> Step: execute table commands.
-> Step: calculate cell and line sizes.
-
-
-Package tabularray Warning: Table width is too small, need 3.69965pt more!
-
-> Step: build the whole table.
-
-Overfull \hbox (3.69965pt too wide) detected at line 56
- [] 
- []
-
-[131]
-> Step: init table outer spec.
-> Step: parse table options.
-> Step: split table.
-> Step: init table inner spec.
-> Step: parse table inner spec.
-> Step: execute table commands.
-> Step: calculate cell and line sizes.
-> Step: build the whole table.
-) (./sections/nk_IRF.tex [132]
-File: ../images/../images/shock_ZAt/shock_ZAt_ZAt.png Graphic file (type png)
-<use ../images/../images/shock_ZAt/shock_ZAt_ZAt.png>
-Package luatex.def Info: ../images/../images/shock_ZAt/shock_ZAt_ZAt.png  used 
-on input line 23.
-(luatex.def)             Requested size: 136.57462pt x 72.2613pt.
-File: ../images/../images/shock_ZAt/shock_ZAt_Kt.png Graphic file (type png)
-<use ../images/../images/shock_ZAt/shock_ZAt_Kt.png>
-Package luatex.def Info: ../images/../images/shock_ZAt/shock_ZAt_Kt.png  used o
-n input line 30.
-(luatex.def)             Requested size: 136.57462pt x 72.2613pt.
-File: ../images/../images/shock_ZAt/shock_ZAt_It.png Graphic file (type png)
-<use ../images/../images/shock_ZAt/shock_ZAt_It.png>
-Package luatex.def Info: ../images/../images/shock_ZAt/shock_ZAt_It.png  used o
-n input line 37.
-(luatex.def)             Requested size: 136.57462pt x 72.2613pt.
-File: ../images/../images/shock_ZAt/shock_ZAt_Ct.png Graphic file (type png)
-<use ../images/../images/shock_ZAt/shock_ZAt_Ct.png>
-Package luatex.def Info: ../images/../images/shock_ZAt/shock_ZAt_Ct.png  used o
-n input line 47.
-(luatex.def)             Requested size: 136.57462pt x 77.01253pt.
-File: ../images/../images/shock_ZAt/shock_ZAt_LAMBDAt.png Graphic file (type pn
-g)
-<use ../images/../images/shock_ZAt/shock_ZAt_LAMBDAt.png>
-Package luatex.def Info: ../images/../images/shock_ZAt/shock_ZAt_LAMBDAt.png  u
-sed on input line 54.
-(luatex.def)             Requested size: 136.57462pt x 76.11761pt.
-File: ../images/../images/shock_ZAt/shock_ZAt_Lt.png Graphic file (type png)
-<use ../images/../images/shock_ZAt/shock_ZAt_Lt.png>
-Package luatex.def Info: ../images/../images/shock_ZAt/shock_ZAt_Lt.png  used o
-n input line 61.
-(luatex.def)             Requested size: 136.57462pt x 74.38992pt.
-File: ../images/../images/shock_ZAt/shock_ZAt_PIt.png Graphic file (type png)
-<use ../images/../images/shock_ZAt/shock_ZAt_PIt.png>
-Package luatex.def Info: ../images/../images/shock_ZAt/shock_ZAt_PIt.png  used 
-on input line 71.
-(luatex.def)             Requested size: 136.57462pt x 74.92065pt.
-File: ../images/../images/shock_ZAt/shock_ZAt_Pt.png Graphic file (type png)
-<use ../images/../images/shock_ZAt/shock_ZAt_Pt.png>
-Package luatex.def Info: ../images/../images/shock_ZAt/shock_ZAt_Pt.png  used o
-n input line 78.
-(luatex.def)             Requested size: 136.57462pt x 76.22772pt.
-File: ../images/../images/shock_ZAt/shock_ZAt_Rt.png Graphic file (type png)
-<use ../images/../images/shock_ZAt/shock_ZAt_Rt.png>
-Package luatex.def Info: ../images/../images/shock_ZAt/shock_ZAt_Rt.png  used o
-n input line 85.
-(luatex.def)             Requested size: 136.57462pt x 74.28546pt.
-File: ../images/../images/shock_ZAt/shock_ZAt_Wt.png Graphic file (type png)
-<use ../images/../images/shock_ZAt/shock_ZAt_Wt.png>
-Package luatex.def Info: ../images/../images/shock_ZAt/shock_ZAt_Wt.png  used o
-n input line 95.
-(luatex.def)             Requested size: 136.57462pt x 72.1602pt.
-File: ../images/../images/shock_ZAt/shock_ZAt_Yt.png Graphic file (type png)
-<use ../images/../images/shock_ZAt/shock_ZAt_Yt.png>
-Package luatex.def Info: ../images/../images/shock_ZAt/shock_ZAt_Yt.png  used o
-n input line 102.
-(luatex.def)             Requested size: 136.57462pt x 72.1602pt.
-File: ../images/../images/shock_ZAt/blank.png Graphic file (type png)
-<use ../images/../images/shock_ZAt/blank.png>
-Package luatex.def Info: ../images/../images/shock_ZAt/blank.png  used on input
- line 109.
-(luatex.def)             Requested size: 136.57462pt x 78.76317pt.
- [133]
-File: ../images/../images/shock_ZMt/shock_ZMt_ZMt.png Graphic file (type png)
-<use ../images/../images/shock_ZMt/shock_ZMt_ZMt.png>
-Package luatex.def Info: ../images/../images/shock_ZMt/shock_ZMt_ZMt.png  used 
-on input line 124.
-(luatex.def)             Requested size: 136.57462pt x 72.2613pt.
-File: ../images/../images/shock_ZMt/shock_ZMt_Kt.png Graphic file (type png)
-<use ../images/../images/shock_ZMt/shock_ZMt_Kt.png>
-Package luatex.def Info: ../images/../images/shock_ZMt/shock_ZMt_Kt.png  used o
-n input line 131.
-(luatex.def)             Requested size: 136.57462pt x 77.01253pt.
-File: ../images/../images/shock_ZMt/shock_ZMt_It.png Graphic file (type png)
-<use ../images/../images/shock_ZMt/shock_ZMt_It.png>
-Package luatex.def Info: ../images/../images/shock_ZMt/shock_ZMt_It.png  used o
-n input line 138.
-(luatex.def)             Requested size: 136.57462pt x 71.56764pt.
-File: ../images/../images/shock_ZMt/shock_ZMt_Ct.png Graphic file (type png)
-<use ../images/../images/shock_ZMt/shock_ZMt_Ct.png>
-Package luatex.def Info: ../images/../images/shock_ZMt/shock_ZMt_Ct.png  used o
-n input line 148.
-(luatex.def)             Requested size: 136.57462pt x 74.28546pt.
-File: ../images/../images/shock_ZMt/shock_ZMt_LAMBDAt.png Graphic file (type pn
-g)
-<use ../images/../images/shock_ZMt/shock_ZMt_LAMBDAt.png>
-Package luatex.def Info: ../images/../images/shock_ZMt/shock_ZMt_LAMBDAt.png  u
-sed on input line 155.
-(luatex.def)             Requested size: 136.57462pt x 75.89459pt.
-File: ../images/../images/shock_ZMt/shock_ZMt_Lt.png Graphic file (type png)
-<use ../images/../images/shock_ZMt/shock_ZMt_Lt.png>
-Package luatex.def Info: ../images/../images/shock_ZMt/shock_ZMt_Lt.png  used o
-n input line 162.
-(luatex.def)             Requested size: 136.57462pt x 76.22772pt.
-File: ../images/../images/shock_ZMt/shock_ZMt_PIt.png Graphic file (type png)
-<use ../images/../images/shock_ZMt/shock_ZMt_PIt.png>
-Package luatex.def Info: ../images/../images/shock_ZMt/shock_ZMt_PIt.png  used 
-on input line 172.
-(luatex.def)             Requested size: 136.57462pt x 76.22772pt.
-File: ../images/../images/shock_ZMt/shock_ZMt_Pt.png Graphic file (type png)
-<use ../images/../images/shock_ZMt/shock_ZMt_Pt.png>
-Package luatex.def Info: ../images/../images/shock_ZMt/shock_ZMt_Pt.png  used o
-n input line 179.
-(luatex.def)             Requested size: 136.57462pt x 72.1602pt.
-File: ../images/../images/shock_ZMt/shock_ZMt_Rt.png Graphic file (type png)
-<use ../images/../images/shock_ZMt/shock_ZMt_Rt.png>
-Package luatex.def Info: ../images/../images/shock_ZMt/shock_ZMt_Rt.png  used o
-n input line 186.
-(luatex.def)             Requested size: 136.57462pt x 73.37901pt.
-File: ../images/../images/shock_ZMt/shock_ZMt_Wt.png Graphic file (type png)
-<use ../images/../images/shock_ZMt/shock_ZMt_Wt.png>
-Package luatex.def Info: ../images/../images/shock_ZMt/shock_ZMt_Wt.png  used o
-n input line 196.
-(luatex.def)             Requested size: 136.57462pt x 72.1602pt.
-File: ../images/../images/shock_ZMt/shock_ZMt_Yt.png Graphic file (type png)
-<use ../images/../images/shock_ZMt/shock_ZMt_Yt.png>
-Package luatex.def Info: ../images/../images/shock_ZMt/shock_ZMt_Yt.png  used o
-n input line 203.
-(luatex.def)             Requested size: 136.57462pt x 76.22772pt.
-File: ../images/../images/shock_ZMt/blank.png Graphic file (type png)
-<use ../images/../images/shock_ZMt/blank.png>
-Package luatex.def Info: ../images/../images/shock_ZMt/blank.png  used on input
- line 210.
-(luatex.def)             Requested size: 136.57462pt x 78.76317pt.
-) (./sections/nk_dynare.tex [134]
-[135] [136] [137] [138] [139] [140]) (./post/app_todo.tex [141] (./thesis.tdo)
-\tf@tdo=\write10
-
-\openout10 = thesis.tdo
-) [142] (./thesis.aux)
- ***********
-LaTeX2e <2023-06-01> patch level 1
-L3 programming layer <2020/03/25>
- ***********
-
-
-LaTeX Font Warning: Size substitutions with differences
-(Font)              up to 1.93356pt have occurred.
-
-
-LaTeX Warning: There were undefined references.
-
-Package logreq Info: Writing requests to 'thesis.run.xml'.
-
-\openout1 = thesis.run.xml
-)
-
-Here is how much of LuaTeX's memory you used:
- 48271 strings out of 477545
- 125081,4921788 words of node,token memory allocated
- 5931 words of node memory still in use:
-   116 hlist, 17 vlist, 7 rule, 10 math, 69 glue, 33 kern, 154 sub_mlist, 161 gl
-yph, 608 attribute, 89 glue_spec, 305 attribute_list, 3 write, 3 pdf_action node
-s
-   avail lists: 1:2,2:5949,3:954,4:307,5:724,6:205,7:6490,8:105,9:3322,10:73,11:
-533,12:1
- 64856 multiletter control sequences out of 65536+600000
- 661 fonts using 40653727 bytes
- 132i,26n,128p,1156b,4379s stack positions out of 10000i,1000n,20000p,200000b,200000s
-{C:/Users/andre/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-ec.enc}{C:/U
-sers/andre/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/base/8r.enc}<C:/Users/a
-ndre/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbsy10.pfb><C
-:/Users/andre/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex1
-0.pfb><C:/Users/andre/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/
-cm/cmmi10.pfb><C:/Users/andre/AppData/Local/Programs/MiKTeX/fonts/type1/public/a
-msfonts/cm/cmr10.pfb><C:/Users/andre/AppData/Local/Programs/MiKTeX/fonts/type1/p
-ublic/amsfonts/cm/cmss12.pfb><C:/Users/andre/AppData/Local/Programs/MiKTeX/fonts
-/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/andre/AppData/Local/Programs/MiKT
-eX/fonts/type1/public/amsfonts/cm/cmsy9.pfb><C:/Users/andre/AppData/Local/Progra
-ms/MiKTeX/fonts/type1/public/amsfonts/euler/eufb10.pfb><C:/Users/andre/AppData/L
-ocal/Programs/MiKTeX/fonts/type1/public/amsfonts/euler/eufm10.pfb><C:/Users/andr
-e/AppData/Local/Programs/MiKTeX/fonts/type1/public/mathpazo/fplmb.pfb><C:/Users/
-andre/AppData/Local/Programs/MiKTeX/fonts/type1/public/mathpazo/fplmbb.pfb><C:/U
-sers/andre/AppData/Local/Programs/MiKTeX/fonts/type1/public/mathpazo/fplmbi.pfb>
-<C:/Users/andre/AppData/Local/Programs/MiKTeX/fonts/type1/public/mathpazo/fplmr.
-pfb><C:/Users/andre/AppData/Local/Programs/MiKTeX/fonts/type1/public/mathpazo/fp
-lmri.pfb><C:/Users/andre/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfon
-ts/latxfont/line10.pfb><C:/Users/andre/AppData/Local/Programs/MiKTeX/fonts/type1
-/public/lm/lmtt12.pfb><C:/Users/andre/AppData/Local/Programs/MiKTeX/fonts/type1/
-public/amsfonts/symbols/msam10.pfb><C:/Users/andre/AppData/Local/Programs/MiKTeX
-/fonts/type1/public/amsfonts/symbols/msbm10.pfb><C:/Users/andre/AppData/Local/Pr
-ograms/MiKTeX/fonts/type1/urw/palatino/uplb8a.pfb><C:/Users/andre/AppData/Local/
-Programs/MiKTeX/fonts/type1/urw/palatino/uplbi8a.pfb><C:/Users/andre/AppData/Loc
-al/Programs/MiKTeX/fonts/type1/urw/palatino/uplr8a.pfb><C:/Users/andre/AppData/L
-ocal/Programs/MiKTeX/fonts/type1/urw/palatino/uplri8a.pfb><C:/Users/andre/AppDat
-a/Local/Programs/MiKTeX/fonts/type1/urw/zapfding/uzdr.pfb><C:/Users/andre/AppDat
-a/Local/Programs/MiKTeX/fonts/type1/public/boondox/zxxbw8a.pfb><C:/Users/andre/A
-ppData/Local/Programs/MiKTeX/fonts/type1/public/boondox/zxxrw8a.pfb>
-Output written on thesis.pdf (142 pages, 4461865 bytes).
-
-PDF statistics: 2808 PDF objects out of 2984 (max. 8388607)
- 968 named destinations out of 1000 (max. 131072)
- 592 words of extra memory for PDF output out of 10000 (max. 100000000)
-
+Missing characte
