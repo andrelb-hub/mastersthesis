@@ -1059,13 +1059,14 @@ Isolate $C_{11}$ in \ref{eq_v6:reg-ss-C-eta-12-t} and substitute in \ref{eq_v6:r
 \begin{align}
 	C_{11} &= C_{12} \frac{\omega_{11} P_{2}}{(1 - \omega_{11}) P_{1}} \tag{\ref{eq_v6:reg-ss-C-eta-12-t}} \\
 	C_{1} &= C_{11}^{\omega_{11}} C_{12}^{1-\omega_{11}} = \left[ C_{12} \frac{\omega_{11} P_{2}}{(1 - \omega_{11}) P_{1}} \right]^{\omega_{11}} C_{12}^{1-\omega_{11}} \tag{\ref{eq_v6:reg-ss-consumption-aggregation}} \implies \\
-	C_{12} &= C_{1} \left( \frac{1 - \omega_{11}}{\omega_{11}} \right)^{\omega_{11}} \label{eq_v6:reg-ss-C12}
+	C_{12} &= C_{1} b_{1}^{\omega_{11}} \label{eq_v6:reg-ss-C12} \\
+	& \text{where: } b_{1} = \left( \frac{1 - \omega_{11}}{\omega_{11}} \right) \label{eq_v6:reg-ss-b1}
 \end{align}
 
 Substitute \ref{eq_v6:reg-ss-C12} in \ref{eq_v6:reg-ss-C-eta-12-t}:
 \begin{align}
 	C_{11} &= C_{12} \frac{\omega_{11} P_{2}}{(1 - \omega_{11}) P_{1}} = C_{1} \left( \frac{1 - \omega_{11}}{\omega_{11}} \right)^{\omega_{11}} \frac{\omega_{11} P_{2}}{(1 - \omega_{11}) P_{1}} \tag{\ref{eq_v6:reg-ss-C-eta-12-t}} \implies \\
-	C_{11} &= C_{1} \left( \frac{1 - \omega_{11}}{\omega_{11}} \right)^{\omega_{11} - 1} \label{eq_v6:reg-ss-C11}
+	C_{11} &= C_{1} b_{1}^{\omega_{11} - 1} \label{eq_v6:reg-ss-C11}
 \end{align}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -1079,21 +1080,24 @@ Substitute \ref{eq_v6:reg-ss-C12} and \ref{eq_v6:reg-ss-C11} in \ref{eq_v6:reg-s
 Substitute \ref{eq_v6:reg-ss-C22} in \ref{eq_v6:reg-ss-consumption-aggregation}:
 \begin{align}
 	C_{2} &= C_{21}^{\omega_{21}} C_{22}^{1-\omega_{21}} = C_{21}^{\omega_{21}} \left[ C_{21} \left( \frac{1 - \omega_{21}}{\omega_{21}} \right) \right]^{1-\omega_{21}} \tag{\ref{eq_v6:reg-ss-consumption-aggregation}} \implies \\
-	C_{21} &= C_{2} \left( \frac{1 - \omega_{21}}{\omega_{21}} \right)^{\omega_{21} - 1} \label{eq_v6:reg-ss-C21}
+	C_{21} &= C_{2} b_{2}^{\omega_{21} - 1} \label{eq_v6:reg-ss-C21} \\
+	& \text{where: } b_{2} = \left( \frac{1 - \omega_{21}}{\omega_{21}} \right) \label{eq_v6:reg-ss-b2}
 \end{align}
 
 Substitute \ref{eq_v6:reg-ss-C21} in \ref{eq_v6:reg-ss-C22}:
 \begin{align}
 	C_{22} &= C_{21} \left( \frac{1 - \omega_{21}}{\omega_{11}} \right) = C_{2} \left( \frac{\omega_{21}}{1 - \omega_{21}} \right)^{1 - \omega_{21}} \left( \frac{1 - \omega_{21}}{\omega_{11}} \right) \tag{\ref{eq_v6:reg-ss-C22}} \implies \\
-	C_{22} &= C_{2} \left( \frac{1 - \omega_{21}}{\omega_{21}} \right)^{\omega_{21}} \label{eq_v6:reg-ss-C22-b}
+	C_{22} &= C_{2} b_{2}^{\omega_{21}} \label{eq_v6:reg-ss-C22-b}
 \end{align}
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-Substitute \ref{eq_v6:reg-ss-investment}, \ref{eq_v6:reg-ss-consumption} in \ref{eq_v6:reg-ss-total-yn}:
+Substitute \ref{eq_v6:reg-ss-C11}, \ref{eq_v6:reg-ss-C21} and \ref{eq_v6:reg-ss-consumption} in \ref{eq_v6:reg-ss-regional-demand}:
 	\begin{alignat}{2}
-		Y_{\eta} &= C_{\eta} + I_{\eta} &\implies \tag{\ref{eq_v6:reg-ss-total-yn}} \\
-		Y_{\eta} &= a_{\eta} Y_{\eta}^{\frac{-\varphi}{\sigma}} + b_{\eta} Y_{\eta} &\implies \nonumber \\
-		Y_{\eta} &= \left( \frac{a_{\eta}}{1 - b_{\eta}} \right)^{\frac{\sigma}{\sigma + \varphi}} \label{eq_v6:reg-ss-total-yn-2}
+		Y_{1} &= C_{11} + C_{21} &\implies \tag{\ref{eq_v6:reg-ss-regional-demand}} \\
+		Y_{1} &= C_{1} b_{1}^{\omega_{11} - 1} + C_{2} b_{2}^{\omega_{21} - 1} &\implies \nonumber \\
+		a_{2} b_{2}^{\omega_{21}} Y_{2}^{\sfrac{-\varphi}{\sigma}} &= b_{2} \left( Y_{1} - a_{1} b_{1}^{\omega_{11} - 1} Y_{1}^{\sfrac{-\varphi}{\sigma}} \right) \\
+		Y_{2} &= \left[ \frac{b_{2} \left( Y_{1} - a_{1} b_{1}^{\omega_{11} - 1} Y_{1}^{\sfrac{-\varphi}{\sigma}} \right) }{a_{2} b_{2}^{\omega_{21}}} \right]^{\sfrac{-\sigma}{\varphi}} \label{eq_v6:reg-ss-total-yn-2}
 	\end{alignat}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%

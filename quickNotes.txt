@@ -1,0 +1,1 @@
+\ref{eq_v6:reg-ss-p1-p2} and \ref{eq_v6:reg-ss-p1-p2-p}

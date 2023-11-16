@@ -2548,4 +2548,91 @@
     <bcf:citekey order="103" intorder="1">solis-garcia_ucb_2022</bcf:citekey>
     <bcf:citekey order="104" intorder="1">solis-garcia_ucb_2022</bcf:citekey>
     <bcf:citekey order="105" intorder="1">solis-garcia_ucb_2022</bcf:citekey>
-    <bcf:citekey order="106" intorder="1">gali_mon
+    <bcf:citekey order="106" intorder="1">gali_monetary_2015</bcf:citekey>
+    <bcf:citekey order="107" intorder="1">solis-garcia_ucb_2022</bcf:citekey>
+    <bcf:citekey order="108" intorder="1">solis-garcia_ucb_2022</bcf:citekey>
+    <bcf:citekey order="109" intorder="1">solis-garcia_ucb_2022</bcf:citekey>
+    <bcf:citekey order="110" intorder="1">solis-garcia_ucb_2022</bcf:citekey>
+    <bcf:citekey order="111" intorder="1">costa_junior_understanding_2016</bcf:citekey>
+    <bcf:citekey order="112" intorder="1">costa_junior_understanding_2016</bcf:citekey>
+    <bcf:citekey order="113" intorder="1">solis-garcia_ucb_2022</bcf:citekey>
+    <bcf:citekey order="114" intorder="1">solis-garcia_ucb_2022</bcf:citekey>
+    <bcf:citekey order="115" intorder="1">calvo_staggered_1983</bcf:citekey>
+    <bcf:citekey order="116" intorder="1">taylor_discretion_1993</bcf:citekey>
+    <bcf:citekey order="117" intorder="1">costa_junior_understanding_2016</bcf:citekey>
+    <bcf:citekey order="118" intorder="1">solis-garcia_ucb_2022</bcf:citekey>
+    <bcf:citekey order="119" intorder="1">uhlig_toolkit_1999</bcf:citekey>
+    <bcf:citekey order="120" intorder="1">costa_junior_understanding_2016</bcf:citekey>
+    <bcf:citekey order="121" intorder="1">costa_junior_understanding_2016</bcf:citekey>
+    <bcf:citekeycount count="5">gali_monetary_2015</bcf:citekeycount>
+    <bcf:citekeycount count="1">bertanha_efeitos_2008</bcf:citekeycount>
+    <bcf:citekeycount count="3">rickman_modern_2010</bcf:citekeycount>
+    <bcf:citekeycount count="1">costa_junior_dsge_2022</bcf:citekeycount>
+    <bcf:citekeycount count="1">mora_fdi_2019</bcf:citekeycount>
+    <bcf:citekeycount count="1">ribeiro_alongamento_2023</bcf:citekeycount>
+    <bcf:citekeycount count="1">albuquerquemello_mercado_2018</bcf:citekeycount>
+    <bcf:citekeycount count="1">pereira_desmatamento_2013</bcf:citekeycount>
+    <bcf:citekeycount count="24">solis-garcia_ucb_2022</bcf:citekeycount>
+    <bcf:citekeycount count="9">costa_junior_understanding_2016</bcf:citekeycount>
+    <bcf:citekeycount count="2">bergholt_basic_2012</bcf:citekeycount>
+    <bcf:citekeycount count="1">tamegawa_two-region_2012</bcf:citekeycount>
+    <bcf:citekeycount count="1">tamegawa_constructing_2013</bcf:citekeycount>
+    <bcf:citekeycount count="1">pytlarczyk_estimated_2005</bcf:citekeycount>
+    <bcf:citekeycount count="1">gali_optimal_2005</bcf:citekeycount>
+    <bcf:citekeycount count="1">alpanda_international_2014</bcf:citekeycount>
+    <bcf:citekeycount count="1">okano_development_2015</bcf:citekeycount>
+    <bcf:citekeycount count="1">croitorov_financial_2020</bcf:citekeycount>
+    <bcf:citekeycount count="1">corbo_maja_2020</bcf:citekeycount>
+    <bcf:citekeycount count="1">smets_estimated_2003</bcf:citekeycount>
+    <bcf:citekeycount count="1">smets_shocks_2007</bcf:citekeycount>
+    <bcf:citekeycount count="1">walque_financial_2010</bcf:citekeycount>
+    <bcf:citekeycount count="1">holm_transmission_2021</bcf:citekeycount>
+    <bcf:citekeycount count="1">capeleti_countercyclical_2022</bcf:citekeycount>
+    <bcf:citekeycount count="1">soltani_investigating_2021</bcf:citekeycount>
+    <bcf:citekeycount count="1">vinhado_politica_2016</bcf:citekeycount>
+    <bcf:citekeycount count="3">calvo_staggered_1983</bcf:citekeycount>
+    <bcf:citekeycount count="3">taylor_discretion_1993</bcf:citekeycount>
+    <bcf:citekeycount count="3">uhlig_toolkit_1999</bcf:citekeycount>
+    <bcf:citekeycount count="1">inada_two-sector_1963</bcf:citekeycount>
+    <bcf:citekeycount count="1">simon_mathematics_1994</bcf:citekeycount>
+  </bcf:section>
+  <!-- SORTING TEMPLATES -->
+  <bcf:sortingtemplate name="nyt">
+    <bcf:sort order="1">
+      <bcf:sortitem order="1">presort</bcf:sortitem>
+    </bcf:sort>
+    <bcf:sort order="2" final="1">
+      <bcf:sortitem order="1">sortkey</bcf:sortitem>
+    </bcf:sort>
+    <bcf:sort order="3">
+      <bcf:sortitem order="1">sortname</bcf:sortitem>
+      <bcf:sortitem order="2">author</bcf:sortitem>
+      <bcf:sortitem order="3">editor</bcf:sortitem>
+      <bcf:sortitem order="4">translator</bcf:sortitem>
+      <bcf:sortitem order="5">sorttitle</bcf:sortitem>
+      <bcf:sortitem order="6">title</bcf:sortitem>
+    </bcf:sort>
+    <bcf:sort order="4">
+      <bcf:sortitem order="1">sortyear</bcf:sortitem>
+      <bcf:sortitem order="2">year</bcf:sortitem>
+    </bcf:sort>
+    <bcf:sort order="5">
+      <bcf:sortitem order="1">sorttitle</bcf:sortitem>
+      <bcf:sortitem order="2">title</bcf:sortitem>
+    </bcf:sort>
+    <bcf:sort order="6">
+      <bcf:sortitem order="1">volume</bcf:sortitem>
+      <bcf:sortitem literal="1" order="2">0</bcf:sortitem>
+    </bcf:sort>
+  </bcf:sortingtemplate>
+  <!-- DATALISTS -->
+  <bcf:datalist section="0"
+                name="nyt/global//global/global"
+                type="entry"
+                sortingtemplatename="nyt"
+                sortingnamekeytemplatename="global"
+                labelprefix=""
+                uniquenametemplatename="global"
+                labelalphanametemplatename="global">
+  </bcf:datalist>
+</bcf:controlfile>
