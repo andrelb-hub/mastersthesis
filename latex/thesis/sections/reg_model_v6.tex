@@ -968,8 +968,10 @@ The steady state of a variable is defined by its constancy through time. For any
 
 	For the steady state solution, all endogenous variables will be determined with respect to the parameters. It is assumed that one regional price level and one productivity level are equal to one. The other productivity level is a multiple of the first:\footnote{where $\vec{\bm{1}}$ is the unit vector.}
 	\begin{align}
-		\langle \begin{matrix} P_{1} & P_{2} & Z_{A1} & Z_{A2} \end{matrix} \rangle = \vec{\bm{1}} \label{eq_v6:reg-ss-p1-za1} \\
-		Z_{A2} = \theta_{A1} Z_{A1} \label{eq_v6:reg-ss-za2-0}
+		\langle \begin{matrix} P_{1} & Z_{A1} \end{matrix} \rangle &= \vec{\bm{1}} \label{eq_v6:reg-ss-p1-za1} 
+		\\ 
+		\langle \begin{matrix} P_{2} & Z_{A2} \end{matrix} \rangle &= \langle \begin{matrix} \theta_{P} P_{1} & \theta_{Z} Z_{A1} \end{matrix} \rangle \label{eq_v6:reg-ss-p2-za2} \\
+		B_{1} = B_{2} = 0
 	\end{align}
 	
 	From \ref{eq_v6:reg-ss-monetary-policy}, \ref{eq_v6:reg-ss-gross-inflation-rate} and \ref{eq_v6:reg-ss-regional-inflation}, the monetary shock, the national and regional gross inflation rates are:
@@ -992,28 +994,34 @@ The steady state of a variable is defined by its constancy through time. For any
 
 From \ref{eq_v6:reg-ss-general-price-level} and \ref{eq_v6:reg-ss-p1-za1}, the regional optimal price $P_{\eta}^{\ast}$ is:
 \begin{align}
-	P_{\eta}^{\ast} = P_{\eta} \implies \langle \begin{matrix} P_{1}^{\ast} & P_{2}^{\ast} \end{matrix} \rangle = \langle \begin{matrix} P_{1} & P_{2} \end{matrix} \rangle = \langle \begin{matrix} P_{1} & P_{1} \end{matrix} \rangle \label{eq_v6:reg-ss-p1-p2}
+	P_{\eta}^{\ast} = P_{\eta} \implies \langle \begin{matrix} P_{1}^{\ast} & P_{2}^{\ast} \end{matrix} \rangle = \langle \begin{matrix} P_{1} & P_{2} \end{matrix} \rangle = \langle \begin{matrix} P_{1} & \theta_{P} P_{1} \end{matrix} \rangle \label{eq_v6:reg-ss-p1-p2}
 \end{align}
 
 Substitute \ref{eq_v6:reg-ss-p1-p2} and \ref{eq_v6:reg-ss-market-clearing-condition-Yt} in \ref{eq_v6:reg-ss-national-price-level} for the national price level:
 	\begin{align}
-		P_{} &= \frac{P_{1} Y_{1} + P_{2} Y_{2}}{Y_{}} = \frac{P_{1} Y_{1} + P_{1} Y_{2}}{Y_{}} \tag{\ref{eq_v6:reg-ss-national-price-level}} \implies \nonumber \\
-		P_{} &= P_{1} = P_{2} = P_{2}^{\ast} = P_{1}^{\ast} \label{eq_v6:reg-ss-p1-p2-p}
+		P_{} &= \frac{P_{1} Y_{1} + P_{2} Y_{2}}{Y_{}} \tag{\ref{eq_v6:reg-ss-national-price-level}} \implies \nonumber \\
+		P_{} &= \frac{P_{1} Y_{1} + \theta_{P} P_{1} Y_{2}}{Y_{}} \label{eq_v6:reg-ss-p1-p2-p}
 	\end{align}
 
 Substitute \ref{eq_v6:reg-ss-p1-p2-p} in \ref{eq_v6:reg-ss-total-expense-level} for the price composition of consumption bundle $Q_{\eta}$:
 \begin{align}
 	Q_{1} &= \left( \frac{P_{1}}{\omega_{11}} \right)^{\omega_{11}} \left( \frac{P_{2}}{1 -\omega_{11}} \right)^{1 -\omega_{11}} \implies \tag{\ref{eq_v6:reg-ss-total-expense-level}} \\
-	Q_{1} &= \frac{1}{\omega_{11}^{\omega_{11}} (1 - \omega_{11})^{1 - \omega_{11}}} \label{eq_v6:reg-ss-qn}
+	Q_{1} &= \frac{P_{1} \theta_{P}^{1 - \omega_{11}}}{\omega_{11}^{\omega_{11}} (1 - \omega_{11})^{1 - \omega_{11}}} \label{eq_v6:reg-ss-q1}
+\end{align}
+
+Substitute \ref{eq_v6:reg-ss-q1} in \ref{eq_v6:reg-ss-total-expense-level-2}:
+	\begin{align}
+	Q_{2} &= Q_{1} \frac{\omega_{11}^{\omega_{11}} (1 - \omega_{11})^{1 - \omega_{11}}}{\omega_{21}^{\omega_{21}} (1 -\omega_{21})^{1 -\omega_{21}}} \tag{\ref{eq_v6:reg-ss-total-expense-level-2}} \implies \\
+	Q_{2} &= \frac{P_{1} \theta_{P}^{1 - \omega_{11}}}{\omega_{21}^{\omega_{21}} (1 - \omega_{21})^{1 - \omega_{21}}} \label{eq_v6:reg-ss-q2}
 \end{align}
 
 Substitute \ref{eq_v6:reg-ss-p1-p2-p} in \ref{eq_v6:reg-ss-int-good-firm-optimal-price-FOC-3} for the marginal cost $\Lambda_{\eta}$:
 \begin{align}
 	P_{\eta}^{\ast} &= \frac{\psi}{\psi-1} \Lambda_{\eta} \implies \tag{\ref{eq_v6:reg-ss-int-good-firm-optimal-price-FOC-3}} \\
-	\Lambda_{\eta} &= P_{} \frac{\psi-1}{\psi} = \Lambda_{} \label{eq_v6:reg-ss-marginal-cost}
+	\Lambda_{\eta} &= P_{\eta} \frac{\psi-1}{\psi} \label{eq_v6:reg-ss-marginal-cost}
 \end{align}
 
-Substitute \ref{eq_v6:reg-ss-p1-za1}, \ref{eq_v6:reg-ss-za2-0} and \ref{eq_v6:reg-ss-marginal-cost} in \ref{eq_v6:reg-ss-int-good-firm-FOC-Lt} for the nominal wage $W_{\eta}$:
+Substitute \ref{eq_v6:reg-ss-p1-za1} and \ref{eq_v6:reg-ss-marginal-cost} in \ref{eq_v6:reg-ss-int-good-firm-FOC-Lt} for the nominal wage $W_{\eta}$:
 \begin{alignat}{2}
 	\Lambda_{\eta} &= \frac{W_{\eta}}{Z_{A\eta}} \tag{\ref{eq_v6:reg-ss-int-good-firm-FOC-Lt}} \\
 	W_{\eta} &= \Lambda_{} Z_{A\eta} \label{eq_v6:reg-ss-nominal-wage}
@@ -1046,11 +1054,11 @@ Due to price parity in steady state, where prices are identical ($P_{\eta} = P_{
 
 \end{comment}
 	
-	Isolate $C_{\eta}$ in \ref{eq_v6:reg-ss-labor-supply} and then substitute \ref{eq_v6:reg-ss-qn} and \ref{eq_v6:reg-ss-p1-za1}:
+	Isolate $C_{\eta}$ in \ref{eq_v6:reg-ss-labor-supply} and then substitute \ref{eq_v6:reg-ss-q1} and \ref{eq_v6:reg-ss-p1-za1}:
 	\begin{align}
 		\frac{\phi L_{\eta}^{\varphi}}{C_{\eta}^{-\sigma}} &= \frac{W_{\eta}}{Q_{\eta}} \implies C_{\eta}^{\sigma} = \frac{W_{\eta}}{\phi L_{\eta}^{\varphi} Q_{\eta}} \implies \nonumber\\
 		C_{\eta} &= a_{\eta} Y_{\eta}^{\frac{-\varphi}{\sigma}} \label{eq_v6:reg-ss-consumption} \\
-		& \text{where:} \quad a_{\eta} = \left[ \frac{W_{\eta}}{\phi Z_{A\eta}^{\varphi} Q_{\eta}} \right]^{\frac{1}{\sigma}} \label{eq_v6:reg-ss-a-eta}
+		& \text{where:} \quad a_{\eta} = \left[ \frac{\Lambda_{} Z_{A\eta}^{1 + \varphi}}{\phi  Q_{\eta}} \right]^{\frac{1}{\sigma}} \label{eq_v6:reg-ss-a-eta}
 	\end{align}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -1060,7 +1068,7 @@ Isolate $C_{11}$ in \ref{eq_v6:reg-ss-C-eta-12-t} and substitute in \ref{eq_v6:r
 	C_{11} &= C_{12} \frac{\omega_{11} P_{2}}{(1 - \omega_{11}) P_{1}} \tag{\ref{eq_v6:reg-ss-C-eta-12-t}} \\
 	C_{1} &= C_{11}^{\omega_{11}} C_{12}^{1-\omega_{11}} = \left[ C_{12} \frac{\omega_{11} P_{2}}{(1 - \omega_{11}) P_{1}} \right]^{\omega_{11}} C_{12}^{1-\omega_{11}} \tag{\ref{eq_v6:reg-ss-consumption-aggregation}} \implies \\
 	C_{12} &= C_{1} b_{1}^{\omega_{11}} \label{eq_v6:reg-ss-C12} \\
-	& \text{where: } b_{1} = \left( \frac{1 - \omega_{11}}{\omega_{11}} \right) \label{eq_v6:reg-ss-b1}
+	& \text{where: } b_{1} = \left( \frac{1 - \omega_{11}}{\omega_{11} \theta_{P}} \right) \label{eq_v6:reg-ss-b1}
 \end{align}
 
 Substitute \ref{eq_v6:reg-ss-C12} in \ref{eq_v6:reg-ss-C-eta-12-t}:
@@ -1074,35 +1082,47 @@ Substitute \ref{eq_v6:reg-ss-C12} in \ref{eq_v6:reg-ss-C-eta-12-t}:
 Substitute \ref{eq_v6:reg-ss-C12} and \ref{eq_v6:reg-ss-C11} in \ref{eq_v6:reg-ss-C-12-12-t}:
 \begin{align}
 	\frac{C_{11} C_{22}}{C_{21} C_{12}} &= \frac{\omega_{11} (1 - \omega_{21})}{\omega_{21} (1 - \omega_{11})} \tag{\ref{eq_v6:reg-ss-C-12-12-t}} \implies \\
-	C_{22} &= C_{21} \left( \frac{1 - \omega_{21}}{\omega_{21}} \right) \label{eq_v6:reg-ss-C22}
+	C_{22} &= C_{21} \left( \frac{1 - \omega_{21}}{\omega_{21} \theta_{P}} \right) \label{eq_v6:reg-ss-C22}
 \end{align}
 
 Substitute \ref{eq_v6:reg-ss-C22} in \ref{eq_v6:reg-ss-consumption-aggregation}:
 \begin{align}
-	C_{2} &= C_{21}^{\omega_{21}} C_{22}^{1-\omega_{21}} = C_{21}^{\omega_{21}} \left[ C_{21} \left( \frac{1 - \omega_{21}}{\omega_{21}} \right) \right]^{1-\omega_{21}} \tag{\ref{eq_v6:reg-ss-consumption-aggregation}} \implies \\
+	C_{2} &= C_{21}^{\omega_{21}} C_{22}^{1-\omega_{21}} = C_{21}^{\omega_{21}} \left[ C_{21} \left( \frac{1 - \omega_{21}}{\omega_{21} \theta_{P}} \right) \right]^{1-\omega_{21}} \tag{\ref{eq_v6:reg-ss-consumption-aggregation}} \implies \\
 	C_{21} &= C_{2} b_{2}^{\omega_{21} - 1} \label{eq_v6:reg-ss-C21} \\
-	& \text{where: } b_{2} = \left( \frac{1 - \omega_{21}}{\omega_{21}} \right) \label{eq_v6:reg-ss-b2}
+	& \text{where: } b_{2} = \left( \frac{1 - \omega_{21}}{\omega_{21} \theta_{P}} \right) \label{eq_v6:reg-ss-b2}
 \end{align}
 
 Substitute \ref{eq_v6:reg-ss-C21} in \ref{eq_v6:reg-ss-C22}:
 \begin{align}
-	C_{22} &= C_{21} \left( \frac{1 - \omega_{21}}{\omega_{11}} \right) = C_{2} \left( \frac{\omega_{21}}{1 - \omega_{21}} \right)^{1 - \omega_{21}} \left( \frac{1 - \omega_{21}}{\omega_{11}} \right) \tag{\ref{eq_v6:reg-ss-C22}} \implies \\
+	C_{22} &= C_{21} \left( \frac{1 - \omega_{21}}{\omega_{21} \theta_{P}} \right) = C_{2} \left( \frac{\omega_{21} \theta_{P}}{1 - \omega_{21}} \right)^{1 - \omega_{21}} \left( \frac{1 - \omega_{21}}{\omega_{21} \theta_{P}} \right) \tag{\ref{eq_v6:reg-ss-C22}} \implies \\
 	C_{22} &= C_{2} b_{2}^{\omega_{21}} \label{eq_v6:reg-ss-C22-b}
 \end{align}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-Substitute \ref{eq_v6:reg-ss-C11}, \ref{eq_v6:reg-ss-C21} and \ref{eq_v6:reg-ss-consumption} in \ref{eq_v6:reg-ss-regional-demand}:
+Substitute \ref{eq_v6:reg-ss-C11}, \ref{eq_v6:reg-ss-C12} and \ref{eq_v6:reg-ss-consumption} in \ref{eq_v6:reg-ss-regional-demand}:
 	\begin{alignat}{2}
-		Y_{1} &= C_{11} + C_{21} &\implies \tag{\ref{eq_v6:reg-ss-regional-demand}} \\
-		Y_{1} &= C_{1} b_{1}^{\omega_{11} - 1} + C_{2} b_{2}^{\omega_{21} - 1} &\implies \nonumber \\
-		a_{2} b_{2}^{\omega_{21}} Y_{2}^{\sfrac{-\varphi}{\sigma}} &= b_{2} \left( Y_{1} - a_{1} b_{1}^{\omega_{11} - 1} Y_{1}^{\sfrac{-\varphi}{\sigma}} \right) \\
-		Y_{2} &= \left[ \frac{b_{2} \left( Y_{1} - a_{1} b_{1}^{\omega_{11} - 1} Y_{1}^{\sfrac{-\varphi}{\sigma}} \right) }{a_{2} b_{2}^{\omega_{21}}} \right]^{\sfrac{-\sigma}{\varphi}} \label{eq_v6:reg-ss-total-yn-2}
+		P_{1} Y_{1} &= P_{1} C_{11} + P_{2} C_{12} &\implies \tag{\ref{eq_v6:reg-ss-regional-demand}} \\
+		P_{1} Y_{1} &= P_{1} C_{1} b_{1}^{\omega_{11} - 1} + \theta_{P} P_{1} C_{1} b_{1}^{\omega_{11}} &\implies \nonumber \\
+		Y_{1} &= \left[ a_{1} b_{1}^{\omega_{11}} \left( \theta_{P} + \frac{1}{b_{1}} \right) \right]^{\frac{\sigma}{\sigma + \varphi}} \label{eq_v6:reg-ss-y1}
+		% a_{2} b_{2}^{\omega_{21}} Y_{2}^{\sfrac{-\varphi}{\sigma}} &= b_{2} \left( Y_{1} - a_{1} b_{1}^{\omega_{11} - 1} Y_{1}^{\sfrac{-\varphi}{\sigma}} \right) \\
+		% Y_{2} &= \left[ \frac{b_{2} \left( Y_{1} - a_{1} b_{1}^{\omega_{11} - 1} Y_{1}^{\sfrac{-\varphi}{\sigma}} \right) }{a_{2} b_{2}^{\omega_{21}}} \right]^{\sfrac{-\sigma}{\varphi}} \label{eq_v6:reg-ss-total-yn-2}
 	\end{alignat}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-	The result of \ref{eq_v6:reg-ss-total-yn-2} determines $Y, I_{\eta}, C_{\eta}, \te[],  C_{\eta 1}, C_{\eta 2}, K_{\eta}, L_{\eta}$ in \ref{eq_v6:reg-ss-market-clearing-condition}, \ref{eq_v6:reg-ss-investment}, \ref{eq_v6:reg-ss-consumption}, \ref{eq_v6:reg-ss-qn},  \ref{eq_v6:reg-ss-C1-Cn-3}, \ref{eq_v6:reg-ss-C12}, \ref{eq_v6:reg-ss-int-good-firm-FOC-Kt-2} and \ref{eq_v6:reg-ss-int-good-firm-FOC-Lt-2}, respectively.
+Substitute \ref{eq_v6:reg-ss-C21}, \ref{eq_v6:reg-ss-C22} and \ref{eq_v6:reg-ss-consumption} in \ref{eq_v6:reg-ss-regional-demand}:
+\begin{alignat}{2}
+	P_{2} Y_{2} &= P_{1} C_{21} + P_{2} C_{22} &\implies \tag{\ref{eq_v6:reg-ss-regional-demand}} \\
+	\theta_{P} Y_{2} &= C_{2} b_{2}^{\omega_{21} - 1} + \theta_{P} C_{2} b_{2}^{\omega_{21}} &\implies \nonumber \\
+	Y_{2} &= \left[ a_{2} b_{2}^{\omega_{21}} \left( 1 + \frac{1}{\theta_{P} b_{2}} \right) \right]^{\frac{\sigma}{\sigma + \varphi}} \label{eq_v6:reg-ss-y2}
+	% a_{2} b_{2}^{\omega_{21}} Y_{2}^{\sfrac{-\varphi}{\sigma}} &= b_{2} \left( Y_{1} - a_{1} b_{1}^{\omega_{11} - 1} Y_{1}^{\sfrac{-\varphi}{\sigma}} \right) \\
+	% Y_{2} &= \left[ \frac{b_{2} \left( Y_{1} - a_{1} b_{1}^{\omega_{11} - 1} Y_{1}^{\sfrac{-\varphi}{\sigma}} \right) }{a_{2} b_{2}^{\omega_{21}}} \right]^{\sfrac{-\sigma}{\varphi}} \label{eq_v6:reg-ss-total-yn-2}
+\end{alignat}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+	% The result of \ref{eq_v6:reg-ss-y1} and \ref{eq_v6:reg-ss-y2} determines $Y, C_{\eta}, \te[],  C_{\eta 1}, C_{\eta 2}, K_{\eta}, L_{\eta}$ in \ref{eq_v6:reg-ss-market-clearing-condition}, \ref{eq_v6:reg-ss-investment}, \ref{eq_v6:reg-ss-consumption}, \ref{eq_v6:reg-ss-q1},  \ref{eq_v6:reg-ss-C1-Cn-3}, \ref{eq_v6:reg-ss-C12}, \ref{eq_v6:reg-ss-int-good-firm-FOC-Kt-2} and \ref{eq_v6:reg-ss-int-good-firm-FOC-Lt-2}, respectively.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -1141,7 +1161,7 @@ Substitute \ref{eq_v6:reg-ss-C11}, \ref{eq_v6:reg-ss-C21} and \ref{eq_v6:reg-ss-
 		\\
 		C_{\eta} &= a_{\eta} Y_{\eta}^{\frac{-\varphi}{\sigma}} \tag{\ref{eq_v6:reg-ss-consumption}}
 		\\
-		\te[] &= \frac{P_{} C_{\eta}}{\omega_{\eta 1}^{\omega_{\eta 1}} (1 -\omega_{\eta 1})^{1 -\omega_{\eta 1}}} \tag{\ref{eq_v6:reg-ss-qn}}
+		\te[] &= \frac{P_{} C_{\eta}}{\omega_{\eta 1}^{\omega_{\eta 1}} (1 -\omega_{\eta 1})^{1 -\omega_{\eta 1}}} \tag{\ref{eq_v6:reg-ss-q1}}
 		\\
 		C_{\eta 1} &= C_{\eta} \left[ \frac{\omega_{\eta 1} P_{2}}{(1 - \omega_{\eta 1}) P_{1}} \right]^{1-\omega_{\eta 1}} \tag{\ref{eq_v6:reg-ss-C1-Cn-3}}
 		\\
@@ -1339,17 +1359,6 @@ Equation \ref{eq_v6:reg-nk-phillips-curve-mc} is the New Keynesian Phillips Curv
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\subsubsection*{Law of Motion for Capital}
-
-Log-linearize \ref{eq_v6:reg-law-of-motion-for-capital}:
-	\begin{alignat}{2}
-		K_{\eta, t+1} &= (1-\delta)K_{\eta t} + I_{\eta t} &\implies \tag{\ref{eq_v6:reg-law-of-motion-for-capital}} \\
-		K_{\eta} (1 + \hat{K}_{\eta, t+1}) &= (1-\delta) K_{\eta} (1 + \hat{K}_{\eta t}) + I_{\eta} (1 + \hat{I}_{\eta t}) &\implies \nonumber \\
-		\hat{K}_{\eta, t+1} &= (1-\delta) \hat{K}_{\eta t} + \delta \hat{I}_{\eta t} \label{eq_v6:reg-ll-law-of-motion-for-capital}
-	\end{alignat}
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
 \begin{tcolorbox}[colback=red!5!white,colframe=red!75!black]
 
 \subsubsection*{Regional Consumption}
@@ -1359,6 +1368,14 @@ Log-linearize \ref{eq_v6:reg-law-of-motion-for-capital}:
 		C_{\eta t} &= C_{\eta 1 t}^{\omega_{\eta 1}} C_{\eta 2 t}^{1-\omega_{\eta 1}} \tag{\ref{eq_v6:reg-consumption-aggregation}} \implies \\
 		\hat{C}_{\eta t} &= \omega_{\eta 1} \hat{C}_{\eta 1 t} + (1-\omega_{\eta 1}) \hat{C}_{\eta 2 t} \label{eq_v6:reg-ll-consumption-aggregation}
 	\end{align}
+	
+\subsubsection*{Region 1 Consumption Weights}
+
+Log-linearize \ref{eq_v6:reg-C-eta-12-t}:
+\begin{align}
+	\frac{C_{11t}}{C_{12t}} &= \frac{\omega_{11} P_{2t}}{(1 - \omega_{11}) P_{1t}} \tag{\ref{eq_v6:reg-C-eta-12-t}} \implies \\
+	\hat{P}_{1 t} - \hat{P}_{2 t} &= \hat{C}_{\eta 2 t} - \hat{C}_{\eta 1 t} \label{eq_v6:reg-ll-C-eta-12-t}
+\end{align}	
 	
 \subsubsection*{Regional Consumption and Expense Weights}
 	
