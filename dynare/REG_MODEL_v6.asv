@@ -179,43 +179,76 @@ sigmaM  = 0.01 ; % Standard Error of monetary shock
 
 model(linear);
 
-% Steady state variables as local varibles, for log-linear use:
+% First, the steady state variables as local varibles, for the log-linear use:
 
-# P1ss   = 1 ;
-# thetaP = 0.9 ;
-# P2ss   = thetaP * P1ss ;
-# ZA1ss  = 1 ;
-# thetaZ = 0.7 ;
-# ZA2ss  = thetaZ * ZA1ss ;
-# ZMss   = 1 ;
-# piss   = 1 ;
-# pi1ss  = 1 ;
-# pi2ss  = 1 ;
-# Rss    = 1 / betta - 1 ;
-# Q1ss=(P1ss*thetaP^(1-omega11))/(omega11^omega11*(1-omega11)^(1-omega11));
-# Q2ss=(P1ss*thetaP^(1-omega11))/(omega21^omega21*(1-omega21)^(1-omega21));
-# LAMBDA1ss = P1ss * (pssi-1)/pssi ; 
-# LAMBDA2ss = P2ss * (pssi-1)/pssi ;
-# W1ss  = LAMBDA1ss * ZA1ss ;
-# W2ss  = LAMBDA2ss * ZA2ss ;
-# a1ss  = ((W1ss * ZA1ss^varphhi)/(phhi * Q1ss))^(1/siggma) ;
-# a2ss  = ((W2ss * ZA2ss^varphhi)/(phhi * Q2ss))^(1/siggma) ;
-# Y1ss  = (Q1ss * a1ss / P1ss)^(siggma / (varphhi + siggma)) ;
-# Y2ss  = (Q2ss * a2ss / P2ss)^(siggma / (varphhi + siggma)) ;
-# C1ss  = a1ss * Y1ss^(-varphhi/siggma) ;
-# C2ss  = a2ss * Y2ss^(-varphhi/siggma) ;
-# C11ss = C1ss * (P2ss * omega11 / (P1ss * (1 - omega11)))^(1-omega11) ;
-# C21ss = C2ss * (P2ss * omega21 / (P1ss * (1 - omega21)))^(1-omega21) ;
-# C12ss = C11ss * (1 - omega11) * P1ss / (omega11 * P2ss) ;
-# C22ss = C21ss * (1 - omega21) * P1ss / (omega21 * P2ss) ;
-# L1ss  = Y1ss / ZA1ss ;
-# L2ss  = Y2ss / ZA2ss ;
-# Yss   = Y1ss + Y2ss ;
+# P1ss = 1
+# thetaP = 0.9
+# P2ss = thetaP * P1ss
+# ZA1ss = 1
+# thetaZ = 0.7
+# ZA2ss = thetaZ * ZA1ss
+# ZMss = 1
+# piss = 1
+# pi1ss = 1
+# pi2ss = 1
+# Rss = 1 / betta - 1;
+# Q1ss = (P1ss*thetaP^(1-omega11))/(omega11^omega11*(1-omega11)^(1-omega11))
+# Q2ss = (P1ss*thetaP^(1-omega11))/(omega21^omega21*(1-omega21)^(1-omega21))
+# LAMBDA1ss = P1ss * (pssi-1)/pssi
+# LAMBDA2ss = P2ss * (pssi-1)/pssi
+# W1ss = LAMBDA1ss * ZA1ss
+# W2ss = LAMBDA2ss * ZA2ss
+# a1ss = ((W1ss * ZA1ss^varphhi)/(phhi * Q1ss))^(1/siggma)
+# a2ss = ((W2ss * ZA2ss^varphhi)/(phhi * Q2ss))^(1/siggma)
+# Y1ss = (Q1ss * a1ss / P1ss)^(siggma / (varphhi + siggma))
+# Y2ss = (Q2ss * a2ss / P2ss)^(siggma / (varphhi + siggma))
+# C1ss = a1ss * Y1ss^(-varphhi/siggma)
+# C2ss = a2ss * Y2ss^(-varphhi/siggma)
+# C11ss = C1ss * (P2ss * omega11 / (P1ss * (1 - omega11)))^(1-omega11)
+# C21ss = C2ss * (P2ss * omega21 / (P1ss * (1 - omega21)))^(1-omega21)
+# C12ss = C11ss * (1 - omega11) * P1ss / (omega11 * P2ss)
+# C22ss = C21ss * (1 - omega21) * P1ss / (omega21 * P2ss)
+# L1ss = Y1ss / ZA1ss
+# L2ss = Y2ss / ZA2ss
+# Yss = Y1ss + Y2ss
+
+# thetapi = P1ss * Y1ss / (P1ss * Y1ss + P2ss * Y2ss)
+# thetaY
+
+
+
+
+#LAMBDAss = Pss * (pssi-1)/pssi;
+#Wss   = (1 - alppha) * (LAMBDAss * ZA1ss * (alppha/RKss)^alppha)^(1/(1 - alppha));
+#a1ss  = ((Wss^(1 + varphhi) * omega11^(omega11) * (1 - omega11)^(1 - omega11)) / (phhi * Pss * ((1 - alppha) * LAMBDAss)^varphhi))^(1/siggma);
+#a2ss  = ((Wss^(1 + varphhi) * omega21^(omega21) * (1 - omega21)^(1 - omega21)) / (phhi * Pss * ((1 - alppha) * LAMBDAss)^varphhi))^(1/siggma);
+#b1ss  = dellta * alppha * LAMBDAss / RKss;
+#b2ss  = dellta * alppha * LAMBDAss / RKss;
+#Y1ss  = ((a1ss / (1 - b1ss)) * (1 / (omega11^omega11 * (1 - omega11)^(1 - omega11))))^(siggma / (siggma + varphhi));
+#Y2ss  = ((a2ss / (1 - b2ss)) * (1 / (omega21^omega21 * (1 - omega21)^(1 - omega21))))^(siggma / (siggma + varphhi));
+#Yss   = Y1ss + Y2ss;
+#I1ss  = b1ss * Y1ss;
+#I2ss  = b2ss * Y2ss;
+#C1ss  = a1ss * Y1ss^(-varphhi / siggma);
+#C2ss  = a2ss * Y2ss^(-varphhi / siggma);
+#E1ss  = Pss * C1ss / (omega11^omega11 * (1 - omega11)^(1 - omega11));
+#E2ss  = Pss * C2ss / (omega21^omega21 * (1 - omega21)^(1 - omega21));
+#C11ss = E1ss * omega11 / Pss;
+#C21ss = E2ss * omega21 / Pss;
+#C12ss = E1ss * (1 - omega11) / Pss;
+#C22ss = E2ss * (1 - omega21) / Pss;
+#K1ss  = alppha * Y1ss * LAMBDAss / RKss;
+#K2ss  = alppha * Y2ss * LAMBDAss / RKss;
+#L1ss  = (1 - alppha) * Y1ss * LAMBDAss / Wss;
+#L2ss  = (1 - alppha) * Y2ss * LAMBDAss / Wss;
 
 % Parameters derived from steady state variables:
-
-# thetapi = P1ss * Y1ss / (P1ss * Y1ss + P2ss * Y2ss) ;
-# thetaY = Y1ss / Yss ;
+#rK       =  RKss / Pss  ;
+#thetaY1  =  Y1ss / Yss  ;
+#thetaC11 = C11ss / Y1ss ;
+#thetaC12 = C21ss / Y1ss ;
+#thetaC21 = C12ss / Y2ss ;
+#thetaC22 = C22ss / Y2ss ;
 
 % -------------------------------------------------- % 
 % MODEL EQUATIONS                                    %
