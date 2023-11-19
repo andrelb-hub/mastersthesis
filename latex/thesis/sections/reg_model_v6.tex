@@ -128,18 +128,20 @@
 
 \subsubsection*{Solutions}
 
-	Divide \ref{eq_v6:reg-C-eta1t} by \ref{eq_v6:reg-C-eta2t}:
+	Divide \ref{eq_v6:reg-C-eta2t} by \ref{eq_v6:reg-C-eta1t}:
 	\begin{align}
-		\frac{C_{\eta 1 t}}{C_{\eta 2 t}} &= \frac{\omega_{\eta 1} Q_{\eta t} C_{\eta t} / P_{1t}}{(1 - \omega_{\eta 1}) Q_{\eta t} C_{\eta t} / P_{2t}} \implies \nonumber \\
-		\frac{C_{\eta 1 t}}{C_{\eta 2 t}} &= \frac{\omega_{\eta 1} P_{2t}}{(1 - \omega_{\eta 1}) P_{1t}} \label{eq_v6:reg-C-eta-12-t}
+		\frac{C_{\eta 2 t}}{C_{\eta 1 t}} &= \frac{(1 - \omega_{\eta 1}) Q_{\eta t} C_{\eta t} / P_{2t}}{\omega_{\eta 1} Q_{\eta t} C_{\eta t} / P_{1t}} \implies \nonumber \\
+		C_{\eta 2 t} &= C_{\eta 1 t} \frac{(1 - \omega_{\eta 1}) P_{1t}}{\omega_{\eta 1} P_{2t}} \label{eq_v6:reg-C-eta-12-t}
 	\end{align}
 	
-	Divide \ref{eq_v6:reg-C-eta-12-t} of region 1 by region 2:
+	Substitute \ref{eq_v6:reg-C-eta-12-t} in \ref{eq_v6:reg-consumption-aggregation}:
 	\begin{align}
-		\frac{C_{11t}/C_{12t}}{C_{21t}/C_{22t}} &= \frac{\omega_{11} P_{2t} / (1 - \omega_{11}) P_{1t}}{\omega_{21} P_{2t} / (1 - \omega_{21}) P_{1t}} \implies \nonumber \\
-		\frac{C_{11t} C_{22t}}{C_{21t} C_{12t}} &= 
-		\frac{\omega_{11} (1 - \omega_{21})}{\omega_{21} (1 - \omega_{11})} \label{eq_v6:reg-C-12-12-t}
+		C_{\eta t} &= C_{\eta 1 t}^{\omega_{\eta 1}} \left[ C_{\eta 1 t} \frac{(1 - \omega_{\eta 1}) P_{1t}}{\omega_{\eta 1} P_{2t}} \right]^{1-\omega_{\eta 1}} \implies \nonumber \\
+		C_{\eta 1 t} &= C_{\eta t} \left( \frac{P_{2t} \omega_{\eta 1}}{P_{1t} (1 - \omega_{\eta 1})} \right)^{1-\omega_{\eta 1}} \label{eq_v6:reg-C-eta-1-t} \\
 	\end{align}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	
 	
 	Substitute \ref{eq_v6:reg-C-eta1t} and \ref{eq_v6:reg-C-eta2t} in \ref{eq_v6:reg-consumption-aggregation}:
 	\begin{align}
@@ -185,7 +187,8 @@ The first order conditions are:
 	L_{\eta t}: &\quad \beta^t \left\{ -\phi \frac{(1+\varphi) L_{\eta t}^{1 + \varphi}}{1 + \varphi} - \mu_{\eta t} \left[ -W_{\eta t} \right] \right\} = 0 \implies \nonumber \\
 	&\quad \mu_{\eta t} = \frac{\phi L_{\eta t}^{\varphi}}{W_{\eta t}} \label{eq_v6:reg-FOC-Lt}
 	\\
-	B_{\eta t}: &\quad \beta^t \{-\mu_{\eta t}\} + \E \beta^{t+1} \{ -\mu_{\eta, t+1} [-(1 + R_{t})] \} = 0 \implies \\ &\quad \mu_{\eta t} = \beta (1 + R_{t}) \E{ \mu_{\eta, t+1}} \label{eq_v6:reg-FOC-Bt}
+	B_{\eta t}: &\quad \beta^t \{-\mu_{\eta t}\} + \E \beta^{t+1} \{ -\mu_{\eta, t+1} [-(1 + R_{t})] \} = 0 \implies \nonumber
+	\\ &\quad \mu_{\eta t} = \beta (1 + R_{t}) \E{ \mu_{\eta, t+1}} \label{eq_v6:reg-FOC-Bt}
 	\\
 	\mu_{\eta t}: &\quad Q_{\eta t} C_{\eta t} + B_{\eta t} = W_{\eta t} L_{\eta t} + (1 + R_{t-1}) B_{\eta,t-1} + \Pi_{\eta t} \tag{\ref{eq_v6:reg-budget-constraint}}
 \end{align}
@@ -214,6 +217,8 @@ Divide \ref{eq_v6:reg-bonds-euler-equation} of region one by region two:
 	\frac{\mathbb{E}_{t} \left\{ Q_{1, t+1} C_{1, t+1}^{\sigma} \right\}}{Q_{1t} C_{1t}^{\sigma}} &= \frac{\mathbb{E}_{t} \left\{ Q_{2, t+1} C_{2, t+1}^{\sigma} \right\}}{Q_{2t} C_{2t}^{\sigma}} \label{eq_v6:reg-bonds-euler-equation-2}
 \end{alignat}
 
+\begin{comment}
+
 Define the regional consumer inflation gross rate:
 \begin{align}
 	\pi_{\eta t} &= \frac{Q_{\eta t}}{Q_{\eta, t-1}} \label{eq_v6:consumer-inflation}
@@ -223,6 +228,8 @@ The relation between the nominal $R_{t}$ and the real $r_{t}$ interest rates is 
 \begin{align}
 	\pi_{t} = \frac{(1 + R_{t})}{(1 + r_{t})}  \label{eq_v6:fisher-equation}
 \end{align}
+	
+\end{comment}
 
 % --------------------------------------------------
 % FIRMS
@@ -498,23 +505,6 @@ The process of fixing prices is random: in each period, $\theta$ firms will main
 Equation \ref{eq_v6:reg-general-price-level} is the aggregate price level.
 
 % --------------------------------------------------
-% intermediate-goods firm profit
-% --------------------------------------------------
-
-\subsubsection*{Intermediate-Goods Firm Profit}
-
-\begin{align}
-	\Pi_{\eta jt} &= P_{\eta t} Y_{\eta jt} - W_{\eta t} L_{\eta jt} \label{eq_v6:reg-int-good-firm-profit} \\
-	\Pi_{\eta t} &= \int_{0}^{1} \Pi_{\eta jt} \dif j \label{eq_v6:reg-int-good-firm-profit-total}
-\end{align}
-
-Substitute \ref{eq_v6:reg-int-good-firm-profit} in \ref{eq_v6:reg-int-good-firm-profit-total}:
-\begin{align}
-	\Pi_{\eta t} &= \int_{0}^{1} P_{\eta t} Y_{\eta jt} - W_{\eta t} L_{\eta jt} \dif j \label{eq_v6:reg-int-good-firm-profit-total-2}
-\end{align}
-
-
-% --------------------------------------------------
 % MONETARY AUTHORITY
 % --------------------------------------------------
 
@@ -524,21 +514,26 @@ The objective of the monetary authority is to conduct the economy to price stabi
 \begin{align}
 	\label{eq_v6:reg-monetary-policy}
 	\frac{R_{t}}{R} =
-	\left( \frac{R_{t-1}}{R} \right)^{\gamma_R}  \left[
-	\left( \frac{\pi_t}{\pi} \right)^{\gamma_\pi}
-	\left( \frac{Y_{t}}{Y} \right)^{\gamma_Y} \right]^{1-\gamma_R} Z_{Mt}
+	\left( \frac{R_{t-1}}{R} \right)^{\gamma_{R}}  \left[
+	\left( \frac{\pi_t}{\pi} \right)^{\gamma_{\pi}}
+	\left( \frac{Y_{t}}{Y} \right)^{\gamma_{Y}} \right]^{1-\gamma_{R}} Z_{Mt}
 \end{align}
 
-where $R, \pi, Y$ are the variables in steady state, $\gamma_R$ is the smoothing parameter for the interest rate $R_{Kt}$, $\gamma_\pi$ and $\gamma_Y$ are the interest-rate sensitivities in relation to inflation and product, respectively, $Z_{Mt}$ is the monetary shock and $\pi_t$ is the gross inflation rate, defined by:\footnote{for the monetary shock definition, see section \ref{sec_v6:reg-monetary-shock}.}
+where $R, \pi, Y$ are the variables in steady state, $\gamma_{R}$ is the smoothing parameter for the interest rate $R_{Kt}$, $\gamma_{\pi}$ and $\gamma_{Y}$ are the interest-rate sensitivities in relation to inflation and product, respectively, $Z_{Mt}$ is the monetary shock and $\pi_t$ is the gross inflation rate, defined by:\footnote{for the monetary shock definition, see section \ref{sec_v6:reg-monetary-shock}.}
 \begin{align}
-	\pi_t = \frac{P_t}{P_{t-1}}
-	\label{eq_v6:reg-gross-inflation-rate}
+	\pi_{t} &= \pi_{1t}^{\theta_{\pi}} \pi_{2t}^{1 - \theta_{\pi}}
+	\label{eq_v6:reg-gross-inflation-rate} \\
+	&\quad \text{where: } \theta_{\pi} = \frac{P_{1t} Y_{1t}}{P_{1t} Y_{1t} + P_{2t} Y_{2t}} \label{eq_v6:reg-theta-pi}
 \end{align}
+
+\begin{comment}
 
 where $P_t$ is the national price level, defined by:
 \begin{align}
 	P_{t} Y_{t} &= P_{1t} Y_{1t} + P_{2t} Y_{2t} \iff P_{t} = \frac{P_{1t} Y_{1t} + P_{2t} Y_{2t}}{Y_{t}} \label{eq_v6:reg-national-price-level}
 \end{align}
+	
+\end{comment}
 
 \begin{comment}
 	\begin{align}
@@ -596,11 +591,34 @@ where $\rho_M \in [0,1]$ and $\varepsilon_{Mt} \sim \mathscr{N}(0,\sigma_M)$.
 	\begin{tcolorbox}[colback=red!5!white,colframe=red!75!black]
 	\begin{align}
 		& Y_{t} = Y_{1 t} + Y_{2 t} \label{eq_v6:reg-market-clearing-condition-Yt} \\
-		& \quad \text{where:} \quad Y_{\eta t} = C_{1 \eta t} + C_{2 \eta t} \label{eq_v6:reg-regional-demand} \\
+		& \quad \text{where:} \quad P_{\eta t} Y_{\eta t} = P_{1t} C_{1 \eta t} + P_{2t} C_{2 \eta t} = Q_{\eta t} C_{\eta t} \label{eq_v6:reg-regional-demand} \\
 		& L_{\eta t} = \int_{0}^{1} L_{\eta jt} \dif j \label{eq_v6:reg-market-clearing-condition-Lt} \\
 		& B_{1t} + B_{2t} = 0 \label{eq_v6:reg-market-clearing-condition-Bt}
 	\end{align}
 	\end{tcolorbox}
+
+% --------------------------------------------------
+% intermediate-goods firm profit
+% --------------------------------------------------
+
+\subsubsection*{Intermediate-Goods Firm Profit}
+
+\begin{align}
+	\Pi_{\eta t} &= \int_{0}^{1} \Pi_{\eta jt} \dif j \label{eq_v6:reg-int-good-firm-profit-total} \\
+	\Pi_{\eta jt} &= P_{\eta t} Y_{\eta jt} - W_{\eta t} L_{\eta jt} \label{eq_v6:reg-int-good-firm-profit}
+\end{align}
+
+Substitute \ref{eq_v6:reg-int-good-firm-profit} and \ref{eq_v6:reg-market-clearing-condition-Lt} in \ref{eq_v6:reg-int-good-firm-profit-total}:
+\begin{align}
+	\Pi_{\eta t} &= P_{\eta t} \int_{0}^{1} Y_{\eta jt} \dif j - W_{\eta t} L_{\eta t} \label{eq_v6:reg-int-good-firm-profit-total-2}
+\end{align}
+
+Substitute \ref{eq_v6:reg-int-good-firm-profit-total-2} in \ref{eq_v6:reg-budget-constraint}:
+\begin{align}
+	Q_{\eta t} C_{\eta t} + B_{\eta t} &= W_{\eta t} L_{\eta t} + (1 + R_{t-1}) B_{\eta,t-1} + P_{\eta t} \int_{0}^{1} Y_{\eta jt} \dif j - W_{\eta t} L_{\eta t} \implies \nonumber \\
+	Q_{\eta t} C_{\eta t} + B_{\eta t} &= (1 + R_{t-1}) B_{\eta,t-1} + P_{\eta t} \int_{0}^{1} Y_{\eta jt} \dif j \label{eq_v6:reg-budget-constraint-2}
+\end{align}
+ 
 
 \begin{comment}
 
@@ -620,7 +638,7 @@ where $\rho_M \in [0,1]$ and $\varepsilon_{Mt} \sim \mathscr{N}(0,\sigma_M)$.
 
 \subsubsection{Model Structure}
 
-The model is composed of the preview solutions, forming a square system of 36 variables and 36 equations, summarized as follows:
+The model is composed of the preview solutions, forming a square system of 34 variables and equations, summarized as follows:
 
 {\singlespacing
 	
@@ -630,19 +648,19 @@ The model is composed of the preview solutions, forming a square system of 36 va
 		
 	\begin{itemize}
 	
-		\item from the household problem: $\langle \begin{matrix} C_{\eta t} & L_{\eta t} & B_{\eta t} & C_{\eta 1t} & C_{\eta 2t} & Q_{\eta t} \end{matrix} \rangle$;
+		\item from the household problem: $\langle \begin{matrix} C_{\eta } & L_{\eta } & B_{\eta } & C_{\eta 1} & C_{\eta 2} & Q_{\eta } \end{matrix} \rangle$;
 		
-		\item from the final-goods firm problem: $\langle \begin{matrix} Y_{\eta jt} & Y_{\eta t} & P_{\eta t} \end{matrix} \rangle$;
-
-		\item from the intermediate-goods firm problems: $\langle \begin{matrix} L_{\eta jt} & P_{\eta t}^{\ast} & \Pi_{\eta} \end{matrix} \rangle$;
+		\item from the final-goods firm problem: $\langle \begin{matrix} Y_{\eta j} & Y_{\eta } & P_{\eta } \end{matrix} \rangle$;
 		
-		\item from the monetary policy: $\langle \begin{matrix} R_{t} & \pi_{t} & Y_{t} \end{matrix} \rangle$;
+		\item from the intermediate-goods firm problems: $\langle \begin{matrix} L_{\eta j} & P_{\eta }^{\ast} \end{matrix} \rangle$;
 		
-		% \item from the market clearing condition: $\langle \begin{matrix} I_{\eta t} \end{matrix} \rangle$;
+		\item from the monetary policy: $\langle \begin{matrix} R_{} & \pi_{} & Y_{} \end{matrix} \rangle$;
 		
-		\item prices: $\langle \begin{matrix} W_{\eta t} & \Lambda_{\eta t} & P_{t} & \pi_{\eta t} \end{matrix} \rangle$;
+		% \item from the market clearing condition: $\langle \begin{matrix} I_{\eta } \end{matrix} \rangle$;
 		
-		\item shocks: $\langle \begin{matrix} Z_{A\eta t} & Z_{Mt} \end{matrix} \rangle$.
+		\item prices: $\langle \begin{matrix} W_{\eta } & \Lambda_{\eta } & \pi_{\eta } \end{matrix} \rangle$;
+		
+		\item shocks: $\langle \begin{matrix} Z_{A\eta } & Z_{M} \end{matrix} \rangle$.
 
 	\end{itemize}
 
@@ -650,36 +668,54 @@ The model is composed of the preview solutions, forming a square system of 36 va
 
 	\begin{enumerate}
 
-		\item Regional Consumption:
+		\item Regional Consumption Weight:
 		\begin{align}
-			C_{\eta t} &= C_{\eta 1 t}^{\omega_{\eta 1}} C_{\eta 2 t}^{1-\omega_{\eta 1}} \tag{\ref{eq_v6:reg-consumption-aggregation}} 
-		\end{align}
-
-		\item Region 1 Consumption Weights:
-		\begin{align}
-			\frac{C_{11t}}{C_{12t}} &= \frac{\omega_{11} P_{2t}}{(1 - \omega_{11}) P_{1t}} \tag{\ref{eq_v6:reg-C-eta-12-t}}
+			C_{\eta 2 t} &= C_{\eta 1 t} \frac{(1 - \omega_{\eta 1}) P_{1t}}{\omega_{\eta 1} P_{2t}} \tag{\ref{eq_v6:reg-C-eta-12-t}}
 		\end{align}
 		
-		\item Regional Consumption Weights:
+		\item Regional Consumption of Good 1:	
 		\begin{align}
-			\frac{C_{11t} C_{22t}}{C_{21t} C_{12t}} &= \frac{\omega_{11} (1 - \omega_{21})}{\omega_{21} (1 - \omega_{11})} \tag{\ref{eq_v6:reg-C-12-12-t}}
+			C_{\eta 1 t} &= C_{\eta t} \left( \frac{P_{2t} \omega_{\eta 1}}{P_{1t} (1 - \omega_{\eta 1})} \right)^{1-\omega_{\eta 1}} \tag{\ref{eq_v6:reg-C-eta-1-t}}
 		\end{align}
-
+		
 		\item Region 1 Price Index:
 		\begin{align}
-			Q_{1t} &= \left( \frac{P_{1 t}}{\omega_{11}} \right)^{\omega_{11}} \left( \frac{P_{2 t}}{1 -\omega_{11}} \right)^{1 -\omega_{11}} \tag{\ref{eq_v6:reg-total-expense-level}}	
+			Q_{1t} &= \left( \frac{P_{1 t}}{\omega_{11}} \right)^{\omega_{11}} \left( \frac{P_{2 t}}{1 -\omega_{11}} \right)^{1 -\omega_{11}} \tag{\ref{eq_v6:reg-total-expense-level}}
 		\end{align}
-				
+		
 		\item Regional Terms of Trade:
 		\begin{align}
 			\frac{Q_{1t}}{Q_{2t}} &= \frac{\omega_{21}^{\omega_{21}} (1 -\omega_{21})^{1 -\omega_{21}}}{\omega_{11}^{\omega_{11}} (1 - \omega_{11})^{1 - \omega_{11}}} \tag{\ref{eq_v6:reg-total-expense-level-2}}
 		\end{align}
 
-		\item Budget Constraint:
+\begin{comment}
+
 		\begin{align}
-		& Q_{\eta t} C_{\eta t} + B_{\eta t} = W_{\eta t} L_{\eta t} + (1 + R_{t-1}) B_{\eta,t-1} + \Pi_{\eta t} \tag{\ref{eq_v6:reg-budget-constraint}}
-		\end{align}
-			
+	C_{\eta t} &= C_{\eta 1 t}^{\omega_{\eta 1}} C_{\eta 2 t}^{1-\omega_{\eta 1}} \tag{\ref{eq_v6:reg-consumption-aggregation}} 
+\end{align}
+
+
+\begin{align}
+	C_{11t} &= C_{12t} \frac{\omega_{11} P_{2t}}{(1 - \omega_{11}) P_{1t}} \tag{\ref{eq_v6:reg-C-eta-12-t}}
+\end{align}
+
+\item Regional Consumption Weights:
+\begin{align}
+	\frac{C_{11t} C_{22t}}{C_{21t} C_{12t}} &= \frac{\omega_{11} (1 - \omega_{21})}{\omega_{21} (1 - \omega_{11})} \tag{\ref{eq_v6:reg-C-12-12-t}}
+\end{align}
+
+
+\begin{align}
+	Q_{1t} &= \left( \frac{P_{1 t}}{\omega_{11}} \right)^{\omega_{11}} \left( \frac{P_{2 t}}{1 -\omega_{11}} \right)^{1 -\omega_{11}} \tag{\ref{eq_v6:reg-total-expense-level}}	
+\end{align}
+
+
+\begin{align}
+	\frac{Q_{1t}}{Q_{2t}} &= \frac{\omega_{21}^{\omega_{21}} (1 -\omega_{21})^{1 -\omega_{21}}}{\omega_{11}^{\omega_{11}} (1 - \omega_{11})^{1 - \omega_{11}}} \tag{\ref{eq_v6:reg-total-expense-level-2}}
+\end{align}
+	
+\end{comment}
+		
 		\item Labor Supply:
 		\begin{align}
 			\frac{\phi L_{\eta t}^{\varphi}}{C_{\eta t}^{-\sigma}} &= \frac{W_{\eta t}}{Q_{\eta t}} \tag{\ref{eq_v6:reg-labor-supply}}
@@ -690,7 +726,7 @@ The model is composed of the preview solutions, forming a square system of 36 va
 			\frac{\mathbb{E}_{t} \left\{Q_{1, t+1} C_{1, t+1}^{\sigma} \right\}}{Q_{1t} C_{1t}^{\sigma}} &= \beta (1 + R_{t}) \tag{\ref{eq_v6:reg-bonds-euler-equation}}
 		\end{align}
 		
-		\item Regional Euler equation for consumption:
+		\item Euler equation for regional consumption:
 		\begin{align}
 			\frac{\mathbb{E}_{t} \left\{ Q_{1, t+1} C_{1, t+1}^{\sigma} \right\}}{Q_{1t} C_{1t}^{\sigma}} &= \frac{\mathbb{E}_{t} \left\{ Q_{2, t+1} C_{2, t+1}^{\sigma} \right\}}{Q_{2t} C_{2t}^{\sigma}} \tag{\ref{eq_v6:reg-bonds-euler-equation-2}}
 		\end{align}
@@ -720,25 +756,33 @@ The model is composed of the preview solutions, forming a square system of 36 va
 			P_{\eta t} = \left[ \theta P_{\eta,t-1}^{1-\psi} + (1-\theta) P_{\eta t}^{\ast 1-\psi} \right]^\frac{1}{1-\psi} \tag{\ref{eq_v6:reg-general-price-level}}
 		\end{align}
 		
-		\item Intermediate-goods Firms Profit:
-		\begin{align}
-			\Pi_{\eta t} &= \int_{0}^{1} P_{\eta t} Y_{\eta jt} - W_{\eta t} L_{\eta jt} \dif j \tag{\ref{eq_v6:reg-int-good-firm-profit-total-2}}
-		\end{align}
+		\begin{comment}
+			\item Intermediate-goods Firms Profit:
+			\begin{align}
+				\Pi_{\eta t} &= \int_{0}^{1} P_{\eta t} Y_{\eta jt} - W_{\eta t} L_{\eta jt} \dif j \tag{\ref{eq_v6:reg-int-good-firm-profit-total-2}}
+			\end{align}	
+		\end{comment}
+		
+		
 		
 		\item Monetary Policy:
 		\begin{align}
-			\frac{R_{t}}{R} = \left( \frac{R_{t-1}}{R} \right)^{\gamma_R} \left[ \left( \frac{\pi_t}{\pi} \right)^{\gamma_\pi} \left( \frac{Y_{t}}{Y} \right)^{\gamma_Y} \right]^{1-\gamma_R} Z_{Mt} \tag{\ref{eq_v6:reg-monetary-policy}}
+			\frac{R_{t}}{R} = \left( \frac{R_{t-1}}{R} \right)^{\gamma_{R}} \left[ \left( \frac{\pi_t}{\pi} \right)^{\gamma_{\pi}} \left( \frac{Y_{t}}{Y} \right)^{\gamma_{Y}} \right]^{1-\gamma_{R}} Z_{Mt} \tag{\ref{eq_v6:reg-monetary-policy}}
 		\end{align}
 		
 		\item National Gross Inflation Rate:
 		\begin{align}
-			\pi_t = \frac{P_t}{P_{t-1}} \tag{\ref{eq_v6:reg-gross-inflation-rate}}
+			\pi_{t} &= \pi_{1t}^{\theta_{\pi}} \pi_{2t}^{1 - \theta_{\pi}} \tag{\ref{eq_v6:reg-gross-inflation-rate}}
 		\end{align}
 		
+		\begin{comment}
 		\item National Price Level:
 		\begin{align}
 			P_{t} &= \frac{P_{1t} Y_{1t} + P_{2t} Y_{2t}}{Y_{t}} \tag{\ref{eq_v6:reg-national-price-level}} % P_{t} = \theta_{P1} P_{1t} + (1 -\theta_{P1}) P_{2t}
-		\end{align}
+		\end{align}			
+		\end{comment}
+		
+
 		
 		\item Regional Gross Inflation Rate:
 		\begin{align}
@@ -762,12 +806,17 @@ The model is composed of the preview solutions, forming a square system of 36 va
 
 		\item Regional Market Clearing Condition: 
 		\begin{align}
-			Y_{\eta t} = C_{1\eta t} + C_{2\eta t} \tag{\ref{eq_v6:reg-regional-demand}}
+			P_{\eta t} Y_{\eta t} = Q_{\eta t} C_{\eta t} \tag{\ref{eq_v6:reg-regional-demand}}
 		\end{align}
 		
 		\item Labor Regional Market Clearing Condition: 
 		\begin{align}
 			L_{\eta t} &= \int_{0}^{1} L_{\eta jt} \dif j \tag{\ref{eq_v6:reg-market-clearing-condition-Lt}}
+		\end{align}
+
+		\item Budget Constraint:
+		\begin{align}
+			Q_{\eta t} C_{\eta t} + B_{\eta t} &= (1 + R_{t-1}) B_{\eta,t-1} + P_{\eta t} \int_{0}^{1} Y_{\eta jt} \dif j \tag{\ref{eq_v6:reg-budget-constraint-2}}
 		\end{align}
 						
 		\end{enumerate}
@@ -827,19 +876,14 @@ The steady state of a variable is defined by its constancy through time. For any
 
 \begin{enumerate}
 	
-	\item Regional Consumption:
+	\item Regional Consumption Weight:
 	\begin{align}
-		C_{\eta} &= C_{\eta 1}^{\omega_{\eta 1}} C_{\eta 2}^{1-\omega_{\eta 1}} \label{eq_v6:reg-ss-consumption-aggregation}
+		C_{\eta 2} &= C_{\eta 1} \frac{(1 - \omega_{\eta 1}) P_{1}}{\omega_{\eta 1} P_{2}} \label{eq_v6:reg-ss-C-eta-12-t}
 	\end{align}
 	
-	\item Region 1 Consumption Weights:
+	\item Regional Consumption of Good 1:	
 	\begin{align}
-		\frac{C_{11}}{C_{12}} &= \frac{\omega_{11} P_{2}}{(1 - \omega_{11}) P_{1}} \label{eq_v6:reg-ss-C-eta-12-t}
-	\end{align}
-	
-	\item Regional Consumption Weights:
-	\begin{align}
-		\frac{C_{11} C_{22}}{C_{21} C_{12}} &= \frac{\omega_{11} (1 - \omega_{21})}{\omega_{21} (1 - \omega_{11})} \label{eq_v6:reg-ss-C-12-12-t}
+		C_{\eta 1} &= C_{\eta} \left( \frac{P_{2} \omega_{\eta 1}}{P_{1} (1 - \omega_{\eta 1})} \right)^{1-\omega_{\eta 1}} \label{eq_v6:reg-ss-C-eta-1-t}
 	\end{align}
 	
 	\item Region 1 Price Index:
@@ -850,12 +894,6 @@ The steady state of a variable is defined by its constancy through time. For any
 	\item Regional Terms of Trade:
 	\begin{align}
 		\frac{Q_{1}}{Q_{2}} &= \frac{\omega_{21}^{\omega_{21}} (1 -\omega_{21})^{1 -\omega_{21}}}{\omega_{11}^{\omega_{11}} (1 - \omega_{11})^{1 - \omega_{11}}} \label{eq_v6:reg-ss-total-expense-level-2}
-	\end{align}
-	
-	\item Budget Constraint:
-	\begin{align}
-		& Q_{\eta} C_{\eta} + B_{\eta} = W_{\eta} L_{\eta} + (1 + R_{}) B_{\eta} + \Pi_{\eta} \implies \nonumber \\
-		& Q_{\eta} C_{\eta} = W_{\eta} L_{\eta} + R_{} B_{\eta} + \Pi_{\eta} \label{eq_v6:reg-ss-budget-constraint}
 	\end{align}
 	
 	\item Labor Supply:
@@ -869,7 +907,7 @@ The steady state of a variable is defined by its constancy through time. For any
 		1 &= \beta (1 + R_{}) \label{eq_v6:reg-ss-bonds-euler-equation}
 	\end{align}
 	
-	\item Regional Euler equation for consumption:
+	\item Euler equation for regional consumption:
 	\begin{align}
 		\frac{\mathbb{E}_{t} \left\{ Q_{1} C_{1}^{\sigma} \right\}}{Q_{1} C_{1}^{\sigma}} &= \frac{\mathbb{E}_{t} \left\{ Q_{2} C_{2}^{\sigma} \right\}}{Q_{2} C_{2}^{\sigma}} = 1 \label{eq_v6:reg-ss-bonds-euler-equation-2}
 	\end{align}
@@ -901,26 +939,35 @@ The steady state of a variable is defined by its constancy through time. For any
 		P_{\eta} &= P_{\eta}^{\ast} \label{eq_v6:reg-ss-general-price-level}
 	\end{align}
 	
-	\item Intermediate-goods Firms Profit:
-	\begin{align}
-		\Pi_{\eta} &= \int_{0}^{1} P_{\eta} Y_{\eta j} - W_{\eta} L_{\eta j} \dif j \label{eq_v6:reg-ss-int-good-firm-profit-total-2}
-	\end{align}
+	\begin{comment}
+			\item Intermediate-goods Firms Profit:
+		\begin{align}
+			\Pi_{\eta} &= \int_{0}^{1} P_{\eta} Y_{\eta j} - W_{\eta} L_{\eta j} \dif j \label{eq_v6:reg-ss-int-good-firm-profit-total-2}
+		\end{align}
+		
+	\end{comment}
+	
+
 	
 	\item Monetary Policy:
 	\begin{align}
-		\frac{R_{}}{R_{}} &= \left( \frac{R_{}}{R_{}} \right)^{\gamma_R} \left[ \left( \frac{\pi_{}}{\pi_{}} \right)^{\gamma_\pi} \left( \frac{Y_{}}{Y_{}} \right)^{\gamma_Y} \right]^{1-\gamma_R} Z_{M} \implies \nonumber \\
+		\frac{R_{}}{R_{}} &= \left( \frac{R_{}}{R_{}} \right)^{\gamma_{R}} \left[ \left( \frac{\pi_{}}{\pi_{}} \right)^{\gamma_{\pi}} \left( \frac{Y_{}}{Y_{}} \right)^{\gamma_{Y}} \right]^{1-\gamma_{R}} Z_{M} \implies \nonumber \\
 		Z_{M} &= 1 \label{eq_v6:reg-ss-monetary-policy}
 	\end{align}
 	
 	\item National Gross Inflation Rate:
 	\begin{align}
-		\pi_{} = \frac{P_{}}{P_{}} = 1 \label{eq_v6:reg-ss-gross-inflation-rate}
+		\pi_{} &= \pi_{1}^{\theta_{\pi}} \pi_{2}^{1 - \theta_{\pi}} \label{eq_v6:reg-ss-gross-inflation-rate}
 	\end{align}
 	
-	\item National Price Level:
-	\begin{align}
-		P_{} &= \frac{P_{1} Y_{1} + P_{2} Y_{2}}{Y_{}} \label{eq_v6:reg-ss-national-price-level} % P_{t} = \theta_{P1} P_{1} + (1 -\theta_{P1}) P_{2}
-	\end{align}
+	\begin{comment}
+		\item National Price Level:
+		\begin{align}
+			P_{} &= \frac{P_{1} Y_{1} + P_{2} Y_{2}}{Y_{}} \label{eq_v6:reg-ss-national-price-level} % P_{t} = \theta_{P1} P_{1} + (1 -\theta_{P1}) P_{2}
+		\end{align}	
+	\end{comment}
+	
+	
 	
 	\item Regional Gross Inflation Rate:
 	\begin{align}
@@ -946,12 +993,17 @@ The steady state of a variable is defined by its constancy through time. For any
 	
 	\item Regional Market Clearing Condition: 
 	\begin{align}
-		Y_{\eta} = C_{1\eta} + C_{2\eta} \label{eq_v6:reg-ss-regional-demand}
+		P_{\eta} Y_{\eta} = Q_{\eta} C_{\eta} \label{eq_v6:reg-ss-regional-demand}
 	\end{align}
 	
 	\item Labor Regional Market Clearing Condition: 
 	\begin{align}
 		L_{\eta} &= \int_{0}^{1} L_{\eta j} \dif j \label{eq_v6:reg-ss-market-clearing-condition-Lt}
+	\end{align}
+
+	\item Budget Constraint:
+	\begin{align}
+		Q_{\eta} C_{\eta} &= R_{} B_{\eta} + P_{\eta} \int_{0}^{1} Y_{\eta j} \dif j \label{eq_v6:reg-ss-budget-constraint-2}
 	\end{align}
 	
 \end{enumerate}
@@ -970,13 +1022,12 @@ The steady state of a variable is defined by its constancy through time. For any
 	\begin{align}
 		\langle \begin{matrix} P_{1} & Z_{A1} \end{matrix} \rangle &= \vec{\bm{1}} \label{eq_v6:reg-ss-p1-za1} 
 		\\ 
-		\langle \begin{matrix} P_{2} & Z_{A2} \end{matrix} \rangle &= \langle \begin{matrix} \theta_{P} P_{1} & \theta_{Z} Z_{A1} \end{matrix} \rangle \label{eq_v6:reg-ss-p2-za2} \\
-		B_{1} = B_{2} = 0
+		\langle \begin{matrix} P_{2} & Z_{A2} \end{matrix} \rangle &= \langle \begin{matrix} \theta_{P} P_{1} & \theta_{Z} Z_{A1} \end{matrix} \rangle \label{eq_v6:reg-ss-p2-za2}
 	\end{align}
 	
 	From \ref{eq_v6:reg-ss-monetary-policy}, \ref{eq_v6:reg-ss-gross-inflation-rate} and \ref{eq_v6:reg-ss-regional-inflation}, the monetary shock, the national and regional gross inflation rates are:
 	\begin{align}
-		\langle \begin{matrix} Z_{M} & \pi & \pi_{1} & \pi_{2} \end{matrix} \rangle  = \vec{\bm{1}}
+		\langle \begin{matrix} Z_{M} & \pi & \pi_{1} & \pi_{2} \end{matrix} \rangle  = \vec{\bm{1}} \label{eq_v6:reg-ss-zm-pi}
 	\end{align}
 	
 	From \ref{eq_v6:reg-ss-productivity-shock} and \ref{eq_v6:reg-ss-monetary-shock}, the productivity and monetary shocks are:
@@ -997,13 +1048,19 @@ From \ref{eq_v6:reg-ss-general-price-level} and \ref{eq_v6:reg-ss-p1-za1}, the r
 	P_{\eta}^{\ast} = P_{\eta} \implies \langle \begin{matrix} P_{1}^{\ast} & P_{2}^{\ast} \end{matrix} \rangle = \langle \begin{matrix} P_{1} & P_{2} \end{matrix} \rangle = \langle \begin{matrix} P_{1} & \theta_{P} P_{1} \end{matrix} \rangle \label{eq_v6:reg-ss-p1-p2}
 \end{align}
 
-Substitute \ref{eq_v6:reg-ss-p1-p2} and \ref{eq_v6:reg-ss-market-clearing-condition-Yt} in \ref{eq_v6:reg-ss-national-price-level} for the national price level:
-	\begin{align}
-		P_{} &= \frac{P_{1} Y_{1} + P_{2} Y_{2}}{Y_{}} \tag{\ref{eq_v6:reg-ss-national-price-level}} \implies \nonumber \\
-		P_{} &= \frac{P_{1} Y_{1} + \theta_{P} P_{1} Y_{2}}{Y_{}} \label{eq_v6:reg-ss-p1-p2-p}
-	\end{align}
+\begin{comment}
 
-Substitute \ref{eq_v6:reg-ss-p1-p2-p} in \ref{eq_v6:reg-ss-total-expense-level} for the price composition of consumption bundle $Q_{\eta}$:
+Substitute \ref{eq_v6:reg-ss-p1-p2} and \ref{eq_v6:reg-ss-market-clearing-condition-Yt} in \ref{eq_v6:reg-ss-national-price-level} for the national price level:
+\begin{align}
+	P_{} &= \frac{P_{1} Y_{1} + P_{2} Y_{2}}{Y_{}} \tag{\ref{eq_v6:reg-ss-national-price-level}} \implies \nonumber \\
+	P_{} &= \frac{P_{1} Y_{1} + \theta_{P} P_{1} Y_{2}}{Y_{}} \label{eq_v6:reg-ss-p1-p2-p}
+\end{align}
+	
+\end{comment}
+
+
+
+Substitute \ref{eq_v6:reg-ss-p1-za1} in \ref{eq_v6:reg-ss-total-expense-level} for the price composition of consumption bundle $Q_{\eta}$:
 \begin{align}
 	Q_{1} &= \left( \frac{P_{1}}{\omega_{11}} \right)^{\omega_{11}} \left( \frac{P_{2}}{1 -\omega_{11}} \right)^{1 -\omega_{11}} \implies \tag{\ref{eq_v6:reg-ss-total-expense-level}} \\
 	Q_{1} &= \frac{P_{1} \theta_{P}^{1 - \omega_{11}}}{\omega_{11}^{\omega_{11}} (1 - \omega_{11})^{1 - \omega_{11}}} \label{eq_v6:reg-ss-q1}
@@ -1015,16 +1072,16 @@ Substitute \ref{eq_v6:reg-ss-q1} in \ref{eq_v6:reg-ss-total-expense-level-2}:
 	Q_{2} &= \frac{P_{1} \theta_{P}^{1 - \omega_{11}}}{\omega_{21}^{\omega_{21}} (1 - \omega_{21})^{1 - \omega_{21}}} \label{eq_v6:reg-ss-q2}
 \end{align}
 
-Substitute \ref{eq_v6:reg-ss-p1-p2-p} in \ref{eq_v6:reg-ss-int-good-firm-optimal-price-FOC-3} for the marginal cost $\Lambda_{\eta}$:
+Substitute \ref{eq_v6:reg-ss-p1-p2} in \ref{eq_v6:reg-ss-int-good-firm-optimal-price-FOC-3} for the marginal cost $\Lambda_{\eta}$:
 \begin{align}
 	P_{\eta}^{\ast} &= \frac{\psi}{\psi-1} \Lambda_{\eta} \implies \tag{\ref{eq_v6:reg-ss-int-good-firm-optimal-price-FOC-3}} \\
 	\Lambda_{\eta} &= P_{\eta} \frac{\psi-1}{\psi} \label{eq_v6:reg-ss-marginal-cost}
 \end{align}
 
-Substitute \ref{eq_v6:reg-ss-p1-za1} and \ref{eq_v6:reg-ss-marginal-cost} in \ref{eq_v6:reg-ss-int-good-firm-FOC-Lt} for the nominal wage $W_{\eta}$:
+From \ref{eq_v6:reg-ss-int-good-firm-FOC-Lt}, the nominal wage $W_{\eta}$ is:
 \begin{alignat}{2}
 	\Lambda_{\eta} &= \frac{W_{\eta}}{Z_{A\eta}} \tag{\ref{eq_v6:reg-ss-int-good-firm-FOC-Lt}} \\
-	W_{\eta} &= \Lambda_{} Z_{A\eta} \label{eq_v6:reg-ss-nominal-wage}
+	W_{\eta} &= \Lambda_{\eta} Z_{A\eta} \label{eq_v6:reg-ss-nominal-wage}
 \end{alignat}
 
 \begin{comment}
@@ -1035,12 +1092,12 @@ Substitute \ref{eq_v6:reg-ss-p1-za1} and \ref{eq_v6:reg-ss-marginal-cost} in \re
 	\end{align}
 \end{comment}
 
-Due to price parity in steady state, where prices are identical ($P_{\eta} = P_{\eta}^{\ast}$) and resulting in a gross inflation level of one ($\pi_{\eta} = 1$), all firms produce the same output level ($Y_{\eta j} = Y_{\eta}$) \cite[Lecture 13, p.12]{solis-garcia_ucb_2022}. As a consequence, they uniformly demand the same amount of factors ($L_{\eta j} = L_{\eta}$), and equation \ref{eq_v6:reg-ss-int-good-firm-production-function} becomes: %  and \ref{eq_v6:reg-ss-int-good-firm-FOC-Lt} become: % $K_{\eta},  , \ref{eq_v6:reg-ss-int-good-firm-FOC-Kt}
+Due to price parity in steady state, where prices are identical ($P_{\eta} = P_{\eta}^{\ast}$) and resulting in a gross inflation level of one ($\pi_{\eta} = 1$), all firms produce the same output level ($\forall j \in [0,1], Y_{\eta j} = Y_{\eta i}, j \neq i$) \cite[Lecture 13, p.12]{solis-garcia_ucb_2022}. As a consequence, they uniformly demand the same amount of factors ($\forall j \in [0,1], L_{\eta j} = L_{\eta i}, j \neq i$), and \ref{eq_v6:reg-ss-final-goods-firm-bundle-rule}, \ref{eq_v6:reg-ss-market-clearing-condition-Lt}, \ref{eq_v6:reg-ss-int-good-firm-production-function} and \ref{eq_v6:reg-ss-budget-constraint-2} become:
 \begin{align}
-	Y_{\eta} &= Z_{A\eta} L_{\eta} \label{eq_v6:reg-ss-int-good-firm-production-function-2} 
-	% \\	
-	% K_{\eta} &= {\alpha_{\eta}} Y_{\eta} \frac{\Lambda_{}}{R_K} \label{eq_v6:reg-ss-int-good-firm-FOC-Kt-2} \\
-	% L_{\eta} &= (1-\alpha_{\eta}) Y_{\eta} \frac{\Lambda_{}}{W} \label{eq_v6:reg-ss-int-good-firm-FOC-Lt-2}
+	Y_{\eta} &= Y_{\eta j} \label{eq_v6:reg-ss-final-goods-firm-bundle-rule-2} \\
+	L_{\eta} &= L_{\eta j} \label{eq_v6:reg-ss-market-clearing-condition-Lt-2} \\
+	Y_{\eta} &= Z_{A\eta} L_{\eta} \label{eq_v6:reg-ss-int-good-firm-production-function-2} \\
+	B_{\eta} &= 0 \label{eq_v6:reg-ss-budget-constraint-3}
 \end{align}
 
 \begin{comment}
@@ -1058,10 +1115,12 @@ Due to price parity in steady state, where prices are identical ($P_{\eta} = P_{
 	\begin{align}
 		\frac{\phi L_{\eta}^{\varphi}}{C_{\eta}^{-\sigma}} &= \frac{W_{\eta}}{Q_{\eta}} \implies C_{\eta}^{\sigma} = \frac{W_{\eta}}{\phi L_{\eta}^{\varphi} Q_{\eta}} \implies \nonumber\\
 		C_{\eta} &= a_{\eta} Y_{\eta}^{\frac{-\varphi}{\sigma}} \label{eq_v6:reg-ss-consumption} \\
-		& \text{where:} \quad a_{\eta} = \left[ \frac{\Lambda_{} Z_{A\eta}^{1 + \varphi}}{\phi  Q_{\eta}} \right]^{\frac{1}{\sigma}} \label{eq_v6:reg-ss-a-eta}
+		& \text{where:} \quad a_{\eta} = \left[ \frac{W_{\eta} Z_{A\eta}^{\varphi}}{\phi  Q_{\eta}} \right]^{\frac{1}{\sigma}} \label{eq_v6:reg-ss-a-eta}
 	\end{align}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{comment}
 
 Isolate $C_{11}$ in \ref{eq_v6:reg-ss-C-eta-12-t} and substitute in \ref{eq_v6:reg-ss-consumption-aggregation}:
 \begin{align}
@@ -1097,32 +1156,29 @@ Substitute \ref{eq_v6:reg-ss-C21} in \ref{eq_v6:reg-ss-C22}:
 	C_{22} &= C_{21} \left( \frac{1 - \omega_{21}}{\omega_{21} \theta_{P}} \right) = C_{2} \left( \frac{\omega_{21} \theta_{P}}{1 - \omega_{21}} \right)^{1 - \omega_{21}} \left( \frac{1 - \omega_{21}}{\omega_{21} \theta_{P}} \right) \tag{\ref{eq_v6:reg-ss-C22}} \implies \\
 	C_{22} &= C_{2} b_{2}^{\omega_{21}} \label{eq_v6:reg-ss-C22-b}
 \end{align}
+	
+\end{comment}
+
+
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-Substitute \ref{eq_v6:reg-ss-C11}, \ref{eq_v6:reg-ss-C12} and \ref{eq_v6:reg-ss-consumption} in \ref{eq_v6:reg-ss-regional-demand}:
+Substitute \ref{eq_v6:reg-ss-consumption} in \ref{eq_v6:reg-ss-regional-demand}:
 	\begin{alignat}{2}
-		P_{1} Y_{1} &= P_{1} C_{11} + P_{2} C_{12} &\implies \tag{\ref{eq_v6:reg-ss-regional-demand}} \\
-		P_{1} Y_{1} &= P_{1} C_{1} b_{1}^{\omega_{11} - 1} + \theta_{P} P_{1} C_{1} b_{1}^{\omega_{11}} &\implies \nonumber \\
-		Y_{1} &= \left[ a_{1} b_{1}^{\omega_{11}} \left( \theta_{P} + \frac{1}{b_{1}} \right) \right]^{\frac{\sigma}{\sigma + \varphi}} \label{eq_v6:reg-ss-y1}
-		% a_{2} b_{2}^{\omega_{21}} Y_{2}^{\sfrac{-\varphi}{\sigma}} &= b_{2} \left( Y_{1} - a_{1} b_{1}^{\omega_{11} - 1} Y_{1}^{\sfrac{-\varphi}{\sigma}} \right) \\
-		% Y_{2} &= \left[ \frac{b_{2} \left( Y_{1} - a_{1} b_{1}^{\omega_{11} - 1} Y_{1}^{\sfrac{-\varphi}{\sigma}} \right) }{a_{2} b_{2}^{\omega_{21}}} \right]^{\sfrac{-\sigma}{\varphi}} \label{eq_v6:reg-ss-total-yn-2}
+		P_{\eta} Y_{\eta} &= Q_{\eta} C_{\eta} &\implies \tag{\ref{eq_v6:reg-ss-regional-demand}} \\
+		P_{\eta} Y_{\eta} &= Q_{\eta} a_{\eta} Y_{\eta}^{\frac{-\varphi}{\sigma}} &\implies \nonumber \\
+		Y_{\eta} &= \left( \frac{Q_{\eta} a_{\eta}}{P_{\eta}} \right)^{\frac{\sigma}{\varphi + \sigma}} \label{eq_v6:reg-ss-yn}
 	\end{alignat}
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-Substitute \ref{eq_v6:reg-ss-C21}, \ref{eq_v6:reg-ss-C22} and \ref{eq_v6:reg-ss-consumption} in \ref{eq_v6:reg-ss-regional-demand}:
-\begin{alignat}{2}
-	P_{2} Y_{2} &= P_{1} C_{21} + P_{2} C_{22} &\implies \tag{\ref{eq_v6:reg-ss-regional-demand}} \\
-	\theta_{P} Y_{2} &= C_{2} b_{2}^{\omega_{21} - 1} + \theta_{P} C_{2} b_{2}^{\omega_{21}} &\implies \nonumber \\
-	Y_{2} &= \left[ a_{2} b_{2}^{\omega_{21}} \left( 1 + \frac{1}{\theta_{P} b_{2}} \right) \right]^{\frac{\sigma}{\sigma + \varphi}} \label{eq_v6:reg-ss-y2}
-	% a_{2} b_{2}^{\omega_{21}} Y_{2}^{\sfrac{-\varphi}{\sigma}} &= b_{2} \left( Y_{1} - a_{1} b_{1}^{\omega_{11} - 1} Y_{1}^{\sfrac{-\varphi}{\sigma}} \right) \\
-	% Y_{2} &= \left[ \frac{b_{2} \left( Y_{1} - a_{1} b_{1}^{\omega_{11} - 1} Y_{1}^{\sfrac{-\varphi}{\sigma}} \right) }{a_{2} b_{2}^{\omega_{21}}} \right]^{\sfrac{-\sigma}{\varphi}} \label{eq_v6:reg-ss-total-yn-2}
-\end{alignat}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-	% The result of \ref{eq_v6:reg-ss-y1} and \ref{eq_v6:reg-ss-y2} determines $Y, C_{\eta}, \te[],  C_{\eta 1}, C_{\eta 2}, K_{\eta}, L_{\eta}$ in \ref{eq_v6:reg-ss-market-clearing-condition}, \ref{eq_v6:reg-ss-investment}, \ref{eq_v6:reg-ss-consumption}, \ref{eq_v6:reg-ss-q1},  \ref{eq_v6:reg-ss-C1-Cn-3}, \ref{eq_v6:reg-ss-C12}, \ref{eq_v6:reg-ss-int-good-firm-FOC-Kt-2} and \ref{eq_v6:reg-ss-int-good-firm-FOC-Lt-2}, respectively.
+	The result of \ref{eq_v6:reg-ss-yn} determines $Y, C_{\eta}, C_{\eta 1}, C_{\eta 2}, L_{\eta}$ in 
+	\ref{eq_v6:reg-ss-market-clearing-condition-Yt}, 
+	\ref{eq_v6:reg-ss-consumption}, 
+	\ref{eq_v6:reg-ss-C-eta-1-t}, 
+	\ref{eq_v6:reg-ss-C-eta-12-t}, 
+	\ref{eq_v6:reg-ss-int-good-firm-production-function-2}, respectively.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -1137,47 +1193,42 @@ Substitute \ref{eq_v6:reg-ss-C21}, \ref{eq_v6:reg-ss-C22} and \ref{eq_v6:reg-ss-
 	\vspace*{-1cm}
 
 	\begin{align}
-		\vec{\bm{1}} &= \langle \begin{matrix} P & P_{1} & P_{2} & Z_{A1} & Z_{A2} & Z_{M} & \pi & \pi_{1} & \pi_{2} \end{matrix} \rangle \label{eq_v6:reg-unity-vector}
+		\vec{\bm{1}} &= \langle \begin{matrix} P_{1} & Z_{A1} \end{matrix} \rangle \tag{\ref{eq_v6:reg-ss-p1-za1}}
+		\\ 
+		\langle \begin{matrix} P_{2} & Z_{A2} \end{matrix} \rangle &= \langle \begin{matrix} \theta_{P} P_{1} & \theta_{Z} Z_{A1} \end{matrix} \rangle \tag{\ref{eq_v6:reg-ss-p2-za2}}
+		\\
+		\vec{\bm{1}} &= \langle \begin{matrix} Z_{M} & \pi & \pi_{1} & \pi_{2} \end{matrix} \rangle \tag{\ref{eq_v6:reg-ss-zm-pi}}
 		\\
 		\vec{\bm{0}} &= \langle \begin{matrix} \varepsilon_{A1} & \varepsilon_{A2} & \varepsilon_{M} \end{matrix} \rangle \tag{\ref{eq_v6:reg-ss-epsilon}}
 		\\
 		R &= \frac{1}{\beta} - 1 \tag{\ref{eq_v6:reg-ss-R}}
 		\\
-		R_K &= P_{} \left[ \frac{1}{\beta} - (1-\delta) \right] \tag{\ref{eq_v6:reg-ss-RK}}
+		P_{\eta}^{\ast} &= P_{\eta} \tag{\ref{eq_v6:reg-ss-p1-p2}} 
 		\\
-		\Lambda_{} &= P_{} \frac{\psi-1}{\psi} \tag{\ref{eq_v6:reg-ss-marginal-cost}}
+		Q_{1} &= \frac{P_{1} \theta_{P}^{1 - \omega_{11}}}{\omega_{11}^{\omega_{11}} (1 - \omega_{11})^{1 - \omega_{11}}} \tag{\ref{eq_v6:reg-ss-q1}} 
 		\\
-		W &= (1-\alpha_{\eta}) \left[ \Lambda_{} Z_{A1} \left( \frac{{\alpha_{\eta}}}{R_K} \right)^{{\alpha_{\eta}}} \right]^\frac{1}{1-\alpha_{\eta}} \tag{\ref{eq_v6:reg-ss-nominal-wage}}
-		\\ % Z_{A2} &= \frac{1}{\Lambda_{}} \left( \frac{R_K}{{\alpha_{\eta}}} \right)^{{\alpha_{\eta}}} \left( \frac{W}{1-\alpha_{\eta}} \right)^{1-\alpha_{\eta}} \tag{\ref{eq_v6:reg-ss-za2}}
-		a_{\eta} &= \left[ \frac{W^{1 +\varphi} \omega_{\eta 1}^{\omega_{\eta 1}} (1 -\omega_{\eta 1})^{1 -\omega_{\eta 1}}}{\phi P_{} \left[ (1 -\alpha_{\eta}) \Lambda_{} \right]^{\varphi}} \right]^{\frac{1}{\sigma}} \tag{\ref{eq_v6:reg-ss-a-eta}}
+		Q_{2} &= \frac{P_{1} \theta_{P}^{1 - \omega_{11}}}{\omega_{21}^{\omega_{21}} (1 - \omega_{21})^{1 - \omega_{21}}} \tag{\ref{eq_v6:reg-ss-q2}} 
 		\\
-		b_{\eta} &= \delta {\alpha_{\eta}} \frac{\Lambda_{}}{R_K} \tag{\ref{eq_v6:reg-ss-b-eta}}
+		\Lambda_{\eta} &= P_{\eta} \frac{\psi-1}{\psi} \tag{\ref{eq_v6:reg-ss-marginal-cost}} 
 		\\
-		Y_{\eta} &= \left( \frac{a_{\eta}}{1 - b_{\eta}} \right)^{\frac{\sigma}{\sigma + \varphi}} \tag{\ref{eq_v6:reg-ss-total-yn-2}}
+		W_{\eta} &= \Lambda_{\eta} Z_{A\eta} \tag{\ref{eq_v6:reg-ss-nominal-wage}} 
 		\\
-		Y &= Y_{1} + Y_{2} \tag{\ref{eq_v6:reg-ss-market-clearing-condition}}
+		B_{\eta} &= 0 \tag{\ref{eq_v6:reg-ss-budget-constraint-3}} 
 		\\
-		I_{\eta} &= b_{\eta} Y_{\eta} \tag{\ref{eq_v6:reg-ss-investment}}
+		a_{\eta} &= \left[ \frac{W_{\eta} Z_{A\eta}^{\varphi}}{\phi  Q_{\eta}} \right]^{\frac{1}{\sigma}} \tag{\ref{eq_v6:reg-ss-a-eta}} 
 		\\
-		C_{\eta} &= a_{\eta} Y_{\eta}^{\frac{-\varphi}{\sigma}} \tag{\ref{eq_v6:reg-ss-consumption}}
+		Y_{\eta} &= \left( \frac{Q_{\eta} a_{\eta}}{P_{\eta}} \right)^{\frac{\sigma}{\varphi + \sigma}} \tag{\ref{eq_v6:reg-ss-yn}} 
 		\\
-		\te[] &= \frac{P_{} C_{\eta}}{\omega_{\eta 1}^{\omega_{\eta 1}} (1 -\omega_{\eta 1})^{1 -\omega_{\eta 1}}} \tag{\ref{eq_v6:reg-ss-q1}}
+		Y_{} &= Y_{1} + Y_{2} \tag{\ref{eq_v6:reg-ss-market-clearing-condition-Yt}} 
 		\\
-		C_{\eta 1} &= C_{\eta} \left[ \frac{\omega_{\eta 1} P_{2}}{(1 - \omega_{\eta 1}) P_{1}} \right]^{1-\omega_{\eta 1}} \tag{\ref{eq_v6:reg-ss-C1-Cn-3}}
+		C_{\eta} &= a_{\eta} Y_{\eta}^{\frac{-\varphi}{\sigma}} \tag{\ref{eq_v6:reg-ss-consumption}} 
 		\\
-		C_{\eta 2} &= C_{\eta} \left[ \frac{(1 - \omega_{\eta 1}) P_{1}}{\omega_{\eta 1} P_{2}} \right]^{\omega_{\eta 1}} \tag{\ref{eq_v6:reg-ss-C12}}
+		C_{\eta 1} &= C_{\eta} \left( \frac{P_{2} \omega_{\eta 1}}{P_{1} (1 - \omega_{\eta 1})} \right)^{1-\omega_{\eta 1}} \tag{\ref{eq_v6:reg-ss-C-eta-1-t}} 
 		\\
-		K_{\eta} &= {\alpha_{\eta}} Y_{\eta} \frac{\Lambda_{}}{R_K} \tag{\ref{eq_v6:reg-ss-int-good-firm-FOC-Kt-2}}
+		C_{\eta 2} &= C_{\eta 1} \frac{(1 - \omega_{\eta 1}) P_{1}}{\omega_{\eta 1} P_{2}} \tag{\ref{eq_v6:reg-ss-C-eta-12-t}} 
 		\\
-		L_{\eta} &= (1-\alpha_{\eta}) Y_{\eta} \frac{\Lambda_{}}{W} \tag{\ref{eq_v6:reg-ss-int-good-firm-FOC-Lt-2}}
+		L_{\eta} &= \frac{Y_{\eta}}{Z_{A\eta}} \tag{\ref{eq_v6:reg-ss-int-good-firm-production-function-2}}
 	\end{align}
-
-		\begin{comment}
-			Y_{1} &= \left[ \left( \frac{a_{1}}{1 - b_{1}} \right) \left( \frac{1}{\omega_{11}^{\omega_{11}} (1 - \omega_{11})^{1 - \omega_{11}}} \right) \right]^{\frac{\sigma}{\sigma + \varphi}} \tag{\ref{eq_v6:reg-ss-total-y1}}
-			\\
-			Y_{2} &= \left[ \left( \frac{a_{2}}{1 - b_{2}} \right) \left( \frac{1}{\omega_{21}^{\omega_{21}} (1 - \omega_{21})^{1 - \omega_{21}}} \right) \right]^{\frac{\sigma}{\sigma + \varphi}} \tag{\ref{eq_v6:reg-ss-total-y2}}
-			\\
-		\end{comment}
 
 	\newpage
 	
@@ -1188,6 +1239,19 @@ Substitute \ref{eq_v6:reg-ss-C21}, \ref{eq_v6:reg-ss-C22} and \ref{eq_v6:reg-ss-
 \subsection{Log-linearization}
 	
 	Due to the number of variables and equations to be solved, computational brute force will be necessary. \dynare \ is a software specialized on macroeconomic modeling, used for solving DSGE models. Before the model can be processed by the software, it must be linearized in order to eliminate the infinite sum in equation \ref{eq_v6:reg-int-good-firm-optimal-price-FOC-3}. For this purpose, Uhlig's rules of log-linearization \cite{uhlig_toolkit_1999} will be applied to all equations in the model.\footnote{see lemma \ref{lemma:uhligs-rules} for details.}
+
+% --------------------------------------------------
+% REGIONAL GROSS INFLATION RATE
+% --------------------------------------------------
+
+\subsubsection*{Regional Gross Inflation Rate}
+
+Log-linearize \ref{eq_v6:reg-regional-inflation} and define the level deviation of regional inflation rate $\hat{\pi}_{\eta t}$:
+\begin{align}
+	\pi_{\eta t} &= \frac{P_{\eta t}}{P_{\eta, t-1}} \tag{\ref{eq_v6:reg-regional-inflation}} \\
+	\hat{\pi}_{\eta t} &= \hat{P}_{\eta t} - \hat{P}_{\eta, t-1}
+	\label{eq_v6:level-dev-regional-inflation}
+\end{align}
 
 % --------------------------------------------------
 % REGIONAL PRICE LEVEL
@@ -1202,19 +1266,6 @@ Log-linearize equation \ref{eq_v6:reg-general-price-level}:
 	\hat{P}_{\eta t} =\, &\theta \hat{P}_{\eta, t-1} + (1-\theta) \hat{P}_{\eta t}^{\ast}
 	\label{eq_v6:reg-ll-general-price-level}
 \end{align}
-
-	% --------------------------------------------------
-	% REGIONAL GROSS INFLATION RATE
-	% --------------------------------------------------
-		
-	\subsubsection*{Regional Gross Inflation Rate}
-
-	Log-linearize \ref{eq_v6:reg-regional-inflation} and define the level deviation of regional inflation rate $\hat{\pi}_{\eta t}$:
-	\begin{align}
-		\pi_{\eta t} &= \frac{P_{\eta t}}{P_{\eta, t-1}} \tag{\ref{eq_v6:reg-regional-inflation}} \\
-		\hat{\pi}_{\eta t} &= \hat{P}_{\eta t} - \hat{P}_{\eta, t-1}
-		\label{eq_v6:level-dev-regional-inflation}
-	\end{align}
 
 % --------------------------------------------------
 % NK PHILLIPS CURVE
@@ -1359,138 +1410,88 @@ Equation \ref{eq_v6:reg-nk-phillips-curve-mc} is the New Keynesian Phillips Curv
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\begin{tcolorbox}[colback=red!5!white,colframe=red!75!black]
-
-\subsubsection*{Regional Consumption}
-	
-	Log-linearize \ref{eq_v6:reg-consumption-aggregation}:
-	\begin{align}
-		C_{\eta t} &= C_{\eta 1 t}^{\omega_{\eta 1}} C_{\eta 2 t}^{1-\omega_{\eta 1}} \tag{\ref{eq_v6:reg-consumption-aggregation}} \implies \\
-		\hat{C}_{\eta t} &= \omega_{\eta 1} \hat{C}_{\eta 1 t} + (1-\omega_{\eta 1}) \hat{C}_{\eta 2 t} \label{eq_v6:reg-ll-consumption-aggregation}
-	\end{align}
-	
-\subsubsection*{Region 1 Consumption Weights}
+\subsubsection*{Regional Consumption Weight}
 
 Log-linearize \ref{eq_v6:reg-C-eta-12-t}:
 \begin{align}
-	\frac{C_{11t}}{C_{12t}} &= \frac{\omega_{11} P_{2t}}{(1 - \omega_{11}) P_{1t}} \tag{\ref{eq_v6:reg-C-eta-12-t}} \implies \\
-	\hat{P}_{1 t} - \hat{P}_{2 t} &= \hat{C}_{\eta 2 t} - \hat{C}_{\eta 1 t} \label{eq_v6:reg-ll-C-eta-12-t}
-\end{align}	
-	
-\subsubsection*{Regional Consumption and Expense Weights}
-	
-	Log-linearize \ref{eq_v6:reg-Cn1-Cn2}:
-	\begin{align}
-		\frac{P_{1 t} C_{\eta 1 t}}{\omega_{\eta 1}} &= \frac{P_{2 t} C_{\eta 2 t}}{1 -\omega_{\eta 1}} \tag{\ref{eq_v6:reg-Cn1-Cn2}} \implies \\
-		\hat{P}_{1 t} - \hat{P}_{2 t} &= \hat{C}_{\eta 2 t} - \hat{C}_{\eta 1 t} \label{eq_v6:reg-ll-Cn1-Cn2}
-	\end{align}
-	
-	Subtract \ref{eq_v6:reg-ll-Cn1-Cn2} of one region from the other:
-	\begin{align}
-		(\hat{P}_{1 t} - \hat{P}_{2 t}) - (\hat{P}_{1 t} - \hat{P}_{2 t}) &= (\hat{C}_{12t} - \hat{C}_{11t}) - (\hat{C}_{22t} - \hat{C}_{21t}) \implies \nonumber \\
-		\hat{C}_{11t} - \hat{C}_{12t} &= \hat{C}_{22t} - \hat{C}_{21t} \label{eq_v6:reg-ll-Cn1-Cn2-b}
-	\end{align}
-	
-\end{tcolorbox}
-
-\begin{comment}
-	
-\subsubsection*{Regional Levels of Consumption and Prices}
-
-Log-linearize \ref{eq_v6:reg-Cn-Cn-2}:
-\begin{alignat}{2}
-	C_{\eta 1 t} &= Q_{\eta t} \frac{\omega_{\eta 1}}{P_{1 t}} &\implies \tag{\ref{eq_v6:reg-Cn-Cn-2}} \\
-	C_{\eta 1} (1 + \hat{C}_{\eta 1 t}) &= \mathscr{E}_{\eta} \frac{\omega_{\eta 1}}{P_{1}} (1 + \hat{\mathscr{E}}_{\eta t} - \hat{P}_{1 t}) &\implies \nonumber \\
-	\hat{C}_{\eta 1 t} &= \hat{\mathscr{E}}_{\eta t} - \hat{P}_{1 t} \iff \hat{\mathscr{E}}_{\eta t} = \hat{C}_{\eta 1 t} + \hat{P}_{1 t} \label{eq_v6:reg-ll-Cn-Cn-2}
-\end{alignat}
-
-Log-linearize \ref{eq_v6:reg-Cn-Cv-2}:
-\begin{alignat}{2}
-	C_{\eta 2 t} &= Q_{\eta t} \frac{1 - \omega_{\eta 1}}{P_{2 t}} &\implies \tag{\ref{eq_v6:reg-Cn-Cv-2}} \\
-	C_{\eta 2} (1 + \hat{C}_{\eta 2 t}) &= \mathscr{E}_{\eta} \frac{1 - \omega_{\eta 1}}{P_{2}} (1 + \hat{\mathscr{E}}_{\eta t} - \hat{P}_{2 t}) &\implies \nonumber \\
-	\hat{C}_{\eta 2 t} &= \hat{\mathscr{E}}_{\eta t} - \hat{P}_{2 t} \iff \hat{\mathscr{E}}_{\eta t} = \hat{C}_{\eta 2 t} + \hat{P}_{2 t} \label{eq_v6:reg-ll-Cn-Cv-2}
-\end{alignat}
-
-Match equations \ref{eq_v6:reg-ll-Cn-Cn-2} and \ref{eq_v6:reg-ll-Cn-Cv-2}:
-\begin{align}
-	\hat{\mathscr{E}}_{\eta t} = \hat{C}_{\eta 1 t} + \hat{P}_{1 t} &= \hat{C}_{\eta 2 t} + \hat{P}_{2 t} \implies \nonumber \\
-	\hat{C}_{\eta 1 t} - \hat{C}_{\eta 2 t} &= \hat{P}_{2 t} - \hat{P}_{1 t} \label{eq_v6:reg-ll-regional-consumption-and-prices}
+	C_{\eta 2 t} &= C_{\eta 1 t} \frac{(1 - \omega_{\eta 1}) P_{1t}}{\omega_{\eta 1} P_{2t}} \tag{\ref{eq_v6:reg-C-eta-12-t}} \implies \\
+	\hat{C}_{\eta 2t} - \hat{C}_{\eta 1t} &= \hat{P}_{\eta 1t} - \hat{P}_{\eta 2t} \label{eq_v6:reg-C-eta-12-t-ll}
 \end{align}
 
-Equation \ref{eq_v6:reg-ll-regional-consumption-and-prices} shows that the variation of both goods consumption in each region correspond to the distance between the variations of the regional price  levels.	
-	
-\end{comment}
+\subsubsection*{Regional Consumption of Good 1}
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Log-linearize \ref{eq_v6:reg-C-eta-1-t}:
+\begin{align}
+	C_{\eta 1 t} &= C_{\eta t} \left( \frac{P_{2t} \omega_{\eta 1}}{P_{1t} (1 - \omega_{\eta 1})} \right)^{1-\omega_{\eta 1}} \tag{\ref{eq_v6:reg-C-eta-1-t}} \implies \\
+	\hat{C}_{\eta t} - \hat{C}_{\eta 1 t} &= (1 - \omega_{\eta 1}) (\hat{P}_{1t} - \hat{P}_{2t}) \label{eq_v6:reg-C-eta-1-t-ll}
+\end{align}
 
-% \subsubsection*{Price Composition of Consumption Bundle}
-
-\subsubsection*{Total Expenses}
+\subsubsection*{Region 1 Price Index}
 
 Log-linearize \ref{eq_v6:reg-total-expense-level}:
-	\begin{alignat}{2}
-		Q_{\eta t} &= C_{\eta t} \left[ \frac{P_{1 t}}{\omega_{\eta 1}} \right]^{\omega_{\eta 1}} \left[ \frac{P_{2 t}}{1 -\omega_{\eta 1}} \right]^{1 -\omega_{\eta 1}} &\implies \tag{\ref{eq_v6:reg-total-expense-level}} \\
-		\te[] (1 + \hat{\mathscr{E}}_{\eta t}) &= \frac{C_{\eta} P_{1}^{\omega_{\eta 1}} P_{2}^{1 -\omega_{\eta 1}}}{\omega_{\eta 1}^{\omega_{\eta 1}} (1 - \omega_{\eta 1})^{(1 - \omega_{\eta 1})}} \cdot \nonumber \\
-		 \qquad &\cdot (1 + \hat{C}_{\eta t} + \omega_{\eta 1} \hat{P}_{1 t} + (1 -\omega_{\eta 1}) \hat{P}_{2 t}) &\implies \nonumber \\
-		\hat{\mathscr{E}}_{\eta t} &= \hat{C}_{\eta t} + \omega_{\eta 1} \hat{P}_{1 t} + (1 -\omega_{\eta 1}) \hat{P}_{2 t} \label{eq_v6:reg-ll-total-expense-level}
-	\end{alignat}
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-\begin{comment}
-	
-Isolate $\hat{\mathscr{E}}_{\eta t}$ in \ref{eq_v6:reg-ll-regional-consumption-and-prices} and substitute in \ref{eq_v6:reg-ll-total-expense-level}:
 \begin{align}
-	\hat{C}_{\eta 1 t} &= \hat{\mathscr{E}}_{\eta t} - \hat{P}_{\eta t} \iff \hat{\mathscr{E}}_{\eta t} = \hat{C}_{\eta 1 t} + \hat{P}_{\eta t} \tag{\ref{eq_v6:reg-ll-regional-consumption-and-prices}} \\
-	\hat{C}_{\eta 1 t} + \hat{P}_{\eta t} &= \hat{C}_{\eta t} + \omega_{\eta 1} \hat{P}_{\eta t} + (1 -\omega_{\eta 1}) \hat{P}_{\nu t} \implies \nonumber \\
-	\hat{C}_{\eta t} - \hat{C}_{\eta 1 t} &= (1 -\omega_{\eta 1}) (\hat{P}_{\eta t} - \hat{P}_{\nu t}) \label{eq_v6:reg-ll-total-expense-level-2}
+	Q_{1t} &= \left( \frac{P_{1 t}}{\omega_{11}} \right)^{\omega_{11}} \left( \frac{P_{2 t}}{1 -\omega_{11}} \right)^{1 -\omega_{11}} \tag{\ref{eq_v6:reg-total-expense-level}} \implies \\
+	\hat{Q}_{1t} &= \omega_{11} \hat{P}_{1 t} + (1 -\omega_{11}) \hat{P}_{2 t} \label{eq_v6:reg-total-expense-level-ll}
 \end{align}
 
-Equation \ref{eq_v6:reg-ll-total-expense-level-2} shows that the distance between the regional consumption and the good $\eta$ consumption is proportional to the distance between the variations of both regional price levels.	
-	
-\end{comment}
+\subsubsection*{Regional Terms of Trade}
 
-
+Log-linearize \ref{eq_v6:reg-total-expense-level-2}:
+\begin{align}
+	\hat{Q}_{1t} &= \hat{Q}_{2t} \label{eq_v6:reg-total-expense-level-2-ll}
+\end{align}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \subsubsection*{Labor Supply}
 
-Log-linearize \ref{eq_v6:reg-labor-supply}:
+Log-linearize \ref{eq_v6:reg-labor-supply} and then substitute \ref{eq_v6:reg-total-expense-level-2-ll}:
 \begin{alignat}{2}
-	\frac{\phi L_{\eta t}^{\varphi}}{C_{\eta t}^{1-\sigma}} &= \frac{W_{\eta t}}{Q_{\eta t}} &\implies \tag{\ref{eq_v6:reg-labor-supply}} \\
-	\varphi \hat{L}_{\eta t} - (1 -\sigma) \hat{C}_{\eta t} &= \hat{W}_t - \hat{ \mathscr{E} }_{\eta t} & \label{eq_v6:reg-ll-labor-supply}
+	\frac{\phi L_{\eta t}^{\varphi}}{C_{\eta t}^{-\sigma}} &= \frac{W_{\eta t}}{Q_{\eta t}} &\implies \tag{\ref{eq_v6:reg-labor-supply}} \\
+	\varphi \hat{L}_{\eta t} + \sigma \hat{C}_{\eta t} &= \hat{W}_{\eta t} - \hat{Q}_{1t} & \label{eq_v6:reg-ll-labor-supply}
 \end{alignat}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\subsubsection*{Euler equation for the bonds return}
+\subsubsection*{Region 1 Euler equation for the bonds return}
 
 Log-linearize \ref{eq_v6:reg-bonds-euler-equation}:
-\begin{alignat}{2}
-	& \frac{ C_{\eta t}^{1-\sigma}}{Q_{\eta t}} = \beta (1 + R_{t}) \E \left\{ \frac{ C_{\eta, t+1}^{1-\sigma}}{Q_{\eta, t+1}} \right\} \implies \tag{\ref{eq_v6:reg-bonds-euler-equation}}\\
-	& \frac{ C_{\eta t}^{1-\sigma}}{Q_{\eta t}} \cdot \frac{\E \te[t+1]}{\E C_{\eta, t+1}^{1-\sigma}} = \beta + \beta R_{t} \implies \nonumber \\
-	\begin{split}
-		& \frac{C_{\eta}^{1-\sigma}}{\te[]} \cdot \frac{\te[]}{C_{\eta}^{1-\sigma}} (1 + (1-\sigma) \hat{C}_{\eta t} - \hat{\mathscr{E}}_{\eta t} + \E \{ \hat{\mathscr{E}}_{\eta, t+1} - (1 -\sigma) \hat{C}_{\eta, t+1} \}) = \\ & \qquad \qquad = \beta + \beta (R(1 + \hat{R}_{t})) \implies
-	\end{split} \nonumber \\
-	& \E \left\{ \hat{\mathscr{E}}_{\eta, t+1} - (1 -\sigma) \hat{C}_{\eta, t+1} \right\} - [\hat{\mathscr{E}}_{\eta t} - (1 -\sigma) \hat{C}_{\eta t}] = (1 -\beta) \hat{R}_{t} \label{eq_v6:reg-ll-bonds-euler-equation}
-\end{alignat}
+\begin{align}
+	\frac{\mathbb{E}_{t} \left\{Q_{1, t+1} C_{1, t+1}^{\sigma} \right\}}{Q_{1t} C_{1t}^{\sigma}} &= \beta (1 + R_{t}) \tag{\ref{eq_v6:reg-bonds-euler-equation}} \implies \\
+	\hat{Q}_{1, t+1} - \hat{Q}_{1t} + \sigma (\hat{C}_{1, t+1} - \hat{C}_{1t}) &= (1 - \beta) \hat{R}_{t} \label{eq_v6:reg-bonds-euler-equation-ll}
+\end{align}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
+\subsubsection*{Euler equation for regional consumption}
+
+Log-linearize \ref{eq_v6:reg-bonds-euler-equation} and then substitute \ref{eq_v6:reg-total-expense-level-2-ll}:
+\begin{align}
+	& \frac{\mathbb{E}_{t} \left\{ Q_{1, t+1} C_{1, t+1}^{\sigma} \right\}}{Q_{1t} C_{1t}^{\sigma}} = \frac{\mathbb{E}_{t} \left\{ Q_{2, t+1} C_{2, t+1}^{\sigma} \right\}}{Q_{2t} C_{2t}^{\sigma}} \tag{\ref{eq_v6:reg-bonds-euler-equation-2}} \implies \\
+	& \hat{Q}_{1, t+1} - \hat{Q}_{1t} + \sigma (\hat{C}_{1, t+1} - \hat{C}_{1t}) = \nonumber \\ 
+	&\qquad = \hat{Q}_{2, t+1} - \hat{Q}_{2t} + \sigma (\hat{C}_{2, t+1} - \hat{C}_{2t}) \implies \nonumber \\
+	& \hat{C}_{1, t+1} - \hat{C}_{1t} = \hat{C}_{2, t+1} - \hat{C}_{2t} \label{eq_v6:reg-bonds-euler-equation-2-ll}
+\end{align}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{comment}
+	
 \subsubsection*{Euler equation for the capital return}
 
 Log-linearize \ref{eq_v6:reg-capital-euler-equation}:
-	\begin{alignat}{2}
-		& \frac{ C_{\eta t}^{1-\sigma}}{Q_{\eta t}} P_{\eta t} = \beta \mathbb{E}_t \left\{ \frac{ C_{\eta, t+1}^{1-\sigma}}{Q_{\eta, t+1}} [(1-\delta) P_{\eta, t+1} + R_{K,t+1}] \right\} \implies \tag{\ref{eq_v6:reg-capital-euler-equation}} \\
-		& \frac{P_{\eta t} C_{\eta t}^{1-\sigma}}{Q_{\eta t}} \mathbb{E}_t \left\{ \frac{\te[t+1]}{P_{\eta, t+1} C_{\eta, t+1}^{1-\sigma}} \right\} = \beta \left[ (1-\delta) + \mathbb{E}_t \left\{ \frac{R_{K,t+1}}{P_{\eta, t+1}} \right\} \right] \implies \nonumber \\
-		& \frac{P_{\eta} C_{\eta}^{1-\sigma}}{\te[]} \cdot \frac{\te[]}{P_{\eta} C_{\eta}^{1-\sigma}} (1 + \hat{P}_{\eta t} + (1 -\sigma) \hat{C}_{\eta t} - \hat{\mathscr{E}}_{\eta t} + \nonumber \\ 
-		& \qquad + \E \{\hat{\mathscr{E}}_{\eta, t+1} - \hat{P}_{\eta, t+1} - (1 -\sigma) \hat{C}_{\eta, t+1}\}) = \nonumber \\
-		& \qquad = \beta \left[ (1-\delta) + \frac{R_{K}}{P_{\eta}} \mathbb{E}_t \left\{ 1 + \hat{R}_{K, t+1} -\hat{P}_{\eta, t+1} \right\} \right] \implies \nonumber \\
-		& \E \left\{ \hat{\mathscr{E}}_{\eta, t+1} - \hat{P}_{\eta, t+1}  - (1 -\sigma) \hat{C}_{\eta, t+1} \right\} - (\hat{\mathscr{E}}_{\eta t} - \hat{P}_{\eta t} - (1 -\sigma) \hat{C}_{\eta t}) = \nonumber \\
-		& \qquad = \beta r_{K} \mathbb{E}_t \left\{ \hat{R}_{K, t+1} - \hat{P}_{\eta, t+1} \right\} \label{eq_v6:reg-ll-capital-euler-equation} \\
-		& \qquad \text{where: } r_{K} = \frac{R_{K}}{P_{}} \label{eq_v6:reg-rk}
-	\end{alignat}
+\begin{alignat}{2}
+	& \frac{ C_{\eta t}^{1-\sigma}}{Q_{\eta t}} P_{\eta t} = \beta \mathbb{E}_t \left\{ \frac{ C_{\eta, t+1}^{1-\sigma}}{Q_{\eta, t+1}} [(1-\delta) P_{\eta, t+1} + R_{K,t+1}] \right\} \implies \tag{\ref{eq_v6:reg-capital-euler-equation}} \\
+	& \frac{P_{\eta t} C_{\eta t}^{1-\sigma}}{Q_{\eta t}} \mathbb{E}_t \left\{ \frac{\te[t+1]}{P_{\eta, t+1} C_{\eta, t+1}^{1-\sigma}} \right\} = \beta \left[ (1-\delta) + \mathbb{E}_t \left\{ \frac{R_{K,t+1}}{P_{\eta, t+1}} \right\} \right] \implies \nonumber \\
+	& \frac{P_{\eta} C_{\eta}^{1-\sigma}}{\te[]} \cdot \frac{\te[]}{P_{\eta} C_{\eta}^{1-\sigma}} (1 + \hat{P}_{\eta t} + (1 -\sigma) \hat{C}_{\eta t} - \hat{\mathscr{E}}_{\eta t} + \nonumber \\ 
+	& \qquad + \E \{\hat{\mathscr{E}}_{\eta, t+1} - \hat{P}_{\eta, t+1} - (1 -\sigma) \hat{C}_{\eta, t+1}\}) = \nonumber \\
+	& \qquad = \beta \left[ (1-\delta) + \frac{R_{K}}{P_{\eta}} \mathbb{E}_t \left\{ 1 + \hat{R}_{K, t+1} -\hat{P}_{\eta, t+1} \right\} \right] \implies \nonumber \\
+	& \E \left\{ \hat{\mathscr{E}}_{\eta, t+1} - \hat{P}_{\eta, t+1}  - (1 -\sigma) \hat{C}_{\eta, t+1} \right\} - (\hat{\mathscr{E}}_{\eta t} - \hat{P}_{\eta t} - (1 -\sigma) \hat{C}_{\eta t}) = \nonumber \\
+	& \qquad = \beta r_{K} \mathbb{E}_t \left\{ \hat{R}_{K, t+1} - \hat{P}_{\eta, t+1} \right\} \label{eq_v6:reg-ll-capital-euler-equation} \\
+	& \qquad \text{where: } r_{K} = \frac{R_{K}}{P_{}} \label{eq_v6:reg-rk}
+\end{alignat}	
+	
+\end{comment}
 	
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -1524,18 +1525,32 @@ Apply corollary \ref{coro:steady-state-YKL}:
 
 \subsubsection*{Production Function}
 
+\begin{comment}
+	Log-linearize \ref{eq_v6:reg-int-good-firm-production-function}:
+	\begin{alignat}{2}
+		Y_{\eta jt} &= Z_{A\eta t} K_{\eta jt}^{\alpha_{\eta}} L_{\eta jt}^{1-\alpha_{\eta}} &\implies \tag{\ref{eq_v6:reg-int-good-firm-production-function}} \\
+		Y_{\eta j} (1+ \hat{Y}_{\eta jt}) &= Z_{A\eta} K_{\eta j}^{\alpha_{\eta}} L_{\eta j}^{1-\alpha_{\eta}} (1+ \hat{Z}_{A\eta t} + {\alpha_{\eta}} \hat{K}_{\eta jt} + (1-\alpha_{\eta}) \hat{L}_{\eta jt}) &\implies \nonumber \\
+		\hat{Y}_{\eta jt} &= \hat{Z}_{A\eta t} + {\alpha_{\eta}} \hat{K}_{\eta jt} + (1-\alpha_{\eta}) \hat{L}_{\eta jt} % \label{eq_v6:reg-ll-int-good-firm-production-function}
+	\end{alignat}
+	
+	Substitute \ref{eq_v6:reg-ll-int-good-firm-production-function} in \ref{eq_v6:reg-ll-final-goods-firm-bundle-rule}:
+	\begin{alignat}{2}
+		\hat{Y}_{\eta t} &= \int_{0}^{1} \hat{Y}_{\eta jt} \dif j &\implies \tag{\ref{eq_v6:reg-ll-final-goods-firm-bundle-rule}} \\
+		\hat{Y}_{\eta t} &= \int_{0}^{1} \left[ \hat{Z}_{A\eta t} + {\alpha_{\eta}} \hat{K}_{\eta jt} + (1-\alpha_{\eta}) \hat{L}_{\eta jt} \right] \dif j &\implies \nonumber \\
+		\hat{Y}_{\eta t} &= \hat{Z}_{A\eta t} + {\alpha_{\eta}} \int_{0}^{1} \hat{K}_{\eta jt} \dif j + (1-\alpha_{\eta}) \int_{0}^{1} \hat{L}_{\eta jt} \dif j % \label{eq_v6:reg-ll-final-goods-firm-bundle-rule-2}
+	\end{alignat}
+\end{comment}
+
 Log-linearize \ref{eq_v6:reg-int-good-firm-production-function}:
 \begin{alignat}{2}
-	Y_{\eta jt} &= Z_{A\eta t} K_{\eta jt}^{\alpha_{\eta}} L_{\eta jt}^{1-\alpha_{\eta}} &\implies \tag{\ref{eq_v6:reg-int-good-firm-production-function}} \\
-	Y_{\eta j} (1+ \hat{Y}_{\eta jt}) &= Z_{A\eta} K_{\eta j}^{\alpha_{\eta}} L_{\eta j}^{1-\alpha_{\eta}} (1+ \hat{Z}_{A\eta t} + {\alpha_{\eta}} \hat{K}_{\eta jt} + (1-\alpha_{\eta}) \hat{L}_{\eta jt}) &\implies \nonumber \\
-	\hat{Y}_{\eta jt} &= \hat{Z}_{A\eta t} + {\alpha_{\eta}} \hat{K}_{\eta jt} + (1-\alpha_{\eta}) \hat{L}_{\eta jt} \label{eq_v6:reg-ll-int-good-firm-production-function}
+	Y_{\eta jt} &= Z_{A\eta t} L_{\eta jt} &\implies \tag{\ref{eq_v6:reg-int-good-firm-production-function}} \\
+	\hat{Y}_{\eta jt} &= \hat{Z}_{A\eta t} + \hat{L}_{\eta jt} \label{eq_v6:reg-ll-int-good-firm-production-function}
 \end{alignat}
 
 Substitute \ref{eq_v6:reg-ll-int-good-firm-production-function} in \ref{eq_v6:reg-ll-final-goods-firm-bundle-rule}:
 \begin{alignat}{2}
 	\hat{Y}_{\eta t} &= \int_{0}^{1} \hat{Y}_{\eta jt} \dif j &\implies \tag{\ref{eq_v6:reg-ll-final-goods-firm-bundle-rule}} \\
-	\hat{Y}_{\eta t} &= \int_{0}^{1} \left[ \hat{Z}_{A\eta t} + {\alpha_{\eta}} \hat{K}_{\eta jt} + (1-\alpha_{\eta}) \hat{L}_{\eta jt} \right] \dif j &\implies \nonumber \\
-	\hat{Y}_{\eta t} &= \hat{Z}_{A\eta t} + {\alpha_{\eta}} \int_{0}^{1} \hat{K}_{\eta jt} \dif j + (1-\alpha_{\eta}) \int_{0}^{1} \hat{L}_{\eta jt} \dif j \label{eq_v6:reg-ll-final-goods-firm-bundle-rule-2}
+	\hat{Y}_{\eta t} &= \hat{Z}_{A\eta t} + \int_{0}^{1} \hat{L}_{\eta jt} \dif j \label{eq_v6:reg-ll-final-goods-firm-bundle-rule-2}
 \end{alignat}
 
 Apply the natural logarithm and then log-linearize \ref{eq_v6:reg-market-clearing-condition-Lt}:
@@ -1552,19 +1567,22 @@ Apply corollary \ref{coro:steady-state-YKL}:
 	\implies \hat{L}_{\eta t} &= \int_{0}^{1} \hat{L}_{\eta jt} \dif j \label{eq_v6:reg-ll-market-clearing-condition-Lt}
 \end{align}
 
-By analogy, the total capital deviation is the sum of all firm's deviations:
-\begin{align}
-	\hat{K}_{\eta t} = \int_{0}^{1} \hat{K}_{\eta jt} \dif j \label{eq_v6:reg-ll-capital-clearing-condition}
-\end{align}
+\begin{comment}
+	By analogy, the total capital deviation is the sum of all firm's deviations:
+	\begin{align}
+		\hat{K}_{\eta t} = \int_{0}^{1} \hat{K}_{\eta jt} \dif j \label{eq_v6:reg-ll-capital-clearing-condition}
+	\end{align}
+\end{comment}
 
-Substitute \ref{eq_v6:reg-ll-market-clearing-condition-Lt} and \ref{eq_v6:reg-ll-capital-clearing-condition} in \ref{eq_v6:reg-ll-final-goods-firm-bundle-rule-2}:
+
+Substitute \ref{eq_v6:reg-ll-market-clearing-condition-Lt} in \ref{eq_v6:reg-ll-final-goods-firm-bundle-rule-2}: % and \ref{eq_v6:reg-ll-capital-clearing-condition} 
 \begin{align}
-	\tag{\ref{eq_v6:reg-ll-final-goods-firm-bundle-rule-2}}
-	\hat{Y}_{\eta t} &= \hat{Z}_{A\eta t} + {\alpha_{\eta}} \int_{0}^{1} \hat{K}_{\eta jt} \dif j + (1-\alpha_{\eta}) \int_{0}^{1} \hat{L}_{\eta jt} \dif j \implies \\
-	\hat{Y}_{\eta t} &= \hat{Z}_{A\eta t} + {\alpha_{\eta}} \hat{K}_{\eta t} + (1-\alpha_{\eta}) \hat{L}_{\eta t} \label{eq_v6:reg-ll-final-goods-firm-bundle-rule-3}
+	\hat{Y}_{\eta t} &= \hat{Z}_{A\eta t} + \hat{L}_{\eta t} \label{eq_v6:reg-ll-final-goods-firm-bundle-rule-3}
 \end{align}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{comment}
 
 \subsubsection*{Capital Demand}
 
@@ -1598,9 +1616,23 @@ Integrate both sides and then substitute \ref{eq_v6:reg-ll-market-clearing-condi
 	\hat{L}_{\eta t} &= \hat{Y}_{\eta t} + \hat{\Lambda}_{\eta t} - \hat{W}_{t}
 	\label{eq_v6:reg-ll-int-good-firm-FOC-Lt}
 \end{align}
+	
+\end{comment}
+
+\subsubsection*{Marginal Cost}
+Log-linearize \ref{eq_v6:reg-int-good-firm-FOC-Lt} and then substitute \ref{eq_v6:reg-hat-real-marginal-cost}:
+\begin{align}
+	\Lambda_{\eta t} &= \frac{W_{\eta t}}{Z_{A\eta t}} \tag{\ref{eq_v6:reg-int-good-firm-FOC-Lt}} \implies \\
+	\hat{\Lambda}_{\eta t} &= \hat{W}_{\eta t} - \hat{Z}_{A\eta t} \implies \nonumber \\
+	\hat{P}_{\eta t} + \hat{\lambda}_{\eta t} &= \hat{W}_{\eta t} - \hat{Z}_{A\eta t} \label{eq_v6:reg-int-good-firm-FOC-Lt-ll}
+\end{align}
+
+
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
+\begin{comment}
+	
 \subsubsection*{Technical and Economical Marginal Rates of Substitution (TMRS and EMRS)}
 
 Subtract \ref{eq_v6:reg-ll-int-good-firm-FOC-Lt} from \ref{eq_v6:reg-ll-int-good-firm-FOC-Kt}:
@@ -1614,8 +1646,8 @@ Equation \ref{eq_v6:reg-ll-int-good-firm-TMRS} is the log-linearized version of 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \begin{tcolorbox}[colback=red!5!white,colframe=red!75!black]
-
-\subsubsection*{Capital and Labor Levels}
+	
+	\subsubsection*{Capital and Labor Levels}
 	
 	Subtract \ref{eq_v6:reg-ll-int-good-firm-TMRS} of one region from the other:
 	\begin{align}
@@ -1641,7 +1673,11 @@ Substitute \ref{eq_v6:reg-hat-real-marginal-cost} in \ref{eq_v6:reg-ll-int-good-
 	\hat{\Lambda}_{\eta t} &= {\alpha_{\eta}} \hat{R}_{Kt} + (1- {\alpha_{\eta}}) \hat{W}_{t} - \hat{Z}_{A\eta t} &\implies \nonumber \\
 	\hat{P}_{\eta t} + \hat{\lambda}_{\eta t} &= {\alpha_{\eta}} \hat{R}_{Kt} + (1- {\alpha_{\eta}}) \hat{W}_{t} - \hat{Z}_{A\eta t} &\implies \nonumber \\
 	\hat{\lambda}_{\eta t} &= {\alpha_{\eta}} \hat{R}_{Kt} + (1- {\alpha_{\eta}}) \hat{W}_{t} - \hat{Z}_{A\eta t} - \hat{P}_{\eta t} \label{eq_v6:reg-ll-int-good-firm-MC-3}
-\end{alignat}
+\end{alignat}	
+	
+\end{comment}
+
+
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -1650,86 +1686,23 @@ Substitute \ref{eq_v6:reg-hat-real-marginal-cost} in \ref{eq_v6:reg-ll-int-good-
 Log-linearize \ref{eq_v6:reg-monetary-policy}:
 \begin{align}
 	\tag{\ref{eq_v6:reg-monetary-policy}}
-	& \frac{R_{t}}{R} = \frac{R_{t-1}^{\gamma_R} (\pi_t^{\gamma_\pi} Y_{t}^{\gamma_Y})^{(1-\gamma_R)} Z_{Mt}}{R^{\gamma_R} (\pi^{\gamma_\pi} Y^{\gamma_Y})^{(1-\gamma_R)}} \implies \\
+	& \frac{R_{t}}{R} = \frac{R_{t-1}^{\gamma_{R}} (\pi_t^{\gamma_{\pi}} Y_{t}^{\gamma_{Y}})^{(1-\gamma_{R})} Z_{Mt}}{R^{\gamma_{R}} (\pi^{\gamma_{\pi}} Y^{\gamma_{Y}})^{(1-\gamma_{R})}} \implies \\
 	\begin{split}
-		& \frac{R(1+ \hat{R}_t)}{R} = \frac{ R^{\gamma_R} (\pi^{\gamma_\pi} Y^{\gamma_Y})^{(1-\gamma_R)} Z_{M}}{R^{\gamma_R} (\pi^{\gamma_\pi} Y^{\gamma_Y})^{(1-\gamma_R)}} \cdot \\
-		& \qquad \cdot [1+ \gamma_R \hat{R}_{t-1} + (1-\gamma_R)(\gamma_\pi \hat{\pi}_t + \gamma_Y \hat{Y}_t) + \hat{Z}_{Mt}] \implies
+		& \frac{R(1+ \hat{R}_t)}{R} = \frac{ R^{\gamma_{R}} (\pi^{\gamma_{\pi}} Y^{\gamma_{Y}})^{(1-\gamma_{R})} Z_{M}}{R^{\gamma_{R}} (\pi^{\gamma_{\pi}} Y^{\gamma_{Y}})^{(1-\gamma_{R})}} \cdot \\
+		& \qquad \cdot [1+ \gamma_{R} \hat{R}_{t-1} + (1-\gamma_{R})(\gamma_{\pi} \hat{\pi}_t + \gamma_{Y} \hat{Y}_t) + \hat{Z}_{Mt}] \implies
 	\end{split} \nonumber \\
-	& \hat{R}_t = \gamma_R \hat{R}_{t-1} + (1-\gamma_R)(\gamma_\pi \hat{\pi}_t + \gamma_Y \hat{Y}_t) + \hat{Z}_{Mt} \label{eq_v6:reg-ll-monetary-policy}
+	& \hat{R}_t = \gamma_{R} \hat{R}_{t-1} + (1-\gamma_{R})(\gamma_{\pi} \hat{\pi}_t + \gamma_{Y} \hat{Y}_t) + \hat{Z}_{Mt} \label{eq_v6:reg-ll-monetary-policy}
 \end{align}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \subsubsection*{National Gross Inflation Rate}
 
-Log-linearize \ref{eq_v6:reg-gross-inflation-rate} and define the level deviation of gross inflation rate $\hat{\pi}_t$:
+Log-linearize \ref{eq_v6:reg-gross-inflation-rate}:
 \begin{align}
-	\tag{\ref{eq_v6:reg-gross-inflation-rate}}
-	\pi_{t} &= \frac{P_{t}}{P_{t-1}} \implies \\
-	\hat{\pi}_{t} &= \hat{P}_{t} - \hat{P}_{t-1}
-	\label{eq_v6:reg-level-dev-gross-inflation-rate}
+	\pi_{t} &= \pi_{1t}^{\theta_{\pi}} \pi_{2t}^{1 - \theta_{\pi}} \tag{\ref{eq_v6:reg-gross-inflation-rate}} \implies \nonumber \\
+	\hat{\pi}_{t} &= \theta_{\pi} \hat{\pi}_{1t} + (1 - \theta_{\pi}) \hat{\pi}_{2t} \label{eq_v6:reg-gross-inflation-rate-ll}
 \end{align}
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-\subsubsection*{Market Clearing Condition}
-
-Log-linearize \ref{eq_v6:reg-market-clearing-condition-Yt}:
-\begin{alignat}{2}
-	Y_{t} &= Y_{1 t} + Y_{2 t} \tag{\ref{eq_v6:reg-market-clearing-condition-Yt}} \\
-	Y (1 +\hat{Y}_{t}) &= Y_{1} (1 +\hat{Y}_{1t}) + Y_{2} (1 +\hat{Y}_{2t}) \implies \nonumber \\
-	\hat{Y}_{t} &= \frac{Y_{1}}{Y} \hat{Y}_{1t} + \frac{Y_{2}}{Y} \hat{Y}_{2t} \label{eq_v6:reg-ll-market-clearing-condition-Yt-2}
-\end{alignat}
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-Define the regional weights $\langle \begin{matrix} \theta_{Y1} & (1-\theta_{Y1}) \end{matrix} \rangle$ in the production total:
-\begin{align}
-	\left\langle \begin{matrix} \theta_{Y1} & (1-\theta_{Y1}) \end{matrix} \right\rangle \coloneq \left\langle \begin{matrix} \frac{Y_{1}}{Y} & \frac{Y_{2}}{Y} \end{matrix} \right\rangle \label{eq_v6:reg-ss-Y1-Y2-weight-in-Y}
-\end{align}
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-Substitute \ref{eq_v6:reg-ss-Y1-Y2-weight-in-Y} in \ref{eq_v6:reg-ll-market-clearing-condition-Yt-2}:
-\begin{align}
-	\hat{Y}_{t} &= \theta_{Y1} \hat{Y}_{1t} + (1-\theta_{Y1}) \hat{Y}_{2t} \label{eq_v6:reg-ll-market-clearing-condition-Yt-3}
-\end{align}
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-\subsubsection*{National Price Level}
-
-Log-linearize \ref{eq_v6:reg-national-price-level}:
-\begin{alignat}{2}
-	P_{t} Y_{t} &= P_{1t} Y_{1t} + P_{2t} Y_{2t} & \implies \tag{\ref{eq_v6:reg-national-price-level}} \\ 
-	P Y (1 + \hat{P}_{t} + \hat{Y}_{t}) &= P_{1} Y_{1} (1 + \hat{P}_{1t} + \hat{Y}_{1t}) + P_{2} Y_{2} (1 + \hat{P}_{2t} + \hat{Y}_{2t}) &\implies \nonumber \\
-	\hat{P}_{t} + \hat{Y}_{t} &= \frac{Y_{1}}{Y} (\hat{P}_{1t} + \hat{Y}_{1t}) + \frac{Y_{2}}{Y} (\hat{P}_{2t} + \hat{Y}_{2t}) \label{eq_v6:reg-ll-national-price-level}
-\end{alignat}
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-	
-	\begin{comment}
-		Define the regional weights $\langle \begin{matrix} \theta_{PY1} & (1-\theta_{PY1}) \end{matrix} \rangle$ in the gross domestic production:
-		\begin{align}
-			\left\langle \begin{matrix} \theta_{PY1} & (1-\theta_{PY1}) \end{matrix} \right\rangle \coloneq \left\langle \begin{matrix} \frac{P_{1} Y_{1}}{P Y} & \frac{P_{2} Y_{2}}{PY} \end{matrix} \right\rangle \label{eq_v6:reg-ss-PYn-weight-in-PY}
-		\end{align}
-		
-		Substitute \ref{eq_v6:reg-ss-PYn-weight-in-PY} in \ref{eq_v6:reg-ll-national-price-level}:
-		
-	\end{comment}
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-Substitute \ref{eq_v6:reg-ss-Y1-Y2-weight-in-Y} in \ref{eq_v6:reg-ll-national-price-level}:
-\begin{alignat}{2}
-	\hat{P}_{t} + \hat{Y}_{t} &= \theta_{Y1} (\hat{P}_{1t} + \hat{Y}_{1t}) + (1-\theta_{Y1}) (\hat{P}_{2t} + \hat{Y}_{2t})  \label{eq_v6:reg-ll-national-price-level-2}
-\end{alignat}
-
-Subtract \ref{eq_v6:reg-ll-market-clearing-condition-Yt-3} from \ref{eq_v6:reg-ll-national-price-level-2}:
-\begin{alignat}{2}
-	\hat{P}_{t} + \hat{Y}_{t} - \hat{Y}_{t} &= \theta_{Y1} (\hat{P}_{1t} + \hat{Y}_{1t}) + (1-\theta_{Y1}) (\hat{P}_{2t} + \hat{Y}_{2t}) - \nonumber \\ & \qquad \qquad - (\theta_{Y1} \hat{Y}_{1t} + (1-\theta_{Y1}) \hat{Y}_{2t}) \implies \nonumber \\
-	\hat{P}_{t} &= \theta_{Y1} \hat{P}_{1t} + (1-\theta_{Y1}) \hat{P}_{2t} \label{eq_v6:reg-ll-national-price-level-3}
-\end{alignat}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -1755,28 +1728,120 @@ Log-linearize \ref{eq_v6:reg-monetary-shock}:
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\subsubsection*{Market Clearing Condition}
+
+Log-linearize \ref{eq_v6:reg-market-clearing-condition-Yt}:
+\begin{alignat}{2}
+	Y_{t} &= Y_{1 t} + Y_{2 t} \tag{\ref{eq_v6:reg-market-clearing-condition-Yt}} \\
+	Y (1 +\hat{Y}_{t}) &= Y_{1} (1 +\hat{Y}_{1t}) + Y_{2} (1 +\hat{Y}_{2t}) \implies \nonumber \\
+	\hat{Y}_{t} &= \frac{Y_{1}}{Y} \hat{Y}_{1t} + \frac{Y_{2}}{Y} \hat{Y}_{2t} \label{eq_v6:reg-ll-market-clearing-condition-Yt-2}
+\end{alignat}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+Define the regional weights $\langle \begin{matrix} \theta_{Y} & (1-\theta_{Y}) \end{matrix} \rangle$ in the production total:
+\begin{align}
+	\left\langle \begin{matrix} \theta_{Y} & (1-\theta_{Y}) \end{matrix} \right\rangle \coloneq \left\langle \begin{matrix} \frac{Y_{1}}{Y} & \frac{Y_{2}}{Y} \end{matrix} \right\rangle \label{eq_v6:reg-ss-Y1-Y2-weight-in-Y}
+\end{align}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+Substitute \ref{eq_v6:reg-ss-Y1-Y2-weight-in-Y} in \ref{eq_v6:reg-ll-market-clearing-condition-Yt-2}:
+\begin{align}
+	\hat{Y}_{t} &= \theta_{Y} \hat{Y}_{1t} + (1-\theta_{Y}) \hat{Y}_{2t} \label{eq_v6:reg-ll-market-clearing-condition-Yt-3}
+\end{align}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{comment}
+	\subsubsection*{National Price Level}
+	
+	Log-linearize \ref{eq_v6:reg-national-price-level}:
+	\begin{alignat}{2}
+		P_{t} Y_{t} &= P_{1t} Y_{1t} + P_{2t} Y_{2t} & \implies \tag{\ref{eq_v6:reg-national-price-level}} \\ 
+		P Y (1 + \hat{P}_{t} + \hat{Y}_{t}) &= P_{1} Y_{1} (1 + \hat{P}_{1t} + \hat{Y}_{1t}) + P_{2} Y_{2} (1 + \hat{P}_{2t} + \hat{Y}_{2t}) &\implies \nonumber \\
+		\hat{P}_{t} + \hat{Y}_{t} &= \frac{Y_{1}}{Y} (\hat{P}_{1t} + \hat{Y}_{1t}) + \frac{Y_{2}}{Y} (\hat{P}_{2t} + \hat{Y}_{2t}) \label{eq_v6:reg-ll-national-price-level}
+	\end{alignat}	
+	
+	Substitute \ref{eq_v6:reg-ss-Y1-Y2-weight-in-Y} in \ref{eq_v6:reg-ll-national-price-level}:
+	\begin{alignat}{2}
+		\hat{P}_{t} + \hat{Y}_{t} &= \theta_{Y} (\hat{P}_{1t} + \hat{Y}_{1t}) + (1-\theta_{Y}) (\hat{P}_{2t} + \hat{Y}_{2t})  \label{eq_v6:reg-ll-national-price-level-2}
+	\end{alignat}
+	
+	Subtract \ref{eq_v6:reg-ll-market-clearing-condition-Yt-3} from \ref{eq_v6:reg-ll-national-price-level-2}:
+	\begin{alignat}{2}
+		\hat{P}_{t} + \hat{Y}_{t} - \hat{Y}_{t} &= \theta_{Y} (\hat{P}_{1t} + \hat{Y}_{1t}) + (1-\theta_{Y}) (\hat{P}_{2t} + \hat{Y}_{2t}) - \nonumber \\ & \qquad \qquad - (\theta_{Y} \hat{Y}_{1t} + (1-\theta_{Y}) \hat{Y}_{2t}) \implies \nonumber \\
+		\hat{P}_{t} &= \theta_{Y} \hat{P}_{1t} + (1-\theta_{Y}) \hat{P}_{2t} \label{eq_v6:reg-ll-national-price-level-3}
+	\end{alignat}
+	
+\end{comment}
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	
+	\begin{comment}
+		Define the regional weights $\langle \begin{matrix} \theta_{PY1} & (1-\theta_{PY1}) \end{matrix} \rangle$ in the gross domestic production:
+		\begin{align}
+			\left\langle \begin{matrix} \theta_{PY1} & (1-\theta_{PY1}) \end{matrix} \right\rangle \coloneq \left\langle \begin{matrix} \frac{P_{1} Y_{1}}{P Y} & \frac{P_{2} Y_{2}}{PY} \end{matrix} \right\rangle \label{eq_v6:reg-ss-PYn-weight-in-PY}
+		\end{align}
+		
+		Substitute \ref{eq_v6:reg-ss-PYn-weight-in-PY} in \ref{eq_v6:reg-ll-national-price-level}:
+		
+	\end{comment}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 \subsubsection*{Regional Market Clearing Condition}
+
+Log-linearize \ref{eq_v6:reg-regional-demand} and then substitute \ref{eq_v6:reg-total-expense-level-2-ll}:
+\begin{align}
+	P_{\eta t} Y_{\eta t} = Q_{\eta t} C_{\eta t} \tag{\ref{eq_v6:reg-regional-demand}} \implies \\
+	\hat{P}_{\eta t} + \hat{Y}_{\eta t} = \hat{Q}_{1t} + \hat{C}_{\eta t} \label{eq_v6:reg-regional-demand-ll}
+\end{align}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\subsubsection*{Budget Constraint}
+
+Log-linearize \ref{eq_v6:reg-budget-constraint-2} and then substitute \ref{eq_v6:reg-ss-final-goods-firm-bundle-rule-2}, \ref{eq_v6:reg-ss-budget-constraint-3} and \ref{eq_v6:reg-total-expense-level-2-ll}:
+\begin{align}
+	Q_{\eta t} C_{\eta t} + B_{\eta t} &= (1 + R_{t-1}) B_{\eta,t-1} + P_{\eta t} \int_{0}^{1} Y_{\eta jt} \dif j \tag{\ref{eq_v6:reg-budget-constraint-2}} \implies \\
+	\hat{P}_{\eta t} + \hat{Y}_{\eta t} &= \hat{Q}_{1t} + \hat{C}_{\eta t} \tag{\ref{eq_v6:reg-regional-demand-ll}}
+\end{align}
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{comment}
 
 \begin{tcolorbox}[colback=red!5!white,colframe=red!75!black]
 	
-Log-linearize \ref{eq_v6:reg-regional-demand}:
-\begin{align}
-	Y_{\eta t} &= C_{\eta t} + I_{\eta t} \implies \tag{\ref{eq_v6:reg-regional-demand}} \\
-	Y_{\eta} (1 +\hat{Y}_{\eta t}) &= C_{\eta} (1 +\hat{C}_{\eta t}) + I_{\eta} (1 +\hat{I}_{\eta t}) \implies \nonumber \\
-	\hat{Y}_{\eta t} &= \frac{C_{\eta}}{Y_{\eta}} \hat{C}_{\eta 1 t} + \frac{I_{\eta}}{Y_{\eta}} \hat{I}_{\eta t} \label{eq_v6:reg-ll-total-yn}
-\end{align}
-
-Define the consumption and investment weights $\left\langle \begin{matrix} \theta_{C\eta} & (1 - \theta_{C\eta}) \end{matrix} \right\rangle$ in the regional production:
-\begin{align}
-	\left\langle \begin{matrix} \theta_{C\eta} & (1 - \theta_{C\eta}) \end{matrix} \right\rangle \coloneq \left\langle \begin{matrix} \frac{C_{\eta}}{Y_{\eta}} & \frac{I_{\eta}}{Y_{\eta}} \end{matrix} \right\rangle \label{eq_v6:reg-ss-C-I-weight-in-Y}
-\end{align}
-
-Substitute \ref{eq_v6:reg-ss-C-I-weight-in-Y} in \ref{eq_v6:reg-ll-total-yn}:
-\begin{align}
-	\hat{Y}_{\eta t} &= \theta_{C\eta} \hat{C}_{\eta t} + (1 - \theta_{C\eta}) \hat{I}_{\eta t} \label{eq_v6:reg-ll-total-yn-2}
-\end{align}
-
+	\begin{align}
+		Y_{\eta t} &= C_{\eta t} + I_{\eta t} \implies \tag{\ref{eq_v6:reg-regional-demand}} \\
+		Y_{\eta} (1 +\hat{Y}_{\eta t}) &= C_{\eta} (1 +\hat{C}_{\eta t}) + I_{\eta} (1 +\hat{I}_{\eta t}) \implies \nonumber \\
+		\hat{Y}_{\eta t} &= \frac{C_{\eta}}{Y_{\eta}} \hat{C}_{\eta 1 t} + \frac{I_{\eta}}{Y_{\eta}} \hat{I}_{\eta t} \label{eq_v6:reg-ll-total-yn}
+	\end{align}
+	
+	Define the consumption and investment weights $\left\langle \begin{matrix} \theta_{C\eta} & (1 - \theta_{C\eta}) \end{matrix} \right\rangle$ in the regional production:
+	\begin{align}
+		\left\langle \begin{matrix} \theta_{C\eta} & (1 - \theta_{C\eta}) \end{matrix} \right\rangle \coloneq \left\langle \begin{matrix} \frac{C_{\eta}}{Y_{\eta}} & \frac{I_{\eta}}{Y_{\eta}} \end{matrix} \right\rangle \label{eq_v6:reg-ss-C-I-weight-in-Y}
+	\end{align}
+	
+	Substitute \ref{eq_v6:reg-ss-C-I-weight-in-Y} in \ref{eq_v6:reg-ll-total-yn}:
+	\begin{align}
+		\hat{Y}_{\eta t} &= \theta_{C\eta} \hat{C}_{\eta t} + (1 - \theta_{C\eta}) \hat{I}_{\eta t} \label{eq_v6:reg-ll-total-yn-2}
+	\end{align}
+	
 \end{tcolorbox}
+	
+\end{comment}
+
+
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -1812,7 +1877,7 @@ Substitute \ref{eq_v6:reg-ss-C-I-weight-in-Y} in \ref{eq_v6:reg-ll-total-yn}:
 
 \subsubsection{Log-linear Model Structure}
 
-The log-linear model is a square system of 31 variables and 31 equations, summarized as follows:
+The log-linear model is a square system of 25 variables and equations, summarized as follows:
 
 {\singlespacing
 
@@ -1820,9 +1885,9 @@ The log-linear model is a square system of 31 variables and 31 equations, summar
 	
 	\item Variables:
 	
-	Real Variables: $\langle \begin{matrix} \hat{C}_{\eta} & \hat{C}_{\eta 1} & \hat{C}_{\eta 2} & \hat{L}_{\eta} & \hat{K}_{\eta} & \hat{Y} & \hat{Y}_{\eta} & \hat{I}_{\eta} & \hat{Z}_{A\eta} \end{matrix} \rangle$;
+	\item Real Variables: $\langle \begin{matrix} \hat{C}_{\eta } & \hat{L}_{\eta } & \hat{C}_{\eta 1} & \hat{C}_{\eta 2} & \hat{Y}_{\eta } & \hat{Y}_{} & \hat{Z}_{A\eta } & \hat{Z}_{M} \end{matrix} \rangle$;
 	
-	Nominal Variables: $\langle \begin{matrix} \hat{\mathscr{E}}_{\eta} & \hat{P} & \hat{P}_{\eta} & \hat{R} & \hat{R}_{K} & \hat{W} & \hat{\pi} & \hat{\pi}_{\eta} & \hat{\lambda}_{\eta} & \hat{Z}_M \end{matrix} \rangle$.
+	\item Nominal Variables: $\langle \begin{matrix} \hat{Q}_{1} & \hat{P}_{\eta } & \hat{R}_{} & \hat{\pi}_{} & \hat{W}_{\eta } & \hat{\Lambda}_{\eta } & \hat{\pi}_{\eta } \end{matrix} \rangle$.
 	
 	\item Equations:
 	
@@ -1838,99 +1903,64 @@ The log-linear model is a square system of 31 variables and 31 equations, summar
 			\hat{\pi}_{\eta t} &= \beta \E \hat{\pi}_{\eta, t+1} + \frac{(1-\theta) (1- \theta \beta)}{\theta} \hat{\lambda}_{\eta t} \tag{\ref{eq_v6:reg-nk-phillips-curve-mc}}
 		\end{align}
 		
-		\item Law of Motion for Capital
-		\begin{alignat}{2}
-			\hat{K}_{\eta, t+1} &= (1-\delta) \hat{K}_{\eta t} + \delta \hat{I}_{\eta t} \tag{\ref{eq_v6:reg-ll-law-of-motion-for-capital}}
-		\end{alignat}
+		\item Regional Consumption Weight
+		\begin{align}
+			\hat{C}_{\eta 2t} - \hat{C}_{\eta 1t} &= \hat{P}_{\eta 1t} - \hat{P}_{\eta 2t} \tag{\ref{eq_v6:reg-C-eta-12-t-ll}}
+		\end{align}
 		
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-\item Regional Consumption 
-\begin{align}
-	\hat{C}_{\eta t} &= \omega_{\eta 1} \hat{C}_{\eta 1 t} + (1-\omega_{\eta 1}) \hat{C}_{\eta 2 t} \tag{\ref{eq_v6:reg-ll-consumption-aggregation}}
-\end{align}
-
-\item Regional Consumption Levels 
-\begin{align}
-	\hat{C}_{11t} - \hat{C}_{12t} &= \hat{C}_{22t} - \hat{C}_{21t} \tag{\ref{eq_v6:reg-ll-Cn1-Cn2-b}}
-\end{align}		
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+		\item Regional Consumption of Good 1
+		\begin{align}
+			\hat{C}_{\eta t} - \hat{C}_{\eta 1 t} &= (1 - \omega_{\eta 1}) (\hat{P}_{1t} - \hat{P}_{2t}) \tag{\ref{eq_v6:reg-C-eta-1-t-ll}}
+		\end{align}
+		
+		\item Region 1 Price Index
+		\begin{align}
+			\hat{Q}_{1t} &= \omega_{11} \hat{P}_{1 t} + (1 -\omega_{11}) \hat{P}_{2 t} \tag{\ref{eq_v6:reg-total-expense-level-ll}}
+		\end{align}
 		
 		\begin{comment}
-			
-		\item Regional Levels of Consumption and Prices
+		\item Regional Terms of Trade
 		\begin{align}
-			\hat{C}_{\eta 1 t} - \hat{C}_{\eta 2 t} &= \hat{P}_{2 t} - \hat{P}_{1 t} \tag{\ref{eq_v6:reg-ll-regional-consumption-and-prices}}
+			\hat{Q}_{1t} &= \hat{Q}_{2t} \tag{\ref{eq_v6:reg-total-expense-level-2-ll}}
 		\end{align}	
-			
 		\end{comment}
 		
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%		
 		
-		\item Total Expenses
-		\begin{align}
-			\hat{\mathscr{E}}_{\eta t} &= \hat{C}_{\eta t} + \omega_{\eta 1} \hat{P}_{1 t} + (1 -\omega_{\eta 1}) \hat{P}_{2 t} \tag{\ref{eq_v6:reg-ll-total-expense-level}}
-		\end{align}
-
+		
 		\item Labor Supply
 		\begin{alignat}{2}
-			\varphi \hat{L}_{\eta t} - (1 -\sigma) \hat{C}_{\eta t} &= \hat{W}_t - \hat{ \mathscr{E} }_{\eta t} \tag{\ref{eq_v6:reg-ll-labor-supply}}
+			\varphi \hat{L}_{\eta t} + \sigma \hat{C}_{\eta t} &= \hat{W}_{\eta t} - \hat{Q}_{1t} \tag{\ref{eq_v6:reg-ll-labor-supply}}
 		\end{alignat}
 		
-		\item Euler equation for the bonds return
-		\begin{alignat}{2}
-			& \E \left\{ \hat{\mathscr{E}}_{\eta, t+1} - (1 -\sigma)\hat{C}_{\eta, t+1} \right\} - \nonumber \\ & \qquad - [\hat{\mathscr{E}}_{\eta t} - (1 -\sigma)\hat{C}_{\eta t}] = (1 -\beta) \hat{R}_{t} \tag{\ref{eq_v6:reg-ll-bonds-euler-equation}}
-		\end{alignat}
+		\item Region 1 Euler equation for the bonds return
+		\begin{align}
+			\hat{Q}_{1, t+1} - \hat{Q}_{1t} + \sigma (\hat{C}_{1, t+1} - \hat{C}_{1t}) &= (1 - \beta) \hat{R}_{t} \tag{\ref{eq_v6:reg-bonds-euler-equation-ll}}
+		\end{align}
 		
-		\item Euler equation for the capital return
-		\begin{alignat}{2}
-			& \E \left\{ \hat{\mathscr{E}}_{\eta, t+1} - \hat{P}_{\eta, t+1}  - (1 -\sigma) \hat{C}_{\eta, t+1} \right\} - (\hat{\mathscr{E}}_{\eta t} - \hat{P}_{\eta t} - (1 -\sigma) \hat{C}_{\eta t}) = \nonumber \\
-			& \qquad = \beta r_{K} \mathbb{E}_t \left\{ \hat{R}_{K, t+1} - \hat{P}_{\eta, t+1} \right\} \tag{\ref{eq_v6:reg-ll-capital-euler-equation}}
-		\end{alignat}
+		\item Euler equation for regional consumption
+		\begin{align}
+			\hat{C}_{1, t+1} - \hat{C}_{1t} = \hat{C}_{2, t+1} - \hat{C}_{2t} \tag{\ref{eq_v6:reg-bonds-euler-equation-2-ll}}
+		\end{align}
 		
 		\item Production Function
 		\begin{align}
-			\hat{Y}_{\eta t} &= \hat{Z}_{A\eta t} + {\alpha_{\eta}} \hat{K}_{\eta t} + (1-\alpha_{\eta}) \hat{L}_{\eta t} \tag{\ref{eq_v6:reg-ll-final-goods-firm-bundle-rule-3}}
+			\hat{Y}_{\eta t} &= \hat{Z}_{A\eta t} + \hat{L}_{\eta t} \tag{\ref{eq_v6:reg-ll-final-goods-firm-bundle-rule-3}}
 		\end{align}
-
-		\item Capital and Labor Levels 
-		\begin{align}
-			\hat{K}_{1t} - \hat{L}_{1t} &= \hat{K}_{2t} - \hat{L}_{2t} \tag{\ref{eq_v6:reg-ll-int-good-firm-TMRS-b}}
-		\end{align}		
-		
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-		
-		\begin{comment}
-
-		\item Marginal Rates of Substitution of Factors
-		\begin{align}
-			\hat{K}_{\eta t} - \hat{L}_{\eta t} &= \hat{W}_{t} - \hat{R}_{K t} \tag{\ref{eq_v6:reg-ll-int-good-firm-TMRS}}
-		\end{align}
-			
-		\end{comment}
-		
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 		
 		\item Marginal Cost
-		\begin{alignat}{2}
-			\hat{\lambda}_{\eta t} &= {\alpha_{\eta}} \hat{R}_{Kt} + (1- {\alpha_{\eta}}) \hat{W}_{t} - \hat{Z}_{A\eta t} - \hat{P}_{\eta t} \tag{\ref{eq_v6:reg-ll-int-good-firm-MC-3}}
-		\end{alignat}
+		\begin{align}
+			\hat{P}_{\eta t} + \hat{\lambda}_{\eta t} &= \hat{W}_{\eta t} - \hat{Z}_{A\eta t} \tag{\ref{eq_v6:reg-int-good-firm-FOC-Lt-ll}}
+		\end{align}
 		
 		\item Monetary Policy
 		\begin{align}
-			& \hat{R}_t = \gamma_R \hat{R}_{t-1} + (1-\gamma_R)(\gamma_\pi \hat{\pi}_t + \gamma_Y \hat{Y}_t) + \hat{Z}_{Mt} \tag{\ref{eq_v6:reg-ll-monetary-policy}}
+			\hat{R}_t = \gamma_{R} \hat{R}_{t-1} + (1-\gamma_{R})(\gamma_{\pi} \hat{\pi}_t + \gamma_{Y} \hat{Y}_t) + \hat{Z}_{Mt} \tag{\ref{eq_v6:reg-ll-monetary-policy}}
 		\end{align}
 		
 		\item National Gross Inflation Rate
 		\begin{align}
-			\hat{\pi}_{t} &= \hat{P}_{t} - \hat{P}_{t-1} \tag{\ref{eq_v6:reg-level-dev-gross-inflation-rate}}
+			\hat{\pi}_{t} &= \theta_{\pi} \hat{\pi}_{1t} + (1 - \theta_{\pi}) \hat{\pi}_{2t} \tag{\ref{eq_v6:reg-gross-inflation-rate-ll}}
 		\end{align}
-		
-		\item National Price Level
-		\begin{alignat}{2}
-			\hat{P}_{t} &= \theta_{Y1} \hat{P}_{1t} + (1-\theta_{Y1}) \hat{P}_{2t} \tag{\ref{eq_v6:reg-ll-national-price-level-3}}
-		\end{alignat}
 		
 		\item Productivity Shock
 		\begin{alignat}{2}
@@ -1944,12 +1974,12 @@ The log-linear model is a square system of 31 variables and 31 equations, summar
 		
 		\item Market Clearing Condition
 		\begin{align}
-			\hat{Y}_{t} &= \theta_{Y1} \hat{Y}_{1t} + (1-\theta_{Y1}) \hat{Y}_{2t} \tag{\ref{eq_v6:reg-ll-market-clearing-condition-Yt-3}}
+			\hat{Y}_{t} &= \theta_{Y} \hat{Y}_{1t} + (1-\theta_{Y}) \hat{Y}_{2t} \tag{\ref{eq_v6:reg-ll-market-clearing-condition-Yt-3}}
 		\end{align}
 		
 		\item Regional Market Clearing Condition
 		\begin{align}
-			\hat{Y}_{\eta t} &= \theta_{C\eta} \hat{C}_{\eta t} + (1 - \theta_{C\eta}) \hat{I}_{\eta t} \tag{\ref{eq_v6:reg-ll-total-yn-2}}
+			\hat{P}_{\eta t} + \hat{Y}_{\eta t} &= \hat{Q}_{1t} + \hat{C}_{\eta t} \tag{\ref{eq_v6:reg-regional-demand-ll}}
 		\end{align}
 		
 	\end{enumerate}
@@ -2018,8 +2048,8 @@ The log-linear model is a square system of 31 variables and 31 equations, summar
 		
 		\item Labor Supply
 		\begin{alignat}{2}
-			\varphi \hat{L}_{1 t} - (1 -\sigma) \hat{C}_{1 t} = \hat{W}_t - \hat{ \mathscr{E} }_{1 t} \nonumber \\
-			\varphi \hat{L}_{2 t} - (1 -\sigma) \hat{C}_{2 t} = \hat{W}_t - \hat{ \mathscr{E} }_{2 t} \tag{\ref{eq_v6:reg-ll-labor-supply}}
+			\varphi \hat{L}_{1 t} - (1 -\sigma) \hat{C}_{1 t} = \hat{W}_{\eta t} - \hat{ \mathscr{E} }_{1 t} \nonumber \\
+			\varphi \hat{L}_{2 t} - (1 -\sigma) \hat{C}_{2 t} = \hat{W}_{\eta t} - \hat{ \mathscr{E} }_{2 t} \tag{\ref{eq_v6:reg-ll-labor-supply}}
 		\end{alignat}
 		
 		\item Euler equation for the bonds return
@@ -2068,7 +2098,7 @@ The log-linear model is a square system of 31 variables and 31 equations, summar
 		
 		\item Monetary Policy
 		\begin{align}
-			& \hat{R}_t = \gamma_R \hat{R}_{t-1} + (1-\gamma_R)(\gamma_\pi \hat{\pi}_t + \gamma_Y \hat{Y}_t) + \hat{Z}_{Mt} \tag{\ref{eq_v6:reg-ll-monetary-policy}}
+			& \hat{R}_t = \gamma_{R} \hat{R}_{t-1} + (1-\gamma_{R})(\gamma_{\pi} \hat{\pi}_t + \gamma_{Y} \hat{Y}_t) + \hat{Z}_{Mt} \tag{\ref{eq_v6:reg-ll-monetary-policy}}
 		\end{align}
 		
 		\item National Gross Inflation Rate
@@ -2094,7 +2124,7 @@ The log-linear model is a square system of 31 variables and 31 equations, summar
 		
 		\item Market Clearing Condition
 		\begin{align}
-			\hat{Y}_{t} &= \theta_{Y1} \hat{Y}_{1t} + (1-\theta_{Y1}) \hat{Y}_{2t} \tag{\ref{eq_v6:reg-ll-market-clearing-condition-Yt-3}}
+			\hat{Y}_{t} &= \theta_{Y} \hat{Y}_{1t} + (1-\theta_{Y}) \hat{Y}_{2t} \tag{\ref{eq_v6:reg-ll-market-clearing-condition-Yt-3}}
 		\end{align}
 		
 		\item Regional Market Clearing Condition 
@@ -2117,7 +2147,7 @@ The log-linear model is a square system of 31 variables and 31 equations, summar
 	
 	\item Monetary Policy
 	\begin{align}
-		& \hat{R}_t = \gamma_R \hat{R}_{t-1} + (1-\gamma_R)(\gamma_\pi \hat{\pi}_t + \gamma_Y \hat{Y}_t) + \hat{Z}_{Mt}
+		& \hat{R}_t = \gamma_{R} \hat{R}_{t-1} + (1-\gamma_{R})(\gamma_{\pi} \hat{\pi}_t + \gamma_{Y} \hat{Y}_t) + \hat{Z}_{Mt}
 	\end{align}
 	
 	\item National Gross Inflation Rate
@@ -2137,7 +2167,7 @@ The log-linear model is a square system of 31 variables and 31 equations, summar
 	
 	\item Market Clearing Condition
 	\begin{align}
-		\hat{Y}_{t} &= \theta_{Y1} \hat{Y}_{1t} + (1-\theta_{Y1}) \hat{Y}_{2t}
+		\hat{Y}_{t} &= \theta_{Y} \hat{Y}_{1t} + (1-\theta_{Y}) \hat{Y}_{2t}
 	\end{align}
 	
 \end{enumerate}
@@ -2174,7 +2204,7 @@ The log-linear model is a square system of 31 variables and 31 equations, summar
 	
 	\item Labor Supply
 	\begin{alignat}{2}
-		\varphi \hat{L}_{\eta t} - (1 -\sigma) \hat{C}_{\eta t} = \hat{W}_t - \hat{ \mathscr{E} }_{\eta t}
+		\varphi \hat{L}_{\eta t} - (1 -\sigma) \hat{C}_{\eta t} = \hat{W}_{\eta t} - \hat{ \mathscr{E} }_{\eta t}
 	\end{alignat}
 	
 	\item Euler equation for the bonds return
