@@ -143,8 +143,8 @@ sigmaM  = 0.01 ; % Standard Error of monetary shock
 % -------------------------------------------------- %
 model(linear);
 % Steady state variables as local varibles, for log-linear use:
-# thetaP = 0.7 ;
-# thetaZ = 0.7 ;
+# thetaP = 1 ;
+# thetaZ = 0.8 ;
 # P1ss   = 1 ;
 # P2ss   = thetaP * P1ss ;
 # ZA1ss  = 1 ;
@@ -180,43 +180,58 @@ model(linear);
 % MODEL EQUATIONS                                    %
 % -------------------------------------------------- %
 % Second, the log-linear model:
+% equations 1,2:
 [name='Regional Gross Inflation Rate']
 pi1t = P1t - P1t(-1);
 pi2t = P2t - P2t(-1);
+% equations 3,4:
 [name='New Keynesian Phillips Curve']
 pi1t = betta*pi1t(+1)+lambda1t*(1-thetta)*(1-thetta*betta)/thetta;
 pi2t = betta*pi2t(+1)+lambda2t*(1-thetta)*(1-thetta*betta)/thetta;
+% equations 5,6:
 [name='Regional Consumption Weight']
 C12t - C11t = P1t - P2t;
 C22t - C21t = P1t - P2t;
+% equations 7,8:
 [name='Regional Consumption of Good 1']
 C1t - C11t = (1 - omega11) * (P1t - P2t);
 C2t - C21t = (1 - omega21) * (P1t - P2t);
+% equation 9:
 [name='Region 1 Price Index']
 Q1t = omega11 * P1t + (1 - omega11) * P2t;
+% equations 10,11:
 [name='Labor Supply']
 varphhi * L1t + siggma * C1t = W1t - Q1t;
 varphhi * L2t + siggma * C2t = W2t - Q1t;
+% equation 12:
 [name='Region 1 Euler equation for the bonds return']
 Q1t(+1) - Q1t + siggma * (C1t(+1) - C1t) = (1 - betta) * Rt;
+% equation 13:
 [name='Euler equation for regional consumption']
 C1t(+1) - C1t = C2t(+1) - C2t;
+% equations 14,15:
 [name='Production Function']
 Y1t = ZA1t + L1t;
 Y2t = ZA2t + L2t;
+% equations 16,17:
 [name='Marginal Cost']
 lambda1t = W1t - ZA1t - P1t;
 lambda2t = W2t - ZA2t - P2t;
+% equation 18:
 [name='Monetary Policy']
 Rt = gammaR * Rt(-1) + (1 - gammaR) * (gammapi * pit + gammaY * Yt) + ZMt;
+% equation 19:
 [name='National Gross Inflation Rate']
 pit = thetapi * pi1t + (1 - thetapi) * pi2t;
+% equation 20:
 [name='Market Clearing Condition']
 Yt = thetaY * Y1t + (1 - thetaY) * Y2t ;
+% equations 21,22:
 [name='Regional Market Clearing Condition']
 P1t + Y1t = Q1t + C1t;
 P2t + Y2t = Q1t + C2t;
 % The shocks:
+% equations 23,24,25:
 [name='Productivity Shock']
      ZA1t = rhoA1 * ZA1t(-1) + e_A1;
      ZA2t = rhoA2 * ZA2t(-1) + e_A2;

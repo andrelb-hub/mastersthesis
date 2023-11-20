@@ -51,7 +51,7 @@ EIGENVALUES:
                1                1                0
            1.364            1.364                0
            1.449            1.449                0
-             Inf              Inf                0
+       5.761e+16       -5.761e+16                0
 
 
 There are 3 eigenvalue(s) larger than 1 in modulus 

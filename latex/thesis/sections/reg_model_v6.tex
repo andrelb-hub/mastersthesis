@@ -1989,25 +1989,25 @@ The log-linear model is a square system of 25 variables and equations, summarize
 	
 	\item Regional Gross Inflation Rate
 	\begin{align}
-		\hat{\pi}_{1t} &= \hat{P}_{1t} - \hat{P}_{1, t-1} \\
+		\hat{\pi}_{1t} &= \hat{P}_{1t} - \hat{P}_{1, t-1} \nonumber \\
 		\hat{\pi}_{2t} &= \hat{P}_{2t} - \hat{P}_{2, t-1} \tag{\ref{eq_v6:level-dev-regional-inflation}}
 	\end{align}
 	
 	\item New Keynesian Phillips Curve
 	\begin{align}
-		\hat{\pi}_{1 t} &= \beta \E \hat{\pi}_{1, t+1} + \frac{(1-\theta) (1- \theta \beta)}{\theta} \hat{\lambda}_{1 t} \\
+		\hat{\pi}_{1 t} &= \beta \E \hat{\pi}_{1, t+1} + \frac{(1-\theta) (1- \theta \beta)}{\theta} \hat{\lambda}_{1 t} \nonumber \\
 		\hat{\pi}_{2 t} &= \beta \E \hat{\pi}_{2, t+1} + \frac{(1-\theta) (1- \theta \beta)}{\theta} \hat{\lambda}_{2 t} \tag{\ref{eq_v6:reg-nk-phillips-curve-mc}}
 	\end{align}
 	
 	\item Regional Consumption Weight
 	\begin{align}
-		\hat{C}_{1 2t} - \hat{C}_{1 1t} &= \hat{P}_{1t} - \hat{P}_{2t} \\
+		\hat{C}_{1 2t} - \hat{C}_{1 1t} &= \hat{P}_{1t} - \hat{P}_{2t} \nonumber \\
 		\hat{C}_{2 2t} - \hat{C}_{2 1t} &= \hat{P}_{1t} - \hat{P}_{2t} \tag{\ref{eq_v6:reg-C-eta-12-t-ll}}
 	\end{align}
 	
 	\item Regional Consumption of Good 1
 	\begin{align}
-		\hat{C}_{1 t} - \hat{C}_{1 1 t} &= (1 - \omega_{1 1}) (\hat{P}_{1t} - \hat{P}_{2t}) \\
+		\hat{C}_{1 t} - \hat{C}_{1 1 t} &= (1 - \omega_{1 1}) (\hat{P}_{1t} - \hat{P}_{2t}) \nonumber \\
 		\hat{C}_{2 t} - \hat{C}_{2 1 t} &= (1 - \omega_{2 1}) (\hat{P}_{1t} - \hat{P}_{2t}) \tag{\ref{eq_v6:reg-C-eta-1-t-ll}}
 	\end{align}
 	
@@ -2018,7 +2018,7 @@ The log-linear model is a square system of 25 variables and equations, summarize
 	
 	\item Labor Supply
 	\begin{alignat}{2}
-		\varphi \hat{L}_{1 t} + \sigma \hat{C}_{1 t} &= \hat{W}_{1 t} - \hat{Q}_{1t} \\
+		\varphi \hat{L}_{1 t} + \sigma \hat{C}_{1 t} &= \hat{W}_{1 t} - \hat{Q}_{1t} \nonumber \\
 		\varphi \hat{L}_{2 t} + \sigma \hat{C}_{2 t} &= \hat{W}_{2 t} - \hat{Q}_{1t} \tag{\ref{eq_v6:reg-ll-labor-supply}}
 	\end{alignat}
 	
@@ -2034,13 +2034,13 @@ The log-linear model is a square system of 25 variables and equations, summarize
 	
 	\item Production Function
 	\begin{align}
-		\hat{Y}_{1 t} &= \hat{Z}_{A1 t} + \hat{L}_{1 t} \\
+		\hat{Y}_{1 t} &= \hat{Z}_{A1 t} + \hat{L}_{1 t} \nonumber \\
 		\hat{Y}_{2 t} &= \hat{Z}_{A2 t} + \hat{L}_{2 t} \tag{\ref{eq_v6:reg-ll-final-goods-firm-bundle-rule-3}} 
 	\end{align}
 	
 	\item Marginal Cost
 	\begin{align}
-		\hat{P}_{1 t} + \hat{\lambda}_{1 t} &= \hat{W}_{1 t} - \hat{Z}_{A1 t} \\
+		\hat{P}_{1 t} + \hat{\lambda}_{1 t} &= \hat{W}_{1 t} - \hat{Z}_{A1 t} \nonumber \\
 		\hat{P}_{2 t} + \hat{\lambda}_{2 t} &= \hat{W}_{2 t} - \hat{Z}_{A2 t} \tag{\ref{eq_v6:reg-int-good-firm-FOC-Lt-ll}}
 	\end{align}
 	
@@ -2056,7 +2056,7 @@ The log-linear model is a square system of 25 variables and equations, summarize
 	
 	\item Productivity Shock
 	\begin{alignat}{2}
-		\hat{Z}_{A1 t} &= \rho_{A1} \hat{Z}_{A1, t-1} + \varepsilon_{A1} \\
+		\hat{Z}_{A1 t} &= \rho_{A1} \hat{Z}_{A1, t-1} + \varepsilon_{A1} \nonumber \\
 		\hat{Z}_{A2 t} &= \rho_{A2} \hat{Z}_{A2, t-1} + \varepsilon_{A2} \tag{\ref{eq_v6:reg-ll-productivity-shock}}
 	\end{alignat}
 	
@@ -2072,7 +2072,7 @@ The log-linear model is a square system of 25 variables and equations, summarize
 	
 	\item Regional Market Clearing Condition
 	\begin{align}
-		\hat{P}_{1 t} + \hat{Y}_{1 t} &= \hat{Q}_{1t} + \hat{C}_{1 t} \\
+		\hat{P}_{1 t} + \hat{Y}_{1 t} &= \hat{Q}_{1t} + \hat{C}_{1 t} \nonumber \\
 		\hat{P}_{2 t} + \hat{Y}_{2 t} &= \hat{Q}_{1t} + \hat{C}_{2 t} \tag{\ref{eq_v6:reg-regional-demand-ll}}
 	\end{align}
 		

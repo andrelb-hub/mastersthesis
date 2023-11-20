@@ -180,8 +180,8 @@ model(linear);
 
 % Steady state variables as local varibles, for log-linear use:
 
-# thetaP = 0.7 ;
-# thetaZ = 0.7 ;
+# thetaP = 1 ;
+# thetaZ = 0.8 ;
 # P1ss   = 1 ;
 # P2ss   = thetaP * P1ss ;
 # ZA1ss  = 1 ;

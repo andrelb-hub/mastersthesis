@@ -18,7 +18,7 @@ function T = dynamic_g1_tt(T, y, x, params, steady_state, it_)
 %   T           [#temp variables by 1]       double  vector of temporary terms
 %
 
-assert(length(T) >= 6);
+assert(length(T) >= 4);
 
 T = REG_MODEL_v6.dynamic_resid_tt(T, y, x, params, steady_state, it_);
 
