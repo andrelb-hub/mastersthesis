@@ -1,6 +1,6 @@
 % command to run dynare and write
 % a new file with all the choices:
-% dynare REG_MODEL_v6 savemacro=REG_MODEL_v6_FINAL.mod
+% dynare REG_MODEL_v6a savemacro=REG_MODEL_v6a_FINAL.mod
 % diagnostic command:
 % model_diagnostics(M_, options_, oo_)
 % -------------------------------------------------- %
@@ -37,10 +37,7 @@ Rt   ${\hat{R}}$       (long_name='Interest rate')
 W1t  ${\hat{W}_{1}}$   (long_name='Region 1 Wage')
 W2t  ${\hat{W}_{2}}$   (long_name='Region 2 Wage')
 pit  ${\hat{\pi}}$     (long_name='National gross inflation rate')
-pi1t ${\hat{\pi}_{1}}$ (long_name='Gross inflation rate in region 1')
-pi2t ${\hat{\pi}_{2}}$ (long_name='Gross inflation rate in region 2')
-lambda1t ${\hat{\lambda}_{1}}$ (long_name='Marginal cost in region 1')
-lambda2t ${\hat{\lambda}_{2}}$ (long_name='Marginal cost in region 2')
+lambdat ${\hat{\lambda}_{}}$ (long_name='Marginal cost')
 ;
 % -------------------------------------------------- %
 % LOCAL VARIABLES                                    %
@@ -143,7 +140,7 @@ sigmaM  = 0.01 ; % Standard Error of monetary shock
 % -------------------------------------------------- %
 model(linear);
 % Steady state variables as local varibles, for log-linear use:
-# thetaP = 1 ;
+# thetaP = 0.8 ;
 # thetaZ = 0.8 ;
 # P1ss   = 1 ;
 # P2ss   = thetaP * P1ss ;
@@ -182,56 +179,54 @@ model(linear);
 % Second, the log-linear model:
 % equations 1,2:
 [name='Regional Gross Inflation Rate']
-pi1t = P1t - P1t(-1);
-pi2t = P2t - P2t(-1);
-% equations 3,4:
+pit = P1t - P1t(-1);
+P1t - P1t(-1) = P2t - P2t(-1);
+% equations 3:
 [name='New Keynesian Phillips Curve']
-pi1t = betta*pi1t(+1)+lambda1t*(1-thetta)*(1-thetta*betta)/thetta;
-pi2t = betta*pi2t(+1)+lambda2t*(1-thetta)*(1-thetta*betta)/thetta;
-% equations 5,6:
+pit = betta*pit(+1)+lambdat*(1-thetta)*(1-thetta*betta)/thetta;
+% equations 4:
 [name='Regional Consumption Weight']
-C12t - C11t = P1t - P2t;
-C22t - C21t = P1t - P2t;
-% equations 7,8:
+C12t - C11t = C22t - C21t;
+% equations 5,6:
 [name='Regional Consumption of Good 1']
 C1t - C11t = (1 - omega11) * (P1t - P2t);
-C2t - C21t = (1 - omega21) * (P1t - P2t);
-% equation 9:
+(C1t - C11t) / (1 - omega11) = (C2t - C21t) / (1 - omega21);
+% C2t - C21t = (1 - omega21) * (P1t - P2t);
+% equation 7:
 [name='Region 1 Price Index']
 Q1t = omega11 * P1t + (1 - omega11) * P2t;
-% equations 10,11:
+% equations 8,9:
 [name='Labor Supply']
 varphhi * L1t + siggma * C1t = W1t - Q1t;
-varphhi * L2t + siggma * C2t = W2t - Q1t;
-% equation 12:
+(varphhi*L1t + siggma*C1t) - (varphhi*L2t + siggma*C2t) = W1t - W2t ;
+% varphhi * L2t + siggma * C2t = W2t - Q1t;
+% equation 10:
 [name='Region 1 Euler equation for the bonds return']
 Q1t(+1) - Q1t + siggma * (C1t(+1) - C1t) = (1 - betta) * Rt;
-% equation 13:
+% equation 11:
 [name='Euler equation for regional consumption']
 C1t(+1) - C1t = C2t(+1) - C2t;
-% equations 14,15:
+% equations 12,13:
 [name='Production Function']
 Y1t = ZA1t + L1t;
 Y2t = ZA2t + L2t;
-% equations 16,17:
+% equations 14,15:
 [name='Marginal Cost']
-lambda1t = W1t - ZA1t - P1t;
-lambda2t = W2t - ZA2t - P2t;
-% equation 18:
+lambdat = W1t - ZA1t - P1t;
+W1t - ZA1t - P1t - (W2t - ZA2t - P2t) = 0;
+% lambdat = W2t - ZA2t - P2t;
+% equation 16:
 [name='Monetary Policy']
 Rt = gammaR * Rt(-1) + (1 - gammaR) * (gammapi * pit + gammaY * Yt) + ZMt;
-% equation 19:
-[name='National Gross Inflation Rate']
-pit = thetapi * pi1t + (1 - thetapi) * pi2t;
-% equation 20:
+% equation 17:
 [name='Market Clearing Condition']
 Yt = thetaY * Y1t + (1 - thetaY) * Y2t ;
-% equations 21,22:
+% equations 18,19:
 [name='Regional Market Clearing Condition']
 P1t + Y1t = Q1t + C1t;
 P2t + Y2t = Q1t + C2t;
 % The shocks:
-% equations 23,24,25:
+% equations 20,21,22:
 [name='Productivity Shock']
      ZA1t = rhoA1 * ZA1t(-1) + e_A1;
      ZA2t = rhoA2 * ZA2t(-1) + e_A2;
@@ -265,10 +260,7 @@ Rt       = 0 ;
 pit      = 0 ;
 W1t      = 0 ;
 W2t      = 0 ;
-lambda1t = 0 ;
-lambda2t = 0 ;
-pi1t     = 0 ;
-pi2t     = 0 ;
+lambdat  = 0 ;
 end;
 % check the residuals:
 resid;
@@ -284,8 +276,8 @@ shocks;
      var    e_M;
      stderr sigmaM;
 end;
-stoch_simul(irf=100, order=1, qz_zero_threshold=1e-20) ZMt ZA1t Rt W1t C1t L1t Y1t P1t pi1t ;
-% ZMt ZA2t Rt W2t C2t L2t Y2t P2t pi2t ;
+stoch_simul(irf=100, order=1, qz_zero_threshold=1e-20) ZMt ZA1t Rt W1t C1t L1t Y1t P1t pit ;
+% ZMt ZA2t Rt W2t C2t L2t Y2t P2t pit ;
 % -------------------------------------------------- % 
 % LATEX OUTPUT                                       %
 % -------------------------------------------------- % 

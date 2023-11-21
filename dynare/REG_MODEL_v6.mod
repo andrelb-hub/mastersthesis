@@ -348,6 +348,9 @@ pi2t     = 0 ;
 
 end;
 
+% check the residuals:
+resid;
+
 % compute the steady state
 steady;
 check(qz_zero_threshold=1e-20);
