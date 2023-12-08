@@ -1,5 +1,5 @@
 Starting Dynare (version 5.5).
-Calling Dynare with arguments: none
+Calling Dynare with arguments: savemacro=m001_canonical_NK_FINAL.mod
 Starting preprocessing of the model file ...
 Found 9 equation(s).
 Evaluating expressions...done
@@ -110,4 +110,4 @@ pit       0.8599  0.7512  0.6632  0.5896  0.5266
 lambt     0.7721  0.6222  0.5187  0.4434  0.3858
 Lt        0.7790  0.6332  0.5321  0.4581  0.4012
 Rt        0.9717  0.9158  0.8480  0.7771  0.7077
-Total computing time : 0h00m03s
+Total computing time : 0h00m16s

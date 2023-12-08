@@ -1,15 +1,13 @@
-\ProvidesPackage{article_packages}
-
 % --------------------------------------------------
 % DOCUMENT MARGINS:
 % --------------------------------------------------
 
 \usepackage[
-a4paper, 
-left   = 2.5cm, 
-right  = 2.5cm,
-top    = 3cm, 
-bottom = 2.5cm
+	a4paper, 
+	left   = 2.5cm, 
+	right  = 2.5cm,
+	top    = 3cm, 
+	bottom = 2.5cm
 ]{geometry}
 
 % --------------------------------------------------
@@ -45,7 +43,7 @@ bottom = 2.5cm
 \usepackage[
     brazilian,
     english,
-    ]{babel}
+]{babel}
 
 % --------------------------------------------------
 % FONT:
@@ -132,7 +130,8 @@ bottom = 2.5cm
 	opacity   = 1,
 	angle     = 0,
 	contents  = {
-		\includegraphics[width=\paperwidth]{marca_dagua_ufpr}}
+		\includegraphics[width=\paperwidth]{marca_dagua_ufpr}
+	}
 }
 
 % --------------------------------------------------
@@ -165,7 +164,7 @@ bottom = 2.5cm
 
 \usepackage[
 	% dvipsnames
-	]{xcolor}
+]{xcolor}
 
 % --------------------------------------------------
 % MULTIFIGURES AND SUBFIGURES
@@ -198,7 +197,6 @@ bottom = 2.5cm
 % long tables:
 \usepackage{longtable}
 
-
 % --------------------------------------------------
 % LIPSUM TEXT
 % --------------------------------------------------
@@ -215,7 +213,7 @@ bottom = 2.5cm
 
 \usepackage[
 	fleqn % align all equations left
-	]{amsmath}
+]{amsmath}
 
 % \setlength{\mathindent}{0cm}
 
@@ -248,13 +246,13 @@ bottom = 2.5cm
 
 % https://ctan.org/pkg/mathalpha?lang=en
 \usepackage[
-frak = euler, %boondox, %(for fraktur fonts)
-scr  = cm, %euler, %stixplain, %pxtx, %cm, %zapfc, %(for calligraphic fonts)
-cal  = boondoxo, %boondox, %(for script fonts)
-bb   = bboldx, %pazo, %boondox, %dsfontsans, % (for blackboard bold (double-struck) fonts)
-%bfscr, % force \mathscr to point to the bold version.
-%bfcal, % force \mathcal to point to the bold version.
-%bfbb,  % force \mathbb  to point to the bold version.
+	frak = euler, %boondox, %(for fraktur fonts)
+	scr  = cm, %euler, %stixplain, %pxtx, %cm, %zapfc, %(for calligraphic fonts)
+	cal  = boondoxo, %boondox, %(for script fonts)
+	bb   = bboldx, %pazo, %boondox, %dsfontsans, % (for blackboard bold (double-struck) fonts)
+	%bfscr, % force \mathscr to point to the bold version.
+	%bfcal, % force \mathcal to point to the bold version.
+	%bfbb,  % force \mathbb  to point to the bold version.
 ]{mathalpha}
 
 % --------------------------------------------------
@@ -375,7 +373,7 @@ bb   = bboldx, %pazo, %boondox, %dsfontsans, % (for blackboard bold (double-stru
 	filecolor  = teal, 
 	urlcolor   = teal, 
 	citecolor  = teal
-	]{hyperref}
+]{hyperref}
 
 % --------------------------------------------------
 % BOOKMARKS
@@ -405,9 +403,9 @@ bb   = bboldx, %pazo, %boondox, %dsfontsans, % (for blackboard bold (double-stru
 \setlength{\marginparwidth}{2cm}
 
 \usepackage[
-%disable, % OPTION TO DISABLE THE TODO NOTES.
-textsize = footnotesize,
-color=green!30,
+	%disable, % OPTION TO DISABLE THE TODO NOTES.
+	textsize = footnotesize,
+	color=green!30,
 ]{todonotes}
 
 % todo command:
