@@ -338,9 +338,9 @@ M_.params(11) = 1.5;
 varphhi = M_.params(11);
 M_.params(12) = 8;
 pssi = M_.params(12);
-M_.params(13) = 0.9;
+M_.params(13) = 0.7;
 omega11 = M_.params(13);
-M_.params(14) = 0.3;
+M_.params(14) = 0.5;
 omega21 = M_.params(14);
 M_.params(15) = 0.01;
 sigmaA1 = M_.params(15);
@@ -352,6 +352,8 @@ resid;
 steady;
 options_.qz_zero_threshold = 1e-20;
 oo_.dr.eigval = check(M_,options_,oo_);
+options_gsa = struct();
+dynare_sensitivity(options_gsa);
 %
 % SHOCKS instructions
 %

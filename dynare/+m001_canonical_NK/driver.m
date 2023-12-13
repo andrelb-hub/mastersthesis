@@ -111,6 +111,13 @@ M_.endo_nbr = 9;
 M_.param_nbr = 13;
 M_.orig_endo_nbr = 9;
 M_.aux_vars = [];
+options_.varobs = cell(5, 1);
+options_.varobs(1)  = {'pit'};
+options_.varobs(2)  = {'Lt'};
+options_.varobs(3)  = {'Rt'};
+options_.varobs(4)  = {'Wt'};
+options_.varobs(5)  = {'Yt'};
+options_.varobs_id = [ 1 4 5 6 7  ];
 M_ = setup_solvers(M_);
 M_.Sigma_e = zeros(2, 2);
 M_.Correlation_matrix = eye(2, 2);
@@ -231,6 +238,8 @@ sigmaM = M_.params(13);
 steady;
 options_.qz_zero_threshold = 1e-20;
 oo_.dr.eigval = check(M_,options_,oo_);
+options_ident = struct();
+dynare_identification(options_ident);
 %
 % SHOCKS instructions
 %

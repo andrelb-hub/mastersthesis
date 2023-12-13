@@ -1110,6 +1110,37 @@
       \verb 10.1111/j.1468-0297.2010.02383.x
       \endverb
     \endentry
+    \entry{walsh_monetary_2017}{book}{}
+      \name{author}{1}{}{%
+        {{hash=118677242d5f3e8296b78cd30cb8e3a7}{%
+           family={Walsh},
+           familyi={W\bibinitperiod},
+           given={Carl\bibnamedelima E.},
+           giveni={C\bibinitperiod\bibinitdelim E\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {London, England ; Cambridge, Massachusetts}%
+      }
+      \list{publisher}{1}{%
+        {{MIT} Press}%
+      }
+      \strng{namehash}{118677242d5f3e8296b78cd30cb8e3a7}
+      \strng{fullhash}{118677242d5f3e8296b78cd30cb8e3a7}
+      \strng{bibnamehash}{118677242d5f3e8296b78cd30cb8e3a7}
+      \strng{authorbibnamehash}{118677242d5f3e8296b78cd30cb8e3a7}
+      \strng{authornamehash}{118677242d5f3e8296b78cd30cb8e3a7}
+      \strng{authorfullhash}{118677242d5f3e8296b78cd30cb8e3a7}
+      \field{sortinit}{W}
+      \field{sortinithash}{4315d78024d0cea9b57a0c6f0e35ed0d}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{edition}{Fourth edition}
+      \field{title}{Monetary Theory and Policy}
+      \field{year}{2017}
+      \field{dateera}{ce}
+    \endentry
   \enddatalist
 \endrefsection
 \endinput

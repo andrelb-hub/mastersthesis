@@ -1,18 +1,18 @@
 # Fdb version 4
-["biber thesis"] 1701996825 "thesis.bcf" "thesis.bbl" "thesis" 1701997161 0
-  "../ref.bib" 1701701269 11312 6cf97fc2831ffe7e418f2008f590f855 ""
-  "thesis.bcf" 1701997160 123812 02eeb9778d6d988d14879f4ec9868a7e "pdflatex"
+["biber thesis"] 1702230541 "thesis.bcf" "thesis.bbl" "thesis" 1702487414 0
+  "../ref.bib" 1702230376 11551 c50a7fa647112c09aa770f73aed567cb ""
+  "thesis.bcf" 1702487411 124035 d7ab29aecbad810370065a097fb86dcd "pdflatex"
   (generated)
   "thesis.bbl"
   "thesis.blg"
   (rewritten before read)
-["makeindex thesis.idx"] 1701995653 "thesis.idx" "thesis.ind" "thesis" 1701997161 0
-  "thesis.idx" 1701997150 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
+["makeindex thesis.idx"] 1701995653 "thesis.idx" "thesis.ind" "thesis" 1702487414 0
+  "thesis.idx" 1702487372 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
   (generated)
   "thesis.ilg"
   "thesis.ind"
   (rewritten before read)
-["pdflatex"] 1701997149 "c:/apps/gdrive/projects/masterthesis/latex/thesis/thesis.tex" "thesis.pdf" "thesis" 1701997161 0
+["pdflatex"] 1702487370 "c:/apps/gdrive/projects/masterthesis/latex/thesis/thesis.tex" "thesis.pdf" "thesis" 1702487414 0
   "../article_packages.tex" 1701996143 11001 e76aa08e19609b15713b8e0ed404d95c ""
   "../images/../images/flowchart.jpg" 1701701269 71209 27b1dcff6a337fdb9824e07b4762c700 ""
   "../images/../images/marca_dagua_ufpr.jpg" 1701701269 3057315 26cb0fce1790de1cabcc59ee551ab183 ""
@@ -66,7 +66,7 @@
   "../images/shock_ZMt/shock_ZMt_Wt.png" 1701701269 16287 4c789077d6d66c73a6cac23075e38d1d ""
   "../images/shock_ZMt/shock_ZMt_Yt.png" 1701701269 12656 889fa37646a0a0abd41505607a6bad70 ""
   "../images/shock_ZMt/shock_ZMt_ZMt.png" 1701701269 14854 3d7bc69504c7767fdc752a38b2facb27 ""
-  "C:/Users/andre/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1701986915 221890 43f325db63ceff24439399cae6326805 ""
+  "C:/Users/andre/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1701997414 221890 43f325db63ceff24439399cae6326805 ""
   "C:/Users/andre/AppData/Local/MiKTeX/fonts/pk/ljfour/jknappen/ec/dpi600/ectt1200.pk" 1701703089 24152 c6866f1ad52ce99cdf2cf189eeba8a8e ""
   "C:/Users/andre/AppData/Local/MiKTeX/miktex/data/le/pdftex/pdflatex.fmt" 1701988614 24213231 eece9703d20265317f2d67cdc1fcf261 ""
   "C:/Users/andre/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/base/8r.enc" 1458473887 4993 80dc9bab7f31fb78a000ccfed0e27cab ""
@@ -444,17 +444,17 @@
   "sections/nk_dynare.tex" 1701996919 9681 7866672e092c6506299757236426da34 ""
   "sections/nk_model.tex" 1701997012 67383 35729214addf0aaf31fe064334b472a4 ""
   "sections/parametrization.tex" 1701996360 269 1a2269f711d4e359a93e741b866b61e2 ""
-  "sections/reg_model_v6.tex" 1701730104 118447 4a59310e679b17ab8b39ce3ba1194d4e ""
+  "sections/reg_model_v6.tex" 1702487363 118488 dd32bd6e1309d6e10951c4c1b135b55b ""
   "sections/results.tex" 1701996579 410 1b0b4b46c2f8e24fb38d6faf884e1b2a ""
-  "thesis.aux" 1701997160 80274 495b385719eee0c38ea132a6fe3af740 "pdflatex"
-  "thesis.bbl" 1701996827 46259 5af0d865f41eb70536dd01b8edac1f1f "biber thesis"
+  "thesis.aux" 1702487411 80702 470e8617d1ed3929f0d466dd36a372c7 "pdflatex"
+  "thesis.bbl" 1702230544 47491 7d223ca57eff586fc686c267f4e6f821 "biber thesis"
   "thesis.ind" 1701995653 0 d41d8cd98f00b204e9800998ecf8427e "makeindex thesis.idx"
-  "thesis.lof" 1701997160 683 ae0318b2e81e7edc23ac0aaa4a95f59b "pdflatex"
-  "thesis.lot" 1701997160 538 9a98c5607beb6b2d0e245537a34f58f0 "pdflatex"
-  "thesis.run.xml" 1701997160 2520 6f27768db9d481be7608600f56c31d52 "pdflatex"
-  "thesis.tdo" 1701997160 295 8592c5d3a48aac1b05e79eb2ac525bbc "pdflatex"
+  "thesis.lof" 1702487411 683 ae0318b2e81e7edc23ac0aaa4a95f59b "pdflatex"
+  "thesis.lot" 1702487411 538 9a98c5607beb6b2d0e245537a34f58f0 "pdflatex"
+  "thesis.run.xml" 1702487411 2520 6f27768db9d481be7608600f56c31d52 "pdflatex"
+  "thesis.tdo" 1702487411 295 8592c5d3a48aac1b05e79eb2ac525bbc "pdflatex"
   "thesis.tex" 1701996811 3184 3a93de373bf2c705f01a5e18155dff68 ""
-  "thesis.toc" 1701997160 4920 8750df06c394ea416211f63d3808b423 "pdflatex"
+  "thesis.toc" 1702487411 4920 8750df06c394ea416211f63d3808b423 "pdflatex"
   (generated)
   "thesis.aux"
   "thesis.bcf"

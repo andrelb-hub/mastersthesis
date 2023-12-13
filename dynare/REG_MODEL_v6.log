@@ -84,7 +84,7 @@ EIGENVALUES:
                1                1                0
            1.364            1.364                0
            1.449            1.449                0
-       5.761e+16       -5.761e+16                0
+       2.123e+17        2.123e+17                0
 
 
 There are 3 eigenvalue(s) larger than 1 in modulus 
@@ -92,3 +92,7 @@ for 5 forward-looking variable(s)
 
 The rank condition ISN'T verified!
 
+[Warning: dynare_sensitivity: dynare_sensitivity does only support order=1, resetting to order=1.] 
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('dynare_sensitivity', 'C:\apps\dynare\5.5\matlab\dynare_sensitivity.m', 88)" style="font-weight:bold">dynare_sensitivity</a> (<a href="matlab: opentoline('C:\apps\dynare\5.5\matlab\dynare_sensitivity.m',88,0)">line 88</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('REG_MODEL_v6.driver', 'C:\apps\gdrive\projects\masterthesis\dynare\+REG_MODEL_v6\driver.m', 356)" style="font-weight:bold">REG_MODEL_v6.driver</a> (<a href="matlab: opentoline('C:\apps\gdrive\projects\masterthesis\dynare\+REG_MODEL_v6\driver.m',356,0)">line 356</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('dynare', 'C:\apps\dynare\5.5\matlab\dynare.m', 281)" style="font-weight:bold">dynare</a> (<a href="matlab: opentoline('C:\apps\dynare\5.5\matlab\dynare.m',281,0)">line 281</a>)] 

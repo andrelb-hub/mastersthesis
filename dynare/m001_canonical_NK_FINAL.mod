@@ -1,6 +1,8 @@
 % command to run dynare and write
 % a new file with all the choices:
 % dynare m001_canonical_NK savemacro=m001_canonical_NK_FINAL.mod
+% diagnostic command:
+% model_diagnostics(M_, options_, oo_)
 % -------------------------------------------------- %
 % MODEL OPTIONS                                      %
 % -------------------------------------------------- %
@@ -155,6 +157,15 @@ end;
 % compute the steady state:
 steady;
 check(qz_zero_threshold=1e-20);
+% -------------------------------------------------- % 
+% IDENTIFICATION                                     %
+% -------------------------------------------------- % 
+ varobs pit Lt Rt Wt Yt ;
+ identification ;
+% -------------------------------------------------- % 
+% SENSITIVITY                                        %
+% -------------------------------------------------- % 
+% dynare_sensitivity ;
 % -------------------------------------------------- % 
 % SHOCKS                                             %
 % -------------------------------------------------- % 

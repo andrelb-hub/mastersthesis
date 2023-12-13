@@ -1,0 +1,15 @@
+[1] Config.pm:307> INFO - This is Biber 2.19
+[1] Config.pm:310> INFO - Logfile is 'sections/reg_model_v6.blg'
+[451] biber-MSWIN64:340> INFO - === 
+[583] Biber.pm:419> INFO - Reading 'sections/reg_model_v6.bcf'
+[1012] Biber.pm:979> INFO - Found 6 citekeys in bib section 0
+[1073] Biber.pm:4419> INFO - Processing section 0
+[1123] Biber.pm:4610> INFO - Looking for bibtex file '../ref.bib' for section 0
+[1237] bibtex.pm:1713> INFO - LaTeX decoding ...
+[1376] bibtex.pm:1519> INFO - Found BibTeX data source '../ref.bib'
+[1569] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[1569] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[1569] Biber.pm:4239> INFO - Sorting list 'nyt/global//global/global' of type 'entry' with template 'nyt' and locale 'en-US'
+[1570] Biber.pm:4245> INFO - No sort tailoring available for locale 'en-US'
+[1606] bbl.pm:660> INFO - Writing 'sections/reg_model_v6.bbl' with encoding 'UTF-8'
+[1616] bbl.pm:763> INFO - Output to sections/reg_model_v6.bbl
