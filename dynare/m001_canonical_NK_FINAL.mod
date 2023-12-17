@@ -160,8 +160,8 @@ check(qz_zero_threshold=1e-20);
 % -------------------------------------------------- % 
 % IDENTIFICATION                                     %
 % -------------------------------------------------- % 
- varobs pit Lt Rt Wt Yt ;
- identification ;
+% varobs pit Lt Rt Wt Yt ;
+% identification ;
 % -------------------------------------------------- % 
 % SENSITIVITY                                        %
 % -------------------------------------------------- % 

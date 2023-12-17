@@ -1,5 +1,5 @@
 Starting Dynare (version 5.5).
-Calling Dynare with arguments: savemacro=REG_MODEL_v6_FINAL.mod
+Calling Dynare with arguments: savemacro=REG_MODEL_v6f_FINAL.mod
 Starting preprocessing of the model file ...
 Found 25 equation(s).
 Evaluating expressions...done

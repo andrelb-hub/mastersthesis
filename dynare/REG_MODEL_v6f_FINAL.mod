@@ -1,6 +1,6 @@
 % command to run dynare and write
 % a new file with all the choices:
-% dynare REG_MODEL_v6 savemacro=REG_MODEL_v6_FINAL.mod
+% dynare REG_MODEL_v6f savemacro=REG_MODEL_v6f_FINAL.mod
 % diagnostic command:
 % model_diagnostics(M_, options_, oo_)
 % -------------------------------------------------- %
@@ -137,7 +137,7 @@ omega21  = 0.5   ;  % weight of good 1 in consumption composition of region 2
 % -------------------------------------------------- %
 sigmaA1 = 0.01 ; % Standard Error of productivity shock 1
 sigmaA2 = 0.01 ; % Standard Error of productivity shock 2
-sigmaM  = 1    ; % Standard Error of monetary shock
+sigmaM  = 0.01 ; % Standard Error of monetary shock
 % -------------------------------------------------- %
 % MODEL                                              %
 % -------------------------------------------------- %

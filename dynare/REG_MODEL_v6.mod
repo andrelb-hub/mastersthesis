@@ -386,8 +386,9 @@ shocks;
 
 end;
 
-stoch_simul(irf=100, order=1, qz_zero_threshold=1e-20) ZMt ZA1t Rt W1t C1t L1t Y1t P1t pi1t ;
+stoch_simul(irf=100, order=1, qz_zero_threshold=1e-20) ZMt ;
 
+% ZA1t Rt W1t C1t L1t Y1t P1t pi1t 
 % ZMt ZA2t Rt W2t C2t L2t Y2t P2t pi2t ;
 
 % -------------------------------------------------- % 

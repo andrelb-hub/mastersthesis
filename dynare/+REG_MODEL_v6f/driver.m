@@ -14,7 +14,7 @@ tic0 = tic;
 % Define global variables.
 global M_ options_ oo_ estim_params_ bayestopt_ dataset_ dataset_info estimation_info ys0_ ex0_
 options_ = [];
-M_.fname = 'REG_MODEL_v6';
+M_.fname = 'REG_MODEL_v6f';
 M_.dynare_version = '5.5';
 oo_.dynare_version = '5.5';
 options_.dynare_version = '5.5';
@@ -346,7 +346,7 @@ M_.params(15) = 0.01;
 sigmaA1 = M_.params(15);
 M_.params(16) = 0.01;
 sigmaA2 = M_.params(16);
-M_.params(17) = 1;
+M_.params(17) = 0.01;
 sigmaM = M_.params(17);
 resid;
 steady;
@@ -372,24 +372,24 @@ disp(['Total computing time : ' dynsec2hms(oo_.time) ]);
 if ~exist([M_.dname filesep 'Output'],'dir')
     mkdir(M_.dname,'Output');
 end
-save([M_.dname filesep 'Output' filesep 'REG_MODEL_v6_results.mat'], 'oo_', 'M_', 'options_');
+save([M_.dname filesep 'Output' filesep 'REG_MODEL_v6f_results.mat'], 'oo_', 'M_', 'options_');
 if exist('estim_params_', 'var') == 1
-  save([M_.dname filesep 'Output' filesep 'REG_MODEL_v6_results.mat'], 'estim_params_', '-append');
+  save([M_.dname filesep 'Output' filesep 'REG_MODEL_v6f_results.mat'], 'estim_params_', '-append');
 end
 if exist('bayestopt_', 'var') == 1
-  save([M_.dname filesep 'Output' filesep 'REG_MODEL_v6_results.mat'], 'bayestopt_', '-append');
+  save([M_.dname filesep 'Output' filesep 'REG_MODEL_v6f_results.mat'], 'bayestopt_', '-append');
 end
 if exist('dataset_', 'var') == 1
-  save([M_.dname filesep 'Output' filesep 'REG_MODEL_v6_results.mat'], 'dataset_', '-append');
+  save([M_.dname filesep 'Output' filesep 'REG_MODEL_v6f_results.mat'], 'dataset_', '-append');
 end
 if exist('estimation_info', 'var') == 1
-  save([M_.dname filesep 'Output' filesep 'REG_MODEL_v6_results.mat'], 'estimation_info', '-append');
+  save([M_.dname filesep 'Output' filesep 'REG_MODEL_v6f_results.mat'], 'estimation_info', '-append');
 end
 if exist('dataset_info', 'var') == 1
-  save([M_.dname filesep 'Output' filesep 'REG_MODEL_v6_results.mat'], 'dataset_info', '-append');
+  save([M_.dname filesep 'Output' filesep 'REG_MODEL_v6f_results.mat'], 'dataset_info', '-append');
 end
 if exist('oo_recursive_', 'var') == 1
-  save([M_.dname filesep 'Output' filesep 'REG_MODEL_v6_results.mat'], 'oo_recursive_', '-append');
+  save([M_.dname filesep 'Output' filesep 'REG_MODEL_v6f_results.mat'], 'oo_recursive_', '-append');
 end
 if ~isempty(lastwarn)
   disp('Note: warning(s) encountered in MATLAB/Octave code')
