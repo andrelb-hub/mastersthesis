@@ -18,6 +18,6 @@ function g2 = static_g2(T, y, x, params, T_flag)
 if T_flag
     T = REG_MODEL_v6f.static_g2_tt(T, y, x, params);
 end
-g2 = sparse([],[],[],25,625);
+g2 = sparse([],[],[],27,729);
 
 end

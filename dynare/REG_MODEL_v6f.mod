@@ -55,6 +55,8 @@ pi1t ${\hat{\pi}_{1}}$ (long_name='Gross inflation rate in region 1')
 pi2t ${\hat{\pi}_{2}}$ (long_name='Gross inflation rate in region 2')
 lambda1t ${\hat{\lambda}_{1}}$ (long_name='Marginal cost in region 1')
 lambda2t ${\hat{\lambda}_{2}}$ (long_name='Marginal cost in region 2')
+pix1t ${\hat{\pi}_{x1}}$ (long_name='Expected gross inflation rate in region 1')
+pix2t ${\hat{\pi}_{x2}}$ (long_name='Expected gross inflation rate in region 2')
 ;
 
 % -------------------------------------------------- %
@@ -113,6 +115,8 @@ varexo
 e_A1 ${\varepsilon_{A1}}$ (long_name='productivity shock 1')
 e_A2 ${\varepsilon_{A2}}$ (long_name='productivity shock 2')
 e_M  ${\varepsilon_{M}}$  (long_name='monetary shock')
+sunspot1 ${sunspot_{1}}$  (long_name='error of expected gross inflation rate in region 1')
+sunspot2 ${sunspot_{2}}$  (long_name='error of expected gross inflation rate in region 2')
 ;
 
 % -------------------------------------------------- %
@@ -229,8 +233,13 @@ pi2t = P2t - P2t(-1);
 
 % equations 3,4:
 [name='New Keynesian Phillips Curve']
-pi1t = betta*pi1t(+1)+lambda1t*(1-thetta)*(1-thetta*betta)/thetta;
-pi2t = betta*pi2t(+1)+lambda2t*(1-thetta)*(1-thetta*betta)/thetta;
+% pi1t = betta*pi1t(+1)+lambda1t*(1-thetta)*(1-thetta*betta)/thetta;
+  pi1t = betta*pix1t+lambda1t*(1-thetta)*(1-thetta*betta)/thetta;
+  pi1t - pix1t(-1) = sunspot1;
+
+% pi2t = betta*pi2t(+1)+lambda2t*(1-thetta)*(1-thetta*betta)/thetta;
+  pi2t = betta*pix2t+lambda2t*(1-thetta)*(1-thetta*betta)/thetta;
+  pi2t - pix2t(-1) = sunspot2;
 
 % equations 5,6:
 [name='Regional Consumption Weight']
@@ -386,9 +395,8 @@ shocks;
 
 end;
 
-stoch_simul(irf=100, order=1, qz_zero_threshold=1e-20) ZMt ;
+stoch_simul(irf=100, order=1, qz_zero_threshold=1e-20) ZMt ZA1t Rt W1t C1t L1t Y1t P1t pi1t ;
 
-% ZA1t Rt W1t C1t L1t Y1t P1t pi1t 
 % ZMt ZA2t Rt W2t C2t L2t Y2t P2t pi2t ;
 
 % -------------------------------------------------- % 
