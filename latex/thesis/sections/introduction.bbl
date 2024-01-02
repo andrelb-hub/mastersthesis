@@ -1,0 +1,118 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.2 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{nyt/global//global/global}
+    \entry{bertanha_efeitos_2008}{article}{}
+      \name{author}{2}{}{%
+        {{hash=c5cf69ef048a51628c906ce6f50dc5a8}{%
+           family={Bertanha},
+           familyi={B\bibinitperiod},
+           given={Marinho},
+           giveni={M\bibinitperiod}}}%
+        {{hash=2d68a1483d71555be2be574f2e4e1e0c}{%
+           family={Haddad},
+           familyi={H\bibinitperiod},
+           given={Eduardo\bibnamedelima Amaral},
+           giveni={E\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+      }
+      \strng{namehash}{17a541c280183188a363696f9a0ff678}
+      \strng{fullhash}{17a541c280183188a363696f9a0ff678}
+      \strng{bibnamehash}{17a541c280183188a363696f9a0ff678}
+      \strng{authorbibnamehash}{17a541c280183188a363696f9a0ff678}
+      \strng{authornamehash}{17a541c280183188a363696f9a0ff678}
+      \strng{authorfullhash}{17a541c280183188a363696f9a0ff678}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Revista Brasileira de Economia}
+      \field{month}{3}
+      \field{title}{Efeitos regionais da política monetária no Brasil: impactos e transbordamentos espaciais}
+      \field{year}{2008}
+      \field{dateera}{ce}
+      \verb{doi}
+      \verb 10.1590/S0034-71402008000100001
+      \endverb
+    \endentry
+    \entry{gali_monetary_2015}{book}{}
+      \name{author}{1}{}{%
+        {{hash=9f86081942834923a86a56e2f4d2a7cd}{%
+           family={Galí},
+           familyi={G\bibinitperiod},
+           given={Jordi},
+           giveni={J\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Princeton ; Oxford}%
+      }
+      \list{publisher}{1}{%
+        {Princeton University Press}%
+      }
+      \strng{namehash}{9f86081942834923a86a56e2f4d2a7cd}
+      \strng{fullhash}{9f86081942834923a86a56e2f4d2a7cd}
+      \strng{bibnamehash}{9f86081942834923a86a56e2f4d2a7cd}
+      \strng{authorbibnamehash}{9f86081942834923a86a56e2f4d2a7cd}
+      \strng{authornamehash}{9f86081942834923a86a56e2f4d2a7cd}
+      \strng{authorfullhash}{9f86081942834923a86a56e2f4d2a7cd}
+      \field{sortinit}{G}
+      \field{sortinithash}{32d67eca0634bf53703493fb1090a2e8}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{edition}{Second edition}
+      \field{title}{Monetary Policy, Inflation, And The Business Cycle: An Introduction To The New Keynesian Framework And Its Applications}
+      \field{year}{2015}
+      \field{dateera}{ce}
+    \endentry
+    \entry{rickman_modern_2010}{article}{}
+      \name{author}{1}{}{%
+        {{hash=73213494ed3d7f22faa68f1166b9073e}{%
+           family={Rickman},
+           familyi={R\bibinitperiod},
+           given={Dan\bibnamedelima S.},
+           giveni={D\bibinitperiod\bibinitdelim S\bibinitperiod}}}%
+      }
+      \strng{namehash}{73213494ed3d7f22faa68f1166b9073e}
+      \strng{fullhash}{73213494ed3d7f22faa68f1166b9073e}
+      \strng{bibnamehash}{73213494ed3d7f22faa68f1166b9073e}
+      \strng{authorbibnamehash}{73213494ed3d7f22faa68f1166b9073e}
+      \strng{authornamehash}{73213494ed3d7f22faa68f1166b9073e}
+      \strng{authorfullhash}{73213494ed3d7f22faa68f1166b9073e}
+      \field{sortinit}{R}
+      \field{sortinithash}{5e1c39a9d46ffb6bebd8f801023a9486}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of Regional Science}
+      \field{title}{Modern Macroeconomics and Regional Economic Modeling}
+      \field{year}{2010}
+      \field{dateera}{ce}
+      \verb{doi}
+      \verb 10.1111/j.1467-9787.2009.00647.x
+      \endverb
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+

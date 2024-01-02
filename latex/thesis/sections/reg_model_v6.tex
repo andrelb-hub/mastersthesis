@@ -26,16 +26,18 @@
 	
 	The final-goods firm produces the final-good consumed by households: it aggregates all intermediate-goods produced by intermediate firms, operates under perfect competition and seeks to maximize profit subject to the bundle technology.
 	
-	Intermediate firms each produce a single intermediate good, all exhibiting imperfect substitution, thus operating in monopolistic competition. Intermediate-goods firms have two problems to solve: minimize costs subject to production level and choose an optimal price to maximize the intertemporal profit flow.
+	Each intermediate-goods firm produces a single intermediate-good, all exhibiting imperfect substitution, thus operating in monopolistic competition. Intermediate-goods firms have two problems to solve: minimize costs subject to production level and choose an optimal price to maximize the intertemporal profit flow.
 	
-	Periodically, a portion of intermediate-goods firms have the opportunity to adjust prices, while others miss this chance, following to a \textcite{calvo_staggered_1983} rule. This mechanism generates nominal price rigidities, altering equilibrium relationships in the system. These rigidities lead to non-neutrality of money in the short term, as explained by \textcite[p.191]{costa_junior_understanding_2016}.
+	Periodically, a portion of intermediate-goods firms have the opportunity to adjust prices, while others miss this chance, following a \textcite{calvo_staggered_1983} rule. This mechanism generates nominal price rigidities, altering equilibrium relationships in the system. These rigidities lead to the non-neutrality of money in the short term, as explained by \textcite[p.191]{costa_junior_understanding_2016}.
 	
 	The monetary authority determines the nominal interest rate in response to fluctuations in previous period's inflation and production, aiming to control price levels and growth, following a \textcite{taylor_discretion_1993} rule.
 	
 	Stochastic shocks will be present in the intermediate-goods firms' productivity and in the monetary policy.
 	
-	For regionalization of the model, an index will be used to differentiate the studied region from the rest of Brazil, resulting in separate households, intermediate- and final-goods firms for each region. Households will lack mobility between regions. The link connecting the two regions will be the final-goods.
+	% These elements define a canonical NK DSGE model, as presented by \cite{solis-garcia_ucb_2022}. The model will be adapted to accommodate two distinct regions, representing the main region and the rest of the country, instead of a single aggregated region. For that, an index will be used to differentiate the studied region from the rest of the country, resulting in separate households, intermediate- and final-goods firms for each region. Households will lack mobility between regions. The link connecting the two regions will be the final-goods, that household will be able to consume from both regions.
 	
+	These elements define a canonical NK DSGE model, as presented by \cite{solis-garcia_ucb_2022}. The model will be adapted to accommodate two distinct regions: the main region and the rest of the country, replacing the single aggregated region. To achieve this, an index will differentiate the studied region from the rest of the country, resulting in separate households, intermediate- and final-goods firms for each region. Households lack mobility between regions. The link connecting the two regions is established through the final-goods, allowing households to consume from both regions.
+
 	Then, equilibrium conditions of the system will be determined. Assuming the system tends toward long-term equilibrium, a steady state will be reached where variables cease to change. Thus, for a given $t \longrightarrow \infty$, we will have $\boldsymbol{X}_t = \boldsymbol{X}_{t+1} = \boldsymbol{X}_{ss} \implies \boldsymbol{\dot{X}} = 0$, where $\boldsymbol{X}$ denotes the vector of system variables, $ss$ indicates the steady state and $\boldsymbol{\dot{X}} = \sfrac{\partial \boldsymbol{X}}{\partial t}$. 
 	
 	After that, the log-linearization method proposed by \textcite{uhlig_toolkit_1999} will be employed to convert the system of equations into a linear system, so that this linear system can be solved by the program \dynare{}, which computes the solution and produces impulse-response graphs based on the stochastic shocks.
@@ -50,26 +52,32 @@
 	
 	\todo[inline]{colocar estatística descritiva para justificar as variáveis.}
 	
-	Regions will have an index $\eta \in \{1,2,\ldots,n\}$ representing the variables of each region. Whenever necessary, a second region index $\nu \in \{1,2,\ldots,n\}$ will be used. For example, the variable $C_{t}$ represents the total consumption (the grand total of all regions), $C_{\eta t}$ represents the consumption composition of region $\eta$ and $C_{\eta 2 t}$ represents the consumption of final-good of region $\nu$ by region $\eta$ (the first index indicating the origin and the second the destiny of the good). Without loss of generality, the model will have two regions: the main region $1$ and the remaining of the country $2$, so that $\eta,\nu \in \{1,2\}$.
+	Regions will have an index $\eta \in \{1,2,\ldots,n\}$ representing the variables of each region. Whenever necessary, a second region index $\nu \in \{1,2,\ldots,n\}$ will be used. For example, the variable $C_{t}$ represents the total consumption (the grand total of all regions), $C_{\eta t}$ represents the consumption composition of region $\eta$ and $C_{\eta \nu t}$ represents the consumption of final-good of region $\nu$ by region $\eta$ (the first index indicating the origin and the second the destiny of the good). Without loss of generality, the model will have two regions: the main region $1$ and the remaining of the country $2$, so that $\eta,\nu \in \{1,2\}$.
 
+\begin{comment}
+	
 	For each region, the variables are:
 
-\begin{itemize}
-	\item Consumption \(C_{\eta 2 t}\): households from region $\eta \in \{1,2\}$ consume from both regions $\eta \in \{1,2\}$.
+	\begin{itemize}
+		\item Consumption \(C_{\eta 2 t}\): households from region $\eta \in \{1,2\}$ consume from both regions $\eta \in \{1,2\}$.
+		
+		\item Labor \(L_{\eta t}\): there is no mobility in the labor market, so that households will work for firms in the same region they live.
+		
+		\item Investment and Capital \(I_{\eta t}, K_{\eta t}\): there is no mobility in investments and capital rent: households will invest and rent capital in their own region.
+		
+		\item Final-good production \(Y_{\eta t}\): there is one representative final-good firm in each region that aggregates all intermediate-goods of that region.
+		
+		\item Final-good price \(P_{\eta t}\) and regional inflation \(\pi_{\eta t}\): in each region, there is a final-good price and a regional inflation level.
+		
+		\item Intermediate-goods firms \(Y_{\eta jt}\): there is a continuum $j \in [0,1]$ for each region and these firms will demand labor and capital from within the region.
+		
+		\item Productivity level \(Z_{A\eta t}\) and capital weight in production $\alpha_{\eta}$: each region has its own characteristics and because of that has a difference productivity level subject to different shock rule and a different capital weight in production.
 	
-	\item Labor \(L_{\eta t}\): there is no mobility in the labor market, so that households will work for firms in the same region they live.
-	
-	\item Investment and Capital \(I_{\eta t}, K_{\eta t}\): there is no mobility in investments and capital rent: households will invest and rent capital in their own region.
-	
-	\item Final-good production \(Y_{\eta t}\): there is one representative final-good firm in each region that aggregates all intermediate-goods of that region.
-	
-	\item Final-good price \(P_{\eta t}\) and regional inflation \(\pi_{\eta t}\): in each region, there is a final-good price and a regional inflation level.
-	
-	\item Intermediate-goods firms \(Y_{\eta jt}\): there is a continuum $j \in [0,1]$ for each region and these firms will demand labor and capital from within the region.
-	
-	\item Productivity level \(Z_{A\eta t}\) and capital weight in production $\alpha_{\eta}$: each region has its own characteristics and because of that has a difference productivity level subject to different shock rule and a different capital weight in production.
-	
-\end{itemize}
+	\end{itemize}
+
+\end{comment}
+
+\newpage
 
 % --------------------------------------------------
 % MODEL DIAGRAM
@@ -77,12 +85,18 @@
 
 \subsubsection*{Model Diagram}
 
+% Figure \ref*{fig_v6:model-diagram} illustrates how the model works, where the black arrows represent the real economy and the green ones the nominal economy: the representative household provides the intermediate-goods firms with labor and capital, in exchange of wages and capital rent, respectively. With capital and labor, the intermediate-goods firms produce the goods, which are then sold to the final-goods firm, which envelopes all the intermediate goods in a final-good, which will be sold to the household. Following a monetary rule, the monetary authority determines the nominal interest rate, in order to persue the output growth and price stability.
+
+Figure (\ref{fig_v6:model-diagram}) illustrates the model's mechanics. In this diagram, black arrows depict the real economy, while green arrows represent the nominal economy. The representative household supplies labor and capital to intermediate-goods firms in exchange for wages and capital rent, respectively. Using these resources, intermediate-goods firms produce goods, which are then sold to the final-goods firm. The final-goods firm aggregates all intermediate goods into a final product, sold back to the household. Operating under a monetary rule, the monetary authority determines the nominal interest rate to achieve output growth and price stability.
+
 \begin{figure}[h!]
 	\centering
 	\includegraphics[width=\textwidth]{flowchart}
-	\caption{Model Diagram}
+	\caption{Model Diagram, created by the author.}
 	\label{fig_v6:model-diagram}
 \end{figure}
+
+In the next section, the mathematical structure of the model is presented.
 
 \newpage
 
@@ -98,10 +112,13 @@
 
 \subsubsection{Household}
 
+% The household problem can be split in two: first, they must minimize consumption costs, and then maximize utility subject to a budget constraint.
+
+The household problem can be divided into two components: first, minimizing consumption costs, and then maximizing utility subject to a budget constraint.
+
 \subsubsection*{Cost Minimization Problem}
 
-\textcite[p.424]{walsh_monetary_2017}.
-
+Considering that the representative household must decide to consume goods from both regions, there must be a consumption bundle index $C_{\eta t}$ and a consumption price index $Q_{\eta t}$ the minimizes the total consumption cost $Q_{\eta t} C_{\eta t}$, as demonstrated by \textcite[p.424]{walsh_monetary_2017}:
 	\begin{align}
 		\min_{C_{\eta 1 t}, C_{\eta 2 t}}: &\quad Q_{\eta t} C_{\eta t} = P_{1 t} C_{\eta 1t} + P_{2 t} C_{\eta 2t} \label{eq_v6:reg-consumption-cost}
 		\\
@@ -109,8 +126,13 @@
 		&\quad C_{\eta t} > 0 \nonumber
 	\end{align}
 
+	where $P_{1t}$ and $P_{2t}$ are the prices of goods $1$ and $2$, respectively, $C_{\eta 1 t}$ and $C_{\eta 2 t}$ are the goods produced in region $1$ and $2$, respectively, and consumed in region $\eta$. In the consumption aggregation, ${\omega_{\eta 1}}$ and $({1 - \omega_{\eta 1}})$ are the weights of goods $C_{\eta 1 t}$ and $C_{\eta 2 t}$, respectively, in the consumption bundle $C_{\eta t}$.
+
 \subsubsection*{Lagrangian}
 
+% The minimization problem with restriction can be turned into one without restriction, applying the Lagrangian funcion:
+
+The minimization problem with a constraint can be reformulated into one without a constraint by applying the Lagrangian function:
 	\begin{align}
 		\mathcal{L} &= P_{1 t} C_{\eta 1t} + P_{2 t} C_{\eta 2t} - Q_{\eta t} (C_{\eta 1 t}^{\omega_{\eta 1}} C_{\eta 2 t}^{1-\omega_{\eta 1}} - C_{\eta t}) \label{eq_v6:reg-consumption-lagrangian}
 	\end{align}
@@ -139,12 +161,9 @@
 	Substitute \ref{eq_v6:reg-C-eta-12-t} in \ref{eq_v6:reg-consumption-aggregation}:
 	\begin{align}
 		C_{\eta t} &= C_{\eta 1 t}^{\omega_{\eta 1}} \left[ C_{\eta 1 t} \frac{(1 - \omega_{\eta 1}) P_{1t}}{\omega_{\eta 1} P_{2t}} \right]^{1-\omega_{\eta 1}} \implies \nonumber \\
-		C_{\eta 1 t} &= C_{\eta t} \left( \frac{P_{2t} \omega_{\eta 1}}{P_{1t} (1 - \omega_{\eta 1})} \right)^{1-\omega_{\eta 1}} \label{eq_v6:reg-C-eta-1-t} \\
+		C_{\eta 1 t} &= C_{\eta t} \left( \frac{P_{2t} \omega_{\eta 1}}{P_{1t} (1 - \omega_{\eta 1})} \right)^{1-\omega_{\eta 1}} \label{eq_v6:reg-C-eta-1-t}
 	\end{align}
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-	
-	
 	Substitute \ref{eq_v6:reg-C-eta1t} and \ref{eq_v6:reg-C-eta2t} in \ref{eq_v6:reg-consumption-aggregation}:
 	\begin{align}
 		C_{\eta t} &= \left( \frac{\omega_{\eta 1} Q_{\eta t} C_{\eta t}}{P_{1t}} \right)^{\omega_{\eta 1}} \left( \frac{(1 - \omega_{\eta 1}) Q_{\eta t} C_{\eta t}}{P_{2t}} \right)^{1-\omega_{\eta 1}} \implies \nonumber \\
@@ -157,9 +176,13 @@
 		\frac{Q_{1t}}{Q_{2t}} &= \frac{\omega_{21}^{\omega_{21}} (1 -\omega_{21})^{1 -\omega_{21}}}{\omega_{11}^{\omega_{11}} (1 - \omega_{11})^{1 - \omega_{11}}} \label{eq_v6:reg-total-expense-level-2}
 	\end{align}
 
+	% Therefore, there is an consumption bundle $C_{\eta t}$ and a consumption price index $Q_{\eta t}$ that minimize the total consumption cost $Q_{\eta t} C_{\eta t}$ of household from region $\eta$. Notice that the cost problem of both regions are (must be) related, since the consumption level of one region influences the demand of goods from both regions. Now, this result will be used in the next problem the household faces.
+
+	Therefore, there is a consumption bundle \(C_{\eta t}\) and a consumption price index \(Q_{\eta t}\) that minimize the total consumption cost \(Q_{\eta t} C_{\eta t}\) for the household in region \(\eta\). Notice that the cost problems of both regions are (must be) related, as the consumption level in one region influences the demand for goods in both regions. Now, this result will be used in the next problem that the household faces.
+
 \subsubsection*{Utility Maximization Problem}
 
-	Following the models presented by \textcite{costa_junior_understanding_2016} and \textcite{solis-garcia_ucb_2022}, the representative household problem is to maximize an intertemporal utility function $U_{\eta}$ with respect to consumption $C_{\eta t}$ and labor $L_{\eta t}$, subject to a budget constraint, a capital accumulation rule and the non-negativity of real variables:
+	Following the models presented by \textcite{costa_junior_understanding_2016} and \textcite{solis-garcia_ucb_2022}, the representative household next problem is to maximize an intertemporal utility function $U_{\eta}$ with respect to consumption $C_{\eta t}$ and labor $L_{\eta t}$, subject to a budget constraint, a capital accumulation rule and the non-negativity of real variables:
 	\begin{align}
 		\max_{C_{\eta t}, L_{\eta t}, B_{\eta t}}: &\quad U_{\eta}(C_{\eta t},L_{\eta t}) = \E \sum_{t=0}^{\infty} \beta^t \left(\frac{C_{\eta t}^{1-\sigma}}{1-\sigma} - \phi \frac{L_{\eta t}^{1+\varphi}}{1+\varphi} \right) \label{eq_v6:reg-utility-function} 
 		\\
@@ -167,7 +190,12 @@
 		&\quad C_{\eta t}, L_{\eta t} > 0 \nonumber
 	\end{align}
 
-	where $\E$ is the expectation operator, $\beta$ is the intertemporal discount factor, $\sigma$ is the relative risk aversion coefficient, $\phi$ is the relative labor weight in utility, $\varphi$ is the marginal disutility of labor supply. In the budget constraint, $P_{1t}$ and $P_{2t}$ are the prices of goods $1$ and $2$, respectively, $C_{\eta 1 t}$ and $C_{\eta 2 t}$ are the goods produced in region $1$ and $2$, respectively, and consumed in region $\eta$, $I_{\eta t}$ is the investment, $B_{\eta t}$ are the bonds, $W_{\eta t}$ is the wage level, $K_{\eta t}$ is the capital, $R_{Kt}$ is the return on capital, $R_t$ is the return on bonds (which is also the nominal interest rate of the economy) and $\Pi_{\eta t}$ is the firm profit. In the capital accumulation rule, $\delta$ is the capital depreciation rate. In the consumption aggregation, ${\omega_{\eta 1}}$ and ${1 - \omega_{\eta 1}}$ are the weights of goods $C_{\eta 1 t}$ and $C_{\eta 2 t}$, respectively, in the consumption bundle $C_{\eta t}$.
+	where $\E$ is the expectation operator, $\beta$ is the intertemporal discount factor, $\sigma$ is the relative risk aversion coefficient, $\phi$ is the relative labor weight in utility, $\varphi$ is the marginal disutility of labor supply. In the budget constraint, $P_{1t}$ and $P_{2t}$ are the prices of goods $1$ and $2$, respectively, $C_{\eta 1 t}$ and $C_{\eta 2 t}$ are the goods produced in region $1$ and $2$, respectively, and consumed in region $\eta$, 
+	% $I_{\eta t}$ is the investment, 
+	$B_{\eta t}$ are the bonds, $W_{\eta t}$ is the wage level,
+	% $K_{\eta t}$ is the capital, $R_{Kt}$ is the return on capital,
+	$R_t$ is the return on bonds (which is also the nominal interest rate of the economy) and $\Pi_{\eta t}$ is the firm profit. 
+	% In the capital accumulation rule, $\delta$ is the capital depreciation rate. In the consumption aggregation, ${\omega_{\eta 1}}$ and ${1 - \omega_{\eta 1}}$ are the weights of goods $C_{\eta 1 t}$ and $C_{\eta 2 t}$, respectively, in the consumption bundle $C_{\eta t}$.
 
 \subsubsection*{Lagrangian}
 
@@ -221,15 +249,15 @@ Divide \ref{eq_v6:reg-bonds-euler-equation} of region one by region two:
 
 \begin{comment}
 
-Define the regional consumer inflation gross rate:
-\begin{align}
-	\pi_{\eta t} &= \frac{Q_{\eta t}}{Q_{\eta, t-1}} \label{eq_v6:consumer-inflation}
-\end{align}
+	Define the regional consumer inflation gross rate:
+	\begin{align}
+		\pi_{\eta t} &= \frac{Q_{\eta t}}{Q_{\eta, t-1}} \label{eq_v6:consumer-inflation}
+	\end{align}
 
-The relation between the nominal $R_{t}$ and the real $r_{t}$ interest rates is the gross inflation rate $\pi_{t}$, given by the Fisher equation. % As the interest rate is common to both regions the regional inflations must be equal:
-\begin{align}
-	\pi_{t} = \frac{(1 + R_{t})}{(1 + r_{t})}  \label{eq_v6:fisher-equation}
-\end{align}
+	The relation between the nominal $R_{t}$ and the real $r_{t}$ interest rates is the gross inflation rate $\pi_{t}$, given by the Fisher equation. % As the interest rate is common to both regions the regional inflations must be equal:
+	\begin{align}
+		\pi_{t} = \frac{(1 + R_{t})}{(1 + r_{t})}  \label{eq_v6:fisher-equation}
+	\end{align}
 	
 \end{comment}
 
@@ -242,8 +270,7 @@ The relation between the nominal $R_{t}$ and the real $r_{t}$ interest rates is 
 Consider two types of firms: 
 \begin{enumerate*}[label=(\arabic*)]
 	\item a continuum of intermediate-goods firms, which operate in monopolistic competition and each produce one variety with imperfect substitution level between each other and
-	
-	\item the final-goods firm, which aggregates all the varieties into a final bundle and operates in perfect competition.
+	\item the final-goods firm, which aggregates all these varieties into a final bundle and operates in perfect competition.
 \end{enumerate*}
 
 % --------------------------------------------------
@@ -308,11 +335,13 @@ The intermediate-goods firms, denoted by $j \in [0,1]$, produce varieties of a r
 	\st: \quad & Y_{\eta jt} = Z_{A\eta t} L_{\eta jt}
 \end{align}
 
-\begin{tcolorbox}[colback=red!5!white,colframe=red!75!black]
+\begin{comment}
 	
-	“We set this parameter so that profits are zero in steady state” [Adolfson et al., 2014, p. 36]
-	
-\end{tcolorbox}
+	\begin{tcolorbox}[colback=red!5!white,colframe=red!75!black]
+		“We set this parameter so that profits are zero in steady state” [Adolfson et al., 2014, p. 36] 
+	\end{tcolorbox}	
+
+\end{comment}
 
 where $Y_{\eta jt}$ is the output obtained by the technology level $Z_{A\eta t}$ that transforms labor $L_{\eta jt}$ into intermediate goods, with constants returns to scale.\footnote{the production technology level $Z_{A\eta t}$ will be submitted to a productivity shock, detailed in section \ref{sec_v6:reg-productivity-shock}.}
 
@@ -416,7 +445,7 @@ Notice that:
 
 \subsubsection*{Optimal Price Problem}
 
-Consider an economy with price stickiness, following the Calvo Rule \cite{calvo_staggered_1983}: each firm has a probability $(0 < \theta < 1)$ of keeping its price in the next period ($P_{\eta j,t+1} = P_{\eta jt}$), and a probability of $(1 - \theta)$ of setting a new optimal price $P_{\eta jt}^{\ast}$ that maximizes its profits. Therefore, each firm must take this uncertainty into account when deciding the optimal price: the intertemporal profit flow, given the nominal interest rate $R_{t}$ of each period, is calculated considering the probability $\theta$ of keeping the previous price. 
+Consider an economy with price stickiness, following the Calvo Rule \cite{calvo_staggered_1983}: each firm has a probability $(0 < \theta < 1)$ of keeping its price in the next period ($P_{\eta j,t+1} = P_{\eta jt}$), and a probability $(1 - \theta)$ of setting a new optimal price $P_{\eta jt}^{\ast}$ that maximizes its profits. Therefore, each firm must take this uncertainty into account when deciding the optimal price: the intertemporal profit flow, given the nominal interest rate $R_{t}$ of each period, is calculated considering the probability $\theta$ of keeping the previous price:
 \begin{align}
 	\label{eq_v6:reg-int-good-firm-optimal-price-problem}
 	\max_{P_{\eta jt}}: & \quad \E \sum_{s=0}^{\infty} \left\{ \frac{ \theta^s \left[ P_{\eta jt} Y_{\eta j,t+s} - TC_{\eta j,t+s} \right]}{\prod_{k=0}^{s-1}(1+R_{t+k})} \right\} \\
@@ -521,7 +550,7 @@ The objective of the monetary authority is to conduct the economy to price stabi
 	\left( \frac{Y_{t}}{Y} \right)^{\gamma_{Y}} \right]^{1-\gamma_{R}} Z_{Mt}
 \end{align}
 
-where $R, \pi, Y$ are the variables in steady state, $\gamma_{R}$ is the smoothing parameter for the interest rate $R_{Kt}$, $\gamma_{\pi}$ and $\gamma_{Y}$ are the interest-rate sensitivities in relation to inflation and product, respectively, $Z_{Mt}$ is the monetary shock and $\pi_t$ is the gross inflation rate, defined by:\footnote{for the monetary shock definition, see section \ref{sec_v6:reg-monetary-shock}.}
+where $R, \pi, Y$ are the nominal interest rate, gross inflation rate and the production level in steady state, respectively; $\gamma_{R}$ is the smoothing parameter for the interest rate $R_{Kt}$, $\gamma_{\pi}$ and $\gamma_{Y}$ are the interest-rate sensitivities in relation to inflation and product, respectively, $Z_{Mt}$ is the monetary shock and $\pi_t$ is the gross inflation rate, defined by:\footnote{for the monetary shock definition, see section \ref{sec_v6:reg-monetary-shock}.}
 \begin{align}
 	\pi_{t} &= \pi_{1t}^{\theta_{\pi}} \pi_{2t}^{1 - \theta_{\pi}}
 	\label{eq_v6:reg-gross-inflation-rate} \\
@@ -590,20 +619,20 @@ where $\rho_M \in [0,1]$ and $\varepsilon_{Mt} \sim \mathscr{N}(0,\sigma_M)$.
 	% removed from the household solution set: I_{\eta t}^{\ast}, 
 
 	A Competitive Equilibrium consists of sequences of prices $\{P_{\eta t}^{\ast}, R_t^{\ast}, R_{Kt}^{\ast}, W_{\eta t}^{\ast}\}$, allocations for households $\mathbfscr{A}_H \coloneq \{C_{\eta 1 t}^{\ast}, C_{\eta 2 t}^{\ast}, L_{\eta t}^{\ast}, B_{\eta t}^{\ast}, K_{\eta, t+1}^{\ast}\}$ and allocations  for firms $\mathbfscr{A}_F \coloneq \{K_{\eta jt}^{\ast}, L_{\eta jt}^{\ast}, Y_{\eta jt}^{\ast}, Y_{\eta t}^{\ast}\}$. In such an equilibrium, given the set of exogenous variables $\{K_0, Z_{A\eta t}, Z_{Mt}\}$, the elements in $\mathbfscr{A}_H$ solve the household problem, while the elements in $\mathbfscr{A}_F$ solve the firms' problems, and the markets for goods, labor and bonds clear:
-	\begin{tcolorbox}[colback=red!5!white,colframe=red!75!black]
 	\begin{align}
 		& Y_{t} = Y_{1 t} + Y_{2 t} \label{eq_v6:reg-market-clearing-condition-Yt} \\
-		& \quad \text{where:} \quad P_{\eta t} Y_{\eta t} = P_{1t} C_{1 \eta t} + P_{2t} C_{2 \eta t} = Q_{\eta t} C_{\eta t} \label{eq_v6:reg-regional-demand} \\
+		& \quad \text{where:} \quad P_{\eta t} Y_{\eta t} = P_{1t} C_{1 \eta t} + P_{2t} C_{2 \eta t} + B_{\eta t} = Q_{\eta t} C_{\eta t} + B_{\eta t} \label{eq_v6:reg-regional-demand} \\
 		& L_{\eta t} = \int_{0}^{1} L_{\eta jt} \dif j \label{eq_v6:reg-market-clearing-condition-Lt} \\
 		& B_{1t} + B_{2t} = 0 \label{eq_v6:reg-market-clearing-condition-Bt}
 	\end{align}
-	\end{tcolorbox}
-
+	
 % --------------------------------------------------
 % intermediate-goods firm profit
 % --------------------------------------------------
 
 \subsubsection*{Intermediate-Goods Firm Profit}
+
+For the sake of closure, the intermediate-goods firm profit must be defined:
 
 \begin{align}
 	\Pi_{\eta t} &= \int_{0}^{1} \Pi_{\eta jt} \dif j \label{eq_v6:reg-int-good-firm-profit-total} \\
@@ -808,7 +837,7 @@ The model is composed of the preview solutions, forming a square system of 34 va
 
 		\item Regional Market Clearing Condition: 
 		\begin{align}
-			P_{\eta t} Y_{\eta t} = Q_{\eta t} C_{\eta t} \tag{\ref{eq_v6:reg-regional-demand}}
+			P_{\eta t} Y_{\eta t} = Q_{\eta t} C_{\eta t} + B_{\eta t} \tag{\ref{eq_v6:reg-regional-demand}}
 		\end{align}
 		
 		\item Labor Regional Market Clearing Condition: 
@@ -995,7 +1024,7 @@ The steady state of a variable is defined by its constancy through time. For any
 	
 	\item Regional Market Clearing Condition: 
 	\begin{align}
-		P_{\eta} Y_{\eta} = Q_{\eta} C_{\eta} \label{eq_v6:reg-ss-regional-demand}
+		P_{\eta} Y_{\eta} = Q_{\eta} C_{\eta} + B_{\eta} \label{eq_v6:reg-ss-regional-demand}
 	\end{align}
 	
 	\item Labor Regional Market Clearing Condition: 
@@ -1094,7 +1123,7 @@ From \ref{eq_v6:reg-ss-int-good-firm-FOC-Lt}, the nominal wage $W_{\eta}$ is:
 	\end{align}
 \end{comment}
 
-Due to price parity in steady state, where prices are identical ($P_{\eta} = P_{\eta}^{\ast}$) and resulting in a gross inflation level of one ($\pi_{\eta} = 1$), all firms produce the same output level ($\forall j \in [0,1], Y_{\eta j} = Y_{\eta i}, j \neq i$) \cite[Lecture 13, p.12]{solis-garcia_ucb_2022}. As a consequence, they uniformly demand the same amount of factors ($\forall j \in [0,1], L_{\eta j} = L_{\eta i}, j \neq i$), and \ref{eq_v6:reg-ss-final-goods-firm-bundle-rule}, \ref{eq_v6:reg-ss-market-clearing-condition-Lt}, \ref{eq_v6:reg-ss-int-good-firm-production-function} and \ref{eq_v6:reg-ss-budget-constraint-2} become:
+Due to price parity in steady state, where prices are identical ($P_{\eta} = P_{\eta}^{\ast}$) and resulting in a gross inflation level of one ($\pi_{\eta} = 1$), all firms produce the same output level ($\forall i, j \in [0,1], Y_{\eta j} = Y_{\eta i}, i \neq j$) \cite[Lecture 13, p.12]{solis-garcia_ucb_2022}. As a consequence, they uniformly demand the same amount of factors ($\forall j \in [0,1], L_{\eta j} = L_{\eta i}, j \neq i$), and \ref{eq_v6:reg-ss-final-goods-firm-bundle-rule}, \ref{eq_v6:reg-ss-market-clearing-condition-Lt}, \ref{eq_v6:reg-ss-int-good-firm-production-function} and \ref{eq_v6:reg-ss-budget-constraint-2} become:
 \begin{align}
 	Y_{\eta} &= Y_{\eta j} \label{eq_v6:reg-ss-final-goods-firm-bundle-rule-2} \\
 	L_{\eta} &= L_{\eta j} \label{eq_v6:reg-ss-market-clearing-condition-Lt-2} \\
@@ -1132,7 +1161,7 @@ Isolate $C_{11}$ in \ref{eq_v6:reg-ss-C-eta-12-t} and substitute in \ref{eq_v6:r
 	& \text{where: } b_{1} = \left( \frac{1 - \omega_{11}}{\omega_{11} \theta_{P}} \right) \label{eq_v6:reg-ss-b1}
 \end{align}
 
-Substitute \ref{eq_v6:reg-ss-C12} in \ref{eq_v6:reg-ss-C-eta-12-t}:
+Substitute \ref{eq_v6:reg-ss-C12} and \ref{eq_v6:reg-ss-budget-constraint-3} in \ref{eq_v6:reg-ss-C-eta-12-t}:
 \begin{align}
 	C_{11} &= C_{12} \frac{\omega_{11} P_{2}}{(1 - \omega_{11}) P_{1}} = C_{1} \left( \frac{1 - \omega_{11}}{\omega_{11}} \right)^{\omega_{11}} \frac{\omega_{11} P_{2}}{(1 - \omega_{11}) P_{1}} \tag{\ref{eq_v6:reg-ss-C-eta-12-t}} \implies \\
 	C_{11} &= C_{1} b_{1}^{\omega_{11} - 1} \label{eq_v6:reg-ss-C11}
@@ -1165,9 +1194,9 @@ Substitute \ref{eq_v6:reg-ss-C21} in \ref{eq_v6:reg-ss-C22}:
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-Substitute \ref{eq_v6:reg-ss-consumption} in \ref{eq_v6:reg-ss-regional-demand}:
+Substitute \ref{eq_v6:reg-ss-consumption} and \ref{eq_v6:reg-ss-budget-constraint-3} in \ref{eq_v6:reg-ss-regional-demand}:
 	\begin{alignat}{2}
-		P_{\eta} Y_{\eta} &= Q_{\eta} C_{\eta} &\implies \tag{\ref{eq_v6:reg-ss-regional-demand}} \\
+		P_{\eta} Y_{\eta} &= Q_{\eta} C_{\eta} + B_{\eta} &\implies \tag{\ref{eq_v6:reg-ss-regional-demand}} \\
 		P_{\eta} Y_{\eta} &= Q_{\eta} a_{\eta} Y_{\eta}^{\frac{-\varphi}{\sigma}} &\implies \nonumber \\
 		Y_{\eta} &= \left( \frac{Q_{\eta} a_{\eta}}{P_{\eta}} \right)^{\frac{\sigma}{\varphi + \sigma}} \label{eq_v6:reg-ss-yn}
 	\end{alignat}
@@ -1350,11 +1379,9 @@ Substitute \ref{eq_v6:reg-ss-marginal-cost} in \ref{eq_v6:reg-ll-optimal-price-3
 	& \frac{ \hat{P}_{\eta t}^{\ast}}{1- \theta \beta} = \E \sum_{s=0}^{\infty} \left\{ \left( \theta \beta \right)^s \left( \hat{\Lambda}_{\eta, t+s} \right) \right\} \label{eq_v6:reg-ll-optimal-price-4}
 \end{align}
 
-
-
-Define the real marginal cost $\lambda_{\eta t}$:
+Define the real marginal cost $\lambda_{\eta t}$ and log-linearize it:
 \begin{align}
-	& \lambda_{\eta t} = \frac{\Lambda_{\eta t}}{P_{\eta t}} \implies \Lambda_{\eta t} = P_{\eta t} \lambda_{\eta t} \implies \nonumber \\
+	& \lambda_{\eta t} = \frac{\Lambda_{\eta t}}{P_{\eta t}} \implies \Lambda_{\eta t} = P_{\eta t} \lambda_{\eta t} \implies \label{eq_v6:reg-real-marginal-cost} \\
 	& \hat{\Lambda}_{\eta t} = \hat{P}_{\eta t} + \hat{\lambda}_{\eta t} \label{eq_v6:reg-hat-real-marginal-cost}
 \end{align}
 
@@ -1801,9 +1828,25 @@ Substitute \ref{eq_v6:reg-ss-Y1-Y2-weight-in-Y} in \ref{eq_v6:reg-ll-market-clea
 
 Log-linearize \ref{eq_v6:reg-regional-demand} and then substitute \ref{eq_v6:reg-total-expense-level-2-ll}:
 \begin{align}
-	P_{\eta t} Y_{\eta t} = Q_{\eta t} C_{\eta t} \tag{\ref{eq_v6:reg-regional-demand}} \implies \\
-	\hat{P}_{\eta t} + \hat{Y}_{\eta t} = \hat{Q}_{1t} + \hat{C}_{\eta t} \label{eq_v6:reg-regional-demand-ll}
+	P_{\eta t} Y_{\eta t} &= Q_{\eta t} C_{\eta t} + B_{\eta t} \tag{\ref{eq_v6:reg-regional-demand}} \implies \\
+	\hat{P}_{\eta t} + \hat{Y}_{\eta t} &= \frac{Q_{\eta} C_{\eta}}{P_{\eta} Y_{\eta}} (\hat{Q}_{1t} + \hat{C}_{\eta t}) + \frac{B_{\eta}}{P_{\eta} Y_{\eta}} \hat{B}_{\eta t} \label{eq_v6:reg-regional-demand-ll}
 \end{align}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+Define bond and consumption weights on total expenses as $\langle \begin{matrix} \theta_{B \eta} & (1-\theta_{B \eta}) \end{matrix} \rangle$:
+\begin{align}
+	\left\langle \begin{matrix} \theta_{B \eta} & (1-\theta_{B \eta}) \end{matrix} \right\rangle \coloneq \left\langle \begin{matrix} \frac{B_{\eta}}{P_{\eta} Y_{\eta}} & \frac{Q_{\eta} C_{\eta}}{P_{\eta} Y_{\eta}} \end{matrix} \right\rangle \label{eq_v6:reg-ss-Q-weight-in-Y} \end{align}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+Substitute \ref{eq_v6:reg-ss-Q-weight-in-Y} in \ref{eq_v6:reg-regional-demand-ll}:
+\begin{align}
+	\hat{P}_{\eta t} + \hat{Y}_{\eta t} &= \theta_{B\eta} (\hat{Q}_{1t} + \hat{C}_{\eta t}) + (1-\theta_{B\eta}) \hat{B}_{\eta t} \label{eq_v6:reg-regional-demand-ll-2}
+\end{align}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -1812,9 +1855,17 @@ Log-linearize \ref{eq_v6:reg-regional-demand} and then substitute \ref{eq_v6:reg
 Log-linearize \ref{eq_v6:reg-budget-constraint-2} and then substitute \ref{eq_v6:reg-ss-final-goods-firm-bundle-rule-2}, \ref{eq_v6:reg-ss-budget-constraint-3} and \ref{eq_v6:reg-total-expense-level-2-ll}:
 \begin{align}
 	Q_{\eta t} C_{\eta t} + B_{\eta t} &= (1 + R_{t-1}) B_{\eta,t-1} + P_{\eta t} \int_{0}^{1} Y_{\eta jt} \dif j \tag{\ref{eq_v6:reg-budget-constraint-2}} \implies \\
-	\hat{P}_{\eta t} + \hat{Y}_{\eta t} &= \hat{Q}_{1t} + \hat{C}_{\eta t} \tag{\ref{eq_v6:reg-regional-demand-ll}}
+	\hat{P}_{\eta t} + \hat{Y}_{\eta t} &= \hat{Q}_{1t} + \hat{C}_{\eta t} \label{eq_v6:reg-budget-constraint-3}
 \end{align}
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+Substitute \ref{eq_v6:reg-regional-demand-ll} in \ref{eq_v6:reg-regional-demand-ll-2}:
+\begin{align}
+	\hat{Q}_{1t} = \hat{B}_{\eta t} - \hat{C}_{\eta t} \label{eq_v6:reg-regional-demand-ll-3}
+\end{align}
+
+Equation \ref{eq_v6:reg-regional-demand-ll-3} demonstrates that the variation on the price level composition will affect the variation of consumption levels.
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -1987,30 +2038,30 @@ The log-linear model is a square system of 25 variables and equations, summarize
 	
 \subsubsection{Extended Log-linear Structure}
 	
-\begin{enumerate}
+\begin{itemize}
 	
 	\item Regional Gross Inflation Rate
 	\begin{align}
-		\hat{\pi}_{1t} &= \hat{P}_{1t} - \hat{P}_{1, t-1} \nonumber \\
-		\hat{\pi}_{2t} &= \hat{P}_{2t} - \hat{P}_{2, t-1} \tag{\ref{eq_v6:level-dev-regional-inflation}}
+		\hat{\pi}_{1t} &= \hat{P}_{1t} - \hat{P}_{1, t-1} \tag{\ref{eq_v6:level-dev-regional-inflation}a} \\
+		\hat{\pi}_{2t} &= \hat{P}_{2t} - \hat{P}_{2, t-1} \tag{\ref{eq_v6:level-dev-regional-inflation}b}
 	\end{align}
 	
 	\item New Keynesian Phillips Curve
 	\begin{align}
-		\hat{\pi}_{1 t} &= \beta \E \hat{\pi}_{1, t+1} + \frac{(1-\theta) (1- \theta \beta)}{\theta} \hat{\lambda}_{1 t} \nonumber \\
-		\hat{\pi}_{2 t} &= \beta \E \hat{\pi}_{2, t+1} + \frac{(1-\theta) (1- \theta \beta)}{\theta} \hat{\lambda}_{2 t} \tag{\ref{eq_v6:reg-nk-phillips-curve-mc}}
+		\hat{\pi}_{1 t} &= \beta \E \hat{\pi}_{1, t+1} + \frac{(1-\theta) (1- \theta \beta)}{\theta} \hat{\lambda}_{1 t} \tag{\ref{eq_v6:reg-nk-phillips-curve-mc}a} \\
+		\hat{\pi}_{2 t} &= \beta \E \hat{\pi}_{2, t+1} + \frac{(1-\theta) (1- \theta \beta)}{\theta} \hat{\lambda}_{2 t} \tag{\ref{eq_v6:reg-nk-phillips-curve-mc}b}
 	\end{align}
 	
 	\item Regional Consumption Weight
 	\begin{align}
-		\hat{C}_{1 2t} - \hat{C}_{1 1t} &= \hat{P}_{1t} - \hat{P}_{2t} \nonumber \\
-		\hat{C}_{2 2t} - \hat{C}_{2 1t} &= \hat{P}_{1t} - \hat{P}_{2t} \tag{\ref{eq_v6:reg-C-eta-12-t-ll}}
+		\hat{C}_{1 2t} - \hat{C}_{1 1t} &= \hat{P}_{1t} - \hat{P}_{2t} \tag{\ref{eq_v6:reg-C-eta-12-t-ll}a} \\
+		\hat{C}_{2 2t} - \hat{C}_{2 1t} &= \hat{P}_{1t} - \hat{P}_{2t} \tag{\ref{eq_v6:reg-C-eta-12-t-ll}b}
 	\end{align}
 	
 	\item Regional Consumption of Good 1
 	\begin{align}
-		\hat{C}_{1 t} - \hat{C}_{1 1 t} &= (1 - \omega_{1 1}) (\hat{P}_{1t} - \hat{P}_{2t}) \nonumber \\
-		\hat{C}_{2 t} - \hat{C}_{2 1 t} &= (1 - \omega_{2 1}) (\hat{P}_{1t} - \hat{P}_{2t}) \tag{\ref{eq_v6:reg-C-eta-1-t-ll}}
+		\hat{C}_{1 t} - \hat{C}_{1 1 t} &= (1 - \omega_{1 1}) (\hat{P}_{1t} - \hat{P}_{2t}) \tag{\ref{eq_v6:reg-C-eta-1-t-ll}a} \\
+		\hat{C}_{2 t} - \hat{C}_{2 1 t} &= (1 - \omega_{2 1}) (\hat{P}_{1t} - \hat{P}_{2t}) \tag{\ref{eq_v6:reg-C-eta-1-t-ll}b}
 	\end{align}
 	
 	\item Region 1 Price Index
@@ -2020,8 +2071,8 @@ The log-linear model is a square system of 25 variables and equations, summarize
 	
 	\item Labor Supply
 	\begin{alignat}{2}
-		\varphi \hat{L}_{1 t} + \sigma \hat{C}_{1 t} &= \hat{W}_{1 t} - \hat{Q}_{1t} \nonumber \\
-		\varphi \hat{L}_{2 t} + \sigma \hat{C}_{2 t} &= \hat{W}_{2 t} - \hat{Q}_{1t} \tag{\ref{eq_v6:reg-ll-labor-supply}}
+		\varphi \hat{L}_{1 t} + \sigma \hat{C}_{1 t} &= \hat{W}_{1 t} - \hat{Q}_{1t} \tag{\ref{eq_v6:reg-ll-labor-supply}a} \\
+		\varphi \hat{L}_{2 t} + \sigma \hat{C}_{2 t} &= \hat{W}_{2 t} - \hat{Q}_{1t} \tag{\ref{eq_v6:reg-ll-labor-supply}b}
 	\end{alignat}
 	
 	\item Region 1 Euler equation for the bonds return
@@ -2036,14 +2087,14 @@ The log-linear model is a square system of 25 variables and equations, summarize
 	
 	\item Production Function
 	\begin{align}
-		\hat{Y}_{1 t} &= \hat{Z}_{A1 t} + \hat{L}_{1 t} \nonumber \\
-		\hat{Y}_{2 t} &= \hat{Z}_{A2 t} + \hat{L}_{2 t} \tag{\ref{eq_v6:reg-ll-final-goods-firm-bundle-rule-3}} 
+		\hat{Y}_{1 t} &= \hat{Z}_{A1 t} + \hat{L}_{1 t} \tag{\ref{eq_v6:reg-ll-final-goods-firm-bundle-rule-3}a} \\
+		\hat{Y}_{2 t} &= \hat{Z}_{A2 t} + \hat{L}_{2 t} \tag{\ref{eq_v6:reg-ll-final-goods-firm-bundle-rule-3}b} 
 	\end{align}
 	
 	\item Marginal Cost
 	\begin{align}
-		\hat{P}_{1 t} + \hat{\lambda}_{1 t} &= \hat{W}_{1 t} - \hat{Z}_{A1 t} \nonumber \\
-		\hat{P}_{2 t} + \hat{\lambda}_{2 t} &= \hat{W}_{2 t} - \hat{Z}_{A2 t} \tag{\ref{eq_v6:reg-int-good-firm-FOC-Lt-ll}}
+		\hat{P}_{1 t} + \hat{\lambda}_{1 t} &= \hat{W}_{1 t} - \hat{Z}_{A1 t} \tag{\ref{eq_v6:reg-int-good-firm-FOC-Lt-ll}a} \\
+		\hat{P}_{2 t} + \hat{\lambda}_{2 t} &= \hat{W}_{2 t} - \hat{Z}_{A2 t} \tag{\ref{eq_v6:reg-int-good-firm-FOC-Lt-ll}b}
 	\end{align}
 	
 	\item Monetary Policy
@@ -2058,8 +2109,8 @@ The log-linear model is a square system of 25 variables and equations, summarize
 	
 	\item Productivity Shock
 	\begin{alignat}{2}
-		\hat{Z}_{A1 t} &= \rho_{A1} \hat{Z}_{A1, t-1} + \varepsilon_{A1} \nonumber \\
-		\hat{Z}_{A2 t} &= \rho_{A2} \hat{Z}_{A2, t-1} + \varepsilon_{A2} \tag{\ref{eq_v6:reg-ll-productivity-shock}}
+		\hat{Z}_{A1 t} &= \rho_{A1} \hat{Z}_{A1, t-1} + \varepsilon_{A1} \tag{\ref{eq_v6:reg-ll-productivity-shock}a} \\
+		\hat{Z}_{A2 t} &= \rho_{A2} \hat{Z}_{A2, t-1} + \varepsilon_{A2} \tag{\ref{eq_v6:reg-ll-productivity-shock}b}
 	\end{alignat}
 	
 	\item Monetary Shock
@@ -2074,122 +2125,131 @@ The log-linear model is a square system of 25 variables and equations, summarize
 	
 	\item Regional Market Clearing Condition
 	\begin{align}
-		\hat{P}_{1 t} + \hat{Y}_{1 t} &= \hat{Q}_{1t} + \hat{C}_{1 t} \nonumber \\
-		\hat{P}_{2 t} + \hat{Y}_{2 t} &= \hat{Q}_{1t} + \hat{C}_{2 t} \tag{\ref{eq_v6:reg-regional-demand-ll}}
+		\hat{P}_{1 t} + \hat{Y}_{1 t} &= \hat{Q}_{1t} + \hat{C}_{1 t} \tag{\ref{eq_v6:reg-regional-demand-ll}a} \\
+		\hat{P}_{2 t} + \hat{Y}_{2 t} &= \hat{Q}_{1t} + \hat{C}_{2 t} \tag{\ref{eq_v6:reg-regional-demand-ll}b}
 	\end{align}
 		
-	\end{enumerate}
+	\end{itemize}
 	
 } %\singlespacing
 
+\subsubsection{Eigenvalues and Forward Looking Variables}
+
+As it stands, the model has more forward-looking variables than eigenvalues greater than one, indicating that the model is indeterminate. To transform the model into one with a single solution, the number of eigenvalues and forward-looking variables must be equal. To achieve this, \textcite{farmer_solving_2015} substitutes the excess forward-looking variables with an expectational variable at time $t$, along with a expectational shock $sunspot_{\eta}$, representing the deviation between the expected and real values. For the present model, the variables created are the expected regional gross inflation rates $\pi_{\eta t}^{X}$:
+\begin{align}
+	\pi_{\eta t}^{X} &= \mathbb{E}_t \pi_{\eta, t+1} \label{eq_v6:reg-pix}\\
+	sunspot_{\eta} &= \pi_{\eta t} - \pi_{\eta, t-1}^{X} \label{eq_v6:sunspot}
+\end{align}
+
 \begin{comment}
 
-\hrule
 
-\subsubsection{Equations without $\eta$}
+	\hrule
 
-\begin{enumerate}
-	
-	\item Monetary Policy
-	\begin{align}
-		& \hat{R}_t = \gamma_{R} \hat{R}_{t-1} + (1-\gamma_{R})(\gamma_{\pi} \hat{\pi}_t + \gamma_{Y} \hat{Y}_t) + \hat{Z}_{Mt}
-	\end{align}
-	
-	\item National Gross Inflation Rate
-	\begin{align}
-		\hat{\pi}_{t} &= \hat{P}_{t} - \hat{P}_{t-1}
-	\end{align}
-	
-	\item National Price Level
-	\begin{alignat}{2}
-		\hat{P}_{t} + \hat{Y}_{t} &= \theta_{PY1} (\hat{P}_{1t} + \hat{Y}_{1t}) + (1-\theta_{PY1}) (\hat{P}_{2t} + \hat{Y}_{2t})
-	\end{alignat}
-	
-	\item Monetary Shock
-	\begin{alignat}{2}
-		\hat{Z}_{Mt} &= \rho_M \hat{Z}_{M,t-1} + \varepsilon_{M}
-	\end{alignat}
-	
-	\item Market Clearing Condition
-	\begin{align}
-		\hat{Y}_{t} &= \theta_{Y} \hat{Y}_{1t} + (1-\theta_{Y}) \hat{Y}_{2t}
-	\end{align}
-	
-\end{enumerate}
+	\subsubsection{Equations without $\eta$}
 
-\hrule
+		\begin{enumerate}
+			
+			\item Monetary Policy
+			\begin{align}
+				& \hat{R}_t = \gamma_{R} \hat{R}_{t-1} + (1-\gamma_{R})(\gamma_{\pi} \hat{\pi}_t + \gamma_{Y} \hat{Y}_t) + \hat{Z}_{Mt}
+			\end{align}
+			
+			\item National Gross Inflation Rate
+			\begin{align}
+				\hat{\pi}_{t} &= \hat{P}_{t} - \hat{P}_{t-1}
+			\end{align}
+			
+			\item National Price Level
+			\begin{alignat}{2}
+				\hat{P}_{t} + \hat{Y}_{t} &= \theta_{PY1} (\hat{P}_{1t} + \hat{Y}_{1t}) + (1-\theta_{PY1}) (\hat{P}_{2t} + \hat{Y}_{2t})
+			\end{alignat}
+			
+			\item Monetary Shock
+			\begin{alignat}{2}
+				\hat{Z}_{Mt} &= \rho_M \hat{Z}_{M,t-1} + \varepsilon_{M}
+			\end{alignat}
+			
+			\item Market Clearing Condition
+			\begin{align}
+				\hat{Y}_{t} &= \theta_{Y} \hat{Y}_{1t} + (1-\theta_{Y}) \hat{Y}_{2t}
+			\end{align}
+			
+		\end{enumerate}
 
-\subsubsection{Equations with $\eta$}
+	\hrule
 
-\begin{enumerate}
-	\item Regional Gross Inflation Rate
-	\begin{align}
-		\hat{\pi}_{\eta t} = \hat{P}_{\eta t} - \hat{P}_{\eta, t-1}
-	\end{align}
-	
-	\item New Keynesian Phillips Curve
-	\begin{align}
-		\hat{\pi}_{\eta t} = \beta \E \hat{\pi}_{\eta, t+1} + \frac{(1-\theta) (1- \theta \beta)}{\theta} \hat{\lambda}_{\eta t}
-	\end{align}
-	
-	\item Law of Motion for Capital
-	\begin{alignat}{2}
-		\hat{K}_{\eta, t+1} = (1-\delta) \hat{K}_{\eta t} + \delta \hat{I}_{\eta t}
-	\end{alignat}
-	
-	\item Regional Levels of Consumption and Prices
-	\begin{align}
-		\hat{C}_{\eta 1 t} - \hat{C}_{\eta 2 t} = \hat{P}_{2 t} - \hat{P}_{1 t}
-	\end{align}
-	
-	\item Total Expenses
-	\begin{align}
-		\hat{\mathscr{E}}_{\eta t} = \hat{C}_{\eta t} + \omega_{\eta 1} \hat{P}_{1 t} + (1 -\omega_{\eta 1}) \hat{P}_{2 t}
-	\end{align}
-	
-	\item Labor Supply
-	\begin{alignat}{2}
-		\varphi \hat{L}_{\eta t} - (1 -\sigma) \hat{C}_{\eta t} = \hat{W}_{\eta t} - \hat{ \mathscr{E} }_{\eta t}
-	\end{alignat}
-	
-	\item Euler equation for the bonds return
-	\begin{alignat}{2}
-		\E \left\{ \hat{\mathscr{E}}_{\eta, t+1} - (1 -\sigma)\hat{C}_{\eta, t+1} \right\} - \nonumber \\  \qquad - [\hat{\mathscr{E}}_{\eta t} - (1 -\sigma)\hat{C}_{\eta t}] = (1 -\beta) \hat{R}_{t}
-	\end{alignat}
-	
-	\item Euler equation for the capital return
-	\begin{alignat}{2}
-		\E \left\{ \hat{\mathscr{E}}_{\eta, t+1} - \hat{P}_{\eta, t+1}  - (1 -\sigma) \hat{C}_{\eta, t+1} \right\} - (\hat{\mathscr{E}}_{\eta t} - \hat{P}_{\eta t} - (1 -\sigma) \hat{C}_{\eta t}) = \nonumber \\
-		\qquad = \beta \frac{R_{K}}{P_{\eta}} \mathbb{E}_t \left\{ \hat{R}_{K, t+1} - \hat{P}_{\eta, t+1} \right\}
-	\end{alignat}
-	
-	\item Production Function
-	\begin{align}
-		\hat{Y}_{\eta t} = \hat{Z}_{A\eta t} + {\alpha_{\eta}} \hat{K}_{\eta t} + (1-\alpha_{\eta}) \hat{L}_{\eta t}
-	\end{align}
-	
-	\item Marginal Rates of Substitution of Factors
-	\begin{align}
-		\hat{K}_{\eta t} - \hat{L}_{\eta t} = \hat{W}_{t} - \hat{R}_{K t}
-	\end{align}
-	
-	\item Marginal Cost
-	\begin{alignat}{2}
-		\hat{\lambda}_{\eta t} = {\alpha_{\eta}} \hat{R}_{Kt} + (1- {\alpha_{\eta}}) \hat{W}_{t} - \hat{Z}_{A\eta t} - \hat{P}_{\eta t}
-	\end{alignat}
-	
-	\item Productivity Shock
-	\begin{alignat}{2}
-		\hat{Z}_{A\eta t} = \rho_{A\eta} \hat{Z}_{A\eta, t-1} + \varepsilon_{A\eta}
-	\end{alignat}
-	
-	\item Regional Market Clearing Condition
-	\begin{align}
-		\hat{Y}_{\eta t} = \theta_{C\eta 1} \hat{C}_{\eta 1 t} + \theta_{C\eta 2} \hat{C}_{\eta 2 t} + (1 - \theta_{C\eta 1} - \theta_{C\eta 2}) \hat{I}_{\eta t}
-	\end{align}
-\end{enumerate}
+	\subsubsection{Equations with $\eta$}
 
-\hrule	
+		\begin{enumerate}
+			\item Regional Gross Inflation Rate
+			\begin{align}
+				\hat{\pi}_{\eta t} = \hat{P}_{\eta t} - \hat{P}_{\eta, t-1}
+			\end{align}
+			
+			\item New Keynesian Phillips Curve
+			\begin{align}
+				\hat{\pi}_{\eta t} = \beta \E \hat{\pi}_{\eta, t+1} + \frac{(1-\theta) (1- \theta \beta)}{\theta} \hat{\lambda}_{\eta t}
+			\end{align}
+			
+			\item Law of Motion for Capital
+			\begin{alignat}{2}
+				\hat{K}_{\eta, t+1} = (1-\delta) \hat{K}_{\eta t} + \delta \hat{I}_{\eta t}
+			\end{alignat}
+			
+			\item Regional Levels of Consumption and Prices
+			\begin{align}
+				\hat{C}_{\eta 1 t} - \hat{C}_{\eta 2 t} = \hat{P}_{2 t} - \hat{P}_{1 t}
+			\end{align}
+			
+			\item Total Expenses
+			\begin{align}
+				\hat{\mathscr{E}}_{\eta t} = \hat{C}_{\eta t} + \omega_{\eta 1} \hat{P}_{1 t} + (1 -\omega_{\eta 1}) \hat{P}_{2 t}
+			\end{align}
+			
+			\item Labor Supply
+			\begin{alignat}{2}
+				\varphi \hat{L}_{\eta t} - (1 -\sigma) \hat{C}_{\eta t} = \hat{W}_{\eta t} - \hat{ \mathscr{E} }_{\eta t}
+			\end{alignat}
+			
+			\item Euler equation for the bonds return
+			\begin{alignat}{2}
+				\E \left\{ \hat{\mathscr{E}}_{\eta, t+1} - (1 -\sigma)\hat{C}_{\eta, t+1} \right\} - \nonumber \\  \qquad - [\hat{\mathscr{E}}_{\eta t} - (1 -\sigma)\hat{C}_{\eta t}] = (1 -\beta) \hat{R}_{t}
+			\end{alignat}
+			
+			\item Euler equation for the capital return
+			\begin{alignat}{2}
+				\E \left\{ \hat{\mathscr{E}}_{\eta, t+1} - \hat{P}_{\eta, t+1}  - (1 -\sigma) \hat{C}_{\eta, t+1} \right\} - (\hat{\mathscr{E}}_{\eta t} - \hat{P}_{\eta t} - (1 -\sigma) \hat{C}_{\eta t}) = \nonumber \\
+				\qquad = \beta \frac{R_{K}}{P_{\eta}} \mathbb{E}_t \left\{ \hat{R}_{K, t+1} - \hat{P}_{\eta, t+1} \right\}
+			\end{alignat}
+			
+			\item Production Function
+			\begin{align}
+				\hat{Y}_{\eta t} = \hat{Z}_{A\eta t} + {\alpha_{\eta}} \hat{K}_{\eta t} + (1-\alpha_{\eta}) \hat{L}_{\eta t}
+			\end{align}
+			
+			\item Marginal Rates of Substitution of Factors
+			\begin{align}
+				\hat{K}_{\eta t} - \hat{L}_{\eta t} = \hat{W}_{t} - \hat{R}_{K t}
+			\end{align}
+			
+			\item Marginal Cost
+			\begin{alignat}{2}
+				\hat{\lambda}_{\eta t} = {\alpha_{\eta}} \hat{R}_{Kt} + (1- {\alpha_{\eta}}) \hat{W}_{t} - \hat{Z}_{A\eta t} - \hat{P}_{\eta t}
+			\end{alignat}
+			
+			\item Productivity Shock
+			\begin{alignat}{2}
+				\hat{Z}_{A\eta t} = \rho_{A\eta} \hat{Z}_{A\eta, t-1} + \varepsilon_{A\eta}
+			\end{alignat}
+			
+			\item Regional Market Clearing Condition
+			\begin{align}
+				\hat{Y}_{\eta t} = \theta_{C\eta 1} \hat{C}_{\eta 1 t} + \theta_{C\eta 2} \hat{C}_{\eta 2 t} + (1 - \theta_{C\eta 1} - \theta_{C\eta 2}) \hat{I}_{\eta t}
+			\end{align}
+		\end{enumerate}
+
+	\hrule	
 	
 \end{comment}
 

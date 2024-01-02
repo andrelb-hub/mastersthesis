@@ -98,26 +98,26 @@ sunspot2 ${sunspot_{2}}$  (long_name='error of expected gross inflation rate in 
 % PARAMETERS                                         %
 % -------------------------------------------------- %
 parameters
-betta     ${\beta}$         (long_name='intertemporal discount factor')
-gammaR    ${\gamma_{R}}$    (long_name='interest-rate smoothing parameter')
-gammapi   ${\gamma_{pi}}$   (long_name='interest-rate sensitivity in relation to inflation')
-gammaY    ${\gamma_{Y}}$    (long_name='interest-rate sensitivity in relation to product')
-thetta    ${\theta}$        (long_name='price stickiness parameter')
-rhoA1     ${\rho_{A1}}$     (long_name='autoregressive parameter of productivity in region 1')
-rhoA2     ${\rho_{A2}}$     (long_name='autoregressive parameter of productivity in region 2')
-rhoM      ${\rho_{M}}$      (long_name='autoregressive parameter of monetary policy')
-siggma    ${\sigma}$        (long_name='relative risk aversion coefficient')
-phhi      ${\phi}$          (long_name='relative labor weight in utility')
-varphhi   ${\varphi}$       (long_name='marginal disutility of labor supply')
-pssi      ${\psi}$          (long_name='elasticity of substitution between intermediate goods')
-omega11   ${\omega_{11}}$   (long_name='weight of good 1 in consumption composition of region 1')
-omega21   ${\omega_{21}}$   (long_name='weight of good 1 in consumption composition of region 2')
+betta     ${\beta}$       (long_name='intertemporal discount factor')
+gammaR    ${\gamma_{R}}$  (long_name='interest-rate smoothing parameter')
+gammapi   ${\gamma_{pi}}$ (long_name='interest-rate sensitivity in relation to inflation')
+gammaY    ${\gamma_{Y}}$  (long_name='interest-rate sensitivity in relation to product')
+thetta    ${\theta}$      (long_name='price stickiness parameter')
+rhoA1     ${\rho_{A1}}$   (long_name='autoregressive parameter of productivity in region 1')
+rhoA2     ${\rho_{A2}}$   (long_name='autoregressive parameter of productivity in region 2')
+rhoM      ${\rho_{M}}$    (long_name='autoregressive parameter of monetary policy')
+siggma    ${\sigma}$      (long_name='relative risk aversion coefficient')
+phhi      ${\phi}$        (long_name='relative labor weight in utility')
+varphhi   ${\varphi}$     (long_name='marginal disutility of labor supply')
+pssi      ${\psi}$        (long_name='elasticity of substitution between intermediate goods')
+omega11   ${\omega_{11}}$ (long_name='weight of good 1 in consumption composition of region 1')
+omega21   ${\omega_{21}}$ (long_name='weight of good 1 in consumption composition of region 2')
 % -------------------------------------------------- % 
 % standard errors of stochastic shocks               %
 % -------------------------------------------------- %
-sigmaA1 ${\sigma_{A1}}$  (long_name='Standard Error of productivity shock 1')
-sigmaA2 ${\sigma_{A2}}$  (long_name='Standard Error of productivity shock 2')
-sigmaM  ${\sigma_M}$     (long_name='Standard Error of monetary shock')
+sigmaA1 ${\sigma_{A1}}$ (long_name='Standard Error of productivity shock 1')
+sigmaA2 ${\sigma_{A2}}$ (long_name='Standard Error of productivity shock 2')
+sigmaM  ${\sigma_M}$    (long_name='Standard Error of monetary shock')
 ;
 % -------------------------------------------------- %
 % parameters values                                  %
@@ -135,7 +135,7 @@ phhi     = 1     ;  % relative labor weight in utility
 varphhi  = 1.5   ;  % marginal disutility of labor supply
 pssi     = 8     ;  % elasticity of substitution between intermediate goods
 omega11  = 0.7   ;  % weight of good 1 in consumption composition of region 1
-omega21  = 0.5   ;  % weight of good 1 in consumption composition of region 2
+omega21  = 0.4   ;  % weight of good 1 in consumption composition of region 2
 % -------------------------------------------------- % 
 % standard errors values                             %
 % -------------------------------------------------- %
@@ -147,10 +147,10 @@ sigmaM  = 0.01 ; % Standard Error of monetary shock
 % -------------------------------------------------- %
 model(linear);
 % Steady state variables as local varibles, for log-linear use:
-# thetaP = 1 ;
-# thetaZ = 0.8 ;
-# P1ss   = 1 ;
-# P2ss   = thetaP * P1ss ;
+# thetaP = 0.7 ;
+# thetaZ = 0.7 ;
+# P1ss   = 1   ;
+# P2ss   = thetaP * P1ss  ;
 # ZA1ss  = 1 ;
 # ZA2ss  = thetaZ * ZA1ss ;
 # ZMss   = 1 ;
@@ -164,8 +164,8 @@ model(linear);
 # LAMBDA2ss = P2ss * (pssi-1)/pssi ;
 # W1ss  = LAMBDA1ss * ZA1ss ;
 # W2ss  = LAMBDA2ss * ZA2ss ;
-# a1ss  = ((W1ss * ZA1ss^varphhi)/(phhi * Q1ss))^(1/siggma) ;
-# a2ss  = ((W2ss * ZA2ss^varphhi)/(phhi * Q2ss))^(1/siggma) ;
+# a1ss  = ((W1ss * ZA1ss^varphhi)/(phhi * Q1ss))^(1/siggma)  ;
+# a2ss  = ((W2ss * ZA2ss^varphhi)/(phhi * Q2ss))^(1/siggma)  ;
 # Y1ss  = (Q1ss * a1ss / P1ss)^(siggma / (varphhi + siggma)) ;
 # Y2ss  = (Q2ss * a2ss / P2ss)^(siggma / (varphhi + siggma)) ;
 # C1ss  = a1ss * Y1ss^(-varphhi/siggma) ;
@@ -176,7 +176,7 @@ model(linear);
 # C22ss = C21ss * (1 - omega21) * P1ss / (omega21 * P2ss) ;
 # L1ss  = Y1ss / ZA1ss ;
 # L2ss  = Y2ss / ZA2ss ;
-# Yss   = Y1ss + Y2ss ;
+# Yss   = Y1ss + Y2ss  ;
 % Parameters derived from steady state variables:
 # thetapi = P1ss * Y1ss / (P1ss * Y1ss + P2ss * Y2ss) ;
 # thetaY = Y1ss / Yss ;
@@ -296,8 +296,15 @@ shocks;
      var    e_M;
      stderr sigmaM;
 end;
-stoch_simul(irf=100, order=1, qz_zero_threshold=1e-20) ZMt ZA1t Rt W1t C1t L1t Y1t P1t pi1t ;
-% ZMt ZA2t Rt W2t C2t L2t Y2t P2t pi2t ;
+stoch_simul(irf=100, order=1, qz_zero_threshold=1e-20) 
+ZMt Y1t Y2t 
+Rt  L1t L2t 
+Q1t W1t W2t 
+Yt   C1t  C2t
+C11t C21t P1t
+C12t C22t P2t 
+;
+% ZA1t ZA2t pit lambda1t lambda2t pi1t pi2t ;
 % -------------------------------------------------- % 
 % LATEX OUTPUT                                       %
 % -------------------------------------------------- % 

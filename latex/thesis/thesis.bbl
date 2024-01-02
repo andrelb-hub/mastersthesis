@@ -368,6 +368,45 @@
       \verb 10.1016/j.jebo.2020.05.024
       \endverb
     \endentry
+    \entry{farmer_solving_2015}{article}{}
+      \name{author}{3}{}{%
+        {{hash=98701f6b080a075b555648b992b21b94}{%
+           family={Farmer},
+           familyi={F\bibinitperiod},
+           given={Roger\bibnamedelima E.A.},
+           giveni={R\bibinitperiod\bibinitdelim E\bibinitperiod}}}%
+        {{hash=75b8be031e591675083029966a0c6fb8}{%
+           family={Khramov},
+           familyi={K\bibinitperiod},
+           given={Vadim},
+           giveni={V\bibinitperiod}}}%
+        {{hash=e9e2fb653dbd250b5d8c69578c71fa55}{%
+           family={Nicolò},
+           familyi={N\bibinitperiod},
+           given={Giovanni},
+           giveni={G\bibinitperiod}}}%
+      }
+      \strng{namehash}{5e3eb4f99bd7477530191b9e34846d78}
+      \strng{fullhash}{589a69a02efebd86c046e13680455bc1}
+      \strng{bibnamehash}{589a69a02efebd86c046e13680455bc1}
+      \strng{authorbibnamehash}{589a69a02efebd86c046e13680455bc1}
+      \strng{authornamehash}{5e3eb4f99bd7477530191b9e34846d78}
+      \strng{authorfullhash}{589a69a02efebd86c046e13680455bc1}
+      \field{sortinit}{F}
+      \field{sortinithash}{2638baaa20439f1b5a8f80c6c08a13b4}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of Economic Dynamics and Control}
+      \field{title}{Solving and estimating indeterminate {DSGE} models}
+      \field{volume}{54}
+      \field{year}{2015}
+      \field{dateera}{ce}
+      \verb{doi}
+      \verb 10.1016/j.jedc.2015.02.012
+      \endverb
+    \endentry
     \entry{gali_monetary_2015}{book}{}
       \name{author}{1}{}{%
         {{hash=9f86081942834923a86a56e2f4d2a7cd}{%

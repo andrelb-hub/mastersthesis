@@ -1,20 +1,20 @@
 # Fdb version 4
-["biber sections/reg_model_v6"] 1702230468 "sections/reg_model_v6.bcf" "sections/reg_model_v6.bbl" "sections/reg_model_v6" 1702487424 0
-  "../ref.bib" 1702230376 11551 c50a7fa647112c09aa770f73aed567cb ""
-  "sections/reg_model_v6.bcf" 1702487422 113614 13e7e2d0179bc0af2cdb6921caf90238 "pdflatex"
+["biber sections/reg_model_v6"] 1704124355 "sections/reg_model_v6.bcf" "sections/reg_model_v6.bbl" "sections/reg_model_v6" 1704222705 0
+  "../ref.bib" 1703024446 11857 5973371bd5ac86dd05f84bd937b6c908 ""
+  "sections/reg_model_v6.bcf" 1704222705 113912 585644ceb9a21cf97343130be08d72f7 "pdflatex"
   (generated)
   "sections/reg_model_v6.bbl"
   "sections/reg_model_v6.blg"
   (rewritten before read)
-["makeindex sections/reg_model_v6.idx"] 1702230438 "sections/reg_model_v6.idx" "sections/reg_model_v6.ind" "sections/reg_model_v6" 1702487424 0
-  "sections/reg_model_v6.idx" 1702487418 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
+["makeindex sections/reg_model_v6.idx"] 1702230438 "sections/reg_model_v6.idx" "sections/reg_model_v6.ind" "sections/reg_model_v6" 1704222705 0
+  "sections/reg_model_v6.idx" 1704222702 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
   (generated)
   "sections/reg_model_v6.ilg"
   "sections/reg_model_v6.ind"
   (rewritten before read)
-["pdflatex"] 1702487415 "c:/apps/gdrive/projects/masterthesis/latex/thesis/sections/reg_model_v6.tex" "sections/reg_model_v6.pdf" "reg_model_v6" 1702487424 0
-  "../article_packages.tex" 1701996143 11001 e76aa08e19609b15713b8e0ed404d95c ""
-  "../images/flowchart.jpg" 1701701269 71209 27b1dcff6a337fdb9824e07b4762c700 ""
+["pdflatex"] 1704222701 "c:/apps/gdrive/projects/masterthesis/latex/thesis/sections/reg_model_v6.tex" "sections/reg_model_v6.pdf" "reg_model_v6" 1704222705 0
+  "../article_packages.tex" 1704120529 11008 2d0b03a66ae7b0f2dde1248282609ddb ""
+  "../images/flowchart.jpg" 1704125628 92496 bf943842060508780dca5682ca0ee822 ""
   "../images/marca_dagua_ufpr.jpg" 1701701269 3057315 26cb0fce1790de1cabcc59ee551ab183 ""
   "C:/Users/andre/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1701997414 221890 43f325db63ceff24439399cae6326805 ""
   "C:/Users/andre/AppData/Local/MiKTeX/miktex/data/le/pdftex/pdflatex.fmt" 1701988614 24213231 eece9703d20265317f2d67cdc1fcf261 ""
@@ -341,17 +341,17 @@
   "C:/Users/andre/AppData/Local/Programs/MiKTeX/tex/latex/xkeyval/xkeyval.sty" 1656236919 4937 4ce600ce9bd4ec84d0250eb6892fcf4f ""
   "C:/Users/andre/AppData/Local/Programs/MiKTeX/tex/latex/xpatch/xpatch.sty" 1585221260 8510 7803f78066c4f9d008405191a4b43073 ""
   "C:/Users/andre/AppData/Local/Programs/MiKTeX/tex/latex/xstring/xstring.sty" 1693735632 123 a302f2c651a95033260db60e51527ae8 ""
-  "c:/apps/gdrive/projects/masterthesis/latex/article_packages.tex" 1701996143 11001 e76aa08e19609b15713b8e0ed404d95c ""
-  "c:/apps/gdrive/projects/masterthesis/latex/thesis/sections/reg_model_v6.tex" 1702487363 118488 dd32bd6e1309d6e10951c4c1b135b55b ""
+  "c:/apps/gdrive/projects/masterthesis/latex/article_packages.tex" 1704120529 11008 2d0b03a66ae7b0f2dde1248282609ddb ""
+  "c:/apps/gdrive/projects/masterthesis/latex/thesis/sections/reg_model_v6.tex" 1704222700 126066 bb83277750be34915a97b80cfbc8bca9 ""
   "reg_model_v6.toc" 0 -1 0 ""
-  "sections/../thesis.tex" 1701996811 3184 3a93de373bf2c705f01a5e18155dff68 ""
-  "sections/reg_model_v6.aux" 1702487422 19283 7d3268db4bb37dcbedbb85527eab30e8 "pdflatex"
-  "sections/reg_model_v6.bbl" 1702230475 8332 f90e1c5ccb7b2902a0a985d145935847 "biber sections/reg_model_v6"
+  "sections/../thesis.tex" 1704119411 3183 95fe8cb489d3fd1ee6b7d511342306ef ""
+  "sections/reg_model_v6.aux" 1704222705 20706 c0a6872244cf6ff8341e14ff5eb62adf "pdflatex"
+  "sections/reg_model_v6.bbl" 1704124357 9951 e01de3a9be5fbd456bd0c63abed2885f "biber sections/reg_model_v6"
   "sections/reg_model_v6.ind" 1702230438 0 d41d8cd98f00b204e9800998ecf8427e "makeindex sections/reg_model_v6.idx"
-  "sections/reg_model_v6.run.xml" 1702487422 2562 a1d521ccd91c57088fa76a238762d65c "pdflatex"
-  "sections/reg_model_v6.tex" 1702487363 118488 dd32bd6e1309d6e10951c4c1b135b55b ""
+  "sections/reg_model_v6.run.xml" 1704222705 2562 a1d521ccd91c57088fa76a238762d65c "pdflatex"
+  "sections/reg_model_v6.tex" 1704222700 126066 bb83277750be34915a97b80cfbc8bca9 ""
   "sections/reg_model_v6.toc" 0 -1 0 ""
-  "thesis.tex" 1701996811 3184 3a93de373bf2c705f01a5e18155dff68 ""
+  "thesis.tex" 1704119411 3183 95fe8cb489d3fd1ee6b7d511342306ef ""
   (generated)
   "sections/reg_model_v6.aux"
   "sections/reg_model_v6.bcf"

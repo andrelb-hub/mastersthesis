@@ -252,7 +252,7 @@ M_.nboth   = 0;
 M_.nsfwrd   = 3;
 M_.nspred   = 8;
 M_.ndynamic   = 11;
-M_.dynamic_tmp_nbr = [4; 0; 0; 0; ];
+M_.dynamic_tmp_nbr = [6; 0; 0; 0; ];
 M_.model_local_variables_dynamic_tt_idxs = {
 };
 M_.equations_tags = {
@@ -331,7 +331,7 @@ oo_.exo_steady_state = zeros(5, 1);
 M_.params = NaN(17, 1);
 M_.endo_trends = struct('deflator', cell(27, 1), 'log_deflator', cell(27, 1), 'growth_factor', cell(27, 1), 'log_growth_factor', cell(27, 1));
 M_.NNZDerivatives = [96; 0; -1; ];
-M_.static_tmp_nbr = [4; 0; 0; 0; ];
+M_.static_tmp_nbr = [6; 0; 0; 0; ];
 M_.model_local_variables_static_tt_idxs = {
 };
 M_.params(1) = 0.985;
@@ -360,7 +360,7 @@ M_.params(12) = 8;
 pssi = M_.params(12);
 M_.params(13) = 0.7;
 omega11 = M_.params(13);
-M_.params(14) = 0.5;
+M_.params(14) = 0.4;
 omega21 = M_.params(14);
 M_.params(15) = 0.01;
 sigmaA1 = M_.params(15);
@@ -380,7 +380,7 @@ M_.Sigma_e(3, 3) = (M_.params(17))^2;
 options_.irf = 100;
 options_.order = 1;
 options_.qz_zero_threshold = 1e-20;
-var_list_ = {'ZMt';'ZA1t';'Rt';'W1t';'C1t';'L1t';'Y1t';'P1t';'pi1t'};
+var_list_ = {'ZMt';'Y1t';'Y2t';'Rt';'L1t';'L2t';'Q1t';'W1t';'W2t';'Yt';'C1t';'C2t';'C11t';'C21t';'P1t';'C12t';'C22t';'P2t'};
 [info, oo_, options_, M_] = stoch_simul(M_, options_, oo_, var_list_);
 write_latex_definitions;
 write_latex_parameter_table;

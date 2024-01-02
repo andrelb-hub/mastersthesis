@@ -1,15 +1,15 @@
 [0] Config.pm:307> INFO - This is Biber 2.19
 [0] Config.pm:310> INFO - Logfile is 'thesis.blg'
-[117] biber-MSWIN64:340> INFO - === 
-[159] Biber.pm:419> INFO - Reading 'thesis.bcf'
-[304] Biber.pm:979> INFO - Found 32 citekeys in bib section 0
-[321] Biber.pm:4419> INFO - Processing section 0
-[335] Biber.pm:4610> INFO - Looking for bibtex file '../ref.bib' for section 0
-[388] bibtex.pm:1713> INFO - LaTeX decoding ...
-[427] bibtex.pm:1519> INFO - Found BibTeX data source '../ref.bib'
-[605] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[605] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
-[605] Biber.pm:4239> INFO - Sorting list 'nyt/global//global/global' of type 'entry' with template 'nyt' and locale 'en-US'
-[605] Biber.pm:4245> INFO - No sort tailoring available for locale 'en-US'
-[649] bbl.pm:660> INFO - Writing 'thesis.bbl' with encoding 'UTF-8'
-[666] bbl.pm:763> INFO - Output to thesis.bbl
+[88] biber-MSWIN64:340> INFO - === 
+[120] Biber.pm:419> INFO - Reading 'thesis.bcf'
+[247] Biber.pm:979> INFO - Found 33 citekeys in bib section 0
+[265] Biber.pm:4419> INFO - Processing section 0
+[277] Biber.pm:4610> INFO - Looking for bibtex file '../ref.bib' for section 0
+[315] bibtex.pm:1713> INFO - LaTeX decoding ...
+[346] bibtex.pm:1519> INFO - Found BibTeX data source '../ref.bib'
+[487] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[487] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[490] Biber.pm:4239> INFO - Sorting list 'nyt/global//global/global' of type 'entry' with template 'nyt' and locale 'en-US'
+[490] Biber.pm:4245> INFO - No sort tailoring available for locale 'en-US'
+[519] bbl.pm:660> INFO - Writing 'thesis.bbl' with encoding 'UTF-8'
+[531] bbl.pm:763> INFO - Output to thesis.bbl
