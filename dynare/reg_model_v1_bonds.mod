@@ -45,6 +45,7 @@ ZA1t ${\hat{Z}_{A1}}$ (long_name='Production technology level of region 1')
 ZA2t ${\hat{Z}_{A2}}$ (long_name='Production technology level of region 2')
 ZMt  ${\hat{Z}_M}$    (long_name='Monetary Policy')
 Q1t  ${\hat{Q}_{1}}$  (long_name='Consumer price index of region 1')
+% Q2t  ${\hat{Q}_{2}}$  (long_name='Consumer price index of region 2')
 P1t  ${\hat{P}_{1}}$  (long_name='Price level of region 1')
 P2t  ${\hat{P}_{2}}$  (long_name='Price level of region 2')
 Rt   ${\hat{R}}$      (long_name='Interest rate')
@@ -153,20 +154,20 @@ sigmaM  ${\sigma_M}$    (long_name='Standard Error of monetary shock')
 % parameters values                                  %
 % -------------------------------------------------- % 
 
-betta    = 0.985 ;  % intertemporal discount factor
-gammaR   = 0.79  ;  % interest-rate smoothing parameter
-gammapi  = 2.43  ;  % interest-rate sensitivity in relation to inflation
-gammaY   = 0.16  ;  % interest-rate sensitivity in relation to product
-thetta   = 0.8   ;  % price stickiness parameter
-rhoA1    = 0.95  ;  % autoregressive parameter of productivity in region 1
-rhoA2    = 0.95  ;  % autoregressive parameter of productivity in region 2
-rhoM     = 0.9   ;  % autoregressive parameter of monetary policy
-siggma   = 2     ;  % relative risk aversion coefficient
-phhi     = 1     ;  % relative labor weight in utility
-varphhi  = 1.5   ;  % marginal disutility of labor supply
-pssi     = 8     ;  % elasticity of substitution between intermediate goods
-omega11  = 0.7   ;  % weight of good 1 in consumption composition of region 1
-omega21  = 0.4   ;  % weight of good 1 in consumption composition of region 2
+betta   = 0.985 ; % intertemporal discount factor
+gammaR  = 0.79  ; % interest-rate smoothing parameter
+gammapi = 2.43  ; % interest-rate sensitivity in relation to inflation
+gammaY  = 0.16  ; % interest-rate sensitivity in relation to product
+thetta  = 0.8   ; % price stickiness parameter
+rhoA1   = 0.95  ; % autoregressive parameter of productivity in region 1
+rhoA2   = 0.95  ; % autoregressive parameter of productivity in region 2
+rhoM    = 0.9   ; % autoregressive parameter of monetary policy
+siggma  = 2     ; % relative risk aversion coefficient
+phhi    = 1     ; % relative labor weight in utility
+varphhi = 1.5   ; % marginal disutility of labor supply
+pssi    = 8     ; % elasticity of substitution between intermediate goods
+omega11 = 0.7   ; % weight of good 1 in consumption composition of region 1
+omega21 = 0.4   ; % weight of good 1 in consumption composition of region 2
 
 % -------------------------------------------------- % 
 % standard errors values                             %

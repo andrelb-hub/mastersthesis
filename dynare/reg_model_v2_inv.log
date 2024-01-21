@@ -1,0 +1,203 @@
+Starting Dynare (version 5.5).
+Calling Dynare with arguments: savemacro=reg_model_v2_inv_FINAL.mod
+Starting preprocessing of the model file ...
+WARNING: in the 'steady_state_model' block, variable 'pix1t' is not assigned a value
+WARNING: in the 'steady_state_model' block, variable 'pix2t' is not assigned a value
+WARNING: in the 'steady_state_model' block, variable 'Kx1t' is not assigned a value
+WARNING: in the 'steady_state_model' block, variable 'Kx2t' is not assigned a value
+Found 34 equation(s).
+Evaluating expressions...done
+Computing static model derivatives (order 1).
+Computing dynamic model derivatives (order 2).
+Processing outputs ...
+done
+Preprocessing completed.
+
+
+
+
+
+Residuals of the static equations:
+
+Equation number 1 : 0 : Regional Gross Inflation Rate
+Equation number 2 : 0 : pi2t
+Equation number 3 : 0 : New Keynesian Phillips Curve
+Equation number 4 : 0 : 4
+Equation number 5 : 0 : 5
+Equation number 6 : 0 : 6
+Equation number 7 : 0 : Regional Consumption Weight
+Equation number 8 : 0 : 8
+Equation number 9 : 0 : Regional Consumption of Good 1
+Equation number 10 : 0 : 10
+Equation number 11 : 0 : Regional Price Index
+Equation number 12 : 0 : Q2t
+Equation number 13 : 0 : Labor Supply
+Equation number 14 : 0 : 14
+Equation number 15 : 0 : Law of Motion for Capital
+Equation number 16 : 0 : 16
+Equation number 17 : 0 : Kx2t
+Equation number 18 : 0 : 18
+Equation number 19 : 0 : Euler equation for capital return
+Equation number 20 : 0 : 20
+Equation number 21 : 0 : Production Function
+Equation number 22 : 0 : Y2t
+Equation number 23 : 0 : Techincal and Economic MRSs
+Equation number 24 : 0 : 24
+Equation number 25 : 0 : Marginal Cost
+Equation number 26 : 0 : lambda2t
+Equation number 27 : 0 : Monetary Policy
+Equation number 28 : 0 : National Gross Inflation Rate
+Equation number 29 : 0 : Goods-Market Clearing Condition
+Equation number 30 : 0 : Regional Goods-Market Clearing Condition
+Equation number 31 : 0 : 31
+Equation number 32 : 0 : Productivity Shock
+Equation number 33 : 0 : ZA2t
+Equation number 34 : 0 : Monetary Shock
+
+
+
+STEADY-STATE RESULTS:
+
+C1t      		 0
+C2t      		 0
+L1t      		 0
+L2t      		 0
+K1t      		 0
+K2t      		 0
+I1t      		 0
+I2t      		 0
+C11t     		 0
+C21t     		 0
+C12t     		 0
+C22t     		 0
+Y1t      		 0
+Y2t      		 0
+Yt       		 0
+ZA1t     		 0
+ZA2t     		 0
+ZMt      		 0
+Q1t      		 0
+Q2t      		 0
+P1t      		 0
+P2t      		 0
+Rt       		 0
+W1t      		 0
+W2t      		 0
+pit      		 0
+pi1t     		 0
+pi2t     		 0
+lambda1t 		 0
+lambda2t 		 0
+pix1t    		 0
+pix2t    		 0
+Kx1t     		 0
+Kx2t     		 0
+
+EIGENVALUES:
+         Modulus             Real        Imaginary
+
+          0.8015           0.8015                0
+          0.8544           0.8281           0.2105
+          0.8544           0.8281          -0.2105
+          0.8774           0.8725          0.09312
+          0.8774           0.8725         -0.09312
+             0.9              0.9                0
+            0.95             0.95                0
+            0.95             0.95                0
+           0.996            0.996                0
+               1                1                0
+           1.285            1.285                0
+           1.353            1.353                0
+       2.238e+16        2.238e+16                0
+       4.459e+16        4.459e+16                0
+             Inf              Inf                0
+             Inf              Inf                0
+             Inf              Inf                0
+
+
+There are 7 eigenvalue(s) larger than 1 in modulus 
+for 7 forward-looking variable(s)
+
+The rank condition is verified.
+
+
+MODEL SUMMARY
+
+  Number of variables:         34
+  Number of stochastic shocks: 7
+  Number of state variables:   10
+  Number of jumpers:           7
+  Number of static variables:  20
+
+
+MATRIX OF COVARIANCE OF EXOGENOUS SHOCKS
+Variables         e_A1       e_A2        e_M   sunspot1   sunspot2  sunspotK1  sunspotK2
+e_A1          0.000000   0.000000   0.000000   0.000000   0.000000   0.000000   0.000000
+e_A2          0.000000   0.000000   0.000000   0.000000   0.000000   0.000000   0.000000
+e_M           0.000000   0.000000   0.000100   0.000000   0.000000   0.000000   0.000000
+sunspot1      0.000000   0.000000   0.000000   0.000000   0.000000   0.000000   0.000000
+sunspot2      0.000000   0.000000   0.000000   0.000000   0.000000   0.000000   0.000000
+sunspotK1     0.000000   0.000000   0.000000   0.000000   0.000000   0.000000   0.000000
+sunspotK2     0.000000   0.000000   0.000000   0.000000   0.000000   0.000000   0.000000
+
+POLICY AND TRANSITION FUNCTIONS
+                                 ZMt             Y1t             Y2t              Rt             K1t             K2t             L1t             W1t             W2t              Yt             C1t             C2t            C11t            C21t             P1t            C12t            C22t             P2t
+ZA1t(-1)                           0        0.129240       -0.013760        0.002569               0               0       -1.367934        1.370503        0.023739        0.076461        1.711202        0.027747        1.711202        0.027747               0        1.711202        0.027747               0
+ZA2t(-1)                           0       -0.009549        0.131295        0.001426               0               0       -0.015915        0.017341        1.260971        0.042434        0.020607        1.575145        0.020607        1.575145               0        0.020607        1.575145               0
+ZMt(-1)                     0.900000        1.682982        1.664531        0.956319               0               0        2.804970       -1.848651       -1.604498        1.676172       -3.028053       -2.722861       -3.028053       -2.722861               0       -3.028053       -2.722861               0
+pix1t(-1)                          0       -6.469920       -0.993563        0.172482               0               0      -10.783200       10.955681        1.701041       -4.448699       13.215240        1.796940       12.915240        1.196940        1.000000       13.915240        2.196940               0
+pix2t(-1)                          0       -0.668294       -6.273196        0.096380               0               0       -1.113823        1.210203        9.747451       -2.736959        1.290469       11.812028        1.590469       12.412028               0        0.590469       11.412028        1.000000
+Kx1t(-1)                           0        1.020319        0.048837        0.022235        1.000000               0        1.033865       -0.011630       -0.052899        0.661763       -0.781214       -0.082801       -0.781214       -0.082801               0       -0.781214       -0.082801               0
+Kx2t(-1)                           0        0.029526        0.997843        0.013000               0        1.000000        0.049210       -0.036209        0.016318        0.386914       -0.055012       -0.739352       -0.055012       -0.739352               0       -0.055012       -0.739352               0
+P1t(-1)                            0       -1.888040       -0.562277       -0.046997               0               0       -3.146734        3.099737        0.818044       -1.398726        3.559919        0.857803        3.259919        0.257803        1.000000        4.259919        1.257803               0
+P2t(-1)                            0       -0.367834       -1.760768       -0.029633               0               0       -0.613056        0.583423        2.679240       -0.881940        0.601503        3.071275        0.901503        3.671275               0       -0.098497        2.671275        1.000000
+Rt(-1)                             0        0.614544        0.624605        0.810773               0               0        1.024240       -0.213467       -0.150158        0.618258       -0.874914       -0.795777       -0.874914       -0.795777               0       -0.874914       -0.795777               0
+e_A1                               0        0.136042       -0.014484        0.002704               0               0       -1.439931        1.442635        0.024988        0.080485        1.801265        0.029207        1.801265        0.029207               0        1.801265        0.029207               0
+e_A2                               0       -0.010052        0.138206        0.001501               0               0       -0.016753        0.018254        1.327338        0.044667        0.021691        1.658047        0.021691        1.658047               0        0.021691        1.658047               0
+e_M                         1.000000        1.869980        1.849479        1.062577               0               0        3.116633       -2.054056       -1.782775        1.862413       -3.364503       -3.025402       -3.364503       -3.025402               0       -3.364503       -3.025402               0
+sunspot1                           0       -6.469920       -0.993563        0.172482               0               0      -10.783200       10.955681        1.701041       -4.448699       13.215240        1.796940       12.915240        1.196940        1.000000       13.915240        2.196940               0
+sunspot2                           0       -0.668294       -6.273196        0.096380               0               0       -1.113823        1.210203        9.747451       -2.736959        1.290469       11.812028        1.590469       12.412028               0        0.590469       11.412028        1.000000
+sunspotK1                          0        1.020319        0.048837        0.022235        1.000000               0        1.033865       -0.011630       -0.052899        0.661763       -0.781214       -0.082801       -0.781214       -0.082801               0       -0.781214       -0.082801               0
+sunspotK2                          0        0.029526        0.997843        0.013000               0        1.000000        0.049210       -0.036209        0.016318        0.386914       -0.055012       -0.739352       -0.055012       -0.739352               0       -0.055012       -0.739352               0
+
+
+THEORETICAL MOMENTS
+VARIABLE         MEAN  STD. DEV.   VARIANCE
+ZMt            0.0000     0.0229     0.0005
+Y1t               NaN        NaN        NaN
+Y2t               NaN        NaN        NaN
+Rt                NaN        NaN        NaN
+K1t               NaN        NaN        NaN
+K2t               NaN        NaN        NaN
+L1t               NaN        NaN        NaN
+W1t               NaN        NaN        NaN
+W2t               NaN        NaN        NaN
+Yt                NaN        NaN        NaN
+C1t               NaN        NaN        NaN
+C2t               NaN        NaN        NaN
+C11t              NaN        NaN        NaN
+C21t              NaN        NaN        NaN
+P1t               NaN        NaN        NaN
+C12t              NaN        NaN        NaN
+C22t              NaN        NaN        NaN
+P2t               NaN        NaN        NaN
+
+
+
+VARIANCE DECOMPOSITION (in percent)
+            e_A1       e_A2        e_M   sunspot1   sunspot2  sunspotK1  sunspotK2
+ZMt         0.00       0.00     100.00       0.00       0.00       0.00       0.00
+
+
+
+MATRIX OF CORRELATIONS
+Variables       ZMt
+ZMt          1.0000
+
+
+
+COEFFICIENTS OF AUTOCORRELATION
+Order          1       2       3       4       5
+ZMt       0.9000  0.8100  0.7290  0.6561  0.5905
+Total computing time : 0h00m02s
+Note: 4 warning(s) encountered in the preprocessor
