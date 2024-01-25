@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999995 (MiKTeX 23.12) (preloaded format=xelatex 2024.1.18)  21 JAN 2024 11:06
+This is XeTeX, Version 3.141592653-2.6-0.999995 (MiKTeX 23.12) (preloaded format=xelatex 2024.1.18)  22 JAN 2024 14:43
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1883,35 +1883,13 @@ Package biblatex Info: Automatic encoding selection.
 \openout6 = `reg_model_v2_investment.bcf'.
 
 Package biblatex Info: Trying to load bibliographic data...
-Package biblatex Info: ... file 'reg_model_v2_investment.bbl' not found.
-
-No file reg_model_v2_investment.bbl.
+Package biblatex Info: ... file 'reg_model_v2_investment.bbl' found.
+ (reg_model_v2_investment.bbl)
 Package biblatex Info: Reference section=0 on input line 7.
 Package biblatex Info: Reference segment=0 on input line 7.
-
-LaTeX Warning: Citation 'calvo_staggered_1983' on page 1 undefined on input lin
-e 31.
-
-
-LaTeX Warning: Citation 'costa_junior_understanding_2016' on page 1 undefined o
-n input line 31.
-
-
-LaTeX Warning: Citation 'taylor_discretion_1993' on page 1 undefined on input l
-ine 33.
-
-
-LaTeX Warning: Citation 'solis-garcia_ucb_2022' on page 1 undefined on input li
-ne 39.
-
-
-Underfull \hbox (badness 4391) in paragraph at lines 39--40
-[]\T1/ppl/m/n/12 These el-e-ments de-fine a canon-i-cal NK DSGE model, as pre-s
-ented by
- []
-
 LaTeX Font Info:    Trying to load font information for OT1+ppl on input line 4
 1.
+
 (C:\Users\andre\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\ot1ppl.fd
 File: ot1ppl.fd 2001/06/04 font definitions for OT1/ppl.
 )
@@ -1983,12 +1961,7 @@ If that doesn't work, type  X <return>  to quit.
 
 [1
 
-]
-
-LaTeX Warning: Citation 'uhlig_toolkit_1999' on page 2 undefined on input line 
-43.
-
-Excluding 'comment' comment. [2]
+] Excluding 'comment' comment. [2]
 
 ! LaTeX Error: File `flowchart' not found.
 
@@ -2005,238 +1978,137 @@ Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 [3]
-
-LaTeX Warning: Citation 'walsh_monetary_2017' on page 4 undefined on input line
- 121.
-
 LaTeX Font Info:    Font shape `U/BOONDOX-calo/m/n' will be
-(Font)              scaled to size 12.0pt on input line 138.
+(Font)              scaled to size 12.0pt on input line 139.
 LaTeX Font Info:    Font shape `U/BOONDOX-calo/m/n' will be
-(Font)              scaled to size 9.0pt on input line 138.
+(Font)              scaled to size 9.0pt on input line 139.
 LaTeX Font Info:    Font shape `U/BOONDOX-calo/m/n' will be
-(Font)              scaled to size 7.0pt on input line 138.
-[4] Excluding 'comment' comment. [5]
-
-LaTeX Warning: Citation 'costa_junior_understanding_2016' on page 6 undefined o
-n input line 189.
-
-
-LaTeX Warning: Citation 'solis-garcia_ucb_2022' on page 6 undefined on input li
-ne 189.
-
-
-Underfull \hbox (badness 2042) in paragraph at lines 189--190
-[]\T1/ppl/m/n/12 Following the mod-els pre-sented by [] and
- []
-
+(Font)              scaled to size 7.0pt on input line 139.
+ [4] Excluding 'comment' comment. [5]
 LaTeX Font Info:    Trying to load font information for U+fplmbb on input line 
-196.
+197.
+
 (C:\Users\andre\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\ufplmbb.fd
 File: ufplmbb.fd 2003/10/30 Fontinst v1.914 font definitions for U/fplmbb.
 )
 [6] [7] Excluding 'comment' comment. Excluding 'comment' comment. [8] [9]
 Excluding 'comment' comment.
 LaTeX Font Info:    Font shape `U/msa/m/n' will be
-(Font)              scaled to size 10.42007pt on input line 372.
+(Font)              scaled to size 10.42007pt on input line 373.
 LaTeX Font Info:    Font shape `U/msa/m/n' will be
-(Font)              scaled to size 7.91925pt on input line 372.
+(Font)              scaled to size 7.91925pt on input line 373.
 LaTeX Font Info:    Font shape `U/msa/m/n' will be
-(Font)              scaled to size 6.25204pt on input line 372.
+(Font)              scaled to size 6.25204pt on input line 373.
 LaTeX Font Info:    Font shape `U/msb/m/n' will be
-(Font)              scaled to size 10.42007pt on input line 372.
+(Font)              scaled to size 10.42007pt on input line 373.
 LaTeX Font Info:    Font shape `U/msb/m/n' will be
-(Font)              scaled to size 7.91925pt on input line 372.
+(Font)              scaled to size 7.91925pt on input line 373.
 LaTeX Font Info:    Font shape `U/msb/m/n' will be
-(Font)              scaled to size 6.25204pt on input line 372.
+(Font)              scaled to size 6.25204pt on input line 373.
 LaTeX Font Info:    Font shape `U/BOONDOX-calo/m/n' will be
-(Font)              scaled to size 10.0pt on input line 372.
+(Font)              scaled to size 10.0pt on input line 373.
 LaTeX Font Info:    Font shape `U/BOONDOX-calo/m/n' will be
-(Font)              scaled to size 7.6pt on input line 372.
+(Font)              scaled to size 7.6pt on input line 373.
 LaTeX Font Info:    Font shape `U/BOONDOX-calo/m/n' will be
-(Font)              scaled to size 6.0pt on input line 372.
+(Font)              scaled to size 6.0pt on input line 373.
 
 
 LaTeX Warning: Reference `lemma:marginal-cost' on page 10 undefined on input li
-ne 382.
+ne 383.
 
-[10] [11] Excluding 'comment' comment.
-
-LaTeX Warning: Citation 'calvo_staggered_1983' on page 12 undefined on input li
-ne 473.
-
-
-Underfull \hbox (badness 5008) in paragraph at lines 473--474
-[]\T1/ppl/m/n/12 Consider an econ-omy with price stick-i-ness, fol-low-ing the 
-Calvo Rule
- []
-
-[12] [13] [14]
-
-LaTeX Warning: Citation 'taylor_discretion_1993' on page 15 undefined on input 
-line 582.
-
-Excluding 'comment' comment. Excluding 'comment' comment. [15]
+[10] [11] Excluding 'comment' comment. [12] [13] [14]
+Excluding 'comment' comment. [15]
 LaTeX Font Info:    Font shape `U/cmsy/m/n' will be
-(Font)              scaled to size 12.0pt on input line 633.
+(Font)              scaled to size 12.0pt on input line 631.
 LaTeX Font Info:    Font shape `U/cmsy/m/n' will be
-(Font)              scaled to size 9.0pt on input line 633.
+(Font)              scaled to size 9.0pt on input line 631.
 LaTeX Font Info:    Font shape `U/cmsy/m/n' will be
-(Font)              scaled to size 7.0pt on input line 633.
+(Font)              scaled to size 7.0pt on input line 631.
 LaTeX Font Info:    Font shape `U/cmsy/b/n' will be
-(Font)              scaled to size 12.0pt on input line 652.
+(Font)              scaled to size 12.0pt on input line 650.
 LaTeX Font Info:    Font shape `U/cmsy/b/n' will be
-(Font)              scaled to size 9.0pt on input line 652.
+(Font)              scaled to size 9.0pt on input line 650.
 LaTeX Font Info:    Font shape `U/cmsy/b/n' will be
-(Font)              scaled to size 7.0pt on input line 652.
- [16]
-Excluding 'comment' comment. [17]
+(Font)              scaled to size 7.0pt on input line 650.
+ [16] Excluding 'comment' comment. [17]
 LaTeX Font Info:    Trying to load font information for TS1+ppl on input line 7
-10.
+08.
 
 (C:\Users\andre\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\ts1ppl.fd
 File: ts1ppl.fd 2001/06/04 font definitions for TS1/ppl.
 )
+Excluding 'comment' comment. Excluding 'comment' comment. [18]
 Excluding 'comment' comment. Excluding 'comment' comment.
-Excluding 'comment' comment. [18] Excluding 'comment' comment.
-Excluding 'comment' comment. Excluding 'comment' comment. [19]
-Excluding 'comment' comment. [20]
-
-LaTeX Warning: Citation 'costa_junior_understanding_2016' on page 21 undefined 
-on input line 970.
-
+Excluding 'comment' comment. [19] Excluding 'comment' comment. [20]
 Excluding 'comment' comment. Excluding 'comment' comment. [21]
 Excluding 'comment' comment. Excluding 'comment' comment. [22]
 Excluding 'comment' comment. [23]
 LaTeX Font Info:    Font shape `U/cmsy/m/n' will be
-(Font)              scaled to size 10.0pt on input line 1150.
+(Font)              scaled to size 10.0pt on input line 1144.
 LaTeX Font Info:    Font shape `U/cmsy/m/n' will be
-(Font)              scaled to size 7.6pt on input line 1150.
+(Font)              scaled to size 7.6pt on input line 1144.
 LaTeX Font Info:    Font shape `U/cmsy/m/n' will be
-(Font)              scaled to size 6.0pt on input line 1150.
+(Font)              scaled to size 6.0pt on input line 1144.
 LaTeX Font Info:    Font shape `U/cmsy/b/n' will be
-(Font)              scaled to size 10.0pt on input line 1150.
+(Font)              scaled to size 10.0pt on input line 1144.
 LaTeX Font Info:    Font shape `U/cmsy/b/n' will be
-(Font)              scaled to size 7.6pt on input line 1150.
+(Font)              scaled to size 7.6pt on input line 1144.
 LaTeX Font Info:    Font shape `U/cmsy/b/n' will be
-(Font)              scaled to size 6.0pt on input line 1150.
+(Font)              scaled to size 6.0pt on input line 1144.
  [24] Excluding 'comment' comment.
-Excluding 'comment' comment. Excluding 'comment' comment.
-
-LaTeX Warning: Citation 'solis-garcia_ucb_2022' on page 25 undefined on input l
-ine 1243.
-
-[25] [26] Excluding 'comment' comment. Excluding 'comment' comment.
-Package hyperref Info: bookmark level for unknown todo defaults to 0 on input l
-ine 1378.
- [27]
-[28]
+Excluding 'comment' comment. Excluding 'comment' comment. [25] [26]
+Excluding 'comment' comment. Excluding 'comment' comment. [27] [28]
 LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 1
-440.
- (C:\Users\andre\AppData\Local\Programs\MiKTeX\tex/latex/lm\t1lmtt.fd
+434.
+
+(C:\Users\andre\AppData\Local\Programs\MiKTeX\tex/latex/lm\t1lmtt.fd
 File: t1lmtt.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
 
-LaTeX Warning: Citation 'uhlig_toolkit_1999' on page 29 undefined on input line
- 1440.
-
-
 LaTeX Warning: Reference `lemma:uhligs-rules' on page 29 undefined on input lin
-e 1440.
+e 1434.
 
 
 LaTeX Warning: Reference `product-operator' on page 29 undefined on input line 
-1475.
+1469.
 
 [29]
 
 LaTeX Warning: Reference `def:geometric-series' on page 30 undefined on input l
-ine 1499.
+ine 1493.
 
 [30]
 
 LaTeX Warning: Reference `def:geometric-series' on page 31 undefined on input l
-ine 1518.
+ine 1512.
 
 [31]
 
 LaTeX Warning: Reference `def:lag-operator' on page 32 undefined on input line 
-1575.
+1569.
 
 [32] [33] Excluding 'comment' comment. [34] Excluding 'comment' comment.
 Excluding 'comment' comment.
 
 LaTeX Warning: Reference `coro:logarithm-rule' on page 35 undefined on input li
-ne 1741.
+ne 1732.
 
 [35]
 
 LaTeX Warning: Reference `coro:steady-state-YKL' on page 36 undefined on input 
-line 1752.
+line 1743.
 
 Excluding 'comment' comment. [36]
 
 LaTeX Warning: Reference `coro:steady-state-YKL' on page 37 undefined on input 
-line 1802.
+line 1793.
 
 Excluding 'comment' comment. [37] Excluding 'comment' comment.
 Excluding 'comment' comment. Excluding 'comment' comment. [38]
 Excluding 'comment' comment. Excluding 'comment' comment. [39]
 Excluding 'comment' comment. Excluding 'comment' comment. [40]
 Excluding 'comment' comment. [41] [42] Excluding 'comment' comment.
-
-LaTeX Warning: Reference `eq_v2:reg-bonds-euler-equation-ll' on page 43 undefin
-ed on input line 2334.
-
-
-LaTeX Warning: Reference `eq_v2:reg-bonds-euler-equation-ll' on page 43 undefin
-ed on input line 2334.
-
-
-LaTeX Warning: Reference `eq_v2:reg-bonds-euler-equation-2-ll' on page 43 undef
-ined on input line 2339.
-
-
-LaTeX Warning: Reference `eq_v2:reg-bonds-euler-equation-2-ll' on page 43 undef
-ined on input line 2339.
-
-[43]
-
-LaTeX Warning: Reference `eq_v2:reg-int-good-firm-FOC-Lt-ll' on page 44 undefin
-ed on input line 2351.
-
-
-LaTeX Warning: Reference `eq_v2:reg-int-good-firm-FOC-Lt-ll' on page 44 undefin
-ed on input line 2351.
-
-
-LaTeX Warning: Reference `eq_v2:reg-int-good-firm-FOC-Lt-ll' on page 44 undefin
-ed on input line 2351.
-
-
-LaTeX Warning: Reference `eq_v2:reg-int-good-firm-FOC-Lt-ll' on page 44 undefin
-ed on input line 2351.
-
-
-LaTeX Warning: Reference `eq_v2:reg-regional-demand-ll' on page 44 undefined on
- input line 2383.
-
-
-LaTeX Warning: Reference `eq_v2:reg-regional-demand-ll' on page 44 undefined on
- input line 2383.
-
-
-LaTeX Warning: Reference `eq_v2:reg-regional-demand-ll' on page 44 undefined on
- input line 2383.
-
-
-LaTeX Warning: Reference `eq_v2:reg-regional-demand-ll' on page 44 undefined on
- input line 2383.
-
-
-LaTeX Warning: Citation 'farmer_solving_2015' on page 44 undefined on input lin
-e 2391.
-
-[44] Excluding 'comment' comment. [45] (reg_model_v2_investment.aux)
+Excluding 'comment' comment. [43] (reg_model_v2_investment.aux)
  ***********
 LaTeX2e <2023-11-01>
 L3 programming layer <2020/03/25>
@@ -2255,12 +2127,12 @@ Package logreq Info: Writing requests to 'reg_model_v2_investment.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 46599 strings out of 409617
- 930108 string characters out of 5774013
- 1970284 words of memory out of 5000000
- 67982 multiletter control sequences out of 15000+600000
+ 46635 strings out of 409617
+ 931010 string characters out of 5774013
+ 1970361 words of memory out of 5000000
+ 68016 multiletter control sequences out of 15000+600000
  642150 words of font info for 259 fonts, out of 8000000 for 9000
  1350 hyphenation exceptions out of 8191
- 143i,26n,148p,802b,4385s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 143i,26n,148p,806b,5051s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on reg_model_v2_investment.pdf (45 pages).
+Output written on reg_model_v2_investment.pdf (43 pages).

@@ -516,6 +516,36 @@
       \verb 10.1086/715416
       \endverb
     \endentry
+    \entry{ibge_produto_2024}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=3898f1ceb6fdd56f963db7f9326130e4}{%
+           family={{IBGE}},
+           familyi={I\bibinitperiod}}}%
+      }
+      \strng{namehash}{3898f1ceb6fdd56f963db7f9326130e4}
+      \strng{fullhash}{3898f1ceb6fdd56f963db7f9326130e4}
+      \strng{bibnamehash}{3898f1ceb6fdd56f963db7f9326130e4}
+      \strng{authorbibnamehash}{3898f1ceb6fdd56f963db7f9326130e4}
+      \strng{authornamehash}{3898f1ceb6fdd56f963db7f9326130e4}
+      \strng{authorfullhash}{3898f1ceb6fdd56f963db7f9326130e4}
+      \field{sortinit}{I}
+      \field{sortinithash}{8d291c51ee89b6cd86bf5379f0b151d8}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{url}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Produto {Interno} {Bruto} ({PIB}) 2021}
+      \field{urlday}{24}
+      \field{urlmonth}{1}
+      \field{urlyear}{2024}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://sidra.ibge.gov.br/tabela/5938#resultado
+      \endverb
+      \verb{url}
+      \verb https://sidra.ibge.gov.br/tabela/5938#resultado
+      \endverb
+    \endentry
     \entry{inada_two-sector_1963}{article}{}
       \name{author}{1}{}{%
         {{hash=c03aed61d1f6bead34b3219db8c4f084}{%
@@ -546,6 +576,65 @@
       \verb{doi}
       \verb 10.2307/2295809
       \endverb
+    \endentry
+    \entry{konopkova_pitfalls_2019}{article}{}
+      \name{author}{1}{}{%
+        {{hash=6f3f1174077b88482bdb72f33fe57bad}{%
+           family={Konôpková},
+           familyi={K\bibinitperiod},
+           given={Zlatica},
+           giveni={Z\bibinitperiod}}}%
+      }
+      \strng{namehash}{6f3f1174077b88482bdb72f33fe57bad}
+      \strng{fullhash}{6f3f1174077b88482bdb72f33fe57bad}
+      \strng{bibnamehash}{6f3f1174077b88482bdb72f33fe57bad}
+      \strng{authorbibnamehash}{6f3f1174077b88482bdb72f33fe57bad}
+      \strng{authornamehash}{6f3f1174077b88482bdb72f33fe57bad}
+      \strng{authorfullhash}{6f3f1174077b88482bdb72f33fe57bad}
+      \field{sortinit}{K}
+      \field{sortinithash}{c02bf6bff1c488450c352b40f5d853ab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{DANUBE}
+      \field{number}{4}
+      \field{title}{Pitfalls of {DSGE} {Model} {Approach} in {Monetary} {Union}}
+      \field{urlday}{10}
+      \field{urlmonth}{11}
+      \field{urlyear}{2023}
+      \field{volume}{10}
+      \field{year}{2019}
+      \field{urldateera}{ce}
+      \field{pages}{369\bibrangedash 382}
+      \range{pages}{14}
+      \verb{doi}
+      \verb 10.2478/danb-2019-0019
+      \endverb
+    \endentry
+    \entry{krugman_defining_1997}{incollection}{}
+      \name{author}{1}{}{%
+        {{hash=1dc32e0388d1f3dd99440cc8a5c3333b}{%
+           family={Krugman},
+           familyi={K\bibinitperiod},
+           given={Paul},
+           giveni={P\bibinitperiod}}}%
+      }
+      \strng{namehash}{1dc32e0388d1f3dd99440cc8a5c3333b}
+      \strng{fullhash}{1dc32e0388d1f3dd99440cc8a5c3333b}
+      \strng{bibnamehash}{1dc32e0388d1f3dd99440cc8a5c3333b}
+      \strng{authorbibnamehash}{1dc32e0388d1f3dd99440cc8a5c3333b}
+      \strng{authornamehash}{1dc32e0388d1f3dd99440cc8a5c3333b}
+      \strng{authorfullhash}{1dc32e0388d1f3dd99440cc8a5c3333b}
+      \field{sortinit}{K}
+      \field{sortinithash}{c02bf6bff1c488450c352b40f5d853ab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{The age of diminished expectations: {U}.{S}. economic policy in the 1990s}
+      \field{title}{Defining and {Measuring} {Productivity}}
+      \field{year}{1997}
     \endentry
     \entry{mora_fdi_2019}{article}{}
       \name{author}{2}{}{%
@@ -624,6 +713,39 @@
       \field{title}{Development of a Regional {DSGE} Model in Japan: Empirical Evidence of Economic Stagnation in the Kansai Economy}
       \field{year}{2015}
       \field{dateera}{ce}
+    \endentry
+    \entry{pereira_rbc_2021}{article}{}
+      \name{author}{1}{}{%
+        {{hash=168bcb08ba9f84bd2c9514e76ca72b40}{%
+           family={Pereira},
+           familyi={P\bibinitperiod},
+           given={Rodrigo\bibnamedelima M.},
+           giveni={R\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+      }
+      \strng{namehash}{168bcb08ba9f84bd2c9514e76ca72b40}
+      \strng{fullhash}{168bcb08ba9f84bd2c9514e76ca72b40}
+      \strng{bibnamehash}{168bcb08ba9f84bd2c9514e76ca72b40}
+      \strng{authorbibnamehash}{168bcb08ba9f84bd2c9514e76ca72b40}
+      \strng{authornamehash}{168bcb08ba9f84bd2c9514e76ca72b40}
+      \strng{authorfullhash}{168bcb08ba9f84bd2c9514e76ca72b40}
+      \field{sortinit}{P}
+      \field{sortinithash}{ff3bcf24f47321b42cb156c2cc8a8422}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Revista Brasileira de Economia}
+      \field{number}{4}
+      \field{title}{An {RBC} model of the {Brazilian} economy with stylized fiscal shocks}
+      \field{urlday}{15}
+      \field{urlmonth}{10}
+      \field{urlyear}{2023}
+      \field{volume}{75}
+      \field{year}{2021}
+      \field{urldateera}{ce}
+      \verb{doi}
+      \verb 10.5935/0034-7140.20210024
+      \endverb
     \endentry
     \entry{pereira_desmatamento_2013}{article}{}
       \name{author}{2}{}{%

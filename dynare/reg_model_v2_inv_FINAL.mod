@@ -94,7 +94,7 @@ L2ss
 % steady state parameters used as local variables:
 thetaC1 % weight of consumption on production of region 1
 thetaC2 % weight of consumption on production of region 2
-thetapi % weight of region 1 in total price level
+thetapi % weight of region 1 in total inflation
 thetaY  % weight of region 1 in total production
 thetaP  % P1ss and P2ss proportion
 thetaZ  % ZA1ss and ZA2ss proportion
@@ -104,11 +104,11 @@ r       % real interest rate in steady state
 % EXOGENOUS VARIABLES                                %
 % -------------------------------------------------- %
 varexo
-e_A1     ${\varepsilon_{A1}}$ (long_name='productivity shock 1')
-e_A2     ${\varepsilon_{A2}}$ (long_name='productivity shock 2')
-e_M      ${\varepsilon_{M}}$  (long_name='monetary shock')
-sunspot1 ${sunspot_{1}}$ (long_name='error of expected gross inflation rate in region 1')
-sunspot2 ${sunspot_{2}}$ (long_name='error of expected gross inflation rate in region 2')
+e_A1      ${\varepsilon_{A1}}$ (long_name='productivity shock 1')
+e_A2      ${\varepsilon_{A2}}$ (long_name='productivity shock 2')
+e_M       ${\varepsilon_{M}}$  (long_name='monetary shock')
+sunspot1  ${sunspot_{1}}$ (long_name='error of expected gross inflation rate in region 1')
+sunspot2  ${sunspot_{2}}$ (long_name='error of expected gross inflation rate in region 2')
 sunspotK1 ${sunspot_{K1}}$ (long_name='error of expected capital level in region 1')
 sunspotK2 ${sunspot_{K2}}$ (long_name='error of expected capital level in region 2')
 ;
@@ -144,12 +144,12 @@ sigmaM  ${\sigma_M}$    (long_name='Standard Error of monetary shock')
 % parameters values                                  %
 % -------------------------------------------------- % 
 alpha1  = 0.4   ; % capital weight on production of region 1
-alpha2  = 0.35  ; % capital weight on production of region 2
+alpha2  = 0.3   ; % capital weight on production of region 2
 betta   = 0.985 ; % intertemporal discount factor
-dellta  = 0.025 ; % capital depreciation rate
 gammaR  = 0.79  ; % interest-rate smoothing parameter
 gammapi = 2.43  ; % interest-rate sensitivity in relation to inflation
 gammaY  = 0.16  ; % interest-rate sensitivity in relation to product
+dellta  = 0.025 ; % capital depreciation rate
 thetta  = 0.8   ; % price stickiness parameter
 rhoA1   = 0.95  ; % autoregressive parameter of productivity in region 1
 rhoA2   = 0.95  ; % autoregressive parameter of productivity in region 2
@@ -176,7 +176,7 @@ model(linear);
 % Steady state variables as local varibles, for log-linear use:
 # P1ss   = 1 ;
 # ZA1ss  = 1 ;
-# P2ss   = thetaP * P1ss ;
+# P2ss   = thetaP * P1ss  ;
 # ZA2ss  = thetaZ * ZA1ss ;
 # ZMss   = 1 ;
 # piss   = 1 ;
@@ -334,10 +334,6 @@ resid;
 steady;
 check(qz_zero_threshold=1e-20);
 % -------------------------------------------------- % 
-% SENSITIVITY                                        %
-% -------------------------------------------------- % 
-% dynare_sensitivity ;
-% -------------------------------------------------- % 
 % SHOCKS                                             %
 % -------------------------------------------------- % 
 shocks; 
@@ -355,6 +351,25 @@ C11t C21t P1t
 C12t C22t P2t 
 ;
 % ZA1t ZA2t pit lambda1t lambda2t pi1t pi2t ;
+% -------------------------------------------------- % 
+% ESTIMATED PARAMETERS                               %
+% -------------------------------------------------- % 
+estimated_params ;
+alpha1, uniform_pdf,,, 0.5, 1;
+alpha2, uniform_pdf,,, 0.5, 1;
+end;
+% -------------------------------------------------- % 
+% OBSERVABLE VARIABLES                               %
+% -------------------------------------------------- % 
+varobs Yt Y1t Y2t;
+% -------------------------------------------------- % 
+% SENSITIVITY ANALYSIS                               %
+% -------------------------------------------------- % 
+ dynare_sensitivity ;
+% -------------------------------------------------- % 
+% IDENTIFICATION ANALYSIS                            %
+% -------------------------------------------------- % 
+% identification ;
 % -------------------------------------------------- % 
 % LATEX OUTPUT                                       %
 % -------------------------------------------------- % 

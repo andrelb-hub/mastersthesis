@@ -2444,26 +2444,34 @@
   </bcf:bibdata>
   <bcf:section number="0">
     <bcf:citekey order="1" intorder="1">calvo_staggered_1983</bcf:citekey>
-    <bcf:citekey order="2" intorder="1">costa_junior_understanding_2016</bcf:citekey>
-    <bcf:citekey order="3" intorder="1">taylor_discretion_1993</bcf:citekey>
-    <bcf:citekey order="4" intorder="1">solis-garcia_ucb_2022</bcf:citekey>
-    <bcf:citekey order="5" intorder="1">uhlig_toolkit_1999</bcf:citekey>
-    <bcf:citekey order="6" intorder="1">walsh_monetary_2017</bcf:citekey>
-    <bcf:citekey order="7" intorder="1">costa_junior_understanding_2016</bcf:citekey>
-    <bcf:citekey order="8" intorder="1">solis-garcia_ucb_2022</bcf:citekey>
-    <bcf:citekey order="9" intorder="1">calvo_staggered_1983</bcf:citekey>
-    <bcf:citekey order="10" intorder="1">taylor_discretion_1993</bcf:citekey>
-    <bcf:citekey order="11" intorder="1">costa_junior_understanding_2016</bcf:citekey>
-    <bcf:citekey order="12" intorder="1">solis-garcia_ucb_2022</bcf:citekey>
-    <bcf:citekey order="13" intorder="1">uhlig_toolkit_1999</bcf:citekey>
-    <bcf:citekey order="14" intorder="1">farmer_solving_2015</bcf:citekey>
-    <bcf:citekeycount count="0">calvo_staggered_1983</bcf:citekeycount>
-    <bcf:citekeycount count="0">costa_junior_understanding_2016</bcf:citekeycount>
-    <bcf:citekeycount count="0">taylor_discretion_1993</bcf:citekeycount>
-    <bcf:citekeycount count="0">solis-garcia_ucb_2022</bcf:citekeycount>
-    <bcf:citekeycount count="0">uhlig_toolkit_1999</bcf:citekeycount>
-    <bcf:citekeycount count="0">walsh_monetary_2017</bcf:citekeycount>
-    <bcf:citekeycount count="0">farmer_solving_2015</bcf:citekeycount>
+    <bcf:citekey order="2" intorder="1">calvo_staggered_1983</bcf:citekey>
+    <bcf:citekey order="3" intorder="1">costa_junior_understanding_2016</bcf:citekey>
+    <bcf:citekey order="4" intorder="1">costa_junior_understanding_2016</bcf:citekey>
+    <bcf:citekey order="5" intorder="1">taylor_discretion_1993</bcf:citekey>
+    <bcf:citekey order="6" intorder="1">taylor_discretion_1993</bcf:citekey>
+    <bcf:citekey order="7" intorder="1">solis-garcia_ucb_2022</bcf:citekey>
+    <bcf:citekey order="8" intorder="1">uhlig_toolkit_1999</bcf:citekey>
+    <bcf:citekey order="9" intorder="1">uhlig_toolkit_1999</bcf:citekey>
+    <bcf:citekey order="10" intorder="1">walsh_monetary_2017</bcf:citekey>
+    <bcf:citekey order="11" intorder="1">walsh_monetary_2017</bcf:citekey>
+    <bcf:citekey order="12" intorder="1">costa_junior_understanding_2016</bcf:citekey>
+    <bcf:citekey order="13" intorder="1">costa_junior_understanding_2016</bcf:citekey>
+    <bcf:citekey order="14" intorder="1">solis-garcia_ucb_2022</bcf:citekey>
+    <bcf:citekey order="15" intorder="1">solis-garcia_ucb_2022</bcf:citekey>
+    <bcf:citekey order="16" intorder="1">calvo_staggered_1983</bcf:citekey>
+    <bcf:citekey order="17" intorder="1">taylor_discretion_1993</bcf:citekey>
+    <bcf:citekey order="18" intorder="1">costa_junior_understanding_2016</bcf:citekey>
+    <bcf:citekey order="19" intorder="1">solis-garcia_ucb_2022</bcf:citekey>
+    <bcf:citekey order="20" intorder="1">uhlig_toolkit_1999</bcf:citekey>
+    <bcf:citekey order="21" intorder="1">farmer_solving_2015</bcf:citekey>
+    <bcf:citekey order="22" intorder="1">farmer_solving_2015</bcf:citekey>
+    <bcf:citekeycount count="2">calvo_staggered_1983</bcf:citekeycount>
+    <bcf:citekeycount count="3">costa_junior_understanding_2016</bcf:citekeycount>
+    <bcf:citekeycount count="2">taylor_discretion_1993</bcf:citekeycount>
+    <bcf:citekeycount count="3">solis-garcia_ucb_2022</bcf:citekeycount>
+    <bcf:citekeycount count="2">uhlig_toolkit_1999</bcf:citekeycount>
+    <bcf:citekeycount count="1">walsh_monetary_2017</bcf:citekeycount>
+    <bcf:citekeycount count="1">farmer_solving_2015</bcf:citekeycount>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="nyt">
