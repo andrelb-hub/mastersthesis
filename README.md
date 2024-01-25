@@ -1,17 +1,18 @@
 # Analysis of the Monetary Policy Impact on Regional Gross Product: A Regional DSGE Model
 
-Master's Thesis presented to PPGDE-UFPR in 2023 in order to receive the Master in Science title.
+Master's Thesis presented to PPGDE-UFPR in 2023 to receive the Master in Sciences title.
 
-The objective is to analyse the impact of monetary policy on the regional gross domestic product using a NK DSGE model featuring:
-- four agents:
-  - a representative household;
-  - a final-goods firm;
-  - a continuum of intermediate-goods firms;
-  - a monetary authority.
-- and also:
-  - price stickiness;
-  - intertemporal price optimization with nonimal tax rate;
-  - production function with investment;
-  - monetary policy;
-  - productivity shock;
-  - monetary shock.
+The objective is to analyze the impact of monetary policy on regional gross product using an NK DSGE model that includes:
+- Two regions: the main region and the rest of the country.
+- Four agents:
+  - A representative household.
+  - A final-goods firm.
+  - A continuum of intermediate-goods firms.
+  - A monetary authority.
+- Additional features:
+  - Price stickiness.
+  - Intertemporal price optimization with a nominal tax rate.
+  - Production function with investment.
+  - Monetary policy.
+  - Productivity shock.
+  - Monetary shock.
