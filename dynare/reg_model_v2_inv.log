@@ -210,5 +210,5 @@ For 3.9% of the prior support dynare could not find a solution.
 All parameter values in the specified ranges are not acceptable!
 
 Sensitivity computations stopped: no parameter set provided a unique solution
-Total computing time : 0h00m09s
+Total computing time : 0h00m16s
 Note: 4 warning(s) encountered in the preprocessor
