@@ -35,6 +35,6 @@
 \contentsline {section}{\numberline {A}Appendix}{79}{appendix.A}%
 \contentsline {subsection}{\numberline {A.1}Table of the Literature Review}{80}{subsection.A.1}%
 \contentsline {subsection}{\numberline {A.2}Definitions and Lemmas}{81}{subsection.A.2}%
-\contentsline {subsection}{\numberline {A.3}Dynare mod file}{85}{subsection.A.3}%
-\contentsline {subsection}{\numberline {A.4}ToDo List}{92}{subsection.A.4}%
-\contentsline {section}{Todo list}{92}{subsection.A.4}%
+\contentsline {subsection}{\numberline {A.3}Dynare Mod File}{85}{subsection.A.3}%
+\contentsline {subsection}{\numberline {A.4}ToDo List}{86}{subsection.A.4}%
+\contentsline {section}{Todo list}{86}{subsection.A.4}%
