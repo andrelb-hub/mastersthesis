@@ -450,7 +450,7 @@ M_.Sigma_e(3, 3) = (M_.params(20))^2;
 options_.irf = 100;
 options_.order = 1;
 options_.qz_zero_threshold = 1e-20;
-var_list_ = {'ZMt';'Y1t';'Y2t';'Rt';'K1t';'K2t';'L1t';'W1t';'W2t';'Yt';'C1t';'C2t';'C11t';'C21t';'P1t';'C12t';'C22t';'P2t'};
+var_list_ = {'ZMt';'Rt';'I1t';'I2t';'K1t';'K2t';'lambda1t';'lambda2t';'Yt';'Y1t';'Y2t';'C1t';'C2t';'C11t';'C21t';'C12t';'C22t';'pi1t';'L1t';'L2t';'W1t';'W2t';'P1t';'P2t';'Q1t';'Q2t';'pi2t';'pit';'ZA1t';'ZA2t'};
 [info, oo_, options_, M_] = stoch_simul(M_, options_, oo_, var_list_);
 estim_params_.var_exo = zeros(0, 10);
 estim_params_.var_endo = zeros(0, 10);
@@ -490,7 +490,6 @@ end
 if exist('oo_recursive_', 'var') == 1
   save([M_.dname filesep 'Output' filesep 'reg_model_v2_inv_results.mat'], 'oo_recursive_', '-append');
 end
-disp('Note: 4 warning(s) encountered in the preprocessor')
 if ~isempty(lastwarn)
   disp('Note: warning(s) encountered in MATLAB/Octave code')
 end

@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999995 (MiKTeX 23.12) (preloaded format=xelatex 2024.1.18)  26 JAN 2024 09:39
+This is XeTeX, Version 3.141592653-2.6-0.999995 (MiKTeX 23.12) (preloaded format=xelatex 2024.1.18)  1 FEB 2024 22:16
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2161,13 +2161,13 @@ Excluding 'comment' comment. [81]
 LaTeX Warning: Reference `eq_v0:ss-gross-inflation-rate' on page 82 undefined o
 n input line 136.
 
-[82] [83] Excluding 'comment' comment. [84]) (post/appendix_dynare.tex [85])
-Excluding 'comment' comment. (post/appendix_todo.tex [86] (thesis.tdo)
+[82] [83] Excluding 'comment' comment.) (post/appendix_dynare.tex [84])
+Excluding 'comment' comment. (post/appendix_todo.tex [85] (thesis.tdo)
 \tf@tdo=\write10
 \openout10 = `thesis.tdo'.
 
 )
-[87] (thesis.aux)
+[86] (thesis.aux)
  ***********
 LaTeX2e <2023-11-01>
 L3 programming layer <2020/03/25>
@@ -2180,22 +2180,17 @@ LaTeX Font Warning: Size substitutions with differences
 
 LaTeX Warning: There were undefined references.
 
-
-Package biblatex Warning: Please (re)run Biber on the file:
-(biblatex)                thesis
-(biblatex)                and rerun LaTeX afterwards.
-
 Package logreq Info: Writing requests to 'thesis.run.xml'.
 \openout1 = `thesis.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 48218 strings out of 409617
- 982162 string characters out of 5774013
- 2006862 words of memory out of 5000000
- 69452 multiletter control sequences out of 15000+600000
+ 48220 strings out of 409617
+ 982220 string characters out of 5774013
+ 2006859 words of memory out of 5000000
+ 69454 multiletter control sequences out of 15000+600000
  652853 words of font info for 274 fonts, out of 8000000 for 9000
  1350 hyphenation exceptions out of 8191
  123i,26n,131p,1228b,5719s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on thesis.pdf (87 pages).
+Output written on thesis.pdf (86 pages).

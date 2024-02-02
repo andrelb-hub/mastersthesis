@@ -31,5 +31,9 @@ function [ys_, params, info] = steadystate(ys_, exo_, params)
     ys_(30)=0;
     ys_(27)=0;
     ys_(28)=0;
+    ys_(31)=0;
+    ys_(32)=0;
+    ys_(33)=0;
+    ys_(34)=0;
     % Auxiliary equations
 end
