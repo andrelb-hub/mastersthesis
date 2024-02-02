@@ -446,11 +446,11 @@ oo_.dr.eigval = check(M_,options_,oo_);
 % SHOCKS instructions
 %
 M_.exo_det_length = 0;
-M_.Sigma_e(3, 3) = (M_.params(20))^2;
+M_.Sigma_e(1, 1) = (M_.params(18))^2;
 options_.irf = 100;
 options_.order = 1;
 options_.qz_zero_threshold = 1e-20;
-var_list_ = {'ZMt';'Rt';'I1t';'I2t';'K1t';'K2t';'lambda1t';'lambda2t';'Yt';'Y1t';'Y2t';'C1t';'C2t';'C11t';'C21t';'C12t';'C22t';'pi1t';'L1t';'L2t';'W1t';'W2t';'P1t';'P2t';'Q1t';'Q2t';'pi2t';'pit';'ZA1t';'ZA2t'};
+var_list_ = {'ZA1t';'pit';'Rt';'I1t';'I2t';'K1t';'K2t';'lambda1t';'lambda2t';'Yt';'Y1t';'Y2t';'C1t';'C2t';'C11t';'C21t';'C12t';'C22t';'L1t';'L2t';'W1t';'W2t';'P1t';'P2t';'Q1t';'Q2t';'pi1t';'pi2t';'ZMt';'ZA2t'};
 [info, oo_, options_, M_] = stoch_simul(M_, options_, oo_, var_list_);
 estim_params_.var_exo = zeros(0, 10);
 estim_params_.var_endo = zeros(0, 10);
@@ -459,8 +459,6 @@ estim_params_.corrn = zeros(0, 11);
 estim_params_.param_vals = zeros(0, 10);
 estim_params_.param_vals = [estim_params_.param_vals; 1, NaN, (-Inf), Inf, 5, NaN, NaN, 0.5, 1, NaN ];
 estim_params_.param_vals = [estim_params_.param_vals; 2, NaN, (-Inf), Inf, 5, NaN, NaN, 0.5, 1, NaN ];
-options_gsa = struct();
-dynare_sensitivity(options_gsa);
 write_latex_definitions;
 write_latex_parameter_table;
 collect_latex_files;

@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999995 (MiKTeX 23.12) (preloaded format=xelatex 2024.1.18)  1 FEB 2024 22:16
+This is XeTeX, Version 3.141592653-2.6-0.999995 (MiKTeX 23.12) (preloaded format=xelatex 2024.1.18)  2 FEB 2024 16:43
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2101,73 +2101,150 @@ Overfull \hbox (3.69965pt too wide) detected at line 166
 > Step: calculate cell and line sizes.
 > Step: build the whole table.
 ) (sections/results.tex [69]) (sections/IRF.tex [70]
-File: ../images/../images/shock_ZAt/shock_ZAt_ZAt.png Graphic file (type bmp)
-<../images/../images/shock_ZAt/shock_ZAt_ZAt.png>
-File: ../images/../images/shock_ZAt/shock_ZAt_Kt.png Graphic file (type bmp)
-<../images/../images/shock_ZAt/shock_ZAt_Kt.png>
-File: ../images/../images/shock_ZAt/shock_ZAt_It.png Graphic file (type bmp)
-<../images/../images/shock_ZAt/shock_ZAt_It.png>
-File: ../images/../images/shock_ZAt/shock_ZAt_Ct.png Graphic file (type bmp)
-<../images/../images/shock_ZAt/shock_ZAt_Ct.png>
-File: ../images/../images/shock_ZAt/shock_ZAt_LAMBDAt.png Graphic file (type bm
-p)
-<../images/../images/shock_ZAt/shock_ZAt_LAMBDAt.png>
-File: ../images/../images/shock_ZAt/shock_ZAt_Lt.png Graphic file (type bmp)
-<../images/../images/shock_ZAt/shock_ZAt_Lt.png>
-File: ../images/../images/shock_ZAt/shock_ZAt_PIt.png Graphic file (type bmp)
-<../images/../images/shock_ZAt/shock_ZAt_PIt.png>
-File: ../images/../images/shock_ZAt/shock_ZAt_Pt.png Graphic file (type bmp)
-<../images/../images/shock_ZAt/shock_ZAt_Pt.png>
-File: ../images/../images/shock_ZAt/shock_ZAt_Rt.png Graphic file (type bmp)
-<../images/../images/shock_ZAt/shock_ZAt_Rt.png>
-File: ../images/../images/shock_ZAt/shock_ZAt_Wt.png Graphic file (type bmp)
-<../images/../images/shock_ZAt/shock_ZAt_Wt.png>
-File: ../images/../images/shock_ZAt/shock_ZAt_Yt.png Graphic file (type bmp)
-<../images/../images/shock_ZAt/shock_ZAt_Yt.png>
-File: ../images/../images/shock_ZAt/blank.png Graphic file (type bmp)
-<../images/../images/shock_ZAt/blank.png>
- [71]
 File: ../images/../images/shock_ZMt/shock_ZMt_ZMt.png Graphic file (type bmp)
 <../images/../images/shock_ZMt/shock_ZMt_ZMt.png>
-File: ../images/../images/shock_ZMt/shock_ZMt_Kt.png Graphic file (type bmp)
-<../images/../images/shock_ZMt/shock_ZMt_Kt.png>
-File: ../images/../images/shock_ZMt/shock_ZMt_It.png Graphic file (type bmp)
-<../images/../images/shock_ZMt/shock_ZMt_It.png>
-File: ../images/../images/shock_ZMt/shock_ZMt_Ct.png Graphic file (type bmp)
-<../images/../images/shock_ZMt/shock_ZMt_Ct.png>
-File: ../images/../images/shock_ZMt/shock_ZMt_LAMBDAt.png Graphic file (type bm
-p)
-<../images/../images/shock_ZMt/shock_ZMt_LAMBDAt.png>
-File: ../images/../images/shock_ZMt/shock_ZMt_Lt.png Graphic file (type bmp)
-<../images/../images/shock_ZMt/shock_ZMt_Lt.png>
-File: ../images/../images/shock_ZMt/shock_ZMt_PIt.png Graphic file (type bmp)
-<../images/../images/shock_ZMt/shock_ZMt_PIt.png>
-File: ../images/../images/shock_ZMt/shock_ZMt_Pt.png Graphic file (type bmp)
-<../images/../images/shock_ZMt/shock_ZMt_Pt.png>
 File: ../images/../images/shock_ZMt/shock_ZMt_Rt.png Graphic file (type bmp)
 <../images/../images/shock_ZMt/shock_ZMt_Rt.png>
-File: ../images/../images/shock_ZMt/shock_ZMt_Wt.png Graphic file (type bmp)
-<../images/../images/shock_ZMt/shock_ZMt_Wt.png>
+File: ../images/../images/shock_ZMt/shock_ZMt_I1t.png Graphic file (type bmp)
+<../images/../images/shock_ZMt/shock_ZMt_I1t.png>
+File: ../images/../images/shock_ZMt/shock_ZMt_I2t.png Graphic file (type bmp)
+<../images/../images/shock_ZMt/shock_ZMt_I2t.png>
+File: ../images/../images/shock_ZMt/shock_ZMt_K1t.png Graphic file (type bmp)
+<../images/../images/shock_ZMt/shock_ZMt_K1t.png>
+File: ../images/../images/shock_ZMt/shock_ZMt_K2t.png Graphic file (type bmp)
+<../images/../images/shock_ZMt/shock_ZMt_K2t.png>
+File: ../images/../images/shock_ZMt/shock_ZMt_lambda1t.png Graphic file (type b
+mp)
+<../images/../images/shock_ZMt/shock_ZMt_lambda1t.png>
+File: ../images/../images/shock_ZMt/shock_ZMt_lambda2t.png Graphic file (type b
+mp)
+<../images/../images/shock_ZMt/shock_ZMt_lambda2t.png>
 File: ../images/../images/shock_ZMt/shock_ZMt_Yt.png Graphic file (type bmp)
 <../images/../images/shock_ZMt/shock_ZMt_Yt.png>
+File: ../images/../images/shock_ZMt/shock_ZMt_Y1t.png Graphic file (type bmp)
+<../images/../images/shock_ZMt/shock_ZMt_Y1t.png>
+File: ../images/../images/shock_ZMt/shock_ZMt_Y2t.png Graphic file (type bmp)
+<../images/../images/shock_ZMt/shock_ZMt_Y2t.png>
+File: ../images/../images/shock_ZMt/shock_ZMt_C1t.png Graphic file (type bmp)
+<../images/../images/shock_ZMt/shock_ZMt_C1t.png>
+File: ../images/../images/shock_ZMt/shock_ZMt_C2t.png Graphic file (type bmp)
+<../images/../images/shock_ZMt/shock_ZMt_C2t.png>
+File: ../images/../images/shock_ZMt/shock_ZMt_C11t.png Graphic file (type bmp)
+<../images/../images/shock_ZMt/shock_ZMt_C11t.png>
+File: ../images/../images/shock_ZMt/shock_ZMt_C21t.png Graphic file (type bmp)
+<../images/../images/shock_ZMt/shock_ZMt_C21t.png>
+ [71]
+File: ../images/../images/shock_ZMt/shock_ZMt_C12t.png Graphic file (type bmp)
+<../images/../images/shock_ZMt/shock_ZMt_C12t.png>
+File: ../images/../images/shock_ZMt/shock_ZMt_C22t.png Graphic file (type bmp)
+<../images/../images/shock_ZMt/shock_ZMt_C22t.png>
+File: ../images/../images/shock_ZMt/shock_ZMt_L1t.png Graphic file (type bmp)
+<../images/../images/shock_ZMt/shock_ZMt_L1t.png>
+File: ../images/../images/shock_ZMt/shock_ZMt_L2t.png Graphic file (type bmp)
+<../images/../images/shock_ZMt/shock_ZMt_L2t.png>
+File: ../images/../images/shock_ZMt/shock_ZMt_W1t.png Graphic file (type bmp)
+<../images/../images/shock_ZMt/shock_ZMt_W1t.png>
+File: ../images/../images/shock_ZMt/shock_ZMt_W2t.png Graphic file (type bmp)
+<../images/../images/shock_ZMt/shock_ZMt_W2t.png>
+File: ../images/../images/shock_ZMt/shock_ZMt_P1t.png Graphic file (type bmp)
+<../images/../images/shock_ZMt/shock_ZMt_P1t.png>
+File: ../images/../images/shock_ZMt/shock_ZMt_P2t.png Graphic file (type bmp)
+<../images/../images/shock_ZMt/shock_ZMt_P2t.png>
+File: ../images/../images/shock_ZMt/shock_ZMt_Q1t.png Graphic file (type bmp)
+<../images/../images/shock_ZMt/shock_ZMt_Q1t.png>
+File: ../images/../images/shock_ZMt/shock_ZMt_Q2t.png Graphic file (type bmp)
+<../images/../images/shock_ZMt/shock_ZMt_Q2t.png>
+File: ../images/../images/shock_ZMt/shock_ZMt_pi1t.png Graphic file (type bmp)
+<../images/../images/shock_ZMt/shock_ZMt_pi1t.png>
+File: ../images/../images/shock_ZMt/shock_ZMt_pi2t.png Graphic file (type bmp)
+<../images/../images/shock_ZMt/shock_ZMt_pi2t.png>
+File: ../images/../images/shock_ZMt/shock_ZMt_pit.png Graphic file (type bmp)
+<../images/../images/shock_ZMt/shock_ZMt_pit.png>
 File: ../images/../images/shock_ZMt/blank.png Graphic file (type bmp)
 <../images/../images/shock_ZMt/blank.png>
+File: ../images/../images/shock_ZMt/blank.png Graphic file (type bmp)
+<../images/../images/shock_ZMt/blank.png>
+ [72]
+File: ../images/../images/shock_ZAt///shock_ZA1t_ZA1t.png Graphic file (type bm
+p)
+<../images/../images/shock_ZAt///shock_ZA1t_ZA1t.png>
+File: ../images/../images/shock_ZAt/shock_ZA1t_Rt.png Graphic file (type bmp)
+<../images/../images/shock_ZAt/shock_ZA1t_Rt.png>
+File: ../images/../images/shock_ZAt/shock_ZA1t_I1t.png Graphic file (type bmp)
+<../images/../images/shock_ZAt/shock_ZA1t_I1t.png>
+File: ../images/../images/shock_ZAt/shock_ZA1t_I2t.png Graphic file (type bmp)
+<../images/../images/shock_ZAt/shock_ZA1t_I2t.png>
+File: ../images/../images/shock_ZAt/shock_ZA1t_K1t.png Graphic file (type bmp)
+<../images/../images/shock_ZAt/shock_ZA1t_K1t.png>
+File: ../images/../images/shock_ZAt/shock_ZA1t_K2t.png Graphic file (type bmp)
+<../images/../images/shock_ZAt/shock_ZA1t_K2t.png>
+File: ../images/../images/shock_ZAt/shock_ZA1t_lambda1t.png Graphic file (type 
+bmp)
+<../images/../images/shock_ZAt/shock_ZA1t_lambda1t.png>
+File: ../images/../images/shock_ZAt/shock_ZA1t_lambda2t.png Graphic file (type 
+bmp)
+<../images/../images/shock_ZAt/shock_ZA1t_lambda2t.png>
+File: ../images/../images/shock_ZAt/shock_ZA1t_Yt.png Graphic file (type bmp)
+<../images/../images/shock_ZAt/shock_ZA1t_Yt.png>
+File: ../images/../images/shock_ZAt/shock_ZA1t_Y1t.png Graphic file (type bmp)
+<../images/../images/shock_ZAt/shock_ZA1t_Y1t.png>
+File: ../images/../images/shock_ZAt/shock_ZA1t_Y2t.png Graphic file (type bmp)
+<../images/../images/shock_ZAt/shock_ZA1t_Y2t.png>
+File: ../images/../images/shock_ZAt/shock_ZA1t_C1t.png Graphic file (type bmp)
+<../images/../images/shock_ZAt/shock_ZA1t_C1t.png>
+File: ../images/../images/shock_ZAt/shock_ZA1t_C2t.png Graphic file (type bmp)
+<../images/../images/shock_ZAt/shock_ZA1t_C2t.png>
+File: ../images/../images/shock_ZAt/shock_ZA1t_C11t.png Graphic file (type bmp)
+
+<../images/../images/shock_ZAt/shock_ZA1t_C11t.png>
+File: ../images/../images/shock_ZAt/shock_ZA1t_C21t.png Graphic file (type bmp)
+
+<../images/../images/shock_ZAt/shock_ZA1t_C21t.png>
+ [73]
+File: ../images/../images/shock_ZAt/shock_ZA1t_C12t.png Graphic file (type bmp)
+
+<../images/../images/shock_ZAt/shock_ZA1t_C12t.png>
+File: ../images/../images/shock_ZAt/shock_ZA1t_C22t.png Graphic file (type bmp)
+
+<../images/../images/shock_ZAt/shock_ZA1t_C22t.png>
+File: ../images/../images/shock_ZAt/shock_ZA1t_L1t.png Graphic file (type bmp)
+<../images/../images/shock_ZAt/shock_ZA1t_L1t.png>
+File: ../images/../images/shock_ZAt/shock_ZA1t_L2t.png Graphic file (type bmp)
+<../images/../images/shock_ZAt/shock_ZA1t_L2t.png>
+File: ../images/../images/shock_ZAt/shock_ZA1t_W1t.png Graphic file (type bmp)
+<../images/../images/shock_ZAt/shock_ZA1t_W1t.png>
+File: ../images/../images/shock_ZAt/shock_ZA1t_W2t.png Graphic file (type bmp)
+<../images/../images/shock_ZAt/shock_ZA1t_W2t.png>
+File: ../images/../images/shock_ZAt/shock_ZA1t_P1t.png Graphic file (type bmp)
+<../images/../images/shock_ZAt/shock_ZA1t_P1t.png>
+File: ../images/../images/shock_ZAt/shock_ZA1t_P2t.png Graphic file (type bmp)
+<../images/../images/shock_ZAt/shock_ZA1t_P2t.png>
+File: ../images/../images/shock_ZAt/shock_ZA1t_Q1t.png Graphic file (type bmp)
+<../images/../images/shock_ZAt/shock_ZA1t_Q1t.png>
+File: ../images/../images/shock_ZAt/shock_ZA1t_Q2t.png Graphic file (type bmp)
+<../images/../images/shock_ZAt/shock_ZA1t_Q2t.png>
+File: ../images/../images/shock_ZAt/shock_ZA1t_pi1t.png Graphic file (type bmp)
+
+<../images/../images/shock_ZAt/shock_ZA1t_pi1t.png>
+File: ../images/../images/shock_ZAt/shock_ZA1t_pi2t.png Graphic file (type bmp)
+
+<../images/../images/shock_ZAt/shock_ZA1t_pi2t.png>
+File: ../images/../images/shock_ZAt/shock_ZA1t_pit.png Graphic file (type bmp)
+<../images/../images/shock_ZAt/shock_ZA1t_pit.png>
+File: ../images/../images/shock_ZAt/blank.png Graphic file (type bmp)
+<../images/../images/shock_ZAt/blank.png>
+File: ../images/../images/shock_ZAt/blank.png Graphic file (type bmp)
+<../images/../images/shock_ZAt/blank.png>
 )
-(sections/parametrization.tex [72]) (sections/final_remarks.tex [73])
-(post/references.tex [74] [75] [76] [77]) (post/appendix.tex [78])
-(post/appendix_literature_box.tex [79]) (post/appendix_definitions.tex [80]
+(sections/final_remarks.tex [74]) (post/references.tex [75] [76] [77] [78])
+(post/appendix.tex [79]) (post/appendix_definitions.tex [80]
 Excluding 'comment' comment. [81]
 
 LaTeX Warning: Reference `eq_v0:ss-gross-inflation-rate' on page 82 undefined o
 n input line 136.
 
 [82] [83] Excluding 'comment' comment.) (post/appendix_dynare.tex [84])
-Excluding 'comment' comment. (post/appendix_todo.tex [85] (thesis.tdo)
-\tf@tdo=\write10
-\openout10 = `thesis.tdo'.
-
-)
-[86] (thesis.aux)
+Excluding 'comment' comment. [85] (thesis.aux)
  ***********
 LaTeX2e <2023-11-01>
 L3 programming layer <2020/03/25>
@@ -2185,12 +2262,12 @@ Package logreq Info: Writing requests to 'thesis.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 48220 strings out of 409617
- 982220 string characters out of 5774013
- 2006859 words of memory out of 5000000
- 69454 multiletter control sequences out of 15000+600000
+ 48946 strings out of 409617
+ 1010180 string characters out of 5774013
+ 2010320 words of memory out of 5000000
+ 70147 multiletter control sequences out of 15000+600000
  652853 words of font info for 274 fonts, out of 8000000 for 9000
  1350 hyphenation exceptions out of 8191
  123i,26n,131p,1228b,5719s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on thesis.pdf (86 pages).
+Output written on thesis.pdf (85 pages).

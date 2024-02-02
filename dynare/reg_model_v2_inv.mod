@@ -1,6 +1,9 @@
 % command to run dynare and write
 % a new file with all the choices:
-% dynare reg_model_v2_inv savemacro=reg_model_v2_inv_FINAL.mod
+
+% dynare reg_model_v2_inv savemacro=reg_model_v2_inv_ZM.mod
+% dynare reg_model_v2_inv savemacro=reg_model_v2_inv_ZA1.mod
+% dynare reg_model_v2_inv savemacro=reg_model_v2_inv_ZA2.mod
 
 % diagnostic command:
 % model_diagnostics(M_, options_, oo_)
@@ -10,7 +13,7 @@
 % -------------------------------------------------- %
 
 % Productivity Shock region 1 ON/OFF:
-    @#define ZA1_SHOCK    = 0
+    @#define ZA1_SHOCK    = 1
 % Productivity Shock region 1 sign (+/-): 
     @#define ZA1_POSITIVE = 1
 
@@ -20,7 +23,7 @@
     @#define ZA2_POSITIVE = 1
 
 % Monetary Shock ON/OFF:
-    @#define ZM_SHOCK    = 1
+    @#define ZM_SHOCK    = 0
 % Monetary Shock sign (+/-):
     @#define ZM_POSITIVE = 1
 
@@ -463,10 +466,9 @@ end;
 
 stoch_simul(irf=100, order=1, qz_zero_threshold=1e-20) 
 
-ZMt Rt  I1t I2t K1t  K2t  lambda1t lambda2t Yt 
-Y1t Y2t C1t C2t C11t C21t C12t C22t pi1t
-L1t L2t W1t W2t P1t  P2t  Q1t  Q2t  pi2t 
-pit ZA1t ZA2t
+ZA1t pit Rt  I1t I2t  K1t  K2t  lambda1t lambda2t Yt 
+Y1t  Y2t C1t C2t C11t C21t C12t C22t L1t L2t
+W1t  W2t P1t P2t Q1t  Q2t  pi1t pi2t ZMt  ZA2t
 
 ;
 
@@ -491,7 +493,7 @@ varobs Yt Y1t Y2t;
 % SENSITIVITY ANALYSIS                               %
 % -------------------------------------------------- % 
 
- dynare_sensitivity ;
+% dynare_sensitivity ;
 
 % -------------------------------------------------- % 
 % IDENTIFICATION ANALYSIS                            %

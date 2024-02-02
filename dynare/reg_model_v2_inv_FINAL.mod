@@ -347,10 +347,10 @@ shocks;
      stderr sigmaM;
 end;
 stoch_simul(irf=100, order=1, qz_zero_threshold=1e-20) 
-ZMt Rt  I1t I2t K1t  K2t  lambda1t lambda2t Yt 
+ZMt pit Rt  I1t I2t K1t  K2t  lambda1t lambda2t Yt 
 Y1t Y2t C1t C2t C11t C21t C12t C22t pi1t
 L1t L2t W1t W2t P1t  P2t  Q1t  Q2t  pi2t 
-pit ZA1t ZA2t
+ ZA1t ZA2t
 ;
 % ZA1t ZA2t pit lambda1t lambda2t pi1t pi2t ;
 % -------------------------------------------------- % 
