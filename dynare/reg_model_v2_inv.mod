@@ -210,8 +210,8 @@ model(linear);
 
 % Steady state parameters:
 
-# thetaP = 1   ;
-# thetaZ = 0.7 ;
+# thetaP = 1      ;
+# thetaZ = 0.7151 ;
 
 % Steady state variables as local varibles, for log-linear use:
 

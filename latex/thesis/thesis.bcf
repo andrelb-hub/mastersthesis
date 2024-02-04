@@ -2546,19 +2546,19 @@
     <bcf:citekey order="101" intorder="1">pereira_rbc_2021</bcf:citekey>
     <bcf:citekey order="102" intorder="1">pereira_rbc_2021</bcf:citekey>
     <bcf:citekey order="103" intorder="1">krugman_defining_1997</bcf:citekey>
-    <bcf:citekey order="104" intorder="1">haddad_matriz_2017</bcf:citekey>
+    <bcf:citekey order="104" intorder="1">krugman_defining_1997</bcf:citekey>
     <bcf:citekey order="105" intorder="1">haddad_matriz_2017</bcf:citekey>
-    <bcf:citekey order="106" intorder="1">ibge_produto_2024</bcf:citekey>
+    <bcf:citekey order="106" intorder="1">haddad_matriz_2017</bcf:citekey>
     <bcf:citekey order="107" intorder="1">ibge_produto_2024</bcf:citekey>
-    <bcf:citekey order="108" intorder="1">costa_junior_understanding_2016</bcf:citekey>
+    <bcf:citekey order="108" intorder="1">ibge_produto_2024</bcf:citekey>
     <bcf:citekey order="109" intorder="1">costa_junior_understanding_2016</bcf:citekey>
-    <bcf:citekey order="110" intorder="1">solis-garcia_ucb_2022</bcf:citekey>
-    <bcf:citekey order="111" intorder="1">inada_two-sector_1963</bcf:citekey>
-    <bcf:citekey order="112" intorder="1">solis-garcia_ucb_2022</bcf:citekey>
+    <bcf:citekey order="110" intorder="1">costa_junior_understanding_2016</bcf:citekey>
+    <bcf:citekey order="111" intorder="1">solis-garcia_ucb_2022</bcf:citekey>
+    <bcf:citekey order="112" intorder="1">inada_two-sector_1963</bcf:citekey>
     <bcf:citekey order="113" intorder="1">solis-garcia_ucb_2022</bcf:citekey>
-    <bcf:citekey order="114" intorder="1">simon_mathematics_1994</bcf:citekey>
+    <bcf:citekey order="114" intorder="1">solis-garcia_ucb_2022</bcf:citekey>
     <bcf:citekey order="115" intorder="1">simon_mathematics_1994</bcf:citekey>
-    <bcf:citekey order="116" intorder="1">solis-garcia_ucb_2022</bcf:citekey>
+    <bcf:citekey order="116" intorder="1">simon_mathematics_1994</bcf:citekey>
     <bcf:citekey order="117" intorder="1">solis-garcia_ucb_2022</bcf:citekey>
     <bcf:citekey order="118" intorder="1">solis-garcia_ucb_2022</bcf:citekey>
     <bcf:citekey order="119" intorder="1">solis-garcia_ucb_2022</bcf:citekey>
@@ -2568,11 +2568,12 @@
     <bcf:citekey order="123" intorder="1">solis-garcia_ucb_2022</bcf:citekey>
     <bcf:citekey order="124" intorder="1">solis-garcia_ucb_2022</bcf:citekey>
     <bcf:citekey order="125" intorder="1">solis-garcia_ucb_2022</bcf:citekey>
-    <bcf:citekey order="126" intorder="1">gali_monetary_2015</bcf:citekey>
-    <bcf:citekey order="127" intorder="1">solis-garcia_ucb_2022</bcf:citekey>
+    <bcf:citekey order="126" intorder="1">solis-garcia_ucb_2022</bcf:citekey>
+    <bcf:citekey order="127" intorder="1">gali_monetary_2015</bcf:citekey>
     <bcf:citekey order="128" intorder="1">solis-garcia_ucb_2022</bcf:citekey>
     <bcf:citekey order="129" intorder="1">solis-garcia_ucb_2022</bcf:citekey>
     <bcf:citekey order="130" intorder="1">solis-garcia_ucb_2022</bcf:citekey>
+    <bcf:citekey order="131" intorder="1">solis-garcia_ucb_2022</bcf:citekey>
     <bcf:citekeycount count="5">gali_monetary_2015</bcf:citekeycount>
     <bcf:citekeycount count="1">bertanha_efeitos_2008</bcf:citekeycount>
     <bcf:citekeycount count="3">rickman_modern_2010</bcf:citekeycount>

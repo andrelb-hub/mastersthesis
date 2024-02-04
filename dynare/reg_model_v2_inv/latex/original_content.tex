@@ -2,7 +2,7 @@
 thetaP = 1
 \end{dmath*}
 \begin{dmath*}
-thetaZ = 0.7
+thetaZ = 0.7151
 \end{dmath*}
 \begin{dmath*}
 P1ss = 1
@@ -14,7 +14,7 @@ ZA1ss = 1
 P2ss = 1
 \end{dmath*}
 \begin{dmath*}
-ZA2ss = 0.7
+ZA2ss = 0.7151
 \end{dmath*}
 \begin{dmath*}
 ZMss = 1
@@ -62,13 +62,13 @@ b1ss = \frac{{{\delta}}}{{ZA1ss}}\, \left(\frac{{{\alpha_{1}}}\, {W1ss}}{\left(1
 b2ss = \frac{{{\delta}}}{{ZA2ss}}\, \left(\frac{{{\alpha_{2}}}\, {W2ss}}{{Rss}\, \left(1-{{\alpha_{2}}}\right)}\right)^{1-{{\alpha_{2}}}}
 \end{dmath*}
 \begin{dmath*}
-Y1ss = \left(\frac{{a1ss}}{1-{b1ss}}\right)^{\frac{{{\sigma}}}{{{\varphi}}+{{\sigma}}}}
+Y1ss = 0.318
 \end{dmath*}
 \begin{dmath*}
-Y2ss = \left(\frac{{a2ss}}{1-{b2ss}}\right)^{\frac{{{\sigma}}}{{{\varphi}}+{{\sigma}}}}
+Y2ss = 0.6819999999999999
 \end{dmath*}
 \begin{dmath*}
-Yss = {Y1ss}+{Y2ss}
+Yss = 1
 \end{dmath*}
 \begin{dmath*}
 C1ss = {a1ss}\, {Y1ss}^{\frac{\left(-{{\varphi}}\right)}{{{\sigma}}}}
@@ -77,10 +77,10 @@ C1ss = {a1ss}\, {Y1ss}^{\frac{\left(-{{\varphi}}\right)}{{{\sigma}}}}
 C2ss = {a2ss}\, {Y2ss}^{\frac{\left(-{{\varphi}}\right)}{{{\sigma}}}}
 \end{dmath*}
 \begin{dmath*}
-I1ss = {b1ss}\, {Y1ss}
+I1ss = {Y1ss}\, {b1ss}
 \end{dmath*}
 \begin{dmath*}
-I2ss = {b2ss}\, {Y2ss}
+I2ss = {Y2ss}\, {b2ss}
 \end{dmath*}
 \begin{dmath*}
 K1ss = \frac{{I1ss}}{{{\delta}}}
@@ -101,16 +101,16 @@ C12ss = \frac{{P1ss}\, \left(1-{{\omega_{11}}}\right)\, {C11ss}}{{{\omega_{11}}}
 C22ss = \frac{{P1ss}\, \left(1-{{\omega_{21}}}\right)\, {C21ss}}{{{\omega_{21}}}\, {P2ss}}
 \end{dmath*}
 \begin{dmath*}
-L1ss = \frac{{Y1ss}}{{ZA1ss}}\, \left(\frac{\left(1-{{\alpha_{1}}}\right)\, {Rss}}{{{\alpha_{1}}}\, {W1ss}}\right)^{{{\alpha_{1}}}}
+L1ss = 0.318\, \left(\frac{\left(1-{{\alpha_{1}}}\right)\, {Rss}}{{{\alpha_{1}}}\, {W1ss}}\right)^{{{\alpha_{1}}}}
 \end{dmath*}
 \begin{dmath*}
-L2ss = \frac{{Y2ss}}{{ZA2ss}}\, \left(\frac{{Rss}\, \left(1-{{\alpha_{2}}}\right)}{{{\alpha_{2}}}\, {W2ss}}\right)^{{{\alpha_{2}}}}
+L2ss = 0.9537127674451126\, \left(\frac{{Rss}\, \left(1-{{\alpha_{2}}}\right)}{{{\alpha_{2}}}\, {W2ss}}\right)^{{{\alpha_{2}}}}
 \end{dmath*}
 \begin{dmath*}
-thetapi = \frac{{P1ss}\, {Y1ss}}{{P1ss}\, {Y1ss}+{P2ss}\, {Y2ss}}
+thetapi = 0.318
 \end{dmath*}
 \begin{dmath*}
-thetaY = \frac{{Y1ss}}{{Yss}}
+thetaY = 0.318
 \end{dmath*}
 \begin{dmath*}
 r = \frac{{Rss}}{{P1ss}}
@@ -231,11 +231,11 @@ thetaC2 = \frac{{C2ss}}{{Y2ss}}
 \end{dmath}
 % Equation 28
 \begin{dmath}
-{{\hat{\pi}}}_{t}={{\hat{\pi}_{1}}}_{t}\, {thetapi}+{{\hat{\pi}_{2}}}_{t}\, \left(1-{thetapi}\right)
+{{\hat{\pi}}}_{t}={{\hat{\pi}_{1}}}_{t}\, {thetapi}+0.6819999999999999\, {{\hat{\pi}_{2}}}_{t}
 \end{dmath}
 % Equation 29
 \begin{dmath}
-{{\hat{Y}}}_{t}={{\hat{Y}_{1}}}_{t}\, {thetaY}+{{\hat{Y}_{2}}}_{t}\, \left(1-{thetaY}\right)
+{{\hat{Y}}}_{t}={{\hat{Y}_{1}}}_{t}\, {thetaY}+0.6819999999999999\, {{\hat{Y}_{2}}}_{t}
 \end{dmath}
 % Equation 30
 \begin{dmath}

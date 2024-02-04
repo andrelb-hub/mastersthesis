@@ -173,8 +173,8 @@ sigmaM  = 0.01 ; % Standard Error of monetary shock
 % -------------------------------------------------- %
 model(linear);
 % Steady state parameters:
-# thetaP = 1   ;
-# thetaZ = 0.7 ;
+# thetaP = 1      ;
+# thetaZ = 0.7151 ;
 % Steady state variables as local varibles, for log-linear use:
 # P1ss   = 1 ;
 # ZA1ss  = 1 ;
@@ -195,15 +195,15 @@ model(linear);
 # a2ss = (W2ss/(phhi*ZA2ss)*(ZA2ss*(alpha2*W2ss/((1-alpha2)*Rss))^alpha2)^varphhi)^(1/siggma) ;
 # b1ss = (dellta/ZA1ss) * (alpha1*W1ss/((1-alpha1)*Rss))^(1-alpha1) ;
 # b2ss = (dellta/ZA2ss) * (alpha2*W2ss/((1-alpha2)*Rss))^(1-alpha2) ;
-/*
 # Y1ss  = 0.318    ;
 # Y2ss  = 1 - Y1ss ;
 # Yss   = 1        ;
+/*
 */
+/*
 # Y1ss  = (a1ss/(1-b1ss))^(siggma/(siggma+varphhi)) ;
 # Y2ss  = (a2ss/(1-b2ss))^(siggma/(siggma+varphhi)) ;
 # Yss   = Y1ss + Y2ss  ;
-/*
 */
 # C1ss  = a1ss * Y1ss^(-varphhi/siggma) ;
 # C2ss  = a2ss * Y2ss^(-varphhi/siggma) ;

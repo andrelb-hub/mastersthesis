@@ -300,7 +300,7 @@ M_.nboth   = 3;
 M_.nsfwrd   = 7;
 M_.nspred   = 10;
 M_.ndynamic   = 14;
-M_.dynamic_tmp_nbr = [11; 0; 0; 0; ];
+M_.dynamic_tmp_nbr = [5; 0; 0; 0; ];
 M_.model_local_variables_dynamic_tt_idxs = {
 };
 M_.equations_tags = {
@@ -395,7 +395,7 @@ oo_.exo_steady_state = zeros(7, 1);
 M_.params = NaN(20, 1);
 M_.endo_trends = struct('deflator', cell(34, 1), 'log_deflator', cell(34, 1), 'growth_factor', cell(34, 1), 'log_growth_factor', cell(34, 1));
 M_.NNZDerivatives = [127; 0; -1; ];
-M_.static_tmp_nbr = [11; 0; 0; 0; ];
+M_.static_tmp_nbr = [5; 0; 0; 0; ];
 M_.model_local_variables_static_tt_idxs = {
 };
 M_.params(1) = 0.4;

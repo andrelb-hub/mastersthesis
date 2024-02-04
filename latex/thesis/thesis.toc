@@ -21,16 +21,16 @@
 \contentsline {subsubsection}{\numberline {3.3.1}Log-linear Model Structure}{61}{subsubsection.3.3.1}%
 \contentsline {subsubsection}{\numberline {3.3.2}Eigenvalues and Forward Looking Variables}{63}{subsubsection.3.3.2}%
 \contentsline {subsection}{\numberline {3.4}Calibration}{64}{subsection.3.4}%
-\contentsline {subsubsection}{\numberline {3.4.1}Brazilian GDP in 2019}{65}{subsubsection.3.4.1}%
-\contentsline {subsubsection}{\numberline {3.4.2}Parameter Calibration}{66}{subsubsection.3.4.2}%
-\contentsline {subsubsection}{\numberline {3.4.3}Variables at Steady State}{67}{subsubsection.3.4.3}%
-\contentsline {section}{\numberline {4}Results}{68}{section.4}%
-\contentsline {subsection}{\numberline {4.1}Monetary Shock}{70}{subsection.4.1}%
-\contentsline {subsection}{\numberline {4.2}Productivity Shock}{72}{subsection.4.2}%
-\contentsline {section}{\numberline {5}Final Remarks}{74}{section.5}%
-\contentsline {subsection}{\numberline {5.1}Future Challenges}{74}{subsection.5.1}%
-\contentsline {section}{References}{75}{section*.248}%
-\contentsline {section}{\numberline {A}Appendix}{79}{appendix.A}%
+\contentsline {subsubsection}{\numberline {3.4.1}Brazilian GDP in 2019}{66}{subsubsection.3.4.1}%
+\contentsline {subsubsection}{\numberline {3.4.2}Parameter Calibration}{67}{subsubsection.3.4.2}%
+\contentsline {subsubsection}{\numberline {3.4.3}Variables at Steady State}{68}{subsubsection.3.4.3}%
+\contentsline {section}{\numberline {4}Results}{69}{section.4}%
+\contentsline {subsection}{\numberline {4.1}Monetary Shock}{71}{subsection.4.1}%
+\contentsline {subsection}{\numberline {4.2}Productivity Shock}{73}{subsection.4.2}%
+\contentsline {section}{\numberline {5}Final Remarks}{75}{section.5}%
+\contentsline {subsection}{\numberline {5.1}Future Challenges}{75}{subsection.5.1}%
+\contentsline {section}{References}{76}{section*.248}%
+\contentsline {section}{\numberline {A}Appendix}{80}{appendix.A}%
 \etoc@startlocaltoc {3}
-\contentsline {subsection}{\numberline {A.1}Definitions and Lemmas}{80}{subsection.A.1}%
-\contentsline {subsection}{\numberline {A.2}Dynare Mod File}{84}{subsection.A.2}%
+\contentsline {subsection}{\numberline {A.1}Definitions and Lemmas}{81}{subsection.A.1}%
+\contentsline {subsection}{\numberline {A.2}Dynare Mod File}{85}{subsection.A.2}%

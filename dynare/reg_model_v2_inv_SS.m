@@ -14,12 +14,12 @@ siggma  = 2     ; % relative risk aversion coefficient
 phhi    = 1     ; % relative labor weight in utility
 varphhi = 1.5   ; % marginal disutility of labor supply
 pssi    = 8     ; % elasticity of substitution between intermediate goods
-omega11 = 0.7   ; % weight of good 1 in consumption composition of region 1
-omega21 = 0.4   ; % weight of good 1 in consumption composition of region 2
+omega11 = 0.528 ; % weight of good 1 in consumption composition of region 1
+omega21 = 0.095 ; % weight of good 1 in consumption composition of region 2
 
 % steady state parameters:
-thetaP = 1   ;
-thetaZ = 0.7 ;
+thetaP = 1      ;
+thetaZ = 0.7151 ;
 
 % steady state variables as local varibles, for log-linear use:
 
@@ -51,9 +51,13 @@ a2ss = (W2ss/(phhi*ZA2ss)*(ZA2ss*(alpha2*W2ss/((1-alpha2)*Rss))^alpha2)^varphhi)
 b1ss = (dellta/ZA1ss) * (alpha1*W1ss/((1-alpha1)*Rss))^(1-alpha1) ;
 b2ss = (dellta/ZA2ss) * (alpha2*W2ss/((1-alpha2)*Rss))^(1-alpha2) ;
 
-Y1ss  = (a1ss/(1-b1ss))^(siggma/(siggma+varphhi)) ;
-Y2ss  = (a2ss/(1-b2ss))^(siggma/(siggma+varphhi)) ;
-Yss   = Y1ss + Y2ss  ;
+Y1ss  = 0.318    ;
+Y2ss  = 1 - Y1ss ;
+Yss   = 1        ;
+
+% Y1ss  = (a1ss/(1-b1ss))^(siggma/(siggma+varphhi)) ;
+% Y2ss  = (a2ss/(1-b2ss))^(siggma/(siggma+varphhi)) ;
+% Yss   = Y1ss + Y2ss  ;
 
 C1ss  = a1ss * Y1ss^(-varphhi/siggma) ;
 C2ss  = a2ss * Y2ss^(-varphhi/siggma) ;
