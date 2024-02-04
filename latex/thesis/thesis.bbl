@@ -469,6 +469,48 @@
       \field{year}{2005}
       \field{dateera}{ce}
     \endentry
+    \entry{haddad_matriz_2017}{article}{}
+      \name{author}{3}{}{%
+        {{hash=2d68a1483d71555be2be574f2e4e1e0c}{%
+           family={Haddad},
+           familyi={H\bibinitperiod},
+           given={Eduardo\bibnamedelima Amaral},
+           giveni={E\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+        {{hash=a0131adcee5537ccd1af29d1c3146dbe}{%
+           family={Gonçalves\bibnamedelima Júnior},
+           familyi={G\bibinitperiod\bibinitdelim J\bibinitperiod},
+           given={Carlos\bibnamedelima Alberto},
+           giveni={C\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+        {{hash=db37eb03b1400c7eee3217869d64183e}{%
+           family={Nascimento},
+           familyi={N\bibinitperiod},
+           given={Thiago\bibnamedelima Oliveira},
+           giveni={T\bibinitperiod\bibinitdelim O\bibinitperiod}}}%
+      }
+      \strng{namehash}{19a3bd315b692c43e246ca52652459cb}
+      \strng{fullhash}{0a6a90e398203a4085cbbcbaf192d5e0}
+      \strng{bibnamehash}{0a6a90e398203a4085cbbcbaf192d5e0}
+      \strng{authorbibnamehash}{0a6a90e398203a4085cbbcbaf192d5e0}
+      \strng{authornamehash}{19a3bd315b692c43e246ca52652459cb}
+      \strng{authorfullhash}{0a6a90e398203a4085cbbcbaf192d5e0}
+      \field{sortinit}{H}
+      \field{sortinithash}{23a3aa7c24e56cfa16945d55545109b5}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Revista Brasileira de Estudos Regionais e Urbanos}
+      \field{number}{4}
+      \field{title}{Matriz {Interestadual} de {Insumo}-produto para o {Brasil}: uma {Aplicação} do {Método} {IIOAS}}
+      \field{volume}{11}
+      \field{year}{2017}
+      \verb{urlraw}
+      \verb https://ideas.repec.org/a/ris/rberur/0050.html
+      \endverb
+      \verb{url}
+      \verb https://ideas.repec.org/a/ris/rberur/0050.html
+      \endverb
+    \endentry
     \entry{holm_transmission_2021}{article}{}
       \name{author}{3}{}{%
         {{hash=d81616fbb7b899bfa1395e0491bdaf3a}{%

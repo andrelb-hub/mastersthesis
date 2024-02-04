@@ -428,9 +428,9 @@ M_.params(14) = 1.5;
 varphhi = M_.params(14);
 M_.params(15) = 8;
 pssi = M_.params(15);
-M_.params(16) = 0.7;
+M_.params(16) = 0.528;
 omega11 = M_.params(16);
-M_.params(17) = 0.4;
+M_.params(17) = 0.095;
 omega21 = M_.params(17);
 M_.params(18) = 0.01;
 sigmaA1 = M_.params(18);
@@ -446,7 +446,7 @@ oo_.dr.eigval = check(M_,options_,oo_);
 % SHOCKS instructions
 %
 M_.exo_det_length = 0;
-M_.Sigma_e(1, 1) = (M_.params(18))^2;
+M_.Sigma_e(3, 3) = (M_.params(20))^2;
 options_.irf = 100;
 options_.order = 1;
 options_.qz_zero_threshold = 1e-20;

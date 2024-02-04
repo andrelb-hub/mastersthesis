@@ -1,11 +1,18 @@
-This is XeTeX, Version 3.141592653-2.6-0.999995 (MiKTeX 23.12) (preloaded format=xelatex 2024.1.18)  4 FEB 2024 16:10
+This is XeTeX, Version 3.141592653-2.6-0.999995 (MiKTeX 23.12) (preloaded format=xelatex 2024.1.18)  2 FEB 2024 23:27
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
-**./thesis.tex
-(thesis.tex
+**./final_remarks.tex
+(final_remarks.tex
 LaTeX2e <2023-11-01>
 L3 programming layer <2024-01-04>
+(C:\Users\andre\AppData\Local\Programs\MiKTeX\tex/latex/subfiles\subfiles.cls
+Document Class: subfiles 2020/11/14 v2.2 Multi-file projects (class)
+Preamble taken from file `../thesis.tex'
+(C:\Users\andre\AppData\Local\Programs\MiKTeX\tex/latex/import\import.sty
+Package: import 2020/04/01  v 6.2
+)
+(../thesis.tex
 (C:\Users\andre\AppData\Local\Programs\MiKTeX\tex/latex/base\article.cls
 Document Class: article 2023/05/17 v1.4n Standard LaTeX document class
 (C:\Users\andre\AppData\Local\Programs\MiKTeX\tex/latex/base\size12.clo
@@ -23,10 +30,7 @@ File: size12.clo 2023/05/17 v1.4n Standard LaTeX file (size option)
 \belowcaptionskip=\skip49
 \bibindent=\dimen140
 )
-(C:\Users\andre\AppData\Local\Programs\MiKTeX\tex/latex/import\import.sty
-Package: import 2020/04/01  v 6.2
-)
-(../article_packages.tex
+(../../article_packages.tex
 (C:\Users\andre\AppData\Local\Programs\MiKTeX\tex/latex/geometry\geometry.sty
 Package: geometry 2020/01/02 v5.9 Page Geometry
 
@@ -635,8 +639,6 @@ Package: enumitem 2019/06/20 v3.9 Customized lists
 \enit@inbox=\box112
 \enit@count@id=\count298
 \enitdp@description=\count299
-) (C:\Users\andre\AppData\Local\Programs\MiKTeX\tex/latex/graphics\dvipsnam.def
-File: dvipsnam.def 2016/06/17 v3.0m Driver-dependent file (DPC,SPQR)
 ) (C:\Users\andre\AppData\Local\Programs\MiKTeX\tex/latex/caption\caption.sty
 Package: caption 2023/08/05 v3.6o Customizing captions (AR)
 
@@ -1110,11 +1112,11 @@ Package: ifxetex 2019/10/25 v0.7 ifxetex legacy package. Use iftex instead.
 (C:\Users\andre\AppData\Local\Programs\MiKTeX\tex/generic/iftex\ifluatex.sty
 Package: ifluatex 2019/10/25 v1.5 ifluatex legacy package. Use iftex instead.
 ))
-\thesis@idxfile=\write4
-\openout4 = `thesis.idx'.
+\final_remarks@idxfile=\write4
+\openout4 = `final_remarks.idx'.
 
 
-Writing index file thesis.idx
+Writing index file final_remarks.idx
 (C:\Users\andre\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\hyperref.sty
 Package: hyperref 2023-11-26 v7.01g Hypertext links for LaTeX
 
@@ -1699,46 +1701,45 @@ Package: blx-case-expl3 2023/03/05 v3.19 expl3 case changing code for biblatex
 ))
 (C:\Users\andre\AppData\Local\Programs\MiKTeX\tex/latex/subfiles\subfiles.sty
 Package: subfiles 2020/11/14 v2.2 Multi-file projects (package)
-)
+)))
 Package csquotes Info: Checking for multilingual support...
 Package csquotes Info: ... found 'babel' package.
 Package csquotes Info: Adjusting default style.
 Package csquotes Info: Redefining alias 'default' -> 'english'.
-LaTeX Font Info:    Trying to load font information for T1+ppl on input line 72
-.
+LaTeX Font Info:    Trying to load font information for T1+ppl on input line 7.
 
-(C:\Users\andre\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\t1ppl.fd
+ (C:\Users\andre\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\t1ppl.fd
 File: t1ppl.fd 2001/06/04 font definitions for T1/ppl.
 )
-(thesis.aux)
-\openout1 = `thesis.aux'.
+(final_remarks.aux)
+\openout1 = `final_remarks.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 72.
-LaTeX Font Info:    ... okay on input line 72.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 72.
-LaTeX Font Info:    ... okay on input line 72.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 72.
-LaTeX Font Info:    ... okay on input line 72.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 72.
-LaTeX Font Info:    ... okay on input line 72.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 72.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 7.
+LaTeX Font Info:    ... okay on input line 7.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 7.
+LaTeX Font Info:    ... okay on input line 7.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 7.
+LaTeX Font Info:    ... okay on input line 7.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 7.
+LaTeX Font Info:    ... okay on input line 7.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 7.
 LaTeX Font Info:    Trying to load font information for TS1+cmr on input line 7
-2.
+.
 
 (C:\Users\andre\AppData\Local\Programs\MiKTeX\tex/latex/base\ts1cmr.fd
 File: ts1cmr.fd 2023/04/13 v2.5m Standard LaTeX font definitions
 )
-LaTeX Font Info:    ... okay on input line 72.
-LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 72.
-LaTeX Font Info:    ... okay on input line 72.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 72.
-LaTeX Font Info:    ... okay on input line 72.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 72.
-LaTeX Font Info:    ... okay on input line 72.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 72.
-LaTeX Font Info:    ... okay on input line 72.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 72.
-LaTeX Font Info:    ... okay on input line 72.
+LaTeX Font Info:    ... okay on input line 7.
+LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 7.
+LaTeX Font Info:    ... okay on input line 7.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 7.
+LaTeX Font Info:    ... okay on input line 7.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 7.
+LaTeX Font Info:    ... okay on input line 7.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 7.
+LaTeX Font Info:    ... okay on input line 7.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 7.
+LaTeX Font Info:    ... okay on input line 7.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: xetex
@@ -1774,7 +1775,7 @@ LaTeX Font Info:    ... okay on input line 72.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-\Etoc@tf=\read6
+No file final_remarks.toc.
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: hyperref package is loaded.
 Package caption Info: listings package is loaded.
@@ -1788,7 +1789,7 @@ Package caption Info: End \AtBeginDocument code.
 ty
 Package: ninecolors 2022-02-13 v2022D Select colors with proper color contrast
 )
-Package hyperref Info: Link coloring ON on input line 72.
+Package hyperref Info: Link coloring ON on input line 7.
 \c@lstlisting=\count537
 Package biblatex Info: Trying to load language 'english' -> 'english-abnt'...
 Package biblatex Info: ... file 'english-abnt.lbx' found.
@@ -1879,398 +1880,48 @@ Package biblatex Info: XeTeX detected.
 (biblatex)             Assuming input encoding 'utf8'.
 Package biblatex Info: Automatic encoding selection.
 (biblatex)             Assuming data encoding 'utf8'.
-\openout6 = `thesis.bcf'.
+\openout6 = `final_remarks.bcf'.
 
 Package biblatex Info: Trying to load bibliographic data...
-Package biblatex Info: ... file 'thesis.bbl' found.
- (thesis.bbl)
-Package biblatex Info: Reference section=0 on input line 72.
-Package biblatex Info: Reference segment=0 on input line 72.
- (pre/cover.tex
-File: ../images/../images/marca_dagua_ufpr.jpg Graphic file (type bmp)
-<../images/../images/marca_dagua_ufpr.jpg>
- [1
+Package biblatex Info: ... file 'final_remarks.bbl' not found.
 
-]) (pre/inside_cover.tex [2])
-(pre/catalog_record.tex) (pre/approval_form.tex [3]) (pre/dedication.tex
-[4]) (pre/acknowledgments.tex [5]) (pre/epigraph.tex [6]
-Excluding 'comment' comment.) (pre/abstract.tex [7] [8]) (pre/lists.tex
-[9] (thesis.lof
-LaTeX Font Info:    Trying to load font information for OT1+ppl on input line 4
-.
+No file final_remarks.bbl.
+Package biblatex Info: Reference section=0 on input line 7.
+Package biblatex Info: Reference segment=0 on input line 7.
+Excluding 'comment' comment.
 
-(C:\Users\andre\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\ot1ppl.fd
-File: ot1ppl.fd 2001/06/04 font definitions for OT1/ppl.
-)
-LaTeX Font Info:    Trying to load font information for OML+zplm on input line 
-4.
+! LaTeX Error: File `marca_dagua_ufpr' not found.
 
-(C:\Users\andre\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\omlzplm.fd
-File: omlzplm.fd 2002/09/08 Fontinst v1.914 font definitions for OML/zplm.
-)
-LaTeX Font Info:    Trying to load font information for OMS+zplm on input line 
-4.
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.47 \end{document}
+                   
+I could not locate the file with any of these extensions:
+.pdf,.PDF,.ai,.AI,.png,.PNG,.jpg,.JPG,.jpeg,.JPEG,.jp2,.JP2,.jpf,.JPF,.bmp,.BMP
+,.ps,.PS,.eps,.EPS,.mps,.MPS
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
 
-(C:\Users\andre\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\omszplm.fd
-File: omszplm.fd 2002/09/08 Fontinst v1.914 font definitions for OMS/zplm.
-)
-LaTeX Font Info:    Trying to load font information for OMX+zplm on input line 
-4.
+[1
 
-(C:\Users\andre\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\omxzplm.fd
-File: omxzplm.fd 2002/09/08 Fontinst v1.914 font definitions for OMX/zplm.
-)
-LaTeX Font Info:    Trying to load font information for OT1+zplm on input line 
-4.
-
-(C:\Users\andre\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\ot1zplm.fd
-File: ot1zplm.fd 2002/09/08 Fontinst v1.914 font definitions for OT1/zplm.
-)
-LaTeX Font Info:    Font shape `U/msa/m/n' will be
-(Font)              scaled to size 12.50409pt on input line 4.
-LaTeX Font Info:    Font shape `U/msa/m/n' will be
-(Font)              scaled to size 9.37807pt on input line 4.
-LaTeX Font Info:    Font shape `U/msa/m/n' will be
-(Font)              scaled to size 7.29405pt on input line 4.
-LaTeX Font Info:    Font shape `U/msb/m/n' will be
-(Font)              scaled to size 12.50409pt on input line 4.
-LaTeX Font Info:    Font shape `U/msb/m/n' will be
-(Font)              scaled to size 9.37807pt on input line 4.
-LaTeX Font Info:    Font shape `U/msb/m/n' will be
-(Font)              scaled to size 7.29405pt on input line 4.
-)
-\tf@lof=\write7
-\openout7 = `thesis.lof'.
-
-
-[10] (thesis.lot)
-\tf@lot=\write8
-\openout8 = `thesis.lot'.
-
- Excluding 'comment' comment.) (pre/table_of_contents.tex
-[11]
-\tf@toc=\write9
-\openout9 = `thesis.toc'.
-
-) (sections/introduction.tex [12]
-LaTeX Font Info:    Font shape `U/msa/m/n' will be
-(Font)              scaled to size 10.42007pt on input line 17.
-LaTeX Font Info:    Font shape `U/msa/m/n' will be
-(Font)              scaled to size 7.91925pt on input line 17.
-LaTeX Font Info:    Font shape `U/msa/m/n' will be
-(Font)              scaled to size 6.25204pt on input line 17.
-LaTeX Font Info:    Font shape `U/msb/m/n' will be
-(Font)              scaled to size 10.42007pt on input line 17.
-LaTeX Font Info:    Font shape `U/msb/m/n' will be
-(Font)              scaled to size 7.91925pt on input line 17.
-LaTeX Font Info:    Font shape `U/msb/m/n' will be
-(Font)              scaled to size 6.25204pt on input line 17.
- [13] [14])
-(sections/literature_review.tex [15] [16] [17] [18]
-Excluding 'comment' comment.) (sections/methodology.tex [19])
-(sections/reg_model_v2_investment.tex [20]
-LaTeX Font Info:    Calculating math sizes for size <8.76118> on input line 41.
-
-LaTeX Font Info:    Font shape `U/msa/m/n' will be
-(Font)              scaled to size 9.12921pt on input line 41.
-LaTeX Font Info:    Font shape `U/msa/m/n' will be
-(Font)              scaled to size 6.93814pt on input line 41.
-LaTeX Font Info:    Font shape `U/msa/m/n' will be
-(Font)              scaled to size 5.47757pt on input line 41.
-LaTeX Font Info:    Font shape `U/msb/m/n' will be
-(Font)              scaled to size 9.12921pt on input line 41.
-LaTeX Font Info:    Font shape `U/msb/m/n' will be
-(Font)              scaled to size 6.93814pt on input line 41.
-LaTeX Font Info:    Font shape `U/msb/m/n' will be
-(Font)              scaled to size 5.47757pt on input line 41.
- [21] Excluding 'comment' comment.
-[22]
-File: ../images/../images/flowchart.jpg Graphic file (type bmp)
-<../images/../images/flowchart.jpg>
- [23]
-LaTeX Font Info:    Font shape `U/BOONDOX-calo/m/n' will be
-(Font)              scaled to size 12.0pt on input line 139.
-LaTeX Font Info:    Font shape `U/BOONDOX-calo/m/n' will be
-(Font)              scaled to size 9.0pt on input line 139.
-LaTeX Font Info:    Font shape `U/BOONDOX-calo/m/n' will be
-(Font)              scaled to size 7.0pt on input line 139.
- [24] Excluding 'comment' comment. [25]
-LaTeX Font Info:    Trying to load font information for U+fplmbb on input line 
-197.
-
-(C:\Users\andre\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\ufplmbb.fd
-File: ufplmbb.fd 2003/10/30 Fontinst v1.914 font definitions for U/fplmbb.
-)
-[26] [27] Excluding 'comment' comment. Excluding 'comment' comment. [28]
-[29] Excluding 'comment' comment.
-LaTeX Font Info:    Font shape `U/BOONDOX-calo/m/n' will be
-(Font)              scaled to size 10.0pt on input line 373.
-LaTeX Font Info:    Font shape `U/BOONDOX-calo/m/n' will be
-(Font)              scaled to size 7.6pt on input line 373.
-LaTeX Font Info:    Font shape `U/BOONDOX-calo/m/n' will be
-(Font)              scaled to size 6.0pt on input line 373.
- [30] [31] Excluding 'comment' comment.
-[32] [33] [34] Excluding 'comment' comment. [35]
-LaTeX Font Info:    Font shape `U/cmsy/m/n' will be
-(Font)              scaled to size 12.0pt on input line 631.
-LaTeX Font Info:    Font shape `U/cmsy/m/n' will be
-(Font)              scaled to size 9.0pt on input line 631.
-LaTeX Font Info:    Font shape `U/cmsy/m/n' will be
-(Font)              scaled to size 7.0pt on input line 631.
-LaTeX Font Info:    Font shape `U/cmsy/b/n' will be
-(Font)              scaled to size 12.0pt on input line 650.
-LaTeX Font Info:    Font shape `U/cmsy/b/n' will be
-(Font)              scaled to size 9.0pt on input line 650.
-LaTeX Font Info:    Font shape `U/cmsy/b/n' will be
-(Font)              scaled to size 7.0pt on input line 650.
- [36]
-Excluding 'comment' comment. [37]
-LaTeX Font Info:    Trying to load font information for TS1+ppl on input line 7
-08.
-
-(C:\Users\andre\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\ts1ppl.fd
-File: ts1ppl.fd 2001/06/04 font definitions for TS1/ppl.
-)
-Excluding 'comment' comment. Excluding 'comment' comment. [38]
-Excluding 'comment' comment. Excluding 'comment' comment.
-Excluding 'comment' comment. [39] Excluding 'comment' comment. [40]
-Excluding 'comment' comment. Excluding 'comment' comment. [41]
-Excluding 'comment' comment. Excluding 'comment' comment. [42]
-Excluding 'comment' comment. [43]
-LaTeX Font Info:    Font shape `U/cmsy/m/n' will be
-(Font)              scaled to size 10.0pt on input line 1144.
-LaTeX Font Info:    Font shape `U/cmsy/m/n' will be
-(Font)              scaled to size 7.6pt on input line 1144.
-LaTeX Font Info:    Font shape `U/cmsy/m/n' will be
-(Font)              scaled to size 6.0pt on input line 1144.
-LaTeX Font Info:    Font shape `U/cmsy/b/n' will be
-(Font)              scaled to size 10.0pt on input line 1144.
-LaTeX Font Info:    Font shape `U/cmsy/b/n' will be
-(Font)              scaled to size 7.6pt on input line 1144.
-LaTeX Font Info:    Font shape `U/cmsy/b/n' will be
-(Font)              scaled to size 6.0pt on input line 1144.
- [44] Excluding 'comment' comment.
-Excluding 'comment' comment. Excluding 'comment' comment. [45] [46]
-Excluding 'comment' comment. Excluding 'comment' comment. [47] [48]
-LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 1
-434.
-
-(C:\Users\andre\AppData\Local\Programs\MiKTeX\tex/latex/lm\t1lmtt.fd
-File: t1lmtt.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
-) [49]
-[50] [51] [52] [53] Excluding 'comment' comment. [54]
-Excluding 'comment' comment. Excluding 'comment' comment. [55]
-Excluding 'comment' comment. [56] Excluding 'comment' comment. [57]
-Excluding 'comment' comment. Excluding 'comment' comment.
-Excluding 'comment' comment. [58] Excluding 'comment' comment.
-Excluding 'comment' comment. [59] Excluding 'comment' comment.
-Excluding 'comment' comment. [60] Excluding 'comment' comment. [61] [62]
-Excluding 'comment' comment. Excluding 'comment' comment.)
-(sections/calibration.tex [63] Excluding 'comment' comment. [64]
-> Step: init table outer spec.
-> Step: parse table options.
-> Step: split table.
-> Step: init table inner spec.
-> Step: parse table inner spec.
-> Step: execute table commands.
-> Step: calculate cell and line sizes.
-> Step: build the whole table.
- [65]
-> Step: init table outer spec.
-> Step: parse table options.
-> Step: split table.
-> Step: init table inner spec.
-> Step: parse table inner spec.
-> Step: execute table commands.
-> Step: calculate cell and line sizes.
-
-
-Package tabularray Warning: Table width is too small, need 3.69965pt more!
-
-> Step: build the whole table.
-
-Overfull \hbox (3.69965pt too wide) detected at line 173
- [] 
- []
-
-[66]
-> Step: init table outer spec.
-> Step: parse table options.
-> Step: split table.
-> Step: init table inner spec.
-> Step: parse table inner spec.
-> Step: execute table commands.
-> Step: calculate cell and line sizes.
-> Step: build the whole table.
-) (sections/results.tex [67] Excluding 'comment' comment. [68]
-Excluding 'comment' comment.) (sections/IRF.tex [69]
-File: ../images/../images/shock_ZMt/shock_ZMt_ZMt.png Graphic file (type bmp)
-<../images/../images/shock_ZMt/shock_ZMt_ZMt.png>
-File: ../images/../images/shock_ZMt/shock_ZMt_Rt.png Graphic file (type bmp)
-<../images/../images/shock_ZMt/shock_ZMt_Rt.png>
-File: ../images/../images/shock_ZMt/shock_ZMt_I1t.png Graphic file (type bmp)
-<../images/../images/shock_ZMt/shock_ZMt_I1t.png>
-File: ../images/../images/shock_ZMt/shock_ZMt_I2t.png Graphic file (type bmp)
-<../images/../images/shock_ZMt/shock_ZMt_I2t.png>
-File: ../images/../images/shock_ZMt/shock_ZMt_K1t.png Graphic file (type bmp)
-<../images/../images/shock_ZMt/shock_ZMt_K1t.png>
-File: ../images/../images/shock_ZMt/shock_ZMt_K2t.png Graphic file (type bmp)
-<../images/../images/shock_ZMt/shock_ZMt_K2t.png>
-File: ../images/../images/shock_ZMt/shock_ZMt_lambda1t.png Graphic file (type b
-mp)
-<../images/../images/shock_ZMt/shock_ZMt_lambda1t.png>
-File: ../images/../images/shock_ZMt/shock_ZMt_lambda2t.png Graphic file (type b
-mp)
-<../images/../images/shock_ZMt/shock_ZMt_lambda2t.png>
-File: ../images/../images/shock_ZMt/shock_ZMt_Yt.png Graphic file (type bmp)
-<../images/../images/shock_ZMt/shock_ZMt_Yt.png>
-File: ../images/../images/shock_ZMt/shock_ZMt_Y1t.png Graphic file (type bmp)
-<../images/../images/shock_ZMt/shock_ZMt_Y1t.png>
-File: ../images/../images/shock_ZMt/shock_ZMt_Y2t.png Graphic file (type bmp)
-<../images/../images/shock_ZMt/shock_ZMt_Y2t.png>
-File: ../images/../images/shock_ZMt/shock_ZMt_C1t.png Graphic file (type bmp)
-<../images/../images/shock_ZMt/shock_ZMt_C1t.png>
-File: ../images/../images/shock_ZMt/shock_ZMt_C2t.png Graphic file (type bmp)
-<../images/../images/shock_ZMt/shock_ZMt_C2t.png>
-File: ../images/../images/shock_ZMt/shock_ZMt_C11t.png Graphic file (type bmp)
-<../images/../images/shock_ZMt/shock_ZMt_C11t.png>
-File: ../images/../images/shock_ZMt/shock_ZMt_C21t.png Graphic file (type bmp)
-<../images/../images/shock_ZMt/shock_ZMt_C21t.png>
- [70]
-File: ../images/../images/shock_ZMt/shock_ZMt_C12t.png Graphic file (type bmp)
-<../images/../images/shock_ZMt/shock_ZMt_C12t.png>
-File: ../images/../images/shock_ZMt/shock_ZMt_C22t.png Graphic file (type bmp)
-<../images/../images/shock_ZMt/shock_ZMt_C22t.png>
-File: ../images/../images/shock_ZMt/shock_ZMt_L1t.png Graphic file (type bmp)
-<../images/../images/shock_ZMt/shock_ZMt_L1t.png>
-File: ../images/../images/shock_ZMt/shock_ZMt_L2t.png Graphic file (type bmp)
-<../images/../images/shock_ZMt/shock_ZMt_L2t.png>
-File: ../images/../images/shock_ZMt/shock_ZMt_W1t.png Graphic file (type bmp)
-<../images/../images/shock_ZMt/shock_ZMt_W1t.png>
-File: ../images/../images/shock_ZMt/shock_ZMt_W2t.png Graphic file (type bmp)
-<../images/../images/shock_ZMt/shock_ZMt_W2t.png>
-File: ../images/../images/shock_ZMt/shock_ZMt_P1t.png Graphic file (type bmp)
-<../images/../images/shock_ZMt/shock_ZMt_P1t.png>
-File: ../images/../images/shock_ZMt/shock_ZMt_P2t.png Graphic file (type bmp)
-<../images/../images/shock_ZMt/shock_ZMt_P2t.png>
-File: ../images/../images/shock_ZMt/shock_ZMt_Q1t.png Graphic file (type bmp)
-<../images/../images/shock_ZMt/shock_ZMt_Q1t.png>
-File: ../images/../images/shock_ZMt/shock_ZMt_Q2t.png Graphic file (type bmp)
-<../images/../images/shock_ZMt/shock_ZMt_Q2t.png>
-File: ../images/../images/shock_ZMt/shock_ZMt_pi1t.png Graphic file (type bmp)
-<../images/../images/shock_ZMt/shock_ZMt_pi1t.png>
-File: ../images/../images/shock_ZMt/shock_ZMt_pi2t.png Graphic file (type bmp)
-<../images/../images/shock_ZMt/shock_ZMt_pi2t.png>
-File: ../images/../images/shock_ZMt/shock_ZMt_pit.png Graphic file (type bmp)
-<../images/../images/shock_ZMt/shock_ZMt_pit.png>
-File: ../images/../images/shock_ZMt/blank.png Graphic file (type bmp)
-<../images/../images/shock_ZMt/blank.png>
-File: ../images/../images/shock_ZMt/blank.png Graphic file (type bmp)
-<../images/../images/shock_ZMt/blank.png>
- [71]
-File: ../images/../images/shock_ZAt///shock_ZA1t_ZA1t.png Graphic file (type bm
-p)
-<../images/../images/shock_ZAt///shock_ZA1t_ZA1t.png>
-File: ../images/../images/shock_ZAt/shock_ZA1t_Rt.png Graphic file (type bmp)
-<../images/../images/shock_ZAt/shock_ZA1t_Rt.png>
-File: ../images/../images/shock_ZAt/shock_ZA1t_I1t.png Graphic file (type bmp)
-<../images/../images/shock_ZAt/shock_ZA1t_I1t.png>
-File: ../images/../images/shock_ZAt/shock_ZA1t_I2t.png Graphic file (type bmp)
-<../images/../images/shock_ZAt/shock_ZA1t_I2t.png>
-File: ../images/../images/shock_ZAt/shock_ZA1t_K1t.png Graphic file (type bmp)
-<../images/../images/shock_ZAt/shock_ZA1t_K1t.png>
-File: ../images/../images/shock_ZAt/shock_ZA1t_K2t.png Graphic file (type bmp)
-<../images/../images/shock_ZAt/shock_ZA1t_K2t.png>
-File: ../images/../images/shock_ZAt/shock_ZA1t_lambda1t.png Graphic file (type 
-bmp)
-<../images/../images/shock_ZAt/shock_ZA1t_lambda1t.png>
-File: ../images/../images/shock_ZAt/shock_ZA1t_lambda2t.png Graphic file (type 
-bmp)
-<../images/../images/shock_ZAt/shock_ZA1t_lambda2t.png>
-File: ../images/../images/shock_ZAt/shock_ZA1t_Yt.png Graphic file (type bmp)
-<../images/../images/shock_ZAt/shock_ZA1t_Yt.png>
-File: ../images/../images/shock_ZAt/shock_ZA1t_Y1t.png Graphic file (type bmp)
-<../images/../images/shock_ZAt/shock_ZA1t_Y1t.png>
-File: ../images/../images/shock_ZAt/shock_ZA1t_Y2t.png Graphic file (type bmp)
-<../images/../images/shock_ZAt/shock_ZA1t_Y2t.png>
-File: ../images/../images/shock_ZAt/shock_ZA1t_C1t.png Graphic file (type bmp)
-<../images/../images/shock_ZAt/shock_ZA1t_C1t.png>
-File: ../images/../images/shock_ZAt/shock_ZA1t_C2t.png Graphic file (type bmp)
-<../images/../images/shock_ZAt/shock_ZA1t_C2t.png>
-File: ../images/../images/shock_ZAt/shock_ZA1t_C11t.png Graphic file (type bmp)
-
-<../images/../images/shock_ZAt/shock_ZA1t_C11t.png>
-File: ../images/../images/shock_ZAt/shock_ZA1t_C21t.png Graphic file (type bmp)
-
-<../images/../images/shock_ZAt/shock_ZA1t_C21t.png>
- [72]
-File: ../images/../images/shock_ZAt/shock_ZA1t_C12t.png Graphic file (type bmp)
-
-<../images/../images/shock_ZAt/shock_ZA1t_C12t.png>
-File: ../images/../images/shock_ZAt/shock_ZA1t_C22t.png Graphic file (type bmp)
-
-<../images/../images/shock_ZAt/shock_ZA1t_C22t.png>
-File: ../images/../images/shock_ZAt/shock_ZA1t_L1t.png Graphic file (type bmp)
-<../images/../images/shock_ZAt/shock_ZA1t_L1t.png>
-File: ../images/../images/shock_ZAt/shock_ZA1t_L2t.png Graphic file (type bmp)
-<../images/../images/shock_ZAt/shock_ZA1t_L2t.png>
-File: ../images/../images/shock_ZAt/shock_ZA1t_W1t.png Graphic file (type bmp)
-<../images/../images/shock_ZAt/shock_ZA1t_W1t.png>
-File: ../images/../images/shock_ZAt/shock_ZA1t_W2t.png Graphic file (type bmp)
-<../images/../images/shock_ZAt/shock_ZA1t_W2t.png>
-File: ../images/../images/shock_ZAt/shock_ZA1t_P1t.png Graphic file (type bmp)
-<../images/../images/shock_ZAt/shock_ZA1t_P1t.png>
-File: ../images/../images/shock_ZAt/shock_ZA1t_P2t.png Graphic file (type bmp)
-<../images/../images/shock_ZAt/shock_ZA1t_P2t.png>
-File: ../images/../images/shock_ZAt/shock_ZA1t_Q1t.png Graphic file (type bmp)
-<../images/../images/shock_ZAt/shock_ZA1t_Q1t.png>
-File: ../images/../images/shock_ZAt/shock_ZA1t_Q2t.png Graphic file (type bmp)
-<../images/../images/shock_ZAt/shock_ZA1t_Q2t.png>
-File: ../images/../images/shock_ZAt/shock_ZA1t_pi1t.png Graphic file (type bmp)
-
-<../images/../images/shock_ZAt/shock_ZA1t_pi1t.png>
-File: ../images/../images/shock_ZAt/shock_ZA1t_pi2t.png Graphic file (type bmp)
-
-<../images/../images/shock_ZAt/shock_ZA1t_pi2t.png>
-File: ../images/../images/shock_ZAt/shock_ZA1t_pit.png Graphic file (type bmp)
-<../images/../images/shock_ZAt/shock_ZA1t_pit.png>
-File: ../images/../images/shock_ZAt/blank.png Graphic file (type bmp)
-<../images/../images/shock_ZAt/blank.png>
-File: ../images/../images/shock_ZAt/blank.png Graphic file (type bmp)
-<../images/../images/shock_ZAt/blank.png>
-)
-(sections/final_remarks.tex [73] Excluding 'comment' comment.)
-(post/references.tex [74] [75] [76] [77]) (post/appendix.tex [78])
-(post/appendix_definitions.tex [79] Excluding 'comment' comment. [80]
-
-LaTeX Warning: Reference `eq_v0:ss-gross-inflation-rate' on page 81 undefined o
-n input line 136.
-
-[81] [82] Excluding 'comment' comment.) (post/appendix_dynare.tex [83])
-[84] (thesis.aux)
+] (final_remarks.aux)
  ***********
 LaTeX2e <2023-11-01>
 L3 programming layer <2020/03/25>
  ***********
-
-
-LaTeX Font Warning: Size substitutions with differences
-(Font)              up to 1.93356pt have occurred.
-
-
-LaTeX Warning: There were undefined references.
-
-Package logreq Info: Writing requests to 'thesis.run.xml'.
-\openout1 = `thesis.run.xml'.
+Package logreq Info: Writing requests to 'final_remarks.run.xml'.
+\openout1 = `final_remarks.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 49017 strings out of 409617
- 1011346 string characters out of 5774013
- 2013378 words of memory out of 5000000
- 70218 multiletter control sequences out of 15000+600000
- 652853 words of font info for 274 fonts, out of 8000000 for 9000
+ 45748 strings out of 409617
+ 912481 string characters out of 5774013
+ 1949649 words of memory out of 5000000
+ 67183 multiletter control sequences out of 15000+600000
+ 566599 words of font info for 46 fonts, out of 8000000 for 9000
  1350 hyphenation exceptions out of 8191
- 123i,26n,131p,1536b,5719s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 143i,10n,148p,688b,4385s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on thesis.pdf (84 pages).
+Output written on final_remarks.pdf (1 page).

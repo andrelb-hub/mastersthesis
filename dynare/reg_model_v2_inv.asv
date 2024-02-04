@@ -243,18 +243,15 @@ model(linear);
 # b1ss = (dellta/ZA1ss) * (alpha1*W1ss/((1-alpha1)*Rss))^(1-alpha1) ;
 # b2ss = (dellta/ZA2ss) * (alpha2*W2ss/((1-alpha2)*Rss))^(1-alpha2) ;
 
+/*
 # Y1ss  = 0.318    ;
 # Y2ss  = 1 - Y1ss ;
 # Yss   = 1        ;
-
-/*
 */
 
-/*
-# Y1ss  = (a1ss/(1-b1ss))^(siggma/(siggma+varphhi)) ;
-# Y2ss  = (a2ss/(1-b2ss))^(siggma/(siggma+varphhi)) ;
-# Yss   = Y1ss + Y2ss  ;
-*/
+# Y1ss  = 0.318    ; % (a1ss/(1-b1ss))^(siggma/(siggma+varphhi)) ;
+# Y2ss  = 1 - Y1ss ; % (a2ss/(1-b2ss))^(siggma/(siggma+varphhi)) ;
+# Yss   = 1        ; % Y1ss + Y2ss  ;
 
 
 # C1ss  = a1ss * Y1ss^(-varphhi/siggma) ;
