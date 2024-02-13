@@ -14,9 +14,11 @@
 
 \subsection{Calibration}
 
+\textcite{ibge_GDP_2023}
+
 \begin{comment}
 	
-Parameters are calibrated in order to reproduce Brazilian characteristics and for that, data from literature and data sets will be used, as described next. First, the regions must be determined: region $1$ will be set as the State of São Paulo, which is responsible for $30\%$ of the national GDP, as reported by \textcite{ibge_produto_2024}. Other states, political regions or even groups of cities could be chosen, the only limited is that the smallest region in the model cannot be smaller than $0.03$ of the grand total, to guarantee stability of the model, as pointed by \textcite{konopkova_pitfalls_2019}.
+Parameters are calibrated in order to reproduce Brazilian characteristics and for that, data from literature and data sets will be used, as described next. First, the regions must be determined: region $1$ will be set as the State of São Paulo, which is responsible for $30\%$ of the national GDP, as reported by \textcite{ibge_GDP_2023}. Other states, political regions or even groups of cities could be chosen, the only limited is that the smallest region in the model cannot be smaller than $0.03$ of the grand total, to guarantee stability of the model, as pointed by \textcite{konopkova_pitfalls_2019}.
 
 The capital elasticity of production $\alpha$ used in the literature is $0.30$, and this value is used for region $2$. Region $1$ must be considered as a more capital intensive region, and for this reason the capital participation in production is higher, at least $30\%$, resulting in $\alpha_{1} = 0.36$. The intertemporal discount factor $\beta$; 
 interest-rate smoothing parameter $\gamma_{R}$; 
@@ -41,7 +43,7 @@ The weight of good $1$ in consumption composition of region $1$ $\omega_{11}$ an
 
 \end{comment}
 
-In this section, we outline the calibration process to replicate Brazilian economic characteristics, utilizing both literature and datasets. First, a region must be selected: in this study, region $1$ corresponds to the State of São Paulo, which contributes $30\%$ to the national GDP, as reported by \textcite{ibge_produto_2024}. While other regions or groupings are viable options, such as groups of States or Cities, the limitation is that the smallest region cannot be less than $0.03$ of the total, ensuring model stability, as emphasized by \textcite{konopkova_pitfalls_2019}. \textcolor{blue}{Second, a year must be chosen: to avoid the pandemic shock that occurred in 2020, the year 2019 will be set as the baseline for establishing the parameters.}
+In this section, we outline the calibration process to replicate Brazilian economic characteristics, utilizing both literature and datasets. First, a region must be selected: in this study, region $1$ corresponds to the State of São Paulo, which contributes $30\%$ to the national GDP, as reported by \textcite{ibge_GDP_2023}. While other regions or groupings are viable options, such as groups of States or Cities, the limitation is that the smallest region cannot be less than $0.03$ of the total, ensuring model stability, as emphasized by \textcite{konopkova_pitfalls_2019}. \textcolor{blue}{Second, a year must be chosen: to avoid the pandemic shock that occurred in 2020, the year 2019 will be set as the baseline for establishing the parameters.}
 
 \textcolor{blue}{To designate Region $1$ as more capital-intensive, the capital elasticity of production for Region $1$ must be such that $\alpha_{1} > \alpha_{2}$, while Region $2$ is assigned the commonly accepted value of $0.30$.} Various parameters, such as the 
 intertemporal discount factor $\beta$; 
@@ -63,10 +65,10 @@ standard deviation of monetary shock $\sigma_{M}$
 
 The weight of region $1$ in total production, $\theta_{Y}$, is determined by the São Paulo GDP to Brazil GDP ratio, as presented in Table \eqref{table:gdp}.
 
-\textcolor{blue}{The productivity ratio $\theta_{Z}$ quantifies the relative productivity of Region 2 compared to Region 1, using GDP per total hours worked as a measure, as discussed by \textcite{krugman_defining_1997}. The productivity $Z_{\eta}$ of each region and the productivity ratio $\theta_{Z}$ are:}
+\textcolor{blue}{The productivity ratio $\theta_{Z}$ quantifies the relative productivity of Region 2 compared to Region 1, using GDP per total hours worked as a measure, as discussed by \textcite{krugman_defining_1997}. Table \eqref{table:gdp} presents the regional GDP and total worked hours. The total worked hours are given by the product of the number of the employed population and the average worked hour. Productivity is determined by the regional GDP to the total worked hours ratio. Therefore, the productivity $Z_{\eta}$ of each region and the productivity ratio $\theta_{Z}$ are:}
 \begin{align}
-	Z_{\eta}  &= \frac{Y_{\eta}}{n_{\eta} L_{\eta}} \\
-	\theta_{Z} &= \frac{Z_{2}}{Z_{1}} \approx 0.7151
+	Z_{\eta}  &\coloneqq \frac{Y_{\eta}}{n_{\eta} L_{\eta}} \\
+	\theta_{Z} &\coloneqq \frac{Z_{2}}{Z_{1}} \approx \frac{469}{662} \approx 0.7076
 \end{align}
 
 
@@ -75,57 +77,81 @@ The weight of region $1$ in total production, $\theta_{Y}$, is determined by the
 	\omega_{21} = \frac{\sum_{i=1}^{26} \omega_{iSP} Y_i}{\sum_{i=1}^{26} Y_i} \approx 0.095 \label{eq:omega-e2}
 \end{align}
 
+The parameters are summarized in Table \eqref{table:parameter-calibration} and the steady state variables are presented in Table \eqref{table:ss-values}.
+
+%%%%%
+
 \newpage
 
 % --------------------------------------------------
-% REGIONAL GDP
+% Workforce and Average Working Hours 
 % --------------------------------------------------
 
-\subsubsection{Brazilian GDP in 2019}
+\subsubsection{Brazilian GDP, Worked Hours and Productivity in 2019}
 
-\vspace*{0.3cm}
+\vspace*{0.5cm}
+
+{\small
 
 {\singlespacing
+	
 \begin{center}
 	\begin{longtblr}[
 		label = {table:gdp},
-		caption = {Brazilian GDP in 2019},
-		remark{Source} = {\textcite{ibge_produto_2024}}]
+		caption = {Brazilian GDP, Worked Hours and Productivity in 2019},
+		remark{Source} = {\textcite{ibge_workers_2023}, \textcite{ibge_GDP_2023}, \textcite{ibge_hours_2023}}]
 		{rowhead = 1,
-			colspec = {Q[l]|Q[r]|Q[si={table-format=3.2,table-number-alignment=center},r,white]}}
-		\hline[2pt]
-		\textbf{State} & \textbf{GPD (R\$)} & \textbf{Participation (\%)} \\ \hline[2pt]
-		São Paulo & 2.348.338.000 & 31,8 \\ \hline
-		Rio de Janeiro & 779.927.917 & 10,6 \\ \hline
-		Minas Gerais & 651.872.684 & 8,8 \\ \hline
-		Rio Grande do Sul & 482.464.177 & 6,5 \\ \hline
-		Paraná & 466.377.036 & 6,3 \\ \hline
-		Santa Catarina & 323.263.857 & 4,4 \\ \hline
-		Bahia & 293.240.504 & 4,0 \\ \hline
-		Distrito Federal & 273.613.711 & 3,7 \\ \hline
-		Goiás & 208.672.492 & 2,8 \\ \hline
-		Pernambuco & 197.853.378 & 2,7 \\ \hline
-		Pará & 178.376.984 & 2,4 \\ \hline
-		Ceará & 163.575.327 & 2,2 \\ \hline
-		Mato Grosso & 142.122.028 & 1,9 \\ \hline
-		Espírito Santo & 137.345.595 & 1,9 \\ \hline
-		Amazonas & 108.181.091 & 1,5 \\ \hline
-		Mato Grosso do Sul & 106.943.246 & 1,4 \\ \hline
-		Maranhão & 97.339.938 & 1,3 \\ \hline
-		Rio Grande do Norte & 71.336.780 & 1,0 \\ \hline
-		Paraíba & 67.986.074 & 0,9 \\ \hline
-		Alagoas & 58.963.729 & 0,8 \\ \hline
-		Piauí & 52.780.785 & 0,7 \\ \hline
-		Rondônia & 47.091.336 & 0,6 \\ \hline
-		Sergipe & 44.689.483 & 0,6 \\ \hline
-		Tocantins & 39.355.941 & 0,5 \\ \hline
-		Amapá & 17.496.661 & 0,2 \\ \hline
-		Acre & 15.630.017 & 0,2 \\ \hline
-		Roraima & 14.292.227 & 0,2 \\ \hline
-		Brasil & 7.389.131.000 & 100,0 \\ \hline[2pt]
-	\end{longtblr}	
-\end{center}
-} %end of \singlespacing
+		 hline{1,2,Z} = {2pt},
+		 % hline{3-Y} = {1pt},
+		 colspec={
+		 	Q[si={table-format=3.2,table-number-alignment=center},l,white]|
+		 	Q[si={table-format=3.2,table-number-alignment=center},r,white]|
+		 	Q[si={table-format=3.2,table-number-alignment=center},r,white]|
+		 	Q[si={table-format=3.2,table-number-alignment=center},r,white]|
+		 	Q[si={table-format=3.2,table-number-alignment=center},r,white]}
+	 	}
+		{State} & 
+		{GDP \\ (R\$)} & 
+		{GDP \\ (\%)} & 
+		{Total Worked \\ Hours (h)} & 
+		{Productivity \\ (R\$/hour)} \\ 
+		São Paulo & 2.348.338.000 & 31,8 & 3.545.301 & 662 \\ 
+		Rio de Janeiro & 779.927.917 & 10,6 & 1.211.037 & 644 \\ 
+		Minas Gerais & 651.872.684 & 8,8 & 1.514.471 & 430 \\ 
+		Rio Grande do Sul & 482.464.177 & 6,5 & 893.768 & 540 \\ 
+		Paraná & 466.377.036 & 6,3 & 867.265 & 538 \\ 
+		Santa Catarina & 323.263.857 & 4,4 & 592.856 & 545 \\ 
+		Bahia & 293.240.504 & 4,0 & 832.538 & 352 \\ 
+		Distrito Federal & 273.613.711 & 3,7 & 222.054 & 1.232 \\ 
+		Goiás & 208.672.492 & 2,8 & 531.835 & 392 \\ 
+		Pernambuco & 197.853.378 & 2,7 & 538.199 & 368 \\ 
+		Pará & 178.376.984 & 2,4 & 497.051 & 359 \\ 
+		Ceará & 163.575.327 & 2,2 & 542.370 & 302 \\ 
+		Mato Grosso & 142.122.028 & 1,9 & 265.546 & 535 \\ 
+		Espírito Santo & 137.345.595 & 1,9 & 299.144 & 459 \\ 
+		Amazonas & 108.181.091 & 1,5 & 232.169 & 466 \\ 
+		Mato Grosso do Sul & 106.943.246 & 1,4 & 197.764 & 541 \\ 
+		Maranhão & 97.339.938 & 1,3 & 317.848 & 306 \\ 
+		Rio Grande do Norte & 71.336.780 & 1,0 & 191.595 & 372 \\ 
+		Paraíba & 67.986.074 & 0,9 & 219.648 & 310 \\ 
+		Alagoas & 58.963.729 & 0,8 & 153.311 & 385 \\ 
+		Piauí & 52.780.785 & 0,7 & 167.634 & 315 \\ 
+		Rondônia & 47.091.336 & 0,6 & 121.275 & 388 \\ 
+		Sergipe & 44.689.483 & 0,6 & 131.390 & 340 \\ 
+		Tocantins & 39.355.941 & 0,5 & 96.137 & 409 \\ 
+		Amapá & 17.496.661 & 0,2 & 46.468 & 377 \\ 
+		Acre & 15.630.017 & 0,2 & 44.427 & 352 \\ 
+		Roraima & 14.292.227 & 0,2 & 32.173 & 444 \\ 
+		Brasil & 7.389.131.000 & 100,0 & 14.300.643 & 517 \\ 
+		Rest of Brasil & 5.040.793.000 & 68,2 & 10.755.342 & 469 \\
+		\end{longtblr}	
+	\end{center}
+
+} % end of \singlespacing
+
+} % end of \small
+
+%%%%%
 
 \newpage
 
@@ -137,46 +163,61 @@ The weight of region $1$ in total production, $\theta_{Y}$, is determined by the
 
 \vspace*{0.5cm}
 
+{\small
+	
+{\singlespacing
+
 \begin{center}
 \begin{longtblr}[
 	label = {table:parameter-calibration},
 	caption = {Parameter Calibration},
 	remark{Sources} = {The Author and \textcite{costa_junior_understanding_2016}}]
 	{rowhead = 1,
-	colspec = {Q[c]|Q[l]|Q[si={table-format=3.2,table-number-alignment=center},c,white]}}
-	\hline[2pt]
-	\textbf{Parameter} & \textbf{Definition} & \textbf{Calibration} \\ \hline[2pt]
-	%$\alpha$         & capital elasticity of production & $0.35$ \\ \hline
-	$\alpha_1$       & capital elasticity of production in region 1 & $0.4$ \\ \hline
-	$\alpha_2$       & capital elasticity of production in region 2 & $0.3$ \\ \hline
-	$\beta$          & intertemporal discount factor & $0.985$ \\ \hline
-	$\gamma_{R}$     & interest-rate smoothing parameter & $0.79$ \\ \hline
-	$\gamma_{\pi}$   & interest-rate sensitivity in relation to inflation & $2.43$ \\ \hline
-	$\gamma_{Y}$     & interest-rate sensitivity in relation to product & $0.16$ \\ \hline
-	$\delta$         & capital depreciation rate & $0.025$ \\ \hline
-	$\theta$         & price stickness parameter & $0.8$ \\ \hline
-	%$\theta_{C11}$   & weight of good 1 in demand of region 1 & $0.4$ \\ \hline
-	%$\theta_{C12}$   & weight of good 2 in demand of region 1 & $0.4$ \\ \hline
-	%$\theta_{C21}$   & weight of good 1 in demand of region 2 & $0.4$ \\ \hline
-	%$\theta_{C22}$   & weight of good 2 in demand of region 2 & $0.4$ \\ \hline
-	%$\theta_{PY1}$   & weight of region 1 in gross domestic product & $0.3$ \\ \hline
-	$\theta_{Y}$     & weight of region 1 in total production & $0.318$ \\ \hline
-	%$\theta_{\pi}$   & weight of region 1 inflation in total inflation & $0.5$ \\ \hline
-	%$\theta_{P}$     & price proportion between regions & $1$ \\ \hline
-	$\theta_{Z}$     & productivity proportion between regions & $0.7151$ \\ \hline
-	$\rho_{A1}$      & autoregressive parameter of productivity in region 1 & $0.95$ \\ \hline
-	$\rho_{A2}$      & autoregressive parameter of productivity in region 2 & $0.95$ \\ \hline
-	$\rho_{M}$       & autoregressive parameter of monetary policy & $0.9$ \\ \hline
-	$\sigma$         & relative risk aversion coefficient & $2$ \\ \hline
-	$\phi$           & relative labor weight in utility & $1$ \\ \hline
-	$\varphi$        & marginal disutility of labor supply & $1.5$ \\ \hline
-	$\psi$           & elasticity of substitution between intermediate goods & $8$ \\ \hline
-	$\sigma_{A\eta}$ & standard deviation of productivity shock & $0.01$ \\ \hline
-	$\sigma_{M}$     & standard deviation of monetary shock & $0.01$ \\ \hline
-	$\omega_{11}$    & weight of good 1 in consumption composition of region 1 & $0.528$ \\ \hline
-	$\omega_{21}$    & weight of good 1 in consumption composition of region 2 & $0.095$ \\ \hline[2pt]
+	 hline{1,2,Z} = {2pt},
+	 % hline{3-Y} = {1pt},
+	 colspec={
+	 	Q[si={table-format=3.2,table-number-alignment=center},c,white]|
+	 	Q[si={table-format=3.2,table-number-alignment=center},l,white]|
+	 	Q[si={table-format=3.2,table-number-alignment=right},c,white]}
+ 	}
+	\textbf{Parameter} & \textbf{Definition} & \textbf{Calibration} \\ 
+	%$\alpha$         & capital elasticity of production & $0.35$ \\ 
+	$\alpha_1$       & capital elasticity of production in region 1 & $0.4$ \\ 
+	$\alpha_2$       & capital elasticity of production in region 2 & $0.3$ \\ 
+	$\beta$          & intertemporal discount factor & $0.985$ \\ 
+	$\gamma_{R}$     & interest-rate smoothing parameter & $0.79$ \\ 
+	$\gamma_{\pi}$   & interest-rate sensitivity in relation to inflation & $2.43$ \\ 
+	$\gamma_{Y}$     & interest-rate sensitivity in relation to product & $0.16$ \\ 
+	$\delta$         & capital depreciation rate & $0.025$ \\ 
+	$\theta$         & price stickness parameter & $0.8$ \\ 
+	$\theta_{C1}$    & weight of consumption on production of region 1 & $0.4$ \\ 
+	$\theta_{C2}$    & weight of consumption on production of region 2 & $0.4$ \\ 
+	%$\theta_{C11}$   & weight of good 1 in demand of region 1 & $0.4$ \\ 
+	%$\theta_{C12}$   & weight of good 2 in demand of region 1 & $0.4$ \\ 
+	%$\theta_{C21}$   & weight of good 1 in demand of region 2 & $0.4$ \\ 
+	%$\theta_{C22}$   & weight of good 2 in demand of region 2 & $0.4$ \\ 
+	%$\theta_{PY1}$   & weight of region 1 in gross domestic product & $0.3$ \\ 
+	$\theta_{Y}$     & weight of region 1 in total production & $0.318$ \\ 
+	%$\theta_{\pi}$   & weight of region 1 inflation in total inflation & $0.5$ \\ 
+	%$\theta_{P}$     & price proportion between regions & $1$ \\ 
+	$\theta_{Z}$     & productivity proportion between regions & $0.7076$ \\ 
+	$\rho_{A1}$      & autoregressive parameter of productivity in region 1 & $0.95$ \\ 
+	$\rho_{A2}$      & autoregressive parameter of productivity in region 2 & $0.95$ \\ 
+	$\rho_{M}$       & autoregressive parameter of monetary policy & $0.9$ \\ 
+	$\sigma$         & relative risk aversion coefficient & $2$ \\ 
+	$\phi$           & relative labor weight in utility & $1$ \\ 
+	$\varphi$        & marginal disutility of labor supply & $1.5$ \\ 
+	$\psi$           & elasticity of substitution between intermediate goods & $8$ \\ 
+	$\sigma_{A\eta}$ & standard deviation of productivity shock & $0.01$ \\ 
+	$\sigma_{M}$     & standard deviation of monetary shock & $0.01$ \\ 
+	$\omega_{11}$    & weight of good 1 in consumption composition of region 1 & $0.528$ \\ 
+	$\omega_{21}$    & weight of good 1 in consumption composition of region 2 & $0.095$ \\ 
 \end{longtblr}	
 \end{center}
+
+} % end of \singlespacing
+
+} % end of \small
 
 \newpage
 
@@ -188,36 +229,47 @@ The weight of region $1$ in total production, $\theta_{Y}$, is determined by the
 
 \vspace*{0.5cm}
 
+{\small
+	
+{\singlespacing
+
 \begin{center}
 \begin{longtblr}[
 	label = {table:ss-values},
 	caption = {Variables at Steady State},
 	remark{Source} = {The Author.}]
 	{rowhead = 1,
-	 colspec = {Q[c]|Q[si = {table-format=3.2, table-number-alignment=center}, c, white]}}
-		\hline[2pt]
+	 hline{1,2,Z} = {2pt},
+	 % hline{3-Y} = {1pt},
+	 colspec={
+	 	Q[si={table-format=3.2,table-number-alignment=center},c,white]|
+	 	Q[si={table-format=3.2,table-number-alignment=right},c,white]}
+ 	}
 		\textbf{Variable} & \textbf{Steady State Value} \\
-		\hline[2pt]
-		$\langle \begin{matrix} P_{1} & Z_{A1} \end{matrix} \rangle$ & $\vec{\bm{1}}$ \\ \hline
-		$\langle \begin{matrix} P_{2} & Z_{A2} \end{matrix} \rangle$ & $\langle \begin{matrix} 1 & .7151 \end{matrix} \rangle$ \\ \hline
-		$\langle \begin{matrix} Z_{M} & \pi & \pi_{1} & \pi_{2} \end{matrix} \rangle$ & $\vec{\bm{1}}$ \\ \hline
-		%$\langle \begin{matrix} \varepsilon_{A1} & \varepsilon_{A2} & \varepsilon_{M} \end{matrix} \rangle$ & $\vec{\bm{0}}$ \\ \hline
-		$R_{}$    & $.0402$ \\ \hline
-		$\langle \begin{matrix} \Lambda_{1} & \Lambda_{2} \end{matrix} \rangle$ & $\langle \begin{matrix} .875 & .875 \end{matrix} \rangle$ \\ \hline
-		$\langle \begin{matrix} W_{1} & W_{2} \end{matrix} \rangle$ & $\langle \begin{matrix} 2.2208 & .8221 \end{matrix} \rangle$ \\ \hline
-		$\langle \begin{matrix} a_{1} & a_{2} \end{matrix} \rangle$ & $\langle \begin{matrix} 4.3957 & 1.3514 \end{matrix} \rangle$ \\ \hline
-		$\langle \begin{matrix} b_{1} & b_{2} \end{matrix} \rangle$ & $\langle \begin{matrix} .2175 & .1631 \end{matrix} \rangle$ \\ \hline
-		$\langle \begin{matrix} Y_{1} & Y_{2} \end{matrix} \rangle$ & $\langle \begin{matrix} .318 & 1-Y_{1} \end{matrix} \rangle$ \\ \hline
-		$\langle \begin{matrix} I_{1} & I_{2} \end{matrix} \rangle$ & $\langle \begin{matrix} .0692 & .1113 \end{matrix} \rangle$ \\ \hline
-		$\langle \begin{matrix} K_{1} & K_{2} \end{matrix} \rangle$ & $\langle \begin{matrix} 2,7667 & 4,4502 \end{matrix} \rangle$ \\ \hline
-		$\langle \begin{matrix} C_{1} & C_{2} \end{matrix} \rangle$ & $\langle \begin{matrix} 10,3802 & 1,8508 \end{matrix} \rangle$ \\ \hline
-		$\langle \begin{matrix} Q_{1} & Q_{2} \end{matrix} \rangle$ & $\langle \begin{matrix} 1,9969 & 1,3688 \end{matrix} \rangle$ \\ \hline
-		$\langle \begin{matrix} C_{11} & C_{12} \end{matrix} \rangle$ & $\langle \begin{matrix} 10,9443 & 9,,7835 \end{matrix} \rangle$ \\ \hline
-		$\langle \begin{matrix} C_{21} & C_{22} \end{matrix} \rangle$ & $\langle \begin{matrix} .2407 & 2.2928 \end{matrix} \rangle$ \\ \hline
-		$\langle \begin{matrix} L_{1} & L_{2} \end{matrix} \rangle$ & $\langle \begin{matrix} .0752 & .4929 \end{matrix} \rangle$ \\ \hline[2pt]
+		$\langle \begin{matrix} P_{1} & Z_{A1} \end{matrix} \rangle$ & $\vec{\bm{1}}$ \\ 
+		$\langle \begin{matrix} P_{2} & Z_{A2} \end{matrix} \rangle$ & $\langle \begin{matrix} 1 & .7076 \end{matrix} \rangle$ \\ 
+		$\langle \begin{matrix} Z_{M} & \pi & \pi_{1} & \pi_{2} \end{matrix} \rangle$ & $\vec{\bm{1}}$ \\ 
+		%$\langle \begin{matrix} \varepsilon_{A1} & \varepsilon_{A2} & \varepsilon_{M} \end{matrix} \rangle$ & $\vec{\bm{0}}$ \\ 
+		$R_{}$    & $.0402$ \\ 
+		$\langle \begin{matrix} \Lambda_{1} & \Lambda_{2} \end{matrix} \rangle$ & $\langle \begin{matrix} .875 & .875 \end{matrix} \rangle$ \\ 
+		$\langle \begin{matrix} W_{1} & W_{2} \end{matrix} \rangle$ & $\langle \begin{matrix} 2.2208 & .8349 \end{matrix} \rangle$ \\ 
+		$\langle \begin{matrix} a_{1} & a_{2} \end{matrix} \rangle$ & $\langle \begin{matrix} 4.3957 & 1.3703 \end{matrix} \rangle$ \\ 
+		$\langle \begin{matrix} b_{1} & b_{2} \end{matrix} \rangle$ & $\langle \begin{matrix} .2175 & .1631 \end{matrix} \rangle$ \\ 
+		$\langle \begin{matrix} Y_{1} & Y_{2} \end{matrix} \rangle$ & $\langle \begin{matrix} .318 & 1-Y_{1} \end{matrix} \rangle$ \\ 
+		$\langle \begin{matrix} I_{1} & I_{2} \end{matrix} \rangle$ & $\langle \begin{matrix} .0692 & .1113 \end{matrix} \rangle$ \\ 
+		$\langle \begin{matrix} K_{1} & K_{2} \end{matrix} \rangle$ & $\langle \begin{matrix} 2,7667 & 4,4502 \end{matrix} \rangle$ \\ 
+		$\langle \begin{matrix} C_{1} & C_{2} \end{matrix} \rangle$ & $\langle \begin{matrix} 10,3802 & 1,8259 \end{matrix} \rangle$ \\ 
+		$\langle \begin{matrix} Q_{1} & Q_{2} \end{matrix} \rangle$ & $\langle \begin{matrix} 1,9969 & 1,3688 \end{matrix} \rangle$ \\ 
+		$\langle \begin{matrix} C_{11} & C_{12} \end{matrix} \rangle$ & $\langle \begin{matrix} 10,9443 & 9,7835 \end{matrix} \rangle$ \\ 
+		$\langle \begin{matrix} C_{21} & C_{22} \end{matrix} \rangle$ & $\langle \begin{matrix} .2374 & 2.2619 \end{matrix} \rangle$ \\ 
+		$\langle \begin{matrix} L_{1} & L_{2} \end{matrix} \rangle$ & $\langle \begin{matrix} .0752 & .5003 \end{matrix} \rangle$ \\
 	\end{longtblr}
 	
 \end{center}
+
+} % end of \singlespacing
+
+} % end of \small
 
 % \newpage
 

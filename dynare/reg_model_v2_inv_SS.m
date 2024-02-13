@@ -19,22 +19,22 @@ omega21 = 0.095 ; % weight of good 1 in consumption composition of region 2
 
 % steady state parameters:
 thetaP = 1      ;
-thetaZ = 0.7151 ;
+thetaZ = 0.7076 ;
 
 % steady state variables as local varibles, for log-linear use:
 
-P1ss   = 1 ;
-ZA1ss  = 1 ;
+P1ss  = 1 ;
+ZA1ss = 1 ;
 
-P2ss   = thetaP * P1ss  ;
-ZA2ss  = thetaZ * ZA1ss ;
+P2ss  = thetaP * P1ss  ;
+ZA2ss = thetaZ * ZA1ss ;
 
-ZMss   = 1 ;
-piss   = 1 ;
-pi1ss  = 1 ;
-pi2ss  = 1 ;
+ZMss  = 1 ;
+piss  = 1 ;
+pi1ss = 1 ;
+pi2ss = 1 ;
 
-Rss    = P1ss * (1/betta - (1 - dellta));
+Rss  = P1ss * (1/betta - (1 - dellta));
 
 Q1ss = P1ss / (omega11^omega11*(1-omega11)^(1-omega11));
 Q2ss = P1ss / (omega21^omega21*(1-omega21)^(1-omega21));
@@ -51,13 +51,13 @@ a2ss = (W2ss/(phhi*ZA2ss)*(ZA2ss*(alpha2*W2ss/((1-alpha2)*Rss))^alpha2)^varphhi)
 b1ss = (dellta/ZA1ss) * (alpha1*W1ss/((1-alpha1)*Rss))^(1-alpha1) ;
 b2ss = (dellta/ZA2ss) * (alpha2*W2ss/((1-alpha2)*Rss))^(1-alpha2) ;
 
-Y1ss  = 0.318    ;
-Y2ss  = 1 - Y1ss ;
-Yss   = 1        ;
+% Y1ss  = 0.318    ;
+% Y2ss  = 1 - Y1ss ;
+% Yss   = 1        ;
 
-% Y1ss  = (a1ss/(1-b1ss))^(siggma/(siggma+varphhi)) ;
-% Y2ss  = (a2ss/(1-b2ss))^(siggma/(siggma+varphhi)) ;
-% Yss   = Y1ss + Y2ss  ;
+Y1ss  = (a1ss/(1-b1ss))^(siggma/(siggma+varphhi)) ;
+Y2ss  = (a2ss/(1-b2ss))^(siggma/(siggma+varphhi)) ;
+Yss   = Y1ss + Y2ss  ;
 
 C1ss  = a1ss * Y1ss^(-varphhi/siggma) ;
 C2ss  = a2ss * Y2ss^(-varphhi/siggma) ;
@@ -148,7 +148,7 @@ variables = {
 };
 
 % Specify the Excel file name
-excelFileName = 'reg_model_v2_inv_SS_values.xlsx';
+excelFileName = 'reg_model_v2_inv_SS.xlsx';
 
 % Write the cell array to the Excel file
 % xlswrite(excelFileName, variables);

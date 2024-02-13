@@ -1,5 +1,5 @@
 function [residual, g1, g2, g3] = dynamic(y, x, params, steady_state, it_)
-    T = NaN(5, 1);
+    T = NaN(11, 1);
     if nargout <= 1
         residual = reg_model_v2_inv.dynamic_resid(T, y, x, params, steady_state, it_, true);
     elseif nargout == 2

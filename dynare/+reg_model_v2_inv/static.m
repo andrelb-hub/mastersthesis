@@ -1,5 +1,5 @@
 function [residual, g1, g2, g3] = static(y, x, params)
-    T = NaN(5, 1);
+    T = NaN(11, 1);
     if nargout <= 1
         residual = reg_model_v2_inv.static_resid(T, y, x, params, true);
     elseif nargout == 2

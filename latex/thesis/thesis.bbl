@@ -558,7 +558,7 @@
       \verb 10.1086/715416
       \endverb
     \endentry
-    \entry{ibge_produto_2024}{misc}{}
+    \entry{ibge_workers_2023}{misc}{}
       \name{author}{1}{}{%
         {{hash=3898f1ceb6fdd56f963db7f9326130e4}{%
            family={{IBGE}},
@@ -570,22 +570,91 @@
       \strng{authorbibnamehash}{3898f1ceb6fdd56f963db7f9326130e4}
       \strng{authornamehash}{3898f1ceb6fdd56f963db7f9326130e4}
       \strng{authorfullhash}{3898f1ceb6fdd56f963db7f9326130e4}
+      \field{extraname}{1}
       \field{sortinit}{I}
       \field{sortinithash}{8d291c51ee89b6cd86bf5379f0b151d8}
+      \field{extradate}{1}
       \field{extradatescope}{labelyear}
-      \field{labeldatesource}{url}
+      \field{labeldatesource}{}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{title}{Produto {Interno} {Bruto} ({PIB}) 2021}
-      \field{urlday}{24}
-      \field{urlmonth}{1}
+      \field{title}{Tabela 4092: {Pessoas} de 14 anos ou mais de idade, por condição em relação à força de trabalho e condição de ocupação}
+      \field{urlday}{12}
+      \field{urlmonth}{2}
       \field{urlyear}{2024}
+      \field{year}{2023}
       \field{urldateera}{ce}
       \verb{urlraw}
-      \verb https://sidra.ibge.gov.br/tabela/5938#resultado
+      \verb https://sidra.ibge.gov.br/tabela/4092
       \endverb
       \verb{url}
-      \verb https://sidra.ibge.gov.br/tabela/5938#resultado
+      \verb https://sidra.ibge.gov.br/tabela/4092
+      \endverb
+    \endentry
+    \entry{ibge_GDP_2023}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=3898f1ceb6fdd56f963db7f9326130e4}{%
+           family={{IBGE}},
+           familyi={I\bibinitperiod}}}%
+      }
+      \strng{namehash}{3898f1ceb6fdd56f963db7f9326130e4}
+      \strng{fullhash}{3898f1ceb6fdd56f963db7f9326130e4}
+      \strng{bibnamehash}{3898f1ceb6fdd56f963db7f9326130e4}
+      \strng{authorbibnamehash}{3898f1ceb6fdd56f963db7f9326130e4}
+      \strng{authornamehash}{3898f1ceb6fdd56f963db7f9326130e4}
+      \strng{authorfullhash}{3898f1ceb6fdd56f963db7f9326130e4}
+      \field{extraname}{2}
+      \field{sortinit}{I}
+      \field{sortinithash}{8d291c51ee89b6cd86bf5379f0b151d8}
+      \field{extradate}{2}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Tabela 5938: {Produto} interno bruto a preços correntes, impostos, líquidos de subsídios, sobre produtos a preços correntes e valor adicionado bruto a preços correntes total e por atividade econômica, e respectivas participações - {Referência} 2010}
+      \field{urlday}{12}
+      \field{urlmonth}{2}
+      \field{urlyear}{2024}
+      \field{year}{2023}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://sidra.ibge.gov.br/tabela/5938
+      \endverb
+      \verb{url}
+      \verb https://sidra.ibge.gov.br/tabela/5938
+      \endverb
+    \endentry
+    \entry{ibge_hours_2023}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=3898f1ceb6fdd56f963db7f9326130e4}{%
+           family={{IBGE}},
+           familyi={I\bibinitperiod}}}%
+      }
+      \strng{namehash}{3898f1ceb6fdd56f963db7f9326130e4}
+      \strng{fullhash}{3898f1ceb6fdd56f963db7f9326130e4}
+      \strng{bibnamehash}{3898f1ceb6fdd56f963db7f9326130e4}
+      \strng{authorbibnamehash}{3898f1ceb6fdd56f963db7f9326130e4}
+      \strng{authornamehash}{3898f1ceb6fdd56f963db7f9326130e4}
+      \strng{authorfullhash}{3898f1ceb6fdd56f963db7f9326130e4}
+      \field{extraname}{3}
+      \field{sortinit}{I}
+      \field{sortinithash}{8d291c51ee89b6cd86bf5379f0b151d8}
+      \field{extradate}{3}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Tabela 6371: {Média} de horas habitualmente trabalhadas por semana e efetivamente trabalhadas na semana de referência, no trabalho principal e em todos os trabalhos, das pessoas de 14 anos ou mais de idade, por sexo}
+      \field{urlday}{12}
+      \field{urlmonth}{2}
+      \field{urlyear}{2024}
+      \field{year}{2023}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://sidra.ibge.gov.br/tabela/6371
+      \endverb
+      \verb{url}
+      \verb https://sidra.ibge.gov.br/tabela/6371
       \endverb
     \endentry
     \entry{inada_two-sector_1963}{article}{}
@@ -1345,6 +1414,7 @@
       \field{dateera}{ce}
     \endentry
   \enddatalist
+  \missing{ibge_produto_2024}
 \endrefsection
 \endinput
 

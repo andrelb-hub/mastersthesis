@@ -1,15 +1,17 @@
 [0] Config.pm:307> INFO - This is Biber 2.19
 [0] Config.pm:310> INFO - Logfile is 'thesis.blg'
-[94] biber-MSWIN64:340> INFO - === 
-[127] Biber.pm:419> INFO - Reading 'thesis.bcf'
-[261] Biber.pm:979> INFO - Found 38 citekeys in bib section 0
-[277] Biber.pm:4419> INFO - Processing section 0
-[289] Biber.pm:4610> INFO - Looking for bibtex file '../ref.bib' for section 0
-[336] bibtex.pm:1713> INFO - LaTeX decoding ...
-[392] bibtex.pm:1519> INFO - Found BibTeX data source '../ref.bib'
-[555] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[555] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
-[555] Biber.pm:4239> INFO - Sorting list 'nyt/global//global/global' of type 'entry' with template 'nyt' and locale 'en-US'
-[555] Biber.pm:4245> INFO - No sort tailoring available for locale 'en-US'
-[591] bbl.pm:660> INFO - Writing 'thesis.bbl' with encoding 'UTF-8'
-[606] bbl.pm:763> INFO - Output to thesis.bbl
+[137] biber-MSWIN64:340> INFO - === 
+[188] Biber.pm:419> INFO - Reading 'thesis.bcf'
+[380] Biber.pm:979> INFO - Found 41 citekeys in bib section 0
+[405] Biber.pm:4419> INFO - Processing section 0
+[422] Biber.pm:4610> INFO - Looking for bibtex file '../ref.bib' for section 0
+[482] bibtex.pm:1713> INFO - LaTeX decoding ...
+[552] bibtex.pm:1519> INFO - Found BibTeX data source '../ref.bib'
+[787] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[787] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[787] Biber.pm:4239> INFO - Sorting list 'nyt/global//global/global' of type 'entry' with template 'nyt' and locale 'en-US'
+[787] Biber.pm:4245> INFO - No sort tailoring available for locale 'en-US'
+[854] bbl.pm:660> INFO - Writing 'thesis.bbl' with encoding 'UTF-8'
+[877] bbl.pm:763> INFO - Output to thesis.bbl
+[878] Biber.pm:131> WARN - I didn't find a database entry for 'ibge_produto_2024' (section 0)
+[878] Biber.pm:133> INFO - WARNINGS: 1
