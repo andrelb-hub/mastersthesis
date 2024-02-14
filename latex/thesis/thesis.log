@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999995 (MiKTeX 23.12) (preloaded format=xelatex 2024.1.18)  13 FEB 2024 22:27
+This is XeTeX, Version 3.141592653-2.6-0.999995 (MiKTeX 23.12) (preloaded format=xelatex 2024.1.18)  14 FEB 2024 14:05
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1900,15 +1900,7 @@ Package biblatex Info: Automatic encoding selection.
 
 Package biblatex Info: Trying to load bibliographic data...
 Package biblatex Info: ... file 'thesis.bbl' found.
- (thesis.bbl
-
-Package biblatex Warning: The following entry could not be found
-(biblatex)                in the database:
-(biblatex)                ibge_produto_2024
-(biblatex)                Please verify the spelling and rerun
-(biblatex)                LaTeX afterwards.
-
-)
+ (thesis.bbl)
 Package biblatex Info: Reference section=0 on input line 74.
 Package biblatex Info: Reference segment=0 on input line 74.
  (pre/cover.tex
@@ -1916,10 +1908,11 @@ File: ../images/../images/marca_dagua_ufpr.jpg Graphic file (type bmp)
 <../images/../images/marca_dagua_ufpr.jpg>
  [1
 
-]) (pre/inside_cover.tex [2]) (pre/catalog_record.tex)
-(pre/approval_form.tex [3]) (pre/dedication.tex [4]) (pre/acknowledgments.tex
-[5]) (pre/epigraph.tex [6] Excluding 'comment' comment.) (pre/abstract.tex
-[7] [8]) (pre/lists.tex [9] (thesis.lof
+]) (pre/inside_cover.tex [2])
+(pre/catalog_record.tex) (pre/approval_form.tex [3]) (pre/dedication.tex
+[4]) (pre/acknowledgments.tex [5]) (pre/epigraph.tex [6]
+Excluding 'comment' comment.) (pre/abstract.tex [7] [8]) (pre/lists.tex
+[9] (thesis.lof
 LaTeX Font Info:    Trying to load font information for OT1+ppl on input line 4
 .
 
@@ -1992,7 +1985,7 @@ LaTeX Font Info:    Font shape `U/msb/m/n' will be
  [13] [14])
 (sections/literature_review.tex [15] [16] [17] [18]
 Excluding 'comment' comment.) (sections/methodology.tex [19])
-(sections/reg_model_v2_investment.tex [20]
+(sections/reg_model_v2_inv.tex [20]
 LaTeX Font Info:    Calculating math sizes for size <8.76118> on input line 41.
 
 LaTeX Font Info:    Font shape `U/msa/m/n' will be
@@ -2010,8 +2003,8 @@ LaTeX Font Info:    Font shape `U/msb/m/n' will be
  [21] Excluding 'comment' comment.
 File: ../images/../images/flowchart.jpg Graphic file (type bmp)
 <../images/../images/flowchart.jpg>
-
-[22] [23]
+ [22]
+[23]
 LaTeX Font Info:    Font shape `U/BOONDOX-calo/m/n' will be
 (Font)              scaled to size 12.0pt on input line 135.
 LaTeX Font Info:    Font shape `U/BOONDOX-calo/m/n' will be
@@ -2084,13 +2077,22 @@ File: t1lmtt.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 ) [49]
 [50] [51] [52] [53] Excluding 'comment' comment. [54]
 Excluding 'comment' comment. Excluding 'comment' comment. [55]
-Excluding 'comment' comment. [56] Excluding 'comment' comment. [57]
-Excluding 'comment' comment. Excluding 'comment' comment.
-Excluding 'comment' comment. [58] Excluding 'comment' comment.
-Excluding 'comment' comment. [59] Excluding 'comment' comment.
-Excluding 'comment' comment. [60] Excluding 'comment' comment. [61] [62]
-Excluding 'comment' comment. Excluding 'comment' comment.)
-(sections/calibration.tex [63] Excluding 'comment' comment. [64] [65]
+
+LaTeX Warning: Reference `coro:steady-state-YKL' on page 56 undefined on input 
+line 1739.
+
+Excluding 'comment' comment. [56]
+
+LaTeX Warning: Reference `coro:steady-state-YKL' on page 57 undefined on input 
+line 1789.
+
+Excluding 'comment' comment. [57] Excluding 'comment' comment.
+Excluding 'comment' comment. Excluding 'comment' comment. [58]
+Excluding 'comment' comment. Excluding 'comment' comment. [59]
+Excluding 'comment' comment. Excluding 'comment' comment. [60]
+Excluding 'comment' comment. [61] [62] Excluding 'comment' comment.
+Excluding 'comment' comment.) (sections/calibration.tex [63]
+Excluding 'comment' comment. [64] [65]
 > Step: init table outer spec.
 > Step: parse table options.
 > Step: split table.
@@ -2128,8 +2130,7 @@ LaTeX Font Info:    Font shape `U/cmsy/b/n' will be
 LaTeX Font Info:    Font shape `U/cmsy/b/n' will be
 (Font)              scaled to size 8.0pt on input line 215.
 > Step: build the whole table.
-
-[67]
+ [67]
 > Step: init table outer spec.
 > Step: parse table options.
 > Step: split table.
@@ -2138,8 +2139,9 @@ LaTeX Font Info:    Font shape `U/cmsy/b/n' will be
 > Step: execute table commands.
 > Step: calculate cell and line sizes.
 > Step: build the whole table.
-) (sections/results.tex [68] Excluding 'comment' comment. [69]
-Excluding 'comment' comment.) (sections/IRF_monetary_shock.tex [70]
+) (sections/results.tex
+[68] Excluding 'comment' comment. [69] Excluding 'comment' comment.)
+(sections/IRF_monetary_shock.tex [70]
 File: ../images/../images/plots/plot_eM_pos_ZMt.png Graphic file (type bmp)
 <../images/../images/plots/plot_eM_pos_ZMt.png>
 File: ../images/../images/plots/plot_eM_pos_Rt.png Graphic file (type bmp)
@@ -2209,8 +2211,7 @@ File: ../images/../images/shock_ZMt/blank.png Graphic file (type bmp)
 <../images/../images/shock_ZMt/blank.png>
 File: ../images/../images/shock_ZMt/blank.png Graphic file (type bmp)
 <../images/../images/shock_ZMt/blank.png>
-
-[72]
+ [72]
 File: ../images/../images/plots/plot_eM_pos_C1_C2.png Graphic file (type bmp)
 <../images/../images/plots/plot_eM_pos_C1_C2.png>
 File: ../images/../images/plots/plot_eM_pos_I1_I2.png Graphic file (type bmp)
@@ -2228,7 +2229,8 @@ File: ../images/../images/plots/plot_eM_pos_Q1_Q2.png Graphic file (type bmp)
 <../images/../images/plots/plot_eM_pos_Q1_Q2.png>
 File: ../images/../images/plots/plot_eM_pos_P1_P2.png Graphic file (type bmp)
 <../images/../images/plots/plot_eM_pos_P1_P2.png>
- Excluding 'comment' comment. [74]
+
+Excluding 'comment' comment. [74]
 File: ../images/../images/plots/plot_eM_neg_ZMt.png Graphic file (type bmp)
 <../images/../images/plots/plot_eM_neg_ZMt.png>
 File: ../images/../images/plots/plot_eM_neg_Rt.png Graphic file (type bmp)
@@ -2310,17 +2312,13 @@ File: ../images/../images/plots/plot_eM_neg_Q1_Q2.png Graphic file (type bmp)
 <../images/../images/plots/plot_eM_neg_Q1_Q2.png>
 File: ../images/../images/plots/plot_eM_neg_P1_P2.png Graphic file (type bmp)
 <../images/../images/plots/plot_eM_neg_P1_P2.png>
-
-Excluding 'comment' comment.) (sections/final_remarks.tex [78]
-Excluding 'comment' comment.) (post/references.tex [79] [80] [81] [82])
-(post/appendix.tex [83]) (post/appendix_definitions.tex [84]
-Excluding 'comment' comment. [85]
-
-LaTeX Warning: Reference `eq_v0:ss-gross-inflation-rate' on page 86 undefined o
-n input line 136.
-
-[86] [87] Excluding 'comment' comment.) (post/appendix_dynare.tex [88])
-(post/appendix_latex.tex [89]
+ Excluding 'comment' comment.)
+(sections/final_remarks.tex [78] Excluding 'comment' comment.)
+(post/references.tex [79] [80] [81] [82]) (post/appendix.tex [83])
+(post/appendix_definitions.tex [84] Excluding 'comment' comment.
+Excluding 'comment' comment. [85] Excluding 'comment' comment. [86]
+Excluding 'comment' comment.) (post/appendix_dynare.tex [87])
+(post/appendix_latex.tex [88]
 LaTeX Font Info:    Font shape `U/msa/m/n' will be
 (Font)              scaled to size 15.0049pt on input line 11.
 LaTeX Font Info:    Font shape `U/msb/m/n' will be
@@ -2331,7 +2329,7 @@ LaTeX Font Info:    Font shape `U/cmsy/m/n' will be
 (Font)              scaled to size 14.4pt on input line 11.
 LaTeX Font Info:    Font shape `U/cmsy/b/n' will be
 (Font)              scaled to size 14.4pt on input line 11.
- [90] [91]
+ [89] [90]
 LaTeX Font Info:    Font shape `U/BOONDOX-calo/b/n' will be
 (Font)              scaled to size 12.0pt on input line 138.
 LaTeX Font Info:    Font shape `U/BOONDOX-calo/b/n' will be
@@ -2409,7 +2407,7 @@ Missing character: There is no 7 in font fplmbb!
 Missing character: There is no 8 in font fplmbb!
 Missing character: There is no 9 in font fplmbb!
 Missing character: There is no 0 in font fplmbb!
-[92] [93]
+[91] [92]
 > Step: init table outer spec.
 > Step: parse table options.
 > Step: split table.
@@ -2418,7 +2416,7 @@ Missing character: There is no 0 in font fplmbb!
 > Step: execute table commands.
 > Step: calculate cell and line sizes.
 > Step: build the whole table.
- [94]
+ [93]
 > Step: init table outer spec.
 > Step: parse table options.
 > Step: split table.
@@ -2437,7 +2435,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 256--256
 []\T1/ppl/m/n/12 Table 5: Vari-ables (Con-
  []
 
-) [95] (thesis.aux)
+) [94] (thesis.aux)
  ***********
 LaTeX2e <2023-11-01>
 L3 programming layer <2020/03/25>
@@ -2456,11 +2454,11 @@ Package logreq Info: Writing requests to 'thesis.run.xml'.
  ) 
 Here is how much of TeX's memory you used:
  50549 strings out of 409617
- 1051633 string characters out of 5774013
- 2066707 words of memory out of 5000000
+ 1051740 string characters out of 5774013
+ 2066581 words of memory out of 5000000
  71714 multiletter control sequences out of 15000+600000
  682095 words of font info for 344 fonts, out of 8000000 for 9000
  1350 hyphenation exceptions out of 8191
  123i,26n,131p,1536b,5796s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on thesis.pdf (95 pages).
+Output written on thesis.pdf (94 pages).

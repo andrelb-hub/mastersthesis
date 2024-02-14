@@ -296,7 +296,7 @@ Y2t = thetaC2 * C2t + (1 - thetaC2) * I2t;
      ZA1t = rhoA1 * ZA1t(-1) + e_A1;
      ZA2t = rhoA2 * ZA2t(-1) + e_A2;
 [name='Monetary Shock']
-     ZMt = rhoM * ZMt(-1) + e_M;
+     ZMt = rhoM * ZMt(-1) - e_M;
 end;
 % -------------------------------------------------- % 
 % STEADY STATE                                       %
@@ -353,7 +353,8 @@ shocks;
      var    e_M;
      stderr sigmaM;
 end;
-stoch_simul(irf=100, order=1, qz_zero_threshold=1e-20) 
+% Execute stoch_simul
+stoch_simul(irf=40, order=1, qz_zero_threshold=1e-20)
 % 1   2    3    4    5    6    7    8    9
   Yt  Y1t  Y2t  I1t  I2t  K1t  L1t  L2t  K2t  
   Rt  C1t  C2t  C11t C12t W1t  C21t C22t W2t
@@ -361,18 +362,20 @@ stoch_simul(irf=100, order=1, qz_zero_threshold=1e-20)
   ZMt ZA1t ZA2t
 ;
 % -------------------------------------------------- % 
+% Parameters for the png files                       %
+% -------------------------------------------------- % 
+% path to save the PNG files:
+png_folder = 'C:\apps\gdrive\projects\masterthesis\latex\images\plots';
+t_vector = 1:40;
+% -------------------------------------------------- % 
 % SAVE SINGLE IRFs IN PNG                            %
 % -------------------------------------------------- % 
-% Parameters for the png files
-time_vector = 1:100;
 var_vector = {Yt_e_M, Y1t_e_M, Y2t_e_M, I1t_e_M, I2t_e_M, K1t_e_M, L1t_e_M, L2t_e_M, K2t_e_M, Rt_e_M, C1t_e_M, C2t_e_M, C11t_e_M, C12t_e_M, W1t_e_M, C21t_e_M, C22t_e_M, W2t_e_M, pit_e_M, pi1t_e_M, pi2t_e_M, Q1t_e_M, P1t_e_M, P2t_e_M, Q2t_e_M, lambda1t_e_M, lambda2t_e_M, ZMt_e_M, ZA1t_e_M, ZA2t_e_M};
-names_vector = {'total production', 'production region 1', 'production region 2', 'investment region 1', 'investment region 2', 'capital region 1', 'labor region 1', 'labor region 2', 'capital region 2', 'interest rate', 'consumption region 1', 'consumption region 2', 'consumption reg 1, good 1', 'consumption reg 1, good 2', 'wages region 1', 'consumption reg 2, good 1', 'consumption reg 2, good 2', 'wages region 2', 'inflation', 'inflation region 1', 'inflation region 2', 'consumer price level region 1', 'producer price level region 1', 'producer price level region 2', 'consumer price level region 2', 'marginal cost region 1', 'marginal cost region 2', 'monetary shock', 'productivity shock region 1', 'productivity shock region 2'};
-png_names = {'eM_Yt', 'eM_Y1t', 'eM_Y2t', 'eM_I1t', 'eM_I2t', 'eM_K1t', 'eM_L1t', 'eM_L2t', 'eM_K2t', 'eM_Rt', 'eM_C1t', 'eM_C2t', 'eM_C11t', 'eM_C12t', 'eM_W1t', 'eM_C21t', 'eM_C22t', 'eM_W2t', 'eM_pit', 'eM_pi1t', 'eM_pi2t', 'eM_Q1t', 'eM_P1t', 'eM_P2t', 'eM_Q2t', 'eM_lambda1t', 'eM_lambda2t', 'eM_ZMt', 'eM_ZA1t', 'eM_ZA2t'};
 var_names = {'Yt', 'Y1t', 'Y2t', 'I1t', 'I2t', 'K1t', 'L1t', 'L2t', 'K2t', 'Rt', 'C1t', 'C2t', 'C11t', 'C12t', 'W1t', 'C21t', 'C22t', 'W2t', 'pit', 'pi1t', 'pi2t', 'Q1t', 'P1t', 'P2t', 'Q2t', 'lambda1t', 'lambda2t', 'ZMt', 'ZA1t', 'ZA2t'};
 % Loop through each variable in var_vector
 for i = 1:length(var_vector)
     % Plot the variable
-    plot(time_vector, var_vector{i}, 'LineWidth', 1.5);
+    plot(t_vector, var_vector{i}, 'LineWidth', 1.5);
     hold on; % Hold the plot
     
     % Make the y=0 line thicker and light gray
@@ -387,12 +390,9 @@ for i = 1:length(var_vector)
     
     % Grid on for clarity
     grid on;
-    
-    % Specify the path to save the PNG file
-    save_path = 'C:\apps\gdrive\projects\masterthesis\latex\images\plots';
-    
+       
     % Save the plot as a PNG file with the specified path
-    saveas(gcf, fullfile(save_path, ['plot_eM_pos_', var_names{i}, '.png']));
+    saveas(gcf, fullfile(png_folder, ['plot_eM_neg_', var_names{i}, '.png']));
     
     % Clear the current figure to prepare for the next iteration
     clf;
@@ -402,31 +402,29 @@ end
 % -------------------------------------------------- % 
 % Pause for n seconds
 pause(1);
-time_vector = 1:100;
-png_folder = 'C:\apps\gdrive\projects\masterthesis\latex\images\plots';
 % Plot the IRF for C1t_e_M
-h1 = plot(time_vector, C1t_e_M, 'LineWidth', 1.5);
-text(time_vector(end)*.95, C1t_e_M(end)*1.05, 'C1', 'HorizontalAlignment', 'right', 'VerticalAlignment', 'bottom', 'Color', get(h1, 'Color')); % Add text label for variable C1
+h1 = plot(t_vector, C1t_e_M, 'LineWidth', 1.5);
+text(t_vector(end)*.95, C1t_e_M(end)*1.05, 'C1', 'HorizontalAlignment', 'right', 'VerticalAlignment', 'bottom', 'Color', get(h1, 'Color')); % Add text label for variable C1
 hold on; % Hold the plot
 % Plot the IRF for C2t_e_M
-h2 = plot(time_vector, C2t_e_M, 'LineWidth', 1.5);
-text(time_vector(end), C2t_e_M(end), 'C2', 'HorizontalAlignment', 'right', 'VerticalAlignment', 'bottom', 'Color', get(h2, 'Color')); % Add text label for variable C2
+h2 = plot(t_vector, C2t_e_M, 'LineWidth', 1.5);
+text(t_vector(end), C2t_e_M(end), 'C2', 'HorizontalAlignment', 'right', 'VerticalAlignment', 'bottom', 'Color', get(h2, 'Color')); % Add text label for variable C2
 hold on; % Hold the plot
 % Plot the IRF for I1t_e_M
-h3 = plot(time_vector, I1t_e_M, 'LineWidth', 1.5);
-text(time_vector(end)*.95, I1t_e_M(end)*1.05, 'I1', 'HorizontalAlignment', 'right', 'VerticalAlignment', 'bottom', 'Color', get(h3, 'Color')); % Add text label for variable I1
+h3 = plot(t_vector, I1t_e_M, 'LineWidth', 1.5);
+text(t_vector(end)*.95, I1t_e_M(end)*1.05, 'I1', 'HorizontalAlignment', 'right', 'VerticalAlignment', 'bottom', 'Color', get(h3, 'Color')); % Add text label for variable I1
 hold on; % Hold the plot
 % Plot the IRF for I2t_e_M
-h4 = plot(time_vector, I2t_e_M, 'LineWidth', 1.5);
-text(time_vector(end), I2t_e_M(end), 'I2', 'HorizontalAlignment', 'right', 'VerticalAlignment', 'bottom', 'Color', get(h4, 'Color')); % Add text label for variable I2
+h4 = plot(t_vector, I2t_e_M, 'LineWidth', 1.5);
+text(t_vector(end), I2t_e_M(end), 'I2', 'HorizontalAlignment', 'right', 'VerticalAlignment', 'bottom', 'Color', get(h4, 'Color')); % Add text label for variable I2
 hold on; % Hold the plot
 % Plot the IRF for Y1t_e_M
-h5 = plot(time_vector, Y1t_e_M, 'LineWidth', 1.5);
-text(time_vector(end)*.95, Y1t_e_M(end)*1.05, 'Y1', 'HorizontalAlignment', 'right', 'VerticalAlignment', 'bottom', 'Color', get(h5, 'Color')); % Add text label for variable Y1
+h5 = plot(t_vector, Y1t_e_M, 'LineWidth', 1.5);
+text(t_vector(end)*.95, Y1t_e_M(end)*1.05, 'Y1', 'HorizontalAlignment', 'right', 'VerticalAlignment', 'bottom', 'Color', get(h5, 'Color')); % Add text label for variable Y1
 hold on; % Hold the plot
 % Plot the IRF for Y2t_e_M
-h6 = plot(time_vector, Y2t_e_M, 'LineWidth', 1.5);
-text(time_vector(end), Y2t_e_M(end), 'Y2', 'HorizontalAlignment', 'right', 'VerticalAlignment', 'bottom', 'Color', get(h6, 'Color')); % Add text label for variable Y2
+h6 = plot(t_vector, Y2t_e_M, 'LineWidth', 1.5);
+text(t_vector(end), Y2t_e_M(end), 'Y2', 'HorizontalAlignment', 'right', 'VerticalAlignment', 'bottom', 'Color', get(h6, 'Color')); % Add text label for variable Y2
 hold on; % Hold the plot
 % Make the y=0 line thicker and light gray
 hline = refline(0, 0);
@@ -442,12 +440,10 @@ legend([h1, h2, h3, h4, h5, h6], 'Consumption region 1', 'Consumption region 2',
 % Grid on for clarity
 grid on;
 % Save the plot as a PNG file with the specified path
-    saveas(gcf, fullfile(png_folder, 'plot_eM_pos_Cn_In_Yn.png'));
+    saveas(gcf, fullfile(png_folder, 'plot_eM_neg_Cn_In_Yn.png'));
 % -------------------------------------------------- % 
 % Cn,In,Yn IRF IN SEPARATED PNG                      %
 % -------------------------------------------------- % 
-time_vector = 1:100;
-png_folder = 'C:\apps\gdrive\projects\masterthesis\latex\images\plots';
 variables = {C1t_e_M, C2t_e_M, I1t_e_M, I2t_e_M, Y1t_e_M, Y2t_e_M, K1t_e_M, K2t_e_M, L1t_e_M, L2t_e_M, W1t_e_M, W2t_e_M, Q1t_e_M, Q2t_e_M, P1t_e_M, P2t_e_M};
 variable_names = {'C1', 'C2', 'I1', 'I2', 'Y1', 'Y2', 'K1', 'K2', 'L1', 'L2', 'W1', 'W2', 'Q1', 'Q2', 'P1', 'P2'};
 pairs = {[1, 2], [3, 4], [5, 6], [7, 8], [9, 10], [11, 12], [13, 14], [15, 16]}; % Pairs: {C1, C2}, {I1, I2}, {Y1, Y2};
@@ -459,8 +455,8 @@ for p = 1:length(pairs)
     hold on;
     line_handles = gobjects(length(pair_indices), 1); % Preallocate handles array
     for i = 1:length(pair_indices)
-        line_handles(i) = plot(time_vector, variables{pair_indices(i)}, 'LineWidth', 1.5);
-        text(time_vector(end)*.95, variables{pair_indices(i)}(end)*1.05, variable_names{pair_indices(i)}, 'HorizontalAlignment', 'right', 'VerticalAlignment', 'bottom', 'Color', get(line_handles(i), 'Color')); % Add text label for variable
+        line_handles(i) = plot(t_vector, variables{pair_indices(i)}, 'LineWidth', 1.5);
+        %text(t_vector(end)*.95, variables{pair_indices(i)}(end)*1.05, variable_names{pair_indices(i)}, 'HorizontalAlignment', 'right', 'VerticalAlignment', 'bottom', 'Color', get(line_handles(i), 'Color')); % Add text label for variable
     end
     hold off;
     
@@ -478,13 +474,13 @@ for p = 1:length(pairs)
     grid on;
     
     % Save the plot as a PNG file with the specified path
-    saveas(gcf, fullfile(png_folder, ['plot_eM_pos_', variable_names{pair_indices(1)}, '_', variable_names{pair_indices(2)}, '.png']));
+    saveas(gcf, fullfile(png_folder, ['plot_eM_neg_', variable_names{pair_indices(1)}, '_', variable_names{pair_indices(2)}, '.png']));
 end
 % -------------------------------------------------- % 
 % CLOSE PLOT WINDOWS                                 %
 % -------------------------------------------------- % 
 % Pause for n seconds
-pause(5);
+pause(10);
 % Close all plot windows
 close all;
 % -------------------------------------------------- % 

@@ -123,7 +123,7 @@ lhs = y(27);
 rhs = params(10)*y(2)+x(it_, 2);
 residual(33) = lhs - rhs;
 lhs = y(28);
-rhs = params(11)*y(3)+x(it_, 3);
+rhs = params(11)*y(3)-x(it_, 3);
 residual(34) = lhs - rhs;
 
 end

@@ -212,6 +212,60 @@
       \verb 10.1016/j.jbankfin.2022.106589
       \endverb
     \endentry
+    \entry{castro_samba_2015}{article}{}
+      \name{author}{5}{}{%
+        {{hash=46209a2a0d1a9aa6c51741f377024887}{%
+           family={Castro},
+           familyi={C\bibinitperiod},
+           given={Marcos\bibnamedelimb R.\bibnamedelimi de},
+           giveni={M\bibinitperiod\bibinitdelim R\bibinitperiod\bibinitdelim d\bibinitperiod}}}%
+        {{hash=23ed030aec1a9ef621aa11640d857270}{%
+           family={Gouvea},
+           familyi={G\bibinitperiod},
+           given={Solange\bibnamedelima N.},
+           giveni={S\bibinitperiod\bibinitdelim N\bibinitperiod}}}%
+        {{hash=bef76aa311c0443fa7f9d344a6efde02}{%
+           family={Minella},
+           familyi={M\bibinitperiod},
+           given={Andre},
+           giveni={A\bibinitperiod}}}%
+        {{hash=dcfc88ccbf81ec07109a71c2a996cb2d}{%
+           family={Santos},
+           familyi={S\bibinitperiod},
+           given={Rafael},
+           giveni={R\bibinitperiod}}}%
+        {{hash=9754bda6e596d2c091531bf791b6f90b}{%
+           family={Souza-Sobrinho},
+           familyi={S\bibinithyphendelim S\bibinitperiod},
+           given={Nelson\bibnamedelima F.},
+           giveni={N\bibinitperiod\bibinitdelim F\bibinitperiod}}}%
+      }
+      \strng{namehash}{5498408a6e338f8e127be7356a0cfde6}
+      \strng{fullhash}{e4047b385095b7c46e51ff0c94eb5d60}
+      \strng{bibnamehash}{e4047b385095b7c46e51ff0c94eb5d60}
+      \strng{authorbibnamehash}{e4047b385095b7c46e51ff0c94eb5d60}
+      \strng{authornamehash}{5498408a6e338f8e127be7356a0cfde6}
+      \strng{authorfullhash}{e4047b385095b7c46e51ff0c94eb5d60}
+      \field{sortinit}{C}
+      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Brazilian Review of Econometrics}
+      \field{title}{{SAMBA}: {Stochastic} {Analytical} {Model} with a {Bayesian} {Approach}}
+      \field{urlday}{22}
+      \field{urlmonth}{12}
+      \field{urlyear}{2022}
+      \field{volume}{35}
+      \field{year}{2015}
+      \field{urldateera}{ce}
+      \field{pages}{103\bibrangedash 170}
+      \range{pages}{68}
+      \verb{doi}
+      \verb 10.12660/bre.v35n22015.57573
+      \endverb
+    \endentry
     \entry{corbo_maja_2020}{misc}{}
       \name{author}{2}{}{%
         {{hash=22697b7ded31ec652ce0b8acf3a4c90f}{%
@@ -825,6 +879,57 @@
       \field{year}{2015}
       \field{dateera}{ce}
     \endentry
+    \entry{osterno_uma_2022}{inproceedings}{}
+      \name{author}{5}{}{%
+        {{hash=8e26cb06a81fc072a431399deea207e2}{%
+           family={Osterno},
+           familyi={O\bibinitperiod},
+           given={Isadora\bibnamedelimb Gonçalves\bibnamedelima Costa},
+           giveni={I\bibinitperiod\bibinitdelim G\bibinitperiod\bibinitdelim C\bibinitperiod}}}%
+        {{hash=bbcf1d7701887ea3cada7c1460036fe7}{%
+           family={Penna},
+           familyi={P\bibinitperiod},
+           given={Christiano\bibnamedelima Modesto},
+           giveni={C\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+        {{hash=9ea92b13d8ff73f3d3fe775c0c5ffd17}{%
+           family={Ataliba},
+           familyi={A\bibinitperiod},
+           given={Flávio},
+           giveni={F\bibinitperiod}}}%
+        {{hash=4a71c881b4bc54a4e41b4801c1049cc9}{%
+           family={Gomes},
+           familyi={G\bibinitperiod},
+           given={José\bibnamedelimb Weligton\bibnamedelima Félix},
+           giveni={J\bibinitperiod\bibinitdelim W\bibinitperiod\bibinitdelim F\bibinitperiod}}}%
+        {{hash=1e36be0188acb7b52889ed01c334241f}{%
+           family={Monteiro},
+           familyi={M\bibinitperiod},
+           given={Vitor\bibnamedelima Borges},
+           giveni={V\bibinitperiod\bibinitdelim B\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Fortaleza}%
+      }
+      \list{publisher}{1}{%
+        {ANPEC}%
+      }
+      \strng{namehash}{0ab2461cd3f0147d5a2f542e5c66b322}
+      \strng{fullhash}{f0d5a791d23f7cb8afc807d41c8de895}
+      \strng{bibnamehash}{f0d5a791d23f7cb8afc807d41c8de895}
+      \strng{authorbibnamehash}{f0d5a791d23f7cb8afc807d41c8de895}
+      \strng{authornamehash}{0ab2461cd3f0147d5a2f542e5c66b322}
+      \strng{authorfullhash}{f0d5a791d23f7cb8afc807d41c8de895}
+      \field{sortinit}{O}
+      \field{sortinithash}{2cd7140a07aea5341f9e2771efe90aae}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{50$^\circ$ Encontro {ANPEC}}
+      \field{title}{Uma Nova Metodologia de Mensuração de Impactos Regionais de Políticas Nacionais: Uma Aplicação do {SAMBA}+{REG} para o Ceará}
+      \field{year}{2022}
+      \field{dateera}{ce}
+    \endentry
     \entry{pereira_rbc_2021}{article}{}
       \name{author}{1}{}{%
         {{hash=168bcb08ba9f84bd2c9514e76ca72b40}{%
@@ -1414,7 +1519,6 @@
       \field{dateera}{ce}
     \endentry
   \enddatalist
-  \missing{ibge_produto_2024}
 \endrefsection
 \endinput
 

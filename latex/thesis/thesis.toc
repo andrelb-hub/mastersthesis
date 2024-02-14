@@ -33,5 +33,5 @@
 \contentsline {section}{\numberline {A}Appendix}{84}{appendix.A}%
 \etoc@startlocaltoc {3}
 \contentsline {subsection}{\numberline {A.1}Definitions and Lemmas}{85}{subsection.A.1}%
-\contentsline {subsection}{\numberline {A.2}Dynare Mod File}{89}{subsection.A.2}%
-\contentsline {subsection}{\numberline {A.3}\LaTeX }{90}{subsection.A.3}%
+\contentsline {subsection}{\numberline {A.2}Dynare Mod File}{88}{subsection.A.2}%
+\contentsline {subsection}{\numberline {A.3}\LaTeX }{89}{subsection.A.3}%
