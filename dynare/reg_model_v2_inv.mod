@@ -476,16 +476,13 @@ stoch_simul(irf=100, order=1, qz_zero_threshold=1e-20)
   Rt  C1t  C2t  C11t C12t W1t  C21t C22t W2t
   pit pi1t pi2t Q1t  P1t  P2t  Q2t  lambda1t lambda2t
   ZMt ZA1t ZA2t
-
 ;
-
-% ZA1t ZA2t pit lambda1t lambda2t pi1t pi2t ;
 
 % -------------------------------------------------- % 
 % SAVE SINGLE IRFs IN PNG                            %
 % -------------------------------------------------- % 
 
-% Example data for variables
+% Parameters for the png files
 time_vector = 1:100;
 var_vector = {Yt_e_M, Y1t_e_M, Y2t_e_M, I1t_e_M, I2t_e_M, K1t_e_M, L1t_e_M, L2t_e_M, K2t_e_M, Rt_e_M, C1t_e_M, C2t_e_M, C11t_e_M, C12t_e_M, W1t_e_M, C21t_e_M, C22t_e_M, W2t_e_M, pit_e_M, pi1t_e_M, pi2t_e_M, Q1t_e_M, P1t_e_M, P2t_e_M, Q2t_e_M, lambda1t_e_M, lambda2t_e_M, ZMt_e_M, ZA1t_e_M, ZA2t_e_M};
 names_vector = {'total production', 'production region 1', 'production region 2', 'investment region 1', 'investment region 2', 'capital region 1', 'labor region 1', 'labor region 2', 'capital region 2', 'interest rate', 'consumption region 1', 'consumption region 2', 'consumption reg 1, good 1', 'consumption reg 1, good 2', 'wages region 1', 'consumption reg 2, good 1', 'consumption reg 2, good 2', 'wages region 2', 'inflation', 'inflation region 1', 'inflation region 2', 'consumer price level region 1', 'producer price level region 1', 'producer price level region 2', 'consumer price level region 2', 'marginal cost region 1', 'marginal cost region 2', 'monetary shock', 'productivity shock region 1', 'productivity shock region 2'};
@@ -508,7 +505,7 @@ for i = 1:length(var_vector)
     % Add labels and title
     xlabel('');
     ylabel('');
-    title([var_names{i}]);
+    title(''); % title([var_names{i}]);
     
     % Grid on for clarity
     grid on;
@@ -517,7 +514,11 @@ for i = 1:length(var_vector)
     save_path = 'C:\apps\gdrive\projects\masterthesis\latex\images\plots';
     
     % Save the plot as a PNG file with the specified path
-    saveas(gcf, fullfile(save_path, ['plot_eM_', var_names{i}, '.png']));
+    @#if ZM_POSITIVE == 1
+    saveas(gcf, fullfile(save_path, ['plot_eM_pos_', var_names{i}, '.png']));
+    @#else
+    saveas(gcf, fullfile(save_path, ['plot_eM_neg_', var_names{i}, '.png']));
+    @#endif
     
     % Clear the current figure to prepare for the next iteration
     clf;
@@ -526,6 +527,9 @@ end
 % -------------------------------------------------- % 
 % C,I,Y IRF IN ONE PNG                               %
 % -------------------------------------------------- % 
+
+% Pause for n seconds
+pause(1);
 
 time_vector = 1:100;
 png_folder = 'C:\apps\gdrive\projects\masterthesis\latex\images\plots';
@@ -567,9 +571,9 @@ uistack(hline, 'bottom'); % Bring the y=0 line to the background
 hold off; % Release the hold
 
 % Add labels and title
-xlabel('Periods');
+xlabel(''); % xlabel('Periods');
 ylabel('');
-title('Consumption, Investment and Production IRF');
+title(''); % title('Consumption, Investment and Production IRF');
 
 % Add a legend to distinguish between the two variables
 legend([h1, h2, h3, h4, h5, h6], 'Consumption region 1', 'Consumption region 2', 'Investment region 1', 'Investment region 2', 'Production region 1', 'Production region 2');
@@ -577,19 +581,23 @@ legend([h1, h2, h3, h4, h5, h6], 'Consumption region 1', 'Consumption region 2',
 % Grid on for clarity
 grid on;
 
-% Save the plot as a PNG file
-saveas(gcf, fullfile(png_folder, 'plot_Cn_In_Yn.png'));
+% Save the plot as a PNG file with the specified path
+    @#if ZM_POSITIVE == 1
+    saveas(gcf, fullfile(png_folder, 'plot_eM_pos_Cn_In_Yn.png'));
+    @#else
+    saveas(gcf, fullfile(png_folder, 'plot_eM_neg_Cn_In_Yn.png'));
+    @#endif
 
 % -------------------------------------------------- % 
-% C,I,Y IRF IN SEPARATED PNG                         %
+% Cn,In,Yn IRF IN SEPARATED PNG                      %
 % -------------------------------------------------- % 
 
 time_vector = 1:100;
 png_folder = 'C:\apps\gdrive\projects\masterthesis\latex\images\plots';
-variables = {C1t_e_M, C2t_e_M, I1t_e_M, I2t_e_M, Y1t_e_M, Y2t_e_M};
-variable_names = {'C1', 'C2', 'I1', 'I2', 'Y1', 'Y2'};
-pairs = {[1, 2], [3, 4], [5, 6]}; % Pairs: {C1, C2}, {I1, I2}, {Y1, Y2};
-ynames = {'Consumption', 'Investment', 'Production'};
+variables = {C1t_e_M, C2t_e_M, I1t_e_M, I2t_e_M, Y1t_e_M, Y2t_e_M, K1t_e_M, K2t_e_M, L1t_e_M, L2t_e_M, W1t_e_M, W2t_e_M, Q1t_e_M, Q2t_e_M, P1t_e_M, P2t_e_M};
+variable_names = {'C1', 'C2', 'I1', 'I2', 'Y1', 'Y2', 'K1', 'K2', 'L1', 'L2', 'W1', 'W2', 'Q1', 'Q2', 'P1', 'P2'};
+pairs = {[1, 2], [3, 4], [5, 6], [7, 8], [9, 10], [11, 12], [13, 14], [15, 16]}; % Pairs: {C1, C2}, {I1, I2}, {Y1, Y2};
+ynames = {'Consumption', 'Investment', 'Production', 'Capital', 'Labor', 'Wages', 'Consumer Price Level', 'Price Level'};
 
 for p = 1:length(pairs)
     % Plot the IRF for the pair
@@ -609,26 +617,31 @@ for p = 1:length(pairs)
     uistack(hline, 'bottom'); % Bring the y=0 line to the background
 
     % Add labels and title
-    xlabel('Time');
-    ylabel(ynames{p}); % Personalized y-axis label
-    title(sprintf(ynames{p}, 'IRF')); % Personalized title
+    xlabel(''); % xlabel('Periods');
+    ylabel(''); % ylabel(ynames{p}); % Personalized y-axis label
+    title(''); % title(sprintf(ynames{p}, 'IRF')); % Personalized title
 
     % Add a legend to distinguish between the two variables
     legend(line_handles, variable_names(pair_indices));
 
     % Grid on for clarity
     grid on;
+    
+    % Save the plot as a PNG file with the specified path
+    @#if ZM_POSITIVE == 1
+    saveas(gcf, fullfile(png_folder, ['plot_eM_pos_', variable_names{pair_indices(1)}, '_', variable_names{pair_indices(2)}, '.png']));
+    @#else
+    saveas(gcf, fullfile(png_folder, ['plot_eM_neg_', variable_names{pair_indices(1)}, '_', variable_names{pair_indices(2)}, '.png']));
+    @#endif
 
-    % Save the plot as a PNG file
-    saveas(gcf, fullfile(png_folder, ['plot_', variable_names{pair_indices(1)}, '_', variable_names{pair_indices(2)}, '.png']));
 end
 
 % -------------------------------------------------- % 
 % CLOSE PLOT WINDOWS                                 %
 % -------------------------------------------------- % 
 
-% Pause for 10 seconds
-pause(10);
+% Pause for n seconds
+pause(5);
 
 % Close all plot windows
 close all;

@@ -8,7 +8,7 @@ link:
 
 small open-economy medium-sized DSGE model, similar to the models in [[Adolfson et al. (2007)]]
 
-baseline version of [[Christiano, Trabandt, and Walentin (2011)]] and [[Adolfson et al. (2013)]]
+baseline version of [[Christiano, Trabandt and Walentin 2011]] and [[Adolfson et al. (2013)]]
 
 our foreign economy model closely resembles those in [[Smets and Wouters (2003)]], and [[Smets and Wouters (2007)]]
 
@@ -18,7 +18,7 @@ our foreign economy model closely resembles those in [[Smets and Wouters (2003)]
 
 We assume that there is a large representative household, with full risk sharing of consumption among household members as in [[Merz (1995)]].
 
-The preferences with respect to consumption are specified as in [[Christiano, Trabandt, and Walentin (2011)]] and [[Adolfson et al. (2013)]].
+The preferences with respect to consumption are specified as in [[Christiano, Trabandt and Walentin 2011]] and [[Adolfson et al. (2013)]].
 
 The modelling of the disutility from work instead relies on the setup in[[ Galí (2011a)]] and [[Galí, Smets, and Wouters (2012)]], with the purpose of introducing unemployment into the model in a simple way.
 

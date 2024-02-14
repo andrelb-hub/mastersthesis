@@ -25,10 +25,8 @@
 \contentsline {subsubsection}{\numberline {3.4.2}Parameter Calibration}{67}{subsubsection.3.4.2}%
 \contentsline {subsubsection}{\numberline {3.4.3}Variables at Steady State}{68}{subsubsection.3.4.3}%
 \contentsline {section}{\numberline {4}Results}{69}{section.4}%
-\contentsline {subsection}{\numberline {4.1}Monetary Shock}{71}{subsection.4.1}%
-\contentsline {subsection}{\numberline {4.2}Productivity Shock}{73}{subsection.4.2}%
-\contentsline {subsection}{\numberline {4.3}Monetary Shock}{75}{subsection.4.3}%
-\contentsline {subsection}{\numberline {4.4}Productivity Shock}{77}{subsection.4.4}%
+\contentsline {subsection}{\numberline {4.1}Positive Monetary Shock}{71}{subsection.4.1}%
+\contentsline {subsection}{\numberline {4.2}Negative Monetary Shock}{75}{subsection.4.2}%
 \contentsline {section}{\numberline {5}Final Remarks}{79}{section.5}%
 \contentsline {subsection}{\numberline {5.1}Future Challenges}{79}{subsection.5.1}%
 \contentsline {section}{References}{80}{section*.252}%

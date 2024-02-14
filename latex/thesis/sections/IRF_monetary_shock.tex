@@ -1,0 +1,986 @@
+% --------------------------------------------------
+% DOCUMENT CLASS
+% --------------------------------------------------
+
+\documentclass[../thesis.tex]{subfiles}
+
+\begin{document}
+	
+	\newpage
+	
+	% \subsection{Impulse Response Functions}
+
+	% These are the impulse response functions of model in section \ref{sec:nk-model}. In due time, the IRF of section \ref{sec:regional-model} will be presented and a thorough analysis of the results will be conducted.
+
+% ---------------------------------------------------------------------------
+% POSITIVE MONETARY SHOCK
+% ---------------------------------------------------------------------------
+
+	\newpage
+
+	\subsection{Positive Monetary Shock}
+	%\subsubsection{Monetary Shock}
+	
+% ---------------------------------------------------------------------------
+% IRF MONETARY SHOCK, PART 1
+% ---------------------------------------------------------------------------
+	\begin{figure}[h!]
+		\centering
+		\caption{Positive-Monetary-Shock Impulse Response Functions}
+% ---------------------------------------------------------------------------
+% SUBFIGURES ROW
+% ---------------------------------------------------------------------------
+		\begin{subfigure}[b]{0.27\textwidth}
+			\centering
+			\includegraphics[width=\textwidth]{plots/plot_eM_pos_ZMt}
+			\caption{\scriptsize Monetary Shock}
+			\label{fig:ZMt-ZMt}
+		\end{subfigure}
+		\hspace*{0.5cm}
+		\begin{subfigure}[b]{0.27\textwidth}
+			\centering
+			\includegraphics[width=\textwidth]{plots/plot_eM_pos_Rt}
+			\caption{\scriptsize Interest Rate}
+			\label{fig:ZMt-Rt}
+		\end{subfigure}
+		\hspace*{0.5cm}
+		\begin{subfigure}[b]{0.27\textwidth}
+			\centering
+			\includegraphics[width=\textwidth]{plots/plot_eM_pos_I1t}
+			\caption{\scriptsize Investment Reg 1}
+			\label{fig:ZMt-I1t}
+		\end{subfigure}
+		%\hspace*{0.5cm}		
+		\vspace*{0.1cm}
+% ---------------------------------------------------------------------------
+% SUBFIGURES ROW
+% ---------------------------------------------------------------------------
+		\begin{subfigure}[b]{0.27\textwidth}
+			\centering
+			\includegraphics[width=\textwidth]{plots/plot_eM_pos_I2t}
+			\caption{\scriptsize Investment Reg 2}
+			\label{fig:ZMt-I2t}
+		\end{subfigure}
+		\hspace*{0.5cm}
+		\begin{subfigure}[b]{0.27\textwidth}
+			\centering
+			\includegraphics[width=\textwidth]{plots/plot_eM_pos_K1t}
+			\caption{\scriptsize Capital Reg 1}
+			\label{fig:ZMt-K1t}
+		\end{subfigure}
+		\hspace*{0.5cm}
+		\begin{subfigure}[b]{0.27\textwidth}
+			\centering
+			\includegraphics[width=\textwidth]{plots/plot_eM_pos_K2t}
+			\caption{\scriptsize Capital Reg 2}
+			\label{fig:ZMt-K2t}
+		\end{subfigure}
+		%\hspace*{0.5cm}
+		\vspace*{0.1cm}
+% ---------------------------------------------------------------------------
+% SUBFIGURES ROW
+% ---------------------------------------------------------------------------
+		\begin{subfigure}[b]{0.27\textwidth}
+			\centering
+			\includegraphics[width=\textwidth]{plots/plot_eM_pos_lambda1t}
+			\caption{\scriptsize Marginal Cost Reg 1}
+			\label{fig:ZMt-lambda1t}
+		\end{subfigure}
+		\hspace*{0.5cm}
+		\begin{subfigure}[b]{0.27\textwidth}
+			\centering
+			\includegraphics[width=\textwidth]{plots/plot_eM_pos_lambda2t}
+			\caption{\scriptsize Marginal Cost Reg 2}
+			\label{fig:ZMt-lambda2t}
+		\end{subfigure}
+		\hspace*{0.5cm}
+		\begin{subfigure}[b]{0.27\textwidth}
+			\centering
+			\includegraphics[width=\textwidth]{plots/plot_eM_pos_Yt}
+			\caption{\scriptsize Production}
+			\label{fig:ZMt-Yt}
+		\end{subfigure}
+		%\hspace*{0.5cm}		
+		\vspace*{0.1cm}
+% ---------------------------------------------------------------------------
+% SUBFIGURES ROW
+% ---------------------------------------------------------------------------
+		\begin{subfigure}[b]{0.27\textwidth}
+			\centering
+			\includegraphics[width=\textwidth]{plots/plot_eM_pos_Y1t}
+			\caption{\scriptsize Production Reg 1}
+			\label{fig:ZMt-Y1t}
+		\end{subfigure}
+		\hspace*{0.5cm}
+		\begin{subfigure}[b]{0.27\textwidth}
+			\centering
+			\includegraphics[width=\textwidth]{plots/plot_eM_pos_Y2t}
+			\caption{\scriptsize Production Reg 2}
+			\label{fig:ZMt-Y2t}
+		\end{subfigure}
+		\hspace*{0.5cm}
+		\begin{subfigure}[b]{0.27\textwidth}
+			\centering
+			\includegraphics[width=\textwidth]{plots/plot_eM_pos_C1t}
+			\caption{\scriptsize Consumption Reg 1}
+			\label{fig:ZMt-C1t}
+		\end{subfigure}
+		%\hspace*{0.5cm}
+		\vspace*{0.1cm}
+% ---------------------------------------------------------------------------
+% SUBFIGURES ROW
+% ---------------------------------------------------------------------------
+		\begin{subfigure}[b]{0.27\textwidth}
+			\centering
+			\includegraphics[width=\textwidth]{plots/plot_eM_pos_C2t}
+			\caption{\scriptsize Consumption Reg 2}
+			\label{fig:ZMt-C2t}
+		\end{subfigure}
+		\hspace*{0.5cm}
+		\begin{subfigure}[b]{0.27\textwidth}
+			\centering
+			\includegraphics[width=\textwidth]{plots/plot_eM_pos_C11t}
+			\caption{\scriptsize Region 1, Good 1}
+			\label{fig:ZMt-C11t}
+		\end{subfigure}
+		\hspace*{0.5cm}
+		\begin{subfigure}[b]{0.27\textwidth}
+			\centering
+			\includegraphics[width=\textwidth]{plots/plot_eM_pos_C21t}
+			\caption{\scriptsize Region 2, Good 1}
+			\label{fig:ZMt-C21t}
+		\end{subfigure}
+		%\hspace*{0.5cm}
+		%\vspace*{0.1cm}
+		\caption*{Source: created by the author.}
+		\label{fig:ZMt-irf}
+	\end{figure}
+
+% ---------------------------------------------------------------------------
+% IRF MONETARY SHOCK, PART 2
+% ---------------------------------------------------------------------------
+
+\newpage
+
+\begin{figure}[h!]
+	\centering
+	\caption*{Positive-Monetary-Shock Impulse Response Functions, part 2}
+	% ---------------------------------------------------------------------------
+	% SUBFIGURES ROW
+	% ---------------------------------------------------------------------------
+	\begin{subfigure}[b]{0.27\textwidth}
+		\centering
+		\includegraphics[width=\textwidth]{plots/plot_eM_pos_C12t}
+		\caption{\scriptsize Region 1, Good 2}
+		\label{fig:ZMt-C12t}
+	\end{subfigure}
+	\hspace*{0.5cm}
+	\begin{subfigure}[b]{0.27\textwidth}
+		\centering
+		\includegraphics[width=\textwidth]{plots/plot_eM_pos_C22t}
+		\caption{\scriptsize Region 2, Good 2}
+		\label{fig:ZMt-C22t}
+	\end{subfigure}
+	\hspace*{0.5cm}
+	\begin{subfigure}[b]{0.27\textwidth}
+		\centering
+		\includegraphics[width=\textwidth]{plots/plot_eM_pos_L1t}
+		\caption{\scriptsize Labor Reg 1}
+		\label{fig:ZMt-L1t}
+	\end{subfigure}
+	%\hspace*{0.5cm}		
+	\vspace*{0.1cm}
+	% ---------------------------------------------------------------------------
+	% SUBFIGURES ROW
+	% ---------------------------------------------------------------------------
+	\begin{subfigure}[b]{0.27\textwidth}
+		\centering
+		\includegraphics[width=\textwidth]{plots/plot_eM_pos_L2t}
+		\caption{\scriptsize Labor Reg 2}
+		\label{fig:ZMt-L2t}
+	\end{subfigure}
+	\hspace*{0.5cm}
+	\begin{subfigure}[b]{0.27\textwidth}
+		\centering
+		\includegraphics[width=\textwidth]{plots/plot_eM_pos_W1t}
+		\caption{\scriptsize Wages Reg 1}
+		\label{fig:ZMt-W1t}
+	\end{subfigure}
+	\hspace*{0.5cm}
+	\begin{subfigure}[b]{0.27\textwidth}
+		\centering
+		\includegraphics[width=\textwidth]{plots/plot_eM_pos_W2t}
+		\caption{\scriptsize Wages Reg 2}
+		\label{fig:ZMt-W2t}
+	\end{subfigure}
+	%\hspace*{0.5cm}
+	\vspace*{0.1cm}
+	% ---------------------------------------------------------------------------
+	% SUBFIGURES ROW
+	% ---------------------------------------------------------------------------
+	\begin{subfigure}[b]{0.27\textwidth}
+		\centering
+		\includegraphics[width=\textwidth]{plots/plot_eM_pos_P1t}
+		\caption{\scriptsize Price Level Reg 1}
+		\label{fig:ZMt-P1t}
+	\end{subfigure}
+	\hspace*{0.5cm}
+	\begin{subfigure}[b]{0.27\textwidth}
+		\centering
+		\includegraphics[width=\textwidth]{plots/plot_eM_pos_P2t}
+		\caption{\scriptsize Price Level Reg 2}
+		\label{fig:ZMt-P2t}
+	\end{subfigure}
+	\hspace*{0.5cm}
+	\begin{subfigure}[b]{0.27\textwidth}
+		\centering
+		\includegraphics[width=\textwidth]{plots/plot_eM_pos_Q1t}
+		\caption{\scriptsize Region 1 CPL$^{\ast}$}
+		\label{fig:ZMt-Q1t}
+	\end{subfigure}
+	%\hspace*{0.5cm}		
+	\vspace*{0.1cm}
+	% ---------------------------------------------------------------------------
+	% SUBFIGURES ROW
+	% ---------------------------------------------------------------------------
+	\begin{subfigure}[b]{0.27\textwidth}
+		\centering
+		\includegraphics[width=\textwidth]{plots/plot_eM_pos_Q2t}
+		\caption{\scriptsize Region 1 CPL$^{\ast}$}
+		\label{fig:ZMt-Q2t}
+	\end{subfigure}
+	\hspace*{0.5cm}
+	\begin{subfigure}[b]{0.27\textwidth}
+		\centering
+		\includegraphics[width=\textwidth]{plots/plot_eM_pos_pi1t}
+		\caption{\scriptsize Inflation Region 1}
+		\label{fig:ZMt-pi1t}
+	\end{subfigure}
+	\hspace*{0.5cm}
+	\begin{subfigure}[b]{0.27\textwidth}
+		\centering
+		\includegraphics[width=\textwidth]{plots/plot_eM_pos_pi2t}
+		\caption{\scriptsize Inflation Region 2}
+		\label{fig:ZMt-pi2t}
+	\end{subfigure}
+	%\hspace*{0.5cm}
+	\vspace*{0.1cm}
+	% ---------------------------------------------------------------------------
+	% SUBFIGURES ROW
+	% ---------------------------------------------------------------------------
+	\begin{subfigure}[b]{0.27\textwidth}
+		\centering
+		\includegraphics[width=\textwidth]{plots/plot_eM_pos_pit}
+		\caption{\scriptsize Inflation}
+		\label{fig:ZMt-pit}
+	\end{subfigure}
+	\hspace*{0.5cm}
+	\begin{subfigure}[b]{0.27\textwidth}
+		\centering
+		\includegraphics[width=\textwidth]{shock_ZMt/blank}
+		%\caption{}
+		%\label{}
+	\end{subfigure}
+	\hspace*{0.5cm}
+	\begin{subfigure}[b]{0.27\textwidth}
+		\centering
+		\includegraphics[width=\textwidth]{shock_ZMt/blank}
+		%\caption{}
+		%\label{}
+	\end{subfigure}
+	%\hspace*{0.5cm}
+	%\vspace*{0.1cm}
+	\caption*{Source: created by the author.}
+	\label{fig:ZMt-irf2}
+\end{figure}
+
+$^{\ast}$ CPL: Consumer Price Level.
+
+% ---------------------------------------------------------------------------
+% Positive-Monetary-Shock Paired Impulse Response Functions
+% ---------------------------------------------------------------------------
+
+\newpage
+
+% \subsubsection{Paired Impulse Response Functions}
+
+\begin{figure}[h!]
+	\centering
+	\caption{Positive-Monetary-Shock Paired Impulse Response Functions}
+	% ---------------------------------------------------------------------------
+	% SUBFIGURES ROW 1
+	% ---------------------------------------------------------------------------
+	\begin{subfigure}[b]{0.48\textwidth}
+		\centering
+		\includegraphics[width=\textwidth]{plots/plot_eM_pos_C1_C2}
+		\caption{\scriptsize Consumption}
+		\label{fig:plot_eM_pos_C1_C2}
+	\end{subfigure}
+	\hspace*{0.3cm}
+	\begin{subfigure}[b]{0.48\textwidth}
+		\centering
+		\includegraphics[width=\textwidth]{plots/plot_eM_pos_I1_I2}
+		\caption{\scriptsize Investment}
+		\label{fig:plot_eM_pos_I1_I2}
+	\end{subfigure}
+	\vspace*{0.1cm}
+	% ---------------------------------------------------------------------------
+	% SUBFIGURES ROW 2
+	% ---------------------------------------------------------------------------
+	\begin{subfigure}[b]{0.48\textwidth}
+		\centering
+		\includegraphics[width=\textwidth]{plots/plot_eM_pos_Y1_Y2}
+		\caption{\scriptsize Production}
+		\label{fig:plot_eM_pos_Y1_Y2}
+	\end{subfigure}
+	\hspace*{0.3cm}
+	\begin{subfigure}[b]{0.48\textwidth}
+		\centering
+		\includegraphics[width=\textwidth]{plots/plot_eM_pos_K1_K2}
+		\caption{\scriptsize Capital}
+		\label{fig:plot_eM_pos_K1_K2}
+	\end{subfigure}
+	\caption*{Source: created by the author.}
+	\label{fig:paired_pos_irf}
+\end{figure}
+
+\newpage
+
+\begin{figure}[h!]
+	\centering
+	\caption*{Positive-Monetary-Shock Paired Impulse Response Functions, part 2}
+	% ---------------------------------------------------------------------------
+	% SUBFIGURES ROW 3
+	% ---------------------------------------------------------------------------
+	\begin{subfigure}[b]{0.48\textwidth}
+		\centering
+		\includegraphics[width=\textwidth]{plots/plot_eM_pos_L1_L2}
+		\caption{\scriptsize Labor}
+		\label{fig:plot_eM_pos_L1_L2}
+	\end{subfigure}
+	\hspace*{0.3cm}
+	\begin{subfigure}[b]{0.48\textwidth}
+		\centering
+		\includegraphics[width=\textwidth]{plots/plot_eM_pos_W1_W2}
+		\caption{\scriptsize Wages}
+		\label{fig:plot_eM_pos_W1_W2}
+	\end{subfigure}
+	\vspace*{0.1cm}
+	% ---------------------------------------------------------------------------
+	% SUBFIGURES ROW 4
+	% ---------------------------------------------------------------------------
+	\begin{subfigure}[b]{0.48\textwidth}
+		\centering
+		\includegraphics[width=\textwidth]{plots/plot_eM_pos_Q1_Q2}
+		\caption{\scriptsize Consumer Price Level}
+		\label{fig:plot_eM_pos_Q1_Q2}
+	\end{subfigure}
+	\hspace*{0.3cm}
+	\begin{subfigure}[b]{0.48\textwidth}
+		\centering
+		\includegraphics[width=\textwidth]{plots/plot_eM_pos_P1_P2}
+		\caption{\scriptsize Price Level}
+		\label{fig:plot_eM_pos_P1_P2}
+	\end{subfigure}
+	\caption*{Source: created by the author.}
+	\label{fig:paired_pos_irf2}
+\end{figure}
+
+\begin{comment}
+	
+% ---------------------------------------------------------------------------
+% GROUPED PLOTS: Cn,In,Yn, etc
+% ---------------------------------------------------------------------------
+
+\newpage
+
+\subsubsection{Paired Impulse Response Functions}
+
+% ---------------------------------------------------------------------------
+% CONSUMPTION
+% ---------------------------------------------------------------------------
+
+\begin{figure}[h!]
+	\centering
+	\caption{Consumption IRF}
+	\includegraphics[height=0.3\textheight]{plot_eM_pos_C1_C2}
+	\caption*{Source: created by the author.}
+	\label{fig:eM-pos-Cn-irf}
+\end{figure}
+
+% ---------------------------------------------------------------------------
+% INVESTMENT
+% ---------------------------------------------------------------------------
+
+\begin{figure}[h!]
+	\centering
+	\caption{Investment IRF}
+	\includegraphics[height=0.3\textheight]{plot_eM_pos_I1_I2}
+	\caption*{Source: created by the author.}
+	\label{fig:eM-pos-In-irf}
+\end{figure}
+
+\newpage
+
+% ---------------------------------------------------------------------------
+% PRODUCTION
+% ---------------------------------------------------------------------------
+
+\begin{figure}[h!]
+	\centering
+	\caption{Production IRF}
+	\includegraphics[height=0.3\textheight]{plot_eM_pos_Y1_Y2}
+	\caption*{Source: created by the author.}
+	\label{fig:eM-pos-Yn-irf}
+\end{figure}
+
+% ---------------------------------------------------------------------------
+% CAPITAL
+% ---------------------------------------------------------------------------
+
+\begin{figure}[h!]
+	\centering
+	\caption{Capital IRF}
+	\includegraphics[height=0.3\textheight]{plot_eM_pos_K1_K2}
+	\caption*{Source: created by the author.}
+	\label{fig:eM-pos-Kn-irf}
+\end{figure}
+
+\newpage
+
+% ---------------------------------------------------------------------------
+% LABOR
+% ---------------------------------------------------------------------------
+
+\begin{figure}[h!]
+	\centering
+	\caption{Labor IRF}
+	\includegraphics[height=0.3\textheight]{plot_eM_pos_L1_L2}
+	\caption*{Source: created by the author.}
+	\label{fig:eM-pos-Ln-irf}
+\end{figure}
+
+% ---------------------------------------------------------------------------
+% WAGES
+% ---------------------------------------------------------------------------
+
+\begin{figure}[h!]
+	\centering
+	\caption{Wages IRF}
+	\includegraphics[height=0.3\textheight]{plot_eM_pos_W1_W2}
+	\caption*{Source: created by the author.}
+	\label{fig:eM-pos-Wn-irf}
+\end{figure}
+
+\newpage
+
+% ---------------------------------------------------------------------------
+% CONSUMER PRICE LEVEL
+% ---------------------------------------------------------------------------
+
+\begin{figure}[h!]
+	\centering
+	\caption{Consumer Price Level IRF}
+	\includegraphics[height=0.3\textheight]{plot_eM_pos_Q1_Q2}
+	\caption*{Source: created by the author.}
+	\label{fig:eM-pos-Qn-irf}
+\end{figure}
+
+% ---------------------------------------------------------------------------
+% PRICE LEVEL
+% ---------------------------------------------------------------------------
+
+\begin{figure}[h!]
+	\centering
+	\caption{Price Level IRF}
+	\includegraphics[height=0.3\textheight]{plot_eM_pos_P1_P2}
+	\caption*{Source: created by the author.}
+	\label{fig:eM-pos-Pn-irf}
+\end{figure}
+
+\end{comment}
+
+% ---------------------------------------------------------------------------
+% NEGATIVE MONETARY SHOCK
+% ---------------------------------------------------------------------------
+
+\newpage
+
+\subsection{Negative Monetary Shock}\label{sec:neg-mon-shock}
+%\subsubsection{Monetary Shock}
+
+% ---------------------------------------------------------------------------
+% IRF MONETARY SHOCK, PART 1
+% ---------------------------------------------------------------------------
+
+\begin{figure}[h!]
+	\centering
+	\caption{Negative-Monetary-Shock Impulse Response Functions}
+	% ---------------------------------------------------------------------------
+	% SUBFIGURES ROW
+	% ---------------------------------------------------------------------------
+	\begin{subfigure}[b]{0.27\textwidth}
+		\centering
+		\includegraphics[width=\textwidth]{plots/plot_eM_neg_ZMt}
+		\caption{\scriptsize Monetary Shock}
+		\label{fig:eM-neg-ZMt}
+	\end{subfigure}
+	\hspace*{0.5cm}
+	\begin{subfigure}[b]{0.27\textwidth}
+		\centering
+		\includegraphics[width=\textwidth]{plots/plot_eM_neg_Rt}
+		\caption{\scriptsize Interest Rate}
+		\label{fig:eM-neg-Rt}
+	\end{subfigure}
+	\hspace*{0.5cm}
+	\begin{subfigure}[b]{0.27\textwidth}
+		\centering
+		\includegraphics[width=\textwidth]{plots/plot_eM_neg_I1t}
+		\caption{\scriptsize Investment Reg 1}
+		\label{fig:eM-neg-I1t}
+	\end{subfigure}
+	%\hspace*{0.5cm}		
+	\vspace*{0.1cm}
+	% ---------------------------------------------------------------------------
+	% SUBFIGURES ROW
+	% ---------------------------------------------------------------------------
+	\begin{subfigure}[b]{0.27\textwidth}
+		\centering
+		\includegraphics[width=\textwidth]{plots/plot_eM_neg_I2t}
+		\caption{\scriptsize Investment Reg 2}
+		\label{fig:eM-neg-I2t}
+	\end{subfigure}
+	\hspace*{0.5cm}
+	\begin{subfigure}[b]{0.27\textwidth}
+		\centering
+		\includegraphics[width=\textwidth]{plots/plot_eM_neg_K1t}
+		\caption{\scriptsize Capital Reg 1}
+		\label{fig:eM-neg-K1t}
+	\end{subfigure}
+	\hspace*{0.5cm}
+	\begin{subfigure}[b]{0.27\textwidth}
+		\centering
+		\includegraphics[width=\textwidth]{plots/plot_eM_neg_K2t}
+		\caption{\scriptsize Capital Reg 2}
+		\label{fig:eM-neg-K2t}
+	\end{subfigure}
+	%\hspace*{0.5cm}
+	\vspace*{0.1cm}
+	% ---------------------------------------------------------------------------
+	% SUBFIGURES ROW
+	% ---------------------------------------------------------------------------
+	\begin{subfigure}[b]{0.27\textwidth}
+		\centering
+		\includegraphics[width=\textwidth]{plots/plot_eM_neg_lambda1t}
+		\caption{\scriptsize Marginal Cost Reg 1}
+		\label{fig:eM-neg-lambda1t}
+	\end{subfigure}
+	\hspace*{0.5cm}
+	\begin{subfigure}[b]{0.27\textwidth}
+		\centering
+		\includegraphics[width=\textwidth]{plots/plot_eM_neg_lambda2t}
+		\caption{\scriptsize Marginal Cost Reg 2}
+		\label{fig:eM-neg-lambda2t}
+	\end{subfigure}
+	\hspace*{0.5cm}
+	\begin{subfigure}[b]{0.27\textwidth}
+		\centering
+		\includegraphics[width=\textwidth]{plots/plot_eM_neg_Yt}
+		\caption{\scriptsize Production}
+		\label{fig:eM-neg-Yt}
+	\end{subfigure}
+	%\hspace*{0.5cm}		
+	\vspace*{0.1cm}
+	% ---------------------------------------------------------------------------
+	% SUBFIGURES ROW
+	% ---------------------------------------------------------------------------
+	\begin{subfigure}[b]{0.27\textwidth}
+		\centering
+		\includegraphics[width=\textwidth]{plots/plot_eM_neg_Y1t}
+		\caption{\scriptsize Production Reg 1}
+		\label{fig:eM-neg-Y1t}
+	\end{subfigure}
+	\hspace*{0.5cm}
+	\begin{subfigure}[b]{0.27\textwidth}
+		\centering
+		\includegraphics[width=\textwidth]{plots/plot_eM_neg_Y2t}
+		\caption{\scriptsize Production Reg 2}
+		\label{fig:eM-neg-Y2t}
+	\end{subfigure}
+	\hspace*{0.5cm}
+	\begin{subfigure}[b]{0.27\textwidth}
+		\centering
+		\includegraphics[width=\textwidth]{plots/plot_eM_neg_C1t}
+		\caption{\scriptsize Consumption Reg 1}
+		\label{fig:eM-neg-C1t}
+	\end{subfigure}
+	%\hspace*{0.5cm}
+	\vspace*{0.1cm}
+	% ---------------------------------------------------------------------------
+	% SUBFIGURES ROW
+	% ---------------------------------------------------------------------------
+	\begin{subfigure}[b]{0.27\textwidth}
+		\centering
+		\includegraphics[width=\textwidth]{plots/plot_eM_neg_C2t}
+		\caption{\scriptsize Consumption Reg 2}
+		\label{fig:eM-neg-C2t}
+	\end{subfigure}
+	\hspace*{0.5cm}
+	\begin{subfigure}[b]{0.27\textwidth}
+		\centering
+		\includegraphics[width=\textwidth]{plots/plot_eM_neg_C11t}
+		\caption{\scriptsize Region 1, Good 1}
+		\label{fig:eM-neg-C11t}
+	\end{subfigure}
+	\hspace*{0.5cm}
+	\begin{subfigure}[b]{0.27\textwidth}
+		\centering
+		\includegraphics[width=\textwidth]{plots/plot_eM_neg_C21t}
+		\caption{\scriptsize Region 2, Good 1}
+		\label{fig:eM-neg-C21t}
+	\end{subfigure}
+	%\hspace*{0.5cm}
+	%\vspace*{0.1cm}
+	\caption*{Source: created by the author.}
+	\label{fig:eM-neg-irf}
+\end{figure}
+
+% ---------------------------------------------------------------------------
+% IRF MONETARY SHOCK, PART 2
+% ---------------------------------------------------------------------------
+
+\newpage
+
+\begin{figure}[h!]
+	\centering
+	\caption*{Negative-Monetary-Shock Impulse Response Functions, part 2}
+	% ---------------------------------------------------------------------------
+	% SUBFIGURES ROW
+	% ---------------------------------------------------------------------------
+	\begin{subfigure}[b]{0.27\textwidth}
+		\centering
+		\includegraphics[width=\textwidth]{plots/plot_eM_neg_C12t}
+		\caption{\scriptsize Region 1, Good 2}
+		\label{fig:eM-neg-C12t}
+	\end{subfigure}
+	\hspace*{0.5cm}
+	\begin{subfigure}[b]{0.27\textwidth}
+		\centering
+		\includegraphics[width=\textwidth]{plots/plot_eM_neg_C22t}
+		\caption{\scriptsize Region 2, Good 2}
+		\label{fig:eM-neg-C22t}
+	\end{subfigure}
+	\hspace*{0.5cm}
+	\begin{subfigure}[b]{0.27\textwidth}
+		\centering
+		\includegraphics[width=\textwidth]{plots/plot_eM_neg_L1t}
+		\caption{\scriptsize Labor Reg 1}
+		\label{fig:eM-neg-L1t}
+	\end{subfigure}
+	% \hspace*{0.5cm}		
+	\vspace*{0.1cm}
+	% ---------------------------------------------------------------------------
+	% SUBFIGURES ROW
+	% ---------------------------------------------------------------------------
+	\begin{subfigure}[b]{0.27\textwidth}
+		\centering
+		\includegraphics[width=\textwidth]{plots/plot_eM_neg_L2t}
+		\caption{\scriptsize Labor Reg 2}
+		\label{fig:eM-neg-L2t}
+	\end{subfigure}
+	\hspace*{0.5cm}
+	\begin{subfigure}[b]{0.27\textwidth}
+		\centering
+		\includegraphics[width=\textwidth]{plots/plot_eM_neg_W1t}
+		\caption{\scriptsize Wages Reg 1}
+		\label{fig:eM-neg-W1t}
+	\end{subfigure}
+	\hspace*{0.5cm}
+	\begin{subfigure}[b]{0.27\textwidth}
+		\centering
+		\includegraphics[width=\textwidth]{plots/plot_eM_neg_W2t}
+		\caption{\scriptsize Wages Reg 2}
+		\label{fig:eM-neg-W2t}
+	\end{subfigure}
+	% \hspace*{0.5cm}
+	\vspace*{0.1cm}
+	% ---------------------------------------------------------------------------
+	% SUBFIGURES ROW
+	% ---------------------------------------------------------------------------
+	\begin{subfigure}[b]{0.27\textwidth}
+		\centering
+		\includegraphics[width=\textwidth]{plots/plot_eM_neg_P1t}
+		\caption{\scriptsize Price Level Reg 1}
+		\label{fig:eM-neg-P1t}
+	\end{subfigure}
+	\hspace*{0.5cm}
+	\begin{subfigure}[b]{0.27\textwidth}
+		\centering
+		\includegraphics[width=\textwidth]{plots/plot_eM_neg_P2t}
+		\caption{\scriptsize Price Level Reg 2}
+		\label{fig:eM-neg-P2t}
+	\end{subfigure}
+	\hspace*{0.5cm}
+	\begin{subfigure}[b]{0.27\textwidth}
+		\centering
+		\includegraphics[width=\textwidth]{plots/plot_eM_neg_Q1t}
+		\caption{\scriptsize Region 1 CPL$^{\ast}$}
+		\label{fig:eM-neg-Q1t}
+	\end{subfigure}
+	% \hspace*{0.5cm}		
+	\vspace*{0.1cm}
+	% ---------------------------------------------------------------------------
+	% SUBFIGURES ROW
+	% ---------------------------------------------------------------------------
+	\begin{subfigure}[b]{0.27\textwidth}
+		\centering
+		\includegraphics[width=\textwidth]{plots/plot_eM_neg_Q2t}
+		\caption{\scriptsize Region 1 CPL$^{\ast}$}
+		\label{fig:eM-neg-Q2t}
+	\end{subfigure}
+	\hspace*{0.5cm}
+	\begin{subfigure}[b]{0.27\textwidth}
+		\centering
+		\includegraphics[width=\textwidth]{plots/plot_eM_neg_pi1t}
+		\caption{\scriptsize Inflation Region 1}
+		\label{fig:eM-neg-pi1t}
+	\end{subfigure}
+	\hspace*{0.5cm}
+	\begin{subfigure}[b]{0.27\textwidth}
+		\centering
+		\includegraphics[width=\textwidth]{plots/plot_eM_neg_pi2t}
+		\caption{\scriptsize Inflation Region 2}
+		\label{fig:eM-neg-pi2t}
+	\end{subfigure}
+	% \hspace*{0.5cm}
+	\vspace*{0.1cm}
+	% ---------------------------------------------------------------------------
+	% SUBFIGURES ROW
+	% ---------------------------------------------------------------------------
+	\begin{subfigure}[b]{0.27\textwidth}
+		\centering
+		\includegraphics[width=\textwidth]{plots/plot_eM_neg_pit}
+		\caption{\scriptsize Inflation}
+		\label{fig:eM-neg-pit}
+	\end{subfigure}
+	\hspace*{0.5cm}
+	\begin{subfigure}[b]{0.27\textwidth}
+		\centering
+		\includegraphics[width=\textwidth]{shock_ZMt/blank}
+		%\caption{}
+		%\label{}
+	\end{subfigure}
+	\hspace*{0.5cm}
+	\begin{subfigure}[b]{0.27\textwidth}
+		\centering
+		\includegraphics[width=\textwidth]{shock_ZMt/blank}
+		%\caption{}
+		%\label{}
+	\end{subfigure}
+	% \hspace*{0.5cm}
+	% \vspace*{0.1cm}
+	\caption*{Source: created by the author.}
+	\label{fig:eM-neg-irf2}
+\end{figure}
+
+$^{\ast}$ CPL: Consumer Price Level.
+
+% ---------------------------------------------------------------------------
+% Negative-Monetary-Shock Paired Impulse Response Functions
+% ---------------------------------------------------------------------------
+
+\newpage
+
+% \subsubsection{Paired Impulse Response Functions}
+
+\begin{figure}[h!]
+	\centering
+	\caption{Negative-Monetary-Shock Paired Impulse Response Functions}
+	% ---------------------------------------------------------------------------
+	% SUBFIGURES ROW 1
+	% ---------------------------------------------------------------------------
+	\begin{subfigure}[b]{0.48\textwidth}
+		\centering
+		\includegraphics[width=\textwidth]{plots/plot_eM_neg_C1_C2}
+		\caption{\scriptsize Consumption}
+		\label{fig:plot_eM_neg_C1_C2}
+	\end{subfigure}
+	\hspace*{0.3cm}
+	\begin{subfigure}[b]{0.48\textwidth}
+		\centering
+		\includegraphics[width=\textwidth]{plots/plot_eM_neg_I1_I2}
+		\caption{\scriptsize Investment}
+		\label{fig:plot_eM_neg_I1_I2}
+	\end{subfigure}
+	\vspace*{0.1cm}
+	% ---------------------------------------------------------------------------
+	% SUBFIGURES ROW 2
+	% ---------------------------------------------------------------------------
+	\begin{subfigure}[b]{0.48\textwidth}
+		\centering
+		\includegraphics[width=\textwidth]{plots/plot_eM_neg_Y1_Y2}
+		\caption{\scriptsize Production}
+		\label{fig:plot_eM_neg_Y1_Y2}
+	\end{subfigure}
+	\hspace*{0.3cm}
+	\begin{subfigure}[b]{0.48\textwidth}
+		\centering
+		\includegraphics[width=\textwidth]{plots/plot_eM_neg_K1_K2}
+		\caption{\scriptsize Capital}
+		\label{fig:plot_eM_neg_K1_K2}
+	\end{subfigure}
+	\caption*{Source: created by the author.}
+	\label{fig:paired-neg-irf}
+\end{figure}
+
+\newpage
+
+\begin{figure}[h!]
+	\centering
+	\caption*{Negative-Monetary-Shock Paired Impulse Response Functions, part 2}
+	% ---------------------------------------------------------------------------
+	% SUBFIGURES ROW 3
+	% ---------------------------------------------------------------------------
+	\begin{subfigure}[b]{0.48\textwidth}
+		\centering
+		\includegraphics[width=\textwidth]{plots/plot_eM_neg_L1_L2}
+		\caption{\scriptsize Labor}
+		\label{fig:plot_eM_neg_L1_L2}
+	\end{subfigure}
+	\hspace*{0.3cm}
+	\begin{subfigure}[b]{0.48\textwidth}
+		\centering
+		\includegraphics[width=\textwidth]{plots/plot_eM_neg_W1_W2}
+		\caption{\scriptsize Wages}
+		\label{fig:plot_eM_neg_W1_W2}
+	\end{subfigure}
+	\vspace*{0.1cm}
+	% ---------------------------------------------------------------------------
+	% SUBFIGURES ROW 4
+	% ---------------------------------------------------------------------------
+	\begin{subfigure}[b]{0.48\textwidth}
+		\centering
+		\includegraphics[width=\textwidth]{plots/plot_eM_neg_Q1_Q2}
+		\caption{\scriptsize Consumer Price Level}
+		\label{fig:plot_eM_neg_Q1_Q2}
+	\end{subfigure}
+	\hspace*{0.3cm}
+	\begin{subfigure}[b]{0.48\textwidth}
+		\centering
+		\includegraphics[width=\textwidth]{plots/plot_eM_neg_P1_P2}
+		\caption{\scriptsize Price Level}
+		\label{fig:plot_eM_neg_P1_P2}
+	\end{subfigure}
+	\caption*{Source: created by the author.}
+	\label{fig:paired-neg-irf2}
+\end{figure}
+
+\begin{comment}
+	
+	\subsubsection{Paired Impulse Response Functions}
+	
+	% ---------------------------------------------------------------------------
+	% CONSUMPTION
+	% ---------------------------------------------------------------------------
+	
+	\begin{figure}[h!]
+		\centering
+		\caption{Consumption IRF}
+		\includegraphics[height=0.3\textheight]{plot_eM_neg_C1_C2}
+		\caption*{Source: created by the author.}
+		\label{fig:eM-neg-Cn-irf}
+	\end{figure}
+	
+	% ---------------------------------------------------------------------------
+	% INVESTMENT
+	% ---------------------------------------------------------------------------
+	
+	\begin{figure}[h!]
+		\centering
+		\caption{Investment IRF}
+		\includegraphics[height=0.3\textheight]{plot_eM_neg_I1_I2}
+		\caption*{Source: created by the author.}
+		\label{fig:eM-neg-In-irf}
+	\end{figure}
+	
+	\newpage
+	
+	% ---------------------------------------------------------------------------
+	% PRODUCTION
+	% ---------------------------------------------------------------------------
+	
+	\begin{figure}[h!]
+		\centering
+		\caption{Production IRF}
+		\includegraphics[height=0.3\textheight]{plot_eM_neg_Y1_Y2}
+		\caption*{Source: created by the author.}
+		\label{fig:eM-neg-Yn-irf}
+	\end{figure}
+	
+	% ---------------------------------------------------------------------------
+	% CAPITAL
+	% ---------------------------------------------------------------------------
+	
+	\begin{figure}[h!]
+		\centering
+		\caption{Capital IRF}
+		\includegraphics[height=0.3\textheight]{plot_eM_neg_K1_K2}
+		\caption*{Source: created by the author.}
+		\label{fig:eM-neg-Kn-irf}
+	\end{figure}
+	
+	\newpage
+	
+	% ---------------------------------------------------------------------------
+	% LABOR
+	% ---------------------------------------------------------------------------
+	
+	\begin{figure}[h!]
+		\centering
+		\caption{Labor IRF}
+		\includegraphics[height=0.3\textheight]{plot_eM_neg_L1_L2}
+		\caption*{Source: created by the author.}
+		\label{fig:eM-neg-Ln-irf}
+	\end{figure}
+	
+	% ---------------------------------------------------------------------------
+	% WAGES
+	% ---------------------------------------------------------------------------
+	
+	\begin{figure}[h!]
+		\centering
+		\caption{Wages IRF}
+		\includegraphics[height=0.3\textheight]{plot_eM_neg_W1_W2}
+		\caption*{Source: created by the author.}
+		\label{fig:eM-neg-Wn-irf}
+	\end{figure}
+	
+	\newpage
+	
+	% ---------------------------------------------------------------------------
+	% CONSUMER PRICE LEVEL
+	% ---------------------------------------------------------------------------
+	
+	\begin{figure}[h!]
+		\centering
+		\caption{Consumer Price Level IRF}
+		\includegraphics[height=0.3\textheight]{plot_eM_neg_Q1_Q2}
+		\caption*{Source: created by the author.}
+		\label{fig:eM-neg-Qn-irf}
+	\end{figure}
+	
+	% ---------------------------------------------------------------------------
+	% PRICE LEVEL
+	% ---------------------------------------------------------------------------
+	
+	\begin{figure}[h!]
+		\centering
+		\caption{Price Level IRF}
+		\includegraphics[height=0.3\textheight]{plot_eM_neg_P1_P2}
+		\caption*{Source: created by the author.}
+		\label{fig:eM-neg-Pn-irf}
+	\end{figure}
+	
+\end{comment}
+
+\end{document}

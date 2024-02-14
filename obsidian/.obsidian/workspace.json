@@ -8,18 +8,35 @@
         "type": "tabs",
         "children": [
           {
-            "id": "6f9572307d23af64",
+            "id": "5f7ad28edb4b0fef",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Badarau and Levieuge, 2011.md",
+                "file": "MANUALS.md",
                 "mode": "source",
                 "source": false
               }
             }
+          },
+          {
+            "id": "9d04cda1a6b940f2",
+            "type": "leaf",
+            "state": {
+              "type": "graph",
+              "state": {}
+            }
+          },
+          {
+            "id": "17217dfe4021b937",
+            "type": "leaf",
+            "state": {
+              "type": "graph",
+              "state": {}
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -69,7 +86,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 233.5
+    "width": 200
   },
   "right": {
     "id": "fb01c65dc3a8a205",
@@ -85,7 +102,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Badarau and Levieuge, 2011.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +118,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Badarau and Levieuge, 2011.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -124,9 +139,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "Badarau and Levieuge, 2011.md"
-              }
+              "state": {}
             }
           }
         ]
@@ -146,20 +159,28 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "6f9572307d23af64",
+  "active": "9d04cda1a6b940f2",
   "lastOpenFiles": [
-    "Levieuge (2009a).md",
-    "Badarau and Levieuge, 2011.md",
-    "Sunirand (2003).md",
-    "Bernanke et al. (1999).md",
-    "Rickman, 2010.md",
-    "Torres, 2016.md",
-    "Christiano et al (2018).md",
-    "DeJong and Dave, 2007.md",
-    "Kydland and Prescott, 1991b.md",
-    "Long and Plosser, 1983.md",
-    "Kydland and Prescott, 1982.md",
-    "CORBO et al 2020.md",
+    "Mora and Costa Junior 2019.md",
+    "Costa Junior et al 2022.md",
+    "Christiano et al 2005.md",
+    "Christiano et al 2018.md",
+    "MANUALS.md",
+    "Corbo et al 2020.md",
+    "Osterno 2022.md",
+    "Teles, Costa Junior and Rosa 2015.md",
+    "Marques Junior, Oliveira and Jacinto 2016.md",
+    "Christiano, Trabandt and Walentin 2011.md",
+    "Badarau and Levieuge 2011.md",
+    "Bernanke et al 1999.md",
+    "DeJong and Dave 2007.md",
+    "Kydland and Prescott 1991b.md",
+    "Levieuge 2009a.md",
+    "Torres 2016.md",
+    "Sunirand 2003.md",
+    "Long and Plosser 1983.md",
+    "Kydland and Prescott 1982.md",
+    "Rickman 2010.md",
     "Abadir.md",
     "Abadir et al 2005 Matrix Algebra.pdf - Atalho 1.lnk",
     "Abadir et al 2005 Matrix Algebra.pdf - Atalho.lnk",
