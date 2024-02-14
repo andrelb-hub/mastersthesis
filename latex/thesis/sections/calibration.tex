@@ -14,8 +14,6 @@
 
 \subsection{Calibration}
 
-\textcite{ibge_GDP_2023}
-
 \begin{comment}
 	
 Parameters are calibrated in order to reproduce Brazilian characteristics and for that, data from literature and data sets will be used, as described next. First, the regions must be determined: region $1$ will be set as the State of São Paulo, which is responsible for $30\%$ of the national GDP, as reported by \textcite{ibge_GDP_2023}. Other states, political regions or even groups of cities could be chosen, the only limited is that the smallest region in the model cannot be smaller than $0.03$ of the grand total, to guarantee stability of the model, as pointed by \textcite{konopkova_pitfalls_2019}.
@@ -43,7 +41,7 @@ The weight of good $1$ in consumption composition of region $1$ $\omega_{11}$ an
 
 \end{comment}
 
-In this section, we outline the calibration process to replicate Brazilian economic characteristics, utilizing both literature and datasets. First, a region must be selected: in this study, region $1$ corresponds to the State of São Paulo, which contributes $30\%$ to the national GDP, as reported by \textcite{ibge_GDP_2023}. While other regions or groupings are viable options, such as groups of States or Cities, the limitation is that the smallest region cannot be less than $0.03$ of the total, ensuring model stability, as emphasized by \textcite{konopkova_pitfalls_2019}. \textcolor{blue}{Second, a year must be chosen: to avoid the pandemic shock that occurred in 2020, the year 2019 will be set as the baseline for establishing the parameters.}
+In this section the calibration process to replicate Brazilian economic characteristics is presented, utilizing both literature and datasets. First, a region must be selected: in this study, region $1$ corresponds to the State of São Paulo, which contributes $30\%$ to the national GDP, as reported by \textcite{ibge_GDP_2023}. While other regions or groupings are viable options, such as groups of States or Cities, the limitation is that the smallest region cannot be less than $0.03$ of the total, ensuring model stability, as emphasized by \textcite{konopkova_pitfalls_2019}. \textcolor{blue}{Second, a year must be chosen: to avoid the pandemic shock that occurred in 2020, the year 2019 will be set as the baseline for establishing the parameters.}
 
 \textcolor{blue}{To designate Region $1$ as more capital-intensive, the capital elasticity of production for Region $1$ must be such that $\alpha_{1} > \alpha_{2}$, while Region $2$ is assigned the commonly accepted value of $0.30$.} Various parameters, such as the 
 intertemporal discount factor $\beta$; 
@@ -71,7 +69,6 @@ The weight of region $1$ in total production, $\theta_{Y}$, is determined by the
 	\theta_{Z} &\coloneqq \frac{Z_{2}}{Z_{1}} \approx \frac{469}{662} \approx 0.7076
 \end{align}
 
-
 \textcolor{blue}{The weight of good 1 in the consumption composition $\omega_{\eta 1}$ for both regions is sourced from \textcite[Table 3, p.442]{haddad_matriz_2017}. Specifically, $\omega_{11}$ corresponds to item $a_{SP\times SP}$ \label{eq:omega-e1}. Additionally, $\omega_{21}$ is calculated as the weighted mean of all state production (except São Paulo) with São Paulo as the final demand (column SP), taking into account the total production $Y_{i}$ of each state:}
 \begin{align}
 	\omega_{21} = \frac{\sum_{i=1}^{26} \omega_{iSP} Y_i}{\sum_{i=1}^{26} Y_i} \approx 0.095 \label{eq:omega-e2}
@@ -87,9 +84,9 @@ The parameters are summarized in Table \eqref{table:parameter-calibration} and t
 % Workforce and Average Working Hours 
 % --------------------------------------------------
 
-\subsubsection{Brazilian GDP, Worked Hours and Productivity in 2019}
+% \subsubsection{Brazilian GDP, Worked Hours and Productivity in 2019}
 
-\vspace*{0.5cm}
+% \vspace*{0.5cm}
 
 {\small
 

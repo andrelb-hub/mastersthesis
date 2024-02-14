@@ -296,7 +296,7 @@ Y2t = thetaC2 * C2t + (1 - thetaC2) * I2t;
      ZA1t = rhoA1 * ZA1t(-1) + e_A1;
      ZA2t = rhoA2 * ZA2t(-1) + e_A2;
 [name='Monetary Shock']
-     ZMt = rhoM * ZMt(-1) - e_M;
+     ZMt = rhoM * ZMt(-1) + e_M;
 end;
 % -------------------------------------------------- % 
 % STEADY STATE                                       %
@@ -392,7 +392,7 @@ for i = 1:length(var_vector)
     grid on;
        
     % Save the plot as a PNG file with the specified path
-    saveas(gcf, fullfile(png_folder, ['plot_eM_neg_', var_names{i}, '.png']));
+    saveas(gcf, fullfile(png_folder, ['plot_eM_pos_', var_names{i}, '.png']));
     
     % Clear the current figure to prepare for the next iteration
     clf;
@@ -440,7 +440,7 @@ legend([h1, h2, h3, h4, h5, h6], 'Consumption region 1', 'Consumption region 2',
 % Grid on for clarity
 grid on;
 % Save the plot as a PNG file with the specified path
-    saveas(gcf, fullfile(png_folder, 'plot_eM_neg_Cn_In_Yn.png'));
+    saveas(gcf, fullfile(png_folder, 'plot_eM_pos_Cn_In_Yn.png'));
 % -------------------------------------------------- % 
 % Cn,In,Yn IRF IN SEPARATED PNG                      %
 % -------------------------------------------------- % 
@@ -474,7 +474,7 @@ for p = 1:length(pairs)
     grid on;
     
     % Save the plot as a PNG file with the specified path
-    saveas(gcf, fullfile(png_folder, ['plot_eM_neg_', variable_names{pair_indices(1)}, '_', variable_names{pair_indices(2)}, '.png']));
+    saveas(gcf, fullfile(png_folder, ['plot_eM_pos_', variable_names{pair_indices(1)}, '_', variable_names{pair_indices(2)}, '.png']));
 end
 % -------------------------------------------------- % 
 % CLOSE PLOT WINDOWS                                 %

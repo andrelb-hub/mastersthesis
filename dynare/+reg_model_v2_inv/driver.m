@@ -467,7 +467,7 @@ xlabel('');
 ylabel('');
 title(''); 
 grid on;
-saveas(gcf, fullfile(png_folder, ['plot_eM_neg_', var_names{i}, '.png']));
+saveas(gcf, fullfile(png_folder, ['plot_eM_pos_', var_names{i}, '.png']));
 clf;
 end
 pause(1);
@@ -498,7 +498,7 @@ ylabel('');
 title(''); 
 legend([h1, h2, h3, h4, h5, h6], 'Consumption region 1', 'Consumption region 2', 'Investment region 1', 'Investment region 2', 'Production region 1', 'Production region 2');
 grid on;
-saveas(gcf, fullfile(png_folder, 'plot_eM_neg_Cn_In_Yn.png'));
+saveas(gcf, fullfile(png_folder, 'plot_eM_pos_Cn_In_Yn.png'));
 variables = {C1t_e_M, C2t_e_M, I1t_e_M, I2t_e_M, Y1t_e_M, Y2t_e_M, K1t_e_M, K2t_e_M, L1t_e_M, L2t_e_M, W1t_e_M, W2t_e_M, Q1t_e_M, Q2t_e_M, P1t_e_M, P2t_e_M};
 variable_names = {'C1', 'C2', 'I1', 'I2', 'Y1', 'Y2', 'K1', 'K2', 'L1', 'L2', 'W1', 'W2', 'Q1', 'Q2', 'P1', 'P2'};
 pairs = {[1, 2], [3, 4], [5, 6], [7, 8], [9, 10], [11, 12], [13, 14], [15, 16]}; 
@@ -520,7 +520,7 @@ ylabel('');
 title(''); 
 legend(line_handles, variable_names(pair_indices));
 grid on;
-saveas(gcf, fullfile(png_folder, ['plot_eM_neg_', variable_names{pair_indices(1)}, '_', variable_names{pair_indices(2)}, '.png']));
+saveas(gcf, fullfile(png_folder, ['plot_eM_pos_', variable_names{pair_indices(1)}, '_', variable_names{pair_indices(2)}, '.png']));
 end
 pause(10);
 close all;

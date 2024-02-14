@@ -8,7 +8,7 @@
 
 \newpage
 
-\subsection{Definitions and Lemmas}
+\subsection{Definitions, Lemmas and Corollaries}
 
 The objective of this appendix is to present the definitions and lemmas used throughout the text.
 
@@ -88,9 +88,9 @@ The objective of this appendix is to present the definitions and lemmas used thr
 
 \begin{lemma}[Marginal Cost]\label{lemma:marginal-cost}
 	The Lagrangian multiplier $\Lambda_t$ is the nominal marginal cost of the intermediate-good firm:
-	\begin{align}
+	\begin{align*}
 		MC_t \coloneq \frac{\partial TC_t}{\partial Y_t} = \Lambda_t
-	\end{align}
+	\end{align*}
 	
 	\begin{proof}
 		\textcite[p.449]{simon_mathematics_1994}.
@@ -99,7 +99,6 @@ The objective of this appendix is to present the definitions and lemmas used thr
 \end{lemma}
 
 \begin{comment}
-
 
 % --------------------------------------------------
 % Constant Returns to Scale
@@ -129,6 +128,8 @@ The objective of this appendix is to present the definitions and lemmas used thr
 
 \subsubsection*{Steady State}
 
+\end{comment}
+
 % --------------------------------------------------
 % INFLATION LEMMA
 % --------------------------------------------------
@@ -136,7 +137,7 @@ The objective of this appendix is to present the definitions and lemmas used thr
 \begin{lemma}[Steady State Inflation]\label{lemma:steady-state-inflation}
 	
 	In steady state, prices are stable $P_t = P_{t-1} = P$ and the gross inflation rate is one.
-	\begin{proof} Equation \ref{eq_v0:ss-gross-inflation-rate}. \end{proof}  \end{lemma}
+	\begin{proof} Equation \ref{ext-mod:reg-ss-regional-inflation}. \end{proof}  \end{lemma}
 
 \begin{corollary}\label{coro:steady-state-YKL}
 	
@@ -153,6 +154,8 @@ The objective of this appendix is to present the definitions and lemmas used thr
 	
 \end{corollary}
 
+\begin{comment}
+	
 % --------------------------------------------------
 % LOG-LINEARIZATION
 % --------------------------------------------------
@@ -178,100 +181,106 @@ The objective of this appendix is to present the definitions and lemmas used thr
 % UHLIG'S RULES
 % --------------------------------------------------
 
-\begin{lemma}[UHLIG'S RULES]\label{lemma:uhligs-rules}
-	
+\begin{definition}[Uhlig's Rules]\label{def:uhligs-rules}
 	The Uhlig's rules are a set of approximations used to log-linearize equations \cite[Lecture 6, p.2]{solis-garcia_ucb_2022}.
-	
-	\begin{itemize}
-		\item Rule 1: \label{uhlig-rule-1}
-		
-		\( x_t = x(1 + \hat{x}_t) \) 
-		
-		\item Rule 2 (Product):
-		
-		\( x_t y_t \approx xy(1 + \hat{x}_t + \hat{y}_t) \) 
-		
-		\begin{proof}
-			\( 
-			x_t y_t	= 
-			\)
+\end{definition}
 
-		\end{proof}
-		
-		
-		\item Rule 3 (Exponential):
-		
-		
-	\end{itemize}
-	
+% --------------------------------------------------
+% UHLIG'S RULE 1
+% --------------------------------------------------
+
+\begin{lemma}[Rule 1: Percentage Deviation from Steady State]\label{lemma:uhlig-rule-1}
+	\begin{align*}
+	\hat{x}_t \coloneqq \frac{x_t - x}{x} \iff x_t = x(1 + \hat{x}_t)
+	\end{align*}
 \end{lemma}
 
-\begin{corollary}[Logarithm Rule]\label{coro:logarithm-rule}
-	
+% --------------------------------------------------
+% UHLIG'S RULE 2
+% --------------------------------------------------
+
+\begin{corollary}[Rule 2: Product]\label{coro:uhlig-rule-2}
 	\begin{align*}
-		\ln x_t \approx \ln x + \hat{x}_t
-	\end{align*}
-	
+		x_t y_t \approx xy(1 + \hat{x}_t + \hat{y}_t) 
+	\end{align*}	
+	\begin{proof} Apply lemma \ref{lemma:uhlig-rule-1} to both variables and notice that $\hat{x}_t\hat{y}_t \approx 0$:
+		\begin{align*}
+			x_t y_t	&= x(1 + \hat{x}_t)y(1 + \hat{y}_t) \\
+			&= xy(1 + \hat{x}_t + \hat{y}_t + \hat{x}_t\hat{y}_t) \\
+			&\approx xy(1 + \hat{x}_t + \hat{y}_t) 
+		\end{align*}
+	\end{proof}
+\end{corollary}
+		
+% --------------------------------------------------
+% UHLIG'S RULE 3
+% --------------------------------------------------
+
+\begin{corollary}[Rule 3: Exponential]\label{uhlig-rule-3}
+	\begin{align*}
+		x_{t}^{a} \approx x^a(1 + a\hat{x}_t) \quad ; \quad a>1 
+	\end{align*}	
+	\begin{proof} Apply corollary \ref{coro:uhlig-rule-2} $(a-1)$ times. \end{proof}
 \end{corollary}
 
 % --------------------------------------------------
-% LEVEL DEVIATION
+% UHLIG'S RULE 4
 % --------------------------------------------------
 
-\begin{definition}[LEVEL DEVIATION]\label{def:level-deviation}
-	
-	The level deviation of a variable $u_t$ from its steady state is given by: \cite[Lecture 9, p.9]{solis-garcia_ucb_2022}
-	\begin{align}
-		\widetilde{u}_t \coloneq u_t - u \label{eq:level-deviation}
-	\end{align}
-	
-\end{definition}
+\begin{corollary}[Logarithm Rule]\label{uhlig-rule-4}
+	\begin{align*}
+		\ln x_t \approx \ln x + \hat{x}_t 
+	\end{align*}
+	\begin{proof} Apply corollary \ref{lemma:uhlig-rule-1} and notice that $\ln{(1+x)} \approx x$ when $u \to 0_{+}$. \end{proof}
+\end{corollary}
 
 % --------------------------------------------------
 % UHLIG'S RULES FOR LEVEL DEVIATIONS
 % --------------------------------------------------
 
-\begin{lemma}[UHLIG'S RULES FOR LEVEL DEVIATIONS]\label{lemma:level-rules}
-	
-	Uhlig's rules can be applied to level deviations in order to log-linearize equations \cite[Lecture 9, p.9]{solis-garcia_ucb_2022}.
-	
-	\begin{itemize}
-		\item Rule 1:
-		\begin{align}
-			\label{lemma:level-rule-1a}
-			u_t &= u + \widetilde{u}_t \\
-			\label{lemma:level-rule-1b}
-			u_t &= u\left(1+ \frac{\widetilde{u}_t}{u} \right)
-		\end{align}
-		
-		\item Rule 2 (Product):
-		
-		\item Rule 3 (Exponential):
-		
-		\item Rule 4 (Logarithm):
-		
-		\item Rule 5 (Percentage and Level Deviations)
-		
-	\end{itemize}
-	
+\begin{definition}[Uhlig's Rules for Level Deviations]\label{eq:level-deviation}
+	Uhlig's rules can be applied to level deviations (when $0<u_t<1$) in order to log-linearize equations \cite[Lecture 9, p.9]{solis-garcia_ucb_2022}.
+\end{definition}
+
+\begin{lemma}[Level Deviation from Steady State when $0 \leq u \leq 1$] \label{lemma:level-rule-1a}
+	\begin{align*}
+		\widetilde{u}_t &\coloneq u_t - u
+		% u_t &= u + \widetilde{u}_t \iff  \\
+	\end{align*}
 \end{lemma}
 
+\begin{corollary}[Level Deviation from Steady State when $0 < u < 1$] \label{lemma:level-rule-1b}
+	\begin{align*}
+		u_t &= u\left(1+ \frac{\widetilde{u}_t}{u} \right) 
+	\end{align*}
+\end{corollary}
 
+\begin{comment}
+	
+\item Rule 2 (Product):
+
+\item Rule 3 (Exponential):
+
+\item Rule 4 (Logarithm):
+
+\item Rule 5 (Percentage and Level Deviations)
+	
+	
+\end{comment}
 
 % --------------------------------------------------
 % PRODUCT OPERATOR
 % --------------------------------------------------
 
-\begin{lemma}[LEVEL DEVIATION OF THE PRESENT VALUE DISCOUNT FACTOR]\label{lemma:product-operator}
+\begin{lemma}[Level Deviation of the Present Value Discount Factor] \label{lemma:product-operator}
 	
 	The level deviation of the present value discount factor is equivalent to \cite[Lecture 13, p.6]{solis-garcia_ucb_2022}:
-	\begin{align}
-		\label{eq:product-operator}
+	\begin{align*}
 		\prod_{k=0}^{s-1}(1+R_{t+k}) = (1 + R)^s \left( 1 + \frac{1}{1 + R} \sum_{k=0}^{s-1} \widetilde{R}_{t+k} \right)
-	\end{align}
+	\end{align*}
 	
 	\begin{proof}
-		Substitute the interest rate by the gross interest rate $GR_t = 1 + R_t$ and apply rule \ref{lemma:level-rule-1b}:
+		Substitute the interest rate by the gross interest rate $GR_t = 1 + R_t$ and apply corollary \ref{lemma:level-rule-1b}:
 		\begin{align*}
 			& \prod_{k=0}^{s-1}(1+R_{t+k}) = \prod_{k=0}^{s-1}(GR_{t+k})
 			&\implies \nonumber \\
@@ -310,9 +319,9 @@ The objective of this appendix is to present the definitions and lemmas used thr
 % GEOMETRIC SERIES
 % --------------------------------------------------
 
-\begin{definition}[Geometric Series]\label{def:geometric-series}
+\begin{definition}[Geometric Series] \label{def:geometric-series}
 	
-	A geometric series is the sum of the terms of a geometric sequence.
+	A geometric series $S_\infty$ is the sum of the terms of a geometric sequence.
 	\begin{align*}
 		S_\infty = \sum_{i=0}^{\infty} ar^i \implies 
 		S_\infty = \frac{a}{1-r} \; , \; |r| <1
@@ -324,19 +333,21 @@ The objective of this appendix is to present the definitions and lemmas used thr
 % LAG OPERATOR
 % --------------------------------------------------
 
-\begin{definition}[LAG AND LEAD OPERATORS]\label{def:lag-operator}
+\begin{definition}[Lag Operator] \label{def:lag-operator}
 	The lag operator $\mathbb{L}$ is a mathematical operator that represents the backshift or lag of a time series \cite[Lecture 13, p.9]{solis-garcia_ucb_2022}:
 	\begin{align*}
-		\mathbb{L} x_t            & = x_{t-1}              \\
+		\mathbb{L} x_t           & = x_{t-1}              \\
 		(1 + a\mathbb{L})y_{t+2} & = y_{t+2} + ay_{t+1}
 	\end{align*}
-	
+\end{definition}
+
+\begin{corollary}[Lead Operator] \label{coro:lead-operator}
 	Analogously, the lead operator $\mathbb{L}^{-1}$ (or inverse lag operator) yields a variable's lead \cite[Lecture 13, p.9]{solis-garcia_ucb_2022}:
 	\begin{align*}
 		\mathbb{L}^{-1} x_t            & = x_{t+1}              \\
 		(1 + a\mathbb{L}^{-1}) y_{t+2} & = y_{t+2} + ay_{t+3}
 	\end{align*}
-\end{definition}
+\end{corollary}
 
 \begin{comment}
 
@@ -409,59 +420,6 @@ The objective of this appendix is to present the definitions and lemmas used thr
 \begin{definition}[Blanchard-Kahn Conditions]
 	\cite[Handout 5, p.14]{solis-garcia_ucb_2022}.
 \end{definition}
-
-
-% --------------------------------------------------
-% DEFINITION
-% --------------------------------------------------
-
-% --------------------------------------------------
-% DEFINITION
-% --------------------------------------------------
-
-% --------------------------------------------------
-% DEFINITION
-% --------------------------------------------------
-
-% --------------------------------------------------
-% DEFINITION
-% --------------------------------------------------
-
-% --------------------------------------------------
-% DEFINITION
-% --------------------------------------------------
-
-% --------------------------------------------------
-% DEFINITION
-% --------------------------------------------------
-
-% --------------------------------------------------
-% DEFINITION
-% --------------------------------------------------
-
-% --------------------------------------------------
-% DEFINITION
-% --------------------------------------------------
-
-% --------------------------------------------------
-% DEFINITION
-% --------------------------------------------------
-
-% --------------------------------------------------
-% DEFINITION
-% --------------------------------------------------
-
-% --------------------------------------------------
-% DEFINITION
-% --------------------------------------------------
-
-% --------------------------------------------------
-% DEFINITION
-% --------------------------------------------------
-
-% --------------------------------------------------
-% DEFINITION
-% --------------------------------------------------
 
 % --------------------------------------------------
 % DEFINITION

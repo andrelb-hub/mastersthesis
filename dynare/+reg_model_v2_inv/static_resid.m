@@ -115,7 +115,7 @@ lhs = y(17);
 rhs = y(17)*params(10)+x(2);
 residual(33) = lhs - rhs;
 lhs = y(18);
-rhs = y(18)*params(11)-x(3);
+rhs = y(18)*params(11)+x(3);
 residual(34) = lhs - rhs;
 if ~isreal(residual)
   residual = real(residual)+imag(residual).^2;
