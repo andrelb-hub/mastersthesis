@@ -14,14 +14,11 @@
 % PAGE LAYOUT:
 % --------------------------------------------------
 
-%\usepackage{fancyhdr}
-%\pagestyle{fancy}
-%\fancyhead{}
-%%\fancyhead[RO,LE]{Section \thesection}
-%\fancyfoot{}
-%\fancyfoot[R]{\thepage}
-%%\fancyfoot[C]{André Luiz Brito}
-%\renewcommand{\headrulewidth}{0.0pt}
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyhead[R]{\thepage}
+\renewcommand{\headrulewidth}{0.0pt}
 %\renewcommand{\footrulewidth}{0.0pt}
 
 % --------------------------------------------------
@@ -50,8 +47,11 @@
 % --------------------------------------------------
 
 % \usepackage{times}
-\usepackage{mathpazo}
+ \usepackage{mathpazo}
 % \usepackage{palatino} 
+
+%\usepackage{fontspec}
+%\setmainfont{Arial}
 
 % --------------------------------------------------
 % TIPEWRITTER FONT ENVIRONMENT:
@@ -60,6 +60,15 @@
 %\usepackage{fontspec}
 %\newfontfamily\myfont[]{lmtt}
 %\newenvironment{myfont}{\myfont}{\par}
+
+% --------------------------------------------------
+% SECTION FORMAT
+% --------------------------------------------------
+
+\usepackage{sectsty}
+\sectionfont{\fontsize{12}{15}\selectfont\uppercase}
+\subsectionfont{\normalfont\fontsize{12}{15}\selectfont\uppercase}
+\subsubsectionfont{\normalfont\fontsize{12}{15}\selectfont}
 
 % --------------------------------------------------
 % SPACES BETWEEN LINES:
@@ -139,6 +148,15 @@
 % --------------------------------------------------
 
 \setcounter{tocdepth}{2}
+
+% --------------------------------------------------
+% TABLE OF CONTENTS FORMAT
+% --------------------------------------------------
+
+% Set font formatting for table of contents
+\usepackage{tocloft}
+%\renewcommand{\cftsecfont}{\fontsize{12}{15}\selectfont\uppercase}
+%\renewcommand{\cftsubsecfont}{\normalfont\fontsize{12}{15}\selectfont\uppercase}
 
 % --------------------------------------------------
 % SUBTABLE OF CONTENTS INSIDE SECTIONS:
