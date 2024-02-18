@@ -12,7 +12,11 @@
 	% LIST OF FIGURES
 	% --------------------------------------------------
 	
-	\listoffigures
+	{
+		\setlength{\parskip}{1.5pt}
+		\listoffigures
+		\addtocontents{lof}{\vspace{0.5cm}}
+	}
 	
 	% no page number:
 	\thispagestyle{empty}
@@ -23,7 +27,11 @@
 	% LIST OF TABLES
 	% --------------------------------------------------
 	
-	\listoftables
+	{
+		\setlength{\parskip}{1.5pt}
+		\listoftables
+		\addtocontents{lot}{\vspace{0.5cm}}
+	}
 	
 	% no page number:
 	\thispagestyle{empty}

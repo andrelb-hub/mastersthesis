@@ -6,7 +6,7 @@
 
 \begin{document}
 
-\newpage
+% \newpage
 
 % --------------------------------------------------
 % PARAMETER CALIBRATION
@@ -41,9 +41,9 @@ The weight of good $1$ in consumption composition of region $1$ $\omega_{11}$ an
 
 \end{comment}
 
-In this section the calibration process to replicate Brazilian economic characteristics is presented, utilizing both literature and datasets. First, a region must be selected: in this study, region $1$ corresponds to the State of São Paulo, which contributes $30\%$ to the national GDP, as reported by \textcite{ibge_GDP_2023}. While other regions or groupings are viable options, such as groups of States or Cities, the limitation is that the smallest region cannot be less than $0.03$ of the total, ensuring model stability, as emphasized by \textcite{konopkova_pitfalls_2019}. \textcolor{blue}{Second, a year must be chosen: to avoid the pandemic shock that occurred in 2020, the year 2019 will be set as the baseline for establishing the parameters.}
+In this section, the calibration process to replicate Brazilian economic characteristics is presented, utilizing both literature and datasets. First, a region must be selected: in this study, region $1$ corresponds to the State of São Paulo, which contributes $30\%$ to the national GDP, as reported by \textcite{ibge_GDP_2023}. While other regions or groupings are viable options, such as groups of States or Cities, the limitation is that the smallest region cannot be less than $0.03$ of the total, ensuring model stability, as emphasized by \textcite{konopkova_pitfalls_2019}. Second, a year must be chosen: to avoid the pandemic shock that occurred in 2020, the year 2019 will be set as the baseline for establishing the parameters. \textcolor{blue}{}
 
-\textcolor{blue}{To designate Region $1$ as more capital-intensive, the capital elasticity of production for Region $1$ must be such that $\alpha_{1} > \alpha_{2}$, while Region $2$ is assigned the commonly accepted value of $0.30$.} Various parameters, such as the 
+\textcolor{blue}{}To designate Region $1$ as more capital-intensive, the capital elasticity of production for Region $1$ must be such that $\alpha_{1} > \alpha_{2}$, while Region $2$ is assigned the commonly accepted value of $0.30$. Various parameters, such as the 
 intertemporal discount factor $\beta$; 
 interest-rate smoothing parameter $\gamma_{R}$; 
 interest-rate sensitivity in relation to inflation $\gamma_{\pi}$; 
@@ -63,13 +63,13 @@ standard deviation of monetary shock $\sigma_{M}$
 
 The weight of region $1$ in total production, $\theta_{Y}$, is determined by the São Paulo GDP to Brazil GDP ratio, as presented in Table \eqref{table:gdp}.
 
-\textcolor{blue}{The productivity ratio $\theta_{Z}$ quantifies the relative productivity of Region 2 compared to Region 1, using GDP per total hours worked as a measure, as discussed by \textcite{krugman_defining_1997}. Table \eqref{table:gdp} presents the regional GDP and total worked hours. The total worked hours are given by the product of the number of the employed population and the average worked hour. Productivity is determined by the regional GDP to the total worked hours ratio. Therefore, the productivity $Z_{\eta}$ of each region and the productivity ratio $\theta_{Z}$ are:}
+\textcolor{blue}{}The productivity ratio $\theta_{Z}$ quantifies the relative productivity of Region 2 compared to Region 1, using GDP per total hours worked as a measure, as discussed by \textcite{krugman_defining_1997}. Table \eqref{table:gdp} presents the regional GDP and total worked hours. The total worked hours are given by the product of the number of the employed population and the average worked hour. Productivity is determined by the regional GDP to the total worked hours ratio. Therefore, the productivity $Z_{\eta}$ of each region and the productivity ratio $\theta_{Z}$ are:
 \begin{align}
 	Z_{\eta}  &\coloneqq \frac{Y_{\eta}}{n_{\eta} L_{\eta}} \\
 	\theta_{Z} &\coloneqq \frac{Z_{2}}{Z_{1}} \approx \frac{469}{662} \approx 0.7076
 \end{align}
 
-\textcolor{blue}{The weight of good 1 in the consumption composition $\omega_{\eta 1}$ for both regions is sourced from \textcite[Table 3, p.442]{haddad_matriz_2017}. Specifically, $\omega_{11}$ corresponds to item $a_{SP\times SP}$ \label{eq:omega-e1}. Additionally, $\omega_{21}$ is calculated as the weighted mean of all state production (except São Paulo) with São Paulo as the final demand (column SP), taking into account the total production $Y_{i}$ of each state:}
+\textcolor{blue}{}The weight of good 1 in the consumption composition $\omega_{\eta 1}$ for both regions is sourced from \textcite[Table 3, p.442]{haddad_matriz_2017}. Specifically, $\omega_{11}$ corresponds to item $a_{SP\times SP}$ \label{eq:omega-e1}. Additionally, $\omega_{21}$ is calculated as the weighted mean of all state production (except São Paulo) with São Paulo as the final demand (column SP), taking into account the total production $Y_{i}$ of each state:
 \begin{align}
 	\omega_{21} = \frac{\sum_{i=1}^{26} \omega_{iSP} Y_i}{\sum_{i=1}^{26} Y_i} \approx 0.095 \label{eq:omega-e2}
 \end{align}
@@ -156,7 +156,7 @@ The parameters are summarized in Table \eqref{table:parameter-calibration} and t
 % PARAMETERS
 % --------------------------------------------------
 
-\subsubsection{Parameter Calibration}\label{sec:calibration}
+% \subsubsection{Parameter Calibration}\label{sec:calibration}
 
 \vspace*{0.5cm}
 
@@ -187,8 +187,8 @@ The parameters are summarized in Table \eqref{table:parameter-calibration} and t
 	$\gamma_{Y}$     & interest-rate sensitivity in relation to product & $0.16$ \\ 
 	$\delta$         & capital depreciation rate & $0.025$ \\ 
 	$\theta$         & price stickness parameter & $0.8$ \\ 
-	$\theta_{C1}$    & weight of consumption on production of region 1 & $0.4$ \\ 
-	$\theta_{C2}$    & weight of consumption on production of region 2 & $0.4$ \\ 
+	$\theta_{C1}$    & weight of consumption on production of region 1 & $0.65$ \\ 
+	$\theta_{C2}$    & weight of consumption on production of region 2 & $0.65$ \\ 
 	%$\theta_{C11}$   & weight of good 1 in demand of region 1 & $0.4$ \\ 
 	%$\theta_{C12}$   & weight of good 2 in demand of region 1 & $0.4$ \\ 
 	%$\theta_{C21}$   & weight of good 1 in demand of region 2 & $0.4$ \\ 
@@ -196,7 +196,7 @@ The parameters are summarized in Table \eqref{table:parameter-calibration} and t
 	%$\theta_{PY1}$   & weight of region 1 in gross domestic product & $0.3$ \\ 
 	$\theta_{Y}$     & weight of region 1 in total production & $0.318$ \\ 
 	%$\theta_{\pi}$   & weight of region 1 inflation in total inflation & $0.5$ \\ 
-	%$\theta_{P}$     & price proportion between regions & $1$ \\ 
+	$\theta_{P}$     & region 2 to 1 price level ratio & $1$ \\ 
 	$\theta_{Z}$     & productivity proportion between regions & $0.7076$ \\ 
 	$\rho_{A1}$      & autoregressive parameter of productivity in region 1 & $0.95$ \\ 
 	$\rho_{A2}$      & autoregressive parameter of productivity in region 2 & $0.95$ \\ 
@@ -222,7 +222,7 @@ The parameters are summarized in Table \eqref{table:parameter-calibration} and t
 % VARIABLES AT THE STEADY STATE
 % --------------------------------------------------
 
-\subsubsection{Variables at Steady State}
+% \subsubsection{Variables at Steady State}
 
 \vspace*{0.5cm}
 
@@ -252,14 +252,14 @@ The parameters are summarized in Table \eqref{table:parameter-calibration} and t
 		$\langle \begin{matrix} W_{1} & W_{2} \end{matrix} \rangle$ & $\langle \begin{matrix} 2.2208 & .8349 \end{matrix} \rangle$ \\ 
 		$\langle \begin{matrix} a_{1} & a_{2} \end{matrix} \rangle$ & $\langle \begin{matrix} 4.3957 & 1.3703 \end{matrix} \rangle$ \\ 
 		$\langle \begin{matrix} b_{1} & b_{2} \end{matrix} \rangle$ & $\langle \begin{matrix} .2175 & .1631 \end{matrix} \rangle$ \\ 
-		$\langle \begin{matrix} Y_{1} & Y_{2} \end{matrix} \rangle$ & $\langle \begin{matrix} .318 & 1-Y_{1} \end{matrix} \rangle$ \\ 
-		$\langle \begin{matrix} I_{1} & I_{2} \end{matrix} \rangle$ & $\langle \begin{matrix} .0692 & .1113 \end{matrix} \rangle$ \\ 
-		$\langle \begin{matrix} K_{1} & K_{2} \end{matrix} \rangle$ & $\langle \begin{matrix} 2,7667 & 4,4502 \end{matrix} \rangle$ \\ 
-		$\langle \begin{matrix} C_{1} & C_{2} \end{matrix} \rangle$ & $\langle \begin{matrix} 10,3802 & 1,8259 \end{matrix} \rangle$ \\ 
+		$\langle \begin{matrix} Y_{1} & Y_{2} \end{matrix} \rangle$ & $\langle \begin{matrix} 2.6811 & 1.3255 \end{matrix} \rangle$ \\ 
+		$\langle \begin{matrix} I_{1} & I_{2} \end{matrix} \rangle$ & $\langle \begin{matrix} .5832 & .2162 \end{matrix} \rangle$ \\ 
+		$\langle \begin{matrix} K_{1} & K_{2} \end{matrix} \rangle$ & $\langle \begin{matrix} 23.3263 & 8.6491 \end{matrix} \rangle$ \\ 
+		$\langle \begin{matrix} C_{1} & C_{2} \end{matrix} \rangle$ & $\langle \begin{matrix} 2.0979 & 1.1093 \end{matrix} \rangle$ \\ 
 		$\langle \begin{matrix} Q_{1} & Q_{2} \end{matrix} \rangle$ & $\langle \begin{matrix} 1,9969 & 1,3688 \end{matrix} \rangle$ \\ 
-		$\langle \begin{matrix} C_{11} & C_{12} \end{matrix} \rangle$ & $\langle \begin{matrix} 10,9443 & 9,7835 \end{matrix} \rangle$ \\ 
-		$\langle \begin{matrix} C_{21} & C_{22} \end{matrix} \rangle$ & $\langle \begin{matrix} .2374 & 2.2619 \end{matrix} \rangle$ \\ 
-		$\langle \begin{matrix} L_{1} & L_{2} \end{matrix} \rangle$ & $\langle \begin{matrix} .0752 & .5003 \end{matrix} \rangle$ \\
+		$\langle \begin{matrix} C_{11} & C_{12} \end{matrix} \rangle$ & $\langle \begin{matrix} 2.2119 & 1.9773 \end{matrix} \rangle$ \\ 
+		$\langle \begin{matrix} C_{21} & C_{22} \end{matrix} \rangle$ & $\langle \begin{matrix} .1442 & 1.3741 \end{matrix} \rangle$ \\ 
+		$\langle \begin{matrix} L_{1} & L_{2} \end{matrix} \rangle$ & $\langle \begin{matrix} .6338 & .9724 \end{matrix} \rangle$ \\
 	\end{longtblr}
 	
 \end{center}

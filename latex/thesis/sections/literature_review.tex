@@ -12,7 +12,7 @@
 
 This section provides a literature review, exploring the intersection between Regional Economics and Macroeconomics, emphasizing the importance of monetary policy, and delving into the applicability of DSGE models to address diverse economic challenges, including regional and monetary dilemmas. The discussion also underscores the need for a clear definition and methodological framework in utilizing DSGE models.
 
-\subsection*{Macroeconomics and Regional Economics}
+% \subsection*{Macroeconomics and Regional Economics}
 
 The assessment by \textcite{rickman_modern_2010} on the importance of the link between Macroeconomics and Regional Economics was made at a time when the use of DSGE models to investigate regional issues was not yet common. Since then, several studies have addressed this connection.
 
@@ -22,7 +22,7 @@ The second work also presents a DSGE model, but with the objective of evaluating
 
 Both works aim to, despite dealing with distinct causes (fiscal policy and FDI), verify whether differences exist when the cause occurs in one of the two different modeled regions. Additionally, they share the same modeling approach, that of a Dynamic and Stochastic General Equilibrium (DSGE). And this was the advancement that \textcite{rickman_modern_2010} wanted to see happen: the use of DSGE models to address regional questions.
 
-\subsection*{Monetary Policy}
+% \subsection*{Monetary Policy}
 
 DSGE models are widely employed within the macroeconomic literature to examine the effects of monetary policy on macroeconomic aggregates, as pointed by \textcite{gali_monetary_2015}. In this context, it is important to add to the review the papers that develop models describing the monetary policy.
 
@@ -36,7 +36,7 @@ DSGE models are widely employed within the macroeconomic literature to examine t
 
 \textcite{capeleti_countercyclical_2022} evaluate the effects of pro-cyclical and counter-cyclical credit expansions by public banks on economic growth. The model implements a banking sector with public and private banks competing in a Cournot oligopoly. The results show that the supply of public credit has a stronger effect when the policy is counter-cyclical.
 
-\subsection*{Macroeconomic Modeling}
+% \subsection*{Macroeconomic Modeling}
 
 The literature on DSGE modeling is extensive, as this methodology allows the formulation of various questions and their answers through a general equilibrium model. This includes the aforementioned topics and, also, labor market, as explored by \textcite{ribeiro_alongamento_2023}; the real estate market, as studied by \textcite{albuquerquemello_mercado_2018}; and even deforestation, as investigated by \textcite{pereira_desmatamento_2013}. As remarked by \textcite{solis-garcia_ucb_2022}: \textit{if you have a cohesive economic idea, you can put it in terms of a DSGE model}. %\footnote{ \textit{"If you have a cohesive economic idea, you can put it in terms of a DSGE model."}}
 
@@ -44,7 +44,7 @@ The works of \textcite{costa_junior_understanding_2016}, \textcite{solis-garcia_
 
 % \footnote{ more details about the \dynare{} software in section \ref{sec:dynare}. }
 
-\subsection*{Macroeconomic Modeling with Regions}
+% \subsection*{Macroeconomic Modeling with Regions}
 
 % In this work, the focus is on the utilization of structural modeling with regions to investigate the existence of a relationship between a macroeconomic variable and a regional one.
 
@@ -52,13 +52,17 @@ Among the works employing DSGE modeling with regions, beside the already mention
 
 In a similar vein of demonstrating regional relationships, \textcite{pytlarczyk_estimated_2005} investigates aspects of the European Monetary Union (EMU), focusing on the German economy, using a structural model with two regions; \textcite{gali_optimal_2005} also evaluates the functioning of the EMU, but with a model where regions form a unitary continuum, such that one region cannot affect the entire economy. \textcite{alpanda_international_2014} utilize a two-region model to assess the effects of US financial shocks on the euro area economy.
 
-More recently, the article by \textcite{croitorov_financial_2020} seeks to identify spillovers between regions, building a model with three regions: the Euro area, the US, and the rest of the world. Similarly investigating spillovers, \textcite{corbo_maja_2020} present a regional model encompassing Sweden and the rest of the world.\footnote{ Spillovers: effects that are transmitted from one region to another due to an exogenous factor, such as being neighboring regions.}"
+The article by \textcite{croitorov_financial_2020} seeks to identify spillovers between regions, building a model with three regions: the Euro area, the US, and the rest of the world. Similarly investigating spillovers, \textcite{corbo_maja_2020} present a regional model encompassing Sweden and the rest of the world.\footnote{ Spillovers: effects that are transmitted from one region to another due to an exogenous factor, such as being neighboring regions.}
 
-\subsection*{DSGE Methodology}
+More recently, a landmark was established by \textcite{osterno_uma_2022} in the field of regional models for the Brazilian economy: their endeavor adapted the aggregated Brazilian DSGE model developed by \textcite{castro_samba_2015} to include regional disaggregation, enabling the observation of local variable reactions in response to fiscal and monetary shocks. Using a top-down approach, the disaggregation of the main variables allows for the incorporation of regional data. The respective impulse response functions demonstrate that different regions exhibit different reactions to fiscal and monetary shocks.
+
+% The papers mentioned here demonstrate the importance of the relationship between Regional Economics and Macroeconomics, and how both areas can benefit from the usage of DSGE models to illustrate the existing relations among regional and national variables. With these concepts in mind, next section presents the development of a DSGE model using a bottom-up approach: the model is created with built-in regions, so that its development contemplates the regional relationships in its core.
+
+The papers mentioned here demonstrate the importance of the relationship between Regional Economics and Macroeconomics, and how both areas can benefit from the usage of DSGE models to illustrate the existing relations among regional and national variables. With these concepts in mind, the next section presents the development of a DSGE model using a bottom-up approach: the model is created with built-in regions, ensuring that regional relationships are integral to its development.
+
+% \subsection*{DSGE Methodology}
 
 % The DSGE methodology consists, as the name indicates, the utilization of a Dynamic and Stochastic General Equilibrium model. The model describes the problem to be solved and for that, one must defines which agents, variables and parameters will be used. In this research, the objective is to verify the impact of the monetary policy on the regional gross domestic product. For that, we will use the Canonical New Keynesian structure \textcite{solis-garcia_ucb_2022}, which consists of four representative agents: a household, a retail firm, a continnum of wholesale firms and a monetary authority; the elements that represents the New Keynesian theory: the monopolist competition between the wholesale firms, the price stickness they face, and the consequent role of monetary policy in the short run.
-
-The DSGE methodology, as the name implies, involves the utilization of a Dynamic and Stochastic General Equilibrium model. This model outlines the problem to be addressed, requiring the definition of agents, variables, and parameters. In this research, the objective is to assess the impact of monetary policy on regional gross domestic product using the Canonical New Keynesian structure, as proposed by \textcite{solis-garcia_ucb_2022}. The structure comprises four representative agents: a household, a retail firm, a continuum of wholesale firms, and a monetary authority. It incorporates key elements of the New Keynesian theory, including monopolistic competition among wholesale firms, the price stickiness they encounter, and the consequential role of monetary policy in the short run. The role of each agent, variable and parameter will be discussed in detail in the next section.
 
 \begin{comment}
 

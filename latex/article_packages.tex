@@ -20,6 +20,7 @@
 \fancyhead[R]{\thepage}
 \renewcommand{\headrulewidth}{0.0pt}
 %\renewcommand{\footrulewidth}{0.0pt}
+\setlength{\headheight}{15pt}
 
 % --------------------------------------------------
 % INPUT ENCODING:
@@ -46,12 +47,11 @@
 % FONT:
 % --------------------------------------------------
 
+\usepackage{mathpazo}
 % \usepackage{times}
- \usepackage{mathpazo}
 % \usepackage{palatino} 
-
-%\usepackage{fontspec}
-%\setmainfont{Arial}
+% \usepackage{fontspec}
+% \setmainfont{Arial}
 
 % --------------------------------------------------
 % TIPEWRITTER FONT ENVIRONMENT:
@@ -75,8 +75,8 @@
 % --------------------------------------------------
 
 \usepackage{setspace}
-%\singlespacing
 \onehalfspacing
+%\singlespacing
 %\doublespacing
 
 % --------------------------------------------------
@@ -135,12 +135,10 @@
 \usepackage[firstpage = true]{background}
 
 \backgroundsetup{
-	scale     = 1,
-	opacity   = 1,
-	angle     = 0,
-	contents  = {
-		\includegraphics[width=\paperwidth]{marca_dagua_ufpr}
-	}
+scale    = 1,
+opacity  = 1,
+angle    = 0,
+contents = {\includegraphics[width=\paperwidth]{marca_dagua_ufpr}}
 }
 
 % --------------------------------------------------
@@ -155,8 +153,39 @@
 
 % Set font formatting for table of contents
 \usepackage{tocloft}
-%\renewcommand{\cftsecfont}{\fontsize{12}{15}\selectfont\uppercase}
-%\renewcommand{\cftsubsecfont}{\normalfont\fontsize{12}{15}\selectfont\uppercase}
+
+% Adjust the width of the section number box in TOC
+% \setlength{\cftsecnumwidth}{3cm} % Adjust as needed
+% \setlength{\cftsubsecnumwidth}{3cm} % Adjust as needed
+
+% centered ToC title:
+\renewcommand{\cfttoctitlefont}{\hspace*{\fill}\large\bfseries}
+\renewcommand{\cftaftertoctitle}{\hspace*{\fill}}
+
+% centered LoT title:
+\renewcommand{\cftlottitlefont}{\hspace*{\fill}\large\bfseries}
+\renewcommand{\cftafterlottitle}{\hspace*{\fill}}
+
+% centered LoF title:
+\renewcommand{\cftloftitlefont}{\hspace*{\fill}\large\bfseries}
+\renewcommand{\cftafterloftitle}{\hspace*{\fill}}
+
+% ToC items:
+%\renewcommand{\cftsecfont}{\bfseries\uppercase}
+%\renewcommand{\cftsubsecfont}{\normalfont\uppercase}
+
+% --------------------------------------------------
+% ITEMS of TABLE OF CONTENTS FORMAT
+% --------------------------------------------------
+
+\usepackage{etoolbox}
+
+ \makeatletter
+% \patchcmd{<cmd>}{<search>}{<replace>}{<success>}{<failure>}
+% \patchcmd{\tableofcontents}{\contentsname}{\MakeUppercase\contentsname}{}{}
+ \patchcmd{\l@section}{#1}{\MakeUppercase{#1}}{}{}% Sections use UPPERCASE in ToC
+ \patchcmd{\l@subsection}{#1}{\MakeUppercase{#1}}{}{}% Subsections use UPPERCASE in ToC
+ \makeatother
 
 % --------------------------------------------------
 % SUBTABLE OF CONTENTS INSIDE SECTIONS:
@@ -404,7 +433,7 @@
 % BOOKMARKS
 % --------------------------------------------------
 
-\usepackage{bookmark}
+\usepackage[open,openlevel=1]{bookmark}
 
 % --------------------------------------------------
 % ACRONYMS

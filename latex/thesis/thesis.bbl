@@ -711,37 +711,6 @@
       \verb https://sidra.ibge.gov.br/tabela/6371
       \endverb
     \endentry
-    \entry{inada_two-sector_1963}{article}{}
-      \name{author}{1}{}{%
-        {{hash=c03aed61d1f6bead34b3219db8c4f084}{%
-           family={Inada},
-           familyi={I\bibinitperiod},
-           given={Ken-ichi},
-           giveni={K\bibinithyphendelim i\bibinitperiod}}}%
-      }
-      \strng{namehash}{c03aed61d1f6bead34b3219db8c4f084}
-      \strng{fullhash}{c03aed61d1f6bead34b3219db8c4f084}
-      \strng{bibnamehash}{c03aed61d1f6bead34b3219db8c4f084}
-      \strng{authorbibnamehash}{c03aed61d1f6bead34b3219db8c4f084}
-      \strng{authornamehash}{c03aed61d1f6bead34b3219db8c4f084}
-      \strng{authorfullhash}{c03aed61d1f6bead34b3219db8c4f084}
-      \field{sortinit}{I}
-      \field{sortinithash}{8d291c51ee89b6cd86bf5379f0b151d8}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{day}{1}
-      \field{journaltitle}{The Review of Economic Studies}
-      \field{month}{6}
-      \field{title}{On a Two-Sector Model of Economic Growth: Comments and a Generalization}
-      \field{volume}{30}
-      \field{year}{1963}
-      \field{dateera}{ce}
-      \verb{doi}
-      \verb 10.2307/2295809
-      \endverb
-    \endentry
     \entry{konopkova_pitfalls_2019}{article}{}
       \name{author}{1}{}{%
         {{hash=6f3f1174077b88482bdb72f33fe57bad}{%

@@ -1,0 +1,227 @@
+Starting Dynare (version 5.5).
+Calling Dynare with arguments: savemacro=model_03_nk_reg_inv_ZM.mod
+Starting preprocessing of the model file ...
+Found 34 equation(s).
+Evaluating expressions...done
+Computing static model derivatives (order 1).
+Computing dynamic model derivatives (order 2).
+Processing outputs ...
+done
+Preprocessing completed.
+
+
+
+
+
+Residuals of the static equations:
+
+Equation number 1 : 0 : Regional Gross Inflation Rate
+Equation number 2 : 0 : pi2t
+Equation number 3 : 0 : New Keynesian Phillips Curve
+Equation number 4 : 0 : 4
+Equation number 5 : 0 : 5
+Equation number 6 : 0 : 6
+Equation number 7 : 0 : Regional Consumption Weight
+Equation number 8 : 0 : 8
+Equation number 9 : 0 : Regional Consumption of Good 1
+Equation number 10 : 0 : 10
+Equation number 11 : 0 : Regional Price Index
+Equation number 12 : 0 : Q2t
+Equation number 13 : 0 : Labor Supply
+Equation number 14 : 0 : 14
+Equation number 15 : 0 : Law of Motion for Capital
+Equation number 16 : 0 : 16
+Equation number 17 : 0 : Kx2t
+Equation number 18 : 0 : 18
+Equation number 19 : 0 : Euler equation for capital return
+Equation number 20 : 0 : 20
+Equation number 21 : 0 : Production Function
+Equation number 22 : 0 : Y2t
+Equation number 23 : 0 : Techincal and Economic MRSs
+Equation number 24 : 0 : 24
+Equation number 25 : 0 : Marginal Cost
+Equation number 26 : 0 : lambda2t
+Equation number 27 : 0 : Monetary Policy
+Equation number 28 : 0 : National Gross Inflation Rate
+Equation number 29 : 0 : Goods-Market Clearing Condition
+Equation number 30 : 0 : Regional Goods-Market Clearing Condition
+Equation number 31 : 0 : 31
+Equation number 32 : 0 : Productivity Shock
+Equation number 33 : 0 : ZA2t
+Equation number 34 : 0 : Monetary Shock
+
+
+
+STEADY-STATE RESULTS:
+
+C1t      		 0
+C2t      		 0
+L1t      		 0
+L2t      		 0
+K1t      		 0
+K2t      		 0
+I1t      		 0
+I2t      		 0
+C11t     		 0
+C21t     		 0
+C12t     		 0
+C22t     		 0
+Y1t      		 0
+Y2t      		 0
+Yt       		 0
+ZA1t     		 0
+ZA2t     		 0
+ZMt      		 0
+Q1t      		 0
+Q2t      		 0
+P1t      		 0
+P2t      		 0
+Rt       		 0
+W1t      		 0
+W2t      		 0
+pit      		 0
+pi1t     		 0
+pi2t     		 0
+lambda1t 		 0
+lambda2t 		 0
+pix1t    		 0
+pix2t    		 0
+Kx1t     		 0
+Kx2t     		 0
+
+EIGENVALUES:
+         Modulus             Real        Imaginary
+
+          0.8069           0.8069                0
+          0.8526           0.8251           0.2145
+          0.8526           0.8251          -0.2145
+          0.8691           0.8611           0.1178
+          0.8691           0.8611          -0.1178
+             0.9              0.9                0
+            0.95             0.95                0
+            0.95             0.95                0
+          0.9959           0.9959                0
+               1                1                0
+             1.3              1.3                0
+           1.361            1.361                0
+       1.619e+16        1.619e+16                0
+             Inf              Inf                0
+             Inf              Inf                0
+             Inf              Inf                0
+             Inf              Inf                0
+
+
+There are 7 eigenvalue(s) larger than 1 in modulus 
+for 7 forward-looking variable(s)
+
+The rank condition is verified.
+
+
+MODEL SUMMARY
+
+  Number of variables:         34
+  Number of stochastic shocks: 7
+  Number of state variables:   10
+  Number of jumpers:           7
+  Number of static variables:  20
+
+
+MATRIX OF COVARIANCE OF EXOGENOUS SHOCKS
+Variables         e_A1       e_A2        e_M   sunspot1   sunspot2  sunspotK1  sunspotK2
+e_A1          0.000000   0.000000   0.000000   0.000000   0.000000   0.000000   0.000000
+e_A2          0.000000   0.000000   0.000000   0.000000   0.000000   0.000000   0.000000
+e_M           0.000000   0.000000   0.000100   0.000000   0.000000   0.000000   0.000000
+sunspot1      0.000000   0.000000   0.000000   0.000000   0.000000   0.000000   0.000000
+sunspot2      0.000000   0.000000   0.000000   0.000000   0.000000   0.000000   0.000000
+sunspotK1     0.000000   0.000000   0.000000   0.000000   0.000000   0.000000   0.000000
+sunspotK2     0.000000   0.000000   0.000000   0.000000   0.000000   0.000000   0.000000
+
+POLICY AND TRANSITION FUNCTIONS
+                                  Yt             Y1t             Y2t             I1t             I2t             K1t             L1t             L2t             K2t              Rt             C1t             C2t            C11t            C12t             W1t            C21t            C22t             W2t             pit            pi1t            pi2t             Q1t             P1t             P2t             Q2t        lambda1t        lambda2t             ZMt            ZA1t            ZA2t
+ZA1t(-1)                    0.043856        0.136392        0.000709       -2.759566        0.003006               0       -1.356014        0.001012               0        0.001474        1.695754       -0.000528        1.695754        1.695754        1.357487       -0.000528       -0.000528        0.000461               0               0               0               0               0               0               0       -0.134918        0.000765               0        0.950000               0
+ZA2t(-1)                    0.073921       -0.016047        0.115871       -0.110239       -2.437493               0       -0.026744       -1.191613               0        0.002484        0.034672        1.490759        0.034672        0.034672        0.029228        1.490759        1.490759        1.194097               0               0               0               0               0               0               0        0.018530       -0.113387               0               0        0.950000
+ZMt(-1)                     1.659492        1.684157        1.647991       10.440473        9.286331               0        2.806929        2.354273               0        0.955759       -3.030782       -2.464961       -3.030782       -3.030782       -1.851170       -2.464961       -2.464961       -1.398514               0               0               0               0               0               0               0       -0.728399       -0.692232        0.900000               0               0
+pix1t(-1)                  -1.892010       -5.867935       -0.038134      -39.236617       -0.405259               0       -9.779891       -0.054477               0        0.277907       12.099817        0.159549       11.627817       12.627817       10.057798       -0.745451        0.254549        0.332384        0.669173        1.000000               0        0.528000        1.000000               0        0.095000        5.145842        0.316041               0               0               0
+pix2t(-1)                  -5.387714       -1.248078       -7.317925       -7.945192      -44.325295               0       -2.080130      -10.454179               0       -0.012206        2.358060       12.609120        2.830060        1.830060        2.067924       13.514120       12.514120       10.441973        0.330827               0        1.000000        0.472000               0        1.000000        0.905000        1.235872        6.305719               0               0               0
+Kx1t(-1)                    0.332085        0.995709        0.022654        4.210778        0.129492        1.000000        0.992849        0.032363               0        0.011158       -0.735482       -0.034874       -0.735482       -0.735482        0.018309       -0.034874       -0.034874       -0.021205               0               0               0               0               0               0               0        0.015449       -0.011496               0               0               0
+Kx2t(-1)                    0.714112        0.054573        1.021638        0.344790        4.361304               0        0.090955        1.030912        1.000000        0.023994       -0.101697       -0.776643       -0.101697       -0.101697       -0.066961       -0.776643       -0.776643       -0.006918               0               0               0               0               0               0               0       -0.030579        0.002356               0               0               0
+P1t(-1)                    -0.668691       -1.669069       -0.202239      -10.715325       -1.139436               0       -2.781781       -0.288912               0       -0.022468        3.201993        0.302406        2.729993        3.729993        2.759313       -0.602594        0.397406        0.266444               0               0               0        0.528000        1.000000               0        0.095000        0.646601        0.179770               0               0               0
+P2t(-1)                    -1.667322       -0.579220       -2.174678       -3.405640      -12.532931               0       -0.965367       -3.106683               0       -0.056022        0.942698        3.402843        1.414698        0.414698        0.909345        4.307843        3.307843        3.050661               0               0               0        0.472000               0        1.000000        0.905000        0.523198        1.118656               0               0               0
+Rt(-1)                      0.625770        0.612918        0.631762        3.369507        3.147068               0        1.021530        0.902517               0        0.811026       -0.871399       -0.722634       -0.871399       -0.871399       -0.210504       -0.722634       -0.722634       -0.091491               0               0               0               0               0               0               0        0.198108        0.179264               0               0               0
+e_A1                        0.046164        0.143570        0.000746       -2.904807        0.003164               0       -1.427383        0.001065               0        0.001551        1.785004       -0.000556        1.785004        1.785004        1.428934       -0.000556       -0.000556        0.000486               0               0               0               0               0               0               0       -0.142019        0.000805               0        1.000000               0
+e_A2                        0.077811       -0.016891        0.121969       -0.116041       -2.565782               0       -0.028152       -1.254330               0        0.002614        0.036497        1.569220        0.036497        0.036497        0.030766        1.569220        1.569220        1.256944               0               0               0               0               0               0               0        0.019506       -0.119355               0               0        1.000000
+e_M                         1.843880        1.871286        1.831101       11.600526       10.318145               0        3.118810        2.615859               0        1.061954       -3.367535       -2.738846       -3.367535       -3.367535       -2.056856       -2.738846       -2.738846       -1.553904               0               0               0               0               0               0               0       -0.809332       -0.769147        1.000000               0               0
+sunspot1                   -1.892010       -5.867935       -0.038134      -39.236617       -0.405259               0       -9.779891       -0.054477               0        0.277907       12.099817        0.159549       11.627817       12.627817       10.057798       -0.745451        0.254549        0.332384        0.669173        1.000000               0        0.528000        1.000000               0        0.095000        5.145842        0.316041               0               0               0
+sunspot2                   -5.387714       -1.248078       -7.317925       -7.945192      -44.325295               0       -2.080130      -10.454179               0       -0.012206        2.358060       12.609120        2.830060        1.830060        2.067924       13.514120       12.514120       10.441973        0.330827               0        1.000000        0.472000               0        1.000000        0.905000        1.235872        6.305719               0               0               0
+sunspotK1                   0.332085        0.995709        0.022654        4.210778        0.129492        1.000000        0.992849        0.032363               0        0.011158       -0.735482       -0.034874       -0.735482       -0.735482        0.018309       -0.034874       -0.034874       -0.021205               0               0               0               0               0               0               0        0.015449       -0.011496               0               0               0
+sunspotK2                   0.714112        0.054573        1.021638        0.344790        4.361304               0        0.090955        1.030912        1.000000        0.023994       -0.101697       -0.776643       -0.101697       -0.101697       -0.066961       -0.776643       -0.776643       -0.006918               0               0               0               0               0               0               0       -0.030579        0.002356               0               0               0
+
+
+THEORETICAL MOMENTS
+VARIABLE         MEAN  STD. DEV.   VARIANCE
+Yt                NaN        NaN        NaN
+Y1t               NaN        NaN        NaN
+Y2t               NaN        NaN        NaN
+I1t               NaN        NaN        NaN
+I2t               NaN        NaN        NaN
+K1t               NaN        NaN        NaN
+L1t               NaN        NaN        NaN
+L2t               NaN        NaN        NaN
+K2t               NaN        NaN        NaN
+Rt                NaN        NaN        NaN
+C1t               NaN        NaN        NaN
+C2t               NaN        NaN        NaN
+C11t              NaN        NaN        NaN
+C12t              NaN        NaN        NaN
+W1t               NaN        NaN        NaN
+C21t              NaN        NaN        NaN
+C22t              NaN        NaN        NaN
+W2t               NaN        NaN        NaN
+pit            0.0000     0.0016     0.0000
+pi1t           0.0000     0.0017     0.0000
+pi2t           0.0000     0.0015     0.0000
+Q1t               NaN        NaN        NaN
+P1t               NaN        NaN        NaN
+P2t               NaN        NaN        NaN
+Q2t               NaN        NaN        NaN
+lambda1t       0.0000     0.0124     0.0002
+lambda2t       0.0000     0.0117     0.0001
+ZMt            0.0000     0.0229     0.0005
+ZA1t           0.0000     0.0000     0.0000
+ZA2t           0.0000     0.0000     0.0000
+
+
+
+VARIANCE DECOMPOSITION (in percent)
+                 e_A1       e_A2        e_M   sunspot1   sunspot2  sunspotK1  sunspotK2
+pit              0.00       0.00     100.00       0.00       0.00       0.00       0.00
+pi1t             0.00       0.00     100.00       0.00       0.00       0.00       0.00
+pi2t             0.00       0.00     100.00       0.00       0.00       0.00       0.00
+lambda1t         0.00       0.00     100.00       0.00       0.00       0.00       0.00
+lambda2t         0.00       0.00     100.00       0.00       0.00       0.00       0.00
+ZMt              0.00       0.00     100.00       0.00       0.00       0.00       0.00
+ZA1t           100.00       0.00       0.00       0.00       0.00       0.00       0.00
+ZA2t             0.00     100.00       0.00       0.00       0.00       0.00       0.00
+
+
+
+MATRIX OF CORRELATIONS
+Variables         pit      pi1t      pi2t  lambda1t  lambda2t       ZMt
+pit            1.0000    0.9990    0.9952    0.2208    0.2667    0.0859
+pi1t           0.9990    1.0000    0.9900    0.2327    0.2773    0.0747
+pi2t           0.9952    0.9900    1.0000    0.1924    0.2412    0.1103
+lambda1t       0.2208    0.2327    0.1924    1.0000    0.9978   -0.0182
+lambda2t       0.2667    0.2773    0.2412    0.9978    1.0000   -0.0254
+ZMt            0.0859    0.0747    0.1103   -0.0182   -0.0254    1.0000
+
+
+
+COEFFICIENTS OF AUTOCORRELATION
+Order             1        2        3        4        5
+pit          0.9206   0.7449   0.5229   0.2923   0.0793
+pi1t         0.9234   0.7537   0.5389   0.3148   0.1067
+pi2t         0.9149   0.7272   0.4909   0.2470   0.0239
+lambda1t     0.6076   0.2953   0.0607  -0.1031  -0.2057
+lambda2t     0.6040   0.2858   0.0456  -0.1218  -0.2253
+ZMt          0.9000   0.8100   0.7290   0.6561   0.5905
+Total computing time : 0h00m23s
