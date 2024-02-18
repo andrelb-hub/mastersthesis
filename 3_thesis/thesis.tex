@@ -1,0 +1,130 @@
+\documentclass[
+	12pt,    % font size
+	]{article}
+
+% --------------------------------------------------
+% PACKAGE FILE
+% --------------------------------------------------
+
+\usepackage{import}
+
+\import{../packages/}{article_packages.tex}
+
+% \import{../packages/}{package_tikz.tex}
+
+% --------------------------------------------------
+% IMAGES
+% --------------------------------------------------
+
+\usepackage{graphicx}
+
+\graphicspath{{../images/}{../images/plots/}{../images/shock_ZAt/}{../images/shock_ZMt/}}
+
+% --------------------------------------------------
+% REFERENCES: BIBER
+% --------------------------------------------------
+
+\usepackage[
+	style        = abnt, %alphabetic, %
+	sorting      = nyt, 
+	backref      = true, 
+	backend      = biber, 
+	citecounter  = true, 
+	backrefstyle = three, 
+	url          = true, 
+	maxbibnames  = 99, 
+	mincitenames = 1, 
+	maxcitenames = 2, 
+	hyperref     = true, 
+	giveninits   = true, 
+	uniquename   = false, 
+	uniquelist   = false
+	]{biblatex}
+
+\addbibresource{../ref/ref.bib}
+
+% --------------------------------------------------
+% HYPHENATION
+% --------------------------------------------------
+
+\hyphenation{ins-ti-tu-i-ções pri-mei-ra}
+
+% --------------------------------------------------
+% MATH COMMANDS
+% --------------------------------------------------
+
+% total expense:
+\newcommand{\te}[1][t]{{\mathscr{E}_{\eta #1}}}
+
+% --------------------------------------------------
+% MULTI-FILES PROJECT
+% --------------------------------------------------
+
+% best loaded last in the preamble
+\usepackage{subfiles}
+
+% --------------------------------------------------
+% DOCUMENT
+% --------------------------------------------------
+
+\sloppy
+
+\begin{document}
+	
+% --------------------------------------------------
+% PRE-TEXT ELEMENTS
+% --------------------------------------------------
+	
+\subfile{pre/cover}
+\subfile{pre/inside_cover}
+\subfile{pre/catalog_record}
+\subfile{pre/approval_form}
+\subfile{pre/dedication}
+\subfile{pre/acknowledgments}
+\subfile{pre/epigraph}
+\subfile{pre/abstract}
+\subfile{pre/lists}
+\subfile{pre/table_of_contents}
+	
+% --------------------------------------------------
+% TEXT ELEMENTS
+% --------------------------------------------------
+
+\subfile{sections/introduction}
+
+\subfile{sections/literature_review}
+	
+\subfile{sections/methodology}
+	%\subfile{sections/flowchart}
+	%\subfile{sections/reg_model_v1_bonds}
+	\subfile{sections/reg_model_v2_inv_short}
+	\subfile{sections/calibration}
+	%\subfile{sections/data}
+	
+\subfile{sections/results}
+	\subfile{sections/IRF_monetary_shock}
+	%\subfile{sections/IRF}
+	%\subfile{sections/IRF_backup}
+	%\subfile{sections/parametrization}
+	
+\subfile{sections/final_remarks}
+	
+% --------------------------------------------------
+% POST-TEXT ELEMENTS
+% --------------------------------------------------
+	
+\subfile{post/references}
+	
+\subfile{post/appendix}
+	%\subfile{post/appendix_literature_box}
+	\subfile{sections/reg_model_v2_inv_extended}
+	\subfile{post/appendix_definitions}
+	\subfile{post/appendix_dynare}
+	%\subfile{post/appendix_latex}
+	%\subfile{sections/nk_model}
+	%\subfile{sections/nk_calibration}
+	%\subfile{sections/nk_IRF}
+	%\subfile{sections/nk_dynare}
+	%\subfile{post/appendix_todo}
+	
+\end{document}

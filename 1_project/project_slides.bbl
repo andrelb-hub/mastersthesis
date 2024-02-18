@@ -1,0 +1,669 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.2 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{nyt/global//global/global}
+    \entry{albuquerquemello_mercado_2018}{thesis}{}
+      \name{author}{1}{}{%
+        {{hash=4806cae63e2212ac2872c25bba106589}{%
+           family={Albuquerquemello},
+           familyi={A\bibinitperiod},
+           given={Vinícius\bibnamedelimb Phillipe\bibnamedelima de},
+           giveni={V\bibinitperiod\bibinitdelim P\bibinitperiod\bibinitdelim d\bibinitperiod}}}%
+      }
+      \strng{namehash}{4806cae63e2212ac2872c25bba106589}
+      \strng{fullhash}{4806cae63e2212ac2872c25bba106589}
+      \strng{bibnamehash}{4806cae63e2212ac2872c25bba106589}
+      \strng{authorbibnamehash}{4806cae63e2212ac2872c25bba106589}
+      \strng{authornamehash}{4806cae63e2212ac2872c25bba106589}
+      \strng{authorfullhash}{4806cae63e2212ac2872c25bba106589}
+      \field{sortinit}{A}
+      \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{bookpagination}{sheet}
+      \field{title}{Mercado imobiliário, crédito e o Ciclo Real de Negócios: evidências a partir de um modelo {DSGE} para a economia estadunidense}
+      \field{type}{phdthesis}
+      \field{year}{2018}
+      \field{dateera}{ce}
+    \endentry
+    \entry{bergholt_basic_2012}{unpublished}{}
+      \name{author}{1}{}{%
+        {{hash=298e2780d122a87a61e938cd481f4193}{%
+           family={Bergholt},
+           familyi={B\bibinitperiod},
+           given={Drago},
+           giveni={D\bibinitperiod}}}%
+      }
+      \strng{namehash}{298e2780d122a87a61e938cd481f4193}
+      \strng{fullhash}{298e2780d122a87a61e938cd481f4193}
+      \strng{bibnamehash}{298e2780d122a87a61e938cd481f4193}
+      \strng{authorbibnamehash}{298e2780d122a87a61e938cd481f4193}
+      \strng{authornamehash}{298e2780d122a87a61e938cd481f4193}
+      \strng{authorfullhash}{298e2780d122a87a61e938cd481f4193}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{The Basic New Keynesian Model}
+      \field{year}{2012}
+      \field{dateera}{ce}
+      \verb{urlraw}
+      \verb https://bergholt.weebly.com/uploads/1/1/8/4/11843961/the_basic_new_keynesian_model_-_drago_bergholt.pdf
+      \endverb
+      \verb{url}
+      \verb https://bergholt.weebly.com/uploads/1/1/8/4/11843961/the_basic_new_keynesian_model_-_drago_bergholt.pdf
+      \endverb
+    \endentry
+    \entry{bertanha_efeitos_2008}{article}{}
+      \name{author}{2}{}{%
+        {{hash=c5cf69ef048a51628c906ce6f50dc5a8}{%
+           family={Bertanha},
+           familyi={B\bibinitperiod},
+           given={Marinho},
+           giveni={M\bibinitperiod}}}%
+        {{hash=2d68a1483d71555be2be574f2e4e1e0c}{%
+           family={Haddad},
+           familyi={H\bibinitperiod},
+           given={Eduardo\bibnamedelima Amaral},
+           giveni={E\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+      }
+      \strng{namehash}{17a541c280183188a363696f9a0ff678}
+      \strng{fullhash}{17a541c280183188a363696f9a0ff678}
+      \strng{bibnamehash}{17a541c280183188a363696f9a0ff678}
+      \strng{authorbibnamehash}{17a541c280183188a363696f9a0ff678}
+      \strng{authornamehash}{17a541c280183188a363696f9a0ff678}
+      \strng{authorfullhash}{17a541c280183188a363696f9a0ff678}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Revista Brasileira de Economia}
+      \field{month}{3}
+      \field{title}{Efeitos regionais da política monetária no Brasil: impactos e transbordamentos espaciais}
+      \field{year}{2008}
+      \field{dateera}{ce}
+      \verb{doi}
+      \verb 10.1590/S0034-71402008000100001
+      \endverb
+    \endentry
+    \entry{calvo_staggered_1983}{article}{}
+      \name{author}{1}{}{%
+        {{hash=fc885233ab77bfb12503064c4e0094d0}{%
+           family={Calvo},
+           familyi={C\bibinitperiod},
+           given={Guillermo\bibnamedelima A.},
+           giveni={G\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+      }
+      \strng{namehash}{fc885233ab77bfb12503064c4e0094d0}
+      \strng{fullhash}{fc885233ab77bfb12503064c4e0094d0}
+      \strng{bibnamehash}{fc885233ab77bfb12503064c4e0094d0}
+      \strng{authorbibnamehash}{fc885233ab77bfb12503064c4e0094d0}
+      \strng{authornamehash}{fc885233ab77bfb12503064c4e0094d0}
+      \strng{authorfullhash}{fc885233ab77bfb12503064c4e0094d0}
+      \field{sortinit}{C}
+      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of Monetary Economics}
+      \field{month}{9}
+      \field{title}{Staggered Prices In a Utility-maximizing Framework}
+      \field{year}{1983}
+      \field{dateera}{ce}
+      \verb{doi}
+      \verb 10.1016/0304-3932(83)90060-0
+      \endverb
+    \endentry
+    \entry{costa_junior_understanding_2016}{book}{}
+      \name{author}{1}{}{%
+        {{hash=d5e10243dc9306f580cc1078840b59d4}{%
+           family={Costa\bibnamedelima Junior},
+           familyi={C\bibinitperiod\bibinitdelim J\bibinitperiod},
+           given={Celso\bibnamedelima José},
+           giveni={C\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Wilmington, Delaware}%
+      }
+      \list{publisher}{1}{%
+        {Vernon Press}%
+      }
+      \strng{namehash}{d5e10243dc9306f580cc1078840b59d4}
+      \strng{fullhash}{d5e10243dc9306f580cc1078840b59d4}
+      \strng{bibnamehash}{d5e10243dc9306f580cc1078840b59d4}
+      \strng{authorbibnamehash}{d5e10243dc9306f580cc1078840b59d4}
+      \strng{authornamehash}{d5e10243dc9306f580cc1078840b59d4}
+      \strng{authorfullhash}{d5e10243dc9306f580cc1078840b59d4}
+      \field{sortinit}{C}
+      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{series}{Vernon series in economic methodology}
+      \field{title}{Understanding {DSGE}}
+      \field{year}{2016}
+      \field{dateera}{ce}
+    \endentry
+    \entry{costa_junior_dsge_2022}{inproceedings}{}
+      \name{author}{3}{}{%
+        {{hash=d5e10243dc9306f580cc1078840b59d4}{%
+           family={Costa\bibnamedelima Junior},
+           familyi={C\bibinitperiod\bibinitdelim J\bibinitperiod},
+           given={Celso\bibnamedelima José},
+           giveni={C\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+        {{hash=74457476a8bfe88e22bb3a2e538a529b}{%
+           family={Teixeira},
+           familyi={T\bibinitperiod},
+           given={Anderson\bibnamedelima Mutter},
+           giveni={A\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+        {{hash=e605ac97d44728616850dd5fd1db22ae}{%
+           family={Silva},
+           familyi={S\bibinitperiod},
+           given={Márcio\bibnamedelimb Francisco\bibnamedelima da},
+           giveni={M\bibinitperiod\bibinitdelim F\bibinitperiod\bibinitdelim d\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Fortaleza}%
+      }
+      \strng{namehash}{4fa53cc8dc00576572b05976b9b1bf61}
+      \strng{fullhash}{5caf26d113c063eda2d9cb2c9b19166e}
+      \strng{bibnamehash}{5caf26d113c063eda2d9cb2c9b19166e}
+      \strng{authorbibnamehash}{5caf26d113c063eda2d9cb2c9b19166e}
+      \strng{authornamehash}{4fa53cc8dc00576572b05976b9b1bf61}
+      \strng{authorfullhash}{5caf26d113c063eda2d9cb2c9b19166e}
+      \field{sortinit}{C}
+      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{eventtitle}{Encontro {ANPEC}}
+      \field{title}{{DSGE} para Macroeconomia Regional: Uma Aplicação para o Estado de Goiás}
+      \field{year}{2022}
+      \field{dateera}{ce}
+    \endentry
+    \entry{gali_monetary_2015}{book}{}
+      \name{author}{1}{}{%
+        {{hash=9f86081942834923a86a56e2f4d2a7cd}{%
+           family={Galí},
+           familyi={G\bibinitperiod},
+           given={Jordi},
+           giveni={J\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Princeton ; Oxford}%
+      }
+      \list{publisher}{1}{%
+        {Princeton University Press}%
+      }
+      \strng{namehash}{9f86081942834923a86a56e2f4d2a7cd}
+      \strng{fullhash}{9f86081942834923a86a56e2f4d2a7cd}
+      \strng{bibnamehash}{9f86081942834923a86a56e2f4d2a7cd}
+      \strng{authorbibnamehash}{9f86081942834923a86a56e2f4d2a7cd}
+      \strng{authornamehash}{9f86081942834923a86a56e2f4d2a7cd}
+      \strng{authorfullhash}{9f86081942834923a86a56e2f4d2a7cd}
+      \field{sortinit}{G}
+      \field{sortinithash}{32d67eca0634bf53703493fb1090a2e8}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{edition}{Second edition}
+      \field{title}{Monetary Policy, Inflation, And The Business Cycle: An Introduction To The New Keynesian Framework And Its Applications}
+      \field{year}{2015}
+      \field{dateera}{ce}
+    \endentry
+    \entry{gali_macroeconomic_2007}{article}{}
+      \name{author}{2}{}{%
+        {{hash=9f86081942834923a86a56e2f4d2a7cd}{%
+           family={Galí},
+           familyi={G\bibinitperiod},
+           given={Jordi},
+           giveni={J\bibinitperiod}}}%
+        {{hash=732a7645c3f5314d26682b07972f06a2}{%
+           family={Gertler},
+           familyi={G\bibinitperiod},
+           given={Mark},
+           giveni={M\bibinitperiod}}}%
+      }
+      \strng{namehash}{8bceef86070a53b13e7c8f3d9ed29f99}
+      \strng{fullhash}{8bceef86070a53b13e7c8f3d9ed29f99}
+      \strng{bibnamehash}{8bceef86070a53b13e7c8f3d9ed29f99}
+      \strng{authorbibnamehash}{8bceef86070a53b13e7c8f3d9ed29f99}
+      \strng{authornamehash}{8bceef86070a53b13e7c8f3d9ed29f99}
+      \strng{authorfullhash}{8bceef86070a53b13e7c8f3d9ed29f99}
+      \field{sortinit}{G}
+      \field{sortinithash}{32d67eca0634bf53703493fb1090a2e8}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of Economic Perspectives}
+      \field{month}{12}
+      \field{number}{4}
+      \field{title}{Macroeconomic Modeling for Monetary Policy Evaluation}
+      \field{volume}{21}
+      \field{year}{2007}
+      \field{dateera}{ce}
+      \field{pages}{25\bibrangedash 46}
+      \range{pages}{22}
+      \verb{doi}
+      \verb 10.1257/jep.21.4.25
+      \endverb
+    \endentry
+    \entry{kydland_time_1982}{article}{}
+      \name{author}{2}{}{%
+        {{hash=6be288a40283930f05891739c0e64875}{%
+           family={Kydland},
+           familyi={K\bibinitperiod},
+           given={Finn\bibnamedelima E.},
+           giveni={F\bibinitperiod\bibinitdelim E\bibinitperiod}}}%
+        {{hash=7c33f6de320158f1138eff5e1820c068}{%
+           family={Prescott},
+           familyi={P\bibinitperiod},
+           given={Edward\bibnamedelima C.},
+           giveni={E\bibinitperiod\bibinitdelim C\bibinitperiod}}}%
+      }
+      \strng{namehash}{a69584e80e3cd6b809886168c045c1ac}
+      \strng{fullhash}{a69584e80e3cd6b809886168c045c1ac}
+      \strng{bibnamehash}{a69584e80e3cd6b809886168c045c1ac}
+      \strng{authorbibnamehash}{a69584e80e3cd6b809886168c045c1ac}
+      \strng{authornamehash}{a69584e80e3cd6b809886168c045c1ac}
+      \strng{authorfullhash}{a69584e80e3cd6b809886168c045c1ac}
+      \field{sortinit}{K}
+      \field{sortinithash}{c02bf6bff1c488450c352b40f5d853ab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Econometrica}
+      \field{month}{11}
+      \field{number}{6}
+      \field{title}{Time to Build and Aggregate Fluctuations}
+      \field{volume}{50}
+      \field{year}{1982}
+      \field{dateera}{ce}
+      \field{pages}{1345}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.2307/1913386
+      \endverb
+    \endentry
+    \entry{mora_fdi_2019}{article}{}
+      \name{author}{2}{}{%
+        {{hash=bf048b3480299ff3dcfb46e9179a90d6}{%
+           family={Mora},
+           familyi={M\bibinitperiod},
+           given={Jose\bibnamedelima U.},
+           giveni={J\bibinitperiod\bibinitdelim U\bibinitperiod}}}%
+        {{hash=d5e10243dc9306f580cc1078840b59d4}{%
+           family={Costa\bibnamedelima Junior},
+           familyi={C\bibinitperiod\bibinitdelim J\bibinitperiod},
+           given={Celso\bibnamedelima José},
+           giveni={C\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+      }
+      \strng{namehash}{65e92b8400e9faef234ad5e94d9219d0}
+      \strng{fullhash}{65e92b8400e9faef234ad5e94d9219d0}
+      \strng{bibnamehash}{65e92b8400e9faef234ad5e94d9219d0}
+      \strng{authorbibnamehash}{65e92b8400e9faef234ad5e94d9219d0}
+      \strng{authornamehash}{65e92b8400e9faef234ad5e94d9219d0}
+      \strng{authorfullhash}{65e92b8400e9faef234ad5e94d9219d0}
+      \field{sortinit}{M}
+      \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{day}{25}
+      \field{journaltitle}{International Journal of Economics and Finance}
+      \field{month}{6}
+      \field{number}{8}
+      \field{title}{{FDI} Asymmetries in Emerging Economies: The Case of Colombia}
+      \field{volume}{11}
+      \field{year}{2019}
+      \field{dateera}{ce}
+      \verb{doi}
+      \verb 10.5539/ijef.v11n8p35
+      \endverb
+    \endentry
+    \entry{osterno_uma_2022}{inproceedings}{}
+      \name{author}{5}{}{%
+        {{hash=8e26cb06a81fc072a431399deea207e2}{%
+           family={Osterno},
+           familyi={O\bibinitperiod},
+           given={Isadora\bibnamedelimb Gonçalves\bibnamedelima Costa},
+           giveni={I\bibinitperiod\bibinitdelim G\bibinitperiod\bibinitdelim C\bibinitperiod}}}%
+        {{hash=bbcf1d7701887ea3cada7c1460036fe7}{%
+           family={Penna},
+           familyi={P\bibinitperiod},
+           given={Christiano\bibnamedelima Modesto},
+           giveni={C\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+        {{hash=9ea92b13d8ff73f3d3fe775c0c5ffd17}{%
+           family={Ataliba},
+           familyi={A\bibinitperiod},
+           given={Flávio},
+           giveni={F\bibinitperiod}}}%
+        {{hash=4a71c881b4bc54a4e41b4801c1049cc9}{%
+           family={Gomes},
+           familyi={G\bibinitperiod},
+           given={José\bibnamedelimb Weligton\bibnamedelima Félix},
+           giveni={J\bibinitperiod\bibinitdelim W\bibinitperiod\bibinitdelim F\bibinitperiod}}}%
+        {{hash=1e36be0188acb7b52889ed01c334241f}{%
+           family={Monteiro},
+           familyi={M\bibinitperiod},
+           given={Vitor\bibnamedelima Borges},
+           giveni={V\bibinitperiod\bibinitdelim B\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Fortaleza}%
+      }
+      \list{publisher}{1}{%
+        {ANPEC}%
+      }
+      \strng{namehash}{0ab2461cd3f0147d5a2f542e5c66b322}
+      \strng{fullhash}{f0d5a791d23f7cb8afc807d41c8de895}
+      \strng{bibnamehash}{f0d5a791d23f7cb8afc807d41c8de895}
+      \strng{authorbibnamehash}{f0d5a791d23f7cb8afc807d41c8de895}
+      \strng{authornamehash}{0ab2461cd3f0147d5a2f542e5c66b322}
+      \strng{authorfullhash}{f0d5a791d23f7cb8afc807d41c8de895}
+      \field{sortinit}{O}
+      \field{sortinithash}{2cd7140a07aea5341f9e2771efe90aae}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{50$^\circ$ Encontro {ANPEC}}
+      \field{title}{Uma Nova Metodologia de Mensuração de Impactos Regionais de Políticas Nacionais: Uma Aplicação do {SAMBA}+{REG} para o Ceará}
+      \field{year}{2022}
+      \field{dateera}{ce}
+    \endentry
+    \entry{pereira_desmatamento_2013}{article}{}
+      \name{author}{2}{}{%
+        {{hash=ede30a24b67df886d3e8651cf15ef5ec}{%
+           family={Pereira},
+           familyi={P\bibinitperiod},
+           given={Rodrigo\bibnamedelima Mendes},
+           giveni={R\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+        {{hash=c81f0fbbe9dee2821e41043bebaa054b}{%
+           family={Góes},
+           familyi={G\bibinitperiod},
+           given={Geraldo\bibnamedelima Sandoval},
+           giveni={G\bibinitperiod\bibinitdelim S\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Instituto de Pesquisa Econômica Aplicada (Ipea)}%
+      }
+      \strng{namehash}{63e43c627f1f9ca740f3972ef93e44f9}
+      \strng{fullhash}{63e43c627f1f9ca740f3972ef93e44f9}
+      \strng{bibnamehash}{63e43c627f1f9ca740f3972ef93e44f9}
+      \strng{authorbibnamehash}{63e43c627f1f9ca740f3972ef93e44f9}
+      \strng{authornamehash}{63e43c627f1f9ca740f3972ef93e44f9}
+      \strng{authorfullhash}{63e43c627f1f9ca740f3972ef93e44f9}
+      \field{sortinit}{P}
+      \field{sortinithash}{ff3bcf24f47321b42cb156c2cc8a8422}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{http://www.ipea.gov.br}
+      \field{month}{6}
+      \field{title}{O Desmatamento amazônico e o ciclo econômico no Brasil}
+      \field{year}{2013}
+      \field{dateera}{ce}
+    \endentry
+    \entry{prescott_theory_1986}{article}{}
+      \name{author}{1}{}{%
+        {{hash=7c33f6de320158f1138eff5e1820c068}{%
+           family={Prescott},
+           familyi={P\bibinitperiod},
+           given={Edward\bibnamedelima C.},
+           giveni={E\bibinitperiod\bibinitdelim C\bibinitperiod}}}%
+      }
+      \strng{namehash}{7c33f6de320158f1138eff5e1820c068}
+      \strng{fullhash}{7c33f6de320158f1138eff5e1820c068}
+      \strng{bibnamehash}{7c33f6de320158f1138eff5e1820c068}
+      \strng{authorbibnamehash}{7c33f6de320158f1138eff5e1820c068}
+      \strng{authornamehash}{7c33f6de320158f1138eff5e1820c068}
+      \strng{authorfullhash}{7c33f6de320158f1138eff5e1820c068}
+      \field{sortinit}{P}
+      \field{sortinithash}{ff3bcf24f47321b42cb156c2cc8a8422}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{day}{1}
+      \field{journaltitle}{Carnegie-Rochester Conference Series on Public Policy}
+      \field{month}{9}
+      \field{title}{Theory Ahead of Business-Cycle Measurement}
+      \field{volume}{25}
+      \field{year}{1986}
+      \field{dateera}{ce}
+      \field{pages}{11\bibrangedash 44}
+      \range{pages}{34}
+      \verb{doi}
+      \verb 10.1016/0167-2231(86)90035-7
+      \endverb
+    \endentry
+    \entry{ribeiro_alongamento_2023}{thesis}{}
+      \name{author}{1}{}{%
+        {{hash=185a3a61816b14b88b1d11a0e2b2b03f}{%
+           family={Ribeiro},
+           familyi={R\bibinitperiod},
+           given={Giovanni\bibnamedelima Medola},
+           giveni={G\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+      }
+      \list{institution}{1}{%
+        {UFPR}%
+      }
+      \list{location}{1}{%
+        {Curitiba}%
+      }
+      \strng{namehash}{185a3a61816b14b88b1d11a0e2b2b03f}
+      \strng{fullhash}{185a3a61816b14b88b1d11a0e2b2b03f}
+      \strng{bibnamehash}{185a3a61816b14b88b1d11a0e2b2b03f}
+      \strng{authorbibnamehash}{185a3a61816b14b88b1d11a0e2b2b03f}
+      \strng{authornamehash}{185a3a61816b14b88b1d11a0e2b2b03f}
+      \strng{authorfullhash}{185a3a61816b14b88b1d11a0e2b2b03f}
+      \field{sortinit}{R}
+      \field{sortinithash}{5e1c39a9d46ffb6bebd8f801023a9486}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{bookpagination}{sheet}
+      \field{title}{Alongamento dos Ciclos Econômicos - O Preço da Estabilidade}
+      \field{type}{Dissertação}
+      \field{year}{2023}
+      \field{dateera}{ce}
+    \endentry
+    \entry{rickman_modern_2010}{article}{}
+      \name{author}{1}{}{%
+        {{hash=73213494ed3d7f22faa68f1166b9073e}{%
+           family={Rickman},
+           familyi={R\bibinitperiod},
+           given={Dan\bibnamedelima S.},
+           giveni={D\bibinitperiod\bibinitdelim S\bibinitperiod}}}%
+      }
+      \strng{namehash}{73213494ed3d7f22faa68f1166b9073e}
+      \strng{fullhash}{73213494ed3d7f22faa68f1166b9073e}
+      \strng{bibnamehash}{73213494ed3d7f22faa68f1166b9073e}
+      \strng{authorbibnamehash}{73213494ed3d7f22faa68f1166b9073e}
+      \strng{authornamehash}{73213494ed3d7f22faa68f1166b9073e}
+      \strng{authorfullhash}{73213494ed3d7f22faa68f1166b9073e}
+      \field{sortinit}{R}
+      \field{sortinithash}{5e1c39a9d46ffb6bebd8f801023a9486}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of Regional Science}
+      \field{title}{Modern Macroeconomics and Regional Economic Modeling}
+      \field{year}{2010}
+      \field{dateera}{ce}
+      \verb{doi}
+      \verb 10.1111/j.1467-9787.2009.00647.x
+      \endverb
+    \endentry
+    \entry{simonsen_microeconomia_1979}{book}{}
+      \name{author}{1}{}{%
+        {{hash=043222dda8cee0afb8775cf1a9c06db3}{%
+           family={Simonsen},
+           familyi={S\bibinitperiod},
+           given={Mario\bibnamedelima Henrique},
+           giveni={M\bibinitperiod\bibinitdelim H\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {{IBRE}, {EPGE}}%
+      }
+      \strng{namehash}{043222dda8cee0afb8775cf1a9c06db3}
+      \strng{fullhash}{043222dda8cee0afb8775cf1a9c06db3}
+      \strng{bibnamehash}{043222dda8cee0afb8775cf1a9c06db3}
+      \strng{authorbibnamehash}{043222dda8cee0afb8775cf1a9c06db3}
+      \strng{authornamehash}{043222dda8cee0afb8775cf1a9c06db3}
+      \strng{authorfullhash}{043222dda8cee0afb8775cf1a9c06db3}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{series}{Ensaios Econômicos {EPGE}: n. 27}
+      \field{title}{Microeconomia - Fundamentos da Teoria dos Preços}
+      \field{year}{1979}
+      \field{dateera}{ce}
+    \endentry
+    \entry{smets_estimated_2003}{article}{}
+      \name{author}{2}{}{%
+        {{hash=f78e4957877432f887653cd776f7ec8b}{%
+           family={Smets},
+           familyi={S\bibinitperiod},
+           given={Frank},
+           giveni={F\bibinitperiod}}}%
+        {{hash=b431dc947861523c71d9fb860ecd9479}{%
+           family={Wouters},
+           familyi={W\bibinitperiod},
+           given={Raf},
+           giveni={R\bibinitperiod}}}%
+      }
+      \strng{namehash}{379fc5f88c04e5d512bd11d13a92c92a}
+      \strng{fullhash}{379fc5f88c04e5d512bd11d13a92c92a}
+      \strng{bibnamehash}{379fc5f88c04e5d512bd11d13a92c92a}
+      \strng{authorbibnamehash}{379fc5f88c04e5d512bd11d13a92c92a}
+      \strng{authornamehash}{379fc5f88c04e5d512bd11d13a92c92a}
+      \strng{authorfullhash}{379fc5f88c04e5d512bd11d13a92c92a}
+      \field{extraname}{1}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{day}{1}
+      \field{journaltitle}{Journal of the European Economic Association}
+      \field{month}{9}
+      \field{title}{An Estimated Dynamic Stochastic General Equilibrium Model of the Euro Area}
+      \field{year}{2003}
+      \field{dateera}{ce}
+      \verb{doi}
+      \verb 10.1162/154247603770383415
+      \endverb
+    \endentry
+    \entry{smets_shocks_2007}{article}{}
+      \name{author}{2}{}{%
+        {{hash=f78e4957877432f887653cd776f7ec8b}{%
+           family={Smets},
+           familyi={S\bibinitperiod},
+           given={Frank},
+           giveni={F\bibinitperiod}}}%
+        {{hash=271104365d8a3ae72ffe6ef9ca74ce39}{%
+           family={Wouters},
+           familyi={W\bibinitperiod},
+           given={Rafael},
+           giveni={R\bibinitperiod}}}%
+      }
+      \strng{namehash}{a0a01c0356237521a4dd9ef45801c9d9}
+      \strng{fullhash}{a0a01c0356237521a4dd9ef45801c9d9}
+      \strng{bibnamehash}{a0a01c0356237521a4dd9ef45801c9d9}
+      \strng{authorbibnamehash}{a0a01c0356237521a4dd9ef45801c9d9}
+      \strng{authornamehash}{a0a01c0356237521a4dd9ef45801c9d9}
+      \strng{authorfullhash}{a0a01c0356237521a4dd9ef45801c9d9}
+      \field{extraname}{2}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{American Economic Review}
+      \field{month}{6}
+      \field{title}{Shocks and Frictions in {US} Business Cycles: A Bayesian {DSGE} Approach}
+      \field{volume}{97}
+      \field{year}{2007}
+      \field{dateera}{ce}
+      \verb{doi}
+      \verb 10.1257/aer.97.3.586
+      \endverb
+    \endentry
+    \entry{solis-garcia_ucb_2022}{online}{}
+      \name{author}{1}{}{%
+        {{hash=c56dcd3cb697b40f6febf9b2cf5ae81c}{%
+           family={Solis-Garcia},
+           familyi={S\bibinithyphendelim G\bibinitperiod},
+           given={Mario},
+           giveni={M\bibinitperiod}}}%
+      }
+      \strng{namehash}{c56dcd3cb697b40f6febf9b2cf5ae81c}
+      \strng{fullhash}{c56dcd3cb697b40f6febf9b2cf5ae81c}
+      \strng{bibnamehash}{c56dcd3cb697b40f6febf9b2cf5ae81c}
+      \strng{authorbibnamehash}{c56dcd3cb697b40f6febf9b2cf5ae81c}
+      \strng{authornamehash}{c56dcd3cb697b40f6febf9b2cf5ae81c}
+      \strng{authorfullhash}{c56dcd3cb697b40f6febf9b2cf5ae81c}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{{UCB} Macro Modeling Course}
+      \field{urlday}{13}
+      \field{urlmonth}{1}
+      \field{urlyear}{2023}
+      \field{year}{2022}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://sites.google.com/a/macalester.edu/solis-garcia/home/teaching/ucb-macro-modeling-course
+      \endverb
+      \verb{url}
+      \verb https://sites.google.com/a/macalester.edu/solis-garcia/home/teaching/ucb-macro-modeling-course
+      \endverb
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+

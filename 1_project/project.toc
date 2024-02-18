@@ -1,0 +1,20 @@
+\babel@toc {brazilian}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {brazilian}{}\relax 
+\contentsline {section}{\numberline {1}Introdução}{5}{section.1}%
+\contentsline {section}{\numberline {2}Problema e Justificativa}{6}{section.2}%
+\contentsline {section}{\numberline {3}Objetivos}{8}{section.3}%
+\contentsline {subsection}{\numberline {3.1}Objetivo Geral}{8}{subsection.3.1}%
+\contentsline {subsection}{\numberline {3.2}Objetivos Específicos}{8}{subsection.3.2}%
+\contentsline {section}{\numberline {4}Revisão da Literatura}{9}{section.4}%
+\contentsline {subsection}{\numberline {4.1}Macroeconomia e Economia Regional}{9}{subsection.4.1}%
+\contentsline {subsection}{\numberline {4.2}Modelagem Macroeconômica}{10}{subsection.4.2}%
+\contentsline {subsection}{\numberline {4.3}Modelagem Macroeconômica com Regiões}{11}{subsection.4.3}%
+\contentsline {subsection}{\numberline {4.4}Política Monetária}{12}{subsection.4.4}%
+\contentsline {section}{\numberline {5}Metodologia}{14}{section.5}%
+\contentsline {subsection}{\numberline {5.1}Modelo Macroeconômico e Regional}{14}{subsection.5.1}%
+\contentsline {subsection}{\numberline {5.2}Dynare}{16}{subsection.5.2}%
+\contentsline {section}{\numberline {6}Resultados Esperados}{17}{section.6}%
+\contentsline {section}{\numberline {7}Cronograma}{18}{section.7}%
+\contentsline {section}{Refer\^encias}{19}{section*.2}%
+\contentsline {section}{\numberline {}Assinaturas}{22}{section*.3}%
