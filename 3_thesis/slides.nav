@@ -26,7 +26,7 @@
 \headcommand {\beamer@framepages {9}{9}}
 \headcommand {\beamer@sectionpages {1}{9}}
 \headcommand {\beamer@subsectionpages {1}{9}}
-\headcommand {\sectionentry {3}{Model}{10}{Model}{0}}
+\headcommand {\sectionentry {3}{Regional NK Model}{10}{Regional NK Model}{0}}
 \headcommand {\slideentry {3}{0}{1}{10/10}{}{0}}
 \headcommand {\beamer@framepages {10}{10}}
 \headcommand {\slideentry {3}{0}{2}{11/11}{}{0}}
@@ -106,28 +106,25 @@
 \headcommand {\beamer@framepages {33}{36}}
 \headcommand {\slideentry {3}{11}{2}{33/37}{Log-linear Model}{0}}
 \headcommand {\beamer@framepages {33}{37}}
+\headcommand {\beamer@sectionpages {1}{37}}
 \headcommand {\beamer@subsectionpages {1}{37}}
-\headcommand {\beamer@subsectionentry {0}{3}{12}{38}{Impulse Response Functions}}
-\headcommand {\slideentry {3}{12}{1}{38/38}{Impulse Response Functions}{0}}
+\headcommand {\sectionentry {4}{Results}{38}{Results}{0}}
+\headcommand {\slideentry {4}{0}{1}{38/38}{}{0}}
 \headcommand {\beamer@framepages {38}{38}}
-\headcommand {\beamer@subsectionpages {38}{38}}
-\headcommand {\beamer@subsectionentry {0}{3}{13}{39}{Impulse Response Functions}}
-\headcommand {\slideentry {3}{13}{1}{39/39}{Impulse Response Functions}{0}}
+\headcommand {\slideentry {4}{0}{2}{39/39}{}{0}}
 \headcommand {\beamer@framepages {39}{39}}
-\headcommand {\beamer@subsectionpages {39}{39}}
-\headcommand {\beamer@subsectionentry {0}{3}{14}{40}{Impulse Response Functions}}
-\headcommand {\slideentry {3}{14}{1}{40/40}{Impulse Response Functions}{0}}
+\headcommand {\slideentry {4}{0}{3}{40/40}{}{0}}
 \headcommand {\beamer@framepages {40}{40}}
-\headcommand {\beamer@subsectionpages {40}{40}}
-\headcommand {\beamer@subsectionentry {0}{3}{15}{41}{Impulse Response Functions}}
-\headcommand {\slideentry {3}{15}{1}{41/41}{Impulse Response Functions}{0}}
+\headcommand {\slideentry {4}{0}{4}{41/41}{}{0}}
 \headcommand {\beamer@framepages {41}{41}}
-\headcommand {\slideentry {3}{15}{2}{42/42}{}{0}}
+\headcommand {\slideentry {4}{0}{5}{42/42}{}{0}}
 \headcommand {\beamer@framepages {42}{42}}
-\headcommand {\slideentry {3}{15}{3}{43/43}{}{0}}
+\headcommand {\slideentry {4}{0}{6}{43/43}{}{0}}
 \headcommand {\beamer@framepages {43}{43}}
-\headcommand {\beamer@partpages {1}{43}}
-\headcommand {\beamer@subsectionpages {1}{43}}
-\headcommand {\beamer@sectionpages {1}{43}}
-\headcommand {\beamer@documentpages {43}}
+\headcommand {\slideentry {4}{0}{7}{44/44}{}{0}}
+\headcommand {\beamer@framepages {44}{44}}
+\headcommand {\beamer@partpages {1}{44}}
+\headcommand {\beamer@subsectionpages {1}{44}}
+\headcommand {\beamer@sectionpages {1}{44}}
+\headcommand {\beamer@documentpages {44}}
 \headcommand {\gdef \inserttotalframenumber {38}}
