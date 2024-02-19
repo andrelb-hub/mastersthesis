@@ -84,7 +84,7 @@
       <file>project_slides.bcf</file>
     </requires>
     <requires type="editable">
-      <file>../ref/ref.bib</file>
+      <file>../latex/ref.bib</file>
     </requires>
   </external>
 </requests>

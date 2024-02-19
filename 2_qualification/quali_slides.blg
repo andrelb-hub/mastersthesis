@@ -1,15 +1,15 @@
 [0] Config.pm:307> INFO - This is Biber 2.19
 [0] Config.pm:310> INFO - Logfile is 'quali_slides.blg'
-[109] biber-MSWIN64:340> INFO - === 
-[152] Biber.pm:419> INFO - Reading 'quali_slides.bcf'
-[288] Biber.pm:979> INFO - Found 12 citekeys in bib section 0
-[304] Biber.pm:4419> INFO - Processing section 0
-[318] Biber.pm:4610> INFO - Looking for bibtex file '../ref/ref.bib' for section 0
-[359] bibtex.pm:1713> INFO - LaTeX decoding ...
-[417] bibtex.pm:1519> INFO - Found BibTeX data source '../ref/ref.bib'
-[511] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[511] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
-[511] Biber.pm:4239> INFO - Sorting list 'nyt/global//global/global' of type 'entry' with template 'nyt' and locale 'en-US'
-[511] Biber.pm:4245> INFO - No sort tailoring available for locale 'en-US'
-[528] bbl.pm:660> INFO - Writing 'quali_slides.bbl' with encoding 'UTF-8'
-[535] bbl.pm:763> INFO - Output to quali_slides.bbl
+[124] biber-MSWIN64:340> INFO - === 
+[161] Biber.pm:419> INFO - Reading 'quali_slides.bcf'
+[276] Biber.pm:979> INFO - Found 12 citekeys in bib section 0
+[291] Biber.pm:4419> INFO - Processing section 0
+[305] Biber.pm:4610> INFO - Looking for bibtex file '../latex/ref.bib' for section 0
+[348] bibtex.pm:1713> INFO - LaTeX decoding ...
+[393] bibtex.pm:1519> INFO - Found BibTeX data source '../latex/ref.bib'
+[480] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[480] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[480] Biber.pm:4239> INFO - Sorting list 'nyt/global//global/global' of type 'entry' with template 'nyt' and locale 'en-US'
+[480] Biber.pm:4245> INFO - No sort tailoring available for locale 'en-US'
+[496] bbl.pm:660> INFO - Writing 'quali_slides.bbl' with encoding 'UTF-8'
+[503] bbl.pm:763> INFO - Output to quali_slides.bbl

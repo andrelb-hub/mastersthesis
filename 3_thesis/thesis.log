@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999995 (MiKTeX 23.12) (preloaded format=xelatex 2024.1.18)  18 FEB 2024 18:49
+This is XeTeX, Version 3.141592653-2.6-0.999995 (MiKTeX 23.12) (preloaded format=xelatex 2024.1.18)  19 FEB 2024 18:01
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -26,7 +26,7 @@ File: size12.clo 2023/05/17 v1.4n Standard LaTeX file (size option)
 (C:\Users\andre\AppData\Local\Programs\MiKTeX\tex/latex/import\import.sty
 Package: import 2020/04/01  v 6.2
 )
-(../packages/../packages/article_packages.tex
+(../latex/../latex/article_packages.tex
 (C:\Users\andre\AppData\Local\Programs\MiKTeX\tex/latex/geometry\geometry.sty
 Package: geometry 2020/01/02 v5.9 Page Geometry
 
@@ -2068,33 +2068,33 @@ Excluding 'comment' comment. Excluding 'comment' comment. [26]
 Excluding 'comment' comment. Excluding 'comment' comment. [27] [28]
 Excluding 'comment' comment.
 LaTeX Font Info:    Font shape `U/cmsy/m/n' will be
-(Font)              scaled to size 12.0pt on input line 624.
+(Font)              scaled to size 12.0pt on input line 623.
 LaTeX Font Info:    Font shape `U/cmsy/m/n' will be
-(Font)              scaled to size 9.0pt on input line 624.
+(Font)              scaled to size 9.0pt on input line 623.
 LaTeX Font Info:    Font shape `U/cmsy/m/n' will be
-(Font)              scaled to size 7.0pt on input line 624.
+(Font)              scaled to size 7.0pt on input line 623.
 LaTeX Font Info:    Font shape `U/cmsy/b/n' will be
-(Font)              scaled to size 12.0pt on input line 643.
+(Font)              scaled to size 12.0pt on input line 642.
 LaTeX Font Info:    Font shape `U/cmsy/b/n' will be
-(Font)              scaled to size 9.0pt on input line 643.
+(Font)              scaled to size 9.0pt on input line 642.
 LaTeX Font Info:    Font shape `U/cmsy/b/n' will be
-(Font)              scaled to size 7.0pt on input line 643.
+(Font)              scaled to size 7.0pt on input line 642.
  [29] Excluding 'comment' comment.
 LaTeX Font Info:    Font shape `U/cmsy/m/n' will be
-(Font)              scaled to size 10.0pt on input line 676.
+(Font)              scaled to size 10.0pt on input line 675.
 LaTeX Font Info:    Font shape `U/cmsy/m/n' will be
-(Font)              scaled to size 7.6pt on input line 676.
+(Font)              scaled to size 7.6pt on input line 675.
 LaTeX Font Info:    Font shape `U/cmsy/m/n' will be
-(Font)              scaled to size 6.0pt on input line 676.
+(Font)              scaled to size 6.0pt on input line 675.
 LaTeX Font Info:    Font shape `U/cmsy/b/n' will be
-(Font)              scaled to size 10.0pt on input line 676.
+(Font)              scaled to size 10.0pt on input line 675.
 LaTeX Font Info:    Font shape `U/cmsy/b/n' will be
-(Font)              scaled to size 7.6pt on input line 676.
+(Font)              scaled to size 7.6pt on input line 675.
 LaTeX Font Info:    Font shape `U/cmsy/b/n' will be
-(Font)              scaled to size 6.0pt on input line 676.
+(Font)              scaled to size 6.0pt on input line 675.
  [30]
 LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 7
-33.
+32.
 
 (C:\Users\andre\AppData\Local\Programs\MiKTeX\tex/latex/lm\t1lmtt.fd
 File: t1lmtt.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
@@ -2362,14 +2362,22 @@ L3 programming layer <2020/03/25>
 LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 1.93356pt have occurred.
 
+
+LaTeX Warning: There were undefined references.
+
+
+Package biblatex Warning: Please (re)run Biber on the file:
+(biblatex)                thesis
+(biblatex)                and rerun LaTeX afterwards.
+
 Package logreq Info: Writing requests to 'thesis.run.xml'.
 \openout1 = `thesis.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
  50076 strings out of 409617
- 1034510 string characters out of 5774013
- 2052176 words of memory out of 5000000
+ 1034490 string characters out of 5774013
+ 2052177 words of memory out of 5000000
  71251 multiletter control sequences out of 15000+600000
  668401 words of font info for 309 fonts, out of 8000000 for 9000
  1350 hyphenation exceptions out of 8191

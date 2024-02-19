@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999995 (MiKTeX 23.12) (preloaded format=xelatex 2024.1.18)  18 FEB 2024 16:36
+This is XeTeX, Version 3.141592653-2.6-0.999995 (MiKTeX 23.12) (preloaded format=xelatex 2024.1.18)  19 FEB 2024 09:27
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -776,7 +776,7 @@ default.sty)))
 (C:\Users\andre\AppData\Local\Programs\MiKTeX\tex/latex/import\import.sty
 Package: import 2020/04/01  v 6.2
 )
-(../packages/../packages/slides_packages.tex
+(../latex/../latex/slides_packages.tex
 (C:\Users\andre\AppData\Local\Programs\MiKTeX\tex/latex/beamertheme-metropolis\
 beamerthememetropolis.sty
 Package: beamerthememetropolis 2017/01/23 v1.2 Metropolis Beamer theme
@@ -1674,6 +1674,42 @@ Package caption Info: New subtype `subfigure' on input line 238.
 \c@subfigure=\count389
 Package caption Info: New subtype `subtable' on input line 238.
 \c@subtable=\count390
+) (C:\Users\andre\AppData\Local\Programs\MiKTeX\tex/latex/mathtools\empheq.sty
+Package: empheq 2017/03/31 v2.15 Emphasizing equations
+
+(C:\Users\andre\AppData\Local\Programs\MiKTeX\tex/latex/mathtools\mhsetup.sty
+Package: mhsetup 2021/03/18 v1.4 programming setup (MH)
+)
+(C:\Users\andre\AppData\Local\Programs\MiKTeX\tex/latex/mathtools\mathtools.sty
+Package: mathtools 2022/06/29 v1.29 mathematical typesetting tools
+\g_MT_multlinerow_int=\count391
+\l_MT_multwidth_dim=\dimen347
+\origjot=\skip78
+\l_MT_shortvdotswithinadjustabove_dim=\dimen348
+\l_MT_shortvdotswithinadjustbelow_dim=\dimen349
+\l_MT_above_intertext_sep=\dimen350
+\l_MT_below_intertext_sep=\dimen351
+\l_MT_above_shortintertext_sep=\dimen352
+\l_MT_below_shortintertext_sep=\dimen353
+\xmathstrut@box=\box84
+\xmathstrut@dim=\dimen354
+)
+\l_EQ_equationtype_int=\count392
+\l_EQ_alignmentmode_int=\count393
+\l_EQ_totalwidth_dim=\dimen355
+\l_EQ_displaywidth_dim=\dimen356
+\l_EQ_temp_linewidth_dim=\dimen357
+\l_EQ_linewidth_dim=\dimen358
+\EmphEqdelimitershortfall=\dimen359
+\EmphEqdelimiterfactor=\count394
+\g_EQ_toptag_height_dim=\dimen360
+\g_EQ_bottomtag_depth_dim=\dimen361
+\g_EQ_toprow_height_dim=\dimen362
+\g_EQ_bottomrow_depth_dim=\dimen363
+\g_EQ_widesttag_dim=\dimen364
+\EQ_mathdisplay_box=\box85
+\EQ_tag_box=\box86
+\g_EQ_temprow_int=\count395
 ) (C:\Users\andre\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\pifont.sty
 Package: pifont 2020/03/25 PSNFSS-v9.3 Pi font support (SPQR) 
 LaTeX Font Info:    Trying to load font information for U+pzd on input line 63.
@@ -1687,7 +1723,27 @@ LaTeX Font Info:    Trying to load font information for U+psy on input line 64.
 
 (C:\Users\andre\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\upsy.fd
 File: upsy.fd 2001/06/04 font definitions for U/psy.
-)))
+))
+(C:\Users\andre\AppData\Local\Programs\MiKTeX\tex/latex/mathalpha\mathalpha.sty
+Package: mathalpha 2021/11/18 - 1.143mathalpha (License LPPL) Michael Sharpe
+`mathalpha' v1.143, 2021/11/18, a renaming of mathalfa (msharpe)
+(C:\Users\andre\AppData\Local\Programs\MiKTeX\tex/latex/bboldx\bboldx.sty
+Package: bboldx 2021/10/29 v1.031 (Michael Sharpe) Symbol package extending Bbo
+ld
+LaTeX Font Info:    Overwriting math alphabet `\mathbb' in version `bold'
+(Font)                  U/bboldx/m/n --> U/bboldx/b/n on input line 97.
+)
+LaTeX Font Info:    Redeclaring math alphabet \mathcal on input line 554.
+LaTeX Font Info:    Overwriting math alphabet `\mathcal' in version `bold'
+(Font)                  U/BOONDOX-calo/m/n --> U/BOONDOX-calo/b/n on input line
+ 556.
+LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
+(Font)                  U/euf/b/n --> U/euf/b/n on input line 716.
+LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
+(Font)                  U/euf/m/n --> U/euf/b/n on input line 716.
+LaTeX Font Info:    Overwriting math alphabet `\mathscr' in version `bold'
+(Font)                  U/cmsy/m/n --> U/cmsy/b/n on input line 823.
+))
 (C:\Users\andre\AppData\Local\Programs\MiKTeX\tex/latex/comment\comment.sty
 \CommentStream=\write5
 
@@ -1697,7 +1753,7 @@ Package: biblatex 2023/03/05 v3.19 programmable bibliographies (PK/MW)
 
 (C:\Users\andre\AppData\Local\Programs\MiKTeX\tex/latex/logreq\logreq.sty
 Package: logreq 2010/08/04 v1.0 xml request logger
-\lrq@indent=\count391
+\lrq@indent=\count396
 
 (C:\Users\andre\AppData\Local\Programs\MiKTeX\tex/latex/logreq\logreq.def
 File: logreq.def 2010/08/04 v1.0 logreq spec v1.0
@@ -1705,63 +1761,63 @@ File: logreq.def 2010/08/04 v1.0 logreq spec v1.0
 (C:\Users\andre\AppData\Local\Programs\MiKTeX\tex/latex/base\ifthen.sty
 Package: ifthen 2022/04/13 v1.1d Standard LaTeX ifthen package (DPC)
 )
-\c@tabx@nest=\count392
-\c@listtotal=\count393
-\c@listcount=\count394
-\c@liststart=\count395
-\c@liststop=\count396
-\c@citecount=\count397
-\c@citetotal=\count398
-\c@multicitecount=\count399
-\c@multicitetotal=\count400
-\c@instcount=\count401
-\c@maxnames=\count402
-\c@minnames=\count403
-\c@maxitems=\count404
-\c@minitems=\count405
-\c@citecounter=\count406
-\c@maxcitecounter=\count407
-\c@savedcitecounter=\count408
-\c@uniquelist=\count409
-\c@uniquename=\count410
-\c@refsection=\count411
-\c@refsegment=\count412
-\c@maxextratitle=\count413
-\c@maxextratitleyear=\count414
-\c@maxextraname=\count415
-\c@maxextradate=\count416
-\c@maxextraalpha=\count417
-\c@abbrvpenalty=\count418
-\c@highnamepenalty=\count419
-\c@lownamepenalty=\count420
-\c@maxparens=\count421
-\c@parenlevel=\count422
-\blx@tempcnta=\count423
-\blx@tempcntb=\count424
-\blx@tempcntc=\count425
-\c@blx@maxsection=\count426
-\blx@maxsegment@0=\count427
-\blx@notetype=\count428
-\blx@parenlevel@text=\count429
-\blx@parenlevel@foot=\count430
-\blx@sectionciteorder@0=\count431
-\blx@sectionciteorderinternal@0=\count432
-\blx@entrysetcounter=\count433
-\blx@biblioinstance=\count434
-\labelnumberwidth=\skip78
-\labelalphawidth=\skip79
-\biblabelsep=\skip80
-\bibitemsep=\skip81
-\bibnamesep=\skip82
-\bibinitsep=\skip83
-\bibparsep=\skip84
-\bibhang=\skip85
+\c@tabx@nest=\count397
+\c@listtotal=\count398
+\c@listcount=\count399
+\c@liststart=\count400
+\c@liststop=\count401
+\c@citecount=\count402
+\c@citetotal=\count403
+\c@multicitecount=\count404
+\c@multicitetotal=\count405
+\c@instcount=\count406
+\c@maxnames=\count407
+\c@minnames=\count408
+\c@maxitems=\count409
+\c@minitems=\count410
+\c@citecounter=\count411
+\c@maxcitecounter=\count412
+\c@savedcitecounter=\count413
+\c@uniquelist=\count414
+\c@uniquename=\count415
+\c@refsection=\count416
+\c@refsegment=\count417
+\c@maxextratitle=\count418
+\c@maxextratitleyear=\count419
+\c@maxextraname=\count420
+\c@maxextradate=\count421
+\c@maxextraalpha=\count422
+\c@abbrvpenalty=\count423
+\c@highnamepenalty=\count424
+\c@lownamepenalty=\count425
+\c@maxparens=\count426
+\c@parenlevel=\count427
+\blx@tempcnta=\count428
+\blx@tempcntb=\count429
+\blx@tempcntc=\count430
+\c@blx@maxsection=\count431
+\blx@maxsegment@0=\count432
+\blx@notetype=\count433
+\blx@parenlevel@text=\count434
+\blx@parenlevel@foot=\count435
+\blx@sectionciteorder@0=\count436
+\blx@sectionciteorderinternal@0=\count437
+\blx@entrysetcounter=\count438
+\blx@biblioinstance=\count439
+\labelnumberwidth=\skip79
+\labelalphawidth=\skip80
+\biblabelsep=\skip81
+\bibitemsep=\skip82
+\bibnamesep=\skip83
+\bibinitsep=\skip84
+\bibparsep=\skip85
+\bibhang=\skip86
 \blx@bcfin=\read3
 \blx@bcfout=\write6
 \blx@langwohyphens=\language79
-\c@mincomprange=\count435
-\c@maxcomprange=\count436
-\c@mincompwidth=\count437
+\c@mincomprange=\count440
+\c@maxcomprange=\count441
+\c@mincompwidth=\count442
 Package biblatex Info: Trying to load biblatex default data model...
 Package biblatex Info: ... file 'blx-dm.def' found.
 
@@ -1772,88 +1828,88 @@ Package biblatex Info: Trying to load biblatex style data model...
 Package biblatex Info: ... file 'abnt.dbx' not found.
 Package biblatex Info: Trying to load biblatex custom data model...
 Package biblatex Info: ... file 'biblatex-dm.cfg' not found.
-\c@afterword=\count438
-\c@savedafterword=\count439
-\c@annotator=\count440
-\c@savedannotator=\count441
-\c@author=\count442
-\c@savedauthor=\count443
-\c@bookauthor=\count444
-\c@savedbookauthor=\count445
-\c@commentator=\count446
-\c@savedcommentator=\count447
-\c@editor=\count448
-\c@savededitor=\count449
-\c@editora=\count450
-\c@savededitora=\count451
-\c@editorb=\count452
-\c@savededitorb=\count453
-\c@editorc=\count454
-\c@savededitorc=\count455
-\c@foreword=\count456
-\c@savedforeword=\count457
-\c@holder=\count458
-\c@savedholder=\count459
-\c@introduction=\count460
-\c@savedintroduction=\count461
-\c@namea=\count462
-\c@savednamea=\count463
-\c@nameb=\count464
-\c@savednameb=\count465
-\c@namec=\count466
-\c@savednamec=\count467
-\c@translator=\count468
-\c@savedtranslator=\count469
-\c@shortauthor=\count470
-\c@savedshortauthor=\count471
-\c@shorteditor=\count472
-\c@savedshorteditor=\count473
-\c@labelname=\count474
-\c@savedlabelname=\count475
-\c@institution=\count476
-\c@savedinstitution=\count477
-\c@lista=\count478
-\c@savedlista=\count479
-\c@listb=\count480
-\c@savedlistb=\count481
-\c@listc=\count482
-\c@savedlistc=\count483
-\c@listd=\count484
-\c@savedlistd=\count485
-\c@liste=\count486
-\c@savedliste=\count487
-\c@listf=\count488
-\c@savedlistf=\count489
-\c@location=\count490
-\c@savedlocation=\count491
-\c@organization=\count492
-\c@savedorganization=\count493
-\c@origlocation=\count494
-\c@savedoriglocation=\count495
-\c@origpublisher=\count496
-\c@savedorigpublisher=\count497
-\c@publisher=\count498
-\c@savedpublisher=\count499
-\c@language=\count500
-\c@savedlanguage=\count501
-\c@origlanguage=\count502
-\c@savedoriglanguage=\count503
-\c@pageref=\count504
-\c@savedpageref=\count505
-\shorthandwidth=\skip86
-\shortjournalwidth=\skip87
-\shortserieswidth=\skip88
-\shorttitlewidth=\skip89
-\shortauthorwidth=\skip90
-\shorteditorwidth=\skip91
-\locallabelnumberwidth=\skip92
-\locallabelalphawidth=\skip93
-\localshorthandwidth=\skip94
-\localshortjournalwidth=\skip95
-\localshortserieswidth=\skip96
-\localshorttitlewidth=\skip97
-\localshortauthorwidth=\skip98
-\localshorteditorwidth=\skip99
+\c@afterword=\count443
+\c@savedafterword=\count444
+\c@annotator=\count445
+\c@savedannotator=\count446
+\c@author=\count447
+\c@savedauthor=\count448
+\c@bookauthor=\count449
+\c@savedbookauthor=\count450
+\c@commentator=\count451
+\c@savedcommentator=\count452
+\c@editor=\count453
+\c@savededitor=\count454
+\c@editora=\count455
+\c@savededitora=\count456
+\c@editorb=\count457
+\c@savededitorb=\count458
+\c@editorc=\count459
+\c@savededitorc=\count460
+\c@foreword=\count461
+\c@savedforeword=\count462
+\c@holder=\count463
+\c@savedholder=\count464
+\c@introduction=\count465
+\c@savedintroduction=\count466
+\c@namea=\count467
+\c@savednamea=\count468
+\c@nameb=\count469
+\c@savednameb=\count470
+\c@namec=\count471
+\c@savednamec=\count472
+\c@translator=\count473
+\c@savedtranslator=\count474
+\c@shortauthor=\count475
+\c@savedshortauthor=\count476
+\c@shorteditor=\count477
+\c@savedshorteditor=\count478
+\c@labelname=\count479
+\c@savedlabelname=\count480
+\c@institution=\count481
+\c@savedinstitution=\count482
+\c@lista=\count483
+\c@savedlista=\count484
+\c@listb=\count485
+\c@savedlistb=\count486
+\c@listc=\count487
+\c@savedlistc=\count488
+\c@listd=\count489
+\c@savedlistd=\count490
+\c@liste=\count491
+\c@savedliste=\count492
+\c@listf=\count493
+\c@savedlistf=\count494
+\c@location=\count495
+\c@savedlocation=\count496
+\c@organization=\count497
+\c@savedorganization=\count498
+\c@origlocation=\count499
+\c@savedoriglocation=\count500
+\c@origpublisher=\count501
+\c@savedorigpublisher=\count502
+\c@publisher=\count503
+\c@savedpublisher=\count504
+\c@language=\count505
+\c@savedlanguage=\count506
+\c@origlanguage=\count507
+\c@savedoriglanguage=\count508
+\c@pageref=\count509
+\c@savedpageref=\count510
+\shorthandwidth=\skip87
+\shortjournalwidth=\skip88
+\shortserieswidth=\skip89
+\shorttitlewidth=\skip90
+\shortauthorwidth=\skip91
+\shorteditorwidth=\skip92
+\locallabelnumberwidth=\skip93
+\locallabelalphawidth=\skip94
+\localshorthandwidth=\skip95
+\localshortjournalwidth=\skip96
+\localshortserieswidth=\skip97
+\localshorttitlewidth=\skip98
+\localshortauthorwidth=\skip99
+\localshorteditorwidth=\skip100
 Package biblatex Info: Trying to load enhanced support for Unicode engines...
 Package biblatex Info: ... file 'blx-unicode.def' found.
 
@@ -1869,19 +1925,19 @@ Package biblatex Info: Trying to load generic definitions...
 Package biblatex Info: ... file 'biblatex.def' found.
  (C:\Users\andre\AppData\Local\Programs\MiKTeX\tex/latex/biblatex\biblatex.def
 File: biblatex.def 2023/03/05 v3.19 biblatex compatibility (PK/MW)
-\c@textcitecount=\count506
-\c@textcitetotal=\count507
-\c@textcitemaxnames=\count508
-\c@biburlbigbreakpenalty=\count509
-\c@biburlbreakpenalty=\count510
-\c@biburlnumpenalty=\count511
-\c@biburlucpenalty=\count512
-\c@biburllcpenalty=\count513
+\c@textcitecount=\count511
+\c@textcitetotal=\count512
+\c@textcitemaxnames=\count513
+\c@biburlbigbreakpenalty=\count514
+\c@biburlbreakpenalty=\count515
+\c@biburlnumpenalty=\count516
+\c@biburlucpenalty=\count517
+\c@biburllcpenalty=\count518
 \biburlbigskip=\muskip18
 \biburlnumskip=\muskip19
 \biburlucskip=\muskip20
 \biburllcskip=\muskip21
-\c@smartand=\count514
+\c@smartand=\count519
 )
 Package biblatex Info: Trying to load bibliography style 'abnt'...
 Package biblatex Info: ... file 'abnt.bbx' found.
@@ -1898,8 +1954,8 @@ Package biblatex Info: ... file 'standard.bbx' found.
 (C:\Users\andre\AppData\Local\Programs\MiKTeX\tex/latex/biblatex/bbx\standard.b
 bx
 File: standard.bbx 2023/03/05 v3.19 biblatex bibliography style (PK/MW)
-\c@bbx:relatedcount=\count515
-\c@bbx:relatedtotal=\count516
+\c@bbx:relatedcount=\count520
+\c@bbx:relatedtotal=\count521
 ))
 Package biblatex Info: Trying to load citation style 'abnt'...
 Package biblatex Info: ... file 'abnt.cbx' found.
@@ -1961,8 +2017,8 @@ pgfplotsthemetol.sty
 Package: pgfplotsthemetol 2017/01/23 PGFplots colors based on Paul Tol's SRON t
 echnical note
 )
-\@quotelevel=\count517
-\@quotereset=\count518
+\@quotelevel=\count522
+\@quotereset=\count523
  (quali_slides.aux)
 \openout1 = `quali_slides.aux'.
 
@@ -2310,7 +2366,19 @@ Overfull \vbox (142.87988pt too high) detected at line 68
 
 [13
 
-] [14
+]
+LaTeX Font Info:    Trying to load font information for U+bboldx on input line 
+88.
+ (C:\Users\andre\AppData\Local\Programs\MiKTeX\tex/latex/bboldx\ubboldx.fd
+File: ubboldx.fd 2021/09/27 v1.0
+)
+LaTeX Font Info:    Font shape `U/bboldx/m/n' will be
+(Font)              scaled to size 10.0pt on input line 88.
+LaTeX Font Info:    Font shape `U/bboldx/m/n' will be
+(Font)              scaled to size 7.0pt on input line 88.
+LaTeX Font Info:    Font shape `U/bboldx/m/n' will be
+(Font)              scaled to size 5.0pt on input line 88.
+[14
 
 ] [15
 
@@ -2346,10 +2414,10 @@ LaTeX Font Info:    Font shape `TU/FiraSans(0)/m/n' will be
 (Font)              scaled to size 20.74pt on input line 338.
  [27
 
-]
-[28
+] [28
 
-] [29
+]
+[29
 
 ] [30
 
@@ -2549,12 +2617,12 @@ Package logreq Info: Writing requests to 'quali_slides.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 48763 strings out of 409617
- 1166830 string characters out of 5774013
- 2097555 words of memory out of 5000000
- 69867 multiletter control sequences out of 15000+600000
- 562443 words of font info for 140 fonts, out of 8000000 for 9000
+ 49881 strings out of 409617
+ 1187527 string characters out of 5774013
+ 2124045 words of memory out of 5000000
+ 70967 multiletter control sequences out of 15000+600000
+ 563127 words of font info for 143 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 128i,15n,149p,1948b,5569s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 128i,15n,149p,1945b,5569s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
 Output written on quali_slides.pdf (56 pages).

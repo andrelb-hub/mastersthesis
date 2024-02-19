@@ -1,15 +1,15 @@
 [0] Config.pm:307> INFO - This is Biber 2.19
 [0] Config.pm:310> INFO - Logfile is 'project.blg'
-[172] biber-MSWIN64:340> INFO - === 
-[255] Biber.pm:419> INFO - Reading 'project.bcf'
-[534] Biber.pm:979> INFO - Found 30 citekeys in bib section 0
-[570] Biber.pm:4419> INFO - Processing section 0
-[601] Biber.pm:4610> INFO - Looking for bibtex file '../ref/ref.bib' for section 0
-[689] bibtex.pm:1713> INFO - LaTeX decoding ...
-[809] bibtex.pm:1519> INFO - Found BibTeX data source '../ref/ref.bib'
-[1172] UCollate.pm:68> INFO - Overriding locale 'pt-BR' defaults 'variable = shifted' with 'variable = non-ignorable'
-[1172] UCollate.pm:68> INFO - Overriding locale 'pt-BR' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[1172] Biber.pm:4239> INFO - Sorting list 'nyt/global//global/global' of type 'entry' with template 'nyt' and locale 'pt-BR'
-[1172] Biber.pm:4245> INFO - No sort tailoring available for locale 'pt-BR'
-[1227] bbl.pm:660> INFO - Writing 'project.bbl' with encoding 'UTF-8'
-[1254] bbl.pm:763> INFO - Output to project.bbl
+[106] biber-MSWIN64:340> INFO - === 
+[148] Biber.pm:419> INFO - Reading 'project.bcf'
+[270] Biber.pm:979> INFO - Found 30 citekeys in bib section 0
+[285] Biber.pm:4419> INFO - Processing section 0
+[299] Biber.pm:4610> INFO - Looking for bibtex file '../latex/ref.bib' for section 0
+[349] bibtex.pm:1713> INFO - LaTeX decoding ...
+[397] bibtex.pm:1519> INFO - Found BibTeX data source '../latex/ref.bib'
+[572] UCollate.pm:68> INFO - Overriding locale 'pt-BR' defaults 'variable = shifted' with 'variable = non-ignorable'
+[572] UCollate.pm:68> INFO - Overriding locale 'pt-BR' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[572] Biber.pm:4239> INFO - Sorting list 'nyt/global//global/global' of type 'entry' with template 'nyt' and locale 'pt-BR'
+[572] Biber.pm:4245> INFO - No sort tailoring available for locale 'pt-BR'
+[606] bbl.pm:660> INFO - Writing 'project.bbl' with encoding 'UTF-8'
+[621] bbl.pm:763> INFO - Output to project.bbl
