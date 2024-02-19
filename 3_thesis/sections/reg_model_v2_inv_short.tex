@@ -338,7 +338,7 @@ Substitute \ref{eq_v2:reg-final-goods-firm-bundle-rule} in \ref{eq_v2:reg-final-
 
 The solutions for the final-goods firm problem are:
 \begin{align}
-	& Y_{\eta jt} = Y_{t} \left( \frac{P_{\eta t}}{P_{\eta jt}} \right)^{\psi} \label{eq_v2:reg-final-goods-firm-FOC}
+	Y_{\eta jt} &= Y_{t} \left( \frac{P_{\eta t}}{P_{\eta jt}} \right)^{\psi} \label{eq_v2:reg-final-goods-firm-FOC}
 \end{align}
 
 Equation \ref{eq_v2:reg-final-goods-firm-FOC} shows that the demand for variety $j$ depends on its relative price. 
@@ -521,11 +521,11 @@ Substitute \ref{eq_v2:reg-final-goods-firm-FOC} in \ref{eq_v2:reg-int-good-firm-
 	
 \end{comment}
 
+
+The solution to the optimal price problem is equation \ref{eq_v2:reg-int-good-firm-optimal-price-FOC-3}, which represents the optimal price that firm $j$ will choose. Since all firms that are able to choose will opt for the highest possible price, they will all select the same price and for that the index $j$ can be omitted.
 \begin{align}
 	P_{\eta t}^{\ast} &= \frac{\psi}{\psi-1} \cdot \frac{\E \sum_{s=0}^{\infty} \left\{ \theta^s Y_{\eta j,t+s} \Lambda_{\eta, t+s} / \prod_{k=0}^{s-1}(1+R_{t+k}) \right\}}{\E \sum_{s=0}^{\infty} \left\{ \theta^s Y_{\eta j,t+s} / \prod_{k=0}^{s-1}(1+R_{t+k}) \right\}} \label{eq_v2:reg-int-good-firm-optimal-price-FOC-3}
 \end{align}
-
-Equation \ref{eq_v2:reg-int-good-firm-optimal-price-FOC-3} represents the optimal price that firm $j$ will choose. Since all firms that are able to choose will opt for the highest possible price, they will all select the same price and for that the index $j$ can be omitted.
 
 % --------------------------------------------------
 % intermediate-goods firm profit
@@ -584,8 +584,7 @@ The objective of the monetary authority is to conduct the economy to price stabi
 
 where $R, \pi, Y$ are the nominal interest rate, gross inflation rate and the production level in steady state, respectively; $\gamma_{R}$ is the smoothing parameter for the interest rate $R_{t}$, $\gamma_{\pi}$ and $\gamma_{Y}$ are the interest-rate sensitivities in relation to inflation and product, respectively, $Z_{Mt}$ is the monetary shock and $\pi_t$ is the gross inflation rate, defined by:\footnote{for the monetary shock definition, see section \ref{sec_v6:reg-monetary-shock}.}
 \begin{align}
-	\pi_{t} &= \pi_{1t}^{\theta_{\pi}} \pi_{2t}^{1 - \theta_{\pi}}
-	\label{eq_v2:reg-gross-inflation-rate} \\ 
+	\pi_{t} &= \pi_{1t}^{\theta_{\pi}} \pi_{2t}^{1 - \theta_{\pi}} \label{eq_v2:reg-gross-inflation-rate} \\ 
 	&\quad \text{where: } \theta_{\pi} = \frac{P_{1t} Y_{1t}}{P_{1t} Y_{1t} + P_{2t} Y_{2t}} \label{eq_v2:reg-theta-pi}
 \end{align}
 

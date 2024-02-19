@@ -373,7 +373,7 @@ stoch_simul(irf=40, order=1, qz_zero_threshold=1e-20)
 % Parameters for the png files                       %
 % -------------------------------------------------- % 
 % path to save the PNG files:
-png_folder = 'C:\apps\gdrive\projects\masterthesis\latex\images\plots';
+png_folder = 'C:\github\mastersthesis\images\plots\';
 t_vector = 1:40;
 % -------------------------------------------------- % 
 % SAVE SINGLE IRFs IN PNG                            %

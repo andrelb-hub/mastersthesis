@@ -64,6 +64,19 @@
 \usepackage{subcaption}
 
 % --------------------------------------------------
+% MATH ENVIRONMENT
+% --------------------------------------------------
+
+\usepackage[
+	% fleqn % align all equations left
+]{amsmath}
+
+\usepackage{empheq}
+
+% always after \usepackage{amsmath}:
+\usepackage{mathtools}
+
+% --------------------------------------------------
 % MATH COMMANDS
 % --------------------------------------------------
 
@@ -103,6 +116,20 @@
 \usepackage{pifont}% http://ctan.org/pkg/pifont
 \newcommand{\cmark}{\textcolor{teal}{\ding{51}}}
 \newcommand{\xmark}{\textcolor{gray}{\ding{55}}}
+
+% --------------------------------------------------
+% MATH FONTS
+% --------------------------------------------------
+
+\usepackage[
+	frak = euler, %boondox, %(for fraktur fonts)
+	scr  = cm, %euler, %stixplain, %pxtx, %cm, %zapfc, %(for calligraphic fonts)
+	cal  = boondoxo, %boondox, %(for script fonts)
+	bb   = bboldx, %pazo, %boondox, %dsfontsans, % (for blackboard bold (double-struck) fonts)
+	%bfscr, % force \mathscr to point to the bold version.
+	%bfcal, % force \mathcal to point to the bold version.
+	%bfbb,  % force \mathbb  to point to the bold version.
+]{mathalpha}
 
 % --------------------------------------------------
 % COMMENT ENVIRONMENT

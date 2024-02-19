@@ -1,0 +1,46 @@
+% --------------------------------------------------
+% DOCUMENT CLASS
+% --------------------------------------------------
+
+\documentclass[../quali_slides.tex]{subfiles}
+
+\begin{document}
+
+\section{Project Timeline}
+
+% --------------------------------------------------
+% SLIDE
+% --------------------------------------------------
+
+\begin{frame}[fragile]{Project Timeline}
+		
+% Please add the following required packages to your document preamble:
+% \usepackage{graphicx}
+\renewcommand{\arraystretch}{1.5}
+\begin{table}[]
+\tiny
+%\centering
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{l|cccccccccc}
+\hline
+Activity               &Mar&Apr&May&Jun&Jul&Aug&Sep&Oct&Nov&Dec\\ \hline
+Literature Review      & x & x &   &   &   &   &   &   &   &   \\ \hline
+Project \& Seminar     &   &   & x & x &   &   &   &   &   &   \\ \hline
+Modeling               &   &   & x & x & x &   &   &   &   &   \\ \hline
+\LaTeX                 &   &   & x & x & x &   &   &   &   &   \\ \hline
+\texttt{Dynare}        &   &   &   &   & x & x &   &   &   &   \\ \hline
+Qualification          &   &   &   &   &   & x &   &   &   &   \\ \hline
+Regional Model         &   &   &   &   &   & x & $\Box$ &   &   &   \\ \hline
+Data Treatment         &   &   &   &   &   &   & $\Box$ &   &   &   \\ \hline
+Parametrization        &   &   &   &   &   &   &   & $\Box$ &   &   \\ \hline
+Results                &   &   &   &   &   &   &   & $\Box$ &   &   \\ \hline
+Systematic Review      &   &   &   &   &   &   &   &   & $\Box$ &   \\ \hline
+Revision \& Edition    &   &   &   &   &   &   &   &   & $\Box$ &   \\ \hline
+Thesis Defense         &   &   &   &   &   &   &   &   &   & $\Box$ \\ \hline
+\end{tabular}%
+}
+\end{table}
+\renewcommand{\arraystretch}{1}
+\end{frame}
+
+\end{document}
