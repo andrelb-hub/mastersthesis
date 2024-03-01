@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999995 (MiKTeX 23.12) (preloaded format=xelatex 2024.1.18)  20 FEB 2024 18:11
+This is XeTeX, Version 3.141592653-2.6-0.999995 (MiKTeX 23.12) (preloaded format=xelatex 2024.1.18)  23 FEB 2024 14:47
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1743,17 +1743,32 @@ LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
 (Font)                  U/euf/m/n --> U/euf/b/n on input line 716.
 LaTeX Font Info:    Overwriting math alphabet `\mathscr' in version `bold'
 (Font)                  U/cmsy/m/n --> U/cmsy/b/n on input line 823.
-))
+)
 (C:\Users\andre\AppData\Local\Programs\MiKTeX\tex/latex/comment\comment.sty
 \CommentStream=\write5
 
-Excluding comment 'comment')
+Excluding comment 'comment'))
+(C:\Users\andre\AppData\Local\Programs\MiKTeX\tex/latex/chronology\chronology.s
+ty
+Package: chronology 2023/08/20 v2.0 - Horizontal Timeline
+\c@step=\count396
+\c@stepstart=\count397
+\c@stepstop=\count398
+\c@yearstart=\count399
+\c@yearstop=\count400
+\c@deltayears=\count401
+\xstart=\skip79
+\xstop=\skip80
+\unit=\skip81
+\timelinewidth=\skip82
+\timelinebox=\box87
+)
 (C:\Users\andre\AppData\Local\Programs\MiKTeX\tex/latex/biblatex\biblatex.sty
 Package: biblatex 2023/03/05 v3.19 programmable bibliographies (PK/MW)
 
 (C:\Users\andre\AppData\Local\Programs\MiKTeX\tex/latex/logreq\logreq.sty
 Package: logreq 2010/08/04 v1.0 xml request logger
-\lrq@indent=\count396
+\lrq@indent=\count402
 
 (C:\Users\andre\AppData\Local\Programs\MiKTeX\tex/latex/logreq\logreq.def
 File: logreq.def 2010/08/04 v1.0 logreq spec v1.0
@@ -1761,63 +1776,63 @@ File: logreq.def 2010/08/04 v1.0 logreq spec v1.0
 (C:\Users\andre\AppData\Local\Programs\MiKTeX\tex/latex/base\ifthen.sty
 Package: ifthen 2022/04/13 v1.1d Standard LaTeX ifthen package (DPC)
 )
-\c@tabx@nest=\count397
-\c@listtotal=\count398
-\c@listcount=\count399
-\c@liststart=\count400
-\c@liststop=\count401
-\c@citecount=\count402
-\c@citetotal=\count403
-\c@multicitecount=\count404
-\c@multicitetotal=\count405
-\c@instcount=\count406
-\c@maxnames=\count407
-\c@minnames=\count408
-\c@maxitems=\count409
-\c@minitems=\count410
-\c@citecounter=\count411
-\c@maxcitecounter=\count412
-\c@savedcitecounter=\count413
-\c@uniquelist=\count414
-\c@uniquename=\count415
-\c@refsection=\count416
-\c@refsegment=\count417
-\c@maxextratitle=\count418
-\c@maxextratitleyear=\count419
-\c@maxextraname=\count420
-\c@maxextradate=\count421
-\c@maxextraalpha=\count422
-\c@abbrvpenalty=\count423
-\c@highnamepenalty=\count424
-\c@lownamepenalty=\count425
-\c@maxparens=\count426
-\c@parenlevel=\count427
-\blx@tempcnta=\count428
-\blx@tempcntb=\count429
-\blx@tempcntc=\count430
-\c@blx@maxsection=\count431
-\blx@maxsegment@0=\count432
-\blx@notetype=\count433
-\blx@parenlevel@text=\count434
-\blx@parenlevel@foot=\count435
-\blx@sectionciteorder@0=\count436
-\blx@sectionciteorderinternal@0=\count437
-\blx@entrysetcounter=\count438
-\blx@biblioinstance=\count439
-\labelnumberwidth=\skip79
-\labelalphawidth=\skip80
-\biblabelsep=\skip81
-\bibitemsep=\skip82
-\bibnamesep=\skip83
-\bibinitsep=\skip84
-\bibparsep=\skip85
-\bibhang=\skip86
+\c@tabx@nest=\count403
+\c@listtotal=\count404
+\c@listcount=\count405
+\c@liststart=\count406
+\c@liststop=\count407
+\c@citecount=\count408
+\c@citetotal=\count409
+\c@multicitecount=\count410
+\c@multicitetotal=\count411
+\c@instcount=\count412
+\c@maxnames=\count413
+\c@minnames=\count414
+\c@maxitems=\count415
+\c@minitems=\count416
+\c@citecounter=\count417
+\c@maxcitecounter=\count418
+\c@savedcitecounter=\count419
+\c@uniquelist=\count420
+\c@uniquename=\count421
+\c@refsection=\count422
+\c@refsegment=\count423
+\c@maxextratitle=\count424
+\c@maxextratitleyear=\count425
+\c@maxextraname=\count426
+\c@maxextradate=\count427
+\c@maxextraalpha=\count428
+\c@abbrvpenalty=\count429
+\c@highnamepenalty=\count430
+\c@lownamepenalty=\count431
+\c@maxparens=\count432
+\c@parenlevel=\count433
+\blx@tempcnta=\count434
+\blx@tempcntb=\count435
+\blx@tempcntc=\count436
+\c@blx@maxsection=\count437
+\blx@maxsegment@0=\count438
+\blx@notetype=\count439
+\blx@parenlevel@text=\count440
+\blx@parenlevel@foot=\count441
+\blx@sectionciteorder@0=\count442
+\blx@sectionciteorderinternal@0=\count443
+\blx@entrysetcounter=\count444
+\blx@biblioinstance=\count445
+\labelnumberwidth=\skip83
+\labelalphawidth=\skip84
+\biblabelsep=\skip85
+\bibitemsep=\skip86
+\bibnamesep=\skip87
+\bibinitsep=\skip88
+\bibparsep=\skip89
+\bibhang=\skip90
 \blx@bcfin=\read3
 \blx@bcfout=\write6
 \blx@langwohyphens=\language79
-\c@mincomprange=\count440
-\c@maxcomprange=\count441
-\c@mincompwidth=\count442
+\c@mincomprange=\count446
+\c@maxcomprange=\count447
+\c@mincompwidth=\count448
 Package biblatex Info: Trying to load biblatex default data model...
 Package biblatex Info: ... file 'blx-dm.def' found.
 
@@ -1828,88 +1843,88 @@ Package biblatex Info: Trying to load biblatex style data model...
 Package biblatex Info: ... file 'abnt.dbx' not found.
 Package biblatex Info: Trying to load biblatex custom data model...
 Package biblatex Info: ... file 'biblatex-dm.cfg' not found.
-\c@afterword=\count443
-\c@savedafterword=\count444
-\c@annotator=\count445
-\c@savedannotator=\count446
-\c@author=\count447
-\c@savedauthor=\count448
-\c@bookauthor=\count449
-\c@savedbookauthor=\count450
-\c@commentator=\count451
-\c@savedcommentator=\count452
-\c@editor=\count453
-\c@savededitor=\count454
-\c@editora=\count455
-\c@savededitora=\count456
-\c@editorb=\count457
-\c@savededitorb=\count458
-\c@editorc=\count459
-\c@savededitorc=\count460
-\c@foreword=\count461
-\c@savedforeword=\count462
-\c@holder=\count463
-\c@savedholder=\count464
-\c@introduction=\count465
-\c@savedintroduction=\count466
-\c@namea=\count467
-\c@savednamea=\count468
-\c@nameb=\count469
-\c@savednameb=\count470
-\c@namec=\count471
-\c@savednamec=\count472
-\c@translator=\count473
-\c@savedtranslator=\count474
-\c@shortauthor=\count475
-\c@savedshortauthor=\count476
-\c@shorteditor=\count477
-\c@savedshorteditor=\count478
-\c@labelname=\count479
-\c@savedlabelname=\count480
-\c@institution=\count481
-\c@savedinstitution=\count482
-\c@lista=\count483
-\c@savedlista=\count484
-\c@listb=\count485
-\c@savedlistb=\count486
-\c@listc=\count487
-\c@savedlistc=\count488
-\c@listd=\count489
-\c@savedlistd=\count490
-\c@liste=\count491
-\c@savedliste=\count492
-\c@listf=\count493
-\c@savedlistf=\count494
-\c@location=\count495
-\c@savedlocation=\count496
-\c@organization=\count497
-\c@savedorganization=\count498
-\c@origlocation=\count499
-\c@savedoriglocation=\count500
-\c@origpublisher=\count501
-\c@savedorigpublisher=\count502
-\c@publisher=\count503
-\c@savedpublisher=\count504
-\c@language=\count505
-\c@savedlanguage=\count506
-\c@origlanguage=\count507
-\c@savedoriglanguage=\count508
-\c@pageref=\count509
-\c@savedpageref=\count510
-\shorthandwidth=\skip87
-\shortjournalwidth=\skip88
-\shortserieswidth=\skip89
-\shorttitlewidth=\skip90
-\shortauthorwidth=\skip91
-\shorteditorwidth=\skip92
-\locallabelnumberwidth=\skip93
-\locallabelalphawidth=\skip94
-\localshorthandwidth=\skip95
-\localshortjournalwidth=\skip96
-\localshortserieswidth=\skip97
-\localshorttitlewidth=\skip98
-\localshortauthorwidth=\skip99
-\localshorteditorwidth=\skip100
+\c@afterword=\count449
+\c@savedafterword=\count450
+\c@annotator=\count451
+\c@savedannotator=\count452
+\c@author=\count453
+\c@savedauthor=\count454
+\c@bookauthor=\count455
+\c@savedbookauthor=\count456
+\c@commentator=\count457
+\c@savedcommentator=\count458
+\c@editor=\count459
+\c@savededitor=\count460
+\c@editora=\count461
+\c@savededitora=\count462
+\c@editorb=\count463
+\c@savededitorb=\count464
+\c@editorc=\count465
+\c@savededitorc=\count466
+\c@foreword=\count467
+\c@savedforeword=\count468
+\c@holder=\count469
+\c@savedholder=\count470
+\c@introduction=\count471
+\c@savedintroduction=\count472
+\c@namea=\count473
+\c@savednamea=\count474
+\c@nameb=\count475
+\c@savednameb=\count476
+\c@namec=\count477
+\c@savednamec=\count478
+\c@translator=\count479
+\c@savedtranslator=\count480
+\c@shortauthor=\count481
+\c@savedshortauthor=\count482
+\c@shorteditor=\count483
+\c@savedshorteditor=\count484
+\c@labelname=\count485
+\c@savedlabelname=\count486
+\c@institution=\count487
+\c@savedinstitution=\count488
+\c@lista=\count489
+\c@savedlista=\count490
+\c@listb=\count491
+\c@savedlistb=\count492
+\c@listc=\count493
+\c@savedlistc=\count494
+\c@listd=\count495
+\c@savedlistd=\count496
+\c@liste=\count497
+\c@savedliste=\count498
+\c@listf=\count499
+\c@savedlistf=\count500
+\c@location=\count501
+\c@savedlocation=\count502
+\c@organization=\count503
+\c@savedorganization=\count504
+\c@origlocation=\count505
+\c@savedoriglocation=\count506
+\c@origpublisher=\count507
+\c@savedorigpublisher=\count508
+\c@publisher=\count509
+\c@savedpublisher=\count510
+\c@language=\count511
+\c@savedlanguage=\count512
+\c@origlanguage=\count513
+\c@savedoriglanguage=\count514
+\c@pageref=\count515
+\c@savedpageref=\count516
+\shorthandwidth=\skip91
+\shortjournalwidth=\skip92
+\shortserieswidth=\skip93
+\shorttitlewidth=\skip94
+\shortauthorwidth=\skip95
+\shorteditorwidth=\skip96
+\locallabelnumberwidth=\skip97
+\locallabelalphawidth=\skip98
+\localshorthandwidth=\skip99
+\localshortjournalwidth=\skip100
+\localshortserieswidth=\skip101
+\localshorttitlewidth=\skip102
+\localshortauthorwidth=\skip103
+\localshorteditorwidth=\skip104
 Package biblatex Info: Trying to load enhanced support for Unicode engines...
 Package biblatex Info: ... file 'blx-unicode.def' found.
 
@@ -1925,19 +1940,19 @@ Package biblatex Info: Trying to load generic definitions...
 Package biblatex Info: ... file 'biblatex.def' found.
  (C:\Users\andre\AppData\Local\Programs\MiKTeX\tex/latex/biblatex\biblatex.def
 File: biblatex.def 2023/03/05 v3.19 biblatex compatibility (PK/MW)
-\c@textcitecount=\count511
-\c@textcitetotal=\count512
-\c@textcitemaxnames=\count513
-\c@biburlbigbreakpenalty=\count514
-\c@biburlbreakpenalty=\count515
-\c@biburlnumpenalty=\count516
-\c@biburlucpenalty=\count517
-\c@biburllcpenalty=\count518
+\c@textcitecount=\count517
+\c@textcitetotal=\count518
+\c@textcitemaxnames=\count519
+\c@biburlbigbreakpenalty=\count520
+\c@biburlbreakpenalty=\count521
+\c@biburlnumpenalty=\count522
+\c@biburlucpenalty=\count523
+\c@biburllcpenalty=\count524
 \biburlbigskip=\muskip18
 \biburlnumskip=\muskip19
 \biburlucskip=\muskip20
 \biburllcskip=\muskip21
-\c@smartand=\count519
+\c@smartand=\count525
 )
 Package biblatex Info: Trying to load bibliography style 'abnt'...
 Package biblatex Info: ... file 'abnt.bbx' found.
@@ -1954,8 +1969,8 @@ Package biblatex Info: ... file 'standard.bbx' found.
 (C:\Users\andre\AppData\Local\Programs\MiKTeX\tex/latex/biblatex/bbx\standard.b
 bx
 File: standard.bbx 2023/03/05 v3.19 biblatex bibliography style (PK/MW)
-\c@bbx:relatedcount=\count520
-\c@bbx:relatedtotal=\count521
+\c@bbx:relatedcount=\count526
+\c@bbx:relatedtotal=\count527
 ))
 Package biblatex Info: Trying to load citation style 'abnt'...
 Package biblatex Info: ... file 'abnt.cbx' found.
@@ -2017,37 +2032,37 @@ pgfplotsthemetol.sty
 Package: pgfplotsthemetol 2017/01/23 PGFplots colors based on Paul Tol's SRON t
 echnical note
 )
-\@quotelevel=\count522
-\@quotereset=\count523
+\@quotelevel=\count528
+\@quotereset=\count529
  (slides.aux)
 \openout1 = `slides.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 75.
-LaTeX Font Info:    ... okay on input line 75.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 75.
-LaTeX Font Info:    ... okay on input line 75.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 75.
-LaTeX Font Info:    ... okay on input line 75.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 75.
-LaTeX Font Info:    ... okay on input line 75.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 75.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 77.
+LaTeX Font Info:    ... okay on input line 77.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 77.
+LaTeX Font Info:    ... okay on input line 77.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 77.
+LaTeX Font Info:    ... okay on input line 77.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 77.
+LaTeX Font Info:    ... okay on input line 77.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 77.
 LaTeX Font Info:    Trying to load font information for TS1+cmr on input line 7
-5.
+7.
 
 (C:\Users\andre\AppData\Local\Programs\MiKTeX\tex/latex/base\ts1cmr.fd
 File: ts1cmr.fd 2023/04/13 v2.5m Standard LaTeX font definitions
 )
-LaTeX Font Info:    ... okay on input line 75.
-LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 75.
-LaTeX Font Info:    ... okay on input line 75.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 75.
-LaTeX Font Info:    ... okay on input line 75.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 75.
-LaTeX Font Info:    ... okay on input line 75.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 75.
-LaTeX Font Info:    ... okay on input line 75.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 75.
-LaTeX Font Info:    ... okay on input line 75.
+LaTeX Font Info:    ... okay on input line 77.
+LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 77.
+LaTeX Font Info:    ... okay on input line 77.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 77.
+LaTeX Font Info:    ... okay on input line 77.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 77.
+LaTeX Font Info:    ... okay on input line 77.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 77.
+LaTeX Font Info:    ... okay on input line 77.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 77.
+LaTeX Font Info:    ... okay on input line 77.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: xetex
@@ -2083,60 +2098,60 @@ LaTeX Font Info:    ... okay on input line 75.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-Package hyperref Info: Link coloring OFF on input line 75.
+Package hyperref Info: Link coloring OFF on input line 77.
 (slides.out) (slides.out)
 \@outlinefile=\write7
 \openout7 = `slides.out'.
 
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
-(Font)                  OT1/cmr/m/n --> OT1/cmss/m/n on input line 75.
+(Font)                  OT1/cmr/m/n --> OT1/cmss/m/n on input line 77.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
-(Font)                  OT1/cmr/bx/n --> OT1/cmss/b/n on input line 75.
+(Font)                  OT1/cmr/bx/n --> OT1/cmss/b/n on input line 77.
 \symnumbers=\mathgroup6
 \sympureletters=\mathgroup7
 LaTeX Font Info:    Overwriting math alphabet `\mathrm' in version `normal'
-(Font)                  OT1/cmss/m/n --> TU/lmr/m/n on input line 75.
-LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 75.
+(Font)                  OT1/cmss/m/n --> TU/lmr/m/n on input line 77.
+LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 77.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
-(Font)                  OT1/cmr/bx/n --> TU/FiraSans(0)/b/n on input line 75.
+(Font)                  OT1/cmr/bx/n --> TU/FiraSans(0)/b/n on input line 77.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `bold'
-(Font)                  OT1/cmr/bx/n --> TU/FiraSans(0)/b/n on input line 75.
-LaTeX Font Info:    Redeclaring math alphabet \mathsf on input line 75.
+(Font)                  OT1/cmr/bx/n --> TU/FiraSans(0)/b/n on input line 77.
+LaTeX Font Info:    Redeclaring math alphabet \mathsf on input line 77.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `normal'
-(Font)                  OT1/cmss/m/n --> TU/FiraSans(0)/m/n on input line 75.
+(Font)                  OT1/cmss/m/n --> TU/FiraSans(0)/m/n on input line 77.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
-(Font)                  OT1/cmss/bx/n --> TU/FiraSans(0)/m/n on input line 75.
-LaTeX Font Info:    Redeclaring math alphabet \mathit on input line 75.
+(Font)                  OT1/cmss/bx/n --> TU/FiraSans(0)/m/n on input line 77.
+LaTeX Font Info:    Redeclaring math alphabet \mathit on input line 77.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
-(Font)                  OT1/cmr/m/it --> TU/FiraSans(0)/m/it on input line 75.
+(Font)                  OT1/cmr/m/it --> TU/FiraSans(0)/m/it on input line 77.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
-(Font)                  OT1/cmr/bx/it --> TU/FiraSans(0)/m/it on input line 75.
+(Font)                  OT1/cmr/bx/it --> TU/FiraSans(0)/m/it on input line 77.
 
-LaTeX Font Info:    Redeclaring math alphabet \mathtt on input line 75.
+LaTeX Font Info:    Redeclaring math alphabet \mathtt on input line 77.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
-(Font)                  OT1/cmtt/m/n --> TU/FiraMono(0)/m/n on input line 75.
+(Font)                  OT1/cmtt/m/n --> TU/FiraMono(0)/m/n on input line 77.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
-(Font)                  OT1/cmtt/m/n --> TU/FiraMono(0)/m/n on input line 75.
+(Font)                  OT1/cmtt/m/n --> TU/FiraMono(0)/m/n on input line 77.
 LaTeX Font Info:    Overwriting symbol font `numbers' in version `bold'
 (Font)                  TU/FiraSans(0)/m/n --> TU/FiraSans(0)/b/n on input line
- 75.
+ 77.
 LaTeX Font Info:    Overwriting symbol font `pureletters' in version `bold'
 (Font)                  TU/FiraSans(0)/m/it --> TU/FiraSans(0)/b/it on input li
-ne 75.
+ne 77.
 LaTeX Font Info:    Overwriting math alphabet `\mathrm' in version `bold'
-(Font)                  OT1/cmss/b/n --> TU/lmr/b/n on input line 75.
+(Font)                  OT1/cmss/b/n --> TU/lmr/b/n on input line 77.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `bold'
 (Font)                  TU/FiraSans(0)/b/n --> TU/FiraSans(0)/b/n on input line
- 75.
+ 77.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
 (Font)                  TU/FiraSans(0)/m/n --> TU/FiraSans(0)/b/n on input line
- 75.
+ 77.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
 (Font)                  TU/FiraSans(0)/m/it --> TU/FiraSans(0)/b/it on input li
-ne 75.
+ne 77.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
 (Font)                  TU/FiraMono(0)/m/n --> TU/FiraMono(0)/b/n on input line
- 75.
+ 77.
 
 (C:\Users\andre\AppData\Local\Programs\MiKTeX\tex/latex/translator\translator-b
 asic-dictionary-English.dict
@@ -2271,13 +2286,13 @@ Package biblatex Info: Automatic encoding selection.
 Package biblatex Info: Trying to load bibliographic data...
 Package biblatex Info: ... file 'slides.bbl' found.
  (slides.bbl)
-Package biblatex Info: Reference section=0 on input line 75.
-Package biblatex Info: Reference segment=0 on input line 75.
+Package biblatex Info: Reference section=0 on input line 77.
+Package biblatex Info: Reference segment=0 on input line 77.
  (slides.nav)
 LaTeX Font Info:    Font shape `TU/FiraSans(0)/m/n' will be
-(Font)              scaled to size 5.0pt on input line 75.
+(Font)              scaled to size 5.0pt on input line 77.
 LaTeX Font Info:    Font shape `TU/FiraSans(0)/m/n' will be
-(Font)              scaled to size 7.0pt on input line 75.
+(Font)              scaled to size 7.0pt on input line 77.
  (slides/cover.tex
 File: ../images/../images/logo_BB2.png Graphic file (type bmp)
 <../images/../images/logo_BB2.png>
@@ -2328,29 +2343,30 @@ LaTeX Font Info:    Font shape `TU/FiraSans(0)/m/it' will be
 
 [3
 
-] [4
-
-] [5
-
 ]
 LaTeX Font Info:    Font shape `TU/FiraSans(0)/b/n' will be
-(Font)              scaled to size 10.0pt on input line 64.
- [6
+(Font)              scaled to size 10.0pt on input line 29.
+ [4
 
-] Excluding 'comment' comment.) (slides/literature_review.tex
-[7
-
-]
-\openout4 = `slides.vrb'.
-
- (slides.vrb) [8
+] Excluding 'comment' comment. Excluding 'comment' comment.)
+(slides/literature_review.tex [5
 
 ]
 \openout4 = `slides.vrb'.
 
- (slides.vrb) [9
+ (slides.vrb) [6
 
-]) (slides/model.tex [10
+]
+\openout4 = `slides.vrb'.
+
+ (slides.vrb) [7
+
+])
+(slides/model.tex [8
+
+] [9
+
+] [10
 
 ] [11
 
@@ -2360,9 +2376,9 @@ LaTeX Font Info:    Font shape `TU/FiraSans(0)/b/n' will be
 File: ../images/../images/flowchart.jpg Graphic file (type bmp)
 <../images/../images/flowchart.jpg>
 LaTeX Font Info:    Font shape `TU/FiraSans(0)/b/n' will be
-(Font)              scaled to size 9.0pt on input line 70.
+(Font)              scaled to size 9.0pt on input line 120.
 
-Overfull \vbox (52.90135pt too high) detected at line 70
+Overfull \vbox (52.90135pt too high) detected at line 120
  []
 
 [13
@@ -2373,17 +2389,17 @@ Overfull \vbox (52.90135pt too high) detected at line 70
 
 ]
 LaTeX Font Info:    Trying to load font information for U+bboldx on input line 
-122.
+172.
 
 (C:\Users\andre\AppData\Local\Programs\MiKTeX\tex/latex/bboldx\ubboldx.fd
 File: ubboldx.fd 2021/09/27 v1.0
 )
 LaTeX Font Info:    Font shape `U/bboldx/m/n' will be
-(Font)              scaled to size 10.0pt on input line 122.
+(Font)              scaled to size 10.0pt on input line 172.
 LaTeX Font Info:    Font shape `U/bboldx/m/n' will be
-(Font)              scaled to size 7.0pt on input line 122.
+(Font)              scaled to size 7.0pt on input line 172.
 LaTeX Font Info:    Font shape `U/bboldx/m/n' will be
-(Font)              scaled to size 5.0pt on input line 122.
+(Font)              scaled to size 5.0pt on input line 172.
 
 [16
 
@@ -2410,16 +2426,16 @@ LaTeX Font Info:    Font shape `U/bboldx/m/n' will be
 
 ]
 LaTeX Font Info:    Font shape `U/cmsy/b/n' will be
-(Font)              scaled to size 10.0pt on input line 340.
+(Font)              scaled to size 10.0pt on input line 390.
 LaTeX Font Info:    Font shape `U/cmsy/b/n' will be
-(Font)              scaled to size 7.0pt on input line 340.
+(Font)              scaled to size 7.0pt on input line 390.
 LaTeX Font Info:    Font shape `U/cmsy/b/n' will be
-(Font)              scaled to size 5.0pt on input line 340.
+(Font)              scaled to size 5.0pt on input line 390.
  [27
 
 ]
 LaTeX Font Info:    Font shape `TU/FiraSans(0)/m/n' will be
-(Font)              scaled to size 20.74pt on input line 352.
+(Font)              scaled to size 20.74pt on input line 402.
  [28
 
 ] [29
@@ -2448,41 +2464,114 @@ LaTeX Font Info:    Font shape `TU/FiraSans(0)/m/n' will be
 Excluding 'comment' comment.) (slides/results.tex [38
 
 ]
+LaTeX Font Info:    Font shape `TU/FiraSans(0)/b/n' will be
+(Font)              scaled to size 7.0pt on input line 33.
+LaTeX Font Info:    Font shape `TU/FiraSans(0)/b/n' will be
+(Font)              scaled to size 5.0pt on input line 33.
+ [39
+
+]
 File: ../images/../images/plots/plot_eM_pos_C1_C2.png Graphic file (type bmp)
 <../images/../images/plots/plot_eM_pos_C1_C2.png>
 LaTeX Font Info:    Font shape `TU/FiraSans(0)/m/n' will be
-(Font)              scaled to size 8.0pt on input line 38.
+(Font)              scaled to size 8.0pt on input line 60.
 LaTeX Font Info:    Font shape `TU/FiraSans(0)/b/n' will be
-(Font)              scaled to size 8.0pt on input line 38.
+(Font)              scaled to size 8.0pt on input line 60.
 File: ../images/../images/plots/plot_eM_pos_I1_I2.png Graphic file (type bmp)
 <../images/../images/plots/plot_eM_pos_I1_I2.png>
- [39
+ [40
 
 ]
 File: ../images/../images/plots/plot_eM_pos_Y1_Y2.png Graphic file (type bmp)
 <../images/../images/plots/plot_eM_pos_Y1_Y2.png>
 File: ../images/../images/plots/plot_eM_pos_K1_K2.png Graphic file (type bmp)
 <../images/../images/plots/plot_eM_pos_K1_K2.png>
- [40
+ [41
 
 ]
 File: ../images/../images/plots/plot_eM_pos_L1_L2.png Graphic file (type bmp)
 <../images/../images/plots/plot_eM_pos_L1_L2.png>
 File: ../images/../images/plots/plot_eM_pos_W1_W2.png Graphic file (type bmp)
 <../images/../images/plots/plot_eM_pos_W1_W2.png>
- [41
+ [42
 
 ]
 File: ../images/../images/plots/plot_eM_pos_Q1_Q2.png Graphic file (type bmp)
 <../images/../images/plots/plot_eM_pos_Q1_Q2.png>
 File: ../images/../images/plots/plot_eM_pos_P1_P2.png Graphic file (type bmp)
 <../images/../images/plots/plot_eM_pos_P1_P2.png>
- [42
 
-])
-(slides/discussion.tex [43
+[43
 
 ] [44
+
+] [45
+
+]) (slides/references.tex
+File: beamericonarticle.pdf Graphic file (type pdf)
+<use beamericonarticle.pdf>
+LaTeX Font Info:    Font shape `TU/FiraSans(0)/b/n' will be
+(Font)              scaled to size 6.0pt on input line 17.
+LaTeX Font Info:    Font shape `U/bboldx/m/n' will be
+(Font)              scaled to size 9.0pt on input line 17.
+LaTeX Font Info:    Font shape `U/bboldx/m/n' will be
+(Font)              scaled to size 6.0pt on input line 17.
+LaTeX Font Info:    Font shape `U/cmsy/b/n' will be
+(Font)              scaled to size 9.0pt on input line 17.
+LaTeX Font Info:    Font shape `U/cmsy/b/n' will be
+(Font)              scaled to size 6.0pt on input line 17.
+LaTeX Font Info:    Font shape `TU/FiraSans(0)/m/n' will be
+(Font)              scaled to size 6.0pt on input line 17.
+LaTeX Font Info:    Font shape `TU/FiraSans(0)/m/it' will be
+(Font)              scaled to size 9.0pt on input line 17.
+LaTeX Font Info:    Font shape `TU/FiraSans(0)/m/it' will be
+(Font)              scaled to size 6.0pt on input line 17.
+File: beamericonarticle.pdf Graphic file (type pdf)
+<use beamericonarticle.pdf>
+File: beamericonarticle.pdf Graphic file (type pdf)
+<use beamericonarticle.pdf>
+File: beamericonarticle.pdf Graphic file (type pdf)
+<use beamericonarticle.pdf>
+File: beamericonarticle.pdf Graphic file (type pdf)
+<use beamericonarticle.pdf>
+File: beamericonarticle.pdf Graphic file (type pdf)
+<use beamericonarticle.pdf>
+File: beamericonarticle.pdf Graphic file (type pdf)
+<use beamericonarticle.pdf>
+File: beamericonarticle.pdf Graphic file (type pdf)
+<use beamericonarticle.pdf>
+File: beamericonarticle.pdf Graphic file (type pdf)
+<use beamericonarticle.pdf>
+File: beamericonarticle.pdf Graphic file (type pdf)
+<use beamericonarticle.pdf>
+File: beamericonarticle.pdf Graphic file (type pdf)
+<use beamericonarticle.pdf>
+File: beamericonarticle.pdf Graphic file (type pdf)
+<use beamericonarticle.pdf>
+File: beamericonarticle.pdf Graphic file (type pdf)
+<use beamericonarticle.pdf>
+File: beamericonarticle.pdf Graphic file (type pdf)
+<use beamericonarticle.pdf>
+File: beamericonarticle.pdf Graphic file (type pdf)
+<use beamericonarticle.pdf>
+ [46
+
+] [47
+
+
+] [48
+
+
+] [49
+
+
+] [50
+
+
+])
+(slides/discussion.tex [51
+
+] [52
 
 ])
 \tf@nav=\write8
@@ -2504,7 +2593,7 @@ L3 programming layer <2020/03/25>
 LaTeX Warning: There were undefined references.
 
 Package rerunfilecheck Info: File `slides.out' has not changed.
-(rerunfilecheck)             Checksum: B7AF52E8332F3B6B1E7227E4228012D7;2102.
+(rerunfilecheck)             Checksum: 2E4494C5C3E639AEC612709C8C246AB6;2448.
 
 Package biblatex Warning: Please (re)run Biber on the file:
 (biblatex)                slides
@@ -2515,12 +2604,12 @@ Package logreq Info: Writing requests to 'slides.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 49476 strings out of 409617
- 1173825 string characters out of 5774013
- 2124038 words of memory out of 5000000
- 70601 multiletter control sequences out of 15000+600000
- 563830 words of font info for 138 fonts, out of 8000000 for 9000
+ 49717 strings out of 409617
+ 1179782 string characters out of 5774013
+ 2134821 words of memory out of 5000000
+ 70821 multiletter control sequences out of 15000+600000
+ 567961 words of font info for 161 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  128i,16n,149p,1939b,5569s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on slides.pdf (44 pages).
+Output written on slides.pdf (52 pages).

@@ -249,6 +249,47 @@
       \verb 10.5539/ijef.v11n8p35
       \endverb
     \endentry
+    \entry{okano_development_2015}{article}{}
+      \name{author}{4}{}{%
+        {{hash=2aa1b768aa007ea31ec1e9f75c07b0b1}{%
+           family={Okano},
+           familyi={O\bibinitperiod},
+           given={Mitsuhiro},
+           giveni={M\bibinitperiod}}}%
+        {{hash=6ae4760a3a4b3dabf60b8d1679e41577}{%
+           family={Ida},
+           familyi={I\bibinitperiod},
+           given={Daisuke},
+           giveni={D\bibinitperiod}}}%
+        {{hash=5c6890261bed617dfaad2156e608d034}{%
+           family={Kitano},
+           familyi={K\bibinitperiod},
+           given={Shigeto},
+           giveni={S\bibinitperiod}}}%
+        {{hash=3150f366a99c9722f5fac6f6ab493a8c}{%
+           family={Matsubayashi},
+           familyi={M\bibinitperiod},
+           given={Yoichi},
+           giveni={Y\bibinitperiod}}}%
+      }
+      \strng{namehash}{0548341df35d106bb6f2e2a89cc1d42b}
+      \strng{fullhash}{cc12cc69fac46c2521aa70c2dac31519}
+      \strng{bibnamehash}{cc12cc69fac46c2521aa70c2dac31519}
+      \strng{authorbibnamehash}{cc12cc69fac46c2521aa70c2dac31519}
+      \strng{authornamehash}{0548341df35d106bb6f2e2a89cc1d42b}
+      \strng{authorfullhash}{cc12cc69fac46c2521aa70c2dac31519}
+      \field{sortinit}{O}
+      \field{sortinithash}{2cd7140a07aea5341f9e2771efe90aae}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{{APIR} Discussion Paper Series}
+      \field{month}{4}
+      \field{title}{Development of a Regional {DSGE} Model in Japan: Empirical Evidence of Economic Stagnation in the Kansai Economy}
+      \field{year}{2015}
+      \field{dateera}{ce}
+    \endentry
     \entry{osterno_uma_2022}{inproceedings}{}
       \name{author}{5}{}{%
         {{hash=8e26cb06a81fc072a431399deea207e2}{%
@@ -360,6 +401,69 @@
       \endverb
       \verb{url}
       \verb https://sites.google.com/a/macalester.edu/solis-garcia/home/teaching/ucb-macro-modeling-course
+      \endverb
+    \endentry
+    \entry{tamegawa_two-region_2012}{article}{}
+      \name{author}{1}{}{%
+        {{hash=d628163a0f28d92a047e4e6fd195ec2a}{%
+           family={Tamegawa},
+           familyi={T\bibinitperiod},
+           given={Kenichi},
+           giveni={K\bibinitperiod}}}%
+      }
+      \strng{namehash}{d628163a0f28d92a047e4e6fd195ec2a}
+      \strng{fullhash}{d628163a0f28d92a047e4e6fd195ec2a}
+      \strng{bibnamehash}{d628163a0f28d92a047e4e6fd195ec2a}
+      \strng{authorbibnamehash}{d628163a0f28d92a047e4e6fd195ec2a}
+      \strng{authornamehash}{d628163a0f28d92a047e4e6fd195ec2a}
+      \strng{authorfullhash}{d628163a0f28d92a047e4e6fd195ec2a}
+      \field{extraname}{1}
+      \field{sortinit}{T}
+      \field{sortinithash}{9af77f0292593c26bde9a56e688eaee9}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{day}{13}
+      \field{journaltitle}{Review of Regional Studies}
+      \field{month}{12}
+      \field{title}{Two-Region {DSGE} Analysis of Regionally Targeted Fiscal Policy}
+      \field{volume}{42}
+      \field{year}{2012}
+      \field{dateera}{ce}
+      \verb{doi}
+      \verb 10.52324/001c.8103
+      \endverb
+    \endentry
+    \entry{tamegawa_constructing_2013}{article}{}
+      \name{author}{1}{}{%
+        {{hash=d628163a0f28d92a047e4e6fd195ec2a}{%
+           family={Tamegawa},
+           familyi={T\bibinitperiod},
+           given={Kenichi},
+           giveni={K\bibinitperiod}}}%
+      }
+      \strng{namehash}{d628163a0f28d92a047e4e6fd195ec2a}
+      \strng{fullhash}{d628163a0f28d92a047e4e6fd195ec2a}
+      \strng{bibnamehash}{d628163a0f28d92a047e4e6fd195ec2a}
+      \strng{authorbibnamehash}{d628163a0f28d92a047e4e6fd195ec2a}
+      \strng{authornamehash}{d628163a0f28d92a047e4e6fd195ec2a}
+      \strng{authorfullhash}{d628163a0f28d92a047e4e6fd195ec2a}
+      \field{extraname}{2}
+      \field{sortinit}{T}
+      \field{sortinithash}{9af77f0292593c26bde9a56e688eaee9}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{day}{11}
+      \field{journaltitle}{{ISRN} Economics}
+      \field{month}{3}
+      \field{title}{Constructing a Small-Region {DSGE} Model}
+      \field{year}{2013}
+      \field{dateera}{ce}
+      \verb{doi}
+      \verb 10.1155/2013/825862
       \endverb
     \endentry
     \entry{taylor_discretion_1993}{article}{}

@@ -362,7 +362,7 @@ shocks;
      stderr sigmaM;
 end;
 % Execute stoch_simul
-stoch_simul(irf=40, order=1, qz_zero_threshold=1e-20)
+stoch_simul(irf=400, order=1, qz_zero_threshold=1e-20)
 % 1   2    3    4    5    6    7    8    9
   Yt  Y1t  Y2t  I1t  I2t  K1t  L1t  L2t  K2t  
   Rt  C1t  C2t  C11t C12t W1t  C21t C22t W2t
@@ -374,7 +374,7 @@ stoch_simul(irf=40, order=1, qz_zero_threshold=1e-20)
 % -------------------------------------------------- % 
 % path to save the PNG files:
 png_folder = 'C:\github\mastersthesis\images\plots\';
-t_vector = 1:40;
+t_vector = 1:400;
 % -------------------------------------------------- % 
 % SAVE SINGLE IRFs IN PNG                            %
 % -------------------------------------------------- % 
@@ -454,6 +454,7 @@ grid on;
 % -------------------------------------------------- % 
 variables = {C1t_e_M, C2t_e_M, I1t_e_M, I2t_e_M, Y1t_e_M, Y2t_e_M, K1t_e_M, K2t_e_M, L1t_e_M, L2t_e_M, W1t_e_M, W2t_e_M, Q1t_e_M, Q2t_e_M, P1t_e_M, P2t_e_M};
 variable_names = {'C1', 'C2', 'I1', 'I2', 'Y1', 'Y2', 'K1', 'K2', 'L1', 'L2', 'W1', 'W2', 'Q1', 'Q2', 'P1', 'P2'};
+region_names = {'São Paulo', 'Rest of Brazil'};
 pairs = {[1, 2], [3, 4], [5, 6], [7, 8], [9, 10], [11, 12], [13, 14], [15, 16]}; % Pairs: {C1, C2}, {I1, I2}, {Y1, Y2};
 ynames = {'Consumption', 'Investment', 'Production', 'Capital', 'Labor', 'Wages', 'Consumer Price Level', 'Price Level'};
 for p = 1:length(pairs)
@@ -477,7 +478,8 @@ for p = 1:length(pairs)
     ylabel(''); % ylabel(ynames{p}); % Personalized y-axis label
     title(''); % title(sprintf(ynames{p}, 'IRF')); % Personalized title
     % Add a legend to distinguish between the two variables
-    legend(line_handles, variable_names(pair_indices));
+    % legend(line_handles, variable_names(pair_indices));
+      legend(line_handles, region_names);
     % Grid on for clarity
     grid on;
     
