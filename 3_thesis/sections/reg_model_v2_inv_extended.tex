@@ -1618,9 +1618,9 @@ Log-linearize \ref{ext-mod:reg-capital-euler-equation}:
 	& \frac{P_{\eta t} C_{\eta t}^{1-\sigma}}{Q_{\eta t}} \mathbb{E}_t \left\{ \frac{\te[t+1]}{P_{\eta, t+1} C_{\eta, t+1}^{1-\sigma}} \right\} = \beta \left[ (1-\delta) + \mathbb{E}_t \left\{ \frac{R_{K,t+1}}{P_{\eta, t+1}} \right\} \right] \implies \nonumber \\
 	& \frac{P_{\eta} C_{\eta}^{1-\sigma}}{\te[]} \cdot \frac{\te[]}{P_{\eta} C_{\eta}^{1-\sigma}} (1 + \hat{P}_{\eta t} + (1 -\sigma) \hat{C}_{\eta t} - \hat{\mathscr{E}}_{\eta t} + \nonumber \\ 
 	& \qquad + \E \{\hat{\mathscr{E}}_{\eta, t+1} - \hat{P}_{\eta, t+1} - (1 -\sigma) \hat{C}_{\eta, t+1}\}) = \nonumber \\
-	& \qquad = \beta \left[ (1-\delta) + \frac{R_{}}{P_{\eta}} \mathbb{E}_t \left\{ 1 + \hat{R}_{K, t+1} -\hat{P}_{\eta, t+1} \right\} \right] \implies \nonumber \\
+	& \qquad = \beta \left[ (1-\delta) + \frac{R_{}}{P_{\eta}} \mathbb{E}_t \left\{ 1 + \hat{R}_{t+1} -\hat{P}_{\eta, t+1} \right\} \right] \implies \nonumber \\
 	& \E \left\{ \hat{\mathscr{E}}_{\eta, t+1} - \hat{P}_{\eta, t+1}  - (1 -\sigma) \hat{C}_{\eta, t+1} \right\} - (\hat{\mathscr{E}}_{\eta t} - \hat{P}_{\eta t} - (1 -\sigma) \hat{C}_{\eta t}) = \nonumber \\
-	& \qquad = \beta R_{} \mathbb{E}_t \left\{ \hat{R}_{K, t+1} - \hat{P}_{\eta, t+1} \right\} \label{ext-mod:reg-ll-capital-euler-equation} \\
+	& \qquad = \beta R_{} \mathbb{E}_t \left\{ \hat{R}_{t+1} - \hat{P}_{\eta, t+1} \right\} \label{ext-mod:reg-ll-capital-euler-equation} \\
 	& \qquad \text{where: } R_{} = \frac{R_{}}{P_{}} \label{ext-mod:reg-rk}
 \end{align}
 	
@@ -1716,14 +1716,14 @@ Substitute \ref{ext-mod:reg-ll-market-clearing-condition-Lt} and \ref{ext-mod:re
 	Log-linearize \ref{ext-mod:reg-int-good-firm-FOC-Kt}:
 	\begin{alignat}{2}
 		K_{\eta jt} &= {\alpha_{\eta}} Y_{\eta jt} \frac{\Lambda_{\eta t}}{R_{t}} &\implies \tag{\ref{ext-mod:reg-int-good-firm-FOC-Kt}} \\
-		K_{\eta j} (1+ \hat{K}_{\eta jt}) &= {\alpha_{\eta}} Y_{\eta j} \frac{\Lambda_{\eta}}{R_{}} (1+ \hat{Y}_{\eta jt} + \hat{\Lambda}_{\eta t} - \hat{R}_{K t}) \quad &\implies \nonumber \\
-		\hat{K}_{\eta jt} &= \hat{Y}_{\eta jt} + \hat{\Lambda}_{\eta t} - \hat{R}_{K t} \nonumber
+		K_{\eta j} (1+ \hat{K}_{\eta jt}) &= {\alpha_{\eta}} Y_{\eta j} \frac{\Lambda_{\eta}}{R_{}} (1+ \hat{Y}_{\eta jt} + \hat{\Lambda}_{\eta t} - \hat{R}_{t}) \quad &\implies \nonumber \\
+		\hat{K}_{\eta jt} &= \hat{Y}_{\eta jt} + \hat{\Lambda}_{\eta t} - \hat{R}_{t} \nonumber
 	\end{alignat}
 	
 	Integrate both sides and then substitute \ref{ext-mod:reg-ll-capital-clearing-condition} and \ref{ext-mod:reg-ll-final-goods-firm-bundle-rule}:
 	\begin{alignat}{2}
-		\int_{0}^{1} \hat{K}_{\eta jt} \dif j &= \int_{0}^{1} \left( \hat{Y}_{\eta jt} + \hat{\Lambda}_{\eta t} - \hat{R}_{K t} \right) \dif j \quad &\implies \nonumber \\
-		\hat{K}_{\eta t} &= \hat{Y}_{\eta t} + \hat{\Lambda}_{\eta t} - \hat{R}_{K t} \label{ext-mod:reg-ll-int-good-firm-FOC-Kt}
+		\int_{0}^{1} \hat{K}_{\eta jt} \dif j &= \int_{0}^{1} \left( \hat{Y}_{\eta jt} + \hat{\Lambda}_{\eta t} - \hat{R}_{t} \right) \dif j \quad &\implies \nonumber \\
+		\hat{K}_{\eta t} &= \hat{Y}_{\eta t} + \hat{\Lambda}_{\eta t} - \hat{R}_{t} \label{ext-mod:reg-ll-int-good-firm-FOC-Kt}
 	\end{alignat}
 	
 	\subsubsection*{Labor Demand}
@@ -1744,8 +1744,8 @@ Substitute \ref{ext-mod:reg-ll-market-clearing-condition-Lt} and \ref{ext-mod:re
 	
 	Subtract \ref{ext-mod:reg-ll-int-good-firm-FOC-Lt} from \ref{ext-mod:reg-ll-int-good-firm-FOC-Kt}:
 	\begin{align}
-		\hat{K}_{\eta t} - \hat{L}_{\eta t} &= \hat{Y}_{\eta t} + \hat{\Lambda}_{\eta t} - \hat{R}_{K t} - (\hat{Y}_{\eta t} + \hat{\Lambda}_{\eta t} - \hat{W}_{\eta t}) \implies \nonumber \\
-		\hat{K}_{\eta t} - \hat{L}_{\eta t} &= \hat{W}_{\eta t} - \hat{R}_{K t} \label{ext-mod:reg-ll-int-good-firm-TMRS}
+		\hat{K}_{\eta t} - \hat{L}_{\eta t} &= \hat{Y}_{\eta t} + \hat{\Lambda}_{\eta t} - \hat{R}_{t} - (\hat{Y}_{\eta t} + \hat{\Lambda}_{\eta t} - \hat{W}_{\eta t}) \implies \nonumber \\
+		\hat{K}_{\eta t} - \hat{L}_{\eta t} &= \hat{W}_{\eta t} - \hat{R}_{t} \label{ext-mod:reg-ll-int-good-firm-TMRS}
 	\end{align}
 	
 	Equation \ref{ext-mod:reg-ll-int-good-firm-TMRS} is the log-linearized version of \ref{ext-mod:reg-int-good-firm-TMRS}.
@@ -1757,7 +1757,7 @@ Substitute \ref{ext-mod:reg-ll-market-clearing-condition-Lt} and \ref{ext-mod:re
 	Log-linearize \ref{ext-mod:reg-int-good-firm-TMRS} and then apply \ref{ext-mod:reg-ll-market-clearing-condition-Lt} and \ref{ext-mod:reg-ll-capital-clearing-condition}:
 	\begin{align}
 		\frac{K_{\eta jt}}{L_{\eta jt}} &= \left( \frac{{\alpha_{\eta}}}{1-\alpha_{\eta}} \right) \frac{W_{\eta t}}{R_{t}} \tag{\ref{ext-mod:reg-int-good-firm-TMRS}} \\
-		\hat{K}_{\eta t} - \hat{L}_{\eta t} &= \hat{W}_{\eta t} - \hat{R}_{K t} \label{ext-mod:reg-ll-int-good-firm-TMRS}
+		\hat{K}_{\eta t} - \hat{L}_{\eta t} &= \hat{W}_{\eta t} - \hat{R}_{t} \label{ext-mod:reg-ll-int-good-firm-TMRS}
 	\end{align}
 
 \subsubsection*{Marginal Cost}
@@ -1765,14 +1765,14 @@ Substitute \ref{ext-mod:reg-ll-market-clearing-condition-Lt} and \ref{ext-mod:re
 Log-linearize \ref{ext-mod:reg-int-good-firm-MC-2}:
 \begin{align}
 	\Lambda_{\eta t} &= \frac{1}{Z_{A\eta t}} \left( \frac{R_{t}}{{\alpha_{\eta}}} \right)^{{\alpha_{\eta}}} \left( \frac{W_{\eta t}}{1-\alpha_{\eta}} \right)^{1-\alpha_{\eta}} \tag{\ref{ext-mod:reg-int-good-firm-MC-2}} \implies \\
-	\hat{\Lambda}_{\eta t} &= {\alpha_{\eta}} \hat{R}_{Kt} + (1- {\alpha_{\eta}}) \hat{W}_{\eta t} - \hat{Z}_{A\eta t} \label{ext-mod:reg-ll-int-good-firm-MC-2}
+	\hat{\Lambda}_{\eta t} &= {\alpha_{\eta}} \hat{R}_{t} + (1- {\alpha_{\eta}}) \hat{W}_{\eta t} - \hat{Z}_{A\eta t} \label{ext-mod:reg-ll-int-good-firm-MC-2}
 \end{align}
 
 Substitute \ref{ext-mod:reg-hat-real-marginal-cost} in \ref{ext-mod:reg-ll-int-good-firm-MC-2}:
 \begin{alignat}{2}
-	\hat{\Lambda}_{\eta t} &= {\alpha_{\eta}} \hat{R}_{Kt} + (1- {\alpha_{\eta}}) \hat{W}_{\eta t} - \hat{Z}_{A\eta t} &\implies \nonumber \\
-	\hat{P}_{\eta t} + \hat{\lambda}_{\eta t} &= {\alpha_{\eta}} \hat{R}_{Kt} + (1- {\alpha_{\eta}}) \hat{W}_{\eta t} - \hat{Z}_{A\eta t} &\implies \nonumber \\
-	\hat{\lambda}_{\eta t} &= {\alpha_{\eta}} \hat{R}_{Kt} + (1- {\alpha_{\eta}}) \hat{W}_{\eta t} - \hat{Z}_{A\eta t} - \hat{P}_{\eta t} \label{ext-mod:reg-ll-int-good-firm-MC-3}
+	\hat{\Lambda}_{\eta t} &= {\alpha_{\eta}} \hat{R}_{t} + (1- {\alpha_{\eta}}) \hat{W}_{\eta t} - \hat{Z}_{A\eta t} &\implies \nonumber \\
+	\hat{P}_{\eta t} + \hat{\lambda}_{\eta t} &= {\alpha_{\eta}} \hat{R}_{t} + (1- {\alpha_{\eta}}) \hat{W}_{\eta t} - \hat{Z}_{A\eta t} &\implies \nonumber \\
+	\hat{\lambda}_{\eta t} &= {\alpha_{\eta}} \hat{R}_{t} + (1- {\alpha_{\eta}}) \hat{W}_{\eta t} - \hat{Z}_{A\eta t} - \hat{P}_{\eta t} \label{ext-mod:reg-ll-int-good-firm-MC-3}
 \end{alignat}
 
 \begin{comment}
@@ -1782,8 +1782,8 @@ Substitute \ref{ext-mod:reg-hat-real-marginal-cost} in \ref{ext-mod:reg-ll-int-g
 Log-linearize \ref{ext-mod:reg-int-good-firm-MC-2}:
 \begin{alignat}{2}
 	& \Lambda_{\eta t} = Z_{A\eta t}^{-1} \frac{R_{t}^{{\alpha_{\eta}}} W_{\eta t}^{1-\alpha_{\eta}}}{{\alpha_{\eta}}^{{\alpha_{\eta}}} (1-\alpha_{\eta})^{1-\alpha_{\eta}}} \implies \tag{\ref{ext-mod:reg-int-good-firm-MC-2}} \\
-	& \Lambda (1+ \hat{\Lambda}_{\eta t}) = \nonumber \\ & \qquad = \frac{1}{Z_{A\eta}} \left( \frac{R_{}}{{\alpha_{\eta}}} \right)^{{\alpha_{\eta}}} \left( \frac{W}{1-\alpha_{\eta}} \right)^{1-\alpha_{\eta}} (1- \hat{Z}_{A\eta t} + {\alpha_{\eta}} \hat{R}_{Kt} + (1- {\alpha_{\eta}}) \hat{W}_{\eta t} ) \implies \nonumber \\
-	& \hat{\Lambda}_{\eta t} = {\alpha_{\eta}} \hat{R}_{Kt} + (1- {\alpha_{\eta}}) \hat{W}_{\eta t} - \hat{Z}_{A\eta t} \label{ext-mod:reg-ll-int-good-firm-MC-2}
+	& \Lambda (1+ \hat{\Lambda}_{\eta t}) = \nonumber \\ & \qquad = \frac{1}{Z_{A\eta}} \left( \frac{R_{}}{{\alpha_{\eta}}} \right)^{{\alpha_{\eta}}} \left( \frac{W}{1-\alpha_{\eta}} \right)^{1-\alpha_{\eta}} (1- \hat{Z}_{A\eta t} + {\alpha_{\eta}} \hat{R}_{t} + (1- {\alpha_{\eta}}) \hat{W}_{\eta t} ) \implies \nonumber \\
+	& \hat{\Lambda}_{\eta t} = {\alpha_{\eta}} \hat{R}_{t} + (1- {\alpha_{\eta}}) \hat{W}_{\eta t} - \hat{Z}_{A\eta t} \label{ext-mod:reg-ll-int-good-firm-MC-2}
 \end{alignat}
 	
 \end{comment}
@@ -1819,7 +1819,7 @@ Log-linearize \ref{ext-mod:reg-int-good-firm-MC-2}:
 	
 	Subtract \ref{ext-mod:reg-ll-int-good-firm-TMRS} of one region from the other:
 	\begin{align}
-		(\hat{K}_{1t} - \hat{L}_{1t}) - (\hat{K}_{2t} - \hat{L}_{2t}) &= (\hat{W}_{\eta t} - \hat{R}_{K t}) - (\hat{W}_{\eta t} - \hat{R}_{K t}) \implies \nonumber \\
+		(\hat{K}_{1t} - \hat{L}_{1t}) - (\hat{K}_{2t} - \hat{L}_{2t}) &= (\hat{W}_{\eta t} - \hat{R}_{t}) - (\hat{W}_{\eta t} - \hat{R}_{t}) \implies \nonumber \\
 		\hat{K}_{1t} - \hat{L}_{1t} &= \hat{K}_{2t} - \hat{L}_{2t} \label{ext-mod:reg-ll-int-good-firm-TMRS-b}
 	\end{align}
 	
@@ -2131,12 +2131,12 @@ The log-linear model is a square system of 30 variables and equations, summarize
 			
 			\item Technical and Economic Marginal Rates of Substitution % (TMRS and EMRS)
 			\begin{align}
-				\hat{K}_{\eta t} - \hat{L}_{\eta t} &= \hat{W}_{\eta t} - \hat{R}_{K t} \tag{\ref{ext-mod:reg-ll-int-good-firm-TMRS}}
+				\hat{K}_{\eta t} - \hat{L}_{\eta t} &= \hat{W}_{\eta t} - \hat{R}_{t} \tag{\ref{ext-mod:reg-ll-int-good-firm-TMRS}}
 			\end{align}
 			
 			\item Marginal Cost
 			\begin{align}
-				\hat{\lambda}_{\eta t} &= {\alpha_{\eta}} \hat{R}_{Kt} + (1- {\alpha_{\eta}}) \hat{W}_{\eta t} - \hat{Z}_{A\eta t} - \hat{P}_{\eta t} \tag{\ref{ext-mod:reg-ll-int-good-firm-MC-3}}
+				\hat{\lambda}_{\eta t} &= {\alpha_{\eta}} \hat{R}_{t} + (1- {\alpha_{\eta}}) \hat{W}_{\eta t} - \hat{Z}_{A\eta t} - \hat{P}_{\eta t} \tag{\ref{ext-mod:reg-ll-int-good-firm-MC-3}}
 			\end{align}
 			
 			\item Monetary Policy
@@ -2375,7 +2375,7 @@ As it stands, the model has more forward-looking variables than eigenvalues grea
 			\item Euler equation for the capital return
 			\begin{alignat}{2}
 				\E \left\{ \hat{\mathscr{E}}_{\eta, t+1} - \hat{P}_{\eta, t+1}  - (1 -\sigma) \hat{C}_{\eta, t+1} \right\} - (\hat{\mathscr{E}}_{\eta t} - \hat{P}_{\eta t} - (1 -\sigma) \hat{C}_{\eta t}) = \nonumber \\
-				\qquad = \beta \frac{R_{}}{P_{\eta}} \mathbb{E}_t \left\{ \hat{R}_{K, t+1} - \hat{P}_{\eta, t+1} \right\}
+				\qquad = \beta \frac{R_{}}{P_{\eta}} \mathbb{E}_t \left\{ \hat{R}_{t+1} - \hat{P}_{\eta, t+1} \right\}
 			\end{alignat}
 			
 			\item Production Function
@@ -2385,12 +2385,12 @@ As it stands, the model has more forward-looking variables than eigenvalues grea
 			
 			\item Marginal Rates of Substitution of Factors
 			\begin{align}
-				\hat{K}_{\eta t} - \hat{L}_{\eta t} = \hat{W}_{\eta t} - \hat{R}_{K t}
+				\hat{K}_{\eta t} - \hat{L}_{\eta t} = \hat{W}_{\eta t} - \hat{R}_{t}
 			\end{align}
 			
 			\item Marginal Cost
 			\begin{alignat}{2}
-				\hat{\lambda}_{\eta t} = {\alpha_{\eta}} \hat{R}_{Kt} + (1- {\alpha_{\eta}}) \hat{W}_{\eta t} - \hat{Z}_{A\eta t} - \hat{P}_{\eta t}
+				\hat{\lambda}_{\eta t} = {\alpha_{\eta}} \hat{R}_{t} + (1- {\alpha_{\eta}}) \hat{W}_{\eta t} - \hat{Z}_{A\eta t} - \hat{P}_{\eta t}
 			\end{alignat}
 			
 			\item Productivity Shock

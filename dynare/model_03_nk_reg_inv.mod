@@ -481,7 +481,7 @@ shocks;
 end;
 
 % Execute stoch_simul
-stoch_simul(irf=400, order=1, qz_zero_threshold=1e-20)
+stoch_simul(irf=40, order=1, qz_zero_threshold=1e-20)
 
 % 1   2    3    4    5    6    7    8    9
   Yt  Y1t  Y2t  I1t  I2t  K1t  L1t  L2t  K2t  
@@ -497,7 +497,7 @@ stoch_simul(irf=400, order=1, qz_zero_threshold=1e-20)
 % path to save the PNG files:
 png_folder = 'C:\github\mastersthesis\images\plots\';
 
-t_vector = 1:400;
+t_vector = 1:40;
 
 % -------------------------------------------------- % 
 % SAVE SINGLE IRFs IN PNG                            %

@@ -467,13 +467,13 @@ oo_.dr.eigval = check(M_,options_,oo_);
 %
 M_.exo_det_length = 0;
 M_.Sigma_e(3, 3) = (M_.params(24))^2;
-options_.irf = 400;
+options_.irf = 40;
 options_.order = 1;
 options_.qz_zero_threshold = 1e-20;
 var_list_ = {'Yt';'Y1t';'Y2t';'I1t';'I2t';'K1t';'L1t';'L2t';'K2t';'Rt';'C1t';'C2t';'C11t';'C12t';'W1t';'C21t';'C22t';'W2t';'pit';'pi1t';'pi2t';'Q1t';'P1t';'P2t';'Q2t';'lambda1t';'lambda2t';'ZMt';'ZA1t';'ZA2t'};
 [info, oo_, options_, M_] = stoch_simul(M_, options_, oo_, var_list_);
 png_folder = 'C:\github\mastersthesis\images\plots\';
-t_vector = 1:400;
+t_vector = 1:40;
 var_vector = {Yt_e_M, Y1t_e_M, Y2t_e_M, I1t_e_M, I2t_e_M, K1t_e_M, L1t_e_M, L2t_e_M, K2t_e_M, Rt_e_M, C1t_e_M, C2t_e_M, C11t_e_M, C12t_e_M, W1t_e_M, C21t_e_M, C22t_e_M, W2t_e_M, pit_e_M, pi1t_e_M, pi2t_e_M, Q1t_e_M, P1t_e_M, P2t_e_M, Q2t_e_M, lambda1t_e_M, lambda2t_e_M, ZMt_e_M, ZA1t_e_M, ZA2t_e_M};
 var_names = {'Yt', 'Y1t', 'Y2t', 'I1t', 'I2t', 'K1t', 'L1t', 'L2t', 'K2t', 'Rt', 'C1t', 'C2t', 'C11t', 'C12t', 'W1t', 'C21t', 'C22t', 'W2t', 'pit', 'pi1t', 'pi2t', 'Q1t', 'P1t', 'P2t', 'Q2t', 'lambda1t', 'lambda2t', 'ZMt', 'ZA1t', 'ZA2t'};
 for i = 1:length(var_vector)

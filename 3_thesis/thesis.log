@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999995 (MiKTeX 23.12) (preloaded format=xelatex 2024.1.18)  22 FEB 2024 18:30
+This is XeTeX, Version 3.141592653-2.6-0.999995 (MiKTeX 23.12) (preloaded format=xelatex 2024.1.18)  6 MAR 2024 23:40
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2377,7 +2377,7 @@ Package logreq Info: Writing requests to 'thesis.run.xml'.
 Here is how much of TeX's memory you used:
  50076 strings out of 409617
  1034490 string characters out of 5774013
- 2052177 words of memory out of 5000000
+ 2051177 words of memory out of 5000000
  71251 multiletter control sequences out of 15000+600000
  668401 words of font info for 309 fonts, out of 8000000 for 9000
  1350 hyphenation exceptions out of 8191
