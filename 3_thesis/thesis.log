@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999995 (MiKTeX 23.12) (preloaded format=xelatex 2024.1.18)  6 MAR 2024 23:40
+This is XeTeX, Version 3.141592653-2.6-0.999995 (MiKTeX 23.12) (preloaded format=xelatex 2024.1.18)  20 MAR 2024 17:45
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1952,7 +1952,30 @@ File: ../images/../images/marca_dagua_ufpr.jpg Graphic file (type bmp)
  [1
 
 ]) (pre/inside_cover.tex [2])
-(pre/catalog_record.tex) (pre/approval_form.tex [3]) (pre/dedication.tex
+(pre/catalog_record.tex
+File: ../images/../docs/ficha_catalografica.pdf Graphic file (type pdf)
+<use ../images/../docs/ficha_catalografica.pdf>
+
+Overfull \hbox (52.67786pt too wide) in paragraph at lines 15--16
+ [][] 
+ []
+
+) (pre/approval_form.tex
+Overfull \vbox (29.76233pt too high) has occurred while \output is active []
+
+
+[3]
+File: ../images/../docs/termo_de_aprovacao.pdf Graphic file (type pdf)
+<use ../images/../docs/termo_de_aprovacao.pdf>
+
+Overfull \hbox (52.6779pt too wide) in paragraph at lines 15--16
+ [][] 
+ []
+
+) (pre/dedication.tex
+Overfull \vbox (29.76237pt too high) has occurred while \output is active []
+
+
 [4]) (pre/acknowledgments.tex [5]) (pre/epigraph.tex [6]
 Excluding 'comment' comment.) (pre/abstract.tex [7]
 LaTeX Font Info:    Trying to load font information for OT1+ppl on input line 2
@@ -2362,23 +2385,15 @@ L3 programming layer <2020/03/25>
 LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 1.93356pt have occurred.
 
-
-LaTeX Warning: There were undefined references.
-
-
-Package biblatex Warning: Please (re)run Biber on the file:
-(biblatex)                thesis
-(biblatex)                and rerun LaTeX afterwards.
-
 Package logreq Info: Writing requests to 'thesis.run.xml'.
 \openout1 = `thesis.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 50076 strings out of 409617
- 1034490 string characters out of 5774013
- 2051177 words of memory out of 5000000
- 71251 multiletter control sequences out of 15000+600000
+ 50108 strings out of 409617
+ 1035607 string characters out of 5774013
+ 2052187 words of memory out of 5000000
+ 71267 multiletter control sequences out of 15000+600000
  668401 words of font info for 309 fonts, out of 8000000 for 9000
  1350 hyphenation exceptions out of 8191
  123i,26n,131p,1536b,5802s stack positions out of 10000i,1000n,20000p,200000b,200000s
