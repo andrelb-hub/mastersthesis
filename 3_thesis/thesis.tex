@@ -47,7 +47,24 @@
 % HYPHENATION
 % --------------------------------------------------
 
-\hyphenation{ins-ti-tu-i-ções pri-mei-ra}
+\hyphenation{ins-ti-tu-i-ções pri-mei-ra re-qui-si-to}
+
+% --------------------------------------------------
+% ABSTRACT IN CAPITAL LETTER
+% --------------------------------------------------
+
+\makeatletter
+\renewenvironment{abstract}{%
+	\if@twocolumn
+	\section*{\abstractname}%
+	\else %% <- here I've removed \small
+	\begin{center}%
+		{\bfseries \MakeUppercase{\abstractname}\vspace{-.5em}\vspace{\z@}}%
+	\end{center}%
+	\quotation
+	\fi}
+{\if@twocolumn\else\endquotation\fi}
+\makeatother
 
 % --------------------------------------------------
 % MATH COMMANDS
