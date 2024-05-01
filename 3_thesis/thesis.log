@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999995 (MiKTeX 23.12) (preloaded format=xelatex 2024.1.18)  22 APR 2024 18:13
+This is XeTeX, Version 3.141592653-2.6-0.999995 (MiKTeX 23.12) (preloaded format=xelatex 2024.1.18)  29 APR 2024 22:02
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1977,12 +1977,12 @@ Overfull \vbox (29.76233pt too high) has occurred while \output is active []
 File: ../images/../docs/termo_de_aprovacao.pdf Graphic file (type pdf)
 <use ../images/../docs/termo_de_aprovacao.pdf>
 
-Overfull \hbox (52.6779pt too wide) in paragraph at lines 15--16
+Overfull \hbox (52.40486pt too wide) in paragraph at lines 15--16
  [][] 
  []
 
 ) (pre/dedication.tex
-Overfull \vbox (29.76237pt too high) has occurred while \output is active []
+Overfull \vbox (29.83055pt too high) has occurred while \output is active []
 
 
 [4]) (pre/acknowledgments.tex [5]) (pre/epigraph.tex [6]
