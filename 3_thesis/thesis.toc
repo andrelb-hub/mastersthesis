@@ -8,16 +8,16 @@
 \contentsline {section}{\numberline {3}Methodology}{20}{section.3}%
 \contentsline {subsection}{\numberline {3.1}Regional New Keynesian Model}{20}{subsection.3.1}%
 \contentsline {subsubsection}{\numberline {3.1.1}Regions}{21}{subsubsection.3.1.1}%
-\contentsline {subsubsection}{\numberline {3.1.2}Household}{22}{subsubsection.3.1.2}%
-\contentsline {subsubsection}{\numberline {3.1.3}Firms}{25}{subsubsection.3.1.3}%
+\contentsline {subsubsection}{\numberline {3.1.2}Household}{23}{subsubsection.3.1.2}%
+\contentsline {subsubsection}{\numberline {3.1.3}Firms}{24}{subsubsection.3.1.3}%
 \contentsline {subsubsection}{\numberline {3.1.4}Final-Goods Firm}{25}{subsubsection.3.1.4}%
-\contentsline {subsubsection}{\numberline {3.1.5}Intermediate-Goods Firms}{26}{subsubsection.3.1.5}%
-\contentsline {subsubsection}{\numberline {3.1.6}Final-Goods Firm, part II}{28}{subsubsection.3.1.6}%
+\contentsline {subsubsection}{\numberline {3.1.5}Intermediate-Goods Firms}{25}{subsubsection.3.1.5}%
+\contentsline {subsubsection}{\numberline {3.1.6}Final-Goods Firm, part II}{27}{subsubsection.3.1.6}%
 \contentsline {subsubsection}{\numberline {3.1.7}Regional Inflation}{28}{subsubsection.3.1.7}%
 \contentsline {subsubsection}{\numberline {3.1.8}Monetary Authority}{28}{subsubsection.3.1.8}%
 \contentsline {subsubsection}{\numberline {3.1.9}Stochastic Shocks}{29}{subsubsection.3.1.9}%
 \contentsline {subsubsection}{\numberline {3.1.10}Equilibrium Conditions}{29}{subsubsection.3.1.10}%
-\contentsline {subsection}{\numberline {3.2}Steady State}{30}{subsection.3.2}%
+\contentsline {subsection}{\numberline {3.2}Steady State}{29}{subsection.3.2}%
 \contentsline {subsubsection}{\numberline {3.2.1}Steady State Solution}{30}{subsubsection.3.2.1}%
 \contentsline {subsection}{\numberline {3.3}Log-linearization}{31}{subsection.3.3}%
 \contentsline {subsubsection}{\numberline {3.3.1}Eigenvalues and Forward Looking Variables}{33}{subsubsection.3.3.1}%

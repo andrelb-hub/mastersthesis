@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999995 (MiKTeX 23.12) (preloaded format=xelatex 2024.1.18)  12 MAY 2024 12:57
+This is XeTeX, Version 3.141592653-2.6-0.999995 (MiKTeX 23.12) (preloaded format=xelatex 2024.1.18)  12 MAY 2024 13:17
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2078,19 +2078,19 @@ LaTeX Font Info:    Font shape `U/msb/m/n' will be
 Excluding 'comment' comment. [21]
 File: ../images/../images/flowchart.jpg Graphic file (type bmp)
 <../images/../images/flowchart.jpg>
- Excluding 'comment' comment.
-Excluding 'comment' comment. [22] [23]
+ [22] Excluding 'comment' comment.
+Excluding 'comment' comment.
 LaTeX Font Info:    Trying to load font information for U+fplmbb on input line 
 203.
 
 (C:\Users\andre\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\ufplmbb.fd
 File: ufplmbb.fd 2003/10/30 Fontinst v1.914 font definitions for U/fplmbb.
 )
-Excluding 'comment' comment. Excluding 'comment' comment.
-Excluding 'comment' comment. [24] Excluding 'comment' comment. [25]
-Excluding 'comment' comment. Excluding 'comment' comment. [26]
-Excluding 'comment' comment. Excluding 'comment' comment. [27] [28]
-Excluding 'comment' comment.
+[23] Excluding 'comment' comment. Excluding 'comment' comment.
+Excluding 'comment' comment. [24] Excluding 'comment' comment.
+Excluding 'comment' comment. [25] Excluding 'comment' comment.
+Excluding 'comment' comment. [26] Excluding 'comment' comment. [27]
+Excluding 'comment' comment. [28]
 LaTeX Font Info:    Font shape `U/cmsy/m/n' will be
 (Font)              scaled to size 12.0pt on input line 623.
 LaTeX Font Info:    Font shape `U/cmsy/m/n' will be
@@ -2103,7 +2103,7 @@ LaTeX Font Info:    Font shape `U/cmsy/b/n' will be
 (Font)              scaled to size 9.0pt on input line 642.
 LaTeX Font Info:    Font shape `U/cmsy/b/n' will be
 (Font)              scaled to size 7.0pt on input line 642.
- [29] Excluding 'comment' comment.
+ Excluding 'comment' comment.
 LaTeX Font Info:    Font shape `U/cmsy/m/n' will be
 (Font)              scaled to size 10.0pt on input line 675.
 LaTeX Font Info:    Font shape `U/cmsy/m/n' will be
@@ -2116,7 +2116,7 @@ LaTeX Font Info:    Font shape `U/cmsy/b/n' will be
 (Font)              scaled to size 7.6pt on input line 675.
 LaTeX Font Info:    Font shape `U/cmsy/b/n' will be
 (Font)              scaled to size 6.0pt on input line 675.
- [30]
+ [29] [30]
 LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 7
 32.
 
@@ -2401,7 +2401,7 @@ Package logreq Info: Writing requests to 'thesis.run.xml'.
 Here is how much of TeX's memory you used:
  50113 strings out of 409617
  1035858 string characters out of 5774013
- 2052295 words of memory out of 5000000
+ 2051295 words of memory out of 5000000
  71273 multiletter control sequences out of 15000+600000
  665407 words of font info for 307 fonts, out of 8000000 for 9000
  1351 hyphenation exceptions out of 8191
