@@ -67,6 +67,50 @@
 \makeatother
 
 % --------------------------------------------------
+% LIST OF FIGURES, TABLES AND CONTENTS UPPERCASE
+% --------------------------------------------------
+
+\usepackage{tocloft}
+
+\renewcommand{\cfttoctitlefont}{\hfill\fontsize{12pt}{14pt}\selectfont\bfseries\MakeUppercase}
+\renewcommand{\cftaftertoctitle}{\hfill}
+
+\renewcommand{\cftloftitlefont}{\hfill\fontsize{12pt}{14pt}\selectfont\bfseries\MakeUppercase}
+\renewcommand{\cftafterloftitle}{\hfill}
+
+\renewcommand{\cftlottitlefont}{\hfill\fontsize{12pt}{14pt}\selectfont\bfseries\MakeUppercase}
+\renewcommand{\cftafterlottitle}{\hfill}
+
+\begin{comment}
+
+\makeatletter
+\renewcommand\listfigurename{\MakeUppercase{List of Figures}}
+\renewcommand\listtablename{\MakeUppercase{List of Tables}}
+\renewcommand\contentsname{\MakeUppercase{Contents}}
+
+\renewcommand\listoffigures{%
+	\setlength{\parskip}{1.5pt}
+	\@starttoc{lof}
+	\addtocontents{lof}{\vspace{0.5cm}}
+}
+
+\renewcommand\listoftables{%
+	\setlength{\parskip}{1.5pt}
+	\@starttoc{lot}
+	\addtocontents{lot}{\vspace{0.5cm}}
+}
+
+\renewcommand\tableofcontents{%
+	\setlength{\parskip}{1.5pt}
+	\@starttoc{toc}
+	\addtocontents{toc}{\vspace{0.5cm}}
+}
+\makeatother
+
+\end{comment}
+
+
+% --------------------------------------------------
 % MATH COMMANDS
 % --------------------------------------------------
 
