@@ -19,6 +19,98 @@
 
 \refsection{0}
   \datalist[entry]{nyt/global//global/global}
+    \entry{adjemian_dynare_2023}{report}{}
+      \name{author}{12}{}{%
+        {{hash=ada048152cc5e234c9e64d4a931c97f4}{%
+           family={Adjemian},
+           familyi={A\bibinitperiod},
+           given={Stéphane},
+           giveni={S\bibinitperiod}}}%
+        {{hash=fa46383a2410cac1a458f06691220935}{%
+           family={Bastani},
+           familyi={B\bibinitperiod},
+           given={Houtan},
+           giveni={H\bibinitperiod}}}%
+        {{hash=1ba573aa4bcb89cbc0c4a29555832851}{%
+           family={Juillard},
+           familyi={J\bibinitperiod},
+           given={Michel},
+           giveni={M\bibinitperiod}}}%
+        {{hash=698a0050163089ae47ed01c3980cc7a5}{%
+           family={Kankanamge},
+           familyi={K\bibinitperiod},
+           given={Sumudu},
+           giveni={S\bibinitperiod}}}%
+        {{hash=738870357e324dd711c6c402647ec4df}{%
+           family={Karamé},
+           familyi={K\bibinitperiod},
+           given={Frédéric},
+           giveni={F\bibinitperiod}}}%
+        {{hash=2b6523a9e2841a97eb939c263eaf25f6}{%
+           family={Maih},
+           familyi={M\bibinitperiod},
+           given={Junior},
+           giveni={J\bibinitperiod}}}%
+        {{hash=46673ed5ee772a3ecd025fb64a671a66}{%
+           family={Mihoubi},
+           familyi={M\bibinitperiod},
+           given={Ferhat},
+           giveni={F\bibinitperiod}}}%
+        {{hash=817341367b65fdc3cc67e7a7994b626f}{%
+           family={Mutschler},
+           familyi={M\bibinitperiod},
+           given={Willi},
+           giveni={W\bibinitperiod}}}%
+        {{hash=69cf42f683b48b8cd363fadf737c6f67}{%
+           family={Pfeifer},
+           familyi={P\bibinitperiod},
+           given={Johannes},
+           giveni={J\bibinitperiod}}}%
+        {{hash=6ca2956f7c035175028804cc31f1791b}{%
+           family={Ratto},
+           familyi={R\bibinitperiod},
+           given={Marco},
+           giveni={M\bibinitperiod}}}%
+        {{hash=80ebbc4fbb74f15c85671d93d7b25a70}{%
+           family={Rion},
+           familyi={R\bibinitperiod},
+           given={Normann},
+           giveni={N\bibinitperiod}}}%
+        {{hash=ab45ea592d16c5bbe662b4a4023a7ca0}{%
+           family={Villemot},
+           familyi={V\bibinitperiod},
+           given={Sébastien},
+           giveni={S\bibinitperiod}}}%
+      }
+      \list{institution}{1}{%
+        {CEPREMAP}%
+      }
+      \strng{namehash}{5837aa67437796e93de610c64a016f43}
+      \strng{fullhash}{0699538dcd0e61789d976d2c68b103c9}
+      \strng{bibnamehash}{0699538dcd0e61789d976d2c68b103c9}
+      \strng{authorbibnamehash}{0699538dcd0e61789d976d2c68b103c9}
+      \strng{authornamehash}{5837aa67437796e93de610c64a016f43}
+      \strng{authorfullhash}{0699538dcd0e61789d976d2c68b103c9}
+      \field{sortinit}{A}
+      \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Dynare {Reference} {Manual} {Version} 5\_5}
+      \field{type}{techreport}
+      \field{urlday}{3}
+      \field{urlmonth}{3}
+      \field{urlyear}{2023}
+      \field{year}{2023}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://www.dynare.org/manual/
+      \endverb
+      \verb{url}
+      \verb https://www.dynare.org/manual/
+      \endverb
+    \endentry
     \entry{albuquerquemello_mercado_2018}{thesis}{}
       \name{author}{1}{}{%
         {{hash=4806cae63e2212ac2872c25bba106589}{%
@@ -26,6 +118,15 @@
            familyi={A\bibinitperiod},
            given={Vinícius\bibnamedelimb Phillipe\bibnamedelima de},
            giveni={V\bibinitperiod\bibinitdelim P\bibinitperiod\bibinitdelim d\bibinitperiod}}}%
+      }
+      \list{institution}{1}{%
+        {Universidade Federal da Paraíba}%
+      }
+      \list{language}{1}{%
+        {pt}%
+      }
+      \list{location}{1}{%
+        {João Pessoa}%
       }
       \strng{namehash}{4806cae63e2212ac2872c25bba106589}
       \strng{fullhash}{4806cae63e2212ac2872c25bba106589}
@@ -40,10 +141,19 @@
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{bookpagination}{sheet}
-      \field{title}{Mercado imobiliário, crédito e o Ciclo Real de Negócios: evidências a partir de um modelo {DSGE} para a economia estadunidense}
+      \field{title}{Mercado imobiliário, crédito e o {Ciclo} {Real} de {Negócios}: evidências a partir de um modelo {DSGE} para a economia estadunidense}
       \field{type}{phdthesis}
+      \field{urlday}{20}
+      \field{urlmonth}{3}
+      \field{urlyear}{2023}
       \field{year}{2018}
-      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://repositorio.ufpb.br/jspui/handle/123456789/15038
+      \endverb
+      \verb{url}
+      \verb https://repositorio.ufpb.br/jspui/handle/123456789/15038
+      \endverb
     \endentry
     \entry{alpanda_international_2014}{article}{}
       \name{author}{2}{}{%
@@ -101,8 +211,12 @@
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{The Basic New Keynesian Model}
+      \field{urlday}{20}
+      \field{urlmonth}{3}
+      \field{urlyear}{2023}
       \field{year}{2012}
       \field{dateera}{ce}
+      \field{urldateera}{ce}
       \verb{urlraw}
       \verb https://bergholt.weebly.com/uploads/1/1/8/4/11843961/the_basic_new_keynesian_model_-_drago_bergholt.pdf
       \endverb
@@ -295,8 +409,12 @@
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{{MAJA} A two-region {DSGE} model for Sweden and its main trading partners}
+      \field{urlday}{20}
+      \field{urlmonth}{3}
+      \field{urlyear}{2023}
       \field{year}{2020}
       \field{dateera}{ce}
+      \field{urldateera}{ce}
       \verb{urlraw}
       \verb https://www.econstor.eu/handle/10419/232594
       \endverb
@@ -556,8 +674,12 @@
       \field{journaltitle}{Revista Brasileira de Estudos Regionais e Urbanos}
       \field{number}{4}
       \field{title}{Matriz {Interestadual} de {Insumo}-produto para o {Brasil}: uma {Aplicação} do {Método} {IIOAS}}
+      \field{urlday}{20}
+      \field{urlmonth}{3}
+      \field{urlyear}{2023}
       \field{volume}{11}
       \field{year}{2017}
+      \field{urldateera}{ce}
       \verb{urlraw}
       \verb https://ideas.repec.org/a/ris/rberur/0050.html
       \endverb
@@ -1235,9 +1357,13 @@
       \field{journaltitle}{Journal of Money and Economy}
       \field{month}{12}
       \field{title}{Investigating the Effects of Monetary and Financial Shocks on the Key Macroeconomic Variables, Focusing on the Intermediary Role of Banks Using {DSGE} Models}
+      \field{urlday}{20}
+      \field{urlmonth}{3}
+      \field{urlyear}{2023}
       \field{volume}{16}
       \field{year}{2021}
       \field{dateera}{ce}
+      \field{urldateera}{ce}
       \verb{doi}
       \verb 10.52547/jme.16.4.477
       \endverb
@@ -1406,8 +1532,12 @@
       \field{labeltitlesource}{title}
       \field{eventtitle}{44° {ENCONTRO} {NACIONAL} {DE} {ECONOMIA}}
       \field{title}{Política Monetária, Macroprudencial E Bancos: Análise Da Transmissão Por Meio De Um Modelo {DSGE}}
+      \field{urlday}{20}
+      \field{urlmonth}{3}
+      \field{urlyear}{2023}
       \field{year}{2016}
       \field{dateera}{ce}
+      \field{urldateera}{ce}
       \verb{urlraw}
       \verb https://en.anpec.org.br/previous-editions.php?r=encontro-2016
       \endverb

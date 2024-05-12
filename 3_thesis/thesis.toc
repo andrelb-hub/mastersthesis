@@ -24,7 +24,7 @@
 \contentsline {subsection}{\numberline {3.4}Calibration}{34}{subsection.3.4}%
 \contentsline {section}{\numberline {4}Results}{39}{section.4}%
 \contentsline {section}{\numberline {5}Final Remarks}{49}{section.5}%
-\contentsline {section}{References}{51}{section*.13}%
+\contentsline {section}{\numberline {}References}{51}{section*.14}%
 \contentsline {section}{\numberline {A}Appendix}{55}{appendix.A}%
 \etoc@startlocaltoc {2}
 \contentsline {subsection}{\numberline {A.1}Extended Model Development}{56}{subsection.A.1}%

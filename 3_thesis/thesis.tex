@@ -81,33 +81,25 @@
 \renewcommand{\cftlottitlefont}{\hfill\fontsize{12pt}{14pt}\selectfont\bfseries\MakeUppercase}
 \renewcommand{\cftafterlottitle}{\hfill}
 
-\begin{comment}
+% Remove indent for all items
+\setlength{\cftsecindent}{0pt}
+\setlength{\cftsubsecindent}{0pt}
+\setlength{\cftsubsubsecindent}{0pt}
 
-\makeatletter
-\renewcommand\listfigurename{\MakeUppercase{List of Figures}}
-\renewcommand\listtablename{\MakeUppercase{List of Tables}}
-\renewcommand\contentsname{\MakeUppercase{Contents}}
+% Set numwidth for all items
+\setlength{\cftsecnumwidth}{3em}
+\setlength{\cftsubsecnumwidth}{3em}
+\setlength{\cftsubsubsecnumwidth}{3em}
 
-\renewcommand\listoffigures{%
-	\setlength{\parskip}{1.5pt}
-	\@starttoc{lof}
-	\addtocontents{lof}{\vspace{0.5cm}}
+% references in uppercase
+\defbibheading{bibintoc}[\refname]{%
+	\section*{\MakeUppercase{#1}}
+	\addcontentsline{toc}{section}{\protect\numberline{}#1}%
 }
 
-\renewcommand\listoftables{%
-	\setlength{\parskip}{1.5pt}
-	\@starttoc{lot}
-	\addtocontents{lot}{\vspace{0.5cm}}
-}
+% Add line of dots to section entries
+\renewcommand{\cftsecleader}{\cftdotfill{\cftdotsep}}
 
-\renewcommand\tableofcontents{%
-	\setlength{\parskip}{1.5pt}
-	\@starttoc{toc}
-	\addtocontents{toc}{\vspace{0.5cm}}
-}
-\makeatother
-
-\end{comment}
 
 
 % --------------------------------------------------
