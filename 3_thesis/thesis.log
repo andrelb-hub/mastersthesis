@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999995 (MiKTeX 23.12) (preloaded format=xelatex 2024.1.18)  12 MAY 2024 13:17
+This is XeTeX, Version 3.141592653-2.6-0.999995 (MiKTeX 23.12) (preloaded format=xelatex 2024.1.18)  13 MAY 2024 10:28
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1977,7 +1977,19 @@ Overfull \vbox (29.76233pt too high) has occurred while \output is active []
 File: ../images/../docs/termo_de_aprovacao.pdf Graphic file (type pdf)
 <use ../images/../docs/termo_de_aprovacao.pdf>
 
-Overfull \hbox (52.40486pt too wide) in paragraph at lines 15--16
+Overfull \hbox (52.40486pt too wide) in paragraph at lines 17--18
+ [][] 
+ []
+
+
+Overfull \vbox (29.83055pt too high) has occurred while \output is active []
+
+
+[4]
+File: ../images/../docs/ata_da_defesa.pdf Graphic file (type pdf)
+<use ../images/../docs/ata_da_defesa.pdf>
+
+Overfull \hbox (52.40486pt too wide) in paragraph at lines 34--35
  [][] 
  []
 
@@ -1985,8 +1997,8 @@ Overfull \hbox (52.40486pt too wide) in paragraph at lines 15--16
 Overfull \vbox (29.83055pt too high) has occurred while \output is active []
 
 
-[4]) (pre/acknowledgments.tex [5]) (pre/epigraph.tex [6]
-Excluding 'comment' comment.) (pre/abstract.tex [7]
+[5]) (pre/acknowledgments.tex [6]) (pre/epigraph.tex [7]
+Excluding 'comment' comment.) (pre/abstract.tex [8]
 LaTeX Font Info:    Trying to load font information for OT1+ppl on input line 2
 2.
 
@@ -2042,24 +2054,24 @@ LaTeX Font Info:    Font shape `U/msb/m/n' will be
 LaTeX Font Info:    Font shape `U/msb/m/n' will be
 (Font)              scaled to size 6.25204pt on input line 22.
 
-Excluding 'comment' comment. [8] Excluding 'comment' comment.) (pre/lists.tex
-[9] (thesis.lof)
+Excluding 'comment' comment. [9] Excluding 'comment' comment.) (pre/lists.tex
+[10] (thesis.lof)
 \tf@lof=\write7
 \openout7 = `thesis.lof'.
 
- [10] (thesis.lot)
+ [11] (thesis.lot)
 \tf@lot=\write8
 \openout8 = `thesis.lot'.
 
  Excluding 'comment' comment.)
-(pre/table_of_contents.tex [11]
+(pre/table_of_contents.tex [12]
 \tf@toc=\write9
 \openout9 = `thesis.toc'.
 
-) (sections/introduction.tex [12] [13] [14])
-(sections/literature_review.tex [15] [16] [17] [18]
-Excluding 'comment' comment.) (sections/methodology.tex [19]
-Excluding 'comment' comment.) (sections/reg_model_v2_inv_short.tex [20]
+) (sections/introduction.tex [13] [14] [15])
+(sections/literature_review.tex [16] [17] [18] [19]
+Excluding 'comment' comment.) (sections/methodology.tex [20]
+Excluding 'comment' comment.) (sections/reg_model_v2_inv_short.tex [21]
 LaTeX Font Info:    Calculating math sizes for size <8.76118> on input line 37.
 
 LaTeX Font Info:    Font shape `U/msa/m/n' will be
@@ -2075,10 +2087,10 @@ LaTeX Font Info:    Font shape `U/msb/m/n' will be
 LaTeX Font Info:    Font shape `U/msb/m/n' will be
 (Font)              scaled to size 5.47757pt on input line 37.
 
-Excluding 'comment' comment. [21]
+Excluding 'comment' comment. [22]
 File: ../images/../images/flowchart.jpg Graphic file (type bmp)
 <../images/../images/flowchart.jpg>
- [22] Excluding 'comment' comment.
+ [23] Excluding 'comment' comment.
 Excluding 'comment' comment.
 LaTeX Font Info:    Trying to load font information for U+fplmbb on input line 
 203.
@@ -2086,11 +2098,11 @@ LaTeX Font Info:    Trying to load font information for U+fplmbb on input line
 (C:\Users\andre\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\ufplmbb.fd
 File: ufplmbb.fd 2003/10/30 Fontinst v1.914 font definitions for U/fplmbb.
 )
-[23] Excluding 'comment' comment. Excluding 'comment' comment.
-Excluding 'comment' comment. [24] Excluding 'comment' comment.
+[24] Excluding 'comment' comment. Excluding 'comment' comment.
 Excluding 'comment' comment. [25] Excluding 'comment' comment.
-Excluding 'comment' comment. [26] Excluding 'comment' comment. [27]
-Excluding 'comment' comment. [28]
+Excluding 'comment' comment. [26] Excluding 'comment' comment.
+Excluding 'comment' comment. [27] Excluding 'comment' comment. [28]
+Excluding 'comment' comment. [29]
 LaTeX Font Info:    Font shape `U/cmsy/m/n' will be
 (Font)              scaled to size 12.0pt on input line 623.
 LaTeX Font Info:    Font shape `U/cmsy/m/n' will be
@@ -2116,14 +2128,14 @@ LaTeX Font Info:    Font shape `U/cmsy/b/n' will be
 (Font)              scaled to size 7.6pt on input line 675.
 LaTeX Font Info:    Font shape `U/cmsy/b/n' will be
 (Font)              scaled to size 6.0pt on input line 675.
- [29] [30]
+ [30] [31]
 LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 7
 32.
 
 (C:\Users\andre\AppData\Local\Programs\MiKTeX\tex/latex/lm\t1lmtt.fd
 File: t1lmtt.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
-) [31]
-[32] [33]) (sections/calibration.tex Excluding 'comment' comment. [34] [35]
+) [32]
+[33] [34]) (sections/calibration.tex Excluding 'comment' comment. [35] [36]
 > Step: init table outer spec.
 > Step: parse table options.
 > Step: split table.
@@ -2133,7 +2145,7 @@ File: t1lmtt.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 > Step: calculate cell and line sizes.
 > Step: build the whole table.
 
-[36]
+[37]
 > Step: init table outer spec.
 > Step: parse table options.
 > Step: split table.
@@ -2158,7 +2170,7 @@ LaTeX Font Info:    Font shape `U/cmsy/b/n' will be
 LaTeX Font Info:    Font shape `U/cmsy/b/n' will be
 (Font)              scaled to size 8.0pt on input line 212.
 > Step: build the whole table.
- [37]
+ [38]
 > Step: init table outer spec.
 > Step: parse table options.
 > Step: split table.
@@ -2167,8 +2179,8 @@ LaTeX Font Info:    Font shape `U/cmsy/b/n' will be
 > Step: execute table commands.
 > Step: calculate cell and line sizes.
 > Step: build the whole table.
-) (sections/results.tex [38] Excluding 'comment' comment. [39]
-Excluding 'comment' comment.) (sections/IRF_monetary_shock.tex [40]
+) (sections/results.tex [39] Excluding 'comment' comment. [40]
+Excluding 'comment' comment.) (sections/IRF_monetary_shock.tex [41]
 File: ../images/../images/plots/plot_eM_pos_ZMt.png Graphic file (type bmp)
 <../images/../images/plots/plot_eM_pos_ZMt.png>
 File: ../images/../images/plots/plot_eM_pos_Rt.png Graphic file (type bmp)
@@ -2201,7 +2213,7 @@ File: ../images/../images/plots/plot_eM_pos_C11t.png Graphic file (type bmp)
 <../images/../images/plots/plot_eM_pos_C11t.png>
 File: ../images/../images/plots/plot_eM_pos_C21t.png Graphic file (type bmp)
 <../images/../images/plots/plot_eM_pos_C21t.png>
- [41]
+ [42]
 File: ../images/../images/plots/plot_eM_pos_C12t.png Graphic file (type bmp)
 <../images/../images/plots/plot_eM_pos_C12t.png>
 File: ../images/../images/plots/plot_eM_pos_C22t.png Graphic file (type bmp)
@@ -2237,7 +2249,7 @@ File: ../images/../images/shock_ZMt/blank.png Graphic file (type bmp)
 File: ../images/../images/shock_ZMt/blank.png Graphic file (type bmp)
 <../images/../images/shock_ZMt/blank.png>
 
-[42]
+[43]
 File: ../images/../images/plots/plot_eM_pos_C1_C2.png Graphic file (type bmp)
 <../images/../images/plots/plot_eM_pos_C1_C2.png>
 File: ../images/../images/plots/plot_eM_pos_I1_I2.png Graphic file (type bmp)
@@ -2246,7 +2258,7 @@ File: ../images/../images/plots/plot_eM_pos_Y1_Y2.png Graphic file (type bmp)
 <../images/../images/plots/plot_eM_pos_Y1_Y2.png>
 File: ../images/../images/plots/plot_eM_pos_K1_K2.png Graphic file (type bmp)
 <../images/../images/plots/plot_eM_pos_K1_K2.png>
- [43]
+ [44]
 File: ../images/../images/plots/plot_eM_pos_L1_L2.png Graphic file (type bmp)
 <../images/../images/plots/plot_eM_pos_L1_L2.png>
 File: ../images/../images/plots/plot_eM_pos_W1_W2.png Graphic file (type bmp)
@@ -2255,7 +2267,7 @@ File: ../images/../images/plots/plot_eM_pos_Q1_Q2.png Graphic file (type bmp)
 <../images/../images/plots/plot_eM_pos_Q1_Q2.png>
 File: ../images/../images/plots/plot_eM_pos_P1_P2.png Graphic file (type bmp)
 <../images/../images/plots/plot_eM_pos_P1_P2.png>
- Excluding 'comment' comment. [44]
+ Excluding 'comment' comment. [45]
 File: ../images/../images/plots/plot_eM_neg_ZMt.png Graphic file (type bmp)
 <../images/../images/plots/plot_eM_neg_ZMt.png>
 File: ../images/../images/plots/plot_eM_neg_Rt.png Graphic file (type bmp)
@@ -2288,7 +2300,7 @@ File: ../images/../images/plots/plot_eM_neg_C11t.png Graphic file (type bmp)
 <../images/../images/plots/plot_eM_neg_C11t.png>
 File: ../images/../images/plots/plot_eM_neg_C21t.png Graphic file (type bmp)
 <../images/../images/plots/plot_eM_neg_C21t.png>
- [45]
+ [46]
 File: ../images/../images/plots/plot_eM_neg_C12t.png Graphic file (type bmp)
 <../images/../images/plots/plot_eM_neg_C12t.png>
 File: ../images/../images/plots/plot_eM_neg_C22t.png Graphic file (type bmp)
@@ -2319,7 +2331,7 @@ File: ../images/../images/shock_ZMt/blank.png Graphic file (type bmp)
 <../images/../images/shock_ZMt/blank.png>
 File: ../images/../images/shock_ZMt/blank.png Graphic file (type bmp)
 <../images/../images/shock_ZMt/blank.png>
- [46]
+ [47]
 File: ../images/../images/plots/plot_eM_neg_C1_C2.png Graphic file (type bmp)
 <../images/../images/plots/plot_eM_neg_C1_C2.png>
 File: ../images/../images/plots/plot_eM_neg_I1_I2.png Graphic file (type bmp)
@@ -2328,7 +2340,7 @@ File: ../images/../images/plots/plot_eM_neg_Y1_Y2.png Graphic file (type bmp)
 <../images/../images/plots/plot_eM_neg_Y1_Y2.png>
 File: ../images/../images/plots/plot_eM_neg_K1_K2.png Graphic file (type bmp)
 <../images/../images/plots/plot_eM_neg_K1_K2.png>
- [47]
+ [48]
 File: ../images/../images/plots/plot_eM_neg_L1_L2.png Graphic file (type bmp)
 <../images/../images/plots/plot_eM_neg_L1_L2.png>
 File: ../images/../images/plots/plot_eM_neg_W1_W2.png Graphic file (type bmp)
@@ -2338,58 +2350,60 @@ File: ../images/../images/plots/plot_eM_neg_Q1_Q2.png Graphic file (type bmp)
 File: ../images/../images/plots/plot_eM_neg_P1_P2.png Graphic file (type bmp)
 <../images/../images/plots/plot_eM_neg_P1_P2.png>
 
-Excluding 'comment' comment.) (sections/final_remarks.tex [48] [49]
-Excluding 'comment' comment.) (post/references.tex [50] [51] [52] [53])
-(post/appendix.tex [54] Excluding 'comment' comment.)
-(sections/reg_model_v2_inv_extended.tex [55]
+Excluding 'comment' comment.) (sections/final_remarks.tex [49] [50]
+Excluding 'comment' comment.) (post/references.tex [51] [52] [53] [54])
+(post/appendix.tex [55] Excluding 'comment' comment.)
+(sections/reg_model_v2_inv_extended.tex [56]
 LaTeX Font Info:    Font shape `U/BOONDOX-calo/m/n' will be
 (Font)              scaled to size 12.0pt on input line 44.
 LaTeX Font Info:    Font shape `U/BOONDOX-calo/m/n' will be
 (Font)              scaled to size 9.0pt on input line 44.
 LaTeX Font Info:    Font shape `U/BOONDOX-calo/m/n' will be
 (Font)              scaled to size 7.0pt on input line 44.
- [56] Excluding 'comment' comment.
-[57] [58] [59] Excluding 'comment' comment. Excluding 'comment' comment.
-[60] [61] Excluding 'comment' comment.
+ [57] Excluding 'comment' comment.
+[58] [59] [60] Excluding 'comment' comment. Excluding 'comment' comment.
+[61] [62] Excluding 'comment' comment.
 LaTeX Font Info:    Font shape `U/BOONDOX-calo/m/n' will be
 (Font)              scaled to size 10.0pt on input line 278.
 LaTeX Font Info:    Font shape `U/BOONDOX-calo/m/n' will be
 (Font)              scaled to size 7.6pt on input line 278.
 LaTeX Font Info:    Font shape `U/BOONDOX-calo/m/n' will be
 (Font)              scaled to size 6.0pt on input line 278.
- [62] [63] Excluding 'comment' comment.
-[64] [65] [66] Excluding 'comment' comment. [67] [68]
-Excluding 'comment' comment. [69]
+ [63] [64] Excluding 'comment' comment.
+[65] [66] [67] Excluding 'comment' comment. [68] [69]
+Excluding 'comment' comment. [70]
 LaTeX Font Info:    Trying to load font information for TS1+ppl on input line 6
 13.
 
 (C:\Users\andre\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\ts1ppl.fd
 File: ts1ppl.fd 2001/06/04 font definitions for TS1/ppl.
 )
-Excluding 'comment' comment. Excluding 'comment' comment. [70]
+Excluding 'comment' comment. Excluding 'comment' comment. [71]
 Excluding 'comment' comment. Excluding 'comment' comment.
-Excluding 'comment' comment. [71] Excluding 'comment' comment. [72]
-Excluding 'comment' comment. Excluding 'comment' comment. [73]
+Excluding 'comment' comment. [72] Excluding 'comment' comment. [73]
 Excluding 'comment' comment. Excluding 'comment' comment. [74]
-Excluding 'comment' comment. [75] [76] Excluding 'comment' comment.
-Excluding 'comment' comment. Excluding 'comment' comment. [77] [78]
-Excluding 'comment' comment. Excluding 'comment' comment. [79] [80] [81]
-[82] [83] [84] [85] Excluding 'comment' comment. [86]
-Excluding 'comment' comment. Excluding 'comment' comment. [87]
-Excluding 'comment' comment. [88] Excluding 'comment' comment. [89]
+Excluding 'comment' comment. Excluding 'comment' comment. [75]
+Excluding 'comment' comment. [76] [77] Excluding 'comment' comment.
+Excluding 'comment' comment. Excluding 'comment' comment. [78] [79]
+Excluding 'comment' comment. Excluding 'comment' comment. [80] [81] [82]
+[83] [84] [85] [86] Excluding 'comment' comment. [87]
+Excluding 'comment' comment. Excluding 'comment' comment. [88]
+Excluding 'comment' comment. [89] Excluding 'comment' comment. [90]
 Excluding 'comment' comment. Excluding 'comment' comment.
-Excluding 'comment' comment. [90] Excluding 'comment' comment.
 Excluding 'comment' comment. [91] Excluding 'comment' comment.
-Excluding 'comment' comment. [92] Excluding 'comment' comment. [93] [94]
+Excluding 'comment' comment. [92] Excluding 'comment' comment.
+Excluding 'comment' comment. [93] Excluding 'comment' comment. [94] [95]
 Excluding 'comment' comment. Excluding 'comment' comment.)
-(post/appendix_definitions.tex [95] Excluding 'comment' comment.
-Excluding 'comment' comment. Excluding 'comment' comment. [96]
-Excluding 'comment' comment. [97] Excluding 'comment' comment.
-Excluding 'comment' comment.) (post/appendix_dynare.tex [98]) [99] (thesis.aux)
+(post/appendix_definitions.tex [96] Excluding 'comment' comment.
+Excluding 'comment' comment. Excluding 'comment' comment. [97]
+Excluding 'comment' comment. [98] Excluding 'comment' comment.
+Excluding 'comment' comment.) (post/appendix_dynare.tex [99]) [100] (thesis.aux
+)
  ***********
 LaTeX2e <2023-11-01>
 L3 programming layer <2020/03/25>
  ***********
+
 
 LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 1.93356pt have occurred.
@@ -2399,12 +2413,12 @@ Package logreq Info: Writing requests to 'thesis.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 50113 strings out of 409617
- 1035858 string characters out of 5774013
- 2051295 words of memory out of 5000000
- 71273 multiletter control sequences out of 15000+600000
+ 50122 strings out of 409617
+ 1036189 string characters out of 5774013
+ 2051298 words of memory out of 5000000
+ 71281 multiletter control sequences out of 15000+600000
  665407 words of font info for 307 fonts, out of 8000000 for 9000
  1351 hyphenation exceptions out of 8191
  123i,26n,131p,1536b,5802s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on thesis.pdf (99 pages).
+Output written on thesis.pdf (100 pages).
