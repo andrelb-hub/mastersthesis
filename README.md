@@ -1,6 +1,6 @@
 # Analysis of the Monetary Policy Impact on Regional Gross Product: A Regional DSGE Model
 
-Master's Thesis presented to PPGDE-UFPR in 2023 to receive the Master in Sciences title.
+Master's Thesis presented to PPGDE-UFPR in 2023 to receive the Master of Science degree.
 
 The objective is to analyze the impact of monetary policy on regional gross product using an NK DSGE model that includes:
 - Two regions: the main region and the rest of the country.
