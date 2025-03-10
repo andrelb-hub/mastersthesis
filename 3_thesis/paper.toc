@@ -8,37 +8,36 @@
 \contentsline {subsection}{\numberline {3.1}Regional New Keynesian Model}{9}{subsection.3.1}%
 \contentsline {subsubsection}{\numberline {3.1.1}Regions}{10}{subsubsection.3.1.1}%
 \contentsline {subsubsection}{\numberline {3.1.2}Household}{10}{subsubsection.3.1.2}%
-\contentsline {subsubsection}{\numberline {3.1.3}Firms}{13}{subsubsection.3.1.3}%
-\contentsline {subsubsection}{\numberline {3.1.4}Final-Goods Firm}{13}{subsubsection.3.1.4}%
-\contentsline {subsubsection}{\numberline {3.1.5}Intermediate-Goods Firms}{13}{subsubsection.3.1.5}%
-\contentsline {subsubsection}{\numberline {3.1.6}Final-Goods Firm, part II}{15}{subsubsection.3.1.6}%
-\contentsline {subsubsection}{\numberline {3.1.7}Regional Inflation}{16}{subsubsection.3.1.7}%
-\contentsline {subsubsection}{\numberline {3.1.8}Monetary Authority}{16}{subsubsection.3.1.8}%
-\contentsline {subsubsection}{\numberline {3.1.9}Stochastic Shocks}{16}{subsubsection.3.1.9}%
-\contentsline {subsubsection}{\numberline {3.1.10}Equilibrium Conditions}{17}{subsubsection.3.1.10}%
-\contentsline {subsection}{\numberline {3.2}Steady State}{17}{subsection.3.2}%
-\contentsline {subsubsection}{\numberline {3.2.1}Steady State Solution}{17}{subsubsection.3.2.1}%
-\contentsline {subsection}{\numberline {3.3}Log-linearization}{18}{subsection.3.3}%
-\contentsline {subsubsection}{\numberline {3.3.1}Eigenvalues and Forward Looking Variables}{20}{subsubsection.3.3.1}%
-\contentsline {subsection}{\numberline {3.4}Calibration}{20}{subsection.3.4}%
-\contentsline {section}{\numberline {4}Results}{25}{section.4}%
-\contentsline {section}{\numberline {5}Final Remarks}{35}{section.5}%
-\contentsline {section}{References}{36}{section*.12}%
-\contentsline {section}{\numberline {A}Appendix}{39}{appendix.A}%
+\contentsline {subsubsection}{\numberline {3.1.3}Firms}{12}{subsubsection.3.1.3}%
+\contentsline {subsubsection}{\numberline {3.1.4}Final-Goods Firm}{12}{subsubsection.3.1.4}%
+\contentsline {subsubsection}{\numberline {3.1.5}Intermediate-Goods Firms}{12}{subsubsection.3.1.5}%
+\contentsline {subsubsection}{\numberline {3.1.6}Final-Goods Firm, part II}{14}{subsubsection.3.1.6}%
+\contentsline {subsubsection}{\numberline {3.1.7}Regional Inflation}{15}{subsubsection.3.1.7}%
+\contentsline {subsubsection}{\numberline {3.1.8}Monetary Authority}{15}{subsubsection.3.1.8}%
+\contentsline {subsubsection}{\numberline {3.1.9}Stochastic Shocks}{15}{subsubsection.3.1.9}%
+\contentsline {subsubsection}{\numberline {3.1.10}Equilibrium Conditions}{16}{subsubsection.3.1.10}%
+\contentsline {subsection}{\numberline {3.2}Steady State}{16}{subsection.3.2}%
+\contentsline {subsubsection}{\numberline {3.2.1}Steady State Solution}{16}{subsubsection.3.2.1}%
+\contentsline {subsection}{\numberline {3.3}Log-linearization}{17}{subsection.3.3}%
+\contentsline {subsubsection}{\numberline {3.3.1}Eigenvalues and Forward Looking Variables}{19}{subsubsection.3.3.1}%
+\contentsline {subsection}{\numberline {3.4}Calibration}{19}{subsection.3.4}%
+\contentsline {section}{\numberline {4}Results}{24}{section.4}%
+\contentsline {section}{\numberline {5}Final Remarks}{28}{section.5}%
+\contentsline {section}{\numberline {A}Appendix}{30}{appendix.A}%
 \etoc@startlocaltoc {1}
-\contentsline {subsection}{\numberline {A.1}Extended Model Development}{40}{subsection.A.1}%
-\contentsline {subsubsection}{\numberline {A.1.1}Household}{40}{subsubsection.A.1.1}%
-\contentsline {subsubsection}{\numberline {A.1.2}Final-Goods Firm}{44}{subsubsection.A.1.2}%
-\contentsline {subsubsection}{\numberline {A.1.3}Intermediate-Goods Firms}{45}{subsubsection.A.1.3}%
-\contentsline {subsubsection}{\numberline {A.1.4}Monetary Authority}{49}{subsubsection.A.1.4}%
-\contentsline {subsubsection}{\numberline {A.1.5}Stochastic Shocks}{50}{subsubsection.A.1.5}%
-\contentsline {subsubsection}{\numberline {A.1.6}Equilibrium Conditions}{50}{subsubsection.A.1.6}%
-\contentsline {subsubsection}{\numberline {A.1.7}Model Structure}{52}{subsubsection.A.1.7}%
-\contentsline {subsubsection}{\numberline {A.1.8}Steady State}{55}{subsubsection.A.1.8}%
-\contentsline {subsubsection}{\numberline {A.1.9}Variables at Steady State}{58}{subsubsection.A.1.9}%
-\contentsline {subsubsection}{\numberline {A.1.10}Steady State Solution}{61}{subsubsection.A.1.10}%
-\contentsline {subsubsection}{\numberline {A.1.11}Log-linearization}{62}{subsubsection.A.1.11}%
-\contentsline {subsubsection}{\numberline {A.1.12}Log-linear Model Structure}{73}{subsubsection.A.1.12}%
-\contentsline {subsubsection}{\numberline {A.1.13}Eigenvalues and Forward Looking Variables}{75}{subsubsection.A.1.13}%
-\contentsline {subsection}{\numberline {A.2}Definitions, Lemmas and Corollaries}{76}{subsection.A.2}%
-\contentsline {subsection}{\numberline {A.3}Dynare Mod File}{79}{subsection.A.3}%
+\contentsline {subsection}{\numberline {A.1}Extended Model Development}{31}{subsection.A.1}%
+\contentsline {subsubsection}{\numberline {A.1.1}Household}{31}{subsubsection.A.1.1}%
+\contentsline {subsubsection}{\numberline {A.1.2}Final-Goods Firm}{35}{subsubsection.A.1.2}%
+\contentsline {subsubsection}{\numberline {A.1.3}Intermediate-Goods Firms}{36}{subsubsection.A.1.3}%
+\contentsline {subsubsection}{\numberline {A.1.4}Monetary Authority}{40}{subsubsection.A.1.4}%
+\contentsline {subsubsection}{\numberline {A.1.5}Stochastic Shocks}{41}{subsubsection.A.1.5}%
+\contentsline {subsubsection}{\numberline {A.1.6}Equilibrium Conditions}{41}{subsubsection.A.1.6}%
+\contentsline {subsubsection}{\numberline {A.1.7}Model Structure}{43}{subsubsection.A.1.7}%
+\contentsline {subsubsection}{\numberline {A.1.8}Steady State}{46}{subsubsection.A.1.8}%
+\contentsline {subsubsection}{\numberline {A.1.9}Variables at Steady State}{49}{subsubsection.A.1.9}%
+\contentsline {subsubsection}{\numberline {A.1.10}Steady State Solution}{52}{subsubsection.A.1.10}%
+\contentsline {subsubsection}{\numberline {A.1.11}Log-linearization}{53}{subsubsection.A.1.11}%
+\contentsline {subsubsection}{\numberline {A.1.12}Log-linear Model Structure}{64}{subsubsection.A.1.12}%
+\contentsline {subsubsection}{\numberline {A.1.13}Eigenvalues and Forward Looking Variables}{66}{subsubsection.A.1.13}%
+\contentsline {subsection}{\numberline {A.2}Definitions, Lemmas and Corollaries}{67}{subsection.A.2}%
+\contentsline {subsection}{\numberline {A.3}Dynare Mod File}{70}{subsection.A.3}%

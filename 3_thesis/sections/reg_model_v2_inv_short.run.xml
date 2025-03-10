@@ -44,10 +44,10 @@
   <internal package="biblatex" priority="9" active="1">
     <generic>latex</generic>
     <provides type="dynamic">
-      <file>paper.bcf</file>
+      <file>reg_model_v2_inv_short.bcf</file>
     </provides>
     <requires type="dynamic">
-      <file>paper.bbl</file>
+      <file>reg_model_v2_inv_short.bbl</file>
     </requires>
     <requires type="static">
       <file>blx-dm.def</file>
@@ -70,19 +70,19 @@
     <generic>biber</generic>
     <cmdline>
       <binary>biber</binary>
-      <infile>paper</infile>
+      <infile>reg_model_v2_inv_short</infile>
     </cmdline>
     <input>
-      <file>paper.bcf</file>
+      <file>reg_model_v2_inv_short.bcf</file>
     </input>
     <output>
-      <file>paper.bbl</file>
+      <file>reg_model_v2_inv_short.bbl</file>
     </output>
     <provides type="dynamic">
-      <file>paper.bbl</file>
+      <file>reg_model_v2_inv_short.bbl</file>
     </provides>
     <requires type="dynamic">
-      <file>paper.bcf</file>
+      <file>reg_model_v2_inv_short.bcf</file>
     </requires>
     <requires type="editable">
       <file>../latex/ref.bib</file>
