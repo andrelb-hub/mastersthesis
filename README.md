@@ -17,4 +17,4 @@ The objective is to analyze the impact of monetary policy on regional gross prod
   - Productivity shock.
   - Monetary shock.
 
-[thesis.pdf](https://github.com/andrelb-hub/mastersthesis/blob/main/3_thesis%2Fthesis.pdf)
+[thesis.pdf](https://github.com/andrelb-hub/mastersthesis/blob/main/3_thesis/thesis.pdf)
